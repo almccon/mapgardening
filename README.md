@@ -1,7 +1,7 @@
 Map Gardening
 =========
 
-A collection of scripts by [Alan McConchie](https//github.com/almccon) for the analysis of "map gardening" in OpenStreetMap
+A collection of scripts by [Alan McConchie](https://github.com/almccon) for the analysis of "map gardening" in OpenStreetMap
 
 What is map gardening? For now, let me explain by offering the abstract from my presentation at the 2013 Association of American Geographers conference:
 
