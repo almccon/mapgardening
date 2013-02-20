@@ -238,6 +238,7 @@ class Raster:
     def __init__(self, raster = rastertablename, rec = rasterid, proj = rastertableproj):
         self.tablename = raster
         self.record_id = rec
+        self.proj = proj
     
     def add_node_table(self, nodetableobj):
         self.nodetableobj = nodetableobj
