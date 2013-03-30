@@ -34,6 +34,8 @@ if place is not None:
     
     nodetable = MapGardening.NodeTable()
     
+    # TODO: test for spatial indexes before proceeding
+    
     # Create column: blankspot
     # this will be for recording if the node was created in a blank spot on the map
     nodetable.create_blankspot_column()
@@ -70,7 +72,7 @@ if place is not None:
         # So, if xmin is 478094.849660545 and rasterScale is 1000, the resulting 
         # value for rasterUpperLeftX should be 478000.
         
-        (xmin, ymin, xmax, ymax) = nodetable.calculate_extent(raster.get_proj())
+        (xmin, ymin, xmax, ymax) = nodetable.calculate_extent(place['rastertableproj'])
         #print (xmin, ymin, xmax, ymax) 
         rasterUpperLeftX = int(math.floor(xmin / rasterScale) * rasterScale)
         rasterUpperLeftY = int(math.floor(ymin / rasterScale) * rasterScale)
@@ -78,7 +80,7 @@ if place is not None:
         rasterHeight = int(((math.ceil(ymax / rasterScale) * rasterScale) - rasterUpperLeftY) / rasterScale)
        
         #print (rasterUpperLeftX, rasterUpperLeftY, rasterWidth, rasterHeight) 
-        raster.create_db_raster(rasterWidth, rasterHeight, rasterUpperLeftX, rasterUpperLeftY, rasterScale)
+        raster.create_db_raster(rasterWidth, rasterHeight, rasterUpperLeftX, rasterUpperLeftY, rasterScale, place['rastertableproj'])
         
         raster.add_node_table(nodetable)
         
