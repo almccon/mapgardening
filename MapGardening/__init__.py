@@ -42,8 +42,6 @@ global_nodetableproj = 3857
 default_rastertablename = "dummy_rast"
 default_rasterid = 3
 
-global_rastertableproj = 32634
-
 # A dict to store information about each case study area 
 places = {
             'tirana': {
@@ -76,10 +74,11 @@ places = {
                        },
             'amsterdam': {
                         'dbname': "osm-history-render-amsterdam",
-                        'rastertableproj': 32630, # WGS 84 / UTM zone 31N
+                        'rastertableproj': 32631, # WGS 84 / UTM zone 31N
                        },
             'cairo': {
                         'dbname': "osm-history-render-cairo",
+                        'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                        },
           }
 
@@ -132,6 +131,9 @@ def disconnect_db():
     
 def get_place(placename):
     return places[placename]
+
+def get_all_places():
+    return places
 
 class BlankSpotTable:
     """
@@ -223,7 +225,7 @@ class Cell:
                 list_of_nodes_tuple = tuple(set(list_of_nodes)) 
                 
                 # For all nodes set blank = FALSE 
-                querystring = "UPDATE " + global_nodetablename + " SET blank = FALSE where id IN %s" 
+                querystring = "UPDATE " + global_nodetablename + " SET blank = FALSE WHERE id IN %s" 
                 try:
                     cur.execute(querystring, (list_of_nodes_tuple,))
                 except Exception, inst:
@@ -238,7 +240,7 @@ class Cell:
             print "updating node %s" % earliest_id
             
             # For the first node (and only the first node) set blank = TRUE 
-            querystring = "UPDATE " + global_nodetablename + " SET blank = TRUE where id = %s AND version = 1" 
+            querystring = "UPDATE " + global_nodetablename + " SET blank = TRUE WHERE id = %s AND version = 1" 
             try:
                 cur.execute(querystring, (earliest_id,))
             except Exception, inst:
@@ -280,15 +282,14 @@ class Raster:
     proj = None
     nodetableobj = None
     
-    def __init__(self, raster = default_rastertablename, rec = default_rasterid, proj = global_rastertableproj):
+    def __init__(self, raster = default_rastertablename, rec = default_rasterid):
         self.tablename = raster
         self.record_id = rec
-        self.proj = proj
     
     def add_node_table(self, nodetableobj):
         self.nodetableobj = nodetableobj
         
-    def create_db_raster(self, w, h, ulx, uly, s, p = global_rastertableproj):
+    def create_db_raster(self, w, h, ulx, uly, s, p):
         self.width = w
         self.height = h
         self.upperLeftX = ulx
@@ -318,7 +319,8 @@ class Raster:
             sys.exit() 
         conn.commit() 
     
-        querystring = "INSERT INTO " + self.tablename + " (rid, rast) values (" + str(self.record_id) + ", ST_MakeEmptyRaster(%s,%s,%s,%s,%s,%s,0,0,%s))"
+        querystring = "INSERT INTO " + self.tablename + " (rid, rast) " + \
+            "VALUES (" + str(self.record_id) + ", ST_MakeEmptyRaster(%s,%s,%s,%s,%s,%s,0,0,%s))"
         try:
             cur.execute(querystring, (self.width, self.height, self.upperLeftX, self.upperLeftY, self.scale, self.scale, self.proj))
         except Exception, inst:
@@ -328,7 +330,7 @@ class Raster:
             sys.exit() 
         conn.commit()
         
-        querystring = "update " + self.tablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) where rid = " + str(self.record_id)
+        querystring = "UPDATE " + self.tablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -338,9 +340,13 @@ class Raster:
             sys.exit() 
         conn.commit()
             
-    def get_width(self):
-        if not self.width:
-            querystring = "SELECT ST_Width(rast) FROM " + self.tablename + " WHERE rid = " + str(self.record_id)
+    def get_width_from_db(self):
+        return get_width(True)
+    
+    def get_width(self, get_from_db=False):
+        if not self.width or get_from_db:
+            querystring = "SELECT ST_Width(rast) FROM " + self.tablename + " " + \
+                "WHERE rid = " + str(self.record_id)
             try:
                 cur.execute(querystring)
             except Exception, inst:
@@ -349,10 +355,14 @@ class Raster:
                 sys.exit()
             self.width = cur.fetchone()[0]
         return self.width
-        
-    def get_height(self):
-        if not self.height:
-            querystring = "SELECT ST_Height(rast) FROM " + self.tablename  + " WHERE rid = " + str(self.record_id)
+
+    def get_height_from_db(self):
+        return get_height(True)
+    
+    def get_height(self, get_from_db=False):
+        if not self.height or get_from_db:
+            querystring = "SELECT ST_Height(rast) FROM " + self.tablename  + " " + \
+                "WHERE rid = " + str(self.record_id)
             try:
                 cur.execute(querystring)
             except Exception, inst:
@@ -362,10 +372,32 @@ class Raster:
             self.height = cur.fetchone()[0]
         return self.height
     
+    def get_raster_stats(self): 
+        querystring = "SELECT rid, (foo.md).* FROM " + \
+            "(SELECT rid, ST_MetaData(rast) AS md FROM dummy_rast) " + \
+            "AS foo"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't select raster metadata")
+            logging.error(inst)
+        rows = cur.fetchall()
+        if len(rows) == 0:
+            logging.error("found no rasters")
+        else:
+            print "found %s raster(s)" % len(rows)
+            for row in rows:
+                (rid, upperleftx, upperlefty, width, height, scalex, scaley, skewx, skewy, srid, numbands) = row
+                print "rid: %s, upperleftx: %s, upperlefty: %s, width: %s, height: %s, scalex: %s, scaley: %s, skewx: %s, skewy: %s, srid: %s, numbands: %s" % (rid, upperleftx, upperlefty, width, height, scalex, scaley, skewx, skewy, srid, numbands) 
+            
+        #CONTINUE
+        
+    
     def get_cell(self, x, y):
         return Cell(self.tablename, self.record_id, x, y)
       
     def get_proj(self):
+        # TODO: should query db if object doesn't know it
         return self.proj
      
         
@@ -548,7 +580,8 @@ class NodeTable:
        
     def set_all_blankspots(self, arg):
         """For some analyses, we want everything set before we begin"""
-        querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
+        #querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
+        querystring = "ALTER TABLE \"" + self.nodetablename + "\" DROP COLUMN blank"
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -557,7 +590,8 @@ class NodeTable:
             logging.error(inst)
             sys.exit()
         conn.commit()
-        print "done setting all blank fields..." 
+        print "done dropping old blank column. Creating new one..." 
+        return self.create_blankspot_column()
     
     def set_all_blankspots_true(self):
         print "setting all blank fields true..." 
