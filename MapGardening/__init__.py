@@ -82,14 +82,6 @@ places = {
                        },
           }
 
-
-#rasterWidth = 64
-#rasterHeight = 52 
-#rasterUpperLeftX = 478000
-#rasterUpperLeftY = 5427000  # I think this is really the LowerLeftY... TODO: why is this?
-
-
-
 # not currently used:
 blankspottablename = "blankspots"
 
@@ -165,9 +157,6 @@ class Cell:
         self.x = x
         self.y = y
         
-    def analyze_nodes_and_preset_blanks(self):
-        return analyze_nodes(True)
-        
     def analyze_nodes(self, set_nodes_individually_flag=False):
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
         
@@ -217,9 +206,9 @@ class Cell:
             if set_nodes_individually_flag == True: 
                 list_of_nodes = [] # a list 
                 for row in rows:
-                    (id, version, uid, username, valid_from) = row
-                    list_of_nodes.append(id)
-                    #print "id: %s, valid_from: %s" % (id, valid_from)
+                    node_id = row[0]
+                    list_of_nodes.append(node_id)
+                    #print "node_id: %s, valid_from: %s" % (node_id, valid_from)
                
                 # this needs to be stored as a tuple for the query to execute
                 list_of_nodes_tuple = tuple(set(list_of_nodes)) 
@@ -263,6 +252,12 @@ class Cell:
             logging.error(inst)
             sys.exit()  
         conn.commit()
+    
+    # end def analyze_nodes
+        
+    def analyze_nodes_and_preset_blanks(self):
+        return self.analyze_nodes(True)
+        
     
 # end class Cell
 
@@ -340,9 +335,6 @@ class Raster:
             sys.exit() 
         conn.commit()
             
-    def get_width_from_db(self):
-        return get_width(True)
-    
     def get_width(self, get_from_db=False):
         if not self.width or get_from_db:
             querystring = "SELECT ST_Width(rast) FROM " + self.tablename + " " + \
@@ -356,8 +348,8 @@ class Raster:
             self.width = cur.fetchone()[0]
         return self.width
 
-    def get_height_from_db(self):
-        return get_height(True)
+    def get_width_from_db(self):
+        return self.get_width(True)
     
     def get_height(self, get_from_db=False):
         if not self.height or get_from_db:
@@ -371,6 +363,9 @@ class Raster:
                 sys.exit()
             self.height = cur.fetchone()[0]
         return self.height
+    
+    def get_height_from_db(self):
+        return self.get_height(True)
     
     def get_raster_stats(self): 
         querystring = "SELECT rid, (foo.md).* FROM " + \
