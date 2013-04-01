@@ -1,5 +1,11 @@
-#! /usr/bin/env python
+"""
+A collection of functions and classes for the MapGardening analysis
 
+Includes some global variables to manage the database connection
+and containing some defaults.
+
+
+"""
 from __future__ import division
 import sys
 import os
@@ -35,7 +41,8 @@ host = "localhost"
 conn = 0    # will be populated by init_db()
 cur = 0     # will be populated by init_db()
 
-# TODO: remove these globals
+# TODO: remove these globals, move them to a config file
+# Note, they are also used in the UserStats module
 global_nodetablename = "hist_point"
 global_nodetableproj = 3857
 
@@ -114,6 +121,7 @@ def init_db(dbname_to_connect = dbname):
         logging.error(inst)
         sys.exit()
     cur = conn.cursor()
+    return (conn, cur)
     
 def disconnect_db():
     global cur, conn
@@ -691,12 +699,3 @@ class NodeTable:
         return (xmin, ymin, xmax, ymax)
     
 # end class NodeTable
-
-def main():
-    """
-    Module tests here
-    """
-    pass
-
-if __name__ == "__main__":
-    main()
