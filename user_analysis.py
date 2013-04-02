@@ -36,16 +36,19 @@ for placename in places.keys():
     (conn, cur) = MapGardening.init_db(places[placename]['dbname'])
     us = UserStats.UserStats(conn, cur)
         
-#   create_userstats_table()
+    #us.create_userstats_table()
        
-#   add_userstats_blankedits() 
-#   add_userstats_v1edits() 
+    #us.add_userstats_blankedits() 
+    #us.add_userstats_v1edits() 
 
-    us.add_userstats_firstedit()
-    us.add_userstats_firstedit_v1()
-    us.add_userstats_firstedit_blank()
+    #us.add_userstats_firstedit()
+    #us.add_userstats_firstedit_v1()
+    #us.add_userstats_firstedit_blank()
+    
+    userdates = us.get_dates_and_edit_counts() 
+    us.add_userstats_days_active(userdates) 
 
-    us.print_userstats("output2_" + placename + ".tsv")
+    us.print_userstats("outputv3_" + placename + ".tsv")
             
 
              
