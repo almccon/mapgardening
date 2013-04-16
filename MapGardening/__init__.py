@@ -712,4 +712,47 @@ class NodeTable:
         (xmin, ymin, xmax, ymax) = cur.fetchone()
         return (xmin, ymin, xmax, ymax)
     
+    def get_blankspot_stats(self):
+        """
+        Count the number of blankspots and other nodes in this table.
+        Print nothing but do not error if table does not exist.
+        """
+        querystring = "SELECT count(*) FROM " + self.nodetablename + " " + \
+            "WHERE blank = 't'"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't select count from node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+        
+        blankcount = cur.fetchone()[0]
+        
+        querystring = "SELECT count(*) FROM " + self.nodetablename + " " + \
+            "WHERE version = 1"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't select count from node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+        
+        v1count = cur.fetchone()[0]
+        
+        querystring = "SELECT count(*) FROM " + self.nodetablename 
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't select count from node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+        
+        editcount = cur.fetchone()[0]
+
+        print "%s\t%s\t%s\t%s" % (self.nodetablename, blankcount, v1count, editcount)
+        
+    
 # end class NodeTable
