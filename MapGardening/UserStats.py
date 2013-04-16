@@ -1,12 +1,9 @@
 """
 Functions to calculate stats for each OSM contributor
-
-@author: alan
 """
 import MapGardening
-import math
 import logging
-import datetime
+from datetime import datetime, timedelta
 
 userstatstable = "usercounts"
 
@@ -14,6 +11,7 @@ class UserStats(object):
     
     conn = None
     cur = None
+    utc_offset = 0
     
     def __init__(self, connection, cursor):
         """
@@ -21,7 +19,7 @@ class UserStats(object):
         """
         self.conn = connection
         self.cur = cursor
-
+        
     def create_userstats_table(self):
         """
         Create a table called userstats in the currently connected database
@@ -147,7 +145,8 @@ class UserStats(object):
         return self.add_userstats_firstedit("WHERE blank=true", "firsteditblank")
     
     def get_dates_and_edit_counts(self):
-        
+       
+        print "gathering dates and edit counts" 
         user_date_dict = {}
         
         querystring = "SELECT username, valid_from, version, blank " + \
@@ -157,22 +156,29 @@ class UserStats(object):
         except Exception, inst:
             logging.error("can't select from nodes table")
             logging.error(inst)
+
+        rows = self.cur.fetchall()
         
-        for row in self.cur.fetchall():
+        if rows == None:
+            return "" 
+        
+        for row in rows:
             (username, valid_from, version, blank) = row
             if not username in user_date_dict:
                 user_date_dict[username] = {}
-            # TODO: Convert valid_from from datetime to just date. And check TZ.
-            # Currently the keys are full datetime. Not what we desire.
-            edit_date = valid_from
-            if not edit_date in user_date_dict[username]:
-                user_date_dict[username][edit_date] = {'all': 0, 'v1': 0, 'blank': 0}
+            
+            td = timedelta(hours=self.utc_offset)
+            edit_dt = valid_from + td
+            edit_date_str = str(edit_dt.date())
+            
+            if not edit_date_str in user_date_dict[username]:
+                user_date_dict[username][edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
                 
-            user_date_dict[username][valid_from]['all'] += 1
+            user_date_dict[username][edit_date_str]['all'] += 1
             if version == 1: 
-                user_date_dict[username][valid_from]['v1'] += 1
+                user_date_dict[username][edit_date_str]['v1'] += 1
             if blank == True: 
-                user_date_dict[username][valid_from]['blank'] += 1
+                user_date_dict[username][edit_date_str]['blank'] += 1
         return user_date_dict
         
     def add_userstats_mean_date(self, user_date_dict=None):
@@ -199,6 +205,8 @@ class UserStats(object):
         """
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
+            
+        print "counting days active"
             
         newcolumn = "days_active"
         
