@@ -50,42 +50,56 @@ default_rastertablename = "dummy_rast"
 default_rasterid = 3
 
 # A dict to store information about each case study area 
+# Note: the utc_offset is for calculating the local time based on the 
+# UTC timestamps in the database. This is a naive implementation of
+# time zones that does not take into account DST. So, for much of the year
+# these times will be off by one. However, this is good enough for the
+# purposes of this analysis. Later, use the pytz module for more accuracy.
 places = {
             'tirana': {
                         'dbname': "osm-history-render-tirana",
                         'rastertableproj': 32634, # WGS 84 / UTM zone 34N
+                        'utc_offset': 1,
                        },
             'bayarea': {
                         'dbname': "osm-history-render-bayarea",
                         'rastertableproj': 26910,
+                        'utc_offset': -8,
                        },
             'seattle': {
                         'dbname': "osm-history-render-seattle",
                         'rastertableproj': 26910,
+                        'utc_offset': -8,
                        },
             'vancouver': {
                         'dbname': "osm-history-render-vancouver",
                         'rastertableproj': 26910,
+                        'utc_offset': -8,
                        },
             'haiti': {
                         'dbname': "osm-history-render-haiti",
                         'rastertableproj': 32618, # WGS 84 / UTM zone 18N
+                        'utc_offset': -5,
                        },
             'manchester': {
                         'dbname': "osm-history-render-manchester",
                         'rastertableproj': 32630, # WGS 84 / UTM zone 30N
+                        'utc_offset': 0,
                        },
             'london': {
                         'dbname': "osm-history-render-london",
                         'rastertableproj': 32630, # WGS 84 / UTM zone 30N
+                        'utc_offset': 0,
                        },
             'amsterdam': {
                         'dbname': "osm-history-render-amsterdam",
                         'rastertableproj': 32631, # WGS 84 / UTM zone 31N
+                        'utc_offset': 1,
                        },
             'cairo': {
                         'dbname': "osm-history-render-cairo",
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
+                        'utc_offset': 2,
                        },
           }
 
