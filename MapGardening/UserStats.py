@@ -30,7 +30,7 @@ class UserStats(object):
         responsible for)
         """
         
-        querystring = "CREATE TABLE usercounts AS SELECT uid, username, count(username) from " +\
+        querystring = "CREATE TABLE " + userstatstable + " AS SELECT uid, username, count(username) from " +\
             MapGardening.global_nodetablename + " GROUP BY uid, username ORDER BY count DESC"
         try:
             self.cur.execute(querystring)
@@ -166,7 +166,7 @@ class UserStats(object):
             (username, valid_from, version, blank) = row
             if not username in user_date_dict:
                 user_date_dict[username] = {}
-            
+                
             td = timedelta(hours=self.utc_offset)
             edit_dt = valid_from + td
             edit_date_str = str(edit_dt.date())
