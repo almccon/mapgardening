@@ -40,6 +40,14 @@ class UserStats(object):
         self.conn.commit()
        
     def add_userstats_countedits(self, queryparam = "WHERE blank=true", newcolumn = "newcount"): 
+        """
+        Count number of edits per user, then add as new column to userstats table.
+ 
+        By default, counts all the edits in the database (using an empty query parameter)
+        This function can also be called by a number of convenience functions that
+        specify which type of edits to count (all, only v1, only blanks, etc).
+        """
+        
         temptablename = userstatstable + "_temp" + newcolumn
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
@@ -143,7 +151,27 @@ class UserStats(object):
         """
         
         return self.add_userstats_firstedit("WHERE blank=true", "firsteditblank")
+
+    def _days_since_epoch(self, input_date_obj):
+        """
+        Given a date object, return number of days since epoch.
+        This makes it easier to calculate the mean date of activity.
+        """
+        epoch = datetime.datetime.utcfromtimestamp(0)
+        delta = input_date_obj - epoch
+        return delta.days 
     
+    def _date_from_days_since_epoch(self, days_since_epoch_int):
+        """
+        Reverse the calculation from _days_since_epoch(). Given an integer
+        representing the number of days since Jan 1, 1970, return a date object
+        for that date.
+        """
+        epoch = datetime.datetime.utcfromtimestamp(0)
+        delta = timedelta(days=days_since_epoch_int)
+        date_obj = epoch + delta
+        return date_obj
+            
     def get_dates_and_edit_counts(self):
        
         print "gathering dates and edit counts" 
@@ -166,9 +194,12 @@ class UserStats(object):
             (username, valid_from, version, blank) = row
             if not username in user_date_dict:
                 user_date_dict[username] = {}
-                
+
+            # Shift utc datetimes to local time
             td = timedelta(hours=self.utc_offset)
             edit_dt = valid_from + td
+            
+            # Return a date object (drop time info) from the datetime object
             edit_date_str = str(edit_dt.date())
             
             if not edit_date_str in user_date_dict[username]:
@@ -189,6 +220,8 @@ class UserStats(object):
             user_date_dict = self.get_dates_and_edit_counts()
         # Get keys for each user dict (list of dates)
         # convert keys to integers (timedelta?), find mean, convert back to date.    
+        for username in user_date_dict:
+            print username, numpy.mean(user_date_dict[]) 
     
     def add_userstats_weighted_mean_date(self, user_date_dict=None):
         """
