@@ -226,6 +226,19 @@ class UserStats(object):
         """
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
+        
+        print "calculated mean edit dates"
+        
+        newcolumn = "mean_date"
+        
+        querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " date"
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't add new column")
+            logging.error(inst)
+        self.conn.commit() 
+        
         # Get keys for each user dict (list of dates)
         # convert keys to integers, find mean, convert back to date.    
         for username in user_date_dict:
@@ -237,6 +250,15 @@ class UserStats(object):
             print username, mean_date
             mean_date_dt = self._date_from_days_since_epoch(mean_date)
             print mean_date_dt
+            querystring = "UPDATE " + userstatstable + " " + \
+                "SET " + newcolumn + " = %s " + \
+                "WHERE username = %s"
+            try:
+                self.cur.execute(querystring, (mean_date_dt, username))
+            except Exception, inst:
+                logging.error("can't update mean_date column")
+                logging.error(inst)
+        self.conn.commit()
     
     def add_userstats_weighted_mean_date(self, user_date_dict=None):
         """
