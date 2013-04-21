@@ -49,6 +49,7 @@ for placename in places.keys():
     
     userdates = us.get_dates_and_edit_counts() 
     us.add_userstats_days_active(userdates) 
+    us.add_userstats_mean_date(userdates)
 
     us.print_userstats("outputv3_" + placename + "_1000m.tsv")
             

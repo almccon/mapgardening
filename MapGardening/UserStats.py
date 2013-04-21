@@ -4,6 +4,7 @@ Functions to calculate stats for each OSM contributor
 import MapGardening
 import logging
 from datetime import datetime, timedelta
+import numpy
 
 userstatstable = "usercounts"
 
@@ -152,14 +153,21 @@ class UserStats(object):
         
         return self.add_userstats_firstedit("WHERE blank=true", "firsteditblank")
 
-    def _days_since_epoch(self, input_date_obj):
+    def _days_since_epoch_obj(self, input_date_obj):
         """
         Given a date object, return number of days since epoch.
         This makes it easier to calculate the mean date of activity.
         """
-        epoch = datetime.datetime.utcfromtimestamp(0)
+        epoch = datetime.utcfromtimestamp(0)
         delta = input_date_obj - epoch
         return delta.days 
+    
+    def _days_since_epoch(self, input_date_str):
+        """
+        Given a date string of format YYYY-MM-DD return number od days since epoch.
+        """
+        date_obj = datetime.strptime(input_date_str, "%Y-%m-%d")
+        return self._days_since_epoch_obj(date_obj)
     
     def _date_from_days_since_epoch(self, days_since_epoch_int):
         """
@@ -167,7 +175,7 @@ class UserStats(object):
         representing the number of days since Jan 1, 1970, return a date object
         for that date.
         """
-        epoch = datetime.datetime.utcfromtimestamp(0)
+        epoch = datetime.utcfromtimestamp(0)
         delta = timedelta(days=days_since_epoch_int)
         date_obj = epoch + delta
         return date_obj
@@ -219,9 +227,16 @@ class UserStats(object):
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
         # Get keys for each user dict (list of dates)
-        # convert keys to integers (timedelta?), find mean, convert back to date.    
+        # convert keys to integers, find mean, convert back to date.    
         for username in user_date_dict:
-            print username, numpy.mean(user_date_dict[]) 
+            date_keys = user_date_dict[username].keys()
+            print date_keys
+            list_of_dates = map(self._days_since_epoch, date_keys)
+            print list_of_dates
+            mean_date = round(numpy.mean(list_of_dates))
+            print username, mean_date
+            mean_date_dt = self._date_from_days_since_epoch(mean_date)
+            print mean_date_dt
     
     def add_userstats_weighted_mean_date(self, user_date_dict=None):
         """
@@ -230,7 +245,7 @@ class UserStats(object):
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
         # Get keys for each user dict (list of dates)
-        # convert keys to integers (timedelta?), find weighted mean, convert back to date.    
+        # convert keys to integers, find weighted mean, convert back to date.    
         
     def add_userstats_days_active(self, user_date_dict=None):
         """
