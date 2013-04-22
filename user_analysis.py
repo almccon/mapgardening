@@ -38,10 +38,11 @@ for placename in places.keys():
     
     us.utc_offset = places[placename]['utc_offset']
         
+    us.drop_userstats_table()
     us.create_userstats_table()
        
-    us.add_userstats_blankedits() 
     us.add_userstats_v1edits() 
+    us.add_userstats_blankedits() 
 
     us.add_userstats_firstedit()
     us.add_userstats_firstedit_v1()

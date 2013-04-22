@@ -21,6 +21,19 @@ class UserStats(object):
         self.conn = connection
         self.cur = cursor
         
+    def drop_userstats_table(self):
+        """
+        Drop the userstats table.
+        """
+        
+        querystring = "DROP TABLE " + userstatstable
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't select username and count")
+            logging.error(inst)
+        self.conn.commit()
+        
     def create_userstats_table(self):
         """
         Create a table called userstats in the currently connected database
