@@ -67,8 +67,9 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't add new column")
-            logging.error(inst)
+            self.conn.rollback()
+            logging.warning("can't add new column")
+            logging.warning(inst)
         self.conn.commit()
         
         querystring = "UPDATE " + userstatstable + " " + \
@@ -107,7 +108,7 @@ class UserStats(object):
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
-            "SELECT DISTINCT ON (username) username, valid_from " + \
+            "SELECT DISTINCT ON (username) username, valid_from AS " + newcolumn + " " + \
             "FROM " + MapGardening.global_nodetablename + " " + queryparam + " " + \
             "ORDER BY username, valid_from ASC"
         try:
@@ -121,15 +122,16 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't add new column")
-            logging.error(inst)
+            self.conn.rollback()
+            logging.warning("can't add new column")
+            logging.warning(inst)
         self.conn.commit()
        
         querystring = "UPDATE " + userstatstable + " " \
             "SET " + newcolumn + " = (" + \
             "SELECT " + newcolumn + " from " + \
             temptablename + " WHERE " + \
-            temptablename + ".uid = " + userstatstable + ".uid)"
+            temptablename + ".username = " + userstatstable + ".username)"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -227,19 +229,22 @@ class UserStats(object):
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
         
-        print "calculating mean edit dates"
+        status = "calculating mean edit dates"
         
         newcolumn = "mean_date"
         if weighted == True:
             newcolumn = newcolumn + "_weighted"
+            status += " (weighted)"
+            
+        print status
         
         querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " date"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
             self.conn.rollback()
-            logging.error("can't add new column")
-            logging.error(inst)
+            logging.warning("can't add new column")
+            logging.warning(inst)
         self.conn.commit() 
         
         # Get keys for each user dict (list of dates)
@@ -280,8 +285,9 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't add new column")
-            logging.error(inst)
+            self.conn.rollback()
+            logging.warning("can't add new column")
+            logging.warning(inst)
         self.conn.commit()    
             
         for username in user_date_dict:
