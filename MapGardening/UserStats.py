@@ -124,12 +124,12 @@ class UserStats(object):
             logging.error("can't add new column")
             logging.error(inst)
         self.conn.commit()
-        
+       
         querystring = "UPDATE " + userstatstable + " " \
             "SET " + newcolumn + " = (" + \
             "SELECT " + newcolumn + " from " + \
             temptablename + " WHERE " + \
-            temptablename + ".uid = " + userstatstable + ".uid)"  
+            temptablename + ".uid = " + userstatstable + ".uid)"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -220,21 +220,24 @@ class UserStats(object):
                 user_date_dict[username][edit_date_str]['blank'] += 1
         return user_date_dict
         
-    def add_userstats_mean_date(self, user_date_dict=None):
+    def add_userstats_mean_date(self, weighted=False, user_date_dict=None):
         """
         Of all the days the mapper is active, find the average (mean) date of activity
         """
         if user_date_dict == None:
             user_date_dict = self.get_dates_and_edit_counts()
         
-        print "calculated mean edit dates"
+        print "calculating mean edit dates"
         
         newcolumn = "mean_date"
+        if weighted == True:
+            newcolumn = newcolumn + "_weighted"
         
         querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " date"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
+            self.conn.rollback()
             logging.error("can't add new column")
             logging.error(inst)
         self.conn.commit() 
@@ -243,13 +246,15 @@ class UserStats(object):
         # convert keys to integers, find mean, convert back to date.    
         for username in user_date_dict:
             date_keys = user_date_dict[username].keys()
-            print date_keys
+            if weighted:
+                weights = []
+                for dk in date_keys:
+                    weights.append(user_date_dict[username][dk]['all'])
+            else:
+                weights = None
             list_of_dates = map(self._days_since_epoch, date_keys)
-            print list_of_dates
-            mean_date = round(numpy.mean(list_of_dates))
-            print username, mean_date
+            mean_date = round(numpy.average(list_of_dates, None, weights))
             mean_date_dt = self._date_from_days_since_epoch(mean_date)
-            print mean_date_dt
             querystring = "UPDATE " + userstatstable + " " + \
                 "SET " + newcolumn + " = %s " + \
                 "WHERE username = %s"
@@ -260,15 +265,6 @@ class UserStats(object):
                 logging.error(inst)
         self.conn.commit()
     
-    def add_userstats_weighted_mean_date(self, user_date_dict=None):
-        """
-        Find the mean date of activity, weighted by number of edited nodes on each day
-        """
-        if user_date_dict == None:
-            user_date_dict = self.get_dates_and_edit_counts()
-        # Get keys for each user dict (list of dates)
-        # convert keys to integers, find weighted mean, convert back to date.    
-        
     def add_userstats_days_active(self, user_date_dict=None):
         """
         Count the number of days (calendar days in each region's timezone) the mapper edited the db
