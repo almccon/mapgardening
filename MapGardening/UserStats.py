@@ -13,13 +13,15 @@ class UserStats(object):
     conn = None
     cur = None
     utc_offset = 0
+    nodetableobj = None
     
-    def __init__(self, connection, cursor):
+    def __init__(self, connection, cursor, nodetableobj):
         """
         Initialize
         """
         self.conn = connection
         self.cur = cursor
+        self.nodetableobj = nodetableobj
         
     def drop_userstats_table(self):
         """
@@ -45,7 +47,7 @@ class UserStats(object):
         """
         
         querystring = "CREATE TABLE " + userstatstable + " AS SELECT uid, username, count(username) from " +\
-            MapGardening.global_nodetablename + " GROUP BY uid, username ORDER BY count DESC"
+            self.nodetableobj.getTableName() + " GROUP BY uid, username ORDER BY count DESC"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -67,7 +69,7 @@ class UserStats(object):
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
             "SELECT uid, username, count(uid) AS " + newcolumn + " FROM " + \
-            MapGardening.global_nodetablename + " " + queryparam + " " + \
+            self.nodetableobj.getTableName() + " " + queryparam + " " + \
             "GROUP BY uid, username ORDER BY " + newcolumn + " DESC"  
         try:
             self.cur.execute(querystring)
@@ -122,7 +124,7 @@ class UserStats(object):
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
             "SELECT DISTINCT ON (username) username, valid_from AS " + newcolumn + " " + \
-            "FROM " + MapGardening.global_nodetablename + " " + queryparam + " " + \
+            "FROM " + self.nodetableobj.getTableName() + " " + queryparam + " " + \
             "ORDER BY username, valid_from ASC"
         try:
             self.cur.execute(querystring)
@@ -201,7 +203,7 @@ class UserStats(object):
         user_date_dict = {}
         
         querystring = "SELECT username, valid_from, version, blank " + \
-            "FROM " + MapGardening.global_nodetablename 
+            "FROM " + self.nodetableobj.getTableName() 
         try:
             self.cur.execute(querystring)
         except Exception, inst:

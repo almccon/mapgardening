@@ -34,7 +34,8 @@ for placename in places.keys():
     print "starting", placename 
        
     (conn, cur) = MapGardening.init_db(places[placename]['dbname'])
-    us = UserStats.UserStats(conn, cur)
+    nt = MapGardening.NodeTable() # Using defaults
+    us = UserStats.UserStats(conn, cur, nt)
     
     us.utc_offset = places[placename]['utc_offset']
         

@@ -44,9 +44,8 @@ conn = 0    # will be populated by init_db()
 cur = 0     # will be populated by init_db()
 
 # TODO: remove these globals, move them to a config file
-# Note, they are also used in the UserStats module
-global_nodetablename = "hist_point"
-global_nodetableproj = 3857
+default_nodetablename = "hist_point"
+default_nodetableproj = 3857
 
 default_rastertablename = "dummy_rast"
 default_rasterid = 3
@@ -300,12 +299,14 @@ class Cell:
     record_id = None
     x = None
     y = None
+    nodetableobj = None
     
-    def __init__(self, raster, rec, x, y):
+    def __init__(self, raster, rec, x, y, nodetableobj):
         self.rastertablename = raster
         self.record_id = rec
         self.x = x
         self.y = y
+        self.nodetableobj = nodetableobj
         
     def analyze_nodes(self, set_nodes_individually_flag=False):
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
@@ -314,9 +315,9 @@ class Cell:
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
             "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from " + \
-            "FROM " + self.rastertablename + " a, " + global_nodetablename + " b " + \
+            "FROM " + self.rastertablename + " a, " + nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
-            "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(global_nodetableproj) + ")) " + \
+            "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(nodetableobj.getProj()) + ")) " + \
             "AND b.version = 1 ORDER BY b.valid_from"
         try:
             cur.execute(querystring, (self.x, self.y))
@@ -364,7 +365,7 @@ class Cell:
                 list_of_nodes_tuple = tuple(set(list_of_nodes)) 
                 
                 # For all nodes set blank = FALSE 
-                querystring = "UPDATE " + global_nodetablename + " SET blank = FALSE WHERE id IN %s" 
+                querystring = "UPDATE " + self.nodetableobj.getTableName() + " SET blank = FALSE WHERE id IN %s" 
                 try:
                     cur.execute(querystring, (list_of_nodes_tuple,))
                 except Exception, inst:
@@ -379,7 +380,7 @@ class Cell:
             print "updating node %s" % earliest_id
             
             # For the first node (and only the first node) set blank = TRUE 
-            querystring = "UPDATE " + global_nodetablename + " SET blank = TRUE WHERE id = %s AND version = 1" 
+            querystring = "UPDATE " + self.nodetableobj.getTableName() + " SET blank = TRUE WHERE id = %s AND version = 1" 
             try:
                 cur.execute(querystring, (earliest_id,))
             except Exception, inst:
@@ -562,14 +563,17 @@ class Node:
     version = None
     userid = None
     username = None
-    def __init__(self, nodeid=None, version=None, userid=None, username=None):
+    nodetableobj = None
+    
+    def __init__(self, nodeid, version, userid, username, nodetableobj):
         self.nodeid = nodeid 
         self.version = version
         self.userid = userid
         self.username = username
+        self.nodetableobj = nodetableobj
 
     def highest_version(self):
-        querystring = "SELECT version from \"" + global_nodetablename + "\" WHERE id = %s ORDER BY version LIMIT 1"
+        querystring = "SELECT version from \"" + self.nodetableobj.getTableName() + "\" WHERE id = %s ORDER BY version LIMIT 1"
         try:
             cur.execute(querystring, (self.nodeid,))
         except Exception, inst:
@@ -592,7 +596,7 @@ class Node:
 
         if is_past is True:
             querystring = "SELECT b.id, b.version, b.uid, b.username "
-            "FROM " + global_nodetablename + " a, " + global_nodetablename + " b "
+            "FROM " + self.nodetableobj.getTableName() + " a, " + self.nodetableobj.getTableName() + " b "
             "WHERE a.id = %s "
             "AND b.valid_from < a.valid_from "
             "AND b.valid_to > a.valid_from "
@@ -600,7 +604,7 @@ class Node:
             "AND a.uid != b.uid"
         else:
             querystring = "SELECT b.id, b.version, b.uid, b.username "
-            "FROM " + global_nodetablename + " a, " + global_nodetablename + " b "
+            "FROM " + self.nodetableobj.getTableName() + " a, " + self.nodetableobj.getTableName() + " b "
             "WHERE a.id = %s "
             "AND a.valid_from < b.valid_from "
             "AND a.valid_to > b.valid_from "
@@ -622,7 +626,7 @@ class Node:
             username = row[3]
             #print nodeid, " ", version 
             if return_node_obj:
-                newnode = Node(nodeid, version, userid, username)
+                newnode = Node(nodeid, version, userid, username, self.nodetableobj)
                 closenodes.append(newnode)
             else:
                 closenodes.append(nodeid)
@@ -648,7 +652,7 @@ class Node:
         #print "set_nearby_features_future_notblank"
 
         # this doesn't seem to work
-        querystring = "UPDATE b SET blank = FALSE FROM \"" + global_nodetablename + "\" a, \"" + global_nodetablename + "\" b WHERE a.id = %s AND a.valid_from < b.valid_from AND a.valid_to > b.valid_from AND ST_DWithin(a.geom, b.geom, %s) AND a.uid != b.uid"
+        querystring = "UPDATE b SET blank = FALSE FROM \"" + self.nodetableobj.getTableName() + "\" a, \"" + self.nodetableobj.getTableName() + "\" b WHERE a.id = %s AND a.valid_from < b.valid_from AND a.valid_to > b.valid_from AND ST_DWithin(a.geom, b.geom, %s) AND a.uid != b.uid"
         try:
             cur.execute(querystring, (self.nodeid, distance))
         except Exception, inst:
@@ -660,9 +664,9 @@ class Node:
 
     def setblank(self, flag):
         if flag is True:
-            querystring = "UPDATE \"" + global_nodetablename + "\" SET blank = TRUE WHERE version = 1 AND id = %s"
+            querystring = "UPDATE \"" + self.nodetableobj.getTableName() + "\" SET blank = TRUE WHERE version = 1 AND id = %s"
         else:
-            querystring = "UPDATE \"" + global_nodetablename + "\" SET blank = FALSE WHERE version = 1 AND id = %s"
+            querystring = "UPDATE \"" + self.nodetableobj.getTableName() + "\" SET blank = FALSE WHERE version = 1 AND id = %s"
         try:
             cur.execute(querystring, (self.nodeid,))
         except Exception, inst:
@@ -673,7 +677,7 @@ class Node:
         conn.commit()
 
     def is_null_blankspot(self):
-        querystring = "SELECT * FROM \"" + global_nodetablename + "\" WHERE version = 1 AND id = %s and blank IS NULL"
+        querystring = "SELECT * FROM \"" + self.nodetableobj.getTableName() + "\" WHERE version = 1 AND id = %s and blank IS NULL"
         try:
             cur.execute(querystring, (self.nodeid,))
         except Exception, inst:
@@ -696,10 +700,19 @@ class NodeTable:
     Uses same format as hist_point from osm-history-render
     but with added "blank" field for storing blank spot information
     """
+
+    nodetablename = None
+    nodetableproj = None
     
-    def __init__(self, tablename=global_nodetablename, tableproj=3857):
+    def __init__(self, tablename=default_nodetablename, tableproj=default_nodetableproj):
         self.nodetablename = tablename
         self.nodetableproj = tableproj
+    
+    def getTableName(self):
+        return self.nodetablename
+    
+    def getProj(self):
+        return self.nodetableproj
         
     def set_multiple_nodes_notblank(self, list_of_nodeids):
     
@@ -807,7 +820,7 @@ class NodeTable:
             nodeid = row[0]
             userid = row[1]
             username = row[2]
-            nodes.append(Node(nodeid, 1, userid, username))
+            nodes.append(Node(nodeid, 1, userid, username, self))
     
         print "finished getting list of null blankspots..."
         return nodes
