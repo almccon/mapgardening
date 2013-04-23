@@ -296,13 +296,13 @@ class BlankSpotTableManager:
         
 class Cell:
     """a raster cell"""
-    tablename = None
+    rastertablename = None
     record_id = None
     x = None
     y = None
     
     def __init__(self, raster, rec, x, y):
-        self.tablename = raster
+        self.rastertablename = raster
         self.record_id = rec
         self.x = x
         self.y = y
@@ -314,7 +314,7 @@ class Cell:
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
             "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from " + \
-            "FROM " + self.tablename + " a, " + global_nodetablename + " b " + \
+            "FROM " + self.rastertablename + " a, " + global_nodetablename + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
             "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(global_nodetableproj) + ")) " + \
             "AND b.version = 1 ORDER BY b.valid_from"
@@ -393,7 +393,7 @@ class Cell:
             
         # Now just update the raster for visualization purposes
                
-        querystring = "UPDATE " + self.tablename + " SET rast = ST_SetValue(" + self.tablename + ".rast, 1, %s, %s, %s) WHERE rid = " + str(self.record_id)
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_SetValue(" + self.rastertablename + ".rast, 1, %s, %s, %s) WHERE rid = " + str(self.record_id)
         try:
             cur.execute(querystring, (self.x, self.y, length))
         except Exception, inst:
@@ -417,7 +417,7 @@ class Raster:
     
     Skew is always 0
     """
-    tablename = None
+    rastertablename = None
     record_id = None
     width = None
     height = None
@@ -428,7 +428,7 @@ class Raster:
     nodetableobj = None
     
     def __init__(self, raster = default_rastertablename, rec = default_rasterid):
-        self.tablename = raster
+        self.rastertablename = raster
         self.record_id = rec
     
     def add_node_table(self, nodetableobj):
@@ -445,7 +445,7 @@ class Raster:
         #drop table
         #create table
         
-        querystring = "DROP TABLE " + self.tablename # drop the old table
+        querystring = "DROP TABLE " + self.rastertablename # drop the old table
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -454,7 +454,7 @@ class Raster:
             logging.error(inst)
         conn.commit()
         
-        querystring = "CREATE TABLE " + self.tablename + " (rid integer, rast raster)"
+        querystring = "CREATE TABLE " + self.rastertablename + " (rid integer, rast raster)"
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -464,7 +464,7 @@ class Raster:
             sys.exit() 
         conn.commit() 
     
-        querystring = "INSERT INTO " + self.tablename + " (rid, rast) " + \
+        querystring = "INSERT INTO " + self.rastertablename + " (rid, rast) " + \
             "VALUES (" + str(self.record_id) + ", ST_MakeEmptyRaster(%s,%s,%s,%s,%s,%s,0,0,%s))"
         try:
             cur.execute(querystring, (self.width, self.height, self.upperLeftX, self.upperLeftY, self.scale, self.scale, self.proj))
@@ -475,7 +475,7 @@ class Raster:
             sys.exit() 
         conn.commit()
         
-        querystring = "UPDATE " + self.tablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -487,7 +487,7 @@ class Raster:
             
     def get_width(self, get_from_db=False):
         if not self.width or get_from_db:
-            querystring = "SELECT ST_Width(rast) FROM " + self.tablename + " " + \
+            querystring = "SELECT ST_Width(rast) FROM " + self.rastertablename + " " + \
                 "WHERE rid = " + str(self.record_id)
             try:
                 cur.execute(querystring)
@@ -503,7 +503,7 @@ class Raster:
     
     def get_height(self, get_from_db=False):
         if not self.height or get_from_db:
-            querystring = "SELECT ST_Height(rast) FROM " + self.tablename  + " " + \
+            querystring = "SELECT ST_Height(rast) FROM " + self.rastertablename  + " " + \
                 "WHERE rid = " + str(self.record_id)
             try:
                 cur.execute(querystring)
@@ -539,7 +539,7 @@ class Raster:
         
     
     def get_cell(self, x, y):
-        return Cell(self.tablename, self.record_id, x, y)
+        return Cell(self.rastertablename, self.record_id, x, y)
       
     def get_proj(self):
         # TODO: should query db if object doesn't know it
