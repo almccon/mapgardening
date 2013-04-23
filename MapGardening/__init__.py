@@ -10,6 +10,7 @@ from __future__ import division
 import sys
 import os
 import time
+import datetime
 import logging
 
 lib_dir = "/Users/alan/github/DYCAST/application/libs"
@@ -103,8 +104,6 @@ places = {
                        },
           }
 
-# not currently used:
-blankspottablename = "blankspots"
 
 def init_logging():
     logging.basicConfig(format='%(asctime)s %(levelname)8s %(message)s',
@@ -151,21 +150,149 @@ def get_all_places():
 
 class BlankSpotTable:
     """
-    The database table storing whether a node was create in a blank spot or not
-    TODO: Still under construction
-    """
-    tablename = None
+    The database table storing whether a node was created in a blank spot or not
     
-    def __init__(self, tablename=blankspottablename):
+    Each BlankSpotTable object is unaware of any other tables or 
+    BlankSpotTable objects. It is up to the BlankSpotTableManager 
+    to keep track of these.
+    
+    Each BlankSpotTable object is also not necessarily aware of 
+    which parameters it is associated with. Again, it is up to the 
+    BlankSpotTableManager to keep track of the parameters. The
+    BlankSpotTable object only needs to know the parameters when 
+    creating a new table (to pick a reasonable table name)
+    """
+    
+    _tablename = "blankspots"
+    _params = {}
+    
+    def __init__(self, in_params):
+        """Create an object that is not yet associated with a database table"""
+        # TODO: sanity checks on incoming params
+        self._params = in_params
+        
+        
+    def create_new_table(self):
         """Create the table if it doesn't exist already"""
-        querystring = "CREATE TABLE " + tablename + " " # ...continue here
+        self._tablename = self._tablename + "_" + self._params['runtype'] + "_" + str(int(self._params['resolution'])) + "_" + str(int(time.time())) 
+       
+        # TODO: handle exception if table exists 
+        querystring = "CREATE TABLE \"" + self._tablename + "\" " + \
+            "(node_id integer PRIMARY KEY, blank boolean)"
         try:
             cur.execute(querystring)
         except Exception, inst:
             logging.error("Unable to create blankspot table")
             logging.error(inst)
             conn.rollback()
-
+            
+    def connect_to_existing_table(self, tablename):
+        """
+        Connect to the given database table. Caller is responsible for 
+        checking that this table was created for this object's parameters
+        """
+        self._tablename = tablename
+        
+        # TODO: confirm that the table exists. Raise exception otherwise.
+            
+    def get_tablename(self):
+        return self._tablename
+            
+class BlankSpotTableManager:
+    """
+    Keep track of all the blankspot tables in the database
+    """
+    
+    _manager_tablename = "blankspot_manager" 
+    
+    def __init__(self):
+        """check if the manager table already exists. Else, throw error"""
+        pass
+    
+    def create_manager_table(self, tablename=None): 
+        """create the manager table already exists. Else, throw error"""
+        if tablename:
+            self._manager_tablename = tablename
+        querystring = "CREATE TABLE \"" + self._manager_tablename + "\" " + \
+            "(id SERIAL PRIMARY KEY, runtype char(16), resolution float, run_start timestamp, run_finish timestamp, tablename char(80))"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("Unable to create blankspot manager table")
+            logging.error(inst)
+            conn.rollback()
+    
+    def create_new_blankspot_table(self, params):
+        """create a new blankspot table for the given params"""
+        blankspot_table_obj = BlankSpotTable(params)
+        blankspot_table_obj.create_new_table()
+        
+        querystring = "INSERT INTO \"" + self._manager_tablename + "\" " + \
+            "(runtype, resolution, run_start, tablename) " + \
+            "VALUES (" + \
+            "%s" + ", " + \
+            "%s" + ", " + \
+            "%s, " + \
+            "'" + blankspot_table_obj.get_tablename() + "')"
+        try:
+            cur.execute(querystring, (params['runtype'], params['resolution'], datetime.datetime.now(),))
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't insert blankspot record in manager table")
+            logging.error(inst)
+        conn.commit()
+        
+        return blankspot_table_obj
+    
+    def get_existing_blankspot_table(self, params):
+        """
+        return latest blankspot table for the given params.
+        TODO: allow caller to specify a particular table, not just the latest one
+        """
+        querystring = "SELECT tablename FROM \"" + self._manager_tablename + "\" " + \
+            "WHERE runtype = %s " + \
+            "AND resolution = %s " + \
+            "ORDER BY id DESC"
+        try:
+            cur.execute(querystring, (params['runtype'], params['resolution']))
+        except Exception, inst:
+            logging.error("can't select existing blankspot table from manager")
+            logging.error(inst)
+        
+        rows = cur.fetchall()
+        
+        if len(rows) < 1:   
+            return None
+        tablename = rows[0][0]
+        
+        blankspot_table_obj = BlankSpotTable(params)
+        try:
+            blankspot_table_obj.connect_to_existing_table(tablename)
+        except Exception, inst:
+            logging.warning("blankspot table doesn't exist, returning None")
+            logging.warning(inst)
+            return None # or should I raise another exception?
+        
+        return blankspot_table_obj 
+    
+    def remove_blankspot_table(self, params):
+        """Drop specified table(s)"""
+        # TODO: add this!
+        # Drop blankspot table
+        # Remove entry from manager table
+        pass
+    
+    def update_run_finish_time(self, tablename):
+        """After finishing a blankspot run, update the time in the manager table"""
+        querystring = "UPDATE \"" + self._manager_tablename + "\" SET run_finish = %s"
+        try:
+            cur.execute(querystring, (time.time(),))
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't update run_finish in manager table")
+            logging.error(inst)
+        conn.commit()
+        
 class Cell:
     """a raster cell"""
     tablename = None
@@ -580,7 +707,7 @@ class NodeTable:
             logging.error(inst)
             sys.exit()
         conn.commit()
-        
+    
     def create_blankspot_column(self):
         querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
         try:
