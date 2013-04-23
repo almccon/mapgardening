@@ -12,6 +12,7 @@ import os
 import time
 import datetime
 import logging
+import math
 
 lib_dir = "/Users/alan/github/DYCAST/application/libs"
 
@@ -543,8 +544,15 @@ class Raster:
     def get_proj(self):
         # TODO: should query db if object doesn't know it
         return self.proj
-     
-        
+    
+    def find_expanded_bounds(self, xmin, ymin, xmax, ymax, rasterScale):
+        """Expand bounds beyond input dimensions to result in rounded UTM coords"""
+        self.scale = rasterScale
+        self.upperLeftX = int(math.floor(xmin / rasterScale) * rasterScale)
+        self.upperLeftY = int(math.floor(ymin / rasterScale) * rasterScale)
+        self.width = int(((math.ceil(xmax / rasterScale) * rasterScale) - self.upperLeftX) / rasterScale)
+        self.height = int(((math.ceil(ymax / rasterScale) * rasterScale) - self.upperLeftY) / rasterScale)
+        return (self.upperLeftX, self.upperLeftY, self.width, self.height)
     
 # end class Raster
 

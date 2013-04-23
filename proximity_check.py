@@ -3,7 +3,6 @@
 import MapGardening
 import optparse
 import time
-import math
 
 usage = "usage: %prog [options]"
 p = optparse.OptionParser(usage)
@@ -74,10 +73,8 @@ if place is not None:
         
         (xmin, ymin, xmax, ymax) = nodetable.calculate_extent(place['rastertableproj'])
         #print (xmin, ymin, xmax, ymax) 
-        rasterUpperLeftX = int(math.floor(xmin / rasterScale) * rasterScale)
-        rasterUpperLeftY = int(math.floor(ymin / rasterScale) * rasterScale)
-        rasterWidth = int(((math.ceil(xmax / rasterScale) * rasterScale) - rasterUpperLeftX) / rasterScale)
-        rasterHeight = int(((math.ceil(ymax / rasterScale) * rasterScale) - rasterUpperLeftY) / rasterScale)
+        
+        (rasterUpperLeftX, rasterUpperLeftY, rasterWidth, rasterHeight) = raster.find_expanded_bounds(xmin, ymin, xmax, ymax, rasterScale)
        
         #print (rasterUpperLeftX, rasterUpperLeftY, rasterWidth, rasterHeight) 
         raster.create_db_raster(rasterWidth, rasterHeight, rasterUpperLeftX, rasterUpperLeftY, rasterScale, place['rastertableproj'])
