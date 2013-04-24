@@ -315,9 +315,9 @@ class Cell:
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
             "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from " + \
-            "FROM " + self.rastertablename + " a, " + nodetableobj.getTableName() + " b " + \
+            "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
-            "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(nodetableobj.getProj()) + ")) " + \
+            "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) " + \
             "AND b.version = 1 ORDER BY b.valid_from"
         try:
             cur.execute(querystring, (self.x, self.y))
