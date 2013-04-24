@@ -195,7 +195,7 @@ class BlankSpotTable:
         
         # TODO: confirm that the table exists. Raise exception otherwise.
             
-    def get_tablename(self):
+    def getTableName(self):
         return self._tablename
             
 class BlankSpotTableManager:
@@ -233,7 +233,7 @@ class BlankSpotTableManager:
             "%s" + ", " + \
             "%s" + ", " + \
             "%s, " + \
-            "'" + blankspot_table_obj.get_tablename() + "')"
+            "'" + blankspot_table_obj.getTableName() + "')"
         try:
             cur.execute(querystring, (params['runtype'], params['resolution'], datetime.datetime.now(),))
         except Exception, inst:
@@ -282,9 +282,12 @@ class BlankSpotTableManager:
         # Remove entry from manager table
         pass
     
-    def update_run_finish_time(self, tablename):
+    def update_run_finish_time(self, blankspottableobj):
         """After finishing a blankspot run, update the time in the manager table"""
-        querystring = "UPDATE \"" + self._manager_tablename + "\" SET run_finish = %s"
+        querystring = "UPDATE \"" + self._manager_tablename + "\" " + \
+            "SET run_finish = %s " + \
+            "WHERE tablename = " + blankspottableobj.getTableName()
+        
         try:
             cur.execute(querystring, (time.time(),))
         except Exception, inst:
@@ -300,13 +303,15 @@ class Cell:
     x = None
     y = None
     nodetableobj = None
+    blankspottableobj = None
     
-    def __init__(self, raster, rec, x, y, nodetableobj):
+    def __init__(self, raster, rec, x, y, nodetableobj, blankspottableobj):
         self.rastertablename = raster
         self.record_id = rec
         self.x = x
         self.y = y
         self.nodetableobj = nodetableobj
+        self.blankspottableobj = blankspottableobj
         
     def analyze_nodes(self, set_nodes_individually_flag=False):
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
@@ -380,7 +385,7 @@ class Cell:
             print "updating node %s" % earliest_id
             
             # For the first node (and only the first node) set blank = TRUE 
-            querystring = "UPDATE " + self.nodetableobj.getTableName() + " SET blank = TRUE WHERE id = %s AND version = 1" 
+            querystring = "INSERT INTO " + self.blankspottableobj.getTableName() + " (node_id, blank) VALUES (%s, TRUE)" 
             try:
                 cur.execute(querystring, (earliest_id,))
             except Exception, inst:
@@ -427,6 +432,7 @@ class Raster:
     scale = None    # scaleX and scaleY always the same
     proj = None
     nodetableobj = None
+    blankspottableobj = None
     
     def __init__(self, raster = default_rastertablename, rec = default_rasterid):
         self.rastertablename = raster
@@ -434,6 +440,9 @@ class Raster:
     
     def add_node_table(self, nodetableobj):
         self.nodetableobj = nodetableobj
+        
+    def add_blankspot_table(self, blankspottableobj):
+        self.blankspottableobj = blankspottableobj
         
     def create_db_raster(self, w, h, ulx, uly, s, p):
         self.width = w
@@ -540,7 +549,7 @@ class Raster:
         
     
     def get_cell(self, x, y):
-        return Cell(self.rastertablename, self.record_id, x, y)
+        return Cell(self.rastertablename, self.record_id, x, y, self.nodetableobj, self.blankspottableobj)
       
     def get_proj(self):
         # TODO: should query db if object doesn't know it

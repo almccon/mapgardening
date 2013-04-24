@@ -16,7 +16,6 @@ p.add_option('--place', '-p',
 
 options, arguments = p.parse_args()
 
-set_nodes_individually_flag = False
 rasterScale = 250
 
 place = MapGardening.get_place(options.place)
@@ -29,39 +28,26 @@ if place is not None:
 
     MapGardening.init_db(place['dbname'])
     
-    # apply to nodes table, ignore others for now. 
+    # analyze to nodes table, ignore others for now. 
     
     nodetable = MapGardening.NodeTable()
     
     # TODO: test for spatial indexes before proceeding
     
-    # Create column: blankspot
-    # this will be for recording if the node was created in a blank spot on the map
-    nodetable.create_blankspot_column()
-    
-    # By definition, any node of version > 1 is not in a blank spot
-    ### Commented out for testing:
-    ### nodetable.set_v2_blankspots()
-    
+    bstm = MapGardening.BlankSpotTableManager() 
+   
+    # We assume the manager table exists. If not, create it. 
+    #if not bstm.table_exists():
+    #    bstm.create_manager_table()
 
-    if set_nodes_individually_flag == False:    
-        #nodetable.set_all_blankspots_true()
-        #nodetable.set_all_blankspots_null()
-        nodetable.set_all_blankspots_false()
-    
-    # If the data is an import, we don't care if it's in a blank spot or not
-    # For now, we'll just set these all as not blank, but really I should have
-    # another kind of flag there.
-    # However, when doing the raster analysis I read the imports like every
-    # other node, otherwise I would risk flagging a human's first node as blank
-    # even if it occurred in an area that already had imported nodes
-    
-    #nodetable.set_import_blankspots("mbiker_imports_and_more")
-    #nodetable.set_import_blankspots("pnorman_imports")
+    params = {
+                'runtype': "raster",
+                'resolution': rasterScale
+              }
+    blankspottable = bstm.create_new_blankspot_table(params)
 
-    do_raster_analysis = True
-
-    if do_raster_analysis:
+    
+    if params['runtype'] == "raster":
         print "doing raster analysis" 
         raster = MapGardening.Raster()
         
@@ -80,6 +66,7 @@ if place is not None:
         raster.create_db_raster(rasterWidth, rasterHeight, rasterUpperLeftX, rasterUpperLeftY, rasterScale, place['rastertableproj'])
         
         raster.add_node_table(nodetable)
+        raster.add_blankspot_table(blankspottable)
         
         st = time.time()
         lt = st
@@ -93,10 +80,7 @@ if place is not None:
             for row in range(1, height):
                 for column in range(1, width):
                     cell = raster.get_cell(column, row)
-                    if set_nodes_individually_flag == False:    
-                        cell.analyze_nodes()
-                    else:
-                        cell.analyze_nodes_and_preset_blanks()
+                    cell.analyze_nodes()
                     # counter:
                 
                     inc += 1      
@@ -111,8 +95,12 @@ if place is not None:
         except KeyboardInterrupt:
             print "KeyboardInterrupt caught"
             
+        bstm.update_run_finish_time(blankspottable)
+            
     else:
         # Else, we do the node-to-node proximity test   
+        
+        # TODO: update this for the new separate-blankspot-table style
 
         
         # select where blankspot = null (meaning we haven't checked it yet)
