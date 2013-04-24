@@ -286,10 +286,10 @@ class BlankSpotTableManager:
         """After finishing a blankspot run, update the time in the manager table"""
         querystring = "UPDATE \"" + self._manager_tablename + "\" " + \
             "SET run_finish = %s " + \
-            "WHERE tablename = " + blankspottableobj.getTableName()
+            "WHERE tablename = '" + blankspottableobj.getTableName() + "'"
         
         try:
-            cur.execute(querystring, (time.time(),))
+            cur.execute(querystring, (datetime.datetime.now(),))
         except Exception, inst:
             conn.rollback()
             logging.error("can't update run_finish in manager table")
