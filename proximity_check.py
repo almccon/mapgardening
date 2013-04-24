@@ -3,6 +3,7 @@
 import MapGardening
 import optparse
 import time
+import sys
 
 usage = "usage: %prog [options]"
 p = optparse.OptionParser(usage)
@@ -13,10 +14,20 @@ p.add_option('--type', '-t',
 p.add_option('--place', '-p',
              default="tirana"
              )
+p.add_option('--resolution', '-r',
+             default=1000,
+             help="analysis resolution in metres"
+             )
 
 options, arguments = p.parse_args()
 
-rasterScale = 250
+resolution = options.resolution
+runtype = options.type
+
+if runtype not in ['raster', 'proximity']:
+    print "type", runtype, "not recognized"
+    sys.exit()
+    
 
 place = MapGardening.get_place(options.place)
 
@@ -41,8 +52,8 @@ if place is not None:
     #    bstm.create_manager_table()
 
     params = {
-                'runtype': "raster",
-                'resolution': rasterScale
+                'runtype': runtype,
+                'resolution': resolution
               }
     blankspottable = bstm.create_new_blankspot_table(params)
 
@@ -50,6 +61,8 @@ if place is not None:
     if params['runtype'] == "raster":
         print "doing raster analysis" 
         raster = MapGardening.Raster()
+        
+        rasterScale = float(params['resolution'])
         
         # To make the raster edges line up with round-number units in the UTM
         # projection, divide by the rasterScale before applying floor and ceil
@@ -97,11 +110,11 @@ if place is not None:
             
         bstm.update_run_finish_time(blankspottable)
             
-    else:
+    elif params['runtype'] == "proximity":
         # Else, we do the node-to-node proximity test   
         
         # TODO: update this for the new separate-blankspot-table style
-
+        print "WARNING: the proximity mode has not been updated for the new blankspot db style"
         
         # select where blankspot = null (meaning we haven't checked it yet)
         # results in list of nodes to test. (order by... what?)
@@ -170,6 +183,9 @@ if place is not None:
         
         except KeyboardInterrupt:
             print "KeyboardInterrupt caught"
+    
+    else:
+        print "type", runtype, "not recognized"
 
 else:
     print "place not found"
