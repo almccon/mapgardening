@@ -189,7 +189,8 @@ class BlankSpotTable:
     def connect_to_existing_table(self, tablename):
         """
         Connect to the given database table. Caller is responsible for 
-        checking that this table was created for this object's parameters
+        checking that this table was created for this object's parameters.
+        Also, this method does not check if the table exists. 
         """
         self._tablename = tablename
         
@@ -197,6 +198,18 @@ class BlankSpotTable:
             
     def getTableName(self):
         return self._tablename
+    
+    def getBlankCount(self):
+        querystring = "SELECT count(*) FROM " + self._tablename + " WHERE blank=true"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("Unable to select count from blankspot table")
+            logging.error(inst)
+            conn.rollback()
+            return 0
+        result = cur.fetchone()[0]
+        return result or 0
             
 class BlankSpotTableManager:
     """
@@ -244,10 +257,12 @@ class BlankSpotTableManager:
         
         return blankspot_table_obj
     
-    def get_existing_blankspot_table(self, params):
+    def get_existing_blankspot_tables(self, params):
         """
-        return latest blankspot table for the given params.
-        TODO: allow caller to specify a particular table, not just the latest one
+        Return all blankspot tables for the given params.
+        They will be returned in a list from newest to oldest.
+        Return empty list if none found.
+        TODO: allow caller to specify a particular table, or a different ordering 
         """
         querystring = "SELECT tablename FROM \"" + self._manager_tablename + "\" " + \
             "WHERE runtype = %s " + \
@@ -256,31 +271,48 @@ class BlankSpotTableManager:
         try:
             cur.execute(querystring, (params['runtype'], params['resolution']))
         except Exception, inst:
-            logging.error("can't select existing blankspot table from manager")
+            logging.error("can't select existing blankspot tables from manager")
             logging.error(inst)
         
         rows = cur.fetchall()
         
-        if len(rows) < 1:   
-            return None
-        tablename = rows[0][0]
+        list_of_blankspot_table_objects = []
         
-        blankspot_table_obj = BlankSpotTable(params)
-        try:
-            blankspot_table_obj.connect_to_existing_table(tablename)
-        except Exception, inst:
-            logging.warning("blankspot table doesn't exist, returning None")
-            logging.warning(inst)
-            return None # or should I raise another exception?
+        for row in rows:
+            tablename = row[0]
         
-        return blankspot_table_obj 
+            blankspot_table_obj = BlankSpotTable(params)
+            try:
+                # TODO: Currently, this does not throw an exception
+                blankspot_table_obj.connect_to_existing_table(tablename)
+            except Exception, inst:
+                logging.warning("blankspot table %s doesn't exist, skipping", tablename)
+                logging.warning(inst)
+            
+            list_of_blankspot_table_objects.append(blankspot_table_obj)
+        
+        return list_of_blankspot_table_objects 
     
-    def remove_blankspot_table(self, params):
-        """Drop specified table(s)"""
-        # TODO: add this!
-        # Drop blankspot table
-        # Remove entry from manager table
-        pass
+    def remove_blankspot_table(self, blankspottableobj):
+        """Drop specified table and remove entry from manager table"""
+        querystring = "DROP TABLE " + blankspottableobj.getTableName()
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't drop blankspot table")
+            logging.error(inst)
+        conn.commit()
+        
+        querystring = "DELETE FROM " + self._manager_tablename + " " + \
+            "WHERE tablename = '" + blankspottableobj.getTableName() + "'"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't delete blankspot table from manager")
+            logging.error(inst)
+        conn.commit()
     
     def update_run_finish_time(self, blankspottableobj):
         """After finishing a blankspot run, update the time in the manager table"""
