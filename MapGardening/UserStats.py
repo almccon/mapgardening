@@ -14,14 +14,16 @@ class UserStats(object):
     cur = None
     utc_offset = 0
     nodetableobj = None
+    blankspottableobj = None
     
-    def __init__(self, connection, cursor, nodetableobj):
+    def __init__(self, connection, cursor, nodetableobj, blankspottableobj):
         """
         Initialize
         """
         self.conn = connection
         self.cur = cursor
         self.nodetableobj = nodetableobj
+        self.blankspottableobj = blankspottableobj
         
     def drop_userstats_table(self):
         """
@@ -55,13 +57,14 @@ class UserStats(object):
             logging.error(inst)
         self.conn.commit()
        
-    def add_userstats_countedits(self, queryparam = "WHERE blank=true", newcolumn = "newcount"): 
+    def add_userstats_countedits(self, queryparam = "", newcolumn = "newcount"): 
         """
         Count number of edits per user, then add as new column to userstats table.
  
-        By default, counts all the edits in the database (using an empty query parameter)
+        By default, counts all the edits in the database (using an empty query parameter).
+        To count v1 edits, use queryparam = "WHERE version=1".
         This function can also be called by a number of convenience functions that
-        specify which type of edits to count (all, only v1, only blanks, etc).
+        specify which type of edits to count (all, only v1, etc).
         """
         
         temptablename = userstatstable + "_temp" + newcolumn
@@ -109,7 +112,45 @@ class UserStats(object):
         """
         Count number of "blank spot" edits by each user
         """
-        return self.add_userstats_countedits("WHERE blank=true", "blankcount")
+        newcolumn = "blankcount"
+        
+        temptablename = userstatstable + "_temp" + newcolumn
+        
+        querystring = "CREATE TEMP TABLE " + temptablename + \
+            " AS " + \
+            "SELECT a.uid, a.username, count(a.uid) AS " + newcolumn + " FROM " + \
+            self.nodetableobj.getTableName() + " a INNER JOIN " + \
+            self.blankspottableobj.getTableName() + " b ON a.id = b.node_id " + \
+            "WHERE a.version = 1 AND b.blank = true " + \
+            "GROUP BY a.uid, a.username ORDER BY " + newcolumn + " DESC"  
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't create temp table")
+            logging.error(inst)
+        self.conn.commit()
+        
+        querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " integer"
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            self.conn.rollback()
+            logging.warning("can't add new column")
+            logging.warning(inst)
+        self.conn.commit()
+        
+        querystring = "UPDATE " + userstatstable + " " + \
+            "SET " + newcolumn + " = (" + \
+            "SELECT " + newcolumn + " from " + \
+            temptablename + " WHERE " + \
+            temptablename + ".uid = " + userstatstable + ".uid)"  
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't update new column")
+            logging.error(inst)
+        self.conn.commit()
+        
     
     def add_userstats_firstedit(self, queryparam = "", newcolumn = "firstedit"):
         """
