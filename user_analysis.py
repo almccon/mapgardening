@@ -103,7 +103,7 @@ for placename in places.keys():
             us.add_userstats_mean_date(weighted=False, user_date_dict=userdates)
             us.add_userstats_mean_date(weighted=True, user_date_dict=userdates)
         
-            us.print_userstats("outputv3_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
+            us.print_userstats("outputv4_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
                     
         
                      

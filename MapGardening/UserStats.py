@@ -359,7 +359,7 @@ class UserStats(object):
         self.conn.commit()
       
     def print_userstats(self, filename):
-        querystring = "SELECT uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active FROM " + userstatstable
+        querystring = "SELECT uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted FROM " + userstatstable
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -368,7 +368,7 @@ class UserStats(object):
        
         localfile = open(filename, "w")
          
-        print >> localfile, "uid\tusername\tcount\tblankcount\tv1count\tfirstedit\tfirsteditv1\tfirsteditblank\tdays_active"
+        print >> localfile, "uid\tusername\tcount\tblankcount\tv1count\tfirstedit\tfirsteditv1\tfirsteditblank\tdays_active\tmean_date\tmean_date_weighted"
         
         rows = self.cur.fetchall()
         
