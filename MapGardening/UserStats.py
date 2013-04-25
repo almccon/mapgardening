@@ -30,12 +30,16 @@ class UserStats(object):
         Drop the userstats table.
         """
         
-        querystring = "DROP TABLE " + userstatstable
+        querystring = "DROP TABLE " + userstatstable + " IF EXISTS"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't select username and count")
-            logging.error(inst)
+            if str(inst).find("does not exist") != -1:
+                # if exception is because table does not exist, do nothing
+                pass
+            else:
+                logging.error("can't drop userstats table")
+                logging.error(inst)
         self.conn.commit()
         
     def create_userstats_table(self):
@@ -393,19 +397,21 @@ class UserStats(object):
         
         rows = self.cur.fetchall()
         
+        nullvalue = "NULL"
+        
         for row in rows:
-            # assign 0 instead of None
-            uid = row[0] or 0
-            username = row[1] or 0
-            count = row[2] or 0
-            blankcount = row[3] or 0
-            v1count = row[4] or 0
-            firstedit = row[5] or 0
-            firsteditv1 = row[6] or 0
-            firsteditblank = row[7] or 0
-            days_active = row[8] or 0
-            mean_date = row[9] or 0
-            mean_date_weighted = row[10] or 0
+            # assign nullvalue instead of None
+            uid = row[0] or nullvalue
+            username = row[1] or nullvalue
+            count = row[2] or nullvalue
+            blankcount = row[3] or nullvalue
+            v1count = row[4] or nullvalue
+            firstedit = row[5] or nullvalue
+            firsteditv1 = row[6] or nullvalue
+            firsteditblank = row[7] or nullvalue
+            days_active = row[8] or nullvalue
+            mean_date = row[9] or nullvalue
+            mean_date_weighted = row[10] or nullvalue
             print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted)
             
         localfile.close() 
