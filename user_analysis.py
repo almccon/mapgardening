@@ -87,7 +87,7 @@ for placename in places.keys():
             us = UserStats.UserStats(conn, cur, nt, blankspottable)
             
             us.utc_offset = places[placename]['utc_offset']
-                
+               
             us.drop_userstats_table()
             us.create_userstats_table()
                
@@ -105,7 +105,7 @@ for placename in places.keys():
         
             us.print_userstats("outputv4_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
                     
-        
+            us.print_placestats("output_totals_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
                      
             now = time.time()
             print "finished. time elapsed: {:.0f} sec, {:.0f} sec total".format(now - lt, now - st)

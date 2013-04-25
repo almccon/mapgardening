@@ -193,7 +193,7 @@ class UserStats(object):
         create new features, in areas where no features previously existed
         """
         
-        return self.add_userstats_firstedit("WHERE b.blank=true", "firsteditblank")
+        return self.add_userstats_firstedit("WHERE a.version=1 AND b.blank=true", "firsteditblank")
 
     def _days_since_epoch_obj(self, input_date_obj):
         """
@@ -222,13 +222,22 @@ class UserStats(object):
         date_obj = epoch + delta
         return date_obj
             
-    def get_dates_and_edit_counts(self):
+    def get_dates_and_edit_counts(self, count_all=False):
+        """
+        Count number of edits for each date. 
+        Count all edits, v1 edits, and blankspot edits separately.
+        Create two dictionaries, one to count edits for each user,
+        and one to count edits overall.
+        """
        
         print "gathering dates and edit counts" 
         user_date_dict = {}
+        all_date_dict = {}
         
-        querystring = "SELECT username, valid_from, version, blank " + \
-            "FROM " + self.nodetableobj.getTableName() 
+        querystring = "SELECT a.username, a.valid_from, a.version, b.blank " + \
+            "FROM " + self.nodetableobj.getTableName() + " a " + \
+            "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
+            "ON a.id = b.node_id " 
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -254,13 +263,21 @@ class UserStats(object):
             
             if not edit_date_str in user_date_dict[username]:
                 user_date_dict[username][edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
+            if not edit_date_str in all_date_dict:
+                all_date_dict[edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
                 
             user_date_dict[username][edit_date_str]['all'] += 1
+            all_date_dict[edit_date_str]['all'] += 1
             if version == 1: 
                 user_date_dict[username][edit_date_str]['v1'] += 1
-            if blank == True: 
-                user_date_dict[username][edit_date_str]['blank'] += 1
-        return user_date_dict
+                all_date_dict[edit_date_str]['v1'] += 1
+                if blank == True: # version must == 1, as well.
+                    user_date_dict[username][edit_date_str]['blank'] += 1
+                    all_date_dict[edit_date_str]['blank'] += 1
+        if count_all:
+            return all_date_dict
+        else:
+            return user_date_dict
         
     def add_userstats_mean_date(self, weighted=False, user_date_dict=None):
         """
@@ -373,4 +390,16 @@ class UserStats(object):
             mean_date_weighted = row[10] or nullvalue
             print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted)
             
-        localfile.close() 
+        localfile.close()
+    
+    def print_placestats(self, filename):
+        all_date_dict = self.get_dates_and_edit_counts(count_all=True)
+        
+        localfile = open(filename, "w")
+        
+        print >> localfile, "date\tcount\tv1count\tblankcount"
+        
+        for date in sorted(all_date_dict):
+            print >> localfile, "%s\t%s\t%s\t%s" % (date, all_date_dict[date]['all'], all_date_dict[date]['v1'], all_date_dict[date]['blank']) 
+       
+        localfile.close()
