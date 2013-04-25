@@ -383,6 +383,8 @@ class UserStats(object):
             firsteditv1 = row[6] or 0
             firsteditblank = row[7] or 0
             days_active = row[8] or 0
-            print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active)
+            mean_date = row[9] or 0
+            mean_date_weighted = row[10] or 0
+            print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted)
             
         localfile.close() 
