@@ -30,7 +30,7 @@ class UserStats(object):
         Drop the userstats table.
         """
         
-        querystring = "DROP TABLE " + userstatstable + " IF EXISTS"
+        querystring = "DROP TABLE IF EXISTS " + userstatstable 
         try:
             self.cur.execute(querystring)
         except Exception, inst:
