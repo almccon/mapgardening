@@ -75,64 +75,10 @@ class UserStats(object):
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
-            "SELECT uid, username, count(uid) AS " + newcolumn + " FROM " + \
-            self.nodetableobj.getTableName() + " " + queryparam + " " + \
-            "GROUP BY uid, username ORDER BY " + newcolumn + " DESC"  
-        try:
-            self.cur.execute(querystring)
-        except Exception, inst:
-            self.conn.rollback()
-            if str(inst).find("already exists") != -1:
-                self.cur.execute("DROP TABLE " + temptablename) # drop the old table
-                self.conn.commit()
-                self.cur.execute(querystring) # and create a new one
-                self.conn.commit()
-            else:
-                logging.error("can't create temp table")
-                logging.error(inst)
-        self.conn.commit()
-        
-        querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " integer"
-        try:
-            self.cur.execute(querystring)
-        except Exception, inst:
-            self.conn.rollback()
-            logging.warning("can't add new column")
-            logging.warning(inst)
-        self.conn.commit()
-        
-        querystring = "UPDATE " + userstatstable + " " + \
-            "SET " + newcolumn + " = (" + \
-            "SELECT " + newcolumn + " from " + \
-            temptablename + " WHERE " + \
-            temptablename + ".uid = " + userstatstable + ".uid)"  
-        try:
-            self.cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update new column")
-            logging.error(inst)
-        self.conn.commit()
-    
-    def add_userstats_v1edits(self):
-        """
-        Count number of v1 edits (creation of nodes) by each user
-        """ 
-        return self.add_userstats_countedits("WHERE version=1", "v1count")
-    
-    def add_userstats_blankedits(self):
-        """
-        Count number of "blank spot" edits by each user
-        """
-        newcolumn = "blankcount"
-        
-        temptablename = userstatstable + "_temp" + newcolumn
-        
-        querystring = "CREATE TEMP TABLE " + temptablename + \
-            " AS " + \
-            "SELECT a.uid, a.username, count(a.uid) AS " + newcolumn + " FROM " + \
-            self.nodetableobj.getTableName() + " a INNER JOIN " + \
-            self.blankspottableobj.getTableName() + " b ON a.id = b.node_id " + \
-            "WHERE a.version = 1 AND b.blank = true " + \
+            "SELECT a.uid, a.username, count(a.uid) AS " + newcolumn + " " + \
+            "FROM " + self.nodetableobj.getTableName() + " a " + \
+            "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
+            "ON a.id = b.node_id " + queryparam + " " + \
             "GROUP BY a.uid, a.username ORDER BY " + newcolumn + " DESC"  
         try:
             self.cur.execute(querystring)
@@ -159,7 +105,7 @@ class UserStats(object):
         
         querystring = "UPDATE " + userstatstable + " " + \
             "SET " + newcolumn + " = (" + \
-            "SELECT " + newcolumn + " from " + \
+            "SELECT " + newcolumn + " FROM " + \
             temptablename + " WHERE " + \
             temptablename + ".uid = " + userstatstable + ".uid)"  
         try:
@@ -168,7 +114,18 @@ class UserStats(object):
             logging.error("can't update new column")
             logging.error(inst)
         self.conn.commit()
-        
+    
+    def add_userstats_v1edits(self):
+        """
+        Count number of v1 edits (creation of nodes) by each user
+        """ 
+        return self.add_userstats_countedits("WHERE a.version=1", "v1count")
+    
+    def add_userstats_blankedits(self):
+        """
+        Count number of "blank spot" edits by each user
+        """
+        return self.add_userstats_countedits("WHERE a.version=1 AND b.blank=true", "blankcount")
     
     def add_userstats_firstedit(self, queryparam = "", newcolumn = "firstedit"):
         """
@@ -182,9 +139,11 @@ class UserStats(object):
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
-            "SELECT DISTINCT ON (username) username, valid_from AS " + newcolumn + " " + \
-            "FROM " + self.nodetableobj.getTableName() + " " + queryparam + " " + \
-            "ORDER BY username, valid_from ASC"
+            "SELECT DISTINCT ON (a.username) a.username, a.valid_from AS " + newcolumn + " " + \
+            "FROM " + self.nodetableobj.getTableName() + " a " + \
+            "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
+            "ON a.id = b.node_id " + queryparam + " " + \
+            "ORDER BY a.username, a.valid_from ASC"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -226,7 +185,7 @@ class UserStats(object):
         create new features, not modify existing features.
         """
         
-        return self.add_userstats_firstedit("WHERE version=1", "firsteditv1")
+        return self.add_userstats_firstedit("WHERE a.version=1", "firsteditv1")
     
     def add_userstats_firstedit_blank(self):
         """
@@ -234,7 +193,7 @@ class UserStats(object):
         create new features, in areas where no features previously existed
         """
         
-        return self.add_userstats_firstedit("WHERE blank=true", "firsteditblank")
+        return self.add_userstats_firstedit("WHERE b.blank=true", "firsteditblank")
 
     def _days_since_epoch_obj(self, input_date_obj):
         """
