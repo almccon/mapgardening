@@ -77,8 +77,15 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't create temp table")
-            logging.error(inst)
+            self.conn.rollback()
+            if str(inst).find("already exists") != -1:
+                self.cur.execute("DROP TABLE " + temptablename) # drop the old table
+                self.conn.commit()
+                self.cur.execute(querystring) # and create a new one
+                self.conn.commit()
+            else:
+                logging.error("can't create temp table")
+                logging.error(inst)
         self.conn.commit()
         
         querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " integer"
@@ -126,8 +133,15 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't create temp table")
-            logging.error(inst)
+            self.conn.rollback()
+            if str(inst).find("already exists") != -1:
+                self.cur.execute("DROP TABLE " + temptablename) # drop the old table
+                self.conn.commit()
+                self.cur.execute(querystring) # and create a new one
+                self.conn.commit()
+            else:
+                logging.error("can't create temp table")
+                logging.error(inst)
         self.conn.commit()
         
         querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " integer"
@@ -170,8 +184,15 @@ class UserStats(object):
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't create temp table")
-            logging.error(inst)
+            self.conn.rollback()
+            if str(inst).find("already exists") != -1:
+                self.cur.execute("DROP TABLE " + temptablename) # drop the old table
+                self.conn.commit()
+                self.cur.execute(querystring) # and create a new one
+                self.conn.commit()
+            else:
+                logging.error("can't create temp table")
+                logging.error(inst)
         self.conn.commit()
         
         querystring = "ALTER TABLE " + userstatstable + " ADD " + newcolumn + " date"
