@@ -70,7 +70,9 @@ if place is not None:
     
     if params['runtype'] == "raster":
         print "doing raster analysis" 
-        raster = MapGardening.Raster()
+        
+        # Create semi-unique raster name to allow concurrent processing in same database
+        raster = MapGardening.Raster("raster_" + str(int(time.time()))) 
         
         rasterScale = float(params['resolution'])
         
