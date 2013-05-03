@@ -18,6 +18,14 @@ p.add_option('--resolution', '-r',
              default=1000,
              help="analysis resolution in metres"
              )
+p.add_option('--startx', '-x',
+             default=1,
+             help="starting raster x coord"
+             )
+p.add_option('--starty', '-y',
+             default=1,
+             help="starting raster y coord"
+             )
 
 options, arguments = p.parse_args()
 
@@ -27,7 +35,9 @@ runtype = options.type
 if runtype not in ['raster', 'proximity']:
     print "type", runtype, "not recognized"
     sys.exit()
-    
+
+startx = int(options.startx)
+starty = int(options.starty)    
 
 place = MapGardening.get_place(options.place)
 
@@ -90,8 +100,8 @@ if place is not None:
         count = width * height
         print "got %s cells (width: %s, height: %s)" % (count, width, height)
         try:
-            for row in range(1, height):
-                for column in range(1, width):
+            for row in range(starty, height):
+                for column in range(startx, width):
                     cell = raster.get_cell(column, row)
                     cell.analyze_nodes()
                     # counter:
