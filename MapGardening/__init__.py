@@ -348,7 +348,7 @@ class Cell:
     def analyze_nodes(self, set_nodes_individually_flag=False):
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
         
-        temptablename = "temp_node_table" 
+        temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
             "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from " + \
