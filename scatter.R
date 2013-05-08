@@ -3,14 +3,14 @@
 library(ggplot2)
 
 places = c(
-  #"bayarea",
-  #"manchester",
-  #"seattle",
-  #"vancouver",
-  #"haiti",
+  "bayarea",
+  "manchester",
+  "seattle",
+  "vancouver",
+  "haiti",
   "london",
-  #"amsterdam",
-  #"cairo",
+  "amsterdam",
+  "cairo",
   "tirana"
 )
 
@@ -60,7 +60,7 @@ for (place in places) {
     print(a)
     dev.off()
 
-    outputfile = paste0('/Users/alan/github/mapgardening/outscattersingle4_test2_', place, '_', scale, '.png')
+    outputfile = paste0('/Users/alan/github/mapgardening/output_meaneditdate_', place, '_', scale, '.png')
     png(outputfile, 600, 600)
 
     # Add 0.1 to x and y to avoid problems with the log scale
@@ -71,7 +71,29 @@ for (place in places) {
     print(a)
     dev.off()
 
-
     detach(frame)
+
+    inputfile = paste0('/Users/alan/github/mapgardening/output_totals_', place, '_raster_', scale, '.tsv')
+
+    classes <- c("Date","numeric","numeric","numeric")
+
+    frame2 <- read.table(inputfile, header=TRUE, colClasses=classes)
+
+    names(frame2) = c("date","edits","v1edits","blankedits")
+
+    attach(frame2)
+
+    outputfile = paste0('/Users/alan/github/mapgardening/output_history_', place, '_', scale, '.png')
+    png(outputfile, 600, 600)
+
+    a <- ggplot(data = frame2, aes(x = date, y = cumsum(blankedits))) +
+      geom_line() +
+      scale_x_date("Date") + scale_y_continuous("Cumulative blankspot edits") +
+      ggtitle(paste0(place, '_', scale))
+    print(a)
+    dev.off()
+
+
+    detach(frame2)
   }
 }
