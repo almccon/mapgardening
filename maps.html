@@ -13,12 +13,20 @@
 </head>
 <body>
 <div id='map'></div>
+<!--
 <script type="text/javascript" src="geojson/london_quadrat_1000m_4326.geojson"></script>
 <script type="text/javascript" src="geojson/london_blankspots_1000m_4326.geojson"></script>
+<script type="text/javascript" src="geojson/london_quadrat_500m_4326.geojson"></script>
+<script type="text/javascript" src="geojson/london_blankspots_500m_4326.geojson"></script>
+<script type="text/javascript" src="geojson/london_quadrat_250m_4326.geojson"></script>
+<script type="text/javascript" src="geojson/london_blankspots_250m_4326.geojson"></script>
+-->
 <script type='text/javascript'>
     // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
 
     var map = L.mapbox.map('map', 'mappingmashups.mapgardening').setView([51.5, -0.1071], 10);
+    
+    map.addLayer(L.mapbox.tileLayer('mappingmashups.mapgardening_london_blankspots'));
 
 	var gridStyle = {
             weight: 1,
@@ -41,15 +49,25 @@
 		return L.circleMarker(latlng, markerOptions);
 	}
 	
-    // london_quadrat_1000m comes from the 'us-states.js' script included above
-    var quadratLayer = L.geoJson(london_quadrat_1000m,  {
-        style: gridStyle
-    }).addTo(map);
+    // london_quadrat_1000m comes from the geojson script included above
+    //var quadratLayer1000m 	= L.geoJson(london_quadrat_1000m,	{ style: gridStyle });
+    //var quadratLayer500m 	= L.geoJson(london_quadrat_500m,	{ style: gridStyle });
+    //var quadratLayer250m 	= L.geoJson(london_quadrat_250m,	{ style: gridStyle });
 
-    // london_blankspots_1000m comes from the 'us-states.js' script included above
-    var blankspotsLayer = L.geoJson(london_blankspots_1000m,  {
-    	pointToLayer: pointToLayer
-    }).addTo(map);
+    // london_blankspots_1000m comes from the geojson script included above
+    //var blankspotsLayer1000m 	= L.geoJson(london_blankspots_1000m,	{ pointToLayer: pointToLayer });
+    //var blankspotsLayer500m 	= L.geoJson(london_blankspots_500m,		{ pointToLayer: pointToLayer });
+    //var blankspotsLayer250m 	= L.geoJson(london_blankspots_250m,		{ pointToLayer: pointToLayer });
+    
+    //var overlayMaps = {
+    	//"1000m grid": quadratLayer1000m,
+    	//"1000m blankspots": blankspotsLayer1000m,
+    	//"500m grid": quadratLayer500m,
+    	//"500m blankspots": blankspotsLayer500m,
+    	//"250m grid": quadratLayer250m,
+    	//"250m blankspots": blankspotsLayer250m
+    //} 
+    //L.control.layers(null, overlayMaps).addTo(map);
 
 </script>
 </body>
