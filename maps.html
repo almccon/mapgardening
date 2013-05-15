@@ -26,7 +26,9 @@
 
     var map = L.mapbox.map('map', 'mappingmashups.mapgardening').setView([51.5, -0.1071], 10);
     
-    map.addLayer(L.mapbox.tileLayer('mappingmashups.mapgardening_london_blankspots'));
+    var blankspotsLayer = L.mapbox.tileLayer('mappingmashups.mapgardening_london_blankspots');
+    
+    map.addLayer(blankspotsLayer);
 
 	var gridStyle = {
             weight: 1,
@@ -59,15 +61,16 @@
     //var blankspotsLayer500m 	= L.geoJson(london_blankspots_500m,		{ pointToLayer: pointToLayer });
     //var blankspotsLayer250m 	= L.geoJson(london_blankspots_250m,		{ pointToLayer: pointToLayer });
     
-    //var overlayMaps = {
+    var overlayMaps = {
+    	"1000m blankspots": blankspotsLayer
     	//"1000m grid": quadratLayer1000m,
     	//"1000m blankspots": blankspotsLayer1000m,
     	//"500m grid": quadratLayer500m,
     	//"500m blankspots": blankspotsLayer500m,
     	//"250m grid": quadratLayer250m,
     	//"250m blankspots": blankspotsLayer250m
-    //} 
-    //L.control.layers(null, overlayMaps).addTo(map);
+    } 
+    L.control.layers(null, overlayMaps).addTo(map);
 
 </script>
 </body>
