@@ -1,4 +1,4 @@
-#londonblankspots1000 {
+.blankspots {
   [zoom = 9] { 
     marker-width:2; 
     marker-line-width:0.5;
