@@ -20,13 +20,27 @@
 				position: absolute;           
 				text-align: center;           
 				width: 80px;                  
-				height: 24px;                 
+				height: 12px;                 
 				padding: 2px;             
 				font: 10px sans-serif;        
 				background: lightgray;   
 				border: 0px;      
 				border-radius: 8px;           
 				pointer-events: none;         
+			}
+			div.infobox {
+				position: absolute;           
+				left: 100px;
+				top: 50px;
+				text-align: left;           
+				width: 160px;                  
+				height: 45px;                 
+				padding: 2px;             
+				font: 10px sans-serif;        
+				background: none;   
+				border: 0px;      
+				border-radius: 8px;           
+				pointer-events: none; 
 			}
 		</style>
 	</head>
@@ -39,6 +53,9 @@
 			//Width and height
 			var w = 500 - margin.left - margin.right,
 			    h = 500 - margin.top - margin.bottom;
+			    
+			//For displaying numbers in the axes
+			var numberFormat = d3.format(",f");
 		
 			queue()
 				.defer(d3.tsv, "output_2013-05-08/outputv4_london_raster_250m.tsv")
@@ -63,15 +80,18 @@
 						d.days_active = +d.days_active;
 					})
 
-					var numberFormat = d3.format(",f");
+					drawScatter(outputv4_london_raster_250m);
+	
+				}
+			}
+			
+			function drawScatter(dataset) {
+					
 	
 					var xScale = d3.scale.log()
 									 	.domain([1, d3.max(dataset, function(d) {return d.count; })])	
 									 	.range([0, w]);
 					
-					console.log("xScale domain: " + xScale.domain())
-					console.log("xScale range: " + xScale.range())
-									 
 					var yScale = d3.scale.log()
 									 	.domain([1, d3.max(dataset, function(d) {return d.blankcount; })])	
 									 	.range([h, 0]); // Inverted so greater values are at top
@@ -99,10 +119,13 @@
 								.attr("height", h + margin.top + margin.bottom)
 							.append("g")	// Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
 								.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-						
-					var tooltip_div = d3.select("body").append("div")
-						.attr("class", "tooltip")
-						.style("opacity", 0)	
+					//var tooltip_div = d3.select("body").append("div")
+					//	.attr("class", "tooltip")
+					//	.style("opacity", 0)	
+					
+					var info_div = d3.select("body").append("div")
+						.attr("class", "infobox")
+						.style("opacity", 0)
 
 					svg.selectAll("circle")
 				   	   .data(dataset)
@@ -114,17 +137,30 @@
 				   			r: function(d) { return rScale(d.days_active); },
 				   			opacity: 0.5,
 				   			})
+				   		// Add tooltips on mouseover
 				   		// http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
 				   		.on("mouseover", function(d) {
-				   			tooltip_div.transition()
+				   			//tooltip_div.transition()
+				   			//	.duration(200)
+				   			//	.style("opacity", .9);
+				   			info_div.transition()
 				   				.duration(200)
 				   				.style("opacity", .9);
-				   			tooltip_div.html(d.username + "<br>" + "days active:&nbsp;" + d.days_active)
-				   				.style("left", (d3.event.pageX) + "px")		// event not working?
-				   				.style("top", (d3.event.pageY - 28) + "px");
+				   			//tooltip_div.html(d.username)
+				   			//	.style("left", xScale(d.count + 1) + "px")
+				   			//	.style("top", yScale(d.blankcount + 1) + "px");
+				   			info_div.html(
+				   					"User:&nbsp;" + d.username + "<br>"
+				   					+ "Total edited nodes:&nbsp;" + d.count + "<br>"
+				   					+ "\"Blank spot\" edits:&nbsp;" + d.blankcount + "<br>"
+				   					+ "Days active:&nbsp;" + d.days_active
+				   				);
 				   			})
 				   		.on("mouseout", function(d) {
-				   			tooltip_div.transition()
+				   			//tooltip_div.transition()
+				   			//	.duration(500)
+				   			//	.style("opacity", 0);
+				   			info_div.transition()
 				   				.duration(500)
 				   				.style("opacity", 0);
 				   			})
@@ -157,7 +193,6 @@
 						.style("font-family", "sans-serif")
 						.style("font-size", 12)
 						.text("total blankspot edits");
-				}
 			}
 			
 		</script>
