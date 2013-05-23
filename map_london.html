@@ -24,11 +24,14 @@
 <script type='text/javascript'>
     // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
 
-    var map = L.mapbox.map('map', 'mappingmashups.mapgardening').setView([51.5, -0.1071], 10);
+    var map = L.mapbox.map('map', 'mappingmashups.mapgardening,mappingmashups.mapgardening_london_quadrat_1000m,mappingmashups.mapgardening_london_blankspots').setView([51.5, -0.11], 11);
+//    var map = L.mapbox.map('map', 'mappingmashups.mapgardening').setView([51.5, -0.1071], 10);
     
-    var blankspotsLayer = L.mapbox.tileLayer('mappingmashups.mapgardening_london_blankspots');
+    //var blankspotsTileLayer = L.mapbox.tileLayer('mappingmashups.mapgardening_london_blankspots');
+    //var blankspotsGridLayer = L.mapbox.gridLayer('mappingmashups.mapgardening_london_blankspots');
     
-    map.addLayer(blankspotsLayer);
+    //map.addLayer(blankspotsTileLayer);
+    //map.addLayer(blankspotsGridLayer);
 
 	var gridStyle = {
             weight: 1,
@@ -60,17 +63,17 @@
     //var blankspotsLayer1000m 	= L.geoJson(london_blankspots_1000m,	{ pointToLayer: pointToLayer });
     //var blankspotsLayer500m 	= L.geoJson(london_blankspots_500m,		{ pointToLayer: pointToLayer });
     //var blankspotsLayer250m 	= L.geoJson(london_blankspots_250m,		{ pointToLayer: pointToLayer });
-    
-    var overlayMaps = {
-    	"1000m blankspots": blankspotsLayer
+   
+    //var overlayMaps = {
+    	//"1000m blankspots": blankspotsTileLayer
     	//"1000m grid": quadratLayer1000m,
     	//"1000m blankspots": blankspotsLayer1000m,
     	//"500m grid": quadratLayer500m,
     	//"500m blankspots": blankspotsLayer500m,
     	//"250m grid": quadratLayer250m,
     	//"250m blankspots": blankspotsLayer250m
-    } 
-    L.control.layers(null, overlayMaps).addTo(map);
+    //} 
+    //L.control.layers(null, overlayMaps).addTo(map);
 
 </script>
 </body>
