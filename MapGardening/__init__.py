@@ -351,7 +351,7 @@ class Cell:
         temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
-            "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from " + \
+            "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
             "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) " + \
@@ -385,8 +385,22 @@ class Cell:
         print "Cell %s, %s got %s nodes" % (self.x, self.y, length)
 
         if length > 0:
-                    
-            earliest_id = rows[0][0]
+            
+            (earliest_id, version, uid, username, valid_from, valid_to) = rows[0]
+            
+            # If uid is -1 (anonymous) AND the edit existed for less than one day,
+            # treat it as an error
+            i = 0 
+            while (uid == -1 and valid_to and ((valid_to - valid_from).days < 1)):
+                i += 1
+                if (i >= length):
+                    print "breaking"
+                    break
+                #(earliest_id, version, uid, username, valid_from, valid_to) = rows[i]
+                earliest_id = rows[i][0]
+                uid = rows[i][2]
+                valid_from = rows[i][4]
+                valid_to = rows[i][5]
              
             # If we have not wiped the True/Falseness of the blank tag before starting, 
             # then we have to individually set everything here.  
@@ -440,7 +454,7 @@ class Cell:
             logging.error(inst)
             sys.exit()  
         conn.commit()
-    
+   
     # end def analyze_nodes
         
     def analyze_nodes_and_preset_blanks(self):
