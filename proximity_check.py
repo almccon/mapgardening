@@ -102,8 +102,8 @@ if place is not None:
         count = width * height
         print "got %s cells (width: %s, height: %s)" % (count, width, height)
         try:
-            for row in range(starty, height):
-                for column in range(startx, width):
+            for row in range(starty, height+1):
+                for column in range(startx, width+1):
                     cell = raster.get_cell(column, row)
                     cell.analyze_nodes()
                     # counter:
