@@ -506,8 +506,10 @@ class Raster:
             cur.execute(querystring)
         except Exception, inst:
             conn.rollback()
-            logging.error("can't drop raster table")
-            logging.error(inst)
+            if str(inst).find("does not exist") == -1:
+                logging.error("can't drop raster table")
+                logging.error(inst)
+            # If it doesn't exist, that's fine. Don't log an error.
         conn.commit()
         
         querystring = "CREATE TABLE " + self.rastertablename + " (rid integer, rast raster)"
