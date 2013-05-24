@@ -100,10 +100,17 @@ if place is not None:
         width = raster.get_width() 
         height = raster.get_height()
         count = width * height
-        print "got %s cells (width: %s, height: %s)" % (count, width, height)
+        count_todo = count - starty * width - startx
+        active = False
+        print "got %s cells (width: %s, height: %s), %s to do" % (count, width, height, count_todo)
         try:
-            for row in range(starty, height+1):
-                for column in range(startx, width+1):
+            for row in xrange(1, height+1):
+                for column in xrange(1, width+1):
+                    if not active:
+                        if row == starty and column == startx:
+                            active = True
+                        else:
+                            continue
                     cell = raster.get_cell(column, row)
                     cell.analyze_nodes()
                     # counter:
@@ -111,7 +118,7 @@ if place is not None:
                     inc += 1      
                     if not inc % 10:
                         now = time.time()
-                        print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total".format(inc, count, 100*inc/count, skipped, 100*skipped/count, now - lt, now - st)
+                        print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total".format(inc, count_todo, 100*inc/count_todo, skipped, 100*skipped/count_todo, now - lt, now - st)
                         lt = now
         
                 # end loop
