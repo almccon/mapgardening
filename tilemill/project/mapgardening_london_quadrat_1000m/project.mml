@@ -1,0 +1,46 @@
+{
+  "bounds": [
+    -0.6221,
+    51.2017,
+    0.4051,
+    51.7712
+  ],
+  "center": [
+    -0.1531,
+    51.507,
+    10
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 10,
+  "maxzoom": 14,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "../../quadrat_style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -0.607648291816371,
+        51.21436798658832,
+        0.389053518673508,
+        51.75895908352403
+      ],
+      "id": "quadrat_1000m",
+      "class": "quadrat",
+      "Datasource": {
+        "file": "../../../geojson/london_quadrat_1000m_4326_unmod.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "quadrat_1000m"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Map Gardening London quadrat 1000m",
+  "description": "",
+  "attribution": ""
+}

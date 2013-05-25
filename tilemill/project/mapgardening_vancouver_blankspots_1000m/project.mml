@@ -1,0 +1,55 @@
+{
+  "bounds": [
+    -123.3257,
+    48.9757,
+    -122.4055,
+    49.467
+  ],
+  "center": [
+    -122.88,
+    49.2234,
+    10
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "blankspots_1000m",
+    "template_teaser": "{{#username}}\nUser: {{{username}}}<br/>\n{{/username}}\nNode id: {{{id}}}<br/>\nCreated: {{{valid_from}}}",
+    "fields": [
+      "username",
+      "id",
+      "valid_from"
+    ]
+  },
+  "minzoom": 10,
+  "maxzoom": 14,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "../../blankspot_style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "point",
+      "extent": [
+        -123.30355297582712,
+        48.98547618719067,
+        -122.42050109123097,
+        49.454658418809665
+      ],
+      "id": "blankspots_1000m",
+      "class": "blankspots",
+      "Datasource": {
+        "file": "../../../geojson/vancouver_blankspots_1000m_4326_b.geojson"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "blankspots_1000m"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Map Gardening Vancouver blankspots 1000m",
+  "description": "",
+  "attribution": "CC-BY-SA © OpenStreetMap contributors",
+  "legend": ""
+}

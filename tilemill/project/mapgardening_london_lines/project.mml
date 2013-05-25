@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    -0.5878,
+    51.243,
+    0.3323,
+    51.7406
+  ],
+  "center": [
+    -0.1071,
+    51.507,
+    10
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 10,
+  "maxzoom": 14,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "../../line_style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "extent": [
+        -0.5699987999999903,
+        51.250000799999995,
+        0.3199999000000075,
+        51.729999899999974
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "hist_line",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "host": "localhost",
+        "port": "5432",
+        "user": "postgres",
+        "password": "postgres",
+        "dbname": "osm-history-render-london",
+        "id": "histline",
+        "project": "mapgardening",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "histline",
+      "class": "lines",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "histline"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Map Gardening London lines (light)",
+  "description": "mapping map gardening blank spots",
+  "attribution": "CC-BY-SA © OpenStreetMap contributors"
+}
