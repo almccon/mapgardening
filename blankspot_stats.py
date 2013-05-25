@@ -1,4 +1,13 @@
 #! /usr/bin/env python
+"""
+Calculate statistics for each study area, and prints results to stdout.
+
+All it prints is the number of blankspots, the number of v1 nodes, 
+and the number of total nodes. Since I am no longer storing the blankspot
+information in the hist_point table itself, these stats are no longer very informative.
+
+If you are looking for statistics for each user, you want user_analysis.py
+"""
 
 import MapGardening
 import optparse
@@ -13,11 +22,7 @@ options, arguments = p.parse_args()
 
 
 possible_tables = [
-                   'hist_point',
-                   'hist_point_250m',
-                   'hist_point_500m',
-                   'hist_point_1000m',
-                   'hist_point_proximity',
+                   'blankspots_1000_b',
                    ]
 
 if options.place == "all":
