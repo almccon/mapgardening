@@ -58,10 +58,10 @@
 			var numberFormat = d3.format(",f");
 		
 			queue()
-				.defer(d3.tsv, "output_2013-05-08/outputv4_london_raster_250m.tsv")
+				.defer(d3.tsv, "output_2013-05-25/outputv4_london_raster_1000m.tsv")
 				.await(ready);
 				
-			function ready(error, outputv4_london_raster_250m) {
+			function ready(error, outputv4_london_raster_1000m) {
 				
 				if (error) {
 					
@@ -70,7 +70,7 @@
 					
 				} else {
 				
-					dataset = outputv4_london_raster_250m;
+					dataset = outputv4_london_raster_1000m;
 					
 					dataset.forEach(function(d) {
 						// convert strings to numbers
@@ -80,7 +80,7 @@
 						d.days_active = +d.days_active;
 					})
 
-					drawScatter(outputv4_london_raster_250m);
+					drawScatter(dataset);
 	
 				}
 			}
@@ -166,32 +166,30 @@
 				   			})
 				
 					// Add x axis   
-					svg.append("g")
+					xa = svg.append("g")
 						.attr("class", "axis")
 						.attr("transform", "translate(0," + h + ")")
 						.call(xAxis);	
 					
 					// Add x axis label
-					svg.append("text")
-						.attr("transform", "translate(" + (w / 2) + "," + h + ")")
+					xa.append("text")
+						.attr("class", "axis")
+						.attr("transform", "translate(" + (w / 2) + "," + 0 + ")")
 						.attr("dy", "3em")
 						.style("text-anchor", "middle")
-						.style("font-family", "sans-serif")
-						.style("font-size", 12)
-						.text("total edits");
+						.text("total edited nodes");
 					
 					// Add y axis
-					svg.append("g")
+					ya = svg.append("g")
 						.attr("class", "axis")
 						.call(yAxis);	
 	
 					// Add y axis label
-					svg.append("text")
+					ya.append("text")
+						.attr("class", "axis")
 						.attr("transform", "translate(" + 0 + "," + (h / 2) + ")rotate(-90)") // See http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
 						.attr("dy", "-3em")
 						.style("text-anchor", "middle")
-						.style("font-family", "sans-serif")
-						.style("font-size", 12)
 						.text("total blankspot edits");
 			}
 			
