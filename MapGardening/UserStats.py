@@ -1,5 +1,13 @@
 """
-Functions to calculate stats for each OSM contributor
+Functions to calculate stats for each OSM contributor.
+
+The UserStats class examines two tables, the "node table" (usually hist_point)
+and the "blank spot" table (usually taking the most recent table listed in
+the "blank spot manager" table). The results of the analysis are stored in
+a third table, the "userstatstable". 
+
+The UserStats class then prints user stats and place stats (taking all the
+users together) as separate tsv files.
 """
 import MapGardening
 import logging
@@ -45,12 +53,15 @@ class UserStats(object):
     def create_userstats_table(self):
         """
         Create a table called userstats in the currently connected database
-        TODO: check whether table exists
+       
+        NOTE: Call drop_userstats_table() first if there is a chance it already exists. 
         
         Populates table with uid, username, and count of number of times username
         was mentioned in the node table. (This is the number of edits the user is
         responsible for)
         """
+       
+        print "creating userstats table" 
         
         querystring = "CREATE TABLE " + userstatstable + " AS SELECT uid, username, count(username) from " +\
             self.nodetableobj.getTableName() + " GROUP BY uid, username ORDER BY count DESC"
@@ -69,6 +80,9 @@ class UserStats(object):
         To count v1 edits, use queryparam = "WHERE version=1".
         This function can also be called by a number of convenience functions that
         specify which type of edits to count (all, only v1, etc).
+        
+        TODO: change this so we don't create the same almost-identical temp table
+        every time the convenience functions are called.
         """
         
         temptablename = userstatstable + "_temp" + newcolumn
@@ -114,11 +128,20 @@ class UserStats(object):
             logging.error("can't update new column")
             logging.error(inst)
         self.conn.commit()
+                
+        querystring = "DROP TABLE " + temptablename
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't drop temp table")
+            logging.error(inst)
+        self.conn.commit()
     
     def add_userstats_v1edits(self):
         """
         Count number of v1 edits (creation of nodes) by each user
         """ 
+        print "counting v1 edits"
         return self.add_userstats_countedits("WHERE a.version=1", "v1count")
     
     def add_userstats_blankedits(self):
@@ -129,8 +152,12 @@ class UserStats(object):
     
     def add_userstats_firstedit(self, queryparam = "", newcolumn = "firstedit"):
         """
-        Add date of each user's first edit (of any version)
-        If their first edit was not v1
+        Add date of each user's first edit.
+        
+        Type of edit (version 1 or blankspot) is specified in queryparam.
+        
+        TODO: change this so we don't create the same almost-identical temp table
+        every time the convenience functions are called.
         """
         
         # Note: select "distinct on" is postgresql-specific.
@@ -176,6 +203,14 @@ class UserStats(object):
             self.cur.execute(querystring)
         except Exception, inst:
             logging.error("can't update new column")
+            logging.error(inst)
+        self.conn.commit()
+        
+        querystring = "DROP TABLE " + temptablename
+        try:
+            self.cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't drop temp table")
             logging.error(inst)
         self.conn.commit()
        
