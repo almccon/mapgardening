@@ -1,5 +1,9 @@
 #! /usr/bin/env python
+"""
+Calculate statistics for each user, and print results to a tsv.
 
+Primarily uses functions from the UserStats class in the MapGardening module.
+"""
 import MapGardening
 from MapGardening import UserStats
 import time
@@ -83,7 +87,9 @@ for placename in places.keys():
             
             # Only use the most recent table
             blankspottable = bstm.get_existing_blankspot_tables(params)[0]
-               
+            
+            print "using table", blankspottable.getTableName()
+            
             us = UserStats.UserStats(conn, cur, nt, blankspottable)
             
             us.utc_offset = places[placename]['utc_offset']
