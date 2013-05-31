@@ -1,4 +1,14 @@
 function drawScatter(dataset) {
+  
+  // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
+  var margin = {top: 20, right: 50, bottom: 40, left: 50};
+      
+  //Width and height
+  var w = 500 - margin.left - margin.right,
+      h = 500 - margin.top - margin.bottom;
+          
+  //For displaying numbers in the axes
+  var numberFormat = d3.format(",f");
 
   var xScale = d3.scale.log()
                        .domain([1, d3.max(dataset, function(d) { return d.count; })])

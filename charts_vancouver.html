@@ -11,16 +11,6 @@
 		<script src="gardening_charts.js"></script>
 		<script type="text/javascript">
 
-			// Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
-			var margin = {top: 20, right: 50, bottom: 40, left: 50};
-			
-			//Width and height
-			var w = 500 - margin.left - margin.right,
-			    h = 500 - margin.top - margin.bottom;
-			    
-			//For displaying numbers in the axes
-			var numberFormat = d3.format(",f");
-		
 			queue()
 				.defer(d3.tsv, "output_2013-05-25/outputv4_vancouver_raster_1000m.tsv")
 				.await(ready);
