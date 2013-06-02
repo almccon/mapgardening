@@ -34,7 +34,12 @@
 						d.days_active = +d.days_active;
 					})
 
-					drawScatter(dataset);
+          var chart = createScatter();
+          
+          d3.select("body")
+            .append("svg")
+              .datum(dataset)
+              .call(chart);
 	
 				}
 			}
