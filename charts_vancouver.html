@@ -34,8 +34,11 @@
 						d.days_active = +d.days_active;
 					})
 
-          var chart = createScatter();
-
+          var chart = createScatter()
+              .x(function(d) {return d.count;})
+              .y(function(d) {return d.blankcount;})
+              .r(function(d) {return d.days_active;});
+              
           d3.select("body")
             .append("svg")
               .datum(dataset)

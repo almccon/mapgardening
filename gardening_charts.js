@@ -1,4 +1,4 @@
-function createScatter(dataset) {
+function createScatter(data) {
   
   // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
   var margin = {top: 20, right: 50, bottom: 40, left: 50};
@@ -9,7 +9,13 @@ function createScatter(dataset) {
           
   //For displaying numbers in the axes
   var numberFormat = d3.format(",f");
-
+ 
+  var xValue = function(d) { return d[0];}; 
+  
+  var yValue = function(d) { return d[1];}; 
+  
+  var rValue = function(d) { return d[2];}; 
+  
   var xScale = d3.scale.log();
 
   var yScale = d3.scale.log();
@@ -21,14 +27,18 @@ function createScatter(dataset) {
   var rScale = d3.scale.sqrt();
                      
   function chart(selection) {
-    selection.each(function(dataset) {
+    selection.each(function(data) {
+      
+        data = data.map(function(d, i) {
+          return [xValue.call(data, d, i), yValue.call(data, d, i), rValue.call(data, d, i)];
+        });
      
         xScale
-          .domain([1, d3.max(dataset, function(d) { return d.count; })])
+          .domain([1, d3.max(data, function(d) { return d[0]; })])
           .range([0, w]);
 
         yScale
-          .domain([1, d3.max(dataset, function(d) { return d.blankcount; })])
+          .domain([1, d3.max(data, function(d) { return d[1]; })])
           .range([h, 0]); // Inverted so greater values are at top
 
         xAxis
@@ -44,7 +54,7 @@ function createScatter(dataset) {
           // Setting ticks also sets tickFormat
 
         rScale
-          .domain([0, d3.max(dataset, function(d) { return d.days_active; })])
+          .domain([0, d3.max(data, function(d) { return d[2]; })])
           .range([1, 10]);
 
       // Select SVG element. In the html file we create the svg, 
@@ -65,12 +75,12 @@ function createScatter(dataset) {
           .style("opacity", 0);
     
       svg.selectAll("circle")
-          .data(dataset)
+          .data(data)
         .enter().append("circle")
           .attr({
-            cx : function(d) { return xScale(d.count + 1); },
-            cy : function(d) { return yScale(d.blankcount + 1); },
-            r : function(d) { return rScale(d.days_active); },
+            cx : function(d) { return xScale(d[0] + 1); },
+            cy : function(d) { return yScale(d[1] + 1); },
+            r : function(d) { return rScale(d[2]); },
             opacity : 0.5,
             })
           // Add tooltips on mouseover
@@ -98,6 +108,7 @@ function createScatter(dataset) {
               .call(xAxis);
 
       // Add x axis label
+      // TODO: change label if x and y data are changed
       xa.append("text")
         .attr("class", "axis")
         .attr("transform", "translate(" + (w / 2) + "," + 0 + ")")
@@ -111,6 +122,7 @@ function createScatter(dataset) {
               .call(yAxis);
 
       // Add y axis label
+      // TODO: change label if x and y data are changed
       ya.append("text")
         .attr("class", "axis")
         .attr("transform", "translate(" + 0 + "," + (h / 2) + ")rotate(-90)")
@@ -123,16 +135,6 @@ function createScatter(dataset) {
 
   }
 
-  // The x-accessor for the path generator; xScale âˆ˜ xValue.
-  function X(d) {
-    return xScale(d[0]);
-  }
-
-  // The x-accessor for the path generator; yScale âˆ˜ yValue.
-  function Y(d) {
-    return yScale(d[1]);
-  }
-    
   chart.margin = function(_) {
     if (!arguments.length) return margin;
     margin = _;
@@ -160,6 +162,12 @@ function createScatter(dataset) {
   chart.y = function(_) {
     if (!arguments.length) return yValue;
     yValue = _;
+    return chart;
+  };    
+    
+  chart.r = function(_) {
+    if (!arguments.length) return rValue;
+    rValue = _;
     return chart;
   };    
     
