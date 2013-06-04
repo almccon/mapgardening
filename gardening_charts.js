@@ -9,13 +9,25 @@ function createScatter(data) {
           
   //For displaying numbers in the axes
   var numberFormat = d3.format(",f");
- 
-  var xValue = function(d) { return d[0];}; 
   
-  var yValue = function(d) { return d[1];}; 
+  var columnInfo = {
+    'uid': { 'text': "User ID", 'log': false},
+    'username': { 'text': "Username", 'log': false},
+    'count': { 'text': "Total edited nodes", 'log': true},
+    'blankcount': { 'text': "Blank spot edits", 'log': true},
+    'v1count': { 'text': "Version 1 edits", 'log': true},
+    'firstedit': { 'text': "First edit date", 'log': false},
+    'firsteditv1': { 'text': "First v1 edit date", 'log': false},
+    'firsteditblank': { 'text': "First blank spot edit date", 'log': false},
+    'days_active': { 'text': "Number of days active", 'log': true},
+    'mean_date': { 'text': "Mean edit date", 'log': false},
+    'mean_date_weighted': { 'text': "Weighted mean edit date", 'log': false}
+  };
   
-  var rValue = function(d) { return d[2];}; 
-  
+  var indexX = 'count'; // The currently active column for the X axis
+  var indexY = 'blankcount'; // The currently active column for the Y axis
+  var indexR = 'days_active'; // The currently active column for the radius
+
   var xScale = d3.scale.log();
 
   var yScale = d3.scale.log();
@@ -28,17 +40,13 @@ function createScatter(data) {
                      
   function chart(selection) {
     selection.each(function(data) {
-      
-        data = data.map(function(d, i) {
-          return [xValue.call(data, d, i), yValue.call(data, d, i), rValue.call(data, d, i)];
-        });
-     
+
         xScale
-          .domain([1, d3.max(data, function(d) { return d[0]; })])
+          .domain([1, d3.max(data, function(d) { return d[indexX]; })])
           .range([0, w]);
 
         yScale
-          .domain([1, d3.max(data, function(d) { return d[1]; })])
+          .domain([1, d3.max(data, function(d) { return d[indexY]; })])
           .range([h, 0]); // Inverted so greater values are at top
 
         xAxis
@@ -54,7 +62,7 @@ function createScatter(data) {
           // Setting ticks also sets tickFormat
 
         rScale
-          .domain([0, d3.max(data, function(d) { return d[2]; })])
+          .domain([0, d3.max(data, function(d) { return d[indexR]; })])
           .range([1, 10]);
 
       // Select SVG element. In the html file we create the svg, 
@@ -78,9 +86,9 @@ function createScatter(data) {
           .data(data)
         .enter().append("circle")
           .attr({
-            cx : function(d) { return xScale(d[0] + 1); },
-            cy : function(d) { return yScale(d[1] + 1); },
-            r : function(d) { return rScale(d[2]); },
+            cx : function(d) { return xScale(d[indexX] + 1); },
+            cy : function(d) { return yScale(d[indexY] + 1); },
+            r : function(d) { return rScale(d[indexR]); },
             opacity : 0.5,
             })
           // Add tooltips on mouseover
@@ -93,7 +101,7 @@ function createScatter(data) {
             //tooltip_div.html(d.username)
             //	.style("left", xScale(d.count + 1) + "px")
             //	.style("top", yScale(d.blankcount + 1) + "px");
-            info_div.html("User:&nbsp;" + d.username + "<br>" + "Total edited nodes:&nbsp;" + d.count + "<br>" + "\"Blank spot\" edits:&nbsp;" + d.blankcount + "<br>" + "Days active:&nbsp;" + d.days_active);
+            info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + d[indexX] + "<br>" + columnInfo[indexY].text + ":&nbsp;" + d[indexY] + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
           }).on("mouseout", function(d) {
             //tooltip_div.transition()
             //	.duration(500)
@@ -108,13 +116,12 @@ function createScatter(data) {
               .call(xAxis);
 
       // Add x axis label
-      // TODO: change label if x and y data are changed
       xa.append("text")
         .attr("class", "axis")
         .attr("transform", "translate(" + (w / 2) + "," + 0 + ")")
         .attr("dy", "3em")
         .style("text-anchor", "middle")
-        .text("total edited nodes");
+        .text(columnInfo[indexX].text);
 
       // Add y axis
       ya = svg.append("g")
@@ -122,18 +129,33 @@ function createScatter(data) {
               .call(yAxis);
 
       // Add y axis label
-      // TODO: change label if x and y data are changed
       ya.append("text")
         .attr("class", "axis")
         .attr("transform", "translate(" + 0 + "," + (h / 2) + ")rotate(-90)")
         // See http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
         .attr("dy", "-3em")
         .style("text-anchor", "middle")
-        .text("total blankspot edits");
+        .text(columnInfo[indexY].text);
     
+      // TODO: add legend for symbol size
     });
 
   }
+  
+  chart.setX = function(xstring) {
+    indexX = xstring;
+    return chart;
+  };
+
+  chart.setY = function(ystring) {
+    indexY = ystring;
+    return chart;
+  };
+
+  chart.setR = function(rstring) {
+    indexR = rstring;
+    return chart;
+  };
 
   chart.margin = function(_) {
     if (!arguments.length) return margin;
@@ -153,23 +175,5 @@ function createScatter(data) {
     return chart;
   };
 
-  chart.x = function(_) {
-    if (!arguments.length) return xValue;
-    xValue = _;
-    return chart;
-  };
-
-  chart.y = function(_) {
-    if (!arguments.length) return yValue;
-    yValue = _;
-    return chart;
-  };    
-    
-  chart.r = function(_) {
-    if (!arguments.length) return rValue;
-    rValue = _;
-    return chart;
-  };    
-    
   return chart;
 }
