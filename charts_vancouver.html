@@ -5,10 +5,12 @@
 		<title>Map gardening scatterplots</title>
 		<script src="d3/d3.v3.min.js" charset="utf-8"></script>
 		<script src="d3/queue.v1.min.js" charset="utf-8"></script>
-		<link href="gardening_charts.css" rel="stylesheet" />
+    <link href="gardening_charts.css" rel="stylesheet" />
 	</head>
 		<body>
-		<script src="gardening_charts.js"></script>
+		<h1>Vancouver 1000m grid</h1>
+    <svg id="chart"></svg>
+    <script src="gardening_charts.js"></script>
 		<script type="text/javascript">
 
 			queue()
@@ -40,7 +42,7 @@
               .r(function(d) {return d.days_active;});
               
           d3.select("body")
-            .append("svg")
+            .select("#chart")
               .datum(dataset)
               .call(chart);
 	
