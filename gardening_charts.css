@@ -4,6 +4,10 @@ body {
   background: white;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+#controls {
+  float: left;
+  margin: 0 20px;
+}
 .axis path, 
 .axis line {
   fill: none;

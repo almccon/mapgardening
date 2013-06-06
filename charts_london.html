@@ -9,14 +9,14 @@
 	</head>
 		<body>
 		<h1>London 1000m grid</h1>
-    <svg id="chart"></svg>
+    <div id="chart"></div>
     <script src="gardening_charts.js"></script>
 		<script type="text/javascript">
-
+		
 			queue()
 				.defer(d3.tsv, "output_2013-05-25/outputv4_london_raster_1000m.tsv")
 				.await(ready);
-				
+			
 			function ready(error, outputv4_london_raster_1000m) {
 				
 				if (error) {
@@ -27,7 +27,8 @@
 				} else {
 				
 					dataset = outputv4_london_raster_1000m;
-					
+				
+				  // TODO: move this to the chart code	
 					dataset.forEach(function(d) {
 						// convert strings to numbers
 						d.count = +d.count;
@@ -40,7 +41,7 @@
               .setX('count')
               .setY('blankcount')
               .setR('days_active');
-          
+              
           d3.select("body")
             .select("#chart")
               .datum(dataset)
