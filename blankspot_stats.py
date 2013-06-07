@@ -6,7 +6,8 @@ All it prints is the number of blankspots, the number of v1 nodes,
 and the number of total nodes. Since I am no longer storing the blankspot
 information in the hist_point table itself, these stats are no longer very informative.
 
-If you are looking for statistics for each user, you want user_analysis.py
+Currently, user_analysis.py does what this script used to do. It prints the "output_totals_*"
+files which contain the stats for each study area by date.
 """
 
 import MapGardening
