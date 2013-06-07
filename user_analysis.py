@@ -110,9 +110,11 @@ for placename in places.keys():
             us.add_userstats_mean_date(weighted=True, user_date_dict=userdates)
         
             us.print_userstats("outputv4_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
-                    
+            
+            us.print_userstats_bydate("output_userstatsbydate_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv", userdates)
+            
             us.print_placestats("output_totals_" + placename + "_" + params['runtype'] + "_" + params['resolution'] + "m.tsv")
-                     
+            
             now = time.time()
             print "finished. time elapsed: {:.0f} sec, {:.0f} sec total".format(now - lt, now - st)
             lt = now

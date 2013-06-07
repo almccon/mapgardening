@@ -438,3 +438,22 @@ class UserStats(object):
             print >> localfile, "%s\t%s\t%s\t%s" % (date, all_date_dict[date]['all'], all_date_dict[date]['v1'], all_date_dict[date]['blank']) 
        
         localfile.close()
+        
+    def print_userstats_bydate(self, filename, user_date_dict=None):
+        """
+        Print number of each type of edit per day for each user
+        """
+        if user_date_dict == None:
+            user_date_dict = self.get_dates_and_edit_counts()
+        
+        print "printing user stats per date"
+        
+        localfile = open(filename, "w")
+        
+        print >> localfile, "username\tdate\tcount\tv1count\tblankcount"
+        
+        for user in sorted(user_date_dict):
+            for date in sorted(user_date_dict[user]):
+                print >> localfile, "%s\t%s\t%s\t%s\t%s" % (user, date, user_date_dict[user][date]['all'], user_date_dict[user][date]['v1'], user_date_dict[user][date]['blank']) 
+                
+        localfile.close()
