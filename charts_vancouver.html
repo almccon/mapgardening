@@ -28,14 +28,6 @@
 				
 					dataset = outputv4_vancouver_raster_1000m;
 					
-					dataset.forEach(function(d) {
-						// convert strings to numbers
-						d.count = +d.count;
-						d.v1count = +d.v1count;
-						d.blankcount = +d.blankcount;
-						d.days_active = +d.days_active;
-					})
-
           var chart = createScatter()
               .setX('count')
               .setY('blankcount')
