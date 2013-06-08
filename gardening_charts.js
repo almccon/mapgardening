@@ -1,16 +1,16 @@
 
   var columnInfo = {
-    "uid": { "text": "User ID", "log": false},
-    "username": { "text": "Username", "log": false},
-    "count": { "text": "Total edited nodes", "log": true},
-    "blankcount": { "text": "Blank spot edits", "log": true},
-    "v1count": { "text": "Version 1 edits", "log": true},
-    "firstedit": { "text": "First edit date", "log": false},
-    "firsteditv1": { "text": "First v1 edit date", "log": false},
-    "firsteditblank": { "text": "First blank spot edit date", "log": false},
-    "days_active": { "text": "Number of days active", "log": true},
-    "mean_date": { "text": "Mean edit date", "log": false},
-    "mean_date_weighted": { "text": "Weighted mean edit date", "log": false}
+    "uid": { "text": "User ID", "show": false, "scale": "linear"},
+    "username": { "text": "Username", "show": false, "scale": "linear"},
+    "count": { "text": "Total edited nodes", "show": true, "scale": "log"},
+    "v1count": { "text": "Version 1 edits", "show": true, "scale": "log"},
+    "blankcount": { "text": "Blank spot edits", "show": true, "scale": "log"},
+    "firstedit": { "text": "First edit date", "show": true, "scale": "time"},
+    "firsteditv1": { "text": "First v1 edit date", "show": true, "scale": "time"},
+    "firsteditblank": { "text": "First blank spot edit date", "show": true, "scale": "time"},
+    "mean_date": { "text": "Mean edit date", "show": true, "scale": "time"},
+    "mean_date_weighted": { "text": "Weighted mean edit date", "show": true, "scale": "time"},
+    "days_active": { "text": "Number of days active", "show": true, "scale": "log"}
   };
   
   var indexX = 'count'; // The currently active column for the X axis
@@ -28,11 +28,17 @@ function createScatter(data) {
           
   //For displaying numbers in the axes
   var numberFormat = d3.format(",f");
+ 
+  var dateFormat = d3.time.format("%Y-%m-%d"); 
   
+  var xScaleLog = d3.scale.log();
+  var yScaleLog = d3.scale.log();
   
-  var xScale = d3.scale.log();
+  var xScaleTime = d3.time.scale();
+  var yScaleTime = d3.time.scale();
 
-  var yScale = d3.scale.log();
+  var xScaleLinear = d3.scale.linear();
+  var yScaleLinear = d3.scale.linear();
 
   var xAxis = d3.svg.axis();
 
@@ -40,34 +46,66 @@ function createScatter(data) {
 
   var rScale = d3.scale.sqrt();
   
+  var minima = {};
   var maxima = {};
   
   var svg;
   
   function chart(selection) {
     selection.each(function(data) {
+      
+      dataset.forEach(function(d) {
+        // convert strings to numbers and dates
+        d.count = +d.count;
+        d.v1count = +d.v1count;
+        d.blankcount = +d.blankcount;
+        d.days_active = +d.days_active;
+        d.uid = +d.uid;
+        d.firstedit = dateFormat.parse(d.firstedit);
+        d.firsteditv1 = dateFormat.parse(d.firsteditv1);
+        d.firsteditblank = dateFormat.parse(d.firsteditblank);
+        d.mean_date = dateFormat.parse(d.mean_date);
+        d.mean_date_weighted = dateFormat.parse(d.mean_date_weighted);
+      });
 
       var keys = d3.keys(data[0]);
       for (var i = 0; i < keys.length; i++) {
+        minima[keys[i]] = d3.min(data, function(d) { return d[keys[i]]; });
         maxima[keys[i]] = d3.max(data, function(d) { return d[keys[i]]; });
       }
         
-        xScale 
+        xScaleLog 
             .domain([1, maxima[indexX]])
             .range([0, w]);
 
-        yScale
+        yScaleLog
           .domain([1, maxima[indexY]])
+          .range([h, 0]); // Inverted so greater values are at top
+          
+        xScaleTime
+          .domain([minima[indexX],maxima[indexX]])
+          .range([0, w]);
+          
+        yScaleTime
+          .domain([minima[indexY],maxima[indexY]])
+          .range([h, 0]); // Inverted so greater values are at top
+
+        xScaleLinear
+          .domain([0, maxima[indexX]])
+          .range([0, w]);
+          
+        yScaleLinear
+          .domain([0, maxima[indexY]])
           .range([h, 0]); // Inverted so greater values are at top
 
         xAxis
-          .scale(xScale)
+          .scale(xScaleLog) // Just for the initial state
           .orient("bottom")
           .ticks(5, numberFormat); // Show only 5 divisions
           // Setting ticks also sets tickFormat
 
         yAxis
-          .scale(yScale)
+          .scale(yScaleLog) // Just for the initial state
           .orient("left")
           .ticks(5, numberFormat); // Show only 5 divisions
           // Setting ticks also sets tickFormat
@@ -139,8 +177,8 @@ function createScatter(data) {
           .data(data)
         .enter().append("circle")
           .attr({
-            cx : function(d) { return xScale(d[indexX] + 1); },
-            cy : function(d) { return yScale(d[indexY] + 1); },
+            cx : function(d) { return xScaleLog(d[indexX] + 1); },
+            cy : function(d) { return yScaleLog(d[indexY] + 1); },
             r : function(d) { return rScale(d[indexR]); },
             opacity : 0.5,
             })
@@ -152,8 +190,8 @@ function createScatter(data) {
             //	.style("opacity", .9);
             info_div.transition().duration(200).style("opacity", .9);
             //tooltip_div.html(d.username)
-            //	.style("left", xScale(d.count + 1) + "px")
-            //	.style("top", yScale(d.blankcount + 1) + "px");
+            //	.style("left", xScaleLog(d.count + 1) + "px")
+            //	.style("top", yScaleLog(d.blankcount + 1) + "px");
             info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + d[indexX] + "<br>" + columnInfo[indexY].text + ":&nbsp;" + d[indexY] + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
           }).on("mouseout", function(d) {
             //tooltip_div.transition()
@@ -199,14 +237,19 @@ function createScatter(data) {
   
   function updateX(newX) {
     indexX = newX;
-    xScale.domain([1, maxima[indexX]]);
+    if (columnInfo[indexX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
+    else if (columnInfo[indexX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
+    else xScale = xScaleLinear.domain([0, maxima[indexX]]);
     svg.selectAll("circle")
       .transition()
       .ease("linear")
       .duration(1000)
       .attr("cx", function(d) { 
-        return xScale(d[indexX] + 1); 
-      });
+        if (columnInfo[indexX].scale == "log") 
+          return xScale(d[indexX] + 1); 
+        else 
+          return xScale(d[indexX] || 0); 
+      }); 
     xAxis.scale(xScale);
     xa.call(xAxis);
     xa.select("#xAxisLabel")
@@ -215,12 +258,19 @@ function createScatter(data) {
   
   function updateY(newY) {
     indexY = newY;
-    yScale.domain([1, maxima[indexY]]);
+    if (columnInfo[indexY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
+    else if (columnInfo[indexY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
+    else yScale = yScaleLinear.domain([0, maxima[indexY]]);
     svg.selectAll("circle")
       .transition()
       .ease("linear")
       .duration(1000)
-      .attr("cy", function(d) { return yScale(d[indexY] + 1); });
+      .attr("cy", function(d) { 
+        if (columnInfo[indexY].scale == "log") 
+          return yScale(d[indexY] + 1); 
+        else
+          return yScale(d[indexY] || 0); 
+      }); 
     yAxis.scale(yScale);
     ya.call(yAxis);
     ya.select("#yAxisLabel")
