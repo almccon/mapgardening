@@ -452,8 +452,10 @@ class UserStats(object):
         
         print >> localfile, "username\tdate\tcount\tv1count\tblankcount"
         
+        nullvalue = "NULL"
+        
         for user in sorted(user_date_dict):
             for date in sorted(user_date_dict[user]):
-                print >> localfile, "%s\t%s\t%s\t%s\t%s" % (user, date, user_date_dict[user][date]['all'], user_date_dict[user][date]['v1'], user_date_dict[user][date]['blank']) 
+                print >> localfile, "%s\t%s\t%s\t%s\t%s" % (user or nullvalue, date, user_date_dict[user][date]['all'], user_date_dict[user][date]['v1'], user_date_dict[user][date]['blank']) 
                 
         localfile.close()
