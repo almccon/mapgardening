@@ -192,7 +192,15 @@ function createScatter(data) {
             //tooltip_div.html(d.username)
             //	.style("left", xScaleLog(d.count + 1) + "px")
             //	.style("top", yScaleLog(d.blankcount + 1) + "px");
-            info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + d[indexX] + "<br>" + columnInfo[indexY].text + ":&nbsp;" + d[indexY] + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
+            if (columnInfo[indexX].scale == "time")
+              x_value_string = dateFormat(d[indexX]);
+            else
+              x_value_string = d[indexX];
+            if (columnInfo[indexY].scale == "time")
+              y_value_string = dateFormat(d[indexY]);
+            else
+              y_value_string = d[indexY];
+            info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
           }).on("mouseout", function(d) {
             //tooltip_div.transition()
             //	.duration(500)
