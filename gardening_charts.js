@@ -142,7 +142,9 @@ function createScatter(data) {
           .attr("label", "xaxis")
           .attr("id", "xaxis")
           .selectAll("option")
-          .data(d3.entries(columnInfo)) // Use entries because columnInfo is an associative array
+          // Use entries because columnInfo is an associative array.
+          // Use filter to only include entries where d.value.show == true
+          .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
           .enter().append("option")
             .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
             .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
@@ -161,7 +163,9 @@ function createScatter(data) {
           .attr("label", "yaxis")
           .attr("id", "yaxis")
           .selectAll("option")
-          .data(d3.entries(columnInfo)) // Use entries because columnInfo is an associative array
+          // Use entries because columnInfo is an associative array.
+          // Use filter to only include entries where d.value.show == true
+          .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
           .enter().append("option")
             .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
             .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
