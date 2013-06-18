@@ -17,7 +17,7 @@
 				.defer(d3.tsv, "output_2013-06-08/outputv4_seattle_raster_1000m.tsv")
 				.await(ready);
 				
-			function ready(error, outputv4_seattle_raster_1000m) {
+			function ready(error, dataset) {
 				
 				if (error) {
 					
@@ -26,18 +26,12 @@
 					
 				} else {
 				
-					dataset = outputv4_seattle_raster_1000m;
-					
-          var chart = createScatter()
-              .setX('count')
-              .setY('blankcount')
-              .setR('days_active');
+          setX('count')
+          setY('blankcount')
+          setR('days_active');
           
-          d3.select("body")
-            .select("#chart")
-              .datum(dataset)
-              .call(chart);
-	
+          createScatter(dataset);
+              
 				}
 			}
 			
