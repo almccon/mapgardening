@@ -13,4 +13,4 @@ What is map gardening? For now, let me explain by offering the abstract from my 
 
 This github repository includes some of the scripts I am using to perform this quantitative analysis. At this point they may not be complete or functional, but in time I hope to post all my code here.
 
-For more information, see this [blog post](http://mappingmashups.net/2013/05/25/introducing-map-gardening/), or watch (this video)[http://vimeopro.com/openstreetmapus/state-of-the-map-us-2013/video/68097490] from the (2013 State of the Map US Conference)[http://stateofthemap.us/]
+For more information, see this [blog post](http://mappingmashups.net/2013/05/25/introducing-map-gardening/), or watch [this video](http://vimeopro.com/openstreetmapus/state-of-the-map-us-2013/video/68097490) from the [2013 State of the Map US Conference](http://stateofthemap.us/)
