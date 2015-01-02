@@ -3,7 +3,36 @@ Map Gardening
 
 A collection of scripts by [Alan McConchie](https://github.com/almccon) for the analysis of "map gardening" in OpenStreetMap
 
-What is map gardening? For now, let me explain by offering the abstract from my presentation at the 2013 Association of American Geographers conference:
+Installation
+----
+
+Requires a database of the format produced by the importer component of the [osm-history-renderer](https://github.com/MaZderMind/osm-history-renderer). Most of the following steps are just to get the osm-history-renderer running.
+
+Get an osm history dump by downloading `history-YYYY-MM_DD.osm.pbf` from here: http://planet.openstreetmap.org/planet/experimental/
+
+Alias this from .osm.pbf to .osh.pbf
+
+
+```
+sudo apt-get install git
+git clone https://github.com/almccon/osmium
+git clone https://github.com/almccon/osm-history-splitter
+git clone https://github.com/almccon/osm-history-renderer
+sudo apt-get update
+sudo apt-get install libboost-dev zlib1g-dev libshp-dev libgd2-xpm-dev libgdal1-dev libexpat1-dev libgeos++-dev libsparsehash-dev libv8-dev libicu-dev libprotobuf-dev protobuf-compiler doxygen libboost-test-dev libosmpbf-dev clang make
+cd osmium
+sudo make install
+cd ..
+cd osm-history-splitter
+sudo make install
+cd osm-history-renderer
+CONTINUE HERE
+```
+
+What is map gardening? 
+----
+
+For now, let me explain by offering the abstract from my presentation at the 2013 Association of American Geographers conference:
 
 > While the volume of Volunteered Geographic Information (VGI) continues its rapid growth, many collaborative mapping projects such as OpenStreetMap (OSM) are entering a mature phase, where the primary activity shifts away from the initial creation of data to its ongoing maintenance. As OSM approaches "completeness" in some geographic areas, there remain the less glamourous--but no less important--tasks of adding attribute data and periodically updating the map to reflect changes on the ground.
 
