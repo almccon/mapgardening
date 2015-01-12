@@ -25,8 +25,28 @@ sudo make install
 cd ..
 cd osm-history-splitter
 sudo make install
+
+./osm-history-splitter --hardcut /mnt/ebs/history-2014-12-22.osh.pbf osm-history-splitter.config
+
+
 cd osm-history-renderer
-CONTINUE HERE
+(not sure which order is necessary here, some of these may be already installed)
+sudo apt-get install libproj-dev
+sudo apt-get install postgresql
+sudo apt-get install postgresql-client
+sudo apt-get install postgresql-9.3-postgis-2.1 pgadmin3 postgresql-contrib
+
+sudo -u postgres createuser $USER --superuser
+createdb osm-history-render
+psql -d osm-history-render -c "create extension postgis;"
+psql -d osm-history-render -c "create extension hstore;"
+
+cd importer # inside the osm-history-renderer directory
+./osm-history-importer --dsn "dbname='osm-history-render'" /mnt/ebs/losangeles.osh.pbf
+
+
+
+
 ```
 
 What is map gardening? 
