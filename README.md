@@ -43,11 +43,39 @@ psql -d osm-history-render -c "create extension hstore;"
 
 cd importer # inside the osm-history-renderer directory
 ./osm-history-importer --dsn "dbname='osm-history-render'" /mnt/ebs/losangeles.osh.pbf
-
-
-
+(currently this fails for me)
 
 ```
+
+Instead of using the renderer, you could do this:
+
+```
+sudo apt-get install osm2pgsql
+osm2pgsql /mnt/ebs/losangeles.osh.pbf -d osm-history-render
+```
+
+For Tilemill mapping and debugging
+
+```
+git clone https://github.com/mapbox/tilemill
+cd tilemill
+sudo add-apt-repository ppa:developmentseed/mapbox
+sudo apt-get install npm
+sudo apt-get update
+sudo apt-get install tilemill libmapnik nodejs
+npm install
+```
+
+Read some of this:
+https://www.mapbox.com/tilemill/docs/linux-install/
+
+Then:
+
+```
+nodejs /usr/share/tilemill/index.js export every-line-ever output.png
+
+```
+
 
 What is map gardening? 
 ----
