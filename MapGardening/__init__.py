@@ -56,56 +56,181 @@ default_rasterid = 3
 # these times will be off by one. However, this is good enough for the
 # purposes of this analysis. Later, use the pytz module for more accuracy.
 places = {
-            'tirana': {
-                        'dbname': "osm-history-render-tirana",
-                        'rastertableproj': 32634, # WGS 84 / UTM zone 34N
-                        'utc_offset': 1,
-                       },
-            'losangeles': {
-                        'dbname': "osm-history-render-losangeles",
-                        'rastertableproj': 26910,
-                        'utc_offset': -8,
-                       },
-            'bayarea': {
-                        'dbname': "osm-history-render-bayarea",
-                        'rastertableproj': 26910,
-                        'utc_offset': -8,
-                       },
-            'seattle': {
-                        'dbname': "osm-history-render-seattle",
-                        'rastertableproj': 26910,
-                        'utc_offset': -8,
-                       },
-            'vancouver': {
-                        'dbname': "osm-history-render-vancouver",
-                        'rastertableproj': 26910,
-                        'utc_offset': -8,
-                       },
-            'haiti': {
-                        'dbname': "osm-history-render-haiti",
-                        'rastertableproj': 32618, # WGS 84 / UTM zone 18N
-                        'utc_offset': -5,
-                       },
-            'manchester': {
-                        'dbname': "osm-history-render-manchester",
-                        'rastertableproj': 32630, # WGS 84 / UTM zone 30N
-                        'utc_offset': 0,
-                       },
-            'london': {
-                        'dbname': "osm-history-render-london",
-                        'rastertableproj': 32630, # WGS 84 / UTM zone 30N
-                        'utc_offset': 0,
-                       },
             'amsterdam': {
                         'dbname': "osm-history-render-amsterdam",
                         'rastertableproj': 32631, # WGS 84 / UTM zone 31N
                         'utc_offset': 1,
+                       },
+            'auckland': {
+                        'dbname': "osm-history-render-auckland",
+                        'rastertableproj': 32760, # WGS 84 / UTM zone 60S
+                        'utc_offset': 12,
+                       },
+            'bayarea': {
+                        'dbname': "osm-history-render-bayarea",
+                        'rastertableproj': 32610, # WGS 84 / UTM zone 10N
+                        'utc_offset': -8,
+                       },
+            'berlin': {
+                        'dbname': "osm-history-render-berlin",
+                        'rastertableproj': 32633, # WGS 84 / UTM zone 33N
+                        'utc_offset': 1,
+                       },
+            'boston': {
+                        'dbname': "osm-history-render-boston",
+                        'rastertableproj': 32619, # WGS 84 / UTM zone 19N
+                        'utc_offset': -5,
+                       },
+            'buenosaires': {
+                        'dbname': "osm-history-render-buenosaires",
+                        'rastertableproj': 32721, # WGS 84 / UTM zone 21S
+                        'utc_offset': -3,
                        },
             'cairo': {
                         'dbname': "osm-history-render-cairo",
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                         'utc_offset': 2,
                        },
+            'crimea': {
+                        'dbname': "osm-history-render-crimea",
+                        'rastertableproj': 32636, # WGS 84 / UTM zone 36N
+                        'utc_offset': 2,
+                       },
+            'cyprus': {
+                        'dbname': "osm-history-render-cyprus",
+                        'rastertableproj': 32636, # WGS 84 / UTM zone 36N
+                        'utc_offset': 2,
+                       },
+            'douala': {
+                        'dbname': "osm-history-render-douala",
+                        'rastertableproj': 32632, # WGS 84 / UTM zone 32N
+                        'utc_offset': 1,
+                       },
+            'haiti': {
+                        'dbname': "osm-history-render-haiti",
+                        'rastertableproj': 32618, # WGS 84 / UTM zone 18N
+                        'utc_offset': -5,
+                       },
+            'istanbul': {
+                        'dbname': "osm-history-render-istanbul",
+                        'rastertableproj': 32635, # WGS 84 / UTM zone 35N
+                        'utc_offset': 2,
+                       },
+            'jakarta': {
+                        'dbname': "osm-history-render-jakarta",
+                        'rastertableproj': 32748, # WGS 84 / UTM zone 48S
+                        'utc_offset': 7,
+                       },
+            'jerusalem': {
+                        'dbname': "osm-history-render-jerusalem",
+                        'rastertableproj': 32636, # WGS 84 / UTM zone 36N
+                        'utc_offset': 2,
+                       },
+            'london': {
+                        'dbname': "osm-history-render-london",
+                        'rastertableproj': 32630, # WGS 84 / UTM zone 30N
+                        'utc_offset': 0,
+                       },
+            'losangeles': {
+                        'dbname': "osm-history-render-losangeles",
+                        'rastertableproj': 32610, # WGS 84 / UTM zone 10N
+                        'utc_offset': -8,
+                       },
+            'manchester': {
+                        'dbname': "osm-history-render-manchester",
+                        'rastertableproj': 32630, # WGS 84 / UTM zone 30N
+                        'utc_offset': 0,
+                       },
+            'mexicocity': {
+                        'dbname': "osm-history-render-mexicocity",
+                        'rastertableproj': 32614, # WGS 84 / UTM zone 14N
+                        'utc_offset': -6,
+                       },
+            'minsk': {
+                        'dbname': "osm-history-render-minsk",
+                        'rastertableproj': 32635, # WGS 84 / UTM zone 35N
+                        'utc_offset': 2,
+                       },
+            'montevideo': {
+                        'dbname': "osm-history-render-montevideo",
+                        'rastertableproj': 32721, # WGS 84 / UTM zone 21S
+                        'utc_offset': -3,
+                       },
+            'montreal': {
+                        'dbname': "osm-history-render-montreal",
+                        'rastertableproj': 32618, # WGS 84 / UTM zone 18N
+                        'utc_offset': -5,
+                       },
+            'moscow': {
+                        'dbname': "osm-history-render-moscow",
+                        'rastertableproj': 32637, # WGS 84 / UTM zone 37N
+                        'utc_offset': 3,
+                       },
+            'mumbai': {
+                        'dbname': "osm-history-render-mumbai",
+                        'rastertableproj': 32643, # WGS 84 / UTM zone 43N
+                        'utc_offset': 5.5,
+                       },
+            'nairobi': {
+                        'dbname': "osm-history-render-nairobi",
+                        'rastertableproj': 32737, # WGS 84 / UTM zone 37S 
+                        'utc_offset': 3,
+                       },
+            'newyork': {
+                        'dbname': "osm-history-render-newyork",
+                        'rastertableproj': 32618, # WGS 84 / UTM zone 18N
+                        'utc_offset': -5,
+                       },
+            'paris': {
+                        'dbname': "osm-history-render-paris",
+                        'rastertableproj': 32631, # WGS 84 / UTM zone 31N
+                        'utc_offset': 1,
+                       },
+            'quebec': {
+                        'dbname': "osm-history-render-quebec",
+                        'rastertableproj': 32619, # WGS 84 / UTM zone 19N
+                        'utc_offset': -5,
+                       },
+            'rio': {
+                        'dbname': "osm-history-render-rio",
+                        'rastertableproj': 32723, # WGS 84 / UTM zone 23S
+                        'utc_offset': -3,
+                       },
+            'santiago': {
+                        'dbname': "osm-history-render-santiago",
+                        'rastertableproj': 32719, # WGS 84 / UTM zone 19S
+                        'utc_offset': -4,
+                       },
+            'seattle': {
+                        'dbname': "osm-history-render-seattle",
+                        'rastertableproj': 32610, # WGS 84 / UTM zone 10N
+                        'utc_offset': -8,
+                       },
+            'tirana': {
+                        'dbname': "osm-history-render-tirana",
+                        'rastertableproj': 32634, # WGS 84 / UTM zone 34N
+                        'utc_offset': 1,
+                       },
+            'tokyo': {
+                        'dbname': "osm-history-render-tokyo",
+                        'rastertableproj': 32654, # WGS 84 / UTM zone 54N
+                        'utc_offset': 9,
+                       },
+            'toronto': {
+                        'dbname': "osm-history-render-toronto",
+                        'rastertableproj': 32617, # WGS 84 / UTM zone 17N
+                        'utc_offset': -5,
+                       },
+            'vancouver': {
+                        'dbname': "osm-history-render-vancouver",
+                        'rastertableproj': 32610, # WGS 84 / UTM zone 10N
+                        'utc_offset': -8,
+                       },
+            'yaounde': {
+                        'dbname': "osm-history-render-yaounde",
+                        'rastertableproj': 32632, # WGS 84 / UTM zone 32N
+                        'utc_offset': 1,
+                       }
           }
 
 
