@@ -14,12 +14,8 @@ import datetime
 import logging
 import math
 
-lib_dir = "/Users/alan/github/DYCAST/application/libs"
-
-sys.path.append(lib_dir)            # the hard-coded library above
 sys.path.append("libs")             # a library relative to current folder
 
-sys.path.append(lib_dir+os.sep+"psycopg2")  # the hard-coded library above
 sys.path.append("libs"+os.sep+"psycopg2")   # a library relative to current folder
 
 try:
@@ -32,11 +28,13 @@ loglevel = logging.DEBUG        # For debugging
 #loglevel = logging.INFO         # appropriate for normal use
 #loglevel = logging.WARNING      # appropriate for almost silent use
 
+logfile = "logfile.txt"
+
 distance = 100 # what are the units of the current projection, meters, right?
 
-dbname = "osm-history-render-tirana"
-user = "alan"
-password = "blah"
+dbname = "osm-history-render"
+user = "ubuntu"
+password = "ubuntu"
 host = "localhost"
 
 
@@ -45,7 +43,8 @@ cur = 0     # will be populated by init_db()
 
 # TODO: remove these globals, move them to a config file
 default_nodetablename = "hist_point"
-default_nodetableproj = 3857
+default_nodetableproj = 900913
+#default_nodetableproj = 3857
 
 default_rastertablename = "dummy_rast"
 default_rasterid = 3
@@ -61,6 +60,11 @@ places = {
                         'dbname': "osm-history-render-tirana",
                         'rastertableproj': 32634, # WGS 84 / UTM zone 34N
                         'utc_offset': 1,
+                       },
+            'losangeles': {
+                        'dbname': "osm-history-render-losangeles",
+                        'rastertableproj': 26910,
+                        'utc_offset': -8,
                        },
             'bayarea': {
                         'dbname': "osm-history-render-bayarea",
@@ -107,7 +111,7 @@ places = {
 
 def init_logging():
     logging.basicConfig(format='%(asctime)s %(levelname)8s %(message)s',
-        filename="/Users/alan/bin/osmproj/logfile.txt", filemode='a')
+        filename=logfile, filemode='a')
     logging.getLogger().setLevel(loglevel)
 
 def debug(message):
@@ -178,7 +182,7 @@ class BlankSpotTable:
        
         # TODO: handle exception if table exists 
         querystring = "CREATE TABLE \"" + self._tablename + "\" " + \
-            "(node_id integer PRIMARY KEY, blank boolean)"
+            "(node_id bigint PRIMARY KEY, blank boolean)"
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -220,13 +224,13 @@ class BlankSpotTableManager:
     
     def __init__(self):
         """check if the manager table already exists. Else, throw error"""
-        pass
+        self.create_manager_table()
     
     def create_manager_table(self, tablename=None): 
         """create the manager table already exists. Else, throw error"""
         if tablename:
             self._manager_tablename = tablename
-        querystring = "CREATE TABLE \"" + self._manager_tablename + "\" " + \
+        querystring = "CREATE TABLE IF NOT EXISTS \"" + self._manager_tablename + "\" " + \
             "(id SERIAL PRIMARY KEY, runtype char(16), resolution float, run_start timestamp, run_finish timestamp, tablename char(80))"
         try:
             cur.execute(querystring)
@@ -351,7 +355,7 @@ class Cell:
         temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
-            "AS SELECT b.id, b.version, b.uid, b.username, b.valid_from, b.valid_to " + \
+            "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
             "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) " + \
@@ -386,19 +390,19 @@ class Cell:
 
         if length > 0:
             
-            (earliest_id, version, uid, username, valid_from, valid_to) = rows[0]
+            (earliest_id, version, user_id, username, valid_from, valid_to) = rows[0]
             
-            # If uid is -1 (anonymous) AND the edit existed for less than one day,
+            # If user_id is -1 (anonymous) AND the edit existed for less than one day,
             # treat it as an error
             i = 0 
-            while (uid == -1 and valid_to and ((valid_to - valid_from).days < 1)):
+            while (user_id == -1 and valid_to and ((valid_to - valid_from).days < 1)):
                 i += 1
                 if (i >= length):
                     print "breaking"
                     break
-                #(earliest_id, version, uid, username, valid_from, valid_to) = rows[i]
+                #(earliest_id, version, user_id, username, valid_from, valid_to) = rows[i]
                 earliest_id = rows[i][0]
-                uid = rows[i][2]
+                user_id = rows[i][2]
                 valid_from = rows[i][4]
                 valid_to = rows[i][5]
              
@@ -436,7 +440,7 @@ class Cell:
                 cur.execute(querystring, (earliest_id,))
             except Exception, inst:
                 conn.rollback()
-                logging.error("can't set blank = TRUE")
+                logging.error("can't set blank = TRUE" + self.blankspottableobj.getTableName())
                 logging.error(inst)
                 sys.exit()  
             conn.commit()
@@ -652,7 +656,7 @@ class Node:
         """
 
         if is_past is True:
-            querystring = "SELECT b.id, b.version, b.uid, b.username "
+            querystring = "SELECT b.id, b.version, b.user_id, b.user_name "
             "FROM " + self.nodetableobj.getTableName() + " a, " + self.nodetableobj.getTableName() + " b "
             "WHERE a.id = %s "
             "AND b.valid_from < a.valid_from "
