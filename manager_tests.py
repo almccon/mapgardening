@@ -55,7 +55,7 @@ else:
 
 MapGardening.init_logging()
 
-for placename in places.keys():
+for placename in sorted(places.keys()):
     #print "testing BlankSpotTableManager for", placename
     print placename
     
