@@ -206,6 +206,11 @@ places = {
                         'rastertableproj': 32610, # WGS 84 / UTM zone 10N
                         'utc_offset': -8,
                        },
+            'seoul': {
+                        'dbname': "osm-history-render-seoul",
+                        'rastertableproj': 32652, # WGS 84 / UTM zone 52N
+                        'utc_offset': 9,
+                       },
             'tirana': {
                         'dbname': "osm-history-render-tirana",
                         'rastertableproj': 32634, # WGS 84 / UTM zone 34N
@@ -483,10 +488,12 @@ class Cell:
             "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " + \
-            "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) " + \
-            "AND b.version = 1 ORDER BY b.valid_from"
+            "AND b.x1000 = floor(ST_X(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
+            "AND b.y1000 = floor(ST_Y(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
+            "AND b.version = 1"
+            #"AND b.version = 1 ORDER BY b.valid_from"
         try:
-            cur.execute(querystring, (self.x, self.y))
+            cur.execute(querystring, (self.x, self.y, self.x, self.y))
         except Exception, inst:
             conn.rollback()
             if str(inst).find("already exists") != -1:
@@ -706,7 +713,7 @@ class Raster:
     
     def get_raster_stats(self): 
         querystring = "SELECT rid, (foo.md).* FROM " + \
-            "(SELECT rid, ST_MetaData(rast) AS md FROM dummy_rast) " + \
+            "(SELECT rid, ST_MetaData(rast) AS md FROM " + self.rastertablename + ") " + \
             "AS foo"
         try:
             cur.execute(querystring)
