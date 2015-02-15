@@ -3,6 +3,7 @@
 import MapGardening
 import optparse
 import time
+import datetime
 import sys
 
 usage = "usage: %prog [options]"
@@ -118,7 +119,7 @@ if place is not None:
                     inc += 1      
                     if not inc % 10:
                         now = time.time()
-                        print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total".format(inc, count_todo, 100*inc/count_todo, skipped, 100*skipped/count_todo, now - lt, now - st)
+                        print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total {}".format(inc, count_todo, 100*inc/count_todo, skipped, 100*skipped/count_todo, now - lt, now - st, time.ctime(int(now)))
                         lt = now
         
                 # end loop
