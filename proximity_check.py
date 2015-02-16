@@ -113,7 +113,7 @@ if place is not None:
                         else:
                             continue
                     cell = raster.get_cell(column, row)
-                    cell.analyze_nodes()
+                    cell.analyze_nodes(rasterScale)
                     # counter:
                 
                     inc += 1      
