@@ -500,6 +500,7 @@ class Cell:
             querystring += "AND b.x1000 = floor(ST_X(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
                            "AND b.y1000 = floor(ST_Y(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int "
 	else:
+            print "fall back to ST_Within query (much slower)"
             querystring += "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) "
 
         querystring += "AND b.version = 1"
