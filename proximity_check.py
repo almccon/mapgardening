@@ -101,7 +101,7 @@ if place is not None:
         width = raster.get_width() 
         height = raster.get_height()
         count = width * height
-        count_todo = count - starty * width - startx
+        count_todo = count - (starty-1) * width - (startx-1)
         active = False
         print "got %s cells (width: %s, height: %s), %s to do" % (count, width, height, count_todo)
         try:

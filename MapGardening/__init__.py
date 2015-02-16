@@ -398,7 +398,7 @@ class BlankSpotTableManager:
         Return empty list if none found.
         TODO: allow caller to specify a particular table, or a different ordering 
         """
-        querystring = "SELECT tablename FROM \"" + self._manager_tablename + "\" " + \
+        querystring = "SELECT tablename, run_start, run_finish FROM \"" + self._manager_tablename + "\" " + \
             "WHERE runtype = %s " + \
             "AND resolution = %s " + \
             "ORDER BY id DESC"
@@ -422,6 +422,9 @@ class BlankSpotTableManager:
             except Exception, inst:
                 logging.warning("blankspot table %s doesn't exist, skipping", tablename)
                 logging.warning(inst)
+
+            blankspot_table_obj.run_start = row[1]
+            blankspot_table_obj.run_finish = row[2]
             
             list_of_blankspot_table_objects.append(blankspot_table_obj)
         
@@ -479,21 +482,33 @@ class Cell:
         self.nodetableobj = nodetableobj
         self.blankspottableobj = blankspottableobj
         
-    def analyze_nodes(self, set_nodes_individually_flag=False):
+    def analyze_nodes(self, string_match_resolution=None):
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
+	"""Optional string_match_resolution uses rounded/off utm coordinate values for faster queries."""
         
         temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
         querystring = "CREATE TEMP TABLE " + temptablename + " " + \
             "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
-            "WHERE a.rid = " + str(self.record_id) + " " + \
-            "AND b.x1000 = floor(ST_X(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
-            "AND b.y1000 = floor(ST_Y(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
-            "AND b.version = 1"
-            #"AND b.version = 1 ORDER BY b.valid_from"
+            "WHERE a.rid = " + str(self.record_id) + " " 
+
+	if string_match_resolution == 100 :
+            querystring += "AND b.x100 = floor(ST_X(ST_PixelAsCentroid(a.rast, %s, %s))/100)::int " + \
+                           "AND b.y100 = floor(ST_Y(ST_PixelAsCentroid(a.rast, %s, %s))/100)::int "
+	elif string_match_resolution == 1000 :
+            querystring += "AND b.x1000 = floor(ST_X(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int " + \
+                           "AND b.y1000 = floor(ST_Y(ST_PixelAsCentroid(a.rast, %s, %s))/1000)::int "
+	else:
+            querystring += "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) "
+
+        querystring += "AND b.version = 1"
+
         try:
-            cur.execute(querystring, (self.x, self.y, self.x, self.y))
+            if (string_match_resolution == 100 or string_match_resolution == 1000):
+                cur.execute(querystring, (self.x, self.y, self.x, self.y))
+            else:
+                cur.execute(querystring, (self.x, self.y))
         except Exception, inst:
             conn.rollback()
             if str(inst).find("already exists") != -1:
@@ -538,32 +553,6 @@ class Cell:
                 valid_from = rows[i][4]
                 valid_to = rows[i][5]
              
-            # If we have not wiped the True/Falseness of the blank tag before starting, 
-            # then we have to individually set everything here.  
-            
-            if set_nodes_individually_flag == True: 
-                list_of_nodes = [] # a list 
-                for row in rows:
-                    node_id = row[0]
-                    list_of_nodes.append(node_id)
-                    #print "node_id: %s, valid_from: %s" % (node_id, valid_from)
-               
-                # this needs to be stored as a tuple for the query to execute
-                list_of_nodes_tuple = tuple(set(list_of_nodes)) 
-                
-                # For all nodes set blank = FALSE 
-                querystring = "UPDATE " + self.nodetableobj.getTableName() + " SET blank = FALSE WHERE id IN %s" 
-                try:
-                    cur.execute(querystring, (list_of_nodes_tuple,))
-                except Exception, inst:
-                    conn.rollback()
-                    logging.error("can't set blank = FALSE")
-                    logging.error(inst)
-                    sys.exit()  
-                conn.commit()
-                
-            # endif set_nodes_individually_flag == True
-              
             print "updating node %s" % earliest_id
             
             # For the first node (and only the first node) set blank = TRUE 
@@ -593,8 +582,9 @@ class Cell:
    
     # end def analyze_nodes
         
-    def analyze_nodes_and_preset_blanks(self):
-        return self.analyze_nodes(True)
+    # def analyze_nodes_and_preset_blanks(self):
+    #     return self.analyze_nodes(True)
+    # DEPRECATED. Use set_all_blankspots in the NodeTable object instead
         
     
 # end class Cell
@@ -1094,6 +1084,119 @@ class NodeTable:
         editcount = cur.fetchone()[0]
 
         print "%s\t%s\t%s\t%s" % (self.nodetablename, blankcount, v1count, editcount)
+
+    def initialize_rounded_coordinates(self, srid):
+        """
+        Project to given srid (UTM).
+        Create columns for the x and y coordinate rounded to 100m and 1000m
+        """
         
+        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+        try:
+            cur.execute(querystring,(srid,))
+        except Exception, inst:
+            logging.error("can't add column geom_utm to node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
     
+        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
+        try:
+            cur.execute(querystring,(srid,))
+        except Exception, inst:
+            logging.error("can't update column geom_utm in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't add column to node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't add column to node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't add column to node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't add column to node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't update column x1000 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "UPDATE " + self.nodetablename + " SET y1000 = ST_Y(geom_utm)/1000"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't update column y1000 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "UPDATE " + self.nodetablename + " SET x100 = ST_X(geom_utm)/100"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't update column x100 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "UPDATE " + self.nodetablename + " SET y100 = ST_Y(geom_utm)/100"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't update column y100 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "CREATE INDEX xy1000_idx on " + self.nodetablename + " (x1000,y1000)"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't create index on x1000, y1000 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
+        querystring = "CREATE INDEX xy100_idx on " + self.nodetablename + " (x100,y100)"
+        try:
+            cur.execute(querystring)
+        except Exception, inst:
+            logging.error("can't create index on x100, y100 in node table")
+            logging.error(inst)
+            conn.rollback()
+            return 1
+
 # end class NodeTable

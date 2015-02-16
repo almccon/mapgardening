@@ -44,6 +44,7 @@ else:
 possible_resolutions = [
                         #'250',
                         #'500',
+                        '100',
                         '1000',
                         ]
 
@@ -85,7 +86,7 @@ for placename in sorted(places.keys()):
                 for bst_obj in bst_objs:
                     tablename = bst_obj.getTableName().strip()
                     blankcount = bst_obj.getBlankCount()
-                    print '\t'.join((tablename, str(blankcount)))
+                    print '\t'.join((tablename, str(blankcount), str(bst_obj.run_start), str(bst_obj.run_finish)))
                     if blankcount <= 0:
                         print "deleting", tablename
                         bstm.remove_blankspot_table(bst_obj)
