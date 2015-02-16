@@ -35,26 +35,41 @@ sudo apt-get install libproj-dev
 sudo apt-get install postgresql
 sudo apt-get install postgresql-client
 sudo apt-get install postgresql-9.3-postgis-2.1 pgadmin3 postgresql-contrib
+```
 
+Now we create our database and import the extract. Generally, instead of `osm-history-render` I use `osm-history-render-place` as the database name, and keep each extract in a separate database. Then make sure this database name is saved in `MapGardening/__init__.py` so the scripts know which place corresponds to which database.
+
+```
 sudo -u postgres createuser $USER --superuser
 createdb osm-history-render
 psql -d osm-history-render -c "create extension postgis;"
 psql -d osm-history-render -c "create extension hstore;"
 
-cd importer # inside the osm-history-renderer directory
+cd importer # inside the osm-history-renderer/importer/ directory
 ./osm-history-importer --dsn "dbname='osm-history-render'" /mnt/ebs/losangeles.osh.pbf
-(currently this fails for me)
-
 ```
 
-Instead of using the renderer, you could do this:
+(currently this fails for me after closing the polygon table)
+Message:
 
 ```
-sudo apt-get install osm2pgsql
-osm2pgsql /mnt/ebs/losangeles.osh.pbf -d osm-history-render
+ERROR:  data type timestamp without time zone has no default operator class for access method "gist"
+HINT:  You must specify an operator class for the index or define a default operator class for the data type.
+
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  command failed
+Aborted (core dumped)
 ```
+
+Despite the core dump, this process seems to result in a usable database.
+
+Doing the analyses
+----
+
+
 
 For Tilemill mapping and debugging
+----
 
 ```
 git clone https://github.com/mapbox/tilemill
