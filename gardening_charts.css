@@ -44,3 +44,8 @@ div.infobox {
   border-radius: 8px;
   pointer-events: none;
 }
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}

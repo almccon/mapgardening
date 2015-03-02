@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Map gardening scatterplots</title>
+		<script src="d3/d3.v3.min.js" charset="utf-8"></script>
+		<script src="d3/queue.v1.min.js" charset="utf-8"></script>
+    <link href="gardening_charts.css" rel="stylesheet" />
+	</head>
+		<body>
+		<h1>SF Bay Area 1000m grid</h1>
+    <div id="chart"></div>
+    <script src="gardening_lines.js"></script>
+		<script type="text/javascript">
+
+			queue()
+				.defer(d3.tsv, "userstats/userstats_bayarea.csv")
+				.await(ready);
+				
+			function ready(error, dataset) {
+				
+				if (error) {
+					
+					// Do more here
+					console.log("Error loading file");
+					
+				} else {
+				
+          setX('date')
+          setY('nodes')
+          setR('days_active');
+          
+          createScatter(dataset);
+              
+				}
+			}
+			
+		</script>
+	</body>
+</html>
