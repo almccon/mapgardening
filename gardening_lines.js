@@ -14,7 +14,7 @@ var indexR = 'username'; // The currently active column for the radius
 var margin = {top: 20, right: 50, bottom: 40, left: 50};
       
 //Width and height
-var w = 500 - margin.left - margin.right,
+var w = 1200 - margin.left - margin.right,
     h = 500 - margin.top - margin.bottom;
           
 //For displaying numbers in the axes
@@ -42,15 +42,16 @@ var maxima = {};
 
 var svg;
   
-function createScatter(data) {
+function createTimelines(data) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.nodes = +d.nodes;
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
   });
-  
-  console.log("loading keys");
+  var dataByUser = d3.nest()
+    .key(function(d) { return d.uid;})
+    .entries(data);
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
@@ -85,7 +86,7 @@ function createScatter(data) {
   xAxis
     .scale(xScaleTime) // Just for the initial state
     .orient("bottom")
-    .ticks(5, numberFormat); // Show only 5 divisions
+    .ticks(10, numberFormat); // Show only 5 divisions
     // Setting ticks also sets tickFormat
 
   yAxis
@@ -143,6 +144,7 @@ function createScatter(data) {
 
   var line = d3.svg.line()
     .x(function(d) { return xScaleTime(d[indexX]); })
+    //.y(function(d) { return yScaleLinear(d[indexY]); });
     .y(function(d) { return yScaleLog(d[indexY] + 1); });
 
   controls.append("div")
@@ -167,17 +169,22 @@ function createScatter(data) {
   // Add the lines to the plot 
   //svg.selectAll("path")
   //  .enter()
-  svg.append("path")
-      .datum(data.filter(function(d) { return d.username == "total";}))
+  console.log("starting users");
+  dataByUser.forEach(function(d) {
+    //console.log(d);
+    svg.append("path")
+      //.datum(data.filter(function(d) { return d.username == "total";}))
+      .datum(d.values)
       .attr("class", "line")
       .attr("d", line)
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
-/*
       .on("mouseover", function(d) {
+        console.log(d[0].uid, d[0].username);
         //tooltip_div.transition()
         //	.duration(200)
         //	.style("opacity", .9);
+/*
         info_div.transition().duration(200).style("opacity", .9);
         //tooltip_div.html(d.username)
         //	.style("left", xScaleLog(d.count + 1) + "px")
@@ -190,14 +197,15 @@ function createScatter(data) {
           y_value_string = dateFormat(d[indexY]);
         else
           y_value_string = d[indexY];
-        info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
+        info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string);
       }).on("mouseout", function(d) {
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
         info_div.transition().duration(500).style("opacity", 0);
-      });
 */
+      });
+  });
   
   // Add x axis
   xa = svg.append("g")

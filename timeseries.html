@@ -8,13 +8,13 @@
     <link href="gardening_charts.css" rel="stylesheet" />
 	</head>
 		<body>
-		<h1>SF Bay Area 1000m grid</h1>
+		<h1>OSM user activity over time: London</h1>
     <div id="chart"></div>
     <script src="gardening_lines.js"></script>
 		<script type="text/javascript">
 
 			queue()
-				.defer(d3.tsv, "userstats/userstats_bayarea.csv")
+				.defer(d3.tsv, "userstats/userstats_london.csv")
 				.await(ready);
 				
 			function ready(error, dataset) {
@@ -28,9 +28,8 @@
 				
           setX('date')
           setY('nodes')
-          setR('days_active');
           
-          createScatter(dataset);
+          createTimelines(dataset);
               
 				}
 			}

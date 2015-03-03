@@ -40,7 +40,9 @@ sudo apt-get install postgresql-9.3-postgis-2.1 pgadmin3 postgresql-contrib
 Now we create our database and import the extract. Generally, instead of `osm-history-render` I use `osm-history-render-place` as the database name, and keep each extract in a separate database. Then make sure this database name is saved in `MapGardening/__init__.py` so the scripts know which place corresponds to which database.
 
 ```
-sudo -u postgres createuser $USER --superuser
+sudo -u postgres createuser $USER --superuser -P # when prompted, use the same password stored in __init__.py
+
+
 createdb osm-history-render
 psql -d osm-history-render -c "create extension postgis;"
 psql -d osm-history-render -c "create extension hstore;"
@@ -66,6 +68,8 @@ Despite the core dump, this process seems to result in a usable database.
 Doing the analyses
 ----
 
+```
+./initialize_nodetable.py -p place
 
 
 For Tilemill mapping and debugging

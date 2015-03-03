@@ -48,4 +48,5 @@ div.infobox {
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
+  stroke-opacity: 0.2;
 }
