@@ -9,6 +9,7 @@ var columnInfo = {
 var indexX = 'date'; // The currently active column for the X axis
 var indexY = 'nodes'; // The currently active column for the Y axis
 var indexR = 'username'; // The currently active column for the radius
+var indexColor = 'place'; // The currently active column for the coloring
   
 // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
 var margin = {top: 20, right: 50, bottom: 40, left: 50};
@@ -31,6 +32,9 @@ var yScaleTime = d3.time.scale();
 var xScaleLinear = d3.scale.linear();
 var yScaleLinear = d3.scale.linear();
 
+var colorScaleOrdinal = d3.scale.ordinal();
+//var colorScaleOrdinal = d3.scale.category20();
+
 var xAxis = d3.svg.axis();
 
 var yAxis = d3.svg.axis();
@@ -49,8 +53,9 @@ function createTimelines(data) {
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
   });
-  var dataByUser = d3.nest()
-    .key(function(d) { return d.uid;})
+  var dataByPlaceAndUser = d3.nest()
+    .key(function(d) { return d.place + d.uid;})
+    //.key(function(d) { return d.uid;})
     .entries(data);
 
   var keys = d3.keys(data[0]);
@@ -83,6 +88,10 @@ function createTimelines(data) {
     .domain([0, maxima[indexY]])
     .range([h, 0]); // Inverted so greater values are at top
 
+  colorScaleOrdinal
+    .domain(d3.map(data, function(d) { return d[indexColor]; }).values())
+    .range(["#af8dc3","#7fbf7b"]); // not needed if using d3.scale.category20()
+
   xAxis
     .scale(xScaleTime) // Just for the initial state
     .orient("bottom")
@@ -107,9 +116,9 @@ function createTimelines(data) {
       .attr("height", h + margin.top + margin.bottom)
     .append("g")// Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-  //var tooltip_div = d3.select("body").append("div")
-  //	.attr("class", "tooltip")
-  //	.style("opacity", 0);
+  var tooltip_div = d3.select("body").append("div")
+  	.attr("class", "tooltip")
+  	.style("opacity", 0);
 
   var info_div = d3.select("body")
       .append("div")
@@ -170,25 +179,38 @@ function createTimelines(data) {
   //svg.selectAll("path")
   //  .enter()
   console.log("starting users");
-  dataByUser.forEach(function(d) {
-    //console.log(d);
+  console.log(dataByPlaceAndUser);
+  dataByPlaceAndUser.sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; }).forEach(function(d) {
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
-      .datum(d.values)
-      .attr("class", "line")
+      .datum(d.values.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
+      //.attr("class", "line")
       .attr("d", line)
+      .attr("fill-opacity", 0)
+      .attr("stroke-width", 2)
+      .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+      .attr("stroke", function(d) { console.log(d[0]['place']); return colorScaleOrdinal(d[0]['place']); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
+        d3.select(this).attr("stroke","black")
+          .attr("stroke-opacity", 0.8);
+
         console.log(d[0].uid, d[0].username);
-        //tooltip_div.transition()
-        //	.duration(200)
-        //	.style("opacity", .9);
-/*
+        tooltip_div.transition()
+        	.duration(200)
+        	.style("opacity", .9);
         info_div.transition().duration(200).style("opacity", .9);
-        //tooltip_div.html(d.username)
-        //	.style("left", xScaleLog(d.count + 1) + "px")
-        //	.style("top", yScaleLog(d.blankcount + 1) + "px");
+/*
+        tooltip_div.html(d[0].username)
+          .style("left", 100 + "px") // TODO: follow mouse
+          .style("top", 100 + "px");
+*/
+
+          //.style("left", xScaleLog(d.count + 1) + "px")
+          //.style("top", yScaleLog(d.blankcount + 1) + "px");
+
+/*
         if (columnInfo[indexX].scale == "time")
           x_value_string = dateFormat(d[indexX]);
         else
@@ -197,13 +219,17 @@ function createTimelines(data) {
           y_value_string = dateFormat(d[indexY]);
         else
           y_value_string = d[indexY];
-        info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string);
+*/
+        info_div.html("Place:&nbsp;" + d[0].place + "<br>User:&nbsp;" + d[0].username);
+        //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string);
+
       }).on("mouseout", function(d) {
+        d3.select(this).attr("stroke", function(d) { console.log(d[0]['place']); return colorScaleOrdinal(d[0]['place']); })
+          .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
         info_div.transition().duration(500).style("opacity", 0);
-*/
       });
   });
   

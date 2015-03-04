@@ -8,16 +8,17 @@
     <link href="gardening_charts.css" rel="stylesheet" />
 	</head>
 		<body>
-		<h1>OSM user activity over time: London</h1>
+		<h1>OSM user activity over time: London vs Bay Area</h1>
     <div id="chart"></div>
     <script src="gardening_lines.js"></script>
 		<script type="text/javascript">
 
 			queue()
 				.defer(d3.tsv, "userstats/userstats_london.csv")
+				.defer(d3.tsv, "userstats/userstats_bayarea.csv")
 				.await(ready);
 				
-			function ready(error, dataset) {
+			function ready(error, dataset1, dataset2) {
 				
 				if (error) {
 					
@@ -28,8 +29,15 @@
 				
           setX('date')
           setY('nodes')
+
+          dataset1.forEach(function(d) {
+            d.place = "london";
+          });
+          dataset2.forEach(function(d) {
+            d.place = "bayarea";
+          });
           
-          createTimelines(dataset);
+          createTimelines(dataset1.concat(dataset2));
               
 				}
 			}
