@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Map gardening scatterplots</title>
-		<script src="d3/d3.v3.min.js" charset="utf-8"></script>
-		<script src="d3/queue.v1.min.js" charset="utf-8"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Map gardening scatterplots</title>
+    <script src="d3/d3.v3.min.js" charset="utf-8"></script>
+    <script src="d3/queue.v1.min.js" charset="utf-8"></script>
     <link href="gardening_charts.css" rel="stylesheet" />
-	</head>
-		<body>
-		<h1>OSM user activity over time: London vs Bay Area</h1>
+  </head>
+  <body>
+    <h1>OSM user activity over time: nodes edited per month</h1>
     <div id="chart"></div>
     <script src="gardening_lines.js"></script>
-		<script type="text/javascript">
+    <script type="text/javascript">
 
-			queue()
-				.defer(d3.tsv, "userstats/userstats_london.csv")
-				.defer(d3.tsv, "userstats/userstats_bayarea.csv")
-				.await(ready);
-				
-			function ready(error, dataset1, dataset2) {
-				
-				if (error) {
-					
-					// Do more here
-					console.log("Error loading file");
-					
-				} else {
-				
+      var places = [
+        "amsterdam",
+        "auckland",
+        "bayarea",
+        "berlin",
+        "boston",
+        "buenosaires",
+        "cairo",
+        "crimea",
+        "cyprus",
+        "douala",
+        "haiti",
+        "istanbul",
+        "jakarta",
+        "jerusalem",
+        "london",
+        "losangeles",
+        "manchester",
+        "mexicocity",
+        "minsk",
+        "montevideo",
+        "montreal",
+        "moscow",
+        "mumbai",
+        "nairobi",
+        "newyork",
+        "quebec",
+        "paris",
+        "rio",
+        "santiago",
+        "seattle",
+        "seoul",
+        "tirana",
+        "tokyo",
+        "toronto",
+        "vancouver",
+        "yaounde"
+      ];
+
+      var q = queue();
+
+      places.forEach(function(place) { q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");});
+
+      q.awaitAll(ready);
+
+      function ready(error, datasets) {
+
+        if (error) {
+
+          // Do more here
+          console.log("Error loading file");
+
+        } else {
+
           setX('date')
           setY('nodes')
 
-          dataset1.forEach(function(d) {
-            d.place = "london";
-          });
-          dataset2.forEach(function(d) {
-            d.place = "bayarea";
-          });
-          
-          createTimelines(dataset1.concat(dataset2));
-              
-				}
-			}
-			
-		</script>
-	</body>
+
+          for (var i = 0; i < places.length; i++) {
+            datasets[i].forEach(function(d) {
+              d.place = places[i];
+            });
+          }
+          dataset = [];
+
+          createTimelines(dataset.concat.apply(dataset,datasets));
+
+        }
+      }
+
+    </script>
+  </body>
 </html>

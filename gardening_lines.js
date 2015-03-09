@@ -2,7 +2,7 @@
 var columnInfo = {
   "uid": { "text": "User ID", "show": false, "scale": "linear"},
   "username": { "text": "Username", "show": false, "scale": "linear"},
-  "nodes": { "text": "Total edited nodes", "show": true, "scale": "log"},
+  "nodes": { "text": "Total edited nodes", "show": true, "scale": "linear"},
   "date": { "text": "Date", "show": true, "scale": "time"}
 };
 
@@ -32,8 +32,8 @@ var yScaleTime = d3.time.scale();
 var xScaleLinear = d3.scale.linear();
 var yScaleLinear = d3.scale.linear();
 
-var colorScaleOrdinal = d3.scale.ordinal();
-//var colorScaleOrdinal = d3.scale.category20();
+//var colorScaleOrdinal = d3.scale.ordinal();
+var colorScaleOrdinal = d3.scale.category20();
 
 var xAxis = d3.svg.axis();
 
@@ -54,7 +54,7 @@ function createTimelines(data) {
     d.date = dateFormat.parse(d.year);
   });
   var dataByPlaceAndUser = d3.nest()
-    .key(function(d) { return d.place + d.uid;})
+    .key(function(d) { return d.place + '-' + d.username;})
     //.key(function(d) { return d.uid;})
     .entries(data);
 
@@ -89,8 +89,8 @@ function createTimelines(data) {
     .range([h, 0]); // Inverted so greater values are at top
 
   colorScaleOrdinal
-    .domain(d3.map(data, function(d) { return d[indexColor]; }).values())
-    .range(["#af8dc3","#7fbf7b"]); // not needed if using d3.scale.category20()
+    .domain(d3.map(data, function(d) { return d[indexColor]; }).values());
+    //.range(["#af8dc3","#7fbf7b"]); // not needed if using d3.scale.category20()
 
   xAxis
     .scale(xScaleTime) // Just for the initial state
@@ -99,7 +99,7 @@ function createTimelines(data) {
     // Setting ticks also sets tickFormat
 
   yAxis
-    .scale(yScaleLog) // Just for the initial state
+    .scale(yScaleLinear) // Just for the initial state
     .orient("left")
     .ticks(5, numberFormat); // Show only 5 divisions
     // Setting ticks also sets tickFormat
@@ -124,7 +124,19 @@ function createTimelines(data) {
       .append("div")
       .attr("class", "infobox")
       .style("opacity", 0);
-  
+
+  var legend_div = d3.select("body")
+      .append("div")
+      .attr("class", "legend");
+
+  legend_div.selectAll("div")
+      .data(places) // defined in the other file
+    .enter()
+      .append("div")
+      .style("color", function(d) { return colorScaleOrdinal(d); })
+      .text(function(d) { return d; });
+
+
   // Create the menus to control X and Y 
   var controls = d3.select("body")
       .append("div")
@@ -153,8 +165,8 @@ function createTimelines(data) {
 
   var line = d3.svg.line()
     .x(function(d) { return xScaleTime(d[indexX]); })
-    //.y(function(d) { return yScaleLinear(d[indexY]); });
-    .y(function(d) { return yScaleLog(d[indexY] + 1); });
+    .y(function(d) { return yScaleLinear(d[indexY]); });
+    //.y(function(d) { return yScaleLog(d[indexY] + 1); });
 
   controls.append("div")
     .html("Y axis ")
@@ -178,9 +190,13 @@ function createTimelines(data) {
   // Add the lines to the plot 
   //svg.selectAll("path")
   //  .enter()
-  console.log("starting users");
-  console.log(dataByPlaceAndUser);
-  dataByPlaceAndUser.sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; }).forEach(function(d) {
+  //console.log("starting users");
+  dataByPlaceAndUser
+    .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
+    .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
+    .forEach(function(d) {
+      //console.log(d.values[0].username, d.values[0].place);
+
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
       .datum(d.values.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
@@ -189,17 +205,19 @@ function createTimelines(data) {
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
       .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
-      .attr("stroke", function(d) { console.log(d[0]['place']); return colorScaleOrdinal(d[0]['place']); })
+      .attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
         d3.select(this).attr("stroke","black")
           .attr("stroke-opacity", 0.8);
 
-        console.log(d[0].uid, d[0].username);
+        //console.log(d[0].uid, d[0].username, d[0].place);
+/*
         tooltip_div.transition()
         	.duration(200)
         	.style("opacity", .9);
+*/
         info_div.transition().duration(200).style("opacity", .9);
 /*
         tooltip_div.html(d[0].username)
@@ -224,7 +242,7 @@ function createTimelines(data) {
         //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
-        d3.select(this).attr("stroke", function(d) { console.log(d[0]['place']); return colorScaleOrdinal(d[0]['place']); })
+        d3.select(this).attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
           .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
         //tooltip_div.transition()
         //	.duration(500)
