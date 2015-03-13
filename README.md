@@ -10,6 +10,10 @@ Requires a database of the format produced by the importer component of the [osm
 
 Get an osm history dump by downloading `history-YYYY-MM_DD.osm.pbf` from here: http://planet.openstreetmap.org/planet/experimental/
 
+```
+curl http://planet.openstreetmap.org/pbf/full-history/history-latest.osm.pbf -o history-2015-01-26.osm.pbf
+```
+
 Alias this from .osm.pbf to .osh.pbf
 
 
@@ -25,23 +29,25 @@ sudo make install
 cd ..
 cd osm-history-splitter
 sudo make install
+```
 
+Now, do the splitting. This seems to require a machine with a lot of memory. The extracted files will end up in the current directory. On EC2 copy them to a mounted disc so they can be accessed by a smaller instance.
+
+```
 ./osm-history-splitter --hardcut /mnt/ebs/history-2014-12-22.osh.pbf osm-history-splitter.config
+```
 
-
+```
 cd osm-history-renderer
-(not sure which order is necessary here, some of these may be already installed)
-sudo apt-get install libproj-dev
-sudo apt-get install postgresql
-sudo apt-get install postgresql-client
-sudo apt-get install postgresql-9.3-postgis-2.1 pgadmin3 postgresql-contrib
+sudo apt-get install libproj-dev postgresql postgresql-client postgresql-9.3-postgis-2.1 pgadmin3 postgresql-contrib
+cd importer # inside the osm-history-renderer directory
+make
 ```
 
 Now we create our database and import the extract. Generally, instead of `osm-history-render` I use `osm-history-render-place` as the database name, and keep each extract in a separate database. Then make sure this database name is saved in `MapGardening/__init__.py` so the scripts know which place corresponds to which database.
 
 ```
 sudo -u postgres createuser $USER --superuser -P # when prompted, use the same password stored in __init__.py
-
 
 createdb osm-history-render
 psql -d osm-history-render -c "create extension postgis;"
@@ -52,12 +58,12 @@ cd importer # inside the osm-history-renderer/importer/ directory
 ```
 
 (currently this fails for me after closing the polygon table)
+
 Message:
 
 ```
 ERROR:  data type timestamp without time zone has no default operator class for access method "gist"
 HINT:  You must specify an operator class for the index or define a default operator class for the data type.
-
 terminate called after throwing an instance of 'std::runtime_error'
   what():  command failed
 Aborted (core dumped)
@@ -65,11 +71,41 @@ Aborted (core dumped)
 
 Despite the core dump, this process seems to result in a usable database.
 
+Or to initialize several at the same time: (test this for escapes, and for crashing at the importer step)
+
+```
+cd importer # inside the osm-history-renderer directory
+for place in amsterdam auckland bayarea berlin boston buenosaires cairo crimea cyprus douala haiti istanbul jakarta jerusalem london losangeles manchester mexicocity minsk montevideo montreal moscow mumbai nairobi newyork quebec paris rio santiago seattle seoul tirana tokyo toronto vancouver yaounde
+do
+  createdb osm-history-render-$place
+  psql -d osm-history-render-$place -c "create extension postgis;"
+  psql -d osm-history-render-$place -c "create extension hstore;"
+  ./osm-history-importer --dsn "dbname='osm-history-render-$place'" /mnt/ebs/$place.osh.pbf || true
+  psql -d osm-history-render-$place -c "create index hist_point_idx on hist_point using gist(geom);"
+  psql -d osm-history-render-$place -c "VACUUM ANALYZE hist_point;"
+done
+```
+
 Doing the analyses
 ----
 
 ```
 ./initialize_nodetable.py -p place
+```
+
+
+When the databases have been loaded, run the mapgardening analysis scripts. 
+
+ * ./proximity_check.py -p bayarea
+ * raster_stats.py
+ * user_analysis.py
+
+(modify `MapGardening/__init__.py` for configuration)
+
+TODO: transfer changes from small ec2 to large (or commit to github)
+
+Add a password to the ubuntu account on postgres. Log into psql: `\password ubuntu`
+
 
 
 For Tilemill mapping and debugging
