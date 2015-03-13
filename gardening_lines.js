@@ -52,6 +52,12 @@ var svg,
     xa,
     ya;
 
+// The line drawing function, in the default state
+var line = d3.svg.line()
+    .x(function(d) { return xScaleTime(d[indexX]); })
+    .y(function(d) { return yScaleLinear(d[indexY]); });
+    //.y(function(d) { return yScaleLog(d[indexY] + 1); });
+
 function createTimelines(data) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
@@ -171,11 +177,6 @@ function createTimelines(data) {
     });
 */
 
-  var line = d3.svg.line()
-    .x(function(d) { return xScaleTime(d[indexX]); })
-    .y(function(d) { return yScaleLinear(d[indexY]); });
-    //.y(function(d) { return yScaleLog(d[indexY] + 1); });
-
   controls.append("div")
     .html("Y axis ")
     .append("select")
@@ -208,8 +209,9 @@ function createTimelines(data) {
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
       .datum(d.values.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
-      //.attr("class", "line")
+      .attr("class", "lineclass")
       .attr("d", line)
+      .attr("fill", "none")
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
       .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
@@ -298,7 +300,9 @@ function updateX(newX) {
   if (columnInfo[modeX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
   else if (columnInfo[modeX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
   else xScale = xScaleLinear.domain([0, maxima[indexX]]);
-  svg.selectAll("circle")
+
+
+  svg.selectAll("path")
     .transition()
     .ease("linear")
     .duration(1000)
@@ -318,20 +322,20 @@ function updateY(newY) {
   modeY = newY;
   indexY = columnInfo[modeY].index;
   if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
-  else if (columnInfo[modeY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
   else yScale = yScaleLinear.domain([0, maxima[indexY]]);
-  svg.selectAll("circle")
+
+  // update only the line.y() function. Or do I not even need to do this?
+
+  line.y(function(d) { return yScale(d[indexY] + 1); });
+
+  svg.selectAll(".lineclass")
     .transition()
     .ease("linear")
     .duration(1000)
-    .attr("cy", function(d) { 
-      if (columnInfo[modeY].scale == "log") 
-        return yScale(d[indexY] + 1); 
-      else
-        return yScale(d[indexY] || 0); 
-    }); 
+    .attr("d", line);
+
   yAxis.scale(yScale);
-  ya.call(yAxis);
+//  ya.call(yAxis);
   ya.select("#yAxisLabel")
     .text(columnInfo[modeY].text);
 };
