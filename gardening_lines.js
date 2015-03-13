@@ -1,14 +1,18 @@
 
 var columnInfo = {
-  "uid": { "text": "User ID", "show": false, "scale": "linear"},
-  "username": { "text": "Username", "show": false, "scale": "linear"},
-  "nodes": { "text": "Total edited nodes", "show": true, "scale": "linear"},
-  "date": { "text": "Date", "show": true, "scale": "time"}
+  "uid": { "index": "uid", "text": "User ID", "show": false, "scale": "linear"},
+  "username": { "index": "username", "text": "Username", "show": false, "scale": "linear"},
+  "nodes-linear": { "index": "nodes", "text": "Total edited nodes (linear scale)", "show": true, "scale": "linear"},
+  "nodes-log": { "index": "nodes", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
+  "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
 };
 
 var indexX = 'date'; // The currently active column for the X axis
+var modeX = 'date'; // The currently active column for the X axis
 var indexY = 'nodes'; // The currently active column for the Y axis
+var modeY = 'nodes-log'; // The currently active column for the Y axis
 var indexR = 'username'; // The currently active column for the radius
+var modeR = 'username'; // The currently active column for the radius
 var indexColor = 'place'; // The currently active column for the coloring
   
 // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
@@ -44,8 +48,10 @@ var rScale = d3.scale.sqrt();
 var minima = {};
 var maxima = {};
 
-var svg;
-  
+var svg,
+    xa,
+    ya;
+
 function createTimelines(data) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
@@ -99,7 +105,7 @@ function createTimelines(data) {
     // Setting ticks also sets tickFormat
 
   yAxis
-    .scale(yScaleLinear) // Just for the initial state
+    .scale(yScaleLog) // Just for the initial state
     .orient("left")
     .ticks(5, numberFormat); // Show only 5 divisions
     // Setting ticks also sets tickFormat
@@ -142,6 +148,7 @@ function createTimelines(data) {
       .append("div")
       .attr("id", "controls");
   
+/*
   controls.append("div")
     .html("X axis ")
     .append("select")
@@ -162,6 +169,7 @@ function createTimelines(data) {
     .on("change", function() { 
       updateX(this.options[this.selectedIndex].value) 
     });
+*/
 
   var line = d3.svg.line()
     .x(function(d) { return xScaleTime(d[indexX]); })
@@ -229,17 +237,17 @@ function createTimelines(data) {
           //.style("top", yScaleLog(d.blankcount + 1) + "px");
 
 /*
-        if (columnInfo[indexX].scale == "time")
+        if (columnInfo[modeX].scale == "time")
           x_value_string = dateFormat(d[indexX]);
         else
           x_value_string = d[indexX];
-        if (columnInfo[indexY].scale == "time")
+        if (columnInfo[modeY].scale == "time")
           y_value_string = dateFormat(d[indexY]);
         else
           y_value_string = d[indexY];
 */
         info_div.html("Place:&nbsp;" + d[0].place + "<br>User:&nbsp;" + d[0].username);
-        //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string);
+        //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
         d3.select(this).attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
@@ -264,7 +272,7 @@ function createTimelines(data) {
     .attr("transform", "translate(" + (w / 2) + "," + 0 + ")")
     .attr("dy", "3em")
     .style("text-anchor", "middle")
-    .text(columnInfo[indexX].text);
+    .text(columnInfo[modeX].text);
 
   // Add y axis
   ya = svg.append("g")
@@ -279,22 +287,23 @@ function createTimelines(data) {
     // See http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
     .attr("dy", "-3em")
     .style("text-anchor", "middle")
-    .text(columnInfo[indexY].text);
+    .text(columnInfo[modeY].text);
   
   // TODO: add legend for symbol size
 }
 
 function updateX(newX) {
-  indexX = newX;
-  if (columnInfo[indexX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
-  else if (columnInfo[indexX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
+  modeX = newX;
+  indexX = columnInfo[modeX].index;
+  if (columnInfo[modeX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
+  else if (columnInfo[modeX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
   else xScale = xScaleLinear.domain([0, maxima[indexX]]);
   svg.selectAll("circle")
     .transition()
     .ease("linear")
     .duration(1000)
     .attr("cx", function(d) { 
-      if (columnInfo[indexX].scale == "log") 
+      if (columnInfo[modeX].scale == "log") 
         return xScale(d[indexX] + 1); 
       else 
         return xScale(d[indexX] || 0); 
@@ -302,20 +311,21 @@ function updateX(newX) {
   xAxis.scale(xScale);
   xa.call(xAxis);
   xa.select("#xAxisLabel")
-    .text(columnInfo[indexX].text);
+    .text(columnInfo[modeX].text);
 };
 
 function updateY(newY) {
-  indexY = newY;
-  if (columnInfo[indexY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
-  else if (columnInfo[indexY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
+  modeY = newY;
+  indexY = columnInfo[modeY].index;
+  if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
+  else if (columnInfo[modeY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
   else yScale = yScaleLinear.domain([0, maxima[indexY]]);
   svg.selectAll("circle")
     .transition()
     .ease("linear")
     .duration(1000)
     .attr("cy", function(d) { 
-      if (columnInfo[indexY].scale == "log") 
+      if (columnInfo[modeY].scale == "log") 
         return yScale(d[indexY] + 1); 
       else
         return yScale(d[indexY] || 0); 
@@ -323,18 +333,18 @@ function updateY(newY) {
   yAxis.scale(yScale);
   ya.call(yAxis);
   ya.select("#yAxisLabel")
-    .text(columnInfo[indexY].text);
+    .text(columnInfo[modeY].text);
 };
 
 function setX(xstring) {
-  indexX = xstring;
+  modeX = xstring;
 };
 
 function setY(ystring) {
-  indexY = ystring;
+  modeY = ystring;
 };
 
 function setR(rstring) {
-  indexR = rstring;
+  modeR = rstring;
 };
 
