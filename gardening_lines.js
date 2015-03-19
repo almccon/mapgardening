@@ -4,6 +4,12 @@ var columnInfo = {
   "username": { "index": "username", "text": "Username", "show": false, "scale": "linear"},
   "nodes-linear": { "index": "nodes", "text": "Total edited nodes (linear scale)", "show": true, "scale": "linear"},
   "nodes-log": { "index": "nodes", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
+  "nodes-created-linear": { "index": "nodes_created", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
+  "nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
+  "nodes-created-linear": { "index": "nodes_created", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
+  "nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
+  "nodes-current-linear": { "index": "nodes_current", "text": "Nodes currently existing (linear scale)", "show": true, "scale": "linear"},
+  "nodes-current-log": { "index": "nodes_current", "text": "Nodes currently existing (log scale)", "show": true, "scale": "log"},
   "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
 };
 
@@ -62,6 +68,8 @@ function createTimelines(data) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.nodes = +d.nodes;
+    d.nodes_created = +d.nodes_created;
+    d.nodes_current = +d.nodes_current;
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
   });
@@ -70,12 +78,43 @@ function createTimelines(data) {
     //.key(function(d) { return d.uid;})
     .entries(data);
 
+  dataByPlaceAndUser.forEach(function(entry) {
+    entry.values.forEach(function(d) {
+      // Add zero values for date before and after each entry, if data doesn't exist
+      // Works if the date cadence is one month
+      var prevDate = new Date(d.date);
+      prevDate.setMonth(d.date.getMonth() - 1);
+      var nextDate = new Date(d.date);
+      nextDate.setMonth(d.date.getMonth() + 1);
+      if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getYear() == prevDate.getYear(); }).length == 0) {
+        var newValue = {};
+        newValue.uid = d.uid;
+        newValue.username = d.username;
+        newValue.place = d.place;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = 0;
+        newValue.date = prevDate;
+        entry.values.push(newValue)
+      }
+      if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getYear() == nextDate.getYear(); }).length == 0) {
+        var newValue = {};
+        newValue.uid = d.uid;
+        newValue.username = d.username;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = 0;
+        newValue.date = nextDate;
+        entry.values.push(newValue)
+      }
+    });
+  });
+
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
     minima[keys[i]] = d3.min(data, function(d) { return d[keys[i]]; });
     maxima[keys[i]] = d3.max(data, function(d) { return d[keys[i]]; });
   }
-        
+
+  var earliestDate = new Date(minima[indexX]);
+  earliestDate.setMonth(earliestDate.getMonth() - 1);
+
   xScaleLog 
       .domain([1, maxima[indexX]])
       .range([0, w]);
@@ -85,7 +124,7 @@ function createTimelines(data) {
     .range([h, 0]); // Inverted so greater values are at top
     
   xScaleTime
-    .domain([minima[indexX],maxima[indexX]])
+    .domain([earliestDate,maxima[indexX]])
     .range([0, w]);
     
   yScaleTime
@@ -201,6 +240,7 @@ function createTimelines(data) {
   //  .enter()
   //console.log("starting users");
   dataByPlaceAndUser
+    //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
@@ -208,7 +248,7 @@ function createTimelines(data) {
 
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
-      .datum(d.values.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
+      .datum(d.values.filter(function(d) { return d.date.getYear() < 115; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
       .attr("class", "lineclass")
       .attr("d", line)
       .attr("fill", "none")
