@@ -54,7 +54,12 @@
 
       var q = queue();
 
-      places.forEach(function(place) { q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");});
+      //places.forEach(function(place) { q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");});
+      places.forEach(function(place) {
+        q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");
+        q.defer(d3.tsv, "userstats/output_userstatsbydate_" + place + "_raster_1000m.tsv");
+        q.defer(d3.tsv, "userstats/output_totals_" + place + "_raster_1000m.tsv");
+      });
 
       q.awaitAll(ready);
 
@@ -70,15 +75,33 @@
           setX('date')
           setY('nodes-log')
 
+          // Combine all the datasets into two arrays, then pass to timeline function.
+          // This is because the userstats_ files have a different format
+          userstats = [];
+          blankspotstats = [];
 
           for (var i = 0; i < places.length; i++) {
-            datasets[i].forEach(function(d) {
+            // for each row, add the placename. Must be a better way to do this.
+            // For the "userstats" files
+            datasets[(i*3)].forEach(function(d) {
               d.place = places[i];
+              userstats.push(d);
+            });
+
+            // For the "output_userstatsbydate" files
+            datasets[(i*3)+1].forEach(function(d) {
+              d.place = places[i];
+              blankspotstats.push(d);
+            });
+            // For the "output_totals" files
+            datasets[(i*3)+2].forEach(function(d) {
+              d.user_name = "total";
+              d.place = places[i];
+              blankspotstats.push(d);
             });
           }
-          dataset = [];
 
-          createTimelines(dataset.concat.apply(dataset,datasets));
+          createTimelines(userstats,blankspotstats);
 
         }
       }

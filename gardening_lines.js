@@ -64,7 +64,7 @@ var line = d3.svg.line()
     .y(function(d) { return yScaleLinear(d[indexY]); });
     //.y(function(d) { return yScaleLog(d[indexY] + 1); });
 
-function createTimelines(data) {
+function createTimelines(data, blankspotdata) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.nodes = +d.nodes;
@@ -73,10 +73,21 @@ function createTimelines(data) {
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
   });
+  blankspotdata.forEach(function(d) {
+    d.username = d.user_name;
+    // convert strings to numbers and dates
+    d.count = +d.count;
+    d.v1count = +d.v1count;
+    d.blankcount = +d.blankcount;
+    d.date = dateFormat.parse(d.date);
+  });
   var dataByPlaceAndUser = d3.nest()
     .key(function(d) { return d.place + '-' + d.username;})
     //.key(function(d) { return d.uid;})
     .entries(data);
+  var blankspotByPlaceAndUser = d3.nest()
+    .key(function(d) { return d.place + '-' + d.user_name;})
+    .entries(blankspotdata);
 
   dataByPlaceAndUser.forEach(function(entry) {
     entry.values.forEach(function(d) {
@@ -86,7 +97,7 @@ function createTimelines(data) {
       prevDate.setMonth(d.date.getMonth() - 1);
       var nextDate = new Date(d.date);
       nextDate.setMonth(d.date.getMonth() + 1);
-      if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getYear() == prevDate.getYear(); }).length == 0) {
+      if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
         var newValue = {};
         newValue.uid = d.uid;
         newValue.username = d.username;
@@ -95,7 +106,7 @@ function createTimelines(data) {
         newValue.date = prevDate;
         entry.values.push(newValue)
       }
-      if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getYear() == nextDate.getYear(); }).length == 0) {
+      if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
         var newValue = {};
         newValue.uid = d.uid;
         newValue.username = d.username;
@@ -105,6 +116,25 @@ function createTimelines(data) {
       }
     });
   });
+
+  /*
+  TODO: continue this join here:
+  blankspotByPlaceAndUser.forEach(function(entry) {
+    entry.values.forEach(function(value) {
+      var date = new Date(value.date);
+      date = new Date(date.getFullYear(), date.getMonth(), 1);
+      dataByPlaceAndUser.forEach(function(ent) {
+        if (ent.key == entry.key) {
+          ent.values.forEach(function(val) {
+            console.log(date,val.date);
+            if (date == val.date)
+              console.log(val,value);
+          });
+        }
+      });
+    });
+  });
+  */
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
@@ -248,7 +278,7 @@ function createTimelines(data) {
 
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
-      .datum(d.values.filter(function(d) { return d.date.getYear() < 115; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
+      .datum(d.values.filter(function(d) { return d.date.getFullYear() < 2015; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
       .attr("class", "lineclass")
       .attr("d", line)
       .attr("fill", "none")
