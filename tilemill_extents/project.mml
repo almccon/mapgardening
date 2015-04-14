@@ -1,0 +1,104 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "raster",
+      "extent": [
+        -180,
+        -58,
+        180,
+        85.0000000001144
+      ],
+      "id": "glds00agnative",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/alan/Documents/geodata/GPWv3/gldens00/glds00ag/glds00ag_native.tiff"
+      },
+      "layer": null,
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "glds00agnative"
+    },
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -123.303497441449,
+        -37.1108006532106,
+        175.040087610053,
+        55.9223122850057
+      ],
+      "id": "rasterextents",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/alan/github/mapgardening/raster_extents.json",
+        "layer": "OGRGeoJSON",
+        "id": "rasterextents",
+        "project": "mapgardening_extents",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rasterextents"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -123.3,
+        -37.1,
+        175.03,
+        55.92
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "latlon_extents",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-123.3,-37.1,175.03,55.92",
+        "host": "localhost",
+        "dbname": "combined"
+      },
+      "id": "latlonextents",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "latlonextents"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "mapgardening_extents",
+  "description": ""
+}
