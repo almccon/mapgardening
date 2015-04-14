@@ -10,6 +10,8 @@ var columnInfo = {
   "nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
   "nodes-current-linear": { "index": "nodes_current", "text": "Nodes currently existing (linear scale)", "show": true, "scale": "linear"},
   "nodes-current-log": { "index": "nodes_current", "text": "Nodes currently existing (log scale)", "show": true, "scale": "log"},
+  "blankspot-nodes-linear": { "index": "blankcount", "text": "Blankspot nodes (linear scale)", "show": true, "scale": "linear"},
+  "blankspot-nodes-log": { "index": "blankcount", "text": "Blankspot nodes (log scale)", "show": true, "scale": "log"},
   "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
 };
 
@@ -64,30 +66,20 @@ var line = d3.svg.line()
     .y(function(d) { return yScaleLinear(d[indexY]); });
     //.y(function(d) { return yScaleLog(d[indexY] + 1); });
 
-function createTimelines(data, blankspotdata) {
+function createTimelines(data) {
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.nodes = +d.nodes;
     d.nodes_created = +d.nodes_created;
-    d.nodes_current = +d.nodes_current;
+    d.nodes_current = +d['cur nodes'];
+    d.blankcount = +d.blankcount;
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
-  });
-  blankspotdata.forEach(function(d) {
-    d.username = d.user_name;
-    // convert strings to numbers and dates
-    d.count = +d.count;
-    d.v1count = +d.v1count;
-    d.blankcount = +d.blankcount;
-    d.date = dateFormat.parse(d.date);
   });
   var dataByPlaceAndUser = d3.nest()
     .key(function(d) { return d.place + '-' + d.username;})
     //.key(function(d) { return d.uid;})
     .entries(data);
-  var blankspotByPlaceAndUser = d3.nest()
-    .key(function(d) { return d.place + '-' + d.user_name;})
-    .entries(blankspotdata);
 
   dataByPlaceAndUser.forEach(function(entry) {
     entry.values.forEach(function(d) {
@@ -102,7 +94,7 @@ function createTimelines(data, blankspotdata) {
         newValue.uid = d.uid;
         newValue.username = d.username;
         newValue.place = d.place;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = 0;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.blankcount = 0;
         newValue.date = prevDate;
         entry.values.push(newValue)
       }
@@ -110,31 +102,12 @@ function createTimelines(data, blankspotdata) {
         var newValue = {};
         newValue.uid = d.uid;
         newValue.username = d.username;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = 0;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.blankcount = 0;
         newValue.date = nextDate;
         entry.values.push(newValue)
       }
     });
   });
-
-  /*
-  TODO: continue this join here:
-  blankspotByPlaceAndUser.forEach(function(entry) {
-    entry.values.forEach(function(value) {
-      var date = new Date(value.date);
-      date = new Date(date.getFullYear(), date.getMonth(), 1);
-      dataByPlaceAndUser.forEach(function(ent) {
-        if (ent.key == entry.key) {
-          ent.values.forEach(function(val) {
-            console.log(date,val.date);
-            if (date == val.date)
-              console.log(val,value);
-          });
-        }
-      });
-    });
-  });
-  */
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
@@ -270,7 +243,8 @@ function createTimelines(data, blankspotdata) {
   //  .enter()
   //console.log("starting users");
   dataByPlaceAndUser
-    //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
+    //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
+    //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
     .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
