@@ -20,6 +20,31 @@
   ],
   "Layer": [
     {
+      "geometry": "polygon",
+      "extent": [
+        -179.9999999999996,
+        -85.051,
+        179.9999999999996,
+        83.66647310000003
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "land_polygons",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-20037508.3427892,-20037471.2051371,20037508.3427892,18461504.100102",
+        "host": "localhost",
+        "dbname": "combined"
+      },
+      "id": "landpolygons",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "landpolygons"
+    },
+    {
       "geometry": "raster",
       "extent": [
         -180,
@@ -27,26 +52,19 @@
         180,
         85.0000000001144
       ],
-      "id": "glds00agnative",
+      "id": "glcount00",
       "class": "",
       "Datasource": {
-        "file": "/Users/alan/Documents/geodata/GPWv3/gldens00/glds00ag/glds00ag_native.tiff"
+        "file": "/Users/alan/github/mapgardening/population/glcount00.tif",
+        "band": "1"
       },
       "layer": null,
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "glds00agnative"
-    },
-    {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "geometry": "polygon",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      }
+      "advanced": {
+        "band": "1"
+      },
+      "name": "glcount00"
     },
     {
       "geometry": "polygon",
@@ -95,6 +113,28 @@
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "latlonextents"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        174.5355853709446,
+        -37.101731514996246,
+        175.04127490437932,
+        -36.68755232902553
+      ],
+      "id": "aucklandraster142467",
+      "class": "raster",
+      "Datasource": {
+        "file": "/Users/alan/Dropbox/stamenprojects/osmproj/auckland_raster_1424672087.hex.tiff",
+        "band": "“1"
+      },
+      "layer": null,
+      "srs-name": "custom",
+      "srs": "+proj=utm +zone=60 +south +datum=WGS84 +units=m +no_defs ",
+      "advanced": {
+        "band": "“1"
+      },
+      "name": "aucklandraster142467"
     }
   ],
   "scale": 1,
