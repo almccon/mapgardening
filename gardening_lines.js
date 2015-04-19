@@ -70,6 +70,8 @@ var rScale = d3.scale.sqrt();
 var minima = {};
 var maxima = {};
 
+var blankspottotals = {};
+
 var svg,
     xa,
     ya;
@@ -97,7 +99,12 @@ function createTimelines(data, metadata) {
     d.blankcount_pop = d.blankcount / metadata[d.place].population * 1000000;
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
+
+    if(!(d.place in blankspottotals)) blankspottotals[d.place] = {};
+    if(!(d.username in blankspottotals[d.place])) blankspottotals[d.place][d.username] = 0;
+    blankspottotals[d.place][d.username] += d.blankcount;
   });
+
   var dataByPlaceAndUser = d3.nest()
     .key(function(d) { return d.place + '-' + d.username;})
     //.key(function(d) { return d.uid;})
@@ -265,9 +272,10 @@ function createTimelines(data, metadata) {
   //  .enter()
   //console.log("starting users");
   dataByPlaceAndUser
+    .filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
-    .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
+    //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
@@ -281,7 +289,7 @@ function createTimelines(data, metadata) {
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
       .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
-      .attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
+      .attr("stroke", function(d) { return blankspottotals[d[0].place][d[0].username] ? "red" : colorScaleOrdinal(d[0]['place']); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
@@ -314,11 +322,11 @@ function createTimelines(data, metadata) {
         else
           y_value_string = d[indexY];
 */
-        info_div.html("Place:&nbsp;" + d[0].place + "<br>User:&nbsp;" + d[0].username);
+        info_div.html("Place:&nbsp;" + d[0].place + "<br>User:&nbsp;" + d[0].username + "<br>Blankspots:&nbsp;" + blankspottotals[d[0].place][d[0].username]);
         //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
-        d3.select(this).attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
+        d3.select(this).attr("stroke", function(d) { return blankspottotals[d[0].place][d[0].username] ? "red" : colorScaleOrdinal(d[0]['place']); })
           .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
         //tooltip_div.transition()
         //	.duration(500)
