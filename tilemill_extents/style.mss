@@ -4,7 +4,7 @@ Map {
 
 #countries,
 #landpolygons {
-  line-color: #899;
+  line-color: #cdd;
   line-width: 1;
   line-join: round;
   polygon-fill: black;
