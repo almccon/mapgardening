@@ -110,6 +110,17 @@ function createTimelines(data, metadata) {
     //.key(function(d) { return d.uid;})
     .entries(data);
 
+  function createNewValue(uid, username, place, date) {
+    // creates a blank data entry
+    var newValue = {};
+    newValue.uid = uid;
+    newValue.username = username;
+    newValue.place = place;
+    newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = newValue.count_area = newValue.v1count_area = newValue.blankcount_area = newValue.count_pop = newValue.v1count_pop = newValue.blankcount_pop = 0;
+    newValue.date = date;
+    return newValue;
+  }
+
   dataByPlaceAndUser.forEach(function(entry) {
     entry.values.forEach(function(d) {
       // Add zero values for date before and after each entry, if data doesn't exist
@@ -119,21 +130,10 @@ function createTimelines(data, metadata) {
       var nextDate = new Date(d.date);
       nextDate.setMonth(d.date.getMonth() + 1);
       if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
-        var newValue = {};
-        newValue.uid = d.uid;
-        newValue.username = d.username;
-        newValue.place = d.place;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = newValue.count_area = newValue.v1count_area = newValue.blankcount_area = newValue.count_pop = newValue.v1count_pop = newValue.blankcount_pop = 0;
-        newValue.date = prevDate;
-        entry.values.push(newValue)
+        entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
       }
       if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
-        var newValue = {};
-        newValue.uid = d.uid;
-        newValue.username = d.username;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = newValue.count_area = newValue.v1count_area = newValue.blankcount_area = newValue.count_pop = newValue.v1count_pop = newValue.blankcount_pop = 0;
-        newValue.date = nextDate;
-        entry.values.push(newValue)
+        entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
       }
     });
   });
