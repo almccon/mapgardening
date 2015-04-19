@@ -91,12 +91,12 @@ function createTimelines(data, metadata) {
     d.count = +d.count;
     d.v1count = +d.v1count;
     d.blankcount = +d.blankcount;
-    d.count_area = d.count / metadata[d.place].land_area * 1000000;
-    d.v1count_area = d.v1count / metadata[d.place].land_area * 1000000;
-    d.blankcount_area = d.blankcount / metadata[d.place].land_area * 1000000;
-    d.count_pop = d.count / metadata[d.place].population * 1000000;
-    d.v1count_pop = d.v1count / metadata[d.place].population * 1000000;
-    d.blankcount_pop = d.blankcount / metadata[d.place].population * 1000000;
+    d.count_area = d.count / metadata[d.place].land_area * 1000000; // per sq km
+    d.v1count_area = d.v1count / metadata[d.place].land_area * 1000000; // per sq km
+    d.blankcount_area = d.blankcount / metadata[d.place].land_area * 1000000; // per sq km
+    d.count_pop = d.count / metadata[d.place].population * 1000000; // per 1million inhabitants
+    d.v1count_pop = d.v1count / metadata[d.place].population * 1000000; // per 1million inhabitants
+    d.blankcount_pop = d.blankcount / metadata[d.place].population * 1000000; // per 1million inhabitants
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
 
