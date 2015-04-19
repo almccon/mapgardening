@@ -2,23 +2,25 @@
 var columnInfo = {
   "uid": { "index": "uid", "text": "User ID", "show": false, "scale": "linear"},
   "username": { "index": "username", "text": "Username", "show": false, "scale": "linear"},
-  "nodes-linear": { "index": "nodes", "text": "Total edited nodes (linear scale)", "show": true, "scale": "linear"},
-  "nodes-log": { "index": "nodes", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
-  "nodes-created-linear": { "index": "nodes_created", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
-  "nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
-  "nodes-created-linear": { "index": "nodes_created", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
-  "nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
-  "nodes-current-linear": { "index": "nodes_current", "text": "Nodes currently existing (linear scale)", "show": true, "scale": "linear"},
-  "nodes-current-log": { "index": "nodes_current", "text": "Nodes currently existing (log scale)", "show": true, "scale": "log"},
+  "count-linear": { "index": "count", "text": "Total edited nodes (linear scale)", "show": true, "scale": "linear"},
+  "count-log": { "index": "count", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
+  "v1count-linear": { "index": "v1count", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
+  "v1count-log": { "index": "v1count", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-linear": { "index": "blankcount", "text": "Blankspot nodes (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-log": { "index": "blankcount", "text": "Blankspot nodes (log scale)", "show": true, "scale": "log"},
   "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
 };
+  //"nodes-linear": { "index": "nodes", "text": "Total edited nodes (linear scale) via userstats", "show": true, "scale": "linear"},
+  //"nodes-log": { "index": "nodes", "text": "Total edited nodes (log scale) via userstats", "show": true, "scale": "log"},
+  //"nodes-created-linear": { "index": "nodes_created", "text": "Nodes created (linear scale) via userstats", "show": true, "scale": "linear"},
+  //"nodes-created-log": { "index": "nodes_created", "text": "Nodes created (log scale) via userstats", "show": true, "scale": "log"},
+  //"nodes-current-linear": { "index": "nodes_current", "text": "Nodes currently existing (linear scale) via userstats", "show": true, "scale": "linear"},
+  //"nodes-current-log": { "index": "nodes_current", "text": "Nodes currently existing (log scale) via userstats", "show": true, "scale": "log"},
 
 var indexX = 'date'; // The currently active column for the X axis
 var modeX = 'date'; // The currently active column for the X axis
-var indexY = 'nodes'; // The currently active column for the Y axis
-var modeY = 'nodes-log'; // The currently active column for the Y axis
+var indexY = 'count'; // The currently active column for the Y axis
+var modeY = 'count-log'; // The currently active column for the Y axis
 var indexR = 'username'; // The currently active column for the radius
 var modeR = 'username'; // The currently active column for the radius
 var indexColor = 'place'; // The currently active column for the coloring
@@ -72,6 +74,8 @@ function createTimelines(data) {
     d.nodes = +d.nodes;
     d.nodes_created = +d.nodes_created;
     d.nodes_current = +d['cur nodes'];
+    d.count = +d.count;
+    d.v1count = +d.v1count;
     d.blankcount = +d.blankcount;
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
@@ -94,7 +98,7 @@ function createTimelines(data) {
         newValue.uid = d.uid;
         newValue.username = d.username;
         newValue.place = d.place;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.blankcount = 0;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = 0;
         newValue.date = prevDate;
         entry.values.push(newValue)
       }
@@ -102,7 +106,7 @@ function createTimelines(data) {
         var newValue = {};
         newValue.uid = d.uid;
         newValue.username = d.username;
-        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.blankcount = 0;
+        newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = 0;
         newValue.date = nextDate;
         entry.values.push(newValue)
       }
