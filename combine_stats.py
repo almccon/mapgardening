@@ -9,10 +9,7 @@ userstats_{placename}.csv
     ...and overall totals by month for the whole study area
 
 output_userstatsbydate_{placename}_raster_1000m.tsv
-    my blankspot counts by date and user, not summed for months
-
-output_totals_{placename}_raster_1000m.tsv
-    my blankspot totals for each study area, by date. Not summed for months.
+    my blankspot counts by date and user, not summed for months. Does not include totals.
 
 NOTE: this assumes 1000m rasters. Would need to be extended for other scales.
 """
@@ -22,7 +19,6 @@ folder = "userstats/"
 # The prefixes and postfixes for the input files
 userstats_filename_template = [folder + "userstats_", ".csv"]
 blankspots_filename_template = [folder + "output_userstatsbydate_", "_raster_1000m.tsv"]
-blankspot_totals_filename_template = [folder + "output_totals_", "_raster_1000m.tsv"]
 output_filename_template = [folder + "combined_", "_raster_1000m.tsv"]
 
 #import MapGardening
@@ -95,12 +91,10 @@ for placename in places:
 
     userstats_filename = userstats_filename_template[0] + placename + userstats_filename_template[1]
     blankspots_filename = blankspots_filename_template[0] + placename + blankspots_filename_template[1]
-    blankspot_totals_filename = blankspot_totals_filename_template[0] + placename + blankspot_totals_filename_template[1]
     output_filename = output_filename_template[0] + placename + output_filename_template[1]
 
     print userstats_filename
     print blankspots_filename
-    print blankspot_totals_filename
     print output_filename
 
     data = {}
@@ -117,6 +111,9 @@ for placename in places:
         head = row
       else:
         username = row[head.index('username')]
+        # My files print anonymous users differently
+        if (username == ""):
+          username = "NULL"
         date = row[head.index('year')]
         if not username in data:
           data[username] = {}
@@ -129,6 +126,15 @@ for placename in places:
           data[username]['edits'][date][field] = row[head.index(field)]
 
     # Now parse the blankspot data
+
+    username = "total"
+    if not username in data:
+      data[username] = {}
+    if not 'uid' in data[username]:
+      data[username]['uid'] = ""     # if we loaded the user from mvexel style, this will be set already
+    if not 'edits' in data[username]:
+      data[username]['edits'] = {}
+
     fields_of_interest = ["count", "v1count", "blankcount"]
     head = None
     doc = csv.reader(open(blankspots_filename), dialect='excel', delimiter='\t')
@@ -137,36 +143,27 @@ for placename in places:
         head = row
       else:
         username = row[head.index('user_name')]
-        # My files print anonymous users differently
-        if (username == "NULL"):
-          username = ""
 
         date = datetime.datetime.strptime(row[head.index('date')], "%Y-%m-%d").date()
         date = date.replace(day=1) # Round to first day of month
         date = date.strftime("%Y-%m-%d")
+        if not username in data:
+          data[username] = {}
+        if not 'uid' in data[username]:
+          data[username]['uid'] = ""     # if we loaded the user from mvexel style, this will be set already
+        if not 'edits' in data[username]:
+          data[username]['edits'] = {}
+        if not date in data[username]['edits']:
+          data[username]['edits'][date] = {}
+        if not date in data['total']['edits']:
+          data['total']['edits'][date] = {}
         for field in fields_of_interest:
-          if not field in data[username]['edits']:
+          if not field in data[username]['edits'][date]:
             data[username]['edits'][date][field] = 0
+          if not field in data['total']['edits'][date]:
+            data['total']['edits'][date][field] = 0
           data[username]['edits'][date][field] += int(row[head.index(field)])
-
-    # Now parse the blankspot totals
-    # Treat these just like the second file, except that the username is always 'total'
-
-    head = None
-    doc = csv.reader(open(blankspot_totals_filename), dialect='excel', delimiter='\t')
-    for row in doc:
-      if not head:
-        head = row
-      else:
-        username = "total"
-
-        date = datetime.datetime.strptime(row[head.index('date')], "%Y-%m-%d").date()
-        date = date.replace(day=1) # Round to first day of month
-        date = date.strftime("%Y-%m-%d")
-        for field in fields_of_interest:
-          if not field in data[username]['edits']:
-            data[username]['edits'][date][field] = 0
-          data[username]['edits'][date][field] += int(row[head.index(field)])
+          data['total']['edits'][date][field] += int(row[head.index(field)])
 
     # Finally print the data into a new filename, stepping through a sorted list
     # of usernames, and a sorted list of dates (but only the ones that exist).
