@@ -52,6 +52,29 @@
         "yaounde"
       ];
 
+      var metadata = {};
+
+      d3.csv("userstats/places_metadata.csv", function(d) {
+        // do the parsing
+        return {
+          place: d.place,
+          population: +d.population,
+          bounds_area: +d.bounds_area,
+          land_area: +d.land_area
+        };
+      }, function(error, rows) {
+        if (error) {
+          console.log("error", error);
+        } else {
+          rows.forEach(function(d) {
+            metadata[d.place] = {};
+            metadata[d.place]['population'] = d.population;
+            metadata[d.place]['bounds_area'] = d.bounds_area;
+            metadata[d.place]['land_area'] = d.land_area;
+          });
+        }
+      });
+
       var q = queue();
 
       //places.forEach(function(place) { q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");});
@@ -84,7 +107,7 @@
             });
           }
 
-          createTimelines(userstats);
+          createTimelines(userstats,metadata);
 
         }
       }
