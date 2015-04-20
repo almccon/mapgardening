@@ -233,7 +233,8 @@ function createTimelines(data, metadata) {
     .range([h, 0]); // Inverted so greater values are at top
     
   xScaleTime
-    .domain([earliestDate,maxima[indexX]])
+    .domain([new Date("2005-01-01"),new Date("2015-01-01")])
+    //.domain([earliestDate,maxima[indexX]])
     .range([0, w]);
     
   yScaleTime
