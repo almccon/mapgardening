@@ -44,7 +44,7 @@ var modeR = 'username'; // The currently active column for the radius
 var indexColor = 'place'; // The currently active column for the coloring
   
 // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
-var margin = {top: 20, right: 50, bottom: 40, left: 50};
+var margin = {top: 20, right: 50, bottom: 40, left: 80};
       
 //Width and height
 var w = 1200 - margin.left - margin.right,
@@ -75,6 +75,8 @@ var rScale = d3.scale.sqrt();
 
 var minima = {};
 var maxima = {};
+
+var overrideY;
 
 var blankspottotals = {};
 
@@ -275,9 +277,10 @@ function createTimelines(data, metadata) {
     // Setting ticks also sets tickFormat
 
   yAxis
-    .scale(yScaleLog) // Just for the initial state
+    .scale(yScaleLinear) // Just for the initial state
     .orient("left")
-    .ticks(5, numberFormat); // Show only 5 divisions
+    .ticks(5); // Show only 5 divisions
+    //.ticks(5, numberFormat); // Show only 5 divisions
     // Setting ticks also sets tickFormat
 
   rScale
@@ -509,11 +512,18 @@ function updateX(newX) {
     .text(columnInfo[modeX].text);
 };
 
-function updateY(newY) {
+function updateY(newY, maxY) {
+  // maxY is a temporary override for the maximum vertical scale
   modeY = newY;
   indexY = columnInfo[modeY].index;
-  if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
-  else yScale = yScaleLinear.domain([0, maxima[indexY]]);
+  var yScale;
+
+  // Use a global override if exists. If not, use temporary override, if exists. If not, use range of data.
+  var newMaxY =  overrideY ? overrideY : maxY ? maxY : maxima[indexY];
+  if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, newMaxY]);
+  else yScale = yScaleLinear.domain([0, newMaxY]);
+  //if (columnInfo[modeY].scale == "linear") yScale = yScaleLinear.domain([0, maxY ? maxY : maxima[indexY]]);
+  //else yScale = yScaleLog.domain([1, maxY ? maxY : maxima[indexY]]);
 
   // update only the line.y() function. Or do I not even need to do this?
 
@@ -526,7 +536,7 @@ function updateY(newY) {
     .attr("d", line);
 
   yAxis.scale(yScale);
-//  ya.call(yAxis);
+  ya.call(yAxis);
   ya.select("#yAxisLabel")
     .text(columnInfo[modeY].text);
 };
@@ -552,3 +562,17 @@ function updateCadence(cadence) {
     paths["monthly"].style("display","block");
   }
 };
+
+function updateMaxY(maxY) {
+  updateY(modeY, maxY);
+}
+
+function setOverrideY(maxY) {
+  overrideY = maxY;
+  updateMaxY(maxY);
+}
+
+function unsetOverrideY() {
+  overrideY = undefined;
+  updateMaxY();
+}
