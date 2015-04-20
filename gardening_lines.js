@@ -44,7 +44,7 @@ var modeR = 'username'; // The currently active column for the radius
 var indexColor = 'place'; // The currently active column for the coloring
   
 // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
-var margin = {top: 20, right: 50, bottom: 40, left: 80};
+var margin = {top: 20, right: 50, bottom: 40, left: 100};
       
 //Width and height
 var w = 1200 - margin.left - margin.right,
@@ -479,7 +479,7 @@ function createTimelines(data, metadata) {
   ya.append("text")
     .attr("class", "axis")
     .attr("id", "yAxisLabel")
-    .attr("transform", "translate(" + 0 + "," + (h / 2) + ")rotate(-90)")
+    .attr("transform", "translate(" + -35 + "," + (h / 2) + ")rotate(-90)")
     // See http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
     .attr("dy", "-3em")
     .style("text-anchor", "middle")
