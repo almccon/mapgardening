@@ -366,8 +366,9 @@ function createTimelines(data, metadata) {
       .attr("fill", "none")
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
-      .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
-      .attr("stroke", function(d) { return blankspottotals[d[0].place][d[0].username] ? "red" : colorScaleOrdinal(d[0]['place']); })
+      .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+      // If user has blankspots (and is not "total", color them red
+      .attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
@@ -404,8 +405,8 @@ function createTimelines(data, metadata) {
         //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
-        d3.select(this).attr("stroke", function(d) { return blankspottotals[d[0].place][d[0].username] ? "red" : colorScaleOrdinal(d[0]['place']); })
-          .attr("stroke-opacity", function(d) { return 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+        d3.select(this).attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+          .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
