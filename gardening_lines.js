@@ -82,7 +82,37 @@ var line = d3.svg.line()
     .y(function(d) { return yScaleLinear(d[indexY]); });
     //.y(function(d) { return yScaleLog(d[indexY] + 1); });
 
+// The possible data fields
+var fields = [
+  "nodes",
+  "nodes_created",
+  "nodes_current",
+  "count",
+  "v1count",
+  "blankcount",
+  "count_area",
+  "v1count_area",
+  "blankcount_area",
+  "count_pop",
+  "v1count_pop",
+  "blankcount_pop"
+];
+
+function createNewValue(uid, username, place, date) {
+  // creates a blank data entry
+  var newValue = {};
+  newValue.uid = uid;
+  newValue.username = username;
+  newValue.place = place;
+  fields.forEach(function(field) {
+    newValue[field] = 0;
+  });
+  newValue.date = date;
+  return newValue;
+}
+
 function createTimelines(data, metadata) {
+  var yearlydata = {};
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.nodes = +d.nodes;
@@ -100,9 +130,24 @@ function createTimelines(data, metadata) {
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
 
+    // sum the blankspots for each user
     if(!(d.place in blankspottotals)) blankspottotals[d.place] = {};
     if(!(d.username in blankspottotals[d.place])) blankspottotals[d.place][d.username] = 0;
     blankspottotals[d.place][d.username] += d.blankcount;
+
+    // create yearly totals
+    if(!(d.place in yearlydata)) yearlydata[d.place] = {};
+    if(!(d.username in yearlydata[d.place])) yearlydata[d.place][d.username] = {};
+
+    var yearIndex = d.date.getFullYear();
+    var firstOfYearDateObj = new Date(d.date);
+    firstOfYearDateObj.setMonth(0);
+    if(!(yearIndex in yearlydata[d.place][d.username])) yearlydata[d.place][d.username][yearIndex] = createNewValue(d.uid, d.username, d.place, firstOfYearDateObj);
+
+    fields.forEach(function(field) {
+      if (!(field in yearlydata[d.place][d.username][yearIndex])) yearlydata[d.place][d.username][yearIndex][field] = 0;
+      yearlydata[d.place][d.username][yearIndex][field] += d[field];
+    });
   });
 
   var dataByPlaceAndUser = d3.nest()
@@ -110,15 +155,27 @@ function createTimelines(data, metadata) {
     //.key(function(d) { return d.uid;})
     .entries(data);
 
-  function createNewValue(uid, username, place, date) {
-    // creates a blank data entry
-    var newValue = {};
-    newValue.uid = uid;
-    newValue.username = username;
-    newValue.place = place;
-    newValue.nodes = newValue.nodes_created = newValue.nodes_current = newValue.count = newValue.v1count = newValue.blankcount = newValue.count_area = newValue.v1count_area = newValue.blankcount_area = newValue.count_pop = newValue.v1count_pop = newValue.blankcount_pop = 0;
-    newValue.date = date;
-    return newValue;
+  var dataByPlaceAndUserYearly = [];
+  for (var placekey in yearlydata) {
+    if (yearlydata.hasOwnProperty(placekey)) {
+      var place = yearlydata[placekey];
+      for (var userkey in place) {
+        if (place.hasOwnProperty(userkey)) {
+          var user = place[userkey];
+          var yearlyTotals = [];
+          for (var yearkey in user) {
+            if (user.hasOwnProperty(yearkey)) {
+              yearlyTotals.push(user[yearkey]);
+            }
+          }
+          // Create a data structure resembling d3.nest
+          var dataObj = {};
+          dataObj.key = placekey + '-' + userkey;
+          dataObj.values = yearlyTotals;
+          dataByPlaceAndUserYearly.push(dataObj);
+        }
+      }
+    }
   }
 
   dataByPlaceAndUser.forEach(function(entry) {
@@ -137,6 +194,26 @@ function createTimelines(data, metadata) {
       }
     });
   });
+
+  dataByPlaceAndUserYearly.forEach(function(entry) {
+    entry.values.forEach(function(d) {
+      // Add zero values for date before and after each entry, if data doesn't exist
+      // For a date cadence of one year
+      var prevDate = new Date(d.date);
+      prevDate.setFullYear(d.date.getFullYear() - 1);
+      var nextDate = new Date(d.date);
+      nextDate.setFullYear(d.date.getFullYear() + 1);
+      // Don't add data for 2004 or earlier
+      if (prevDate.getFullYear() > 2004 && entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
+        entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
+      }
+      // Don't add data for 2015 or later
+      if (nextDate.getFullYear() < 2015 && entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
+        entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
+      }
+    });
+  });
+
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
@@ -271,11 +348,12 @@ function createTimelines(data, metadata) {
   //svg.selectAll("path")
   //  .enter()
   //console.log("starting users");
-  dataByPlaceAndUser
-    .filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
+  dataByPlaceAndUserYearly
+  //dataByPlaceAndUser
+    //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
-    //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
+    .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
