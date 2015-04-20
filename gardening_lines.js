@@ -76,6 +76,9 @@ var svg,
     xa,
     ya;
 
+// for storing the monthly and yearly charts, as svg groups
+var paths = {};
+
 // The line drawing function, in the default state
 var line = d3.svg.line()
     .x(function(d) { return xScaleTime(d[indexX]); })
@@ -345,12 +348,33 @@ function createTimelines(data, metadata) {
   d3.select("#yaxis")
     .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
   
+
+  // Add radio buttons for "yearly" or "monthly" mode
+  var modes = ["yearly", "monthly"];
+  controls.append("div")
+    .selectAll("label")
+    .data(modes)
+    .enter()
+    .append("label")
+    .text(function(d) { return d;})
+    .insert("input")
+    .attr("type", "radio")
+    .attr("name", "mode")
+    .attr("value", function(d, i) { return i;})
+    .property("checked", function(d, i) { return i == 0; /* first one starts checked */ })
+    .on("change", function() {
+      updateCadence(modes[this.value]);
+    });
+
+  paths["yearly"] = svg.append("g").classed("yearly", true);
+  paths["monthly"] = svg.append("g").classed("monthly", true).style("display", "none");
+
   // Add the lines to the plot 
-  //svg.selectAll("path")
-  //  .enter()
-  //console.log("starting users");
-  dataByPlaceAndUserYearly
-  //dataByPlaceAndUser
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"]);
+  chartifyData(dataByPlaceAndUser,paths["monthly"]);
+
+  function chartifyData(data, svg) {
+    data
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
@@ -413,7 +437,8 @@ function createTimelines(data, metadata) {
         //	.style("opacity", 0);
         info_div.transition().duration(500).style("opacity", 0);
       });
-  });
+    });
+  }
   
   // Add x axis
   xa = svg.append("g")
@@ -506,3 +531,12 @@ function setR(rstring) {
   modeR = rstring;
 };
 
+function updateCadence(cadence) {
+  if (cadence == "yearly") {
+    paths["yearly"].style("display","block");
+    paths["monthly"].style("display","none");
+  } else {
+    paths["yearly"].style("display","none");
+    paths["monthly"].style("display","block");
+  }
+};
