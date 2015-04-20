@@ -6,18 +6,24 @@ var columnInfo = {
   "count-log": { "index": "count", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
   "v1count-linear": { "index": "v1count", "text": "Nodes created (linear scale)", "show": true, "scale": "linear"},
   "v1count-log": { "index": "v1count", "text": "Nodes created (log scale)", "show": true, "scale": "log"},
+  "v2count-linear": { "index": "v2count", "text": "Nodes modified (linear scale)", "show": true, "scale": "linear"},
+  "v2count-log": { "index": "v2count", "text": "Nodes modified (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-linear": { "index": "blankcount", "text": "Blankspot nodes (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-log": { "index": "blankcount", "text": "Blankspot nodes (log scale)", "show": true, "scale": "log"},
   "count_area-linear": { "index": "count_area", "text": "Total edited nodes per area (linear scale)", "show": true, "scale": "linear"},
   "count_area-log": { "index": "count_area", "text": "Total edited nodes per area (log scale)", "show": true, "scale": "log"},
   "v1count_area-linear": { "index": "v1count_area", "text": "Nodes created per area (linear scale)", "show": true, "scale": "linear"},
   "v1count_area-log": { "index": "v1count_area", "text": "Nodes created per area (log scale)", "show": true, "scale": "log"},
+  "v2count_area-linear": { "index": "v2count_area", "text": "Nodes modified per area (linear scale)", "show": true, "scale": "linear"},
+  "v2count_area-log": { "index": "v2count_area", "text": "Nodes modified per area (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-area-linear": { "index": "blankcount_area", "text": "Blankspot nodes per area (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-area-log": { "index": "blankcount_area", "text": "Blankspot nodes per area (log scale)", "show": true, "scale": "log"},
   "count_pop-linear": { "index": "count_pop", "text": "Total edited nodes per pop (linear scale)", "show": true, "scale": "linear"},
   "count_pop-log": { "index": "count_pop", "text": "Total edited nodes per pop (log scale)", "show": true, "scale": "log"},
   "v1count_pop-linear": { "index": "v1count_pop", "text": "Nodes created per pop (linear scale)", "show": true, "scale": "linear"},
   "v1count_pop-log": { "index": "v1count_pop", "text": "Nodes created per pop (log scale)", "show": true, "scale": "log"},
+  "v2count_pop-linear": { "index": "v2count_pop", "text": "Nodes modified per pop (linear scale)", "show": true, "scale": "linear"},
+  "v2count_pop-log": { "index": "v2count_pop", "text": "Nodes modified per pop (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-pop-linear": { "index": "blankcount_pop", "text": "Blankspot nodes per pop (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-pop-log": { "index": "blankcount_pop", "text": "Blankspot nodes per pop (log scale)", "show": true, "scale": "log"},
   "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
@@ -92,12 +98,15 @@ var fields = [
   "nodes_current",
   "count",
   "v1count",
+  "v2count",
   "blankcount",
   "count_area",
   "v1count_area",
+  "v2count_area",
   "blankcount_area",
   "count_pop",
   "v1count_pop",
+  "v2count_pop",
   "blankcount_pop"
 ];
 
@@ -123,12 +132,15 @@ function createTimelines(data, metadata) {
     d.nodes_current = +d['cur nodes'];
     d.count = +d.count;
     d.v1count = +d.v1count;
+    d.v2count = d.count - d.v1count; // technically, this is version 2 or beyond, incl v3, v4, etc.
     d.blankcount = +d.blankcount;
     d.count_area = d.count / metadata[d.place].land_area * 1000000; // per sq km
     d.v1count_area = d.v1count / metadata[d.place].land_area * 1000000; // per sq km
+    d.v2count_area = d.v2count / metadata[d.place].land_area * 1000000; // per sq km
     d.blankcount_area = d.blankcount / metadata[d.place].land_area * 1000000; // per sq km
     d.count_pop = d.count / metadata[d.place].population * 1000000; // per 1million inhabitants
     d.v1count_pop = d.v1count / metadata[d.place].population * 1000000; // per 1million inhabitants
+    d.v2count_pop = d.v2count / metadata[d.place].population * 1000000; // per 1million inhabitants
     d.blankcount_pop = d.blankcount / metadata[d.place].population * 1000000; // per 1million inhabitants
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
