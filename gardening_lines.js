@@ -167,6 +167,15 @@ function createTimelines(data, metadata) {
     });
   });
 
+  d3.keys(blankspottotals).forEach(function(place) {
+    var blankspotusers = 0,
+        nonblankspotusers = 0;
+    d3.keys(blankspottotals[place]).forEach(function(user) {
+      (blankspottotals[place][user] > 0) ? blankspotusers++ : nonblankspotusers++;
+    });
+    console.log(place, "blankspot users", blankspotusers, "nonblankspot users", nonblankspotusers);
+  });
+
   var dataByPlaceAndUser = d3.nest()
     .key(function(d) { return d.place + '-' + d.username;})
     //.key(function(d) { return d.uid;})
@@ -179,16 +188,16 @@ function createTimelines(data, metadata) {
       for (var userkey in place) {
         if (place.hasOwnProperty(userkey)) {
           var user = place[userkey];
-          var yearlyTotals = [];
-          for (var yearkey in user) {
-            if (user.hasOwnProperty(yearkey)) {
-              yearlyTotals.push(user[yearkey]);
+          var timeTotals = [];
+          for (var timekey in user) {
+            if (user.hasOwnProperty(timekey)) {
+              timeTotals.push(user[timekey]);
             }
           }
           // Create a data structure resembling d3.nest
           var dataObj = {};
           dataObj.key = placekey + '-' + userkey;
-          dataObj.values = yearlyTotals;
+          dataObj.values = timeTotals;
           dataByPlaceAndUserYearly.push(dataObj);
         }
       }
@@ -231,6 +240,55 @@ function createTimelines(data, metadata) {
     });
   });
 
+  function sumCategories(data) {
+    var categorySums = {};
+    data.forEach(function(entry) {
+      var place = entry.values[0].place;
+      if (!(place in categorySums)) categorySums[place] = { 'blankspot_total': {}, 'nonblankspot_total': {}};
+      var username = entry.values[0].username;
+      var userCategory;
+
+      if (username != "total") {  // Obviously don't include total in our subtotals
+        // Test which category user falls within. Users can't be in more than one.
+        // Currently checking to see if they have more than zero blankspot edits
+        if (blankspottotals[place][username] > 0)
+          userCategory = 'blankspot_total';
+        else
+          userCategory = 'nonblankspot_total';
+        entry.values.forEach(function(d) {
+          if (!(d.date in categorySums[place][userCategory]))
+            categorySums[place][userCategory][d.date] = createNewValue(0, userCategory, place, d.date);
+          fields.forEach(function(field) {
+            categorySums[place][userCategory][d.date][field] += d[field];
+          });
+        });
+      }
+    });
+    for (var placekey in categorySums) {
+      if (categorySums.hasOwnProperty(placekey)) {
+        var place = categorySums[placekey];
+        for (var userkey in place) {
+          if (place.hasOwnProperty(userkey)) {
+            var user = place[userkey];
+            var timeTotals = [];
+            for (var timekey in user) {
+              if (user.hasOwnProperty(timekey)) {
+                timeTotals.push(user[timekey]);
+              }
+            }
+            // Create a data structure resembling d3.nest
+            var dataObj = {};
+            dataObj.key = placekey + '-' + userkey;
+            dataObj.values = timeTotals;
+            data.push(dataObj);
+          }
+        }
+      }
+    }
+  }
+
+  sumCategories(dataByPlaceAndUser);
+  sumCategories(dataByPlaceAndUserYearly);
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
@@ -393,7 +451,8 @@ function createTimelines(data, metadata) {
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
-    .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
+    .filter(function(d) { return d.key.match(/_total$/);}) // Match user name = total
+    //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
@@ -406,9 +465,9 @@ function createTimelines(data, metadata) {
       .attr("fill", "none")
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
-      .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+      .attr("stroke-opacity", function(d) { return d[0].username.match(/total$/) ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
       // If user has blankspots (and is not "total", color them red
-      .attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+      .attr("stroke", function(d) { return (!(d[0].username.match(/total$/)) && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
@@ -445,8 +504,8 @@ function createTimelines(data, metadata) {
         //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
-        d3.select(this).attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
-          .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+        d3.select(this).attr("stroke", function(d) { return (!(d[0].username.match(/total$/)) && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+          .attr("stroke-opacity", function(d) { return d[0].username.match(/total$/) ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
