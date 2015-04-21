@@ -468,6 +468,7 @@ function createTimelines(data, metadata) {
       .attr("stroke-opacity", function(d) { return d[0].username.match(/total$/) ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
       // If user has blankspots (and is not "total", color them red
       .attr("stroke", function(d) { return (!(d[0].username.match(/total$/)) && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+      .style("stroke-dasharray", function(d) { return d[0].username == "nonblankspot_total" ? ("3,3") : ("0"); })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
