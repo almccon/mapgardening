@@ -19,6 +19,8 @@ Create an r3.xlarge ubuntu instance to do the history splitting (and processing?
 Log into the instance:
 
 `ssh -i ~/.ssh/osmhistory.pem ubuntu@xxx.xxx.xxx.xxx`
+or
+`ssh -i ~/.ssh/osmhistory.pem root@xxx.xxx.xxx.xxx`
 (get latest IP address from the EC2 console)
 
 Associate the EBS volume with the instance using the web console. Then mount it:
