@@ -8,6 +8,8 @@ Installation
 
 Requires a database of the format produced by the importer component of the [osm-history-renderer](https://github.com/MaZderMind/osm-history-renderer). Most of the following steps are just to get the osm-history-renderer running.
 
+I originally ran these tools on OSX, but more recently ported them to run on Amazon Web Services (AWS). For more instructions about setting up an AWS instance, follow [AWS.md](AWS.md) first.
+
 Get an osm history dump by downloading `history-YYYY-MM_DD.osm.pbf` from here: http://planet.openstreetmap.org/planet/experimental/
 
 ```
