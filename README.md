@@ -77,7 +77,7 @@ Or to initialize several at the same time: (test this for escapes, and for crash
 
 ```
 cd importer # inside the osm-history-renderer directory
-for place in amsterdam auckland barcelona bayarea berlin boston buenosaires cairo chicago crimea cyprus douala haiti istanbul jakarta jerusalem lasvegas london losangeles manchester mexicocity miami minsk montevideo montreal moscow mumbai nairobi newyork quebec paris rio santiago seattle seoul sydney tirana tokyo toronto vancouver yaounde
+for place in amsterdam auckland barcelona bayarea berlin boston buenosaires cairo chicago crimea cyprus douala haiti istanbul jakarta jerusalem kathmandu lasvegas london losangeles manchester mexicocity miami minsk montevideo montreal moscow mumbai nairobi newyork quebec paris rio santiago seattle seoul sydney tirana tokyo toronto vancouver yaounde
 do
   createdb osm-history-render-$place
   psql -d osm-history-render-$place -c "create extension postgis;"
