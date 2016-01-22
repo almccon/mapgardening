@@ -12,7 +12,7 @@ Getting the full history dump
 
 Log into your AWS console (I'm using the Stamen group). I'm using the us-west-2a zone (Oregon).
 
-Create a 50GB gp2 EBS volume for the history dump.
+Create a 100GB gp2 EBS volume for the history dump. (As for Jan 2016 the history dump is 49G itself)
 
 Create an r3.xlarge ubuntu instance to do the history splitting (and processing?). This is a pretty big instance, so remember to stop it when its done!
 
