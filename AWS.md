@@ -46,3 +46,7 @@ Then create a symlink to this file using .osh.pbf instead of osm.pbf (necessary 
 ln -s history-2014-11-24.osm.pbf history-2014-11-24.osh.pbf
 
 Then make a snapshot of this volume.
+
+After you run the `osm-history-splitter` you probably want to make another snapshot of this volume.
+
+After you're finished doing the splitting, you can unmount this drive and stop this large instance. Then connect this drive (the one with the extracts) to a smaller EC2 instance to import them into a database (using `osm-history-renderer`) and run the map-gardening analysis.
