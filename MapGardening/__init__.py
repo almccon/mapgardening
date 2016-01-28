@@ -66,6 +66,11 @@ places = {
                         'rastertableproj': 32760, # WGS 84 / UTM zone 60S
                         'utc_offset': 12,
                        },
+            'barcelona': {
+                        'dbname': "osm-history-render-barcelona",
+                        'rastertableproj': 32631, # WGS 84 / UTM zone 31N
+                        'utc_offset': 1,
+                       },
             'bayarea': {
                         'dbname': "osm-history-render-bayarea",
                         'rastertableproj': 32610, # WGS 84 / UTM zone 10N
@@ -90,6 +95,11 @@ places = {
                         'dbname': "osm-history-render-cairo",
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                         'utc_offset': 2,
+                       },
+            'chicago': {
+                        'dbname': "osm-history-render-chicago",
+                        'rastertableproj': 32616, # WGS 84 / UTM zone 16N
+                        'utc_offset': -6,
                        },
             'crimea': {
                         'dbname': "osm-history-render-crimea",
@@ -126,6 +136,16 @@ places = {
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                         'utc_offset': 2,
                        },
+            'kathmandu': {
+                        'dbname': "osm-history-render-kathmandu",
+                        'rastertableproj': 32645, # WGS 84 / UTM zone 45N
+                        'utc_offset': 5.75,
+                       },
+            'lasvegas': {
+                        'dbname': "osm-history-render-lasvegas",
+                        'rastertableproj': 32611, # WGS 84 / UTM zone 11N
+                        'utc_offset': -8,
+                       },
             'london': {
                         'dbname': "osm-history-render-london",
                         'rastertableproj': 32630, # WGS 84 / UTM zone 30N
@@ -145,6 +165,11 @@ places = {
                         'dbname': "osm-history-render-mexicocity",
                         'rastertableproj': 32614, # WGS 84 / UTM zone 14N
                         'utc_offset': -6,
+                       },
+            'miami': {
+                        'dbname': "osm-history-render-miami",
+                        'rastertableproj': 32617, # WGS 84 / UTM zone 17N
+                        'utc_offset': -5,
                        },
             'minsk': {
                         'dbname': "osm-history-render-minsk",
@@ -210,6 +235,11 @@ places = {
                         'dbname': "osm-history-render-seoul",
                         'rastertableproj': 32652, # WGS 84 / UTM zone 52N
                         'utc_offset': 9,
+                       },
+            'sydney': {
+                        'dbname': "osm-history-render-sydney",
+                        'rastertableproj': 32756, # WGS 84 / UTM zone 56S
+                        'utc_offset': 10,
                        },
             'tirana': {
                         'dbname': "osm-history-render-tirana",
