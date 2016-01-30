@@ -308,7 +308,7 @@ class BlankSpotTable:
         
     def create_new_table(self):
         """Create the table if it doesn't exist already"""
-        self._tablename = self._tablename + "_" + self._params['runtype'] + "_" + str(int(self._params['resolution'])) + "_" + str(int(time.time())) 
+        self._tablename = self._tablename + "_" + self._params['runtype'] + "_" + str(int(self._params['resolution'])) + "_" + str(self._params['identifier']) 
        
         # TODO: handle exception if table exists 
         querystring = "CREATE TABLE \"" + self._tablename + "\" " + \
@@ -382,7 +382,7 @@ class BlankSpotTableManager:
             "%s, " + \
             "'" + blankspot_table_obj.getTableName() + "')"
         try:
-            cur.execute(querystring, (params['runtype'], params['resolution'], datetime.datetime.now(),))
+            cur.execute(querystring, (params['runtype'], params['resolution'], str(datetime.datetime.now()),))
         except Exception, inst:
             conn.rollback()
             logging.error("can't insert blankspot record in manager table")
@@ -486,10 +486,12 @@ class Cell:
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
 	"""Optional string_match_resolution uses rounded/off utm coordinate values for faster queries."""
         
-        temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
+        #temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
-        querystring = "CREATE TEMP TABLE " + temptablename + " " + \
-            "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
+        #querystring = "CREATE TEMP TABLE " + temptablename + " " + \
+        #    "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
+        querystring = "SELECT " + \
+            "b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " 
 
@@ -503,29 +505,31 @@ class Cell:
             print "fall back to ST_Within query (much slower)"
             querystring += "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) "
 
-        querystring += "AND b.version = 1"
+        querystring += "AND b.version = 1 ORDER BY valid_from"
+        #querystring += "AND b.version = 1"
 
         try:
             if (string_match_resolution == 100 or string_match_resolution == 1000):
                 cur.execute(querystring, (self.x, self.y, self.x, self.y))
             else:
                 cur.execute(querystring, (self.x, self.y))
-        except Exception, inst:
-            conn.rollback()
-            if str(inst).find("already exists") != -1:
-                cur.execute("DROP TABLE " + temptablename) # drop the old table
-                conn.commit()
-                cur.execute(querystring, (self.x, self.y)) # and create a new one
-                conn.commit()
-            else:
-                logging.error("can't create table of intersecting nodes for cell %s, %s", self.x, self.y)
-                logging.error(inst)
-                sys.exit() 
-        conn.commit()
+        #except Exception, inst:
+        #    conn.rollback()
+        #    if str(inst).find("already exists") != -1:
+        #        cur.execute("DROP TABLE " + temptablename) # drop the old table
+        #        conn.commit()
+        #        cur.execute(querystring, (self.x, self.y)) # and create a new one
+        #        conn.commit()
+        #    else:
+	#	print "can't create table of intersection nodes. Aborting"
+        #        logging.error("can't create table of intersecting nodes for cell %s, %s", self.x, self.y)
+        #        logging.error(inst)
+        #        sys.exit() 
+        #conn.commit()
             
-        querystring = "SELECT * FROM " + temptablename + " ORDER BY valid_from"
-        try:
-            cur.execute(querystring)
+        #querystring = "SELECT * FROM " + temptablename + " ORDER BY valid_from"
+        #try:
+        #    cur.execute(querystring)
         except Exception, inst:
             logging.error("can't select intersecting nodes for cell %s, %s", self.x, self.y)
             logging.error(inst)
@@ -553,8 +557,11 @@ class Cell:
                 user_id = rows[i][2]
                 valid_from = rows[i][4]
                 valid_to = rows[i][5]
-             
-            print "updating node %s" % earliest_id
+
+            #validfromdate = datetime.datetime.strptime(valid_from,"%Y-%m-%d %H %M %S") 
+
+            print "updating node %s, user_id %s, valid_from %s" % (earliest_id, user_id, valid_from.strftime("%Y%m%d"))
+            #print "updating node %s, user_id %s, valid_from %s" % (earliest_id, user_id, valid_from)
             
             # For the first node (and only the first node) set blank = TRUE 
             querystring = "INSERT INTO " + self.blankspottableobj.getTableName() + " (node_id, blank) VALUES (%s, TRUE)" 
@@ -563,6 +570,26 @@ class Cell:
             except Exception, inst:
                 conn.rollback()
                 logging.error("can't set blank = TRUE" + self.blankspottableobj.getTableName())
+                logging.error(inst)
+                sys.exit()  
+            conn.commit()
+   
+            querystring = "UPDATE " + self.rastertablename + " SET rast = ST_SetValue(" + self.rastertablename + ".rast, 2, %s, %s, %s) WHERE rid = " + str(self.record_id)
+            try:
+                cur.execute(querystring, (self.x, self.y, int(valid_from.strftime("%Y%m%d"))))
+            except Exception, inst:
+                conn.rollback()
+                logging.error("can't update raster cell %s, %s", self.x, self.y)
+                logging.error(inst)
+                sys.exit()  
+            conn.commit()
+
+            querystring = "UPDATE " + self.rastertablename + " SET rast = ST_SetValue(" + self.rastertablename + ".rast, 3, %s, %s, %s) WHERE rid = " + str(self.record_id)
+            try:
+                cur.execute(querystring, (self.x, self.y, user_id))
+            except Exception, inst:
+                conn.rollback()
+                logging.error("can't update raster cell %s, %s", self.x, self.y)
                 logging.error(inst)
                 sys.exit()  
             conn.commit()
@@ -580,7 +607,17 @@ class Cell:
             logging.error(inst)
             sys.exit()  
         conn.commit()
-   
+
+	## Remove the temp table
+        #try:
+        #    cur.execute("DROP TABLE " + temptablename) # drop the old table
+        #except Exception, inst:
+        #    logging.error("can't drop %s", temptablename)
+        #    logging.error(inst)
+        #    sys.exit() 
+        #conn.commit()
+            
+
     # end def analyze_nodes
         
     # def analyze_nodes_and_preset_blanks(self):
@@ -662,6 +699,7 @@ class Raster:
         
         querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
         try:
+            print querystring
             cur.execute(querystring)
         except Exception, inst:
             conn.rollback()
@@ -670,6 +708,30 @@ class Raster:
             sys.exit() 
         conn.commit()
             
+        # Add another band to the same rid
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
+        try:
+            print querystring
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't add raster band")
+            logging.error(inst)
+            sys.exit() 
+        conn.commit()
+
+        # Add another band to the same rid
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
+        try:
+            print querystring
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't add raster band")
+            logging.error(inst)
+            sys.exit() 
+        conn.commit()
+
     def get_width(self, get_from_db=False):
         if not self.width or get_from_db:
             querystring = "SELECT ST_Width(rast) FROM " + self.rastertablename + " " + \
@@ -1092,14 +1154,16 @@ class NodeTable:
         Create columns for the x and y coordinate rounded to 100m and 1000m
         """
         
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
-        try:
-            cur.execute(querystring,(srid,))
-        except Exception, inst:
-            logging.error("can't add column geom_utm to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+        #querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+        #try:
+        #    print querystring, srid
+        #    cur.execute(querystring,(srid,))
+        #except Exception, inst:
+        #    print "can't alter node table, aborting"
+        #    logging.error("can't add column geom_utm to node table")
+        #    logging.error(inst)
+        #    conn.rollback()
+        #    return 1
     
         querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
         try:

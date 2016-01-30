@@ -30,7 +30,9 @@ for placename in places.keys():
 
     nodetable = MapGardening.NodeTable()
 
-    nodetable.initialize_rounded_coordinates(places[placename]['rastertableproj'])
+    if nodetable.initialize_rounded_coordinates(places[placename]['rastertableproj']):
+	# if the function returns 1 it's an error
+        print "initialize_rounded_coordinates failed"
 
     MapGardening.disconnect_db()
     
