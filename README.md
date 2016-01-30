@@ -90,11 +90,17 @@ done
 
 Doing the analyses
 ----
+The python scripts have one more dependency:
+
+```
+sudo apt-get install python-psycopg2
+```
+
+Then initialize the analysis table:
 
 ```
 ./initialize_nodetable.py -p place
 ```
-
 
 When the databases have been loaded, run the mapgardening analysis scripts. 
 
