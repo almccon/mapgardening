@@ -944,6 +944,8 @@ class NodeTable:
         conn.commit()
     
     def create_blankspot_column(self):
+        # Do something like this instead?
+        #querystring = "CREATE TABLE \"" + self.nodetablename + "\" AS SELECT *, FALSE as blank FROM \"" + self....
         querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
         try:
             cur.execute(querystring)
@@ -959,8 +961,9 @@ class NodeTable:
        
     def set_all_blankspots(self, arg):
         """For some analyses, we want everything set before we begin"""
-        #querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
-        querystring = "ALTER TABLE \"" + self.nodetablename + "\" DROP COLUMN blank"
+        # is this actually used anywhere?
+        querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
+        #querystring = "ALTER TABLE \"" + self.nodetablename + "\" DROP COLUMN blank"
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -969,8 +972,8 @@ class NodeTable:
             logging.error(inst)
             sys.exit()
         conn.commit()
-        print "done dropping old blank column. Creating new one..." 
-        return self.create_blankspot_column()
+        #print "done dropping old blank column. Creating new one..."
+        #return self.create_blankspot_column()
     
     def set_all_blankspots_true(self):
         print "setting all blank fields true..." 
@@ -1122,7 +1125,8 @@ class NodeTable:
         Create columns for the x and y coordinate rounded to 100m and 1000m
         """
         
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+        querystring = "CREATE TABLE " + self.nodetablename + "_rounded AS SELECT *, false as blank, ST_X(geom_utm)/1000 as x1000, ST_Y(geom_utm)/1000 as y1000 FROM (SELECT *, ST_Transform(geom,%s) as geom_utm FROM " + self.nodetablename + " ) as a"
+	print(querystring)
         try:
             cur.execute(querystring,(srid,))
         except Exception, inst:
@@ -1131,86 +1135,147 @@ class NodeTable:
             conn.rollback()
             return 1
     
-        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
-        try:
-            cur.execute(querystring,(srid,))
-        except Exception, inst:
-            logging.error("can't update column geom_utm in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+#        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't update column geom_utm in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x1000 in node table")
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't add column geom_utm to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#    
+#        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't update column geom_utm in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x1000 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET y1000 = ST_Y(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column y1000 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x100 = ST_X(geom_utm)/100"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET y100 = ST_Y(geom_utm)/100"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column y100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
 
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column x1000 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET y1000 = ST_Y(geom_utm)/1000"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column y1000 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET x100 = ST_X(geom_utm)/100"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column x100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET y100 = ST_Y(geom_utm)/100"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column y100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+        self.nodetablename = self.nodetablename + "_rounded"
 
         querystring = "CREATE INDEX xy1000_idx on " + self.nodetablename + " (x1000,y1000)"
         try:
@@ -1221,13 +1286,13 @@ class NodeTable:
             conn.rollback()
             return 1
 
-        querystring = "CREATE INDEX xy100_idx on " + self.nodetablename + " (x100,y100)"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't create index on x100, y100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+#        querystring = "CREATE INDEX xy100_idx on " + self.nodetablename + " (x100,y100)"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't create index on x100, y100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
 
 # end class NodeTable
