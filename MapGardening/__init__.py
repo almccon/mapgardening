@@ -1005,21 +1005,21 @@ class NodeTable:
             sys.exit()
         conn.commit()
    
-   def create_blankspot_column(self):
-        # Do something like this instead?
-        #querystring = "CREATE TABLE \"" + self.nodetablename + "\" AS SELECT *, FALSE as blank FROM \"" + self....
-        querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            conn.rollback()
-            # If string includes "already exists"...
-            if str(inst).find("already exists") != -1:
-                print "blank column already exists, continuing..."
-            else:
-                print "couldn't create blank column, exiting..."
-                sys.exit()
-        conn.commit()
+#   def create_blankspot_column(self):
+#        # Do something like this instead?
+#        #querystring = "CREATE TABLE \"" + self.nodetablename + "\" AS SELECT *, FALSE as blank FROM \"" + self....
+#        querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            conn.rollback()
+#            # If string includes "already exists"...
+#            if str(inst).find("already exists") != -1:
+#                print "blank column already exists, continuing..."
+#            else:
+#                print "couldn't create blank column, exiting..."
+#                sys.exit()
+#        conn.commit()
        
     def set_all_blankspots(self, arg):
         """For some analyses, we want everything set before we begin"""
