@@ -56,19 +56,19 @@ class UserStats(object):
        
         NOTE: Call drop_userstats_table() first if there is a chance it already exists. 
         
-        Populates table with uid, username, and count of number of times username
+        Populates table with user_id, user_name, and count of number of times user_name
         was mentioned in the node table. (This is the number of edits the user is
         responsible for)
         """
        
         print "creating userstats table" 
         
-        querystring = "CREATE TABLE " + userstatstable + " AS SELECT uid, username, count(username) from " +\
-            self.nodetableobj.getTableName() + " GROUP BY uid, username ORDER BY count DESC"
+        querystring = "CREATE TABLE " + userstatstable + " AS SELECT user_id, user_name, count(user_name) from " +\
+            self.nodetableobj.getTableName() + " GROUP BY user_id, user_name ORDER BY count DESC"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
-            logging.error("can't select username and count")
+            logging.error("can't select user_name and count")
             logging.error(inst)
         self.conn.commit()
        
@@ -89,11 +89,11 @@ class UserStats(object):
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
-            "SELECT a.uid, a.username, count(a.uid) AS " + newcolumn + " " + \
+            "SELECT a.user_id, a.user_name, count(a.user_id) AS " + newcolumn + " " + \
             "FROM " + self.nodetableobj.getTableName() + " a " + \
             "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
             "ON a.id = b.node_id " + queryparam + " " + \
-            "GROUP BY a.uid, a.username ORDER BY " + newcolumn + " DESC"  
+            "GROUP BY a.user_id, a.user_name ORDER BY " + newcolumn + " DESC"  
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -121,7 +121,7 @@ class UserStats(object):
             "SET " + newcolumn + " = (" + \
             "SELECT " + newcolumn + " FROM " + \
             temptablename + " WHERE " + \
-            temptablename + ".uid = " + userstatstable + ".uid)"  
+            temptablename + ".user_id = " + userstatstable + ".user_id)"  
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -166,11 +166,11 @@ class UserStats(object):
         
         querystring = "CREATE TEMP TABLE " + temptablename + \
             " AS " + \
-            "SELECT DISTINCT ON (a.username) a.username, a.valid_from AS " + newcolumn + " " + \
+            "SELECT DISTINCT ON (a.user_name) a.user_name, a.valid_from AS " + newcolumn + " " + \
             "FROM " + self.nodetableobj.getTableName() + " a " + \
             "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
             "ON a.id = b.node_id " + queryparam + " " + \
-            "ORDER BY a.username, a.valid_from ASC"
+            "ORDER BY a.user_name, a.valid_from ASC"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -198,7 +198,7 @@ class UserStats(object):
             "SET " + newcolumn + " = (" + \
             "SELECT " + newcolumn + " from " + \
             temptablename + " WHERE " + \
-            temptablename + ".username = " + userstatstable + ".username)"
+            temptablename + ".user_name = " + userstatstable + ".user_name)"
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -269,7 +269,7 @@ class UserStats(object):
         user_date_dict = {}
         all_date_dict = {}
         
-        querystring = "SELECT a.username, a.valid_from, a.version, b.blank " + \
+        querystring = "SELECT a.user_name, a.valid_from, a.version, b.blank " + \
             "FROM " + self.nodetableobj.getTableName() + " a " + \
             "LEFT JOIN " + self.blankspottableobj.getTableName() + " b " + \
             "ON a.id = b.node_id " 
@@ -285,9 +285,9 @@ class UserStats(object):
             return "" 
         
         for row in rows:
-            (username, valid_from, version, blank) = row
-            if not username in user_date_dict:
-                user_date_dict[username] = {}
+            (user_name, valid_from, version, blank) = row
+            if not user_name in user_date_dict:
+                user_date_dict[user_name] = {}
 
             # Shift utc datetimes to local time
             td = timedelta(hours=self.utc_offset)
@@ -296,18 +296,18 @@ class UserStats(object):
             # Return a date object (drop time info) from the datetime object
             edit_date_str = str(edit_dt.date())
             
-            if not edit_date_str in user_date_dict[username]:
-                user_date_dict[username][edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
+            if not edit_date_str in user_date_dict[user_name]:
+                user_date_dict[user_name][edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
             if not edit_date_str in all_date_dict:
                 all_date_dict[edit_date_str] = {'all': 0, 'v1': 0, 'blank': 0}
                 
-            user_date_dict[username][edit_date_str]['all'] += 1
+            user_date_dict[user_name][edit_date_str]['all'] += 1
             all_date_dict[edit_date_str]['all'] += 1
             if version == 1: 
-                user_date_dict[username][edit_date_str]['v1'] += 1
+                user_date_dict[user_name][edit_date_str]['v1'] += 1
                 all_date_dict[edit_date_str]['v1'] += 1
                 if blank == True: # version must == 1, as well.
-                    user_date_dict[username][edit_date_str]['blank'] += 1
+                    user_date_dict[user_name][edit_date_str]['blank'] += 1
                     all_date_dict[edit_date_str]['blank'] += 1
         if count_all:
             return all_date_dict
@@ -341,12 +341,12 @@ class UserStats(object):
         
         # Get keys for each user dict (list of dates)
         # convert keys to integers, find mean, convert back to date.    
-        for username in user_date_dict:
-            date_keys = user_date_dict[username].keys()
+        for user_name in user_date_dict:
+            date_keys = user_date_dict[user_name].keys()
             if weighted:
                 weights = []
                 for dk in date_keys:
-                    weights.append(user_date_dict[username][dk]['all'])
+                    weights.append(user_date_dict[user_name][dk]['all'])
             else:
                 weights = None
             list_of_dates = map(self._days_since_epoch, date_keys)
@@ -354,9 +354,9 @@ class UserStats(object):
             mean_date_dt = self._date_from_days_since_epoch(mean_date)
             querystring = "UPDATE " + userstatstable + " " + \
                 "SET " + newcolumn + " = %s " + \
-                "WHERE username = %s"
+                "WHERE user_name = %s"
             try:
-                self.cur.execute(querystring, (mean_date_dt, username))
+                self.cur.execute(querystring, (mean_date_dt, user_name))
             except Exception, inst:
                 logging.error("can't update mean_date column")
                 logging.error(inst)
@@ -382,20 +382,20 @@ class UserStats(object):
             logging.warning(inst)
         self.conn.commit()    
             
-        for username in user_date_dict:
-            days_active = len(user_date_dict[username])
+        for user_name in user_date_dict:
+            days_active = len(user_date_dict[user_name])
             querystring = "UPDATE " + userstatstable + " " + \
                 "SET " + newcolumn + " = %s " + \
-                "WHERE username = %s"
+                "WHERE user_name = %s"
             try:
-                self.cur.execute(querystring, (days_active, username))
+                self.cur.execute(querystring, (days_active, user_name))
             except Exception, inst:
                 logging.error("can't update days_active column")
                 logging.error(inst)
         self.conn.commit()
       
     def print_userstats(self, filename):
-        querystring = "SELECT uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted FROM " + userstatstable
+        querystring = "SELECT user_id, user_name, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted FROM " + userstatstable
         try:
             self.cur.execute(querystring)
         except Exception, inst:
@@ -404,7 +404,7 @@ class UserStats(object):
        
         localfile = open(filename, "w")
          
-        print >> localfile, "uid\tusername\tcount\tblankcount\tv1count\tfirstedit\tfirsteditv1\tfirsteditblank\tdays_active\tmean_date\tmean_date_weighted"
+        print >> localfile, "user_id\tuser_name\tcount\tblankcount\tv1count\tfirstedit\tfirsteditv1\tfirsteditblank\tdays_active\tmean_date\tmean_date_weighted"
         
         rows = self.cur.fetchall()
         
@@ -412,8 +412,8 @@ class UserStats(object):
         
         for row in rows:
             # assign nullvalue instead of None
-            uid = row[0] or nullvalue
-            username = row[1] or nullvalue
+            user_id = row[0] or nullvalue
+            user_name = row[1] or nullvalue
             count = row[2] or 0
             blankcount = row[3] or 0
             v1count = row[4] or 0
@@ -423,7 +423,7 @@ class UserStats(object):
             days_active = row[8] or 0
             mean_date = row[9] or nullvalue
             mean_date_weighted = row[10] or nullvalue
-            print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (uid, username, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted)
+            print >> localfile, "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s" % (user_id, user_name, count, blankcount, v1count, firstedit, firsteditv1, firsteditblank, days_active, mean_date, mean_date_weighted)
             
         localfile.close()
     
@@ -450,7 +450,7 @@ class UserStats(object):
         
         localfile = open(filename, "w")
         
-        print >> localfile, "username\tdate\tcount\tv1count\tblankcount"
+        print >> localfile, "user_name\tdate\tcount\tv1count\tblankcount"
         
         nullvalue = "NULL"
         
