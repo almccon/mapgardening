@@ -104,9 +104,9 @@ Then initialize the analysis table:
 
 When the databases have been loaded, run the mapgardening analysis scripts. 
 
- * ./proximity_check.py -p bayarea
- * raster_stats.py
- * user_analysis.py
+ * `./proximity_check.py -p $place`
+ * `raster_stats.py` # runs for all places by default
+ * `user_analysis.py` # runs for all places by default
 
 (modify `MapGardening/__init__.py` for configuration)
 
