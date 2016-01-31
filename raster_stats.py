@@ -28,10 +28,24 @@ for placename in places.keys():
 
     MapGardening.init_db(places[placename]['dbname'])
 
+    bstm = MapGardening.BlankSpotTableManager()
 
-    # This looks for a raster with the default name, `dummy_rast`. Now that fails.
-    # This needs to be initialized with the correct raster name
-    raster = MapGardening.Raster()
+    params = {
+        'runtype': 'raster',
+        'resolution': '1000'
+    }
+
+    # Only use the most recent table
+    blankspottable = bstm.get_existing_blankspot_tables(params)[0]
+
+    print "using table", blankspottable.getTableName()
+
+    # Without passing any options, this looks for a raster with the default name, `dummy_rast`. 
+    # That fails now, since I'm now using multiple rasters per place.
+    # This needs to be initialized with the correct raster name. Looks like this is still wrong...
+    # ...it's passing the blankspottable, not the raster name
+
+    raster = MapGardening.Raster(blankspottable.getTableName())
     
     raster.get_raster_stats()
 
