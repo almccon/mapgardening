@@ -39,7 +39,7 @@ else:
 # TODO: query the BlankSpotTableManager to see which types are present 
 possible_types = [
                   'raster',
-                  'proximity',
+#                  'proximity',
                   ]
 
 if options.type == "all":
@@ -49,8 +49,8 @@ else:
     
 # TODO: query the BlankSpotTableManager to see which resolutions are present 
 possible_resolutions = [
-                        '250',
-                        '500',
+#                        '250',
+#                        '500',
                         '1000',
                         ]
 
