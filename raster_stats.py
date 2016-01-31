@@ -27,10 +27,12 @@ for placename in places.keys():
     print "printing raster info for", placename
 
     MapGardening.init_db(places[placename]['dbname'])
-    
+
+
+    # This looks for a raster with the default name, `dummy_rast`. Now that fails.
+    # This needs to be initialized with the correct raster name
     raster = MapGardening.Raster()
     
     raster.get_raster_stats()
 
     MapGardening.disconnect_db()
-    
