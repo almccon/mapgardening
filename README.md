@@ -105,16 +105,12 @@ Then initialize the analysis table:
 When the databases have been loaded, run the mapgardening analysis scripts. 
 
  * `./proximity_check.py -p $place`
- * `raster_stats.py` # runs for all places by default
+ * ~~`raster_stats.py` # runs for all places by default~~ (currently doesn't work)
  * `user_analysis.py` # runs for all places by default
 
 (modify `MapGardening/__init__.py` for configuration)
 
-TODO: transfer changes from small ec2 to large (or commit to github)
-
 Add a password to the ubuntu account on postgres. Log into psql: `\password ubuntu`
-
-
 
 For Tilemill mapping and debugging
 ----
