@@ -18,21 +18,24 @@ user_name	date	count	v1count	blankcount
 5EE	2009-12-02	7	6	0
 96_Pablo	2014-04-27	23	22	0
 96_Pablo	2014-04-28	10	9	0
+96_Pablo	2015-07-11	11	10	0
+AChM	2013-04-29	2	1	0
+AChM	2013-04-30	1	0	0
 AE35	2013-04-12	1	0	0
 AHerrera	2012-12-09	1	1	0
 AKHilario	2013-02-17	1	0	0
-ALE!	2010-02-28	565	529	8
-ALE!	2010-03-02	1067	1036	10
-ALE!	2010-03-03	364	350	4
-ALE!	2010-03-04	308	306	2
-ALE!	2010-03-05	101	57	1
+ALE!	2010-02-28	565	529	6
+ALE!	2010-03-02	1067	1036	12
+ALE!	2010-03-03	364	350	3
+ALE!	2010-03-04	308	306	4
+ALE!	2010-03-05	101	57	2
 ALE!	2010-03-08	203	192	2
 ALE!	2010-03-09	39	37	0
-ALE!	2010-03-10	67	67	0
-ALE!	2010-03-11	378	347	1
-ALE!	2010-03-12	1059	802	2
+ALE!	2010-03-10	67	67	1
+ALE!	2010-03-11	378	347	0
+ALE!	2010-03-12	1059	802	1
 ALE!	2010-03-15	108	82	0
-ALE!	2011-01-04	6	4	1
+ALE!	2011-01-04	6	4	0
 ALE!	2012-02-18	104	70	0
 ALE!	2013-01-30	32	32	0
 ALE!	2013-03-07	189	141	0
@@ -228,6 +231,18 @@ ALE!	2014-12-14	3	1	0
 ALE!	2014-12-18	58	35	0
 ALE!	2015-01-15	3	0	0
 ALE!	2015-01-22	16	6	0
+ALE!	2015-01-26	15	14	0
+ALE!	2015-02-08	716	309	0
+ALE!	2015-02-10	24	24	0
+ALE!	2015-02-26	2	2	0
+ALE!	2015-03-14	27	5	0
+ALE!	2015-03-21	1	1	0
+ALE!	2015-04-02	7	7	0
+ALE!	2015-04-07	16	1	0
+ALE!	2015-04-14	12	2	0
+ALE!	2015-04-25	1	1	0
+ALE!	2015-05-08	1	1	0
+ALE!	2015-05-20	5	3	0
 ALEAGUILERADE	2014-08-19	31	30	0
 ARTERIX7	2014-08-12	17	13	0
 ARTERIX7	2014-08-13	5	5	0
@@ -251,9 +266,14 @@ ARTERIX7	2014-11-28	20	19	0
 ARTERIX7	2014-12-02	2	2	0
 ARTERIX7	2015-01-17	5	5	0
 ARTERIX7	2015-01-22	4	4	0
+ARTERIX7	2015-08-18	38	38	0
+ARTERIX7	2015-10-02	5	5	0
+ARTERIX7	2015-11-16	4	4	0
+ARTERIX7	2015-12-03	2	2	0
 AdinaB	2012-06-05	1	0	0
 Al128	2013-09-20	107	71	0
 Al128	2013-09-21	15	10	0
+Alan	2015-11-28	4	1	0
 AlbertoAstorga	2010-11-01	325	3	0
 Alecita	2014-03-04	5	1	0
 Alecita	2014-03-05	3	1	0
@@ -262,12 +282,16 @@ Alecita	2014-03-10	1	1	0
 Alecita	2014-03-13	2	1	0
 Alejan	2014-12-05	1	0	0
 Aleks-Berlin	2014-11-25	2	0	0
+Aleks-Berlin	2015-04-10	4	0	0
+Aleks-Berlin	2015-07-20	1	0	0
 Alex Correa	2009-10-06	7	7	0
 Alfred!	2010-06-22	4	3	0
 Alsolcru	2010-08-31	1	1	0
 Altec	2012-09-09	1	0	0
 Alvaro52	2014-03-17	3	1	0
+AlvaroGonzalezCL	2015-10-02	2	0	0
 AlvaroUrzua	2011-05-29	1	1	0
+AlvaroUrzua	2015-03-09	3	2	0
 Amaroussi	2014-08-03	3	0	0
 Amnios	2010-06-23	1	0	0
 Andreas29	2012-10-06	1	1	0
@@ -280,12 +304,20 @@ Andres Junge	2013-05-08	10	3	0
 Andres Junge (Yaykuy Bitcoin Chile)	2014-04-27	9	9	0
 Andres Junge (Yaykuy Bitcoin Chile)	2014-04-28	5	0	0
 Andres Junge (Yaykuy Bitcoin Chile)	2014-04-29	1	1	0
-Andres Valle	2008-02-27	14	13	1
+Andres Junge (Yaykuy Bitcoin Chile)	2015-03-12	2	1	0
+Andres Valle	2008-02-27	14	13	0
 AndresGB	2014-09-02	13	3	0
+Andres_325	2015-08-27	7	4	0
 Andres_dp	2014-02-24	3	3	0
 Andrew McMillan	2008-08-06	31	30	0
 AndrewHightower	2010-03-06	11	11	0
 AndrewHightower	2011-04-09	11	11	0
+Angel B	2015-05-14	26	22	0
+Angel B	2015-05-15	28	28	0
+Angel B	2015-05-17	8	8	0
+Angel B	2015-05-18	4	4	0
+Angel B	2015-05-19	8	8	0
+Angel B	2015-05-24	4	4	0
 AnthraxTLITD	2012-09-09	79	20	0
 AnthraxTLITD	2012-09-10	6	0	0
 Anuro Croador	2009-03-27	206	14	0
@@ -304,7 +336,7 @@ Anónimo	2012-02-25	205	98	0
 Anónimo	2012-02-26	684	415	0
 Anónimo	2012-03-31	59	41	0
 Anónimo	2012-05-11	108	97	0
-Anónimo	2012-05-12	483	365	0
+Anónimo	2012-05-12	483	365	1
 Anónimo	2012-06-17	76	75	0
 Anónimo	2012-06-18	169	26	0
 Anónimo	2012-06-19	89	73	0
@@ -315,6 +347,8 @@ Anónimo	2013-06-25	11	9	0
 Anónimo	2014-04-24	462	256	0
 Aonikenk	2011-06-29	1	0	0
 ApokalipsyS	2013-11-16	1	0	0
+ApokalipsyS	2015-07-28	16	13	0
+ApokalipsyS	2015-07-30	5	0	0
 AppleSky	2009-01-22	23	0	0
 Arbaruk	2010-08-30	12	10	0
 Arcontes	2014-02-01	2	0	0
@@ -324,7 +358,7 @@ Arthas	2008-10-27	22	0	0
 Arthas	2008-11-13	1	0	0
 Arthas	2008-11-24	154	0	0
 Arturo Santiago	2011-04-10	855	670	1
-Arturo Santiago	2011-04-11	673	610	2
+Arturo Santiago	2011-04-11	673	610	1
 ArturoDeutsch	2012-03-14	4	0	0
 ArturoDeutsch	2012-03-16	2	1	0
 ArturoDeutsch	2012-04-09	54	14	0
@@ -333,7 +367,9 @@ ArturoDeutsch	2012-10-07	1	1	0
 ArturoDeutsch	2013-09-28	1	1	0
 ArturoDeutsch	2014-11-06	2	0	0
 ArturoDeutsch	2014-12-17	19	17	0
+ArturoDeutsch	2015-03-03	1	1	0
 Asimil	2014-06-04	1	1	0
+Astrid Oppliger	2015-05-08	408	408	0
 Awo	2011-07-21	4	4	0
 Awo	2011-07-28	1	1	0
 Awo	2011-07-30	118	118	0
@@ -366,12 +402,28 @@ Awo	2014-11-15	20	20	0
 Awo	2014-11-24	8	6	0
 Awo	2014-11-25	9	9	0
 Awo	2014-12-02	1	1	0
+Awo	2015-02-05	43	34	0
+Awo	2015-02-09	1	1	0
+Awo	2015-02-12	5	4	0
+Awo	2015-06-30	83	65	0
+Awo	2015-07-01	12	8	0
+Awo	2015-07-14	29	22	0
+Awo	2015-07-15	1	0	0
+Awo	2015-08-03	6	0	0
+Awo	2015-08-21	2	2	0
+Awo	2015-08-31	49	48	0
+Awo	2016-01-10	4	0	0
 B1mbo	2014-04-25	1	0	0
 B1mbo	2014-05-19	1	1	0
 B1mbo	2014-09-26	7	0	0
 B1mbo	2014-12-13	14	14	0
 BFX	2012-10-17	2	0	0
 Baruch	2009-06-18	1	0	0
+Beizerno	2015-04-14	18	16	0
+Beizerno	2015-04-22	9	8	0
+Beizerno	2015-06-11	1	1	0
+Bernardo Quiroga	2015-06-29	3	2	0
+Bernardo Quiroga	2015-07-19	1	1	0
 BiIbo	2008-06-30	1	0	0
 BiIbo	2009-02-03	2	0	0
 BiIbo	2009-02-07	1	0	0
@@ -380,6 +432,7 @@ BiIbo	2010-11-29	1	0	0
 BiIbo	2011-04-12	1	0	0
 BiciPunto	2014-02-09	5	4	0
 BiciPunto	2014-02-10	3	2	0
+Bicicultura	2015-05-04	8	8	0
 Biff	2013-06-01	1	0	0
 Blackemo	2011-12-09	1193	71	0
 Blackemo	2011-12-10	844	33	0
@@ -388,7 +441,10 @@ Blackemo	2011-12-12	2	0	0
 Bleaplaza	2012-10-18	4	1	0
 Blobo123	2013-12-12	2	0	0
 BobSt	2012-03-15	1	0	0
+Brianna86	2015-12-10	41	37	0
 Bryce C Nesbitt	2015-01-23	1	1	0
+Bryce C Nesbitt	2015-03-01	1	1	0
+Bryce C Nesbitt	2015-03-19	1	0	0
 BugBuster	2009-09-28	1	0	0
 BugBuster	2009-10-31	4	0	0
 BuganiniQ	2014-05-06	10	0	0
@@ -409,6 +465,7 @@ Burrope	2010-09-09	58	19	0
 Burrope	2010-09-14	15	0	0
 Byron Pisero	2013-03-28	21	21	0
 CATA	2011-04-09	94	32	0
+CCarrascoM	2015-03-16	21	21	0
 CD-07508	2013-12-19	1	1	0
 COYOT3ON3	2010-04-01	36	0	0
 CReyes	2014-01-06	47	41	0
@@ -429,7 +486,12 @@ Carlos yo	2014-01-15	129	105	0
 Carlos yo	2014-01-16	157	153	0
 Carlos4x4	2011-05-13	2	0	0
 Caro Dev	2012-10-23	1	0	0
+CaroOSM	2015-04-29	637	637	0
+CaroOSM	2015-05-08	1543	1543	0
+Carola Rojas	2015-04-14	1	1	0
+Catalina Araya	2015-05-08	163	163	0
 Centro Comercial 14	2014-07-14	1	1	0
+Centro Comercial 14	2015-08-07	1	0	0
 CesarAlejandro	2012-01-14	2	0	0
 CesarAlejandro	2012-01-16	18	15	0
 CesarAlejandro	2012-01-19	36	15	0
@@ -524,8 +586,13 @@ CesarsanCL	2014-12-28	6	6	0
 CesarsanCL	2015-01-13	30	29	0
 CesarsanCL	2015-01-20	4	4	0
 CesarsanCL	2015-01-22	3	0	0
+CesarsanCL	2015-03-18	4	4	0
+CesarsanCL	2015-05-30	9	9	0
+CesarsanCL	2015-07-02	8	0	0
+Chetan_Gowda	2015-09-16	1	0	0
 ChikoCL	2012-12-27	23	16	0
 ChikoCL	2014-04-06	3	0	0
+ChikoCL	2015-05-05	6	6	0
 Chilestreet	2012-08-29	21	13	0
 Chilestreet	2012-08-31	30	10	0
 Chilestreet	2012-09-01	401	20	0
@@ -576,12 +643,56 @@ Chilestreet	2014-09-08	53	3	0
 Chilestreet	2014-09-09	162	106	0
 Chilestreet	2014-09-24	34	32	0
 Chilestreet	2014-12-25	7	6	0
+Chilestreet	2015-03-06	1	1	0
+Chilestreet	2015-04-09	2	1	0
+Chilestreet	2015-04-20	7	3	0
+Chilestreet	2015-04-21	4	0	0
+Chilestreet	2015-05-20	10	8	0
+Chilestreet	2015-06-02	69	46	0
+Chilestreet	2015-06-03	46	9	0
+Chilestreet	2015-06-04	2	1	0
+Chilestreet	2015-06-05	33	27	0
+Chilestreet	2015-06-15	36	3	0
+Chilestreet	2015-06-17	291	36	0
+Chilestreet	2015-06-21	2	2	0
+Chilestreet	2015-06-22	160	60	0
+Chilestreet	2015-06-23	15	12	0
+Chilestreet	2015-06-25	6	0	0
+Chilestreet	2015-07-02	11	10	0
+Chilestreet	2015-10-31	24	20	0
+Chilestreet	2015-11-04	392	277	0
+Chilestreet	2015-11-05	1939	1494	0
+Chilestreet	2015-11-06	70	41	0
+Chilestreet	2015-11-08	1222	1051	0
+Chilestreet	2015-11-09	82	72	0
+Chilestreet	2015-11-10	58	20	0
+Chilestreet	2015-11-14	54	20	0
+Chilestreet	2015-11-18	465	360	0
+Chilestreet	2015-11-25	50	41	0
+Chilestreet	2015-11-26	233	129	0
+Chilestreet	2015-11-29	141	96	0
+Chilestreet	2015-11-30	439	62	0
+Chilestreet	2015-12-05	52	40	0
+Chilestreet	2015-12-08	512	114	0
+Chilestreet	2015-12-09	123	78	0
+Chilestreet	2015-12-13	26	21	0
+Chilestreet	2016-01-03	38	10	0
+Chris Barra CHI	2015-12-13	88	59	0
+Chris_Chile	2015-06-10	3	3	0
+ChrissW-R1	2015-10-22	2	0	0
+ChrissW-R1	2015-10-23	1	0	0
+Christoph Lotz	2015-10-02	219	0	0
+Christopher Arancibia	2015-11-22	2	2	0
+Christopher Arancibia	2015-11-25	4	2	0
 Christreet	2009-09-12	45	0	0
 Cisarro69	2014-06-13	63	63	0
 Cisarro69	2014-06-15	22	22	0
+Cisarro69	2015-03-17	198	192	0
+ClaudDadur	2015-09-02	26	21	0
 Claudio Lillo Contreras	2010-09-03	1	1	0
 Claudio Navarro	2013-05-08	5	5	0
 Claudio Palacios	2014-07-29	5	5	0
+Claudio Palacios	2015-08-17	4	4	0
 Claudius Henrichs	2010-05-10	1	0	0
 Claudius Henrichs	2010-10-06	1	0	0
 Claudius Henrichs	2014-01-01	1	0	0
@@ -589,11 +700,20 @@ CoKeSoR	2011-04-09	1	1	0
 CoKeSoR	2011-04-27	1	1	0
 Cobra	2012-03-27	2	0	0
 Consuelo123	2013-05-09	16	16	0
+Cototo	2015-03-18	1	1	0
 Cratón	2010-10-29	6	4	0
 Cratón	2010-11-12	3	3	0
+CrazyDeejay	2015-08-18	6	4	0
+Creando	2015-02-14	1	0	0
+Creando	2015-02-23	9	3	0
+Creando	2015-02-24	35	19	0
+Creando	2015-03-17	9	4	0
+Creando	2015-03-22	2	0	0
 Cristhian Aguirre	2013-05-08	11	3	0
 Cristian Junge	2009-07-03	5	2	0
 Cristian Junge	2009-07-22	2	2	0
+Cristian Meza	2015-10-01	2	1	0
+Cristian Meza	2016-01-13	7	7	0
 Cristian1	2015-01-02	2	2	0
 CristianMomberg	2011-04-10	5	3	0
 CristianSC	2012-04-04	89	37	0
@@ -610,11 +730,16 @@ CristianSC	2012-06-26	21	5	0
 CristianSC	2012-07-27	8	0	0
 Cristóbal Jordán	2014-11-27	3	1	0
 Cristóbal Jordán	2014-11-28	227	87	0
+Cristóbal Jordán	2015-03-18	25	12	0
 Cristóbal Tapia	2013-08-23	12	12	0
 Cristóbal Tapia	2013-11-09	13	13	0
+Crs Guzmán	2015-05-08	192	192	0
+Crs Guzmán	2015-07-06	1	1	0
+Crs Guzmán	2015-07-23	9	6	0
 Cuq	2014-10-27	1	1	0
 CvR	2008-03-26	3	0	0
 DINOSAPIEN	2014-06-10	1	1	0
+DINOSAPIEN	2015-05-21	8	0	0
 DRGDRG	2014-03-08	5	3	0
 Daeron	2010-01-28	669	36	0
 Daeron	2010-01-31	242	14	0
@@ -631,19 +756,36 @@ Danilo Lacoste	2010-12-20	1	0	0
 Danilo Lacoste	2013-01-07	47	47	0
 DaniloGarrido	2013-07-30	1	1	0
 Dantrella	2014-08-17	9	9	0
+Danyela2015	2015-12-07	9	7	0
+Danyela2015	2015-12-09	9	9	0
+Danyela2015	2015-12-14	42	41	0
+Danyela2015	2015-12-15	23	18	0
+Danyela2015	2015-12-16	56	50	0
+Danyela2015	2015-12-17	74	68	0
 Darkrandor	2012-07-15	12	12	0
 Darkster15	2013-04-01	3	1	0
 Dasm_93	2012-06-21	1	1	0
 DaveFX	2014-02-24	2	0	0
 David Leal Olivares	2014-01-16	3	1	0
+David Saldaña	2015-03-20	1	1	0
 DePelos	2013-11-11	219	93	0
 DePelos	2013-11-12	1	0	0
 DePelos	2013-11-16	50	1	0
 DePelos	2014-08-10	150	5	0
+Devastador	2015-12-11	12	12	0
+Devastador	2015-12-13	3	3	0
 Dfbonati	2014-05-28	1	0	0
+Dfbonati	2015-05-08	265	265	0
 Dhenriquez	2012-09-20	21	9	0
-Diego Álvarez	2010-03-24	1383	908	1
+Diego García	2015-04-15	23	22	0
+Diego García	2015-04-16	120	79	0
+Diego Álvarez	2010-03-24	1383	908	0
 Diego123321	2010-09-30	2	2	0
+DiegoKrew	2015-05-30	12	8	0
+DiegoKrew	2015-06-07	4	4	0
+Dimitri_Junker	2015-03-16	25	25	0
+Dlchc	2015-08-29	1	0	0
+DonClamo	2015-03-23	1	0	0
 DoubleA	2014-01-06	1	0	0
 Dphernan	2011-08-16	2	2	0
 DrSeuthberg	2012-08-30	1	0	0
@@ -652,17 +794,24 @@ DusanCl	2012-05-27	3	1	0
 E-Malte	2011-10-15	1	0	0
 EJensen	2008-01-31	2	0	0
 EJensen	2008-02-02	3	0	0
+ES22	2015-05-20	1	1	0
 EdiNOS	2009-04-25	8	8	0
 Edrahil	2013-05-07	2	2	0
 Edrahil	2013-05-15	13	13	0
+Eduardo Andrz	2015-02-18	1	1	0
+Eduardo Andrz	2015-02-20	40	38	0
+Eduardo Andrz	2015-03-21	16	16	0
+Eduardo Ariel Fernandez Soto	2015-11-23	57	45	0
 Eduardowa	2011-02-16	2	2	0
 El Mal Inquilino	2011-04-08	1	1	0
+ElBruno	2015-01-26	1	0	0
 ElPeter	2013-04-18	4	3	0
 ElSebaC	2011-04-09	13	2	0
 Elizabeta	2010-08-02	1	1	0
 Elkan76	2010-11-12	7	5	0
 Elkan76	2010-11-16	11	2	0
 Ematamala	2008-11-28	18	0	0
+Emilio10	2016-01-10	2	2	0
 Emmanuel22	2012-05-10	139	84	0
 Empresas Delporte	2012-10-04	1	0	0
 Enkil	2011-01-04	7	0	0
@@ -837,8 +986,12 @@ EsRodrigo	2012-06-09	13	2	0
 EsRodrigo	2012-06-10	357	216	0
 Esteban Castillo	2011-04-12	15	9	0
 Estebanrk91	2014-04-24	25	25	0
+Eugenio Cajiao	2015-07-06	50	38	0
+Eugenio Cajiao	2015-07-09	2	2	0
 Eusko	2013-01-13	1	1	0
 Eusko	2013-09-09	3	1	0
+F1!X	2015-10-20	5	5	0
+F1!X	2015-12-09	2	2	0
 F3719WE	2013-05-08	1	1	0
 FLP_V	2010-05-02	11	0	0
 Fabian Nuñez	2013-05-14	4	3	0
@@ -850,7 +1003,7 @@ Fede Borgnia	2011-04-12	342	286	0
 Fede Borgnia	2011-04-13	4793	4785	0
 Fede Borgnia	2011-04-14	28904	28892	0
 Fede Borgnia	2011-04-15	33892	33881	0
-Fede Borgnia	2011-04-18	30844	30842	0
+Fede Borgnia	2011-04-18	30844	30842	1
 Fede Borgnia	2011-04-19	23494	23491	0
 Fede Borgnia	2011-04-20	15297	15297	0
 Fede Borgnia	2011-04-26	652	652	0
@@ -870,7 +1023,7 @@ Felipe Barriga Richards	2010-04-07	12	2	0
 Felipe Barriga Richards	2010-04-21	215	152	0
 Felipe Barriga Richards	2010-04-22	115	55	0
 Felipe Barriga Richards	2010-04-23	372	226	0
-Felipe Barriga Richards	2010-08-19	118	118	0
+Felipe Barriga Richards	2010-08-19	118	118	1
 Felipe Barriga Richards	2010-08-20	44	0	0
 Felipe Barriga Richards	2010-08-21	28	22	0
 Felipe Barriga Richards	2010-08-23	88	70	0
@@ -887,25 +1040,44 @@ FelipeV	2014-11-10	47	34	0
 FelipeV	2014-11-21	4	4	0
 FelipeV	2015-01-15	7	7	0
 FelipeV	2015-01-23	18	12	0
+FelipeV	2015-02-04	14	12	0
+FelipeV	2015-02-05	7	5	0
+FelipeV	2015-02-06	5	0	0
+FelipeV	2015-02-10	22	18	0
+FelipeV	2015-02-11	21	8	0
+FelipeV	2015-02-27	38	35	0
+FelipeV	2015-03-12	6	6	0
+FelipeV	2015-03-25	2	0	0
 Felipe_sepulveda	2010-06-26	4	1	0
 Felipe_sepulveda	2010-06-27	4	2	0
 Fernando Flores	2010-08-30	3	1	0
 Fernando Lamadrid	2011-06-08	4	4	0
 FernandoM	2012-03-09	1	1	0
+Fidelis Assis	2015-03-17	1	0	0
+Fionachr	2015-03-20	5	3	0
 Firefishy	2009-09-18	2	0	0
 Flacus	2010-08-27	20	0	0
 Flacus	2010-09-05	1	0	0
+Florian Gainza	2015-07-21	17	13	0
+FoXiL	2015-09-30	233	34	0
+FoXiL	2015-10-02	2	0	0
+FoXiL	2015-10-03	59	3	0
+FoXiL	2015-10-04	143	6	0
+FoXiL	2015-10-17	28	24	0
+FoXiL	2015-10-26	177	72	0
 Francisco Esteban	2013-07-22	1	1	0
 Francisco Freres Rios	2013-09-13	25	21	0
 Francisco Freres Rios	2013-09-16	19	12	0
+Francisco Javier Dominguez Rogers	2015-03-02	21	0	0
 Francisco Rivas	2012-03-08	37	0	0
+Frank314	2015-12-07	1	1	0
 Frankenheim	2010-10-31	1	1	0
 Full-Piscinas	2011-04-09	1	1	0
 Full-Piscinas	2011-04-22	1	1	0
 Funkin2x	2008-10-30	305	32	0
-Funkin2x	2008-10-31	1439	307	1
-Funkin2x	2008-11-02	613	86	0
-Funkin2x	2008-11-03	336	38	3
+Funkin2x	2008-10-31	1439	307	5
+Funkin2x	2008-11-02	613	86	1
+Funkin2x	2008-11-03	336	38	2
 Funkin2x	2008-11-04	173	0	0
 Funkin2x	2008-11-05	95	16	0
 Funkin2x	2008-11-07	32	0	0
@@ -928,7 +1100,7 @@ Funkin2x	2009-01-04	270	18	0
 Funkin2x	2009-01-06	134	15	0
 Funkin2x	2009-01-07	725	107	1
 Funkin2x	2009-01-09	1	0	0
-Funkin2x	2009-01-14	253	84	0
+Funkin2x	2009-01-14	253	84	1
 Funkin2x	2009-01-17	158	32	0
 Funkin2x	2009-01-18	5	0	0
 Funkin2x	2009-01-19	5	2	0
@@ -939,16 +1111,16 @@ Funkin2x	2009-01-27	224	55	0
 Funkin2x	2009-02-09	661	93	0
 Funkin2x	2009-02-14	15	6	0
 Funkin2x	2009-02-26	224	29	0
-Funkin2x	2009-02-27	900	285	0
+Funkin2x	2009-02-27	900	285	1
 Funkin2x	2009-03-01	503	100	2
-Funkin2x	2009-03-03	259	23	2
+Funkin2x	2009-03-03	259	23	0
 Funkin2x	2009-03-05	325	124	0
 Funkin2x	2009-03-06	505	100	0
 Funkin2x	2009-03-08	369	15	0
 Funkin2x	2009-03-13	231	45	0
 Funkin2x	2009-03-14	196	124	0
-Funkin2x	2009-03-16	97	18	1
-Funkin2x	2009-03-26	1400	163	0
+Funkin2x	2009-03-16	97	18	0
+Funkin2x	2009-03-26	1400	163	1
 Funkin2x	2009-04-13	54	3	0
 Funkin2x	2009-04-25	188	66	0
 Funkin2x	2009-04-26	129	40	0
@@ -959,7 +1131,7 @@ Funkin2x	2009-06-11	37	31	0
 Funkin2x	2009-06-13	91	87	0
 Funkin2x	2009-06-22	15	15	0
 Funkin2x	2009-06-24	104	69	0
-Funkin2x	2009-07-10	42	25	1
+Funkin2x	2009-07-10	42	25	0
 Funkin2x	2009-07-21	7	6	0
 Funkin2x	2009-07-25	41	38	0
 Funkin2x	2009-07-26	2	2	0
@@ -978,13 +1150,23 @@ Funkin2x	2010-03-20	45	40	0
 Funkin2x	2010-08-16	4	4	0
 Funkin2x	2010-09-02	2	2	0
 Funkin2x	2011-12-10	37	32	0
+Funkin2x	2015-06-03	10	9	0
 FvGordon	2014-01-24	1	1	0
 FvGordon	2015-01-09	53	4	0
 FvGordon	2015-01-24	1	1	0
+FvGordon	2015-05-04	1	0	0
+FvGordon	2015-05-12	66	6	0
+FvGordon	2015-09-14	4	1	0
+FvGordon	2015-10-10	3	1	0
+FvGordon	2015-11-28	4	0	0
+FvGordon	2016-01-10	8	0	0
 Gabie	2014-09-05	22	14	0
 Gabie	2014-09-26	238	169	0
+Gaboflowers	2015-08-25	9	9	0
 GabrielRazeto	2009-02-19	17	0	0
 Gabyalexa	2013-12-08	13	7	0
+Gadumohwa	2015-06-01	1	0	0
+Gadumohwa	2015-08-04	1	1	0
 Garufe	2011-03-25	1	1	0
 GeoDBcl	2013-12-04	5	1	0
 Geogast	2009-12-29	2	0	0
@@ -997,12 +1179,21 @@ Geogast	2013-04-19	1	0	0
 Geogast	2013-04-29	179	178	0
 Geogast	2013-06-26	1	0	0
 Geogast	2014-11-05	1	0	0
+Geogast	2015-12-29	7	0	0
+GerdP	2015-10-06	3	0	0
+GerdP	2015-10-19	14	6	0
+GerdP	2015-10-28	5	0	0
+GerdP	2015-12-21	1	0	0
+Gersonmoreno	2015-08-12	9	9	0
 Giszmo	2013-08-15	1	1	0
 GladiadorRvd	2013-12-24	9	8	0
+Globalmap	2015-04-05	1	0	0
 Gloix	2011-04-08	1	1	0
 Gloix	2014-10-22	4	2	0
+Gloix	2015-08-30	46	2	0
 Gonzalo Besoain	2012-08-14	68	63	0
 Gonzalo Besoain	2012-08-15	31	31	0
+Gonzalo Saavedra	2015-09-19	4	1	0
 Gonzalo_Z	2011-05-22	4	1	0
 Gonzalo_Z	2011-11-05	62	51	0
 Gonzalo_Z	2011-11-06	72	72	0
@@ -1010,15 +1201,17 @@ Gonzalo_Z	2011-11-13	14	0	0
 Gonzalo_Z	2011-11-14	82	74	0
 Gonzalo_Z	2013-01-14	81	81	0
 Gotencool	2009-11-12	8	8	0
-Gotencool	2011-05-18	60	60	0
+Gotencool	2011-05-18	60	60	1
 Gottahn	2011-04-07	1	1	0
 Gottahnlich	2011-01-20	3	2	0
 Gottahnlich	2011-05-02	6	1	0
 Granado	2009-09-09	29	0	0
 Greenboy	2009-10-28	2	0	0
 Greenboy	2009-10-29	33	0	0
+Grillo	2015-03-13	51	44	0
 Guilherme Bacellar	2011-03-22	6	5	0
 GuilleGarcia	2014-08-16	2	1	0
+Gutsycat	2015-11-05	1	0	0
 Guyermo	2011-04-21	6	6	0
 Gvegas	2011-01-19	32	1	0
 Gwen07	2014-08-20	74	67	0
@@ -1032,14 +1225,18 @@ Hans van Wijk	2010-02-28	35	11	0
 Hans van Wijk	2010-03-01	2	0	0
 Hantojan	2014-10-21	11	11	0
 Hanzo51	2011-01-06	14	10	0
-Hanzo51	2012-02-08	1	1	0
-Hanzo51	2013-02-21	158	151	0
+Hanzo51	2012-02-08	1	1	1
+Hanzo51	2013-02-21	158	151	1
 Hanzo51	2013-08-26	59	59	0
 Hanzo51	2013-08-27	170	169	1
+Hanzo51	2015-08-05	56	55	0
+Hanzo51	2015-09-14	111	111	0
+Hanzo51	2015-09-16	845	467	0
 Harry Wood	2010-03-06	38	34	0
 Hereje	2014-01-20	8	2	0
 Hereje	2014-01-25	1	0	0
 Hernandomap	2015-01-24	7	0	0
+Hobgoblin	2015-01-31	4	1	0
 Hornino	2012-06-16	2	2	0
 Huachalomo	2013-02-03	4	1	0
 Humberto Olea	2010-11-30	6	6	0
@@ -1047,12 +1244,15 @@ Humberto Olea	2010-12-18	11	6	0
 IZIU	2012-03-14	23	4	0
 Ignacio Parada	2011-04-30	1	1	0
 Ignacio Rivas	2014-04-10	4	4	0
+IgnacioMontenegro	2015-12-06	10	0	0
+IgnacioT	2015-02-22	8	0	0
 Ilustre Municipalidad de la Reina	2013-05-19	3	1	0
 InterContinental Santiago	2011-10-16	8	7	0
 Iqudoblev	2012-03-01	3	3	0
 J Roedel	2013-03-27	1	1	0
 JCID	2011-01-05	95	19	0
 JCID	2011-01-11	1	1	0
+JEFF_ALVARADO	2015-02-06	1	0	0
 JFSF	2014-02-24	2	1	0
 JHP	2009-08-14	68	28	0
 JHP	2009-08-17	48	17	0
@@ -1065,6 +1265,7 @@ JMMAD	2013-10-28	9	9	0
 JNCB	2014-07-01	3	3	0
 JOTAJOTAPE	2013-09-03	7	3	0
 JPAQ	2009-11-28	14	0	0
+JSSand	2015-09-30	10	10	0
 Jack Pham	2013-10-17	2	2	0
 Jahden	2012-03-12	27	26	0
 Jaime Alvarado	2011-11-07	1	0	0
@@ -1073,6 +1274,7 @@ Jaime Ovalle	2014-06-26	5	0	0
 Jaime Ovalle	2015-01-06	5	0	0
 Jake Strine	2014-05-03	1	0	0
 Jake Strine	2014-08-18	1	0	0
+Jalv_cl	2015-03-20	2	1	0
 Jandurilah1245	2014-08-12	15	12	0
 JanoSaumann	2012-07-24	1	1	0
 Javier Leyton	2011-05-10	26	3	0
@@ -1084,12 +1286,19 @@ Jcipower	2012-03-05	1	1	0
 Jean Pierre Fica	2011-02-01	1	1	0
 Jedrzej Pelka	2013-11-10	2	0	0
 Jenina	2010-03-20	3	0	0
+Jeroam	2015-07-13	9	7	0
 Jhon M	2010-05-28	6	3	0
+Jimmyberto	2015-06-10	1	1	0
+JnQuintanilla	2015-04-13	10	6	0
 JoMebold	2013-04-10	16	14	0
 JoMebold	2013-04-11	1	1	0
 Joacox	2014-01-15	1	1	0
+Joanna Winkler	2015-09-03	58	9	0
+Joel Gurrola	2015-04-22	27	27	0
+JollyJuliaS	2015-04-17	150	150	0
 Jorge Godoy	2014-05-06	1	1	0
 Jorge Godoy	2014-08-13	5	4	0
+Jorge Morales Nahuelán	2015-08-27	12	2	0
 Jorge Morales n	2009-08-18	29	0	0
 Jorge_Barrios	2012-07-13	13	5	0
 Jorge_Barrios	2012-07-14	1	0	0
@@ -1098,6 +1307,8 @@ Jorge_Barrios	2012-07-22	6	6	0
 Jorge_Barrios	2012-08-17	6	6	0
 Jorge_Barrios	2012-08-29	100	44	0
 Jorge_Barrios	2012-09-03	1	0	0
+Jorge_Barrios	2015-04-05	34	17	0
+Jorge_Barrios	2015-05-18	18	12	0
 Josecisa	2012-04-23	1	1	0
 Josef73	2013-08-18	1	0	0
 Jottalcuadrado	2014-09-28	5	5	0
@@ -1135,17 +1346,17 @@ JuanPerez	2011-07-28	35	16	0
 JuanPerez	2011-07-29	1	1	0
 JuanPerez	2011-07-30	1035	809	0
 JuanPerez	2011-08-02	4	4	0
-JuanPerez	2011-08-03	1198	916	2
+JuanPerez	2011-08-03	1198	916	4
 JuanPerez	2011-08-06	19	17	0
 JuanPerez	2011-08-08	569	490	0
-JuanPerez	2011-08-11	272	272	0
+JuanPerez	2011-08-11	272	272	1
 JuanPerez	2011-08-12	1370	890	0
 JuanPerez	2011-08-14	1966	1153	0
 JuanPerez	2011-08-16	75	66	0
 JuanPerez	2011-08-20	164	117	0
 JuanPerez	2011-09-18	20	3	0
-JuanPerez	2011-09-25	740	454	1
-JuanPerez	2011-09-26	158	136	1
+JuanPerez	2011-09-25	740	454	0
+JuanPerez	2011-09-26	158	136	0
 JuanPerez	2011-10-04	174	123	0
 JuanPerez	2011-10-06	372	102	0
 JuanPerez	2011-10-08	547	32	0
@@ -1225,18 +1436,880 @@ JuanPerez	2014-09-15	2	1	0
 JuanPerez	2014-09-19	10	2	0
 JuanPerez	2014-10-18	1	0	0
 JuanPerez	2015-01-05	4	4	0
+JuanPerez	2015-02-13	2	2	0
+JuanPerez	2015-02-17	34	15	0
+JuanPerez	2015-02-20	189	188	1
+JuanPerez	2015-02-25	5	5	0
+JuanPerez	2015-02-26	122	81	0
+JuanPerez	2015-02-28	205	205	0
+JuanPerez	2015-03-02	67	61	0
+JuanPerez	2015-03-06	8	8	0
+JuanPerez	2015-03-08	31	24	0
+JuanPerez	2015-03-11	44	43	0
+JuanPerez	2015-04-01	13	3	0
+JuanPerez	2015-04-11	17	17	0
+JuanPerez	2015-05-13	58	49	0
+JuanPerez	2015-05-20	18	10	0
+JuanPerez	2015-06-08	4	4	0
+JuanPerez	2015-07-14	78	0	0
+JuanPerez	2015-07-23	1	1	0
+JuanPerez	2015-08-04	1	0	0
+JuanPerez	2015-11-02	38	18	0
+JuanPerez	2015-12-05	58	10	0
+JuanPerez	2016-01-05	35	13	0
 Juanchop_MD	2011-09-29	7	7	0
 Juano100	2010-10-12	2	0	0
 Juanpol	2014-08-20	16	12	0
+Julien_N	2015-11-26	13	0	0
+Julietta10	2015-05-08	175	170	0
 Julio Falcon Lucero	2012-03-12	8	6	0
+Julio_Costa_Zambelli	2008-03-15	39	12	0
+Julio_Costa_Zambelli	2008-03-19	4667	4235	4
+Julio_Costa_Zambelli	2008-03-20	18	14	0
+Julio_Costa_Zambelli	2008-03-21	3621	3200	22
+Julio_Costa_Zambelli	2008-03-22	2689	2219	2
+Julio_Costa_Zambelli	2008-03-23	381	327	0
+Julio_Costa_Zambelli	2008-03-26	339	206	0
+Julio_Costa_Zambelli	2008-03-27	889	766	5
+Julio_Costa_Zambelli	2008-03-29	22	14	0
+Julio_Costa_Zambelli	2008-03-30	150	138	0
+Julio_Costa_Zambelli	2008-04-06	145	102	0
+Julio_Costa_Zambelli	2008-04-08	1700	1387	26
+Julio_Costa_Zambelli	2008-04-12	26	7	0
+Julio_Costa_Zambelli	2008-04-14	5	0	0
+Julio_Costa_Zambelli	2008-04-26	289	236	13
+Julio_Costa_Zambelli	2008-04-30	106	78	0
+Julio_Costa_Zambelli	2008-05-10	1755	1606	4
+Julio_Costa_Zambelli	2008-05-12	510	473	5
+Julio_Costa_Zambelli	2008-05-13	5731	5504	37
+Julio_Costa_Zambelli	2008-05-14	1312	1191	3
+Julio_Costa_Zambelli	2008-05-16	1401	1141	0
+Julio_Costa_Zambelli	2008-05-17	1957	1773	9
+Julio_Costa_Zambelli	2008-05-18	2212	1723	13
+Julio_Costa_Zambelli	2008-05-19	912	736	1
+Julio_Costa_Zambelli	2008-05-20	2433	2275	5
+Julio_Costa_Zambelli	2008-05-21	917	871	18
+Julio_Costa_Zambelli	2008-05-22	1738	1567	5
+Julio_Costa_Zambelli	2008-05-24	380	347	1
+Julio_Costa_Zambelli	2008-05-25	859	743	2
+Julio_Costa_Zambelli	2008-05-26	685	631	3
+Julio_Costa_Zambelli	2008-05-27	2774	2347	16
+Julio_Costa_Zambelli	2008-05-29	6357	6013	51
+Julio_Costa_Zambelli	2008-06-01	2535	2290	3
+Julio_Costa_Zambelli	2008-06-06	926	858	0
+Julio_Costa_Zambelli	2008-06-07	2106	1922	1
+Julio_Costa_Zambelli	2008-06-08	57	0	0
+Julio_Costa_Zambelli	2008-06-12	549	537	3
+Julio_Costa_Zambelli	2008-06-15	71	18	0
+Julio_Costa_Zambelli	2008-06-17	84	7	0
+Julio_Costa_Zambelli	2008-06-19	137	119	0
+Julio_Costa_Zambelli	2008-06-21	31	3	0
+Julio_Costa_Zambelli	2008-06-22	37	34	0
+Julio_Costa_Zambelli	2008-06-26	576	481	0
+Julio_Costa_Zambelli	2008-06-29	1177	1138	15
+Julio_Costa_Zambelli	2008-07-02	4163	3737	4
+Julio_Costa_Zambelli	2008-07-03	905	378	0
+Julio_Costa_Zambelli	2008-07-04	1541	1423	3
+Julio_Costa_Zambelli	2008-07-07	1554	1426	2
+Julio_Costa_Zambelli	2008-07-08	2221	2131	24
+Julio_Costa_Zambelli	2008-07-09	380	219	0
+Julio_Costa_Zambelli	2008-07-12	428	408	0
+Julio_Costa_Zambelli	2008-07-15	502	483	1
+Julio_Costa_Zambelli	2008-07-17	72	71	2
+Julio_Costa_Zambelli	2008-07-22	957	936	8
+Julio_Costa_Zambelli	2008-07-23	1071	1028	0
+Julio_Costa_Zambelli	2008-07-24	2368	880	12
+Julio_Costa_Zambelli	2008-07-26	16	6	0
+Julio_Costa_Zambelli	2008-07-29	1907	1853	0
+Julio_Costa_Zambelli	2008-07-31	319	145	0
+Julio_Costa_Zambelli	2008-08-01	232	207	3
+Julio_Costa_Zambelli	2008-08-02	2086	2046	0
+Julio_Costa_Zambelli	2008-08-03	297	296	0
+Julio_Costa_Zambelli	2008-08-04	630	593	28
+Julio_Costa_Zambelli	2008-08-05	233	222	0
+Julio_Costa_Zambelli	2008-08-06	1062	1047	0
+Julio_Costa_Zambelli	2008-08-07	1168	587	1
+Julio_Costa_Zambelli	2008-08-09	1582	1407	25
+Julio_Costa_Zambelli	2008-08-12	17	4	0
+Julio_Costa_Zambelli	2008-08-14	378	327	0
+Julio_Costa_Zambelli	2008-08-15	20	20	0
+Julio_Costa_Zambelli	2008-08-17	4063	4005	1
+Julio_Costa_Zambelli	2008-08-18	1560	1543	0
+Julio_Costa_Zambelli	2008-08-19	593	479	4
+Julio_Costa_Zambelli	2008-08-21	442	293	0
+Julio_Costa_Zambelli	2008-08-27	679	662	0
+Julio_Costa_Zambelli	2008-08-31	6	4	0
+Julio_Costa_Zambelli	2008-09-17	2	1	0
+Julio_Costa_Zambelli	2008-09-22	2461	2058	13
+Julio_Costa_Zambelli	2008-09-24	2	1	0
+Julio_Costa_Zambelli	2008-10-02	92	43	0
+Julio_Costa_Zambelli	2008-10-03	475	299	0
+Julio_Costa_Zambelli	2008-10-05	271	262	0
+Julio_Costa_Zambelli	2008-10-08	1488	139	0
+Julio_Costa_Zambelli	2008-10-24	2946	67	0
+Julio_Costa_Zambelli	2008-10-25	2969	203	0
+Julio_Costa_Zambelli	2008-10-29	1003	142	0
+Julio_Costa_Zambelli	2008-10-30	12353	841	0
+Julio_Costa_Zambelli	2008-11-02	15860	1244	1
+Julio_Costa_Zambelli	2008-11-06	50	0	0
+Julio_Costa_Zambelli	2008-11-08	5544	359	0
+Julio_Costa_Zambelli	2008-11-09	13142	999	0
+Julio_Costa_Zambelli	2008-11-10	1112	194	11
+Julio_Costa_Zambelli	2008-11-13	4188	308	0
+Julio_Costa_Zambelli	2008-11-16	1	0	0
+Julio_Costa_Zambelli	2008-11-19	55	0	0
+Julio_Costa_Zambelli	2008-11-21	1	0	0
+Julio_Costa_Zambelli	2008-11-23	840	321	0
+Julio_Costa_Zambelli	2008-11-24	1977	1263	65
+Julio_Costa_Zambelli	2008-11-25	168	0	0
+Julio_Costa_Zambelli	2008-11-26	2613	29	1
+Julio_Costa_Zambelli	2008-11-30	402	0	0
+Julio_Costa_Zambelli	2008-12-03	329	5	0
+Julio_Costa_Zambelli	2008-12-09	264	5	0
+Julio_Costa_Zambelli	2008-12-13	4278	110	1
+Julio_Costa_Zambelli	2008-12-17	4380	35	0
+Julio_Costa_Zambelli	2008-12-18	83	1	0
+Julio_Costa_Zambelli	2008-12-23	419	48	0
+Julio_Costa_Zambelli	2009-01-06	635	31	0
+Julio_Costa_Zambelli	2009-01-08	29	0	0
+Julio_Costa_Zambelli	2009-01-09	523	35	0
+Julio_Costa_Zambelli	2009-01-13	468	68	0
+Julio_Costa_Zambelli	2009-01-15	638	108	0
+Julio_Costa_Zambelli	2009-01-19	246	40	0
+Julio_Costa_Zambelli	2009-01-20	5835	114	0
+Julio_Costa_Zambelli	2009-01-21	2866	40	0
+Julio_Costa_Zambelli	2009-01-22	4416	193	0
+Julio_Costa_Zambelli	2009-01-23	7550	698	3
+Julio_Costa_Zambelli	2009-01-24	10409	694	0
+Julio_Costa_Zambelli	2009-01-25	12598	476	0
+Julio_Costa_Zambelli	2009-01-26	17438	1284	0
+Julio_Costa_Zambelli	2009-01-27	9786	431	0
+Julio_Costa_Zambelli	2009-01-28	212	13	0
+Julio_Costa_Zambelli	2009-01-30	62	5	0
+Julio_Costa_Zambelli	2009-02-05	1	0	0
+Julio_Costa_Zambelli	2009-02-06	64	2	0
+Julio_Costa_Zambelli	2009-02-08	2657	264	0
+Julio_Costa_Zambelli	2009-02-10	205	42	0
+Julio_Costa_Zambelli	2009-02-19	2180	32	0
+Julio_Costa_Zambelli	2009-02-20	73	1	0
+Julio_Costa_Zambelli	2009-02-21	9	6	0
+Julio_Costa_Zambelli	2009-02-22	419	35	0
+Julio_Costa_Zambelli	2009-02-23	2941	371	1
+Julio_Costa_Zambelli	2009-02-24	60	0	0
+Julio_Costa_Zambelli	2009-03-03	128	5	0
+Julio_Costa_Zambelli	2009-03-10	2	1	0
+Julio_Costa_Zambelli	2009-03-11	4235	169	0
+Julio_Costa_Zambelli	2009-03-13	186	0	0
+Julio_Costa_Zambelli	2009-03-16	3643	440	0
+Julio_Costa_Zambelli	2009-03-20	4391	372	1
+Julio_Costa_Zambelli	2009-03-22	5315	410	1
+Julio_Costa_Zambelli	2009-04-01	149	1	0
+Julio_Costa_Zambelli	2009-04-05	14254	1356	35
+Julio_Costa_Zambelli	2009-04-06	136	26	3
+Julio_Costa_Zambelli	2009-04-07	249	31	7
+Julio_Costa_Zambelli	2009-04-08	1552	379	14
+Julio_Costa_Zambelli	2009-04-12	5414	700	0
+Julio_Costa_Zambelli	2009-04-13	1014	165	4
+Julio_Costa_Zambelli	2009-04-15	8267	416	0
+Julio_Costa_Zambelli	2009-04-16	262	4	0
+Julio_Costa_Zambelli	2009-04-21	21	21	0
+Julio_Costa_Zambelli	2009-04-23	456	448	8
+Julio_Costa_Zambelli	2009-04-24	573	207	0
+Julio_Costa_Zambelli	2009-04-25	366	163	2
+Julio_Costa_Zambelli	2009-04-27	16	1	0
+Julio_Costa_Zambelli	2009-04-28	115	33	0
+Julio_Costa_Zambelli	2009-05-02	576	550	0
+Julio_Costa_Zambelli	2009-05-03	38	3	0
+Julio_Costa_Zambelli	2009-05-05	172	71	0
+Julio_Costa_Zambelli	2009-05-06	169	78	0
+Julio_Costa_Zambelli	2009-05-07	5	1	0
+Julio_Costa_Zambelli	2009-05-12	51	31	0
+Julio_Costa_Zambelli	2009-05-13	1	0	0
+Julio_Costa_Zambelli	2009-05-14	1589	1401	25
+Julio_Costa_Zambelli	2009-05-15	86	40	0
+Julio_Costa_Zambelli	2009-05-16	5	0	0
+Julio_Costa_Zambelli	2009-05-18	50	27	0
+Julio_Costa_Zambelli	2009-05-19	343	303	0
+Julio_Costa_Zambelli	2009-05-22	95	40	0
+Julio_Costa_Zambelli	2009-05-27	32	18	0
+Julio_Costa_Zambelli	2009-05-28	236	76	0
+Julio_Costa_Zambelli	2009-05-30	2	2	0
+Julio_Costa_Zambelli	2009-06-03	84	50	0
+Julio_Costa_Zambelli	2009-06-08	192	102	0
+Julio_Costa_Zambelli	2009-06-12	14	7	0
+Julio_Costa_Zambelli	2009-06-15	248	232	0
+Julio_Costa_Zambelli	2009-06-16	324	293	0
+Julio_Costa_Zambelli	2009-06-18	226	224	0
+Julio_Costa_Zambelli	2009-06-19	983	916	0
+Julio_Costa_Zambelli	2009-06-20	363	327	0
+Julio_Costa_Zambelli	2009-06-21	106	90	0
+Julio_Costa_Zambelli	2009-06-22	1635	1581	10
+Julio_Costa_Zambelli	2009-06-24	1054	1020	0
+Julio_Costa_Zambelli	2009-06-25	132	132	0
+Julio_Costa_Zambelli	2009-06-26	32	30	0
+Julio_Costa_Zambelli	2009-06-27	782	681	1
+Julio_Costa_Zambelli	2009-06-28	767	753	2
+Julio_Costa_Zambelli	2009-06-29	522	461	0
+Julio_Costa_Zambelli	2009-07-02	774	621	0
+Julio_Costa_Zambelli	2009-07-03	1271	1263	6
+Julio_Costa_Zambelli	2009-07-04	2033	1862	6
+Julio_Costa_Zambelli	2009-07-06	162	75	0
+Julio_Costa_Zambelli	2009-07-07	742	682	18
+Julio_Costa_Zambelli	2009-07-10	15	11	0
+Julio_Costa_Zambelli	2009-07-11	6	3	0
+Julio_Costa_Zambelli	2009-07-15	239	107	0
+Julio_Costa_Zambelli	2009-07-17	502	314	0
+Julio_Costa_Zambelli	2009-07-18	1604	1526	10
+Julio_Costa_Zambelli	2009-07-19	3029	2792	2
+Julio_Costa_Zambelli	2009-07-20	6	5	0
+Julio_Costa_Zambelli	2009-07-21	158	115	0
+Julio_Costa_Zambelli	2009-07-22	310	248	0
+Julio_Costa_Zambelli	2009-07-24	49	49	0
+Julio_Costa_Zambelli	2009-07-26	710	621	5
+Julio_Costa_Zambelli	2009-07-27	493	406	0
+Julio_Costa_Zambelli	2009-07-28	189	155	0
+Julio_Costa_Zambelli	2009-07-29	95	47	0
+Julio_Costa_Zambelli	2009-07-30	12	9	0
+Julio_Costa_Zambelli	2009-07-31	84	47	0
+Julio_Costa_Zambelli	2009-08-02	1029	905	0
+Julio_Costa_Zambelli	2009-08-04	253	149	0
+Julio_Costa_Zambelli	2009-08-05	41	10	0
+Julio_Costa_Zambelli	2009-08-06	1483	1092	0
+Julio_Costa_Zambelli	2009-08-07	546	442	0
+Julio_Costa_Zambelli	2009-08-08	11	5	0
+Julio_Costa_Zambelli	2009-08-09	105	72	0
+Julio_Costa_Zambelli	2009-08-10	174	142	0
+Julio_Costa_Zambelli	2009-08-11	176	127	0
+Julio_Costa_Zambelli	2009-08-12	586	394	0
+Julio_Costa_Zambelli	2009-08-13	28	6	0
+Julio_Costa_Zambelli	2009-08-14	183	100	0
+Julio_Costa_Zambelli	2009-08-15	41	37	0
+Julio_Costa_Zambelli	2009-08-17	170	132	0
+Julio_Costa_Zambelli	2009-08-18	536	527	0
+Julio_Costa_Zambelli	2009-08-19	1	1	0
+Julio_Costa_Zambelli	2009-08-20	19	5	0
+Julio_Costa_Zambelli	2009-08-21	166	128	0
+Julio_Costa_Zambelli	2009-08-24	622	333	0
+Julio_Costa_Zambelli	2009-08-25	485	230	0
+Julio_Costa_Zambelli	2009-08-26	57	48	0
+Julio_Costa_Zambelli	2009-08-27	160	157	0
+Julio_Costa_Zambelli	2009-08-28	69	28	0
+Julio_Costa_Zambelli	2009-08-29	71	25	0
+Julio_Costa_Zambelli	2009-08-30	1	1	0
+Julio_Costa_Zambelli	2009-08-31	273	152	1
+Julio_Costa_Zambelli	2009-09-02	1	1	0
+Julio_Costa_Zambelli	2009-09-04	279	232	0
+Julio_Costa_Zambelli	2009-09-05	1873	1841	0
+Julio_Costa_Zambelli	2009-09-06	50	21	0
+Julio_Costa_Zambelli	2009-09-08	2	2	0
+Julio_Costa_Zambelli	2009-09-09	486	404	0
+Julio_Costa_Zambelli	2009-09-10	99	90	0
+Julio_Costa_Zambelli	2009-09-12	3	0	0
+Julio_Costa_Zambelli	2009-09-14	4	4	0
+Julio_Costa_Zambelli	2009-09-15	55	6	0
+Julio_Costa_Zambelli	2009-09-17	33	24	0
+Julio_Costa_Zambelli	2009-09-21	11	11	0
+Julio_Costa_Zambelli	2009-09-24	146	145	0
+Julio_Costa_Zambelli	2009-09-26	294	281	0
+Julio_Costa_Zambelli	2009-09-27	78	66	0
+Julio_Costa_Zambelli	2009-09-28	281	259	0
+Julio_Costa_Zambelli	2009-10-03	18	7	0
+Julio_Costa_Zambelli	2009-10-04	74	51	0
+Julio_Costa_Zambelli	2009-10-05	99	92	0
+Julio_Costa_Zambelli	2009-10-08	3	3	0
+Julio_Costa_Zambelli	2009-10-09	240	110	0
+Julio_Costa_Zambelli	2009-10-12	220	208	0
+Julio_Costa_Zambelli	2009-10-15	11	11	0
+Julio_Costa_Zambelli	2009-10-18	194	66	0
+Julio_Costa_Zambelli	2009-10-21	1	1	0
+Julio_Costa_Zambelli	2009-11-01	573	557	0
+Julio_Costa_Zambelli	2009-11-02	1	1	0
+Julio_Costa_Zambelli	2009-11-09	1	1	0
+Julio_Costa_Zambelli	2009-11-16	26	14	0
+Julio_Costa_Zambelli	2009-11-17	41	22	0
+Julio_Costa_Zambelli	2009-11-18	11	5	0
+Julio_Costa_Zambelli	2009-11-19	178	136	0
+Julio_Costa_Zambelli	2009-11-20	3	2	0
+Julio_Costa_Zambelli	2009-11-26	35	21	0
+Julio_Costa_Zambelli	2009-11-27	9	3	0
+Julio_Costa_Zambelli	2009-11-28	77	25	0
+Julio_Costa_Zambelli	2009-11-29	374	291	0
+Julio_Costa_Zambelli	2009-11-30	47	35	0
+Julio_Costa_Zambelli	2009-12-01	83	27	0
+Julio_Costa_Zambelli	2009-12-03	5	3	0
+Julio_Costa_Zambelli	2009-12-04	20	16	0
+Julio_Costa_Zambelli	2009-12-05	406	238	0
+Julio_Costa_Zambelli	2009-12-06	729	411	0
+Julio_Costa_Zambelli	2009-12-07	17	3	0
+Julio_Costa_Zambelli	2009-12-08	388	162	0
+Julio_Costa_Zambelli	2009-12-09	255	103	0
+Julio_Costa_Zambelli	2009-12-10	17	4	0
+Julio_Costa_Zambelli	2009-12-11	14	6	0
+Julio_Costa_Zambelli	2009-12-12	2	1	0
+Julio_Costa_Zambelli	2009-12-13	1	0	0
+Julio_Costa_Zambelli	2009-12-16	14	7	0
+Julio_Costa_Zambelli	2009-12-17	2	2	0
+Julio_Costa_Zambelli	2009-12-18	1	1	0
+Julio_Costa_Zambelli	2009-12-19	15	7	0
+Julio_Costa_Zambelli	2009-12-20	21	6	0
+Julio_Costa_Zambelli	2009-12-21	925	845	6
+Julio_Costa_Zambelli	2009-12-22	116	58	0
+Julio_Costa_Zambelli	2009-12-23	147	87	0
+Julio_Costa_Zambelli	2009-12-24	10	5	0
+Julio_Costa_Zambelli	2009-12-27	5	5	0
+Julio_Costa_Zambelli	2009-12-28	466	293	0
+Julio_Costa_Zambelli	2009-12-29	775	528	0
+Julio_Costa_Zambelli	2009-12-30	35	16	0
+Julio_Costa_Zambelli	2009-12-31	257	157	0
+Julio_Costa_Zambelli	2010-01-01	119	72	0
+Julio_Costa_Zambelli	2010-01-02	2180	1701	1
+Julio_Costa_Zambelli	2010-01-03	25	9	0
+Julio_Costa_Zambelli	2010-01-04	40	13	0
+Julio_Costa_Zambelli	2010-01-05	12	8	0
+Julio_Costa_Zambelli	2010-01-06	553	529	0
+Julio_Costa_Zambelli	2010-01-07	176	164	0
+Julio_Costa_Zambelli	2010-01-08	279	164	0
+Julio_Costa_Zambelli	2010-01-09	248	109	0
+Julio_Costa_Zambelli	2010-01-11	220	118	0
+Julio_Costa_Zambelli	2010-01-12	177	136	0
+Julio_Costa_Zambelli	2010-01-14	488	442	0
+Julio_Costa_Zambelli	2010-01-15	508	406	1
+Julio_Costa_Zambelli	2010-01-16	248	209	0
+Julio_Costa_Zambelli	2010-01-17	79	75	0
+Julio_Costa_Zambelli	2010-01-18	1	0	0
+Julio_Costa_Zambelli	2010-01-19	159	134	0
+Julio_Costa_Zambelli	2010-01-20	95	92	0
+Julio_Costa_Zambelli	2010-01-21	219	205	1
+Julio_Costa_Zambelli	2010-01-22	104	64	1
+Julio_Costa_Zambelli	2010-01-25	180	175	0
+Julio_Costa_Zambelli	2010-01-28	4	1	0
+Julio_Costa_Zambelli	2010-02-01	57	12	0
+Julio_Costa_Zambelli	2010-02-04	4	4	0
+Julio_Costa_Zambelli	2010-02-09	83	57	0
+Julio_Costa_Zambelli	2010-02-12	375	81	0
+Julio_Costa_Zambelli	2010-02-17	13	6	0
+Julio_Costa_Zambelli	2010-02-18	3	1	0
+Julio_Costa_Zambelli	2010-02-19	14	5	0
+Julio_Costa_Zambelli	2010-02-21	46	24	3
+Julio_Costa_Zambelli	2010-02-22	3	2	0
+Julio_Costa_Zambelli	2010-02-23	68	7	0
+Julio_Costa_Zambelli	2010-02-24	1	0	0
+Julio_Costa_Zambelli	2010-02-25	108	63	0
+Julio_Costa_Zambelli	2010-02-26	399	95	0
+Julio_Costa_Zambelli	2010-02-28	22	20	0
+Julio_Costa_Zambelli	2010-03-02	3	1	0
+Julio_Costa_Zambelli	2010-03-08	90	69	0
+Julio_Costa_Zambelli	2010-03-11	7	6	0
+Julio_Costa_Zambelli	2010-03-13	13	6	0
+Julio_Costa_Zambelli	2010-03-14	16	11	0
+Julio_Costa_Zambelli	2010-03-15	90	35	0
+Julio_Costa_Zambelli	2010-03-16	21	11	0
+Julio_Costa_Zambelli	2010-03-17	323	134	0
+Julio_Costa_Zambelli	2010-03-18	287	194	0
+Julio_Costa_Zambelli	2010-03-19	74	51	0
+Julio_Costa_Zambelli	2010-03-20	34	20	0
+Julio_Costa_Zambelli	2010-03-21	86	51	0
+Julio_Costa_Zambelli	2010-03-22	98	50	0
+Julio_Costa_Zambelli	2010-03-23	204	122	0
+Julio_Costa_Zambelli	2010-03-24	209	130	0
+Julio_Costa_Zambelli	2010-03-26	5	3	0
+Julio_Costa_Zambelli	2010-03-27	30	26	0
+Julio_Costa_Zambelli	2010-03-28	870	721	0
+Julio_Costa_Zambelli	2010-03-29	28	20	0
+Julio_Costa_Zambelli	2010-03-30	19	2	0
+Julio_Costa_Zambelli	2010-03-31	5	3	0
+Julio_Costa_Zambelli	2010-04-04	34	9	0
+Julio_Costa_Zambelli	2010-04-07	5	2	0
+Julio_Costa_Zambelli	2010-04-11	1	0	0
+Julio_Costa_Zambelli	2010-04-14	199	125	0
+Julio_Costa_Zambelli	2010-04-16	120	117	0
+Julio_Costa_Zambelli	2010-04-20	757	576	0
+Julio_Costa_Zambelli	2010-04-21	42	23	0
+Julio_Costa_Zambelli	2010-04-22	89	63	0
+Julio_Costa_Zambelli	2010-04-23	126	63	0
+Julio_Costa_Zambelli	2010-04-26	3	1	0
+Julio_Costa_Zambelli	2010-04-28	87	22	0
+Julio_Costa_Zambelli	2010-04-29	50	48	0
+Julio_Costa_Zambelli	2010-04-30	132	113	0
+Julio_Costa_Zambelli	2010-05-03	17	17	0
+Julio_Costa_Zambelli	2010-05-04	105	65	0
+Julio_Costa_Zambelli	2010-05-05	155	115	0
+Julio_Costa_Zambelli	2010-05-07	2	2	0
+Julio_Costa_Zambelli	2010-05-12	24	22	0
+Julio_Costa_Zambelli	2010-05-13	59	37	0
+Julio_Costa_Zambelli	2010-05-17	235	190	0
+Julio_Costa_Zambelli	2010-05-18	43	32	0
+Julio_Costa_Zambelli	2010-05-19	9	3	0
+Julio_Costa_Zambelli	2010-05-23	649	3	0
+Julio_Costa_Zambelli	2010-05-26	62	36	0
+Julio_Costa_Zambelli	2010-05-28	8	6	0
+Julio_Costa_Zambelli	2010-05-29	193	175	0
+Julio_Costa_Zambelli	2010-05-30	18	11	0
+Julio_Costa_Zambelli	2010-05-31	168	149	0
+Julio_Costa_Zambelli	2010-06-02	108	105	0
+Julio_Costa_Zambelli	2010-06-03	18	8	0
+Julio_Costa_Zambelli	2010-06-08	129	118	0
+Julio_Costa_Zambelli	2010-06-11	222	183	0
+Julio_Costa_Zambelli	2010-06-12	15	7	0
+Julio_Costa_Zambelli	2010-06-15	229	143	0
+Julio_Costa_Zambelli	2010-06-16	1	0	0
+Julio_Costa_Zambelli	2010-06-19	40	36	0
+Julio_Costa_Zambelli	2010-06-20	6	3	0
+Julio_Costa_Zambelli	2010-06-22	72	40	0
+Julio_Costa_Zambelli	2010-06-24	6	4	0
+Julio_Costa_Zambelli	2010-06-25	8	4	0
+Julio_Costa_Zambelli	2010-06-26	5	1	0
+Julio_Costa_Zambelli	2010-06-28	292	266	0
+Julio_Costa_Zambelli	2010-06-29	1	0	0
+Julio_Costa_Zambelli	2010-07-03	4	0	0
+Julio_Costa_Zambelli	2010-07-06	4	4	0
+Julio_Costa_Zambelli	2010-07-08	7	4	0
+Julio_Costa_Zambelli	2010-07-10	160	0	0
+Julio_Costa_Zambelli	2010-07-11	9	4	0
+Julio_Costa_Zambelli	2010-07-12	60	5	0
+Julio_Costa_Zambelli	2010-07-16	1	1	0
+Julio_Costa_Zambelli	2010-07-20	15	3	0
+Julio_Costa_Zambelli	2010-07-22	696	141	0
+Julio_Costa_Zambelli	2010-07-23	700	224	0
+Julio_Costa_Zambelli	2010-07-24	26	7	0
+Julio_Costa_Zambelli	2010-07-25	188	15	0
+Julio_Costa_Zambelli	2010-07-31	14	7	0
+Julio_Costa_Zambelli	2010-08-01	4	1	0
+Julio_Costa_Zambelli	2010-08-02	2	1	0
+Julio_Costa_Zambelli	2010-08-03	10	2	0
+Julio_Costa_Zambelli	2010-08-10	2	1	0
+Julio_Costa_Zambelli	2010-08-11	1	0	0
+Julio_Costa_Zambelli	2010-08-12	14	9	0
+Julio_Costa_Zambelli	2010-08-14	2	0	0
+Julio_Costa_Zambelli	2010-08-15	12	4	0
+Julio_Costa_Zambelli	2010-08-16	20	9	0
+Julio_Costa_Zambelli	2010-08-17	3	2	0
+Julio_Costa_Zambelli	2010-08-20	7	0	0
+Julio_Costa_Zambelli	2010-08-21	48	7	0
+Julio_Costa_Zambelli	2010-08-23	1416	1	0
+Julio_Costa_Zambelli	2010-08-24	73	41	0
+Julio_Costa_Zambelli	2010-08-27	13	5	0
+Julio_Costa_Zambelli	2010-08-28	3	3	0
+Julio_Costa_Zambelli	2010-08-31	12	0	0
+Julio_Costa_Zambelli	2010-09-04	3	1	0
+Julio_Costa_Zambelli	2010-09-09	318	244	1
+Julio_Costa_Zambelli	2010-09-10	407	393	0
+Julio_Costa_Zambelli	2010-09-11	2587	2534	0
+Julio_Costa_Zambelli	2010-09-12	10	1	0
+Julio_Costa_Zambelli	2010-09-14	110	29	0
+Julio_Costa_Zambelli	2010-09-15	3	0	0
+Julio_Costa_Zambelli	2010-09-16	27	5	0
+Julio_Costa_Zambelli	2010-09-21	47	29	0
+Julio_Costa_Zambelli	2010-09-23	40	21	0
+Julio_Costa_Zambelli	2010-09-24	13	8	0
+Julio_Costa_Zambelli	2010-09-29	295	120	0
+Julio_Costa_Zambelli	2010-09-30	30	7	0
+Julio_Costa_Zambelli	2010-10-01	87	38	0
+Julio_Costa_Zambelli	2010-10-02	348	321	1
+Julio_Costa_Zambelli	2010-10-03	5	3	0
+Julio_Costa_Zambelli	2010-10-04	442	4	0
+Julio_Costa_Zambelli	2010-10-05	26	6	0
+Julio_Costa_Zambelli	2010-10-06	360	198	0
+Julio_Costa_Zambelli	2010-10-07	303	13	0
+Julio_Costa_Zambelli	2010-10-08	219	91	0
+Julio_Costa_Zambelli	2010-10-09	105	34	0
+Julio_Costa_Zambelli	2010-10-10	44	25	0
+Julio_Costa_Zambelli	2010-10-11	38	19	0
+Julio_Costa_Zambelli	2010-10-12	29	5	0
+Julio_Costa_Zambelli	2010-10-15	2	0	0
+Julio_Costa_Zambelli	2010-10-19	2	2	0
+Julio_Costa_Zambelli	2010-10-20	7	2	0
+Julio_Costa_Zambelli	2010-10-24	28	3	0
+Julio_Costa_Zambelli	2010-10-25	10	5	0
+Julio_Costa_Zambelli	2010-10-26	5	2	0
+Julio_Costa_Zambelli	2010-10-28	197	180	0
+Julio_Costa_Zambelli	2010-10-29	860	32	0
+Julio_Costa_Zambelli	2010-10-31	19	7	0
+Julio_Costa_Zambelli	2010-11-01	238	144	0
+Julio_Costa_Zambelli	2010-11-02	137	97	0
+Julio_Costa_Zambelli	2010-11-03	283	184	0
+Julio_Costa_Zambelli	2010-11-04	27	18	0
+Julio_Costa_Zambelli	2010-11-06	311	135	0
+Julio_Costa_Zambelli	2010-11-07	574	394	0
+Julio_Costa_Zambelli	2010-11-10	73	52	0
+Julio_Costa_Zambelli	2010-11-11	6	3	0
+Julio_Costa_Zambelli	2010-11-12	14	9	0
+Julio_Costa_Zambelli	2010-11-13	25	15	0
+Julio_Costa_Zambelli	2010-11-16	57	12	0
+Julio_Costa_Zambelli	2010-11-18	15	7	0
+Julio_Costa_Zambelli	2010-11-20	26	10	0
+Julio_Costa_Zambelli	2010-11-21	78	31	0
+Julio_Costa_Zambelli	2010-11-22	23	2	0
+Julio_Costa_Zambelli	2010-11-23	22	13	0
+Julio_Costa_Zambelli	2010-11-25	116	104	0
+Julio_Costa_Zambelli	2010-11-26	9	0	0
+Julio_Costa_Zambelli	2010-11-27	1	1	0
+Julio_Costa_Zambelli	2010-11-28	521	517	0
+Julio_Costa_Zambelli	2010-11-29	1	1	0
+Julio_Costa_Zambelli	2010-12-02	12	9	0
+Julio_Costa_Zambelli	2010-12-09	135	119	0
+Julio_Costa_Zambelli	2010-12-13	99	88	0
+Julio_Costa_Zambelli	2010-12-14	11	10	0
+Julio_Costa_Zambelli	2010-12-15	176	107	0
+Julio_Costa_Zambelli	2010-12-16	215	90	0
+Julio_Costa_Zambelli	2010-12-17	253	152	0
+Julio_Costa_Zambelli	2010-12-18	1338	1109	0
+Julio_Costa_Zambelli	2010-12-19	140	128	0
+Julio_Costa_Zambelli	2010-12-21	380	316	0
+Julio_Costa_Zambelli	2010-12-22	121	92	0
+Julio_Costa_Zambelli	2010-12-23	2980	2771	0
+Julio_Costa_Zambelli	2010-12-25	348	149	0
+Julio_Costa_Zambelli	2010-12-27	2	2	0
+Julio_Costa_Zambelli	2010-12-28	14	10	0
+Julio_Costa_Zambelli	2010-12-29	2	1	0
+Julio_Costa_Zambelli	2010-12-30	8	3	0
+Julio_Costa_Zambelli	2010-12-31	8	3	0
+Julio_Costa_Zambelli	2011-01-02	8	6	0
+Julio_Costa_Zambelli	2011-01-04	9	7	0
+Julio_Costa_Zambelli	2011-01-05	5	2	0
+Julio_Costa_Zambelli	2011-01-06	56	23	0
+Julio_Costa_Zambelli	2011-01-10	6	3	0
+Julio_Costa_Zambelli	2011-01-11	24	19	0
+Julio_Costa_Zambelli	2011-01-15	28	11	0
+Julio_Costa_Zambelli	2011-01-19	1	0	0
+Julio_Costa_Zambelli	2011-01-20	23	8	0
+Julio_Costa_Zambelli	2011-01-26	27	0	0
+Julio_Costa_Zambelli	2011-01-27	10	4	0
+Julio_Costa_Zambelli	2011-02-01	20	1	0
+Julio_Costa_Zambelli	2011-02-06	406	373	0
+Julio_Costa_Zambelli	2011-02-16	8	4	0
+Julio_Costa_Zambelli	2011-02-17	41	25	0
+Julio_Costa_Zambelli	2011-02-19	48	37	0
+Julio_Costa_Zambelli	2011-02-20	12	0	0
+Julio_Costa_Zambelli	2011-02-21	21	1	0
+Julio_Costa_Zambelli	2011-02-28	37	3	0
+Julio_Costa_Zambelli	2011-03-01	30	0	0
+Julio_Costa_Zambelli	2011-03-05	28	26	0
+Julio_Costa_Zambelli	2011-03-07	1009	505	2
+Julio_Costa_Zambelli	2011-03-08	1	1	0
+Julio_Costa_Zambelli	2011-03-09	2	0	0
+Julio_Costa_Zambelli	2011-03-17	4	0	0
+Julio_Costa_Zambelli	2011-03-30	63	33	0
+Julio_Costa_Zambelli	2011-04-03	64	4	0
+Julio_Costa_Zambelli	2011-04-09	3	1	0
+Julio_Costa_Zambelli	2011-04-19	76	7	0
+Julio_Costa_Zambelli	2011-04-22	6	0	0
+Julio_Costa_Zambelli	2011-04-23	150	26	0
+Julio_Costa_Zambelli	2011-04-24	78	44	0
+Julio_Costa_Zambelli	2011-04-25	12	1	0
+Julio_Costa_Zambelli	2011-05-07	1857	1823	8
+Julio_Costa_Zambelli	2011-05-08	1	1	0
+Julio_Costa_Zambelli	2011-05-15	1	1	0
+Julio_Costa_Zambelli	2011-05-17	174	174	0
+Julio_Costa_Zambelli	2011-06-07	16	0	0
+Julio_Costa_Zambelli	2011-06-08	144	73	0
+Julio_Costa_Zambelli	2011-06-15	2	0	0
+Julio_Costa_Zambelli	2011-06-22	2	1	0
+Julio_Costa_Zambelli	2011-07-04	266	142	0
+Julio_Costa_Zambelli	2011-07-10	1	1	0
+Julio_Costa_Zambelli	2011-07-11	216	192	0
+Julio_Costa_Zambelli	2011-07-14	108	71	0
+Julio_Costa_Zambelli	2011-07-18	143	96	0
+Julio_Costa_Zambelli	2011-07-19	30	24	0
+Julio_Costa_Zambelli	2011-07-21	2	2	0
+Julio_Costa_Zambelli	2011-07-23	4	1	0
+Julio_Costa_Zambelli	2011-07-24	1	0	0
+Julio_Costa_Zambelli	2011-07-25	2	0	0
+Julio_Costa_Zambelli	2011-08-17	80	41	0
+Julio_Costa_Zambelli	2011-08-19	9	2	0
+Julio_Costa_Zambelli	2011-08-21	2	2	0
+Julio_Costa_Zambelli	2011-08-25	1	0	0
+Julio_Costa_Zambelli	2011-08-26	36	14	0
+Julio_Costa_Zambelli	2011-08-27	81	28	0
+Julio_Costa_Zambelli	2011-08-28	1	1	0
+Julio_Costa_Zambelli	2011-08-31	1	1	0
+Julio_Costa_Zambelli	2011-09-30	1	1	0
+Julio_Costa_Zambelli	2011-10-02	5	0	0
+Julio_Costa_Zambelli	2011-10-13	1	0	0
+Julio_Costa_Zambelli	2011-11-02	161	32	0
+Julio_Costa_Zambelli	2011-11-04	257	171	0
+Julio_Costa_Zambelli	2011-11-06	85	14	0
+Julio_Costa_Zambelli	2011-11-07	32	1	0
+Julio_Costa_Zambelli	2011-11-20	1	0	0
+Julio_Costa_Zambelli	2011-11-23	242	163	0
+Julio_Costa_Zambelli	2011-11-25	112	99	0
+Julio_Costa_Zambelli	2011-11-29	326	167	0
+Julio_Costa_Zambelli	2011-12-04	16	6	0
+Julio_Costa_Zambelli	2011-12-07	9	0	0
+Julio_Costa_Zambelli	2011-12-12	2893	2501	6
+Julio_Costa_Zambelli	2011-12-14	8	0	0
+Julio_Costa_Zambelli	2011-12-15	218	187	0
+Julio_Costa_Zambelli	2011-12-17	20	18	0
+Julio_Costa_Zambelli	2011-12-29	101	52	0
+Julio_Costa_Zambelli	2012-02-15	174	168	0
+Julio_Costa_Zambelli	2012-03-09	91	76	0
+Julio_Costa_Zambelli	2012-03-14	564	454	0
+Julio_Costa_Zambelli	2012-03-16	346	294	0
+Julio_Costa_Zambelli	2012-03-20	1	0	0
+Julio_Costa_Zambelli	2012-03-22	1057	739	0
+Julio_Costa_Zambelli	2012-03-26	437	309	0
+Julio_Costa_Zambelli	2012-03-27	2	1	0
+Julio_Costa_Zambelli	2012-04-04	478	316	0
+Julio_Costa_Zambelli	2012-04-15	18	5	0
+Julio_Costa_Zambelli	2012-04-16	140	75	0
+Julio_Costa_Zambelli	2012-04-29	456	371	0
+Julio_Costa_Zambelli	2012-05-06	72	61	0
+Julio_Costa_Zambelli	2012-05-07	193	148	0
+Julio_Costa_Zambelli	2012-05-08	32	1	0
+Julio_Costa_Zambelli	2012-05-28	535	401	0
+Julio_Costa_Zambelli	2012-06-24	887	715	0
+Julio_Costa_Zambelli	2012-07-09	310	209	0
+Julio_Costa_Zambelli	2012-07-10	404	384	0
+Julio_Costa_Zambelli	2012-07-12	15	9	0
+Julio_Costa_Zambelli	2012-07-13	113	64	0
+Julio_Costa_Zambelli	2012-07-14	19	17	0
+Julio_Costa_Zambelli	2012-08-06	96	96	0
+Julio_Costa_Zambelli	2012-08-25	51	31	0
+Julio_Costa_Zambelli	2012-09-03	7	5	0
+Julio_Costa_Zambelli	2012-09-04	455	357	0
+Julio_Costa_Zambelli	2012-09-07	208	196	0
+Julio_Costa_Zambelli	2012-09-10	396	339	0
+Julio_Costa_Zambelli	2012-09-11	906	622	0
+Julio_Costa_Zambelli	2012-09-14	4	2	0
+Julio_Costa_Zambelli	2012-09-21	14	13	0
+Julio_Costa_Zambelli	2012-09-24	172	157	0
+Julio_Costa_Zambelli	2012-09-25	177	112	0
+Julio_Costa_Zambelli	2012-09-26	10	1	0
+Julio_Costa_Zambelli	2012-09-27	419	243	0
+Julio_Costa_Zambelli	2012-09-28	485	333	0
+Julio_Costa_Zambelli	2012-10-01	9	0	0
+Julio_Costa_Zambelli	2012-10-02	13	10	0
+Julio_Costa_Zambelli	2012-10-04	258	182	0
+Julio_Costa_Zambelli	2012-10-05	686	422	0
+Julio_Costa_Zambelli	2012-10-08	1053	686	0
+Julio_Costa_Zambelli	2012-10-09	149	102	0
+Julio_Costa_Zambelli	2012-10-10	1215	589	0
+Julio_Costa_Zambelli	2012-10-11	319	54	0
+Julio_Costa_Zambelli	2012-10-12	93	63	0
+Julio_Costa_Zambelli	2012-10-14	4	4	0
+Julio_Costa_Zambelli	2012-10-15	300	252	0
+Julio_Costa_Zambelli	2012-10-16	265	162	0
+Julio_Costa_Zambelli	2012-10-17	392	310	0
+Julio_Costa_Zambelli	2012-10-18	177	62	0
+Julio_Costa_Zambelli	2012-10-19	1135	635	0
+Julio_Costa_Zambelli	2012-10-22	609	381	0
+Julio_Costa_Zambelli	2012-10-23	376	220	0
+Julio_Costa_Zambelli	2012-10-24	797	537	0
+Julio_Costa_Zambelli	2012-10-25	481	358	0
+Julio_Costa_Zambelli	2012-10-26	209	126	0
+Julio_Costa_Zambelli	2012-10-28	49	49	0
+Julio_Costa_Zambelli	2012-10-29	452	314	0
+Julio_Costa_Zambelli	2012-10-31	194	133	0
+Julio_Costa_Zambelli	2012-11-01	8	1	0
+Julio_Costa_Zambelli	2012-11-05	591	473	0
+Julio_Costa_Zambelli	2012-11-08	161	153	0
+Julio_Costa_Zambelli	2012-11-12	525	451	0
+Julio_Costa_Zambelli	2012-11-13	789	740	0
+Julio_Costa_Zambelli	2012-11-18	59	50	0
+Julio_Costa_Zambelli	2012-11-23	3	0	0
+Julio_Costa_Zambelli	2012-11-26	39	32	0
+Julio_Costa_Zambelli	2012-12-03	17	13	0
+Julio_Costa_Zambelli	2012-12-07	5	4	0
+Julio_Costa_Zambelli	2012-12-10	1	1	0
+Julio_Costa_Zambelli	2012-12-11	183	111	0
+Julio_Costa_Zambelli	2012-12-16	2	1	0
+Julio_Costa_Zambelli	2012-12-20	2	2	0
+Julio_Costa_Zambelli	2012-12-25	6	0	0
+Julio_Costa_Zambelli	2013-01-04	174	65	0
+Julio_Costa_Zambelli	2013-01-09	4	0	0
+Julio_Costa_Zambelli	2013-01-14	13	11	0
+Julio_Costa_Zambelli	2013-01-17	190	78	0
+Julio_Costa_Zambelli	2013-01-19	95	87	0
+Julio_Costa_Zambelli	2013-01-20	115	81	0
+Julio_Costa_Zambelli	2013-01-23	41	40	0
+Julio_Costa_Zambelli	2013-03-01	383	256	0
+Julio_Costa_Zambelli	2013-03-02	111	41	0
+Julio_Costa_Zambelli	2013-03-05	3319	2710	0
+Julio_Costa_Zambelli	2013-03-06	456	448	0
+Julio_Costa_Zambelli	2013-03-09	1	0	0
+Julio_Costa_Zambelli	2013-03-11	483	441	0
+Julio_Costa_Zambelli	2013-04-02	1	1	0
+Julio_Costa_Zambelli	2013-04-04	8	4	0
+Julio_Costa_Zambelli	2013-04-06	91	38	0
+Julio_Costa_Zambelli	2013-04-10	57	55	0
+Julio_Costa_Zambelli	2013-04-21	349	281	0
+Julio_Costa_Zambelli	2013-04-26	85	52	0
+Julio_Costa_Zambelli	2013-05-08	151	103	0
+Julio_Costa_Zambelli	2013-05-13	11	10	0
+Julio_Costa_Zambelli	2013-06-02	5	5	0
+Julio_Costa_Zambelli	2013-06-05	20	16	0
+Julio_Costa_Zambelli	2013-06-13	178	149	0
+Julio_Costa_Zambelli	2013-06-21	471	440	0
+Julio_Costa_Zambelli	2013-06-29	261	203	0
+Julio_Costa_Zambelli	2013-07-13	37	11	0
+Julio_Costa_Zambelli	2013-07-21	45	25	0
+Julio_Costa_Zambelli	2013-07-24	216	167	0
+Julio_Costa_Zambelli	2013-07-26	306	258	0
+Julio_Costa_Zambelli	2013-07-28	17	0	0
+Julio_Costa_Zambelli	2013-07-29	65	56	0
+Julio_Costa_Zambelli	2013-09-09	212	127	0
+Julio_Costa_Zambelli	2013-09-22	7	6	0
+Julio_Costa_Zambelli	2013-10-03	21	16	0
+Julio_Costa_Zambelli	2013-10-07	24	18	0
+Julio_Costa_Zambelli	2013-10-08	3	1	0
+Julio_Costa_Zambelli	2013-10-14	340	281	0
+Julio_Costa_Zambelli	2013-11-07	561	483	0
+Julio_Costa_Zambelli	2013-11-28	952	892	0
+Julio_Costa_Zambelli	2013-11-29	1470	1402	0
+Julio_Costa_Zambelli	2013-12-02	56	38	0
+Julio_Costa_Zambelli	2013-12-04	29	10	0
+Julio_Costa_Zambelli	2013-12-09	7199	7152	0
+Julio_Costa_Zambelli	2013-12-16	86	40	0
+Julio_Costa_Zambelli	2013-12-22	13	1	0
+Julio_Costa_Zambelli	2013-12-27	319	313	0
+Julio_Costa_Zambelli	2014-01-01	22	14	0
+Julio_Costa_Zambelli	2014-01-07	535	433	0
+Julio_Costa_Zambelli	2014-01-09	234	104	0
+Julio_Costa_Zambelli	2014-01-15	7	4	0
+Julio_Costa_Zambelli	2014-01-17	4	4	0
+Julio_Costa_Zambelli	2014-01-19	101	9	0
+Julio_Costa_Zambelli	2014-01-28	181	110	0
+Julio_Costa_Zambelli	2014-02-23	1	0	0
+Julio_Costa_Zambelli	2014-03-03	16	2	0
+Julio_Costa_Zambelli	2014-03-04	320	174	0
+Julio_Costa_Zambelli	2014-03-06	1214	914	0
+Julio_Costa_Zambelli	2014-03-10	104	39	0
+Julio_Costa_Zambelli	2014-03-11	12	0	0
+Julio_Costa_Zambelli	2014-03-12	605	253	0
+Julio_Costa_Zambelli	2014-03-13	47	16	0
+Julio_Costa_Zambelli	2014-03-14	193	171	0
+Julio_Costa_Zambelli	2014-03-18	254	211	0
+Julio_Costa_Zambelli	2014-03-19	164	10	0
+Julio_Costa_Zambelli	2014-03-20	131	108	0
+Julio_Costa_Zambelli	2014-03-24	845	702	0
+Julio_Costa_Zambelli	2014-03-28	6	0	0
+Julio_Costa_Zambelli	2014-04-07	249	135	0
+Julio_Costa_Zambelli	2014-04-10	931	531	0
+Julio_Costa_Zambelli	2014-04-11	10	5	0
+Julio_Costa_Zambelli	2014-04-22	4	0	0
+Julio_Costa_Zambelli	2014-04-23	1412	814	0
+Julio_Costa_Zambelli	2014-04-24	1013	893	0
+Julio_Costa_Zambelli	2014-04-25	160	37	0
+Julio_Costa_Zambelli	2014-04-30	610	401	0
+Julio_Costa_Zambelli	2014-05-03	599	441	0
+Julio_Costa_Zambelli	2014-05-04	719	422	0
+Julio_Costa_Zambelli	2014-05-05	703	355	0
+Julio_Costa_Zambelli	2014-05-07	227	152	0
+Julio_Costa_Zambelli	2014-05-09	932	567	0
+Julio_Costa_Zambelli	2014-05-10	27	15	0
+Julio_Costa_Zambelli	2014-05-11	655	539	0
+Julio_Costa_Zambelli	2014-05-12	342	254	0
+Julio_Costa_Zambelli	2014-05-13	403	200	0
+Julio_Costa_Zambelli	2014-05-14	559	371	0
+Julio_Costa_Zambelli	2014-05-15	831	640	0
+Julio_Costa_Zambelli	2014-05-16	500	383	0
+Julio_Costa_Zambelli	2014-05-17	21	7	0
+Julio_Costa_Zambelli	2014-05-20	529	314	0
+Julio_Costa_Zambelli	2014-05-31	204	176	0
+Julio_Costa_Zambelli	2014-06-13	20	14	0
+Julio_Costa_Zambelli	2014-06-27	477	131	0
+Julio_Costa_Zambelli	2014-07-13	163	76	0
+Julio_Costa_Zambelli	2014-07-14	197	128	0
+Julio_Costa_Zambelli	2014-07-16	127	84	0
+Julio_Costa_Zambelli	2014-08-02	9	0	0
+Julio_Costa_Zambelli	2014-08-04	885	419	0
+Julio_Costa_Zambelli	2014-08-07	43	14	0
+Julio_Costa_Zambelli	2014-08-08	319	283	0
+Julio_Costa_Zambelli	2014-08-09	268	76	0
+Julio_Costa_Zambelli	2014-08-11	766	475	0
+Julio_Costa_Zambelli	2014-08-18	239	131	0
+Julio_Costa_Zambelli	2014-08-24	1003	691	0
+Julio_Costa_Zambelli	2014-08-25	1061	585	0
+Julio_Costa_Zambelli	2014-08-26	903	514	0
+Julio_Costa_Zambelli	2014-08-27	514	374	0
+Julio_Costa_Zambelli	2014-08-28	297	210	0
+Julio_Costa_Zambelli	2014-09-04	61	43	0
+Julio_Costa_Zambelli	2014-09-05	164	112	0
+Julio_Costa_Zambelli	2014-09-15	14	7	0
+Julio_Costa_Zambelli	2014-11-13	348	224	0
+Julio_Costa_Zambelli	2014-11-19	2	1	0
+Julio_Costa_Zambelli	2014-11-21	71	35	0
+Julio_Costa_Zambelli	2014-11-22	83	62	0
+Julio_Costa_Zambelli	2014-11-23	1526	1416	8
+Julio_Costa_Zambelli	2014-11-24	88	42	0
+Julio_Costa_Zambelli	2014-11-25	19	14	0
+Julio_Costa_Zambelli	2014-11-27	13	5	0
+Julio_Costa_Zambelli	2014-12-03	21	6	0
+Julio_Costa_Zambelli	2014-12-04	64	55	0
+Julio_Costa_Zambelli	2014-12-07	380	254	0
+Julio_Costa_Zambelli	2014-12-17	21	7	0
+Julio_Costa_Zambelli	2014-12-18	36	4	0
+Julio_Costa_Zambelli	2014-12-19	34	21	0
+Julio_Costa_Zambelli	2014-12-20	11	8	0
+Julio_Costa_Zambelli	2014-12-21	176	98	0
+Julio_Costa_Zambelli	2014-12-22	94	65	0
+Julio_Costa_Zambelli	2014-12-23	5	0	0
+Julio_Costa_Zambelli	2014-12-25	43	28	0
+Julio_Costa_Zambelli	2014-12-30	23	10	0
+Julio_Costa_Zambelli	2014-12-31	10	0	0
+Julio_Costa_Zambelli	2015-01-04	100	51	0
+Julio_Costa_Zambelli	2015-01-07	1709	1645	0
+Julio_Costa_Zambelli	2015-01-08	6261	5936	0
+Julio_Costa_Zambelli	2015-01-09	2026	2026	0
+Julio_Costa_Zambelli	2015-01-10	33	14	0
+Julio_Costa_Zambelli	2015-01-13	50	44	0
+Julio_Costa_Zambelli	2015-01-14	159	29	0
+Julio_Costa_Zambelli	2015-01-20	10	10	0
+Julio_Costa_Zambelli	2015-01-22	641	582	0
+Julio_Costa_Zambelli	2015-01-25	88	56	0
+Julio_Costa_Zambelli	2015-01-26	65	58	0
+Julio_Costa_Zambelli	2015-02-05	2853	2776	0
+Julio_Costa_Zambelli	2015-02-06	3118	2825	0
+Julio_Costa_Zambelli	2015-02-09	2113	1979	1
+Julio_Costa_Zambelli	2015-02-10	2522	2411	0
+Julio_Costa_Zambelli	2015-02-18	1617	1604	0
+Julio_Costa_Zambelli	2015-03-06	752	751	0
+Julio_Costa_Zambelli	2015-03-16	240	84	0
+Julio_Costa_Zambelli	2015-04-09	66	58	0
+Julio_Costa_Zambelli	2015-04-12	3	1	0
+Julio_Costa_Zambelli	2015-04-13	8	4	0
+Julio_Costa_Zambelli	2015-04-19	2	1	0
+Julio_Costa_Zambelli	2015-04-27	937	330	0
+Julio_Costa_Zambelli	2015-05-06	21	1	0
+Julio_Costa_Zambelli	2015-05-26	896	834	0
+Julio_Costa_Zambelli	2015-06-01	57	38	0
+Julio_Costa_Zambelli	2015-06-03	208	134	0
+Julio_Costa_Zambelli	2015-06-19	110	87	0
+Julio_Costa_Zambelli	2015-06-23	16	10	0
+Julio_Costa_Zambelli	2015-07-07	16	16	0
+Julio_Costa_Zambelli	2015-07-22	154	137	0
+Julio_Costa_Zambelli	2015-07-23	6	2	0
+Julio_Costa_Zambelli	2015-09-09	785	647	0
+Julio_Costa_Zambelli	2015-09-11	1469	1395	0
+Julio_Costa_Zambelli	2015-09-12	311	298	0
+Julio_Costa_Zambelli	2015-09-16	1428	1086	0
+Julio_Costa_Zambelli	2015-09-30	16	3	0
+Julio_Costa_Zambelli	2015-10-05	78	14	0
+Julio_Costa_Zambelli	2015-10-16	31	31	0
+Julio_Costa_Zambelli	2015-10-20	1	0	0
+Julio_Costa_Zambelli	2015-10-25	199	180	0
+Julio_Costa_Zambelli	2015-10-31	4	0	0
+Julio_Costa_Zambelli	2015-11-01	161	57	0
+Julio_Costa_Zambelli	2015-11-05	103	100	0
+Julio_Costa_Zambelli	2015-11-06	194	90	0
+Julio_Costa_Zambelli	2015-11-07	109	77	0
+Julio_Costa_Zambelli	2015-11-08	27	3	0
+Julio_Costa_Zambelli	2015-11-09	776	756	0
+Julio_Costa_Zambelli	2015-11-10	10	9	0
+Julio_Costa_Zambelli	2015-11-12	313	254	0
+Julio_Costa_Zambelli	2015-12-13	1284	1012	0
+Julio_Costa_Zambelli	2016-01-02	2	1	0
+Julio_Costa_Zambelli	2016-01-10	5	3	0
 Juniorsdj	2009-07-29	2	0	0
 Juniorsdj	2009-07-30	1	0	0
 Juniorsdj	2014-03-03	4	4	0
+Juniorsdj	2015-04-28	3	2	0
 KAMiKAZOW	2010-02-28	1	0	0
 Karinmav	2014-09-30	10	10	0
 Keliot	2014-01-04	5	5	0
 Kenneth Brown	2012-09-13	8	0	0
 Kenneth Brown	2013-05-26	4	3	0
+Kenneth Brown	2015-04-11	21	18	0
 Kirschfagget	2012-01-17	4	4	0
 Klazt	2015-01-20	1	1	0
 KoRoWa	2011-05-05	20	20	0
@@ -1247,18 +2320,27 @@ Kralizec	2011-04-21	200	152	0
 Kralizec	2011-04-22	19	10	0
 Kralizec	2011-05-28	73	0	0
 Kralizec	2014-09-26	60	4	0
+Kustaa	2015-06-01	10	10	0
+Kustaa	2015-06-30	4	4	0
+Kustaa	2015-07-31	63	59	0
+Kustaa	2015-10-28	1	1	0
+Kwyndham	2015-05-08	592	592	0
+Laloco	2015-12-28	1	1	0
 Latze	2011-11-08	274	274	0
 LeandroZamudio	2011-04-29	17	13	0
 LeoBravo	2014-01-20	2	2	0
 Leog76	2011-04-04	1	1	0
 Leog76	2011-04-12	1	0	0
+Leonidasufsc	2015-11-09	15	0	0
 LeusKapus	2009-01-06	432	0	0
 Librería_Dinova	2014-11-20	2	1	0
 LigoSurf	2014-04-12	26	16	0
 Little Brother	2014-08-11	4	0	0
 Little Brother	2014-10-19	22	0	0
+Little Brother	2015-05-30	1	0	0
 Locky7	2011-04-11	2	1	0
 Lord Kuzman	2013-04-22	1	1	0
+Lu Pa	2015-09-06	3	2	0
 Luccnoir	2012-01-22	1	0	0
 Luccnoir	2012-09-29	106	71	0
 LucemFerre	2012-04-11	91	71	0
@@ -1276,6 +2358,7 @@ Luis36995	2014-08-13	2	1	0
 Luis36995	2014-10-02	2	1	0
 Luis36995	2014-10-08	1	1	0
 Luis36995	2014-10-17	3	0	0
+Luis36995	2015-07-10	77	57	0
 LuisAlberto	2011-04-22	2	2	0
 LuisVillena	2014-08-19	3	1	0
 LuisVillena	2014-11-06	21	21	0
@@ -1304,13 +2387,19 @@ Macasarmiento	2014-05-17	2	0	0
 Makcelo	2013-12-05	6	3	0
 Man77	2014-12-01	8	7	0
 Man77	2014-12-28	4	0	0
+Man77	2015-02-08	1	0	0
 Manu1400	2013-05-10	1	0	0
 Manu1400	2013-05-26	1	0	0
 Manu1400	2013-12-15	5	0	0
 Manu1400	2013-12-30	1	0	0
+Manu1400	2015-02-14	1	0	0
+Manu1400	2015-04-17	9	0	0
+Manu1400	2015-05-30	1	0	0
+Manuel Alejandro Gil	2015-11-04	4	0	0
 Manuel Bahamondez	2011-08-25	1	0	0
 Mapfree	2010-12-11	4	2	0
 Mapfree	2011-07-11	1	1	0
+Mapiator5000	2015-04-17	200	200	0
 MapsDieter	2010-04-17	4	0	0
 Maray	2014-05-06	1	1	0
 Maray	2014-05-07	536	271	0
@@ -1364,46 +2453,47 @@ Marcomm	2010-11-12	1	1	0
 Marcomm	2010-12-14	133	131	0
 Marcomm	2010-12-28	598	265	0
 Marcomm	2012-01-30	77	77	0
-Marcomm	2012-09-03	417	378	0
+Marcomm	2012-09-03	417	378	1
 Marcussacapuces91	2011-04-11	7	7	0
+MarieSkievelat	2015-04-17	221	221	0
 Marijn	2007-11-22	30	4	0
 Marijn	2007-11-23	583	140	12
-Marijn	2007-11-24	237	174	13
+Marijn	2007-11-24	237	174	12
 Marijn	2007-11-25	534	404	18
 Marijn	2007-11-26	163	137	1
-Marijn	2007-11-28	27	24	4
-Marijn	2007-11-29	276	182	41
+Marijn	2007-11-28	27	24	2
+Marijn	2007-11-29	276	182	47
 Marijn	2007-11-30	7	7	0
 Marijn	2007-12-01	91	62	7
 Marijn	2007-12-02	386	319	59
-Marijn	2007-12-03	509	422	34
-Marijn	2007-12-04	251	202	22
-Marijn	2007-12-05	79	74	15
-Marijn	2007-12-08	625	571	109
-Marijn	2007-12-09	62	48	7
-Marijn	2008-01-05	158	143	13
-Marijn	2008-01-06	88	47	0
-Marijn	2008-01-09	76	76	44
-Marijn	2008-01-13	579	498	3
+Marijn	2007-12-03	509	422	29
+Marijn	2007-12-04	251	202	25
+Marijn	2007-12-05	79	74	14
+Marijn	2007-12-08	625	571	114
+Marijn	2007-12-09	62	48	9
+Marijn	2008-01-05	158	143	11
+Marijn	2008-01-06	88	47	1
+Marijn	2008-01-09	76	76	40
+Marijn	2008-01-13	579	498	1
 Marijn	2008-01-14	496	462	14
 Marijn	2008-01-18	1	1	0
 Marijn	2008-01-19	478	410	0
-Marijn	2008-01-20	689	667	13
+Marijn	2008-01-20	689	667	12
 Marijn	2008-01-24	58	57	5
-Marijn	2008-01-26	1115	1011	37
-Marijn	2008-01-27	293	242	6
+Marijn	2008-01-26	1115	1011	43
+Marijn	2008-01-27	293	242	3
 Marijn	2008-01-29	2	2	0
 Marijn	2008-02-05	11	3	0
 Marijn	2008-02-09	25	16	0
 Marijn	2008-02-11	228	164	0
 Marijn	2008-02-17	121	98	0
-Marijn	2008-03-03	634	586	6
+Marijn	2008-03-03	634	586	7
 Marijn	2008-03-08	371	320	0
 Marijn	2008-03-16	181	126	0
 Marijn	2008-03-18	6	6	0
 Marijn	2008-03-22	800	522	0
-Marijn	2008-03-29	615	609	48
-Marijn	2008-03-30	375	340	4
+Marijn	2008-03-29	615	609	47
+Marijn	2008-03-30	375	340	3
 Marijn	2008-04-02	185	63	0
 Marijn	2008-04-03	224	143	0
 Marijn	2008-06-09	10	9	0
@@ -1411,26 +2501,50 @@ Marijn	2008-06-22	169	87	0
 Marijn	2008-06-28	1	1	0
 Mario Fuentes	2012-03-08	1	1	0
 MarioJara	2014-06-06	2	1	0
+Marion Barry	2015-09-07	2	1	0
+Marion Barry	2015-09-08	2	1	0
+Marion Barry	2015-09-09	4	0	0
+Marion Barry	2015-09-17	2	2	0
 Marko Knöbl	2010-02-28	12	12	0
 Markus59	2014-06-08	1	0	0
 Maroto14	2011-07-14	1	1	0
 Martin Petit-Marteau	2014-05-12	5	5	0
 Matcimadon	2012-10-17	3	0	0
+Mathbau	2015-04-08	1	0	0
+Mathias Koch	2016-01-08	104	75	0
+Mathias Koch	2016-01-11	15	14	0
+Matias Lopez Diaz	2015-04-10	52	51	0
 Matias Navarro	2010-06-15	2	0	0
 Matias Versluys	2014-09-05	133	57	0
 MatiasGI	2014-09-24	16	16	0
 MattD	2010-03-08	188	147	0
 Matías Reyes Pace	2014-01-05	2	1	0
 Matías Sánchez	2014-04-19	14	7	0
+Mauricio Sottolichio	2015-11-08	4	4	0
 Maurizio Bustos	2012-04-22	3	3	0
 Max Valdés	2012-03-09	8	4	0
 Maxatl_7519	2013-12-08	3	0	0
+Maxatl_7519	2015-03-04	1	1	0
+Maximi89	2015-12-10	316	43	0
+Maximi89	2015-12-11	1	0	0
+Maximi89	2015-12-12	245	17	0
+Maximi89	2015-12-13	755	204	0
+Maximi89	2015-12-14	288	60	0
+Maximi89	2015-12-15	47	35	0
+Maximi89	2015-12-17	11	10	0
+Maximi89	2015-12-20	505	33	0
+Maximi89	2015-12-21	810	37	0
+Maximi89	2015-12-26	23	10	0
+Maximi89	2015-12-29	276	56	0
+Maximi89	2015-12-31	246	6	0
+Med	2015-04-03	4	0	0
+Med	2015-06-16	1	0	0
 MegaMig	2014-03-06	1	0	0
 MiBu	2011-07-17	1	1	0
 MichaelCollinson	2008-11-05	1	0	0
 Michi	2010-03-03	193	173	0
 Michi	2010-05-17	28	27	0
-Miguel Bley	2011-04-11	707	673	4
+Miguel Bley	2011-04-11	707	673	5
 Miguel Carvajal	2013-01-03	4	0	0
 Miguel Vera	2011-09-25	6	1	0
 Miguel Vera	2012-03-02	1	1	0
@@ -1463,7 +2577,7 @@ Mmap	2010-09-11	18	0	0
 Mmap	2010-09-15	1	0	0
 Mmap	2010-09-16	227	57	0
 Mmap	2010-09-17	152	137	0
-Mmap	2010-09-18	20	8	1
+Mmap	2010-09-18	20	8	0
 Mmap	2010-11-04	4	4	0
 MoDeM	2011-04-30	2	2	0
 Moovit Team	2013-06-19	194	189	0
@@ -1475,7 +2589,7 @@ Moovit Team	2013-06-28	27	27	0
 Moovit Team	2013-06-29	81	80	0
 Morkosh	2014-12-12	20	0	0
 MrPode	2013-02-02	9	2	0
-Mr_Robertson	2010-08-30	58	56	0
+Mr_Robertson	2010-08-30	58	56	1
 NE2	2010-08-06	11	0	0
 NEOCARGO	2014-09-28	3	0	0
 Naax	2014-02-21	1	0	0
@@ -1489,14 +2603,16 @@ Neet	2007-09-12	1	1	1
 Neet	2007-09-13	1	1	1
 Neet	2007-09-16	1	1	1
 Neet	2007-09-25	109	109	5
-Neet	2007-11-08	48	14	3
+Neet	2007-11-08	48	14	4
 Neko Dashi	2012-10-27	30	14	0
 Neko Dashi	2012-10-28	33	12	0
 Neko Dashi	2012-11-02	8	2	0
 Neko Dashi	2012-11-04	5	1	0
 Neko Dashi	2014-05-18	28	7	0
+Neko Dashi	2015-03-30	2	0	0
 Niandrplazqu	2012-05-19	14	7	0
 Niandrplazqu	2013-01-21	1	0	0
+NickConnolly	2015-05-11	3	0	0
 Nicornejou	2014-11-27	1	0	0
 Noonien	2008-11-30	1	0	0
 Nordic_Fire	2014-11-08	2	1	0
@@ -1516,6 +2632,7 @@ Orkorimar	2010-12-29	468	183	0
 Orkorimar	2010-12-30	4	3	0
 Orkorimar	2010-12-31	22	17	0
 OrlandoAlvarez	2012-04-15	8	5	0
+Orock	2015-09-10	11	3	0
 Oscar Vega	2011-11-06	1	1	0
 Oso Polar	2011-03-27	5	2	0
 Oso Polar	2011-03-29	7	5	0
@@ -1576,7 +2693,9 @@ OttoPilot	2014-09-01	19	19	0
 OttoPilot	2014-09-08	131	50	0
 OttoPilot	2014-10-02	3	2	0
 OttoPilot	2014-12-13	3	3	0
-Ozzo4x4	2013-08-26	3	3	0
+OttoPilot	2015-06-06	34	24	0
+OverModd	2015-12-04	1	0	0
+Ozzo4x4	2013-08-26	3	3	1
 PIPA74	2011-04-13	2	1	0
 PMenendez	2008-03-20	85	74	0
 PMenendez	2008-03-23	77	67	0
@@ -1584,6 +2703,7 @@ PROMODEPORTES	2014-11-02	3	2	0
 PROWLER	2011-08-18	55	23	0
 PUNTOTRIP	2014-11-10	4	4	0
 PUNTOTRIP	2014-11-11	7	6	0
+Pablo 2015	2015-07-19	3	3	0
 Pablo Avalos	2009-03-30	78	0	0
 Pablo Castillo	2012-09-10	2	0	0
 Pablo Toledo Tapia	2012-03-08	27	3	0
@@ -1598,10 +2718,15 @@ Panchulo	2014-02-28	155	99	0
 Panchulo	2014-08-22	207	191	0
 Patricio Campos	2013-05-08	4	3	0
 Patricio Cifuentes Ithal	2010-09-23	1	0	0
+Patricio De Souza	2015-06-17	1	1	0
 PatricioPastor	2010-09-24	7	1	0
+PatrickMHDES	2015-04-17	274	274	0
 Pauliny	2014-06-04	2	0	0
 Payala	2011-06-25	36	20	0
+Pedro Herrera	2015-07-05	2	2	0
+Pedro Herrera	2015-07-06	421	64	0
 Pepe Reyes	2013-05-09	2	2	0
+Pepepateatraseros	2015-11-05	32	21	0
 Perrofft	2013-05-08	4	4	0
 Petereus	2009-07-02	51	32	1
 Philipp Hahn	2008-12-18	1	0	0
@@ -1617,50 +2742,59 @@ Phrodo_00	2014-05-16	3	2	0
 Phrodo_00	2014-08-08	2	0	0
 Phrodo_00	2014-08-19	75	75	0
 Phrodo_00	2014-10-05	152	152	0
+Phrodo_00	2015-02-23	22	1	0
+Piero Tiz	2015-09-07	16	10	0
 Pipe_geo	2013-03-21	3	1	0
+PlaneMad	2015-05-13	25	18	0
 Plaza del Arte	2013-05-07	2	1	0
 Pmz	2011-05-03	1	0	0
 PotterSys	2010-05-16	3	3	0
 PotterSys	2012-03-27	2	1	0
 Puente Alto MAP	2014-08-06	9	4	0
+R AI	2015-04-26	135	95	0
+R0bst3r	2015-03-19	1	0	0
+REINEL	2015-05-13	13	3	0
 RM87	2013-06-18	1	0	0
 RStehr	2009-02-26	792	19	0
-RStehr	2009-02-28	391	96	0
+RStehr	2009-02-28	391	96	1
 RStehr	2009-03-02	310	138	0
 RStehr	2009-03-03	1	1	1
 RStehr	2009-03-05	272	51	0
 RStehr	2009-03-08	171	49	0
 RStehr	2009-03-14	17	17	0
 RStehr	2009-03-16	60	34	0
-RStehr	2009-12-12	116	111	1
+RStehr	2009-12-12	116	111	0
 RStehr	2010-12-13	3	1	0
 RStehr	2011-03-13	57	6	0
 Ramzes	2011-01-15	4	0	0
 Rananet	2011-04-11	2	2	0
 Rasak	2014-11-17	35	34	0
+RationalTangle	2015-06-04	2	2	0
 Raul Barraza	2014-02-24	500	474	0
 Raul Barraza	2014-03-07	126	102	0
 Raul Barraza	2014-09-26	22	22	0
 Raul P	2009-01-23	249	0	0
 Raul_Barraza	2011-06-30	1	1	0
-Raul_Barraza	2011-07-01	186	173	0
+Raul_Barraza	2011-07-01	186	173	1
 Raul_Barraza	2011-09-06	1	0	0
 Raul_Barraza	2011-09-08	1	1	0
-Raul_Barraza	2011-09-09	41	40	0
+Raul_Barraza	2011-09-09	41	40	1
 Raul_Barraza	2011-09-14	1	1	0
 Raul_Barraza	2011-09-16	1	1	0
 Raul_Barraza	2011-09-21	1	1	0
 Raul_Barraza	2011-10-17	54	54	0
-Raul_Barraza	2012-06-29	1251	1210	5
-Raul_Barraza	2012-07-03	1825	1789	10
+Raul_Barraza	2012-06-29	1251	1210	3
+Raul_Barraza	2012-07-03	1825	1789	14
 Raul_Barraza	2012-07-04	499	472	0
 Raul_Barraza	2012-07-05	346	343	0
-Raul_Barraza	2012-07-09	115	108	0
+Raul_Barraza	2012-07-09	115	108	2
 Raul_Barraza	2012-08-21	3	2	0
 Raul_Barraza	2012-10-17	1	1	0
 Raul_Barraza	2013-10-30	366	339	0
 Rbanick	2012-12-28	4	4	0
+Redorio	2015-04-01	6	6	0
 Renacimiento	2009-08-17	17	17	0
+Rene Espinoza Jiménez	2015-11-17	13	13	0
 Rene Silva	2013-08-17	7	7	0
 Residentcl	2013-05-07	26	5	0
 Residentcl	2014-12-29	243	176	0
@@ -1684,8 +2818,56 @@ Residentcl	2015-01-15	167	108	0
 Residentcl	2015-01-16	157	26	0
 Residentcl	2015-01-17	57	38	0
 Residentcl	2015-01-18	3	3	0
+Residentcl	2015-01-26	47	32	0
+Residentcl	2015-01-30	9	6	0
+Residentcl	2015-02-04	74	46	0
+Residentcl	2015-02-05	11	5	0
+Residentcl	2015-02-07	144	107	0
+Residentcl	2015-02-08	228	164	0
+Residentcl	2015-02-09	135	131	0
+Residentcl	2015-02-11	92	85	0
+Residentcl	2015-02-12	145	129	0
+Residentcl	2015-02-13	263	196	0
+Residentcl	2015-02-14	604	141	0
+Residentcl	2015-02-17	60	2	0
+Residentcl	2015-02-25	3	3	0
+Residentcl	2015-03-03	91	3	0
+Residentcl	2015-06-26	5	3	0
+Residentcl	2015-08-01	151	86	0
+Residentcl	2015-08-02	131	125	0
+Residentcl	2015-08-03	100	96	0
+Residentcl	2015-08-04	330	266	0
+Residentcl	2015-08-05	223	200	0
+Residentcl	2015-08-08	96	84	0
+Residentcl	2015-08-10	1	0	0
+Residentcl	2015-08-11	5	0	0
+Residentcl	2015-08-27	7	4	0
+Residentcl	2015-08-29	2	0	0
+Residentcl	2015-09-04	2	2	0
+Residentcl	2015-09-09	3	3	0
+Residentcl	2015-09-11	57	39	0
+Residentcl	2015-10-01	3	2	0
+Residentcl	2015-10-02	12	0	0
+Residentcl	2015-10-05	59	51	0
+Residentcl	2015-10-07	3	1	0
+Residentcl	2015-11-10	2	2	0
+Residentcl	2015-11-26	36	26	0
+Residentcl	2015-11-27	31	14	0
+Residentcl	2015-12-01	8	1	0
+Residentcl	2015-12-04	49	44	0
+Residentcl	2015-12-05	15	9	0
+Residentcl	2015-12-09	8	7	0
+Residentcl	2015-12-10	29	28	0
+Residentcl	2015-12-14	20	15	0
+Residentcl	2015-12-15	57	19	0
+Residentcl	2015-12-16	66	61	0
+Residentcl	2015-12-21	75	62	0
+Residentcl	2015-12-22	14	10	0
+Residentcl	2016-01-06	1	1	0
+Residentcl	2016-01-13	2	2	0
 Rhersa	2012-01-27	9	7	0
 Rhersa	2012-01-28	5	2	0
+Ricardo Canales	2015-10-21	3	2	0
 RicardoAvalos7	2010-09-28	2	0	0
 RichRico	2014-08-19	1	0	0
 RichRico	2014-08-20	1	0	0
@@ -1694,6 +2876,9 @@ RichRico	2014-11-04	1	0	0
 RichRico	2014-12-05	2	0	0
 RichRico	2014-12-19	1	0	0
 RichRico	2015-01-15	1	0	0
+RichRico	2015-07-15	1	1	0
+RichRico	2015-07-16	13	3	0
+RichRico	2015-07-31	1	0	0
 Richato	2008-11-27	1014	0	0
 Richato	2010-03-05	12	0	0
 RitterR	2014-08-13	5	0	0
@@ -1734,6 +2919,7 @@ Ro027	2013-06-13	19	1	0
 RoadGeek_MD99	2011-09-20	201	65	0
 Roberto Mercado	2011-04-09	1	1	0
 RobertoIc	2010-12-10	31	0	0
+Robinsxsoad	2015-08-21	6	5	0
 Rod Car	2012-02-15	427	57	0
 Rod thompson	2013-03-23	8	4	0
 Rodobor	2011-12-26	2	2	0
@@ -1741,15 +2927,50 @@ Rodolfo Paez	2013-06-14	5	4	0
 Rodolfo Walker	2012-07-01	6	6	0
 Rodolphe Quiédeville	2010-10-19	6	0	0
 Rodrigo Caro	2012-08-30	4	2	0
+Rodrigo Gutierrez Torres	2015-08-28	8	8	0
 Rodrigo Rozas Moser	2012-09-22	14	2	0
 Rodrigo Vergara	2015-01-24	30	14	0
+Rodrigo Vergara	2015-01-26	1	1	0
 RodrigoC	2010-11-21	23	0	0
 RodrigoValenzuela21	2013-09-30	1	1	0
+Rodrigo_Mendoza	2015-05-15	5	5	0
+Rodrigo_Mendoza	2015-05-19	87	85	0
+Rodrigo_Mendoza	2015-05-20	34	33	0
+Rodrigo_Mendoza	2015-05-21	60	60	0
+Rodrigo_Mendoza	2015-05-25	53	53	0
+Rodrigo_Mendoza	2015-05-26	99	86	0
+Rodrigo_Mendoza	2015-05-27	58	58	0
+Rodrigo_Mendoza	2015-05-28	58	55	0
+Rodrigo_Mendoza	2015-05-29	62	61	0
+Rodrigo_Mendoza	2015-06-01	63	61	0
+Rodrigo_Mendoza	2015-06-02	65	63	0
+Rodrigo_Mendoza	2015-06-03	58	56	0
+Rodrigo_Mendoza	2015-06-09	1	1	0
+Rodrigo_Mendoza	2015-06-10	92	3	0
+Rodrigo_Mendoza	2015-06-11	141	1	0
+Rodrigo_Mendoza	2015-06-12	118	0	0
+Rodrigo_Mendoza	2015-06-14	63	0	0
+Rodrigo_Mendoza	2015-06-15	84	0	0
+Rodrigo_Mendoza	2015-06-16	142	0	0
+Rodrigo_Mendoza	2015-06-19	1	0	0
+Rodrigo_Mendoza	2015-06-24	1	1	0
+Rodrigo_Mendoza	2015-07-26	46	46	0
+Rodrigo_Mendoza	2015-07-27	44	43	0
+Rodrigo_Mendoza	2015-07-28	13	13	0
+Rodrigo_Mendoza	2015-07-29	15	15	0
+Rodrigo_Mendoza	2015-12-15	1	1	0
+Rodrigo_Mendoza	2015-12-16	4	4	0
+Rodrigo_Mendoza	2015-12-18	2	2	0
+Rodrigo_Mendoza	2015-12-21	5	3	0
+Rodull90	2015-07-27	1	1	0
 Rolando Alvear Irribarra	2013-01-17	74	6	0
 Rooover	2011-04-12	2	2	0
 Ropino	2009-07-27	2	0	0
 Ropino	2014-12-13	2	0	0
 Rovastar	2013-04-25	14	14	0
+Rt-Soldat	2015-05-18	31	30	0
+Rt-Soldat	2015-05-19	21	20	0
+Rt-Soldat	2015-06-07	9	9	0
 Rub21	2014-07-14	5	3	0
 Rub21	2014-07-15	3	1	0
 Rub21	2014-07-30	13	10	0
@@ -1834,7 +3055,7 @@ Run_cl	2014-07-24	120	109	0
 Run_cl	2014-07-25	8	1	0
 Run_cl	2014-08-04	36	24	0
 Run_cl	2014-08-09	76	38	0
-Run_cl	2014-08-18	310	221	0
+Run_cl	2014-08-18	310	221	1
 Run_cl	2014-08-19	65	26	0
 Run_cl	2014-08-25	45	8	0
 Run_cl	2014-08-26	114	58	0
@@ -1866,21 +3087,89 @@ Run_cl	2014-12-30	142	54	0
 Run_cl	2014-12-31	85	53	0
 Run_cl	2015-01-09	42	42	0
 Run_cl	2015-01-15	30	28	0
+Run_cl	2015-02-26	277	114	0
+Run_cl	2015-03-09	200	46	0
+Run_cl	2015-03-20	44	43	0
+Run_cl	2015-03-26	6	6	0
+Run_cl	2015-03-29	267	130	0
+Run_cl	2015-04-13	47	3	0
+Run_cl	2015-04-17	107	91	0
+Run_cl	2015-04-20	58	53	0
+Run_cl	2015-04-21	7	0	0
+Run_cl	2015-04-23	35	25	0
+Run_cl	2015-04-29	10	1	0
+Run_cl	2015-05-02	53	39	0
+Run_cl	2015-05-06	200	75	0
+Run_cl	2015-05-18	62	54	0
+Run_cl	2015-05-19	12	8	0
+Run_cl	2015-05-25	106	88	0
+Run_cl	2015-05-28	2	1	0
+Run_cl	2015-06-03	98	55	0
+Run_cl	2015-06-11	301	57	0
+Run_cl	2015-07-09	759	423	0
+Run_cl	2015-07-13	137	51	0
+Run_cl	2015-07-17	65	61	0
+Run_cl	2015-07-18	183	136	0
+Run_cl	2015-07-20	43	25	0
+Run_cl	2015-07-21	23	17	0
+Run_cl	2015-07-25	1	1	0
+Run_cl	2015-07-29	189	63	0
+Run_cl	2015-08-12	149	6	0
+Run_cl	2015-08-14	427	380	0
+Run_cl	2015-08-18	63	32	0
+Run_cl	2015-08-19	28	8	0
+Run_cl	2015-08-20	106	73	0
+Run_cl	2015-08-22	347	290	0
+Run_cl	2015-08-28	371	338	0
+Run_cl	2015-08-31	20	14	0
+Run_cl	2015-09-05	4	4	0
+Run_cl	2015-09-07	80	51	0
+Run_cl	2015-09-10	30	18	0
+Run_cl	2015-09-17	94	76	0
+Run_cl	2015-09-25	86	72	0
+Run_cl	2015-10-05	491	317	0
+Run_cl	2015-10-09	10	10	0
+Run_cl	2015-10-14	71	47	0
+Run_cl	2015-10-20	10	7	0
+Run_cl	2015-10-22	17	17	0
+Run_cl	2015-11-02	69	41	0
+Run_cl	2015-11-04	1	0	0
+Run_cl	2015-11-06	138	89	0
+Run_cl	2015-11-07	91	60	0
+Run_cl	2015-11-19	69	48	0
+Run_cl	2015-11-30	27	0	0
+Run_cl	2015-12-01	340	45	0
+Run_cl	2015-12-07	1	0	0
+Run_cl	2015-12-14	42	3	0
+Run_cl	2015-12-15	26	11	0
+Run_cl	2015-12-21	114	16	0
+Run_cl	2016-01-05	1	0	0
+Run_cl	2016-01-06	1	0	0
+Run_cl	2016-01-08	130	36	0
+Run_cl	2016-01-11	47	37	0
 Rycott	2010-08-10	4	3	0
 SagMor	2010-08-22	25	21	0
 SagMor	2010-08-23	18	12	0
+SantiagoMaps	2015-07-14	2	1	0
 Santiagopedia	2012-01-27	1	0	0
+Sbcte Tiuque	2015-10-07	24	5	0
+Sbcte Tiuque	2015-10-08	245	147	0
+Schtauffen	2015-11-27	1	1	0
 Se7en	2011-04-11	20	4	0
 Se7en	2011-04-17	1	1	0
 Seakoss	2010-08-30	2	2	0
 Seb Ladessus	2013-10-13	1	0	0
 Seba_perez_lizana	2014-05-29	8	6	0
+Seba_perez_lizana	2015-03-16	31	13	0
+Sebastian Astorquiza	2015-12-06	56	21	0
+Sebastian Kreft	2015-07-14	4	0	0
 Sebastian_jara	2014-02-24	5	5	0
 SecnS	2012-03-03	6	6	0
 Secretline	2013-02-04	28	16	0
 Sergio Carvajal	2012-08-30	70	46	0
 Sergio Carvajal	2012-09-03	8	1	0
 Sergio Donoso	2012-03-05	13	9	0
+Sergio Lucero	2015-11-05	2	2	0
 Sergio Ugalde	2013-05-07	1	0	0
 Sergio_Arenas	2013-04-07	7	6	0
 SergioxOlivos	2013-06-24	2	1	0
@@ -1891,6 +3180,9 @@ Serpens	2010-04-25	1	0	0
 Serpens	2010-11-18	1	0	0
 Serpens	2014-12-29	1	0	0
 Serpens	2015-01-02	1	0	0
+Serpens	2015-04-06	1	0	0
+Serpens	2015-06-01	1	0	0
+Serpens	2015-08-20	1	0	0
 ShootingStarMax	2014-08-11	1	1	0
 SiegerStain	2014-03-06	8	1	0
 Silen7	2011-06-09	47	11	0
@@ -1900,9 +3192,13 @@ Simonmaker	2014-10-02	5	3	0
 Skywave	2008-01-26	1	0	0
 SlippedTisk	2014-08-14	1	1	0
 Sofía Covarrubias	2014-07-24	5	5	0
+Soldier Boy	2015-03-27	2	1	0
+SomeoneElse_Revert	2015-11-26	13	0	0
 Souchong	2014-03-31	3	0	0
+Soyanede	2015-05-14	1	1	0
 Spiritofrock	2010-04-27	22	3	0
 Stemby	2014-07-12	1	0	0
+Stephanie Hess	2015-10-20	8	0	0
 Steve Chilton	2009-11-18	22	17	0
 Steve Chilton	2009-11-22	1	1	0
 Steve Chilton	2009-11-28	281	271	0
@@ -1913,9 +3209,12 @@ Susin	2015-01-23	1	0	0
 Syl	2011-03-02	1	0	0
 Syl	2012-10-04	2	0	0
 Syl	2013-01-17	1	0	0
+TOMAS RAMIREZ SARMIENTO	2015-09-17	4	4	0
 Taqui	2013-05-14	1	1	0
 Tatov	2014-05-17	18	1	0
+Te Mapeo	2015-11-07	29	29	0
 Teddych	2012-09-30	3	0	0
+Test map	2015-03-26	3	2	0
 Test360	2014-12-22	1	0	0
 ThaiGambarra	2014-01-23	1	1	0
 Thomas Armstrong	2010-03-10	5	0	0
@@ -1923,6 +3222,11 @@ Tism	2010-05-30	27	24	0
 Tism	2010-05-31	1	0	0
 Tism	2010-06-04	29	21	0
 Tito1973	2010-10-30	2	0	0
+ToffeHoff	2015-09-01	1	1	0
+ToffeHoff	2015-09-02	20	16	0
+ToffeHoff	2015-09-03	1	1	0
+ToffeHoff	2015-09-06	1	0	0
+ToffeHoff	2015-09-13	7	3	0
 TomásEchiburú	2014-07-11	224	175	0
 TomásEchiburú	2014-08-18	8	8	0
 TomásEchiburú	2014-08-20	13	13	0
@@ -1933,6 +3237,8 @@ TomásEchiburú	2014-09-30	4	4	0
 Tovagulet	2014-01-15	4	0	0
 Tovagulet	2014-03-02	4	0	0
 Tovagulet	2014-04-18	4	4	0
+Tranoso	2015-05-25	2	2	0
+Tribunal Supremo Electoral	2015-11-19	1	1	0
 TrxDrk	2014-01-20	2	0	0
 Tuto Gonzalez	2014-06-24	157	132	0
 Tuto Gonzalez	2014-06-25	5	4	0
@@ -1991,7 +3297,7 @@ Umkal	2012-05-05	7	7	0
 Umkal	2012-05-11	1	1	0
 Umkal	2012-05-12	1	1	0
 Umkal	2012-06-08	47	47	0
-Umkal	2012-06-09	99	99	0
+Umkal	2012-06-09	99	99	1
 Umkal	2012-06-12	30	26	0
 Umkal	2012-06-16	18	18	0
 Umkal	2012-06-24	1	1	0
@@ -2044,8 +3350,11 @@ Umkal	2014-11-07	2	1	0
 Umkal	2014-11-12	5	5	0
 Umkal	2014-11-16	1	1	0
 Umkal	2015-01-05	3	3	0
+Umkal	2015-02-07	8	8	0
+Umkal	2015-03-04	6	6	0
+Umkal	2016-01-03	4	4	0
 Un Kn Own	2014-11-02	2	2	0
-Utilisateur anonyme	2010-03-01	48	30	1
+Utilisateur anonyme	2010-03-01	48	30	4
 VARGUX	2009-12-22	2	1	0
 VARGUX	2012-05-30	1	1	0
 VCastillo363	2012-10-27	59	47	0
@@ -2074,6 +3383,7 @@ Vichok	2014-09-03	81	56	0
 VictorGD	2012-04-23	4	2	0
 Villanos	2010-08-30	1	1	0
 Viskovitz	2014-09-01	1	1	0
+WJNR	2015-09-15	10	10	0
 WZKO	2012-07-13	14	12	0
 WZKO	2012-10-10	2	0	0
 WaaaZap	2015-01-05	96	39	0
@@ -2085,812 +3395,37 @@ Walter Schlögl	2010-10-29	3	0	0
 Walter Schlögl	2012-11-25	1	0	0
 Walter Schlögl	2012-12-16	1	0	0
 Walter Schlögl	2012-12-19	3	0	0
+Weiji	2015-12-22	1	1	0
+WiSchV	2015-06-01	28	15	0
+WiSchV	2015-06-16	1	1	0
+WiSchV	2015-08-24	1	1	0
+WiSchV	2015-10-16	5	2	0
+WiSchV	2015-12-13	1	1	0
 Wmora	2011-04-08	44	3	0
 Wmora	2011-08-22	30	11	0
 Wuaman	2013-02-25	2	2	0
+Yessenia León	2015-06-18	1	1	0
+Yessenia León	2015-06-23	19	14	0
+Yessenia León	2015-06-26	1	0	0
+Yessenia León	2015-07-09	3	2	0
+Yessenia León	2015-07-28	5	2	0
+Yessenia León	2015-08-27	1	0	0
+Yessenia León	2015-08-28	8	4	0
+Yessenia León	2015-09-07	6	5	0
+Yessenia León	2015-10-19	1	1	0
+Yessenia León	2015-10-28	47	45	0
 Ymodita	2012-07-04	1	0	0
 Yolanda Abugarade Fabres	2014-05-17	15	11	0
 Yolanda Abugarade Fabres	2014-05-18	10	10	0
 Yumeng	2014-11-17	1	1	0
 Yvette Meunier	2010-12-14	90	90	0
 Yvette Meunier	2013-07-22	29	7	0
-Zambelli Limitada	2008-03-15	39	12	0
-Zambelli Limitada	2008-03-19	4667	4235	1
-Zambelli Limitada	2008-03-20	18	14	0
-Zambelli Limitada	2008-03-21	3621	3200	15
-Zambelli Limitada	2008-03-22	2689	2219	3
-Zambelli Limitada	2008-03-23	381	327	0
-Zambelli Limitada	2008-03-26	339	206	0
-Zambelli Limitada	2008-03-27	889	766	6
-Zambelli Limitada	2008-03-29	22	14	0
-Zambelli Limitada	2008-03-30	150	138	1
-Zambelli Limitada	2008-04-06	145	102	0
-Zambelli Limitada	2008-04-08	1700	1387	22
-Zambelli Limitada	2008-04-12	26	7	0
-Zambelli Limitada	2008-04-14	5	0	0
-Zambelli Limitada	2008-04-26	289	236	17
-Zambelli Limitada	2008-04-30	106	78	0
-Zambelli Limitada	2008-05-10	1755	1606	5
-Zambelli Limitada	2008-05-12	510	473	4
-Zambelli Limitada	2008-05-13	5731	5504	33
-Zambelli Limitada	2008-05-14	1312	1191	4
-Zambelli Limitada	2008-05-16	1401	1141	0
-Zambelli Limitada	2008-05-17	1957	1773	10
-Zambelli Limitada	2008-05-18	2212	1723	16
-Zambelli Limitada	2008-05-19	912	736	2
-Zambelli Limitada	2008-05-20	2433	2275	7
-Zambelli Limitada	2008-05-21	917	871	23
-Zambelli Limitada	2008-05-22	1738	1567	7
-Zambelli Limitada	2008-05-24	380	347	0
-Zambelli Limitada	2008-05-25	859	743	1
-Zambelli Limitada	2008-05-26	685	631	1
-Zambelli Limitada	2008-05-27	2774	2347	13
-Zambelli Limitada	2008-05-29	6357	6013	58
-Zambelli Limitada	2008-06-01	2535	2290	2
-Zambelli Limitada	2008-06-06	926	858	1
-Zambelli Limitada	2008-06-07	2106	1922	6
-Zambelli Limitada	2008-06-08	57	0	0
-Zambelli Limitada	2008-06-12	549	537	3
-Zambelli Limitada	2008-06-15	71	18	0
-Zambelli Limitada	2008-06-17	84	7	0
-Zambelli Limitada	2008-06-19	137	119	1
-Zambelli Limitada	2008-06-21	31	3	0
-Zambelli Limitada	2008-06-22	37	34	0
-Zambelli Limitada	2008-06-26	576	481	0
-Zambelli Limitada	2008-06-29	1177	1138	12
-Zambelli Limitada	2008-07-02	4163	3737	3
-Zambelli Limitada	2008-07-03	905	378	1
-Zambelli Limitada	2008-07-04	1541	1423	1
-Zambelli Limitada	2008-07-07	1554	1426	3
-Zambelli Limitada	2008-07-08	2221	2131	18
-Zambelli Limitada	2008-07-09	380	219	0
-Zambelli Limitada	2008-07-12	428	408	0
-Zambelli Limitada	2008-07-15	502	483	0
-Zambelli Limitada	2008-07-17	72	71	3
-Zambelli Limitada	2008-07-22	957	936	9
-Zambelli Limitada	2008-07-23	1071	1028	0
-Zambelli Limitada	2008-07-24	2368	880	10
-Zambelli Limitada	2008-07-26	16	6	0
-Zambelli Limitada	2008-07-29	1907	1853	0
-Zambelli Limitada	2008-07-31	319	145	0
-Zambelli Limitada	2008-08-01	232	207	1
-Zambelli Limitada	2008-08-02	2086	2046	0
-Zambelli Limitada	2008-08-03	297	296	0
-Zambelli Limitada	2008-08-04	630	593	25
-Zambelli Limitada	2008-08-05	233	222	0
-Zambelli Limitada	2008-08-06	1062	1047	0
-Zambelli Limitada	2008-08-07	1168	587	1
-Zambelli Limitada	2008-08-09	1582	1407	26
-Zambelli Limitada	2008-08-12	17	4	0
-Zambelli Limitada	2008-08-14	378	327	0
-Zambelli Limitada	2008-08-15	20	20	1
-Zambelli Limitada	2008-08-17	4063	4005	1
-Zambelli Limitada	2008-08-18	1560	1543	0
-Zambelli Limitada	2008-08-19	593	479	1
-Zambelli Limitada	2008-08-21	442	293	0
-Zambelli Limitada	2008-08-27	679	662	0
-Zambelli Limitada	2008-08-31	6	4	0
-Zambelli Limitada	2008-09-17	2	1	0
-Zambelli Limitada	2008-09-22	2461	2058	10
-Zambelli Limitada	2008-09-24	2	1	0
-Zambelli Limitada	2008-10-02	92	43	0
-Zambelli Limitada	2008-10-03	475	299	1
-Zambelli Limitada	2008-10-05	271	262	1
-Zambelli Limitada	2008-10-08	1488	139	0
-Zambelli Limitada	2008-10-24	2946	67	0
-Zambelli Limitada	2008-10-25	2969	203	0
-Zambelli Limitada	2008-10-29	1003	142	0
-Zambelli Limitada	2008-10-30	12353	841	0
-Zambelli Limitada	2008-11-02	15860	1244	3
-Zambelli Limitada	2008-11-06	50	0	0
-Zambelli Limitada	2008-11-08	5544	359	0
-Zambelli Limitada	2008-11-09	13142	999	0
-Zambelli Limitada	2008-11-10	1112	194	7
-Zambelli Limitada	2008-11-13	4188	308	0
-Zambelli Limitada	2008-11-16	1	0	0
-Zambelli Limitada	2008-11-19	55	0	0
-Zambelli Limitada	2008-11-21	1	0	0
-Zambelli Limitada	2008-11-23	840	321	0
-Zambelli Limitada	2008-11-24	1977	1263	65
-Zambelli Limitada	2008-11-25	168	0	0
-Zambelli Limitada	2008-11-26	2613	29	0
-Zambelli Limitada	2008-11-30	402	0	0
-Zambelli Limitada	2008-12-03	329	5	0
-Zambelli Limitada	2008-12-09	264	5	0
-Zambelli Limitada	2008-12-13	4278	110	0
-Zambelli Limitada	2008-12-17	4380	35	0
-Zambelli Limitada	2008-12-18	83	1	0
-Zambelli Limitada	2008-12-23	419	48	0
-Zambelli Limitada	2009-01-06	635	31	0
-Zambelli Limitada	2009-01-08	29	0	0
-Zambelli Limitada	2009-01-09	523	35	1
-Zambelli Limitada	2009-01-13	468	68	0
-Zambelli Limitada	2009-01-15	638	108	0
-Zambelli Limitada	2009-01-19	246	40	0
-Zambelli Limitada	2009-01-20	5835	114	0
-Zambelli Limitada	2009-01-21	2866	40	0
-Zambelli Limitada	2009-01-22	4416	193	0
-Zambelli Limitada	2009-01-23	7550	698	4
-Zambelli Limitada	2009-01-24	10409	694	0
-Zambelli Limitada	2009-01-25	12598	476	0
-Zambelli Limitada	2009-01-26	17438	1284	1
-Zambelli Limitada	2009-01-27	9786	431	0
-Zambelli Limitada	2009-01-28	212	13	0
-Zambelli Limitada	2009-01-30	62	5	0
-Zambelli Limitada	2009-02-05	1	0	0
-Zambelli Limitada	2009-02-06	64	2	0
-Zambelli Limitada	2009-02-08	2657	264	0
-Zambelli Limitada	2009-02-10	205	42	0
-Zambelli Limitada	2009-02-19	2180	32	0
-Zambelli Limitada	2009-02-20	73	1	0
-Zambelli Limitada	2009-02-21	9	6	0
-Zambelli Limitada	2009-02-22	419	35	0
-Zambelli Limitada	2009-02-23	2941	371	1
-Zambelli Limitada	2009-02-24	60	0	0
-Zambelli Limitada	2009-03-03	128	5	0
-Zambelli Limitada	2009-03-10	2	1	0
-Zambelli Limitada	2009-03-11	4235	169	0
-Zambelli Limitada	2009-03-13	186	0	0
-Zambelli Limitada	2009-03-16	3643	440	0
-Zambelli Limitada	2009-03-20	4391	372	0
-Zambelli Limitada	2009-03-22	5315	410	0
-Zambelli Limitada	2009-04-01	149	1	0
-Zambelli Limitada	2009-04-05	14254	1356	36
-Zambelli Limitada	2009-04-06	136	26	1
-Zambelli Limitada	2009-04-07	249	31	10
-Zambelli Limitada	2009-04-08	1552	379	13
-Zambelli Limitada	2009-04-12	5414	700	0
-Zambelli Limitada	2009-04-13	1014	165	3
-Zambelli Limitada	2009-04-15	8267	416	0
-Zambelli Limitada	2009-04-16	262	4	0
-Zambelli Limitada	2009-04-21	21	21	0
-Zambelli Limitada	2009-04-23	456	448	7
-Zambelli Limitada	2009-04-24	573	207	0
-Zambelli Limitada	2009-04-25	366	163	2
-Zambelli Limitada	2009-04-27	16	1	0
-Zambelli Limitada	2009-04-28	115	33	0
-Zambelli Limitada	2009-05-02	576	550	0
-Zambelli Limitada	2009-05-03	38	3	0
-Zambelli Limitada	2009-05-05	172	71	0
-Zambelli Limitada	2009-05-06	169	78	0
-Zambelli Limitada	2009-05-07	5	1	0
-Zambelli Limitada	2009-05-12	51	31	0
-Zambelli Limitada	2009-05-13	1	0	0
-Zambelli Limitada	2009-05-14	1589	1401	21
-Zambelli Limitada	2009-05-15	86	40	0
-Zambelli Limitada	2009-05-16	5	0	0
-Zambelli Limitada	2009-05-18	50	27	0
-Zambelli Limitada	2009-05-19	343	303	0
-Zambelli Limitada	2009-05-22	95	40	0
-Zambelli Limitada	2009-05-27	32	18	0
-Zambelli Limitada	2009-05-28	236	76	0
-Zambelli Limitada	2009-05-30	2	2	0
-Zambelli Limitada	2009-06-03	84	50	0
-Zambelli Limitada	2009-06-08	192	102	0
-Zambelli Limitada	2009-06-12	14	7	0
-Zambelli Limitada	2009-06-15	248	232	0
-Zambelli Limitada	2009-06-16	324	293	0
-Zambelli Limitada	2009-06-18	226	224	0
-Zambelli Limitada	2009-06-19	983	916	0
-Zambelli Limitada	2009-06-20	363	327	0
-Zambelli Limitada	2009-06-21	106	90	0
-Zambelli Limitada	2009-06-22	1635	1581	8
-Zambelli Limitada	2009-06-24	1054	1020	0
-Zambelli Limitada	2009-06-25	132	132	0
-Zambelli Limitada	2009-06-26	32	30	0
-Zambelli Limitada	2009-06-27	782	681	0
-Zambelli Limitada	2009-06-28	767	753	0
-Zambelli Limitada	2009-06-29	522	461	0
-Zambelli Limitada	2009-07-02	774	621	0
-Zambelli Limitada	2009-07-03	1271	1263	2
-Zambelli Limitada	2009-07-04	2033	1862	6
-Zambelli Limitada	2009-07-06	162	75	0
-Zambelli Limitada	2009-07-07	742	682	16
-Zambelli Limitada	2009-07-10	15	11	0
-Zambelli Limitada	2009-07-11	6	3	0
-Zambelli Limitada	2009-07-15	239	107	0
-Zambelli Limitada	2009-07-17	502	314	0
-Zambelli Limitada	2009-07-18	1604	1526	13
-Zambelli Limitada	2009-07-19	3029	2792	1
-Zambelli Limitada	2009-07-20	6	5	0
-Zambelli Limitada	2009-07-21	158	115	0
-Zambelli Limitada	2009-07-22	310	248	0
-Zambelli Limitada	2009-07-24	49	49	0
-Zambelli Limitada	2009-07-26	710	621	5
-Zambelli Limitada	2009-07-27	493	406	3
-Zambelli Limitada	2009-07-28	189	155	0
-Zambelli Limitada	2009-07-29	95	47	0
-Zambelli Limitada	2009-07-30	12	9	0
-Zambelli Limitada	2009-07-31	84	47	0
-Zambelli Limitada	2009-08-02	1029	905	0
-Zambelli Limitada	2009-08-04	253	149	0
-Zambelli Limitada	2009-08-05	41	10	0
-Zambelli Limitada	2009-08-06	1483	1092	0
-Zambelli Limitada	2009-08-07	546	442	0
-Zambelli Limitada	2009-08-08	11	5	0
-Zambelli Limitada	2009-08-09	105	72	0
-Zambelli Limitada	2009-08-10	174	142	0
-Zambelli Limitada	2009-08-11	176	127	0
-Zambelli Limitada	2009-08-12	586	394	0
-Zambelli Limitada	2009-08-13	28	6	0
-Zambelli Limitada	2009-08-14	183	100	0
-Zambelli Limitada	2009-08-15	41	37	0
-Zambelli Limitada	2009-08-17	170	132	0
-Zambelli Limitada	2009-08-18	536	527	0
-Zambelli Limitada	2009-08-19	1	1	0
-Zambelli Limitada	2009-08-20	19	5	0
-Zambelli Limitada	2009-08-21	166	128	0
-Zambelli Limitada	2009-08-24	622	333	0
-Zambelli Limitada	2009-08-25	485	230	0
-Zambelli Limitada	2009-08-26	57	48	0
-Zambelli Limitada	2009-08-27	160	157	0
-Zambelli Limitada	2009-08-28	69	28	0
-Zambelli Limitada	2009-08-29	71	25	0
-Zambelli Limitada	2009-08-30	1	1	0
-Zambelli Limitada	2009-08-31	273	152	0
-Zambelli Limitada	2009-09-02	1	1	0
-Zambelli Limitada	2009-09-04	279	232	0
-Zambelli Limitada	2009-09-05	1873	1841	0
-Zambelli Limitada	2009-09-06	50	21	0
-Zambelli Limitada	2009-09-08	2	2	0
-Zambelli Limitada	2009-09-09	486	404	0
-Zambelli Limitada	2009-09-10	99	90	0
-Zambelli Limitada	2009-09-12	3	0	0
-Zambelli Limitada	2009-09-14	4	4	0
-Zambelli Limitada	2009-09-15	55	6	0
-Zambelli Limitada	2009-09-17	33	24	0
-Zambelli Limitada	2009-09-21	11	11	0
-Zambelli Limitada	2009-09-24	146	145	0
-Zambelli Limitada	2009-09-26	294	281	0
-Zambelli Limitada	2009-09-27	78	66	0
-Zambelli Limitada	2009-09-28	281	259	0
-Zambelli Limitada	2009-10-03	18	7	0
-Zambelli Limitada	2009-10-04	74	51	0
-Zambelli Limitada	2009-10-05	99	92	0
-Zambelli Limitada	2009-10-08	3	3	0
-Zambelli Limitada	2009-10-09	240	110	0
-Zambelli Limitada	2009-10-12	220	208	0
-Zambelli Limitada	2009-10-15	11	11	0
-Zambelli Limitada	2009-10-18	194	66	0
-Zambelli Limitada	2009-10-21	1	1	0
-Zambelli Limitada	2009-11-01	573	557	3
-Zambelli Limitada	2009-11-02	1	1	0
-Zambelli Limitada	2009-11-09	1	1	0
-Zambelli Limitada	2009-11-16	26	14	0
-Zambelli Limitada	2009-11-17	41	22	0
-Zambelli Limitada	2009-11-18	11	5	0
-Zambelli Limitada	2009-11-19	178	136	0
-Zambelli Limitada	2009-11-20	3	2	0
-Zambelli Limitada	2009-11-26	35	21	0
-Zambelli Limitada	2009-11-27	9	3	0
-Zambelli Limitada	2009-11-28	77	25	0
-Zambelli Limitada	2009-11-29	374	291	0
-Zambelli Limitada	2009-11-30	47	35	0
-Zambelli Limitada	2009-12-01	83	27	0
-Zambelli Limitada	2009-12-03	5	3	0
-Zambelli Limitada	2009-12-04	20	16	0
-Zambelli Limitada	2009-12-05	406	238	0
-Zambelli Limitada	2009-12-06	729	411	0
-Zambelli Limitada	2009-12-07	17	3	0
-Zambelli Limitada	2009-12-08	388	162	0
-Zambelli Limitada	2009-12-09	255	103	0
-Zambelli Limitada	2009-12-10	17	4	0
-Zambelli Limitada	2009-12-11	14	6	0
-Zambelli Limitada	2009-12-12	2	1	0
-Zambelli Limitada	2009-12-13	1	0	0
-Zambelli Limitada	2009-12-16	14	7	0
-Zambelli Limitada	2009-12-17	2	2	0
-Zambelli Limitada	2009-12-18	1	1	0
-Zambelli Limitada	2009-12-19	15	7	0
-Zambelli Limitada	2009-12-20	21	6	0
-Zambelli Limitada	2009-12-21	925	845	6
-Zambelli Limitada	2009-12-22	116	58	0
-Zambelli Limitada	2009-12-23	147	87	0
-Zambelli Limitada	2009-12-24	10	5	0
-Zambelli Limitada	2009-12-27	5	5	0
-Zambelli Limitada	2009-12-28	466	293	1
-Zambelli Limitada	2009-12-29	775	528	0
-Zambelli Limitada	2009-12-30	35	16	0
-Zambelli Limitada	2009-12-31	257	157	0
-Zambelli Limitada	2010-01-01	119	72	0
-Zambelli Limitada	2010-01-02	2180	1701	1
-Zambelli Limitada	2010-01-03	25	9	0
-Zambelli Limitada	2010-01-04	40	13	0
-Zambelli Limitada	2010-01-05	12	8	0
-Zambelli Limitada	2010-01-06	553	529	0
-Zambelli Limitada	2010-01-07	176	164	0
-Zambelli Limitada	2010-01-08	279	164	0
-Zambelli Limitada	2010-01-09	248	109	0
-Zambelli Limitada	2010-01-11	220	118	0
-Zambelli Limitada	2010-01-12	177	136	0
-Zambelli Limitada	2010-01-14	488	442	0
-Zambelli Limitada	2010-01-15	508	406	1
-Zambelli Limitada	2010-01-16	248	209	0
-Zambelli Limitada	2010-01-17	79	75	0
-Zambelli Limitada	2010-01-18	1	0	0
-Zambelli Limitada	2010-01-19	159	134	0
-Zambelli Limitada	2010-01-20	95	92	0
-Zambelli Limitada	2010-01-21	219	205	1
-Zambelli Limitada	2010-01-22	104	64	2
-Zambelli Limitada	2010-01-25	180	175	0
-Zambelli Limitada	2010-01-28	4	1	0
-Zambelli Limitada	2010-02-01	57	12	0
-Zambelli Limitada	2010-02-04	4	4	0
-Zambelli Limitada	2010-02-09	83	57	0
-Zambelli Limitada	2010-02-12	375	81	0
-Zambelli Limitada	2010-02-17	13	6	0
-Zambelli Limitada	2010-02-18	3	1	0
-Zambelli Limitada	2010-02-19	14	5	0
-Zambelli Limitada	2010-02-21	46	24	3
-Zambelli Limitada	2010-02-22	3	2	0
-Zambelli Limitada	2010-02-23	68	7	0
-Zambelli Limitada	2010-02-24	1	0	0
-Zambelli Limitada	2010-02-25	108	63	0
-Zambelli Limitada	2010-02-26	399	95	0
-Zambelli Limitada	2010-02-28	22	20	0
-Zambelli Limitada	2010-03-02	3	1	0
-Zambelli Limitada	2010-03-08	90	69	0
-Zambelli Limitada	2010-03-11	7	6	0
-Zambelli Limitada	2010-03-13	13	6	0
-Zambelli Limitada	2010-03-14	16	11	0
-Zambelli Limitada	2010-03-15	90	35	0
-Zambelli Limitada	2010-03-16	21	11	0
-Zambelli Limitada	2010-03-17	323	134	0
-Zambelli Limitada	2010-03-18	287	194	0
-Zambelli Limitada	2010-03-19	74	51	0
-Zambelli Limitada	2010-03-20	34	20	0
-Zambelli Limitada	2010-03-21	86	51	0
-Zambelli Limitada	2010-03-22	98	50	0
-Zambelli Limitada	2010-03-23	204	122	0
-Zambelli Limitada	2010-03-24	209	130	0
-Zambelli Limitada	2010-03-26	5	3	0
-Zambelli Limitada	2010-03-27	30	26	0
-Zambelli Limitada	2010-03-28	870	721	0
-Zambelli Limitada	2010-03-29	28	20	0
-Zambelli Limitada	2010-03-30	19	2	0
-Zambelli Limitada	2010-03-31	5	3	0
-Zambelli Limitada	2010-04-04	34	9	0
-Zambelli Limitada	2010-04-07	5	2	0
-Zambelli Limitada	2010-04-11	1	0	0
-Zambelli Limitada	2010-04-14	199	125	0
-Zambelli Limitada	2010-04-16	120	117	0
-Zambelli Limitada	2010-04-20	757	576	0
-Zambelli Limitada	2010-04-21	42	23	0
-Zambelli Limitada	2010-04-22	89	63	0
-Zambelli Limitada	2010-04-23	126	63	0
-Zambelli Limitada	2010-04-26	3	1	0
-Zambelli Limitada	2010-04-28	87	22	0
-Zambelli Limitada	2010-04-29	50	48	0
-Zambelli Limitada	2010-04-30	132	113	0
-Zambelli Limitada	2010-05-03	17	17	0
-Zambelli Limitada	2010-05-04	105	65	0
-Zambelli Limitada	2010-05-05	155	115	0
-Zambelli Limitada	2010-05-07	2	2	0
-Zambelli Limitada	2010-05-12	24	22	0
-Zambelli Limitada	2010-05-13	59	37	0
-Zambelli Limitada	2010-05-17	235	190	0
-Zambelli Limitada	2010-05-18	43	32	0
-Zambelli Limitada	2010-05-19	9	3	0
-Zambelli Limitada	2010-05-23	649	3	0
-Zambelli Limitada	2010-05-26	62	36	0
-Zambelli Limitada	2010-05-28	8	6	0
-Zambelli Limitada	2010-05-29	193	175	0
-Zambelli Limitada	2010-05-30	18	11	0
-Zambelli Limitada	2010-05-31	168	149	0
-Zambelli Limitada	2010-06-02	108	105	0
-Zambelli Limitada	2010-06-03	18	8	0
-Zambelli Limitada	2010-06-08	129	118	0
-Zambelli Limitada	2010-06-11	222	183	0
-Zambelli Limitada	2010-06-12	15	7	0
-Zambelli Limitada	2010-06-15	229	143	0
-Zambelli Limitada	2010-06-16	1	0	0
-Zambelli Limitada	2010-06-19	40	36	0
-Zambelli Limitada	2010-06-20	6	3	0
-Zambelli Limitada	2010-06-22	72	40	0
-Zambelli Limitada	2010-06-24	6	4	0
-Zambelli Limitada	2010-06-25	8	4	0
-Zambelli Limitada	2010-06-26	5	1	0
-Zambelli Limitada	2010-06-28	292	266	0
-Zambelli Limitada	2010-06-29	1	0	0
-Zambelli Limitada	2010-07-03	4	0	0
-Zambelli Limitada	2010-07-06	4	4	0
-Zambelli Limitada	2010-07-08	7	4	0
-Zambelli Limitada	2010-07-10	160	0	0
-Zambelli Limitada	2010-07-11	9	4	0
-Zambelli Limitada	2010-07-12	60	5	0
-Zambelli Limitada	2010-07-16	1	1	0
-Zambelli Limitada	2010-07-20	15	3	0
-Zambelli Limitada	2010-07-22	696	141	0
-Zambelli Limitada	2010-07-23	700	224	0
-Zambelli Limitada	2010-07-24	26	7	0
-Zambelli Limitada	2010-07-25	188	15	0
-Zambelli Limitada	2010-07-31	14	7	0
-Zambelli Limitada	2010-08-01	4	1	0
-Zambelli Limitada	2010-08-02	2	1	0
-Zambelli Limitada	2010-08-03	10	2	0
-Zambelli Limitada	2010-08-10	2	1	0
-Zambelli Limitada	2010-08-11	1	0	0
-Zambelli Limitada	2010-08-12	14	9	0
-Zambelli Limitada	2010-08-14	2	0	0
-Zambelli Limitada	2010-08-15	12	4	0
-Zambelli Limitada	2010-08-16	20	9	0
-Zambelli Limitada	2010-08-17	3	2	0
-Zambelli Limitada	2010-08-20	7	0	0
-Zambelli Limitada	2010-08-21	48	7	0
-Zambelli Limitada	2010-08-23	1416	1	0
-Zambelli Limitada	2010-08-24	73	41	0
-Zambelli Limitada	2010-08-27	13	5	0
-Zambelli Limitada	2010-08-28	3	3	0
-Zambelli Limitada	2010-08-31	12	0	0
-Zambelli Limitada	2010-09-04	3	1	0
-Zambelli Limitada	2010-09-09	318	244	3
-Zambelli Limitada	2010-09-10	407	393	2
-Zambelli Limitada	2010-09-11	2587	2534	3
-Zambelli Limitada	2010-09-12	10	1	0
-Zambelli Limitada	2010-09-14	110	29	0
-Zambelli Limitada	2010-09-15	3	0	0
-Zambelli Limitada	2010-09-16	27	5	0
-Zambelli Limitada	2010-09-21	47	29	0
-Zambelli Limitada	2010-09-23	40	21	0
-Zambelli Limitada	2010-09-24	13	8	0
-Zambelli Limitada	2010-09-29	295	120	0
-Zambelli Limitada	2010-09-30	30	7	0
-Zambelli Limitada	2010-10-01	87	38	0
-Zambelli Limitada	2010-10-02	348	321	0
-Zambelli Limitada	2010-10-03	5	3	0
-Zambelli Limitada	2010-10-04	442	4	0
-Zambelli Limitada	2010-10-05	26	6	0
-Zambelli Limitada	2010-10-06	360	198	0
-Zambelli Limitada	2010-10-07	303	13	0
-Zambelli Limitada	2010-10-08	219	91	0
-Zambelli Limitada	2010-10-09	105	34	0
-Zambelli Limitada	2010-10-10	44	25	0
-Zambelli Limitada	2010-10-11	38	19	0
-Zambelli Limitada	2010-10-12	29	5	0
-Zambelli Limitada	2010-10-15	2	0	0
-Zambelli Limitada	2010-10-19	2	2	0
-Zambelli Limitada	2010-10-20	7	2	0
-Zambelli Limitada	2010-10-24	28	3	0
-Zambelli Limitada	2010-10-25	10	5	0
-Zambelli Limitada	2010-10-26	5	2	0
-Zambelli Limitada	2010-10-28	197	180	0
-Zambelli Limitada	2010-10-29	860	32	0
-Zambelli Limitada	2010-10-31	19	7	0
-Zambelli Limitada	2010-11-01	238	144	0
-Zambelli Limitada	2010-11-02	137	97	0
-Zambelli Limitada	2010-11-03	283	184	0
-Zambelli Limitada	2010-11-04	27	18	0
-Zambelli Limitada	2010-11-06	311	135	0
-Zambelli Limitada	2010-11-07	574	394	0
-Zambelli Limitada	2010-11-10	73	52	0
-Zambelli Limitada	2010-11-11	6	3	0
-Zambelli Limitada	2010-11-12	14	9	0
-Zambelli Limitada	2010-11-13	25	15	0
-Zambelli Limitada	2010-11-16	57	12	0
-Zambelli Limitada	2010-11-18	15	7	0
-Zambelli Limitada	2010-11-20	26	10	0
-Zambelli Limitada	2010-11-21	78	31	0
-Zambelli Limitada	2010-11-22	23	2	0
-Zambelli Limitada	2010-11-23	22	13	0
-Zambelli Limitada	2010-11-25	116	104	0
-Zambelli Limitada	2010-11-26	9	0	0
-Zambelli Limitada	2010-11-27	1	1	0
-Zambelli Limitada	2010-11-28	521	517	0
-Zambelli Limitada	2010-11-29	1	1	0
-Zambelli Limitada	2010-12-02	12	9	0
-Zambelli Limitada	2010-12-09	135	119	1
-Zambelli Limitada	2010-12-13	99	88	0
-Zambelli Limitada	2010-12-14	11	10	0
-Zambelli Limitada	2010-12-15	176	107	0
-Zambelli Limitada	2010-12-16	215	90	0
-Zambelli Limitada	2010-12-17	253	152	0
-Zambelli Limitada	2010-12-18	1338	1109	0
-Zambelli Limitada	2010-12-19	140	128	0
-Zambelli Limitada	2010-12-21	380	316	0
-Zambelli Limitada	2010-12-22	121	92	0
-Zambelli Limitada	2010-12-23	2980	2771	0
-Zambelli Limitada	2010-12-25	348	149	0
-Zambelli Limitada	2010-12-27	2	2	0
-Zambelli Limitada	2010-12-28	14	10	0
-Zambelli Limitada	2010-12-29	2	1	0
-Zambelli Limitada	2010-12-30	8	3	0
-Zambelli Limitada	2010-12-31	8	3	0
-Zambelli Limitada	2011-01-02	8	6	0
-Zambelli Limitada	2011-01-04	9	7	0
-Zambelli Limitada	2011-01-05	5	2	0
-Zambelli Limitada	2011-01-06	56	23	0
-Zambelli Limitada	2011-01-10	6	3	0
-Zambelli Limitada	2011-01-11	24	19	0
-Zambelli Limitada	2011-01-15	28	11	0
-Zambelli Limitada	2011-01-19	1	0	0
-Zambelli Limitada	2011-01-20	23	8	0
-Zambelli Limitada	2011-01-26	27	0	0
-Zambelli Limitada	2011-01-27	10	4	0
-Zambelli Limitada	2011-02-01	20	1	0
-Zambelli Limitada	2011-02-06	406	373	0
-Zambelli Limitada	2011-02-16	8	4	0
-Zambelli Limitada	2011-02-17	41	25	0
-Zambelli Limitada	2011-02-19	48	37	0
-Zambelli Limitada	2011-02-20	12	0	0
-Zambelli Limitada	2011-02-21	21	1	0
-Zambelli Limitada	2011-02-28	37	3	0
-Zambelli Limitada	2011-03-01	30	0	0
-Zambelli Limitada	2011-03-05	28	26	0
-Zambelli Limitada	2011-03-07	1009	505	3
-Zambelli Limitada	2011-03-08	1	1	0
-Zambelli Limitada	2011-03-09	2	0	0
-Zambelli Limitada	2011-03-17	4	0	0
-Zambelli Limitada	2011-03-30	63	33	0
-Zambelli Limitada	2011-04-03	64	4	0
-Zambelli Limitada	2011-04-09	3	1	0
-Zambelli Limitada	2011-04-19	76	7	0
-Zambelli Limitada	2011-04-22	6	0	0
-Zambelli Limitada	2011-04-23	150	26	0
-Zambelli Limitada	2011-04-24	78	44	1
-Zambelli Limitada	2011-04-25	12	1	0
-Zambelli Limitada	2011-05-07	1857	1823	8
-Zambelli Limitada	2011-05-08	1	1	0
-Zambelli Limitada	2011-05-15	1	1	0
-Zambelli Limitada	2011-05-17	174	174	0
-Zambelli Limitada	2011-06-07	16	0	0
-Zambelli Limitada	2011-06-08	144	73	0
-Zambelli Limitada	2011-06-15	2	0	0
-Zambelli Limitada	2011-06-22	2	1	0
-Zambelli Limitada	2011-07-04	266	142	0
-Zambelli Limitada	2011-07-10	1	1	0
-Zambelli Limitada	2011-07-11	216	192	0
-Zambelli Limitada	2011-07-14	108	71	0
-Zambelli Limitada	2011-07-18	143	96	0
-Zambelli Limitada	2011-07-19	30	24	0
-Zambelli Limitada	2011-07-21	2	2	0
-Zambelli Limitada	2011-07-23	4	1	0
-Zambelli Limitada	2011-07-24	1	0	0
-Zambelli Limitada	2011-07-25	2	0	0
-Zambelli Limitada	2011-08-17	80	41	0
-Zambelli Limitada	2011-08-19	9	2	0
-Zambelli Limitada	2011-08-21	2	2	0
-Zambelli Limitada	2011-08-25	1	0	0
-Zambelli Limitada	2011-08-26	36	14	0
-Zambelli Limitada	2011-08-27	81	28	0
-Zambelli Limitada	2011-08-28	1	1	0
-Zambelli Limitada	2011-08-31	1	1	0
-Zambelli Limitada	2011-09-30	1	1	0
-Zambelli Limitada	2011-10-02	5	0	0
-Zambelli Limitada	2011-10-13	1	0	0
-Zambelli Limitada	2011-11-02	161	32	0
-Zambelli Limitada	2011-11-04	257	171	0
-Zambelli Limitada	2011-11-06	85	14	0
-Zambelli Limitada	2011-11-07	32	1	0
-Zambelli Limitada	2011-11-20	1	0	0
-Zambelli Limitada	2011-11-23	242	163	0
-Zambelli Limitada	2011-11-25	112	99	0
-Zambelli Limitada	2011-11-29	326	167	0
-Zambelli Limitada	2011-12-04	16	6	0
-Zambelli Limitada	2011-12-07	9	0	0
-Zambelli Limitada	2011-12-12	2893	2501	9
-Zambelli Limitada	2011-12-14	8	0	0
-Zambelli Limitada	2011-12-15	218	187	0
-Zambelli Limitada	2011-12-17	20	18	0
-Zambelli Limitada	2011-12-29	101	52	0
-Zambelli Limitada	2012-02-15	174	168	0
-Zambelli Limitada	2012-03-09	91	76	0
-Zambelli Limitada	2012-03-14	564	454	0
-Zambelli Limitada	2012-03-16	346	294	0
-Zambelli Limitada	2012-03-20	1	0	0
-Zambelli Limitada	2012-03-22	1057	739	0
-Zambelli Limitada	2012-03-26	437	309	0
-Zambelli Limitada	2012-03-27	2	1	0
-Zambelli Limitada	2012-04-04	478	316	0
-Zambelli Limitada	2012-04-15	18	5	0
-Zambelli Limitada	2012-04-16	140	75	0
-Zambelli Limitada	2012-04-29	456	371	0
-Zambelli Limitada	2012-05-06	72	61	0
-Zambelli Limitada	2012-05-07	193	148	0
-Zambelli Limitada	2012-05-08	32	1	0
-Zambelli Limitada	2012-05-28	535	401	0
-Zambelli Limitada	2012-06-24	887	715	0
-Zambelli Limitada	2012-07-09	310	209	0
-Zambelli Limitada	2012-07-10	404	384	0
-Zambelli Limitada	2012-07-12	15	9	0
-Zambelli Limitada	2012-07-13	113	64	0
-Zambelli Limitada	2012-07-14	19	17	0
-Zambelli Limitada	2012-08-06	96	96	0
-Zambelli Limitada	2012-08-25	51	31	0
-Zambelli Limitada	2012-09-03	7	5	0
-Zambelli Limitada	2012-09-04	455	357	0
-Zambelli Limitada	2012-09-07	208	196	0
-Zambelli Limitada	2012-09-10	396	339	0
-Zambelli Limitada	2012-09-11	906	622	0
-Zambelli Limitada	2012-09-14	4	2	0
-Zambelli Limitada	2012-09-21	14	13	0
-Zambelli Limitada	2012-09-24	172	157	0
-Zambelli Limitada	2012-09-25	177	112	0
-Zambelli Limitada	2012-09-26	10	1	0
-Zambelli Limitada	2012-09-27	419	243	0
-Zambelli Limitada	2012-09-28	485	333	0
-Zambelli Limitada	2012-10-01	9	0	0
-Zambelli Limitada	2012-10-02	13	10	0
-Zambelli Limitada	2012-10-04	258	182	0
-Zambelli Limitada	2012-10-05	686	422	0
-Zambelli Limitada	2012-10-08	1053	686	0
-Zambelli Limitada	2012-10-09	149	102	0
-Zambelli Limitada	2012-10-10	1215	589	0
-Zambelli Limitada	2012-10-11	319	54	0
-Zambelli Limitada	2012-10-12	93	63	0
-Zambelli Limitada	2012-10-14	4	4	0
-Zambelli Limitada	2012-10-15	300	252	0
-Zambelli Limitada	2012-10-16	265	162	0
-Zambelli Limitada	2012-10-17	392	310	0
-Zambelli Limitada	2012-10-18	177	62	0
-Zambelli Limitada	2012-10-19	1135	635	0
-Zambelli Limitada	2012-10-22	609	381	0
-Zambelli Limitada	2012-10-23	376	220	0
-Zambelli Limitada	2012-10-24	797	537	0
-Zambelli Limitada	2012-10-25	481	358	0
-Zambelli Limitada	2012-10-26	209	126	0
-Zambelli Limitada	2012-10-28	49	49	0
-Zambelli Limitada	2012-10-29	452	314	0
-Zambelli Limitada	2012-10-31	194	133	0
-Zambelli Limitada	2012-11-01	8	1	0
-Zambelli Limitada	2012-11-05	591	473	0
-Zambelli Limitada	2012-11-08	161	153	0
-Zambelli Limitada	2012-11-12	525	451	0
-Zambelli Limitada	2012-11-13	789	740	0
-Zambelli Limitada	2012-11-18	59	50	0
-Zambelli Limitada	2012-11-23	3	0	0
-Zambelli Limitada	2012-11-26	39	32	0
-Zambelli Limitada	2012-12-03	17	13	0
-Zambelli Limitada	2012-12-07	5	4	0
-Zambelli Limitada	2012-12-10	1	1	0
-Zambelli Limitada	2012-12-11	183	111	0
-Zambelli Limitada	2012-12-16	2	1	0
-Zambelli Limitada	2012-12-20	2	2	0
-Zambelli Limitada	2012-12-25	6	0	0
-Zambelli Limitada	2013-01-04	174	65	0
-Zambelli Limitada	2013-01-09	4	0	0
-Zambelli Limitada	2013-01-14	13	11	0
-Zambelli Limitada	2013-01-17	190	78	0
-Zambelli Limitada	2013-01-19	95	87	0
-Zambelli Limitada	2013-01-20	115	81	0
-Zambelli Limitada	2013-01-23	41	40	0
-Zambelli Limitada	2013-03-01	383	256	0
-Zambelli Limitada	2013-03-02	111	41	0
-Zambelli Limitada	2013-03-05	3319	2710	0
-Zambelli Limitada	2013-03-06	456	448	0
-Zambelli Limitada	2013-03-09	1	0	0
-Zambelli Limitada	2013-03-11	483	441	0
-Zambelli Limitada	2013-04-02	1	1	0
-Zambelli Limitada	2013-04-04	8	4	0
-Zambelli Limitada	2013-04-06	91	38	0
-Zambelli Limitada	2013-04-10	57	55	0
-Zambelli Limitada	2013-04-21	349	281	0
-Zambelli Limitada	2013-04-26	85	52	0
-Zambelli Limitada	2013-05-08	151	103	0
-Zambelli Limitada	2013-05-13	11	10	0
-Zambelli Limitada	2013-06-02	5	5	0
-Zambelli Limitada	2013-06-05	20	16	0
-Zambelli Limitada	2013-06-13	178	149	0
-Zambelli Limitada	2013-06-21	471	440	0
-Zambelli Limitada	2013-06-29	261	203	0
-Zambelli Limitada	2013-07-13	37	11	0
-Zambelli Limitada	2013-07-21	45	25	0
-Zambelli Limitada	2013-07-24	216	167	0
-Zambelli Limitada	2013-07-26	306	258	0
-Zambelli Limitada	2013-07-28	17	0	0
-Zambelli Limitada	2013-07-29	65	56	0
-Zambelli Limitada	2013-09-09	212	127	0
-Zambelli Limitada	2013-09-22	7	6	0
-Zambelli Limitada	2013-10-03	21	16	0
-Zambelli Limitada	2013-10-07	24	18	0
-Zambelli Limitada	2013-10-08	3	1	0
-Zambelli Limitada	2013-10-14	340	281	0
-Zambelli Limitada	2013-11-07	561	483	0
-Zambelli Limitada	2013-11-28	952	892	0
-Zambelli Limitada	2013-11-29	1470	1402	0
-Zambelli Limitada	2013-12-02	56	38	0
-Zambelli Limitada	2013-12-04	29	10	0
-Zambelli Limitada	2013-12-09	7199	7152	0
-Zambelli Limitada	2013-12-16	86	40	0
-Zambelli Limitada	2013-12-22	13	1	0
-Zambelli Limitada	2013-12-27	319	313	0
-Zambelli Limitada	2014-01-01	22	14	0
-Zambelli Limitada	2014-01-07	535	433	0
-Zambelli Limitada	2014-01-09	234	104	0
-Zambelli Limitada	2014-01-15	7	4	0
-Zambelli Limitada	2014-01-17	4	4	0
-Zambelli Limitada	2014-01-19	101	9	0
-Zambelli Limitada	2014-01-28	181	110	0
-Zambelli Limitada	2014-02-23	1	0	0
-Zambelli Limitada	2014-03-03	16	2	0
-Zambelli Limitada	2014-03-04	320	174	0
-Zambelli Limitada	2014-03-06	1214	914	0
-Zambelli Limitada	2014-03-10	104	39	0
-Zambelli Limitada	2014-03-11	12	0	0
-Zambelli Limitada	2014-03-12	605	253	0
-Zambelli Limitada	2014-03-13	47	16	0
-Zambelli Limitada	2014-03-14	193	171	0
-Zambelli Limitada	2014-03-18	254	211	0
-Zambelli Limitada	2014-03-19	164	10	0
-Zambelli Limitada	2014-03-20	131	108	0
-Zambelli Limitada	2014-03-24	845	702	0
-Zambelli Limitada	2014-03-28	6	0	0
-Zambelli Limitada	2014-04-07	249	135	0
-Zambelli Limitada	2014-04-10	931	531	0
-Zambelli Limitada	2014-04-11	10	5	0
-Zambelli Limitada	2014-04-22	4	0	0
-Zambelli Limitada	2014-04-23	1412	814	0
-Zambelli Limitada	2014-04-24	1013	893	0
-Zambelli Limitada	2014-04-25	160	37	0
-Zambelli Limitada	2014-04-30	610	401	0
-Zambelli Limitada	2014-05-03	599	441	0
-Zambelli Limitada	2014-05-04	719	422	0
-Zambelli Limitada	2014-05-05	703	355	0
-Zambelli Limitada	2014-05-07	227	152	0
-Zambelli Limitada	2014-05-09	932	567	0
-Zambelli Limitada	2014-05-10	27	15	0
-Zambelli Limitada	2014-05-11	655	539	0
-Zambelli Limitada	2014-05-12	342	254	0
-Zambelli Limitada	2014-05-13	403	200	0
-Zambelli Limitada	2014-05-14	559	371	0
-Zambelli Limitada	2014-05-15	831	640	0
-Zambelli Limitada	2014-05-16	500	383	0
-Zambelli Limitada	2014-05-17	21	7	0
-Zambelli Limitada	2014-05-20	529	314	0
-Zambelli Limitada	2014-05-31	204	176	0
-Zambelli Limitada	2014-06-13	20	14	0
-Zambelli Limitada	2014-06-27	477	131	0
-Zambelli Limitada	2014-07-13	163	76	0
-Zambelli Limitada	2014-07-14	197	128	0
-Zambelli Limitada	2014-07-16	127	84	0
-Zambelli Limitada	2014-08-02	9	0	0
-Zambelli Limitada	2014-08-04	885	419	0
-Zambelli Limitada	2014-08-07	43	14	0
-Zambelli Limitada	2014-08-08	319	283	0
-Zambelli Limitada	2014-08-09	268	76	0
-Zambelli Limitada	2014-08-11	766	475	0
-Zambelli Limitada	2014-08-18	239	131	0
-Zambelli Limitada	2014-08-24	1003	691	0
-Zambelli Limitada	2014-08-25	1061	585	0
-Zambelli Limitada	2014-08-26	903	514	0
-Zambelli Limitada	2014-08-27	514	374	0
-Zambelli Limitada	2014-08-28	297	210	0
-Zambelli Limitada	2014-09-04	61	43	0
-Zambelli Limitada	2014-09-05	164	112	0
-Zambelli Limitada	2014-09-15	14	7	0
-Zambelli Limitada	2014-11-13	348	224	0
-Zambelli Limitada	2014-11-19	2	1	0
-Zambelli Limitada	2014-11-21	71	35	0
-Zambelli Limitada	2014-11-22	83	62	0
-Zambelli Limitada	2014-11-23	1526	1416	6
-Zambelli Limitada	2014-11-24	88	42	0
-Zambelli Limitada	2014-11-25	19	14	0
-Zambelli Limitada	2014-11-27	13	5	0
-Zambelli Limitada	2014-12-03	21	6	0
-Zambelli Limitada	2014-12-04	64	55	0
-Zambelli Limitada	2014-12-07	380	254	0
-Zambelli Limitada	2014-12-17	21	7	0
-Zambelli Limitada	2014-12-18	36	4	0
-Zambelli Limitada	2014-12-19	34	21	0
-Zambelli Limitada	2014-12-20	11	8	0
-Zambelli Limitada	2014-12-21	176	98	0
-Zambelli Limitada	2014-12-22	94	65	0
-Zambelli Limitada	2014-12-23	5	0	0
-Zambelli Limitada	2014-12-25	43	28	0
-Zambelli Limitada	2014-12-30	23	10	0
-Zambelli Limitada	2014-12-31	10	0	0
-Zambelli Limitada	2015-01-04	100	51	0
-Zambelli Limitada	2015-01-07	1709	1645	0
-Zambelli Limitada	2015-01-08	6261	5936	0
-Zambelli Limitada	2015-01-09	2026	2026	0
-Zambelli Limitada	2015-01-10	33	14	0
-Zambelli Limitada	2015-01-13	50	44	0
-Zambelli Limitada	2015-01-14	159	29	0
-Zambelli Limitada	2015-01-20	10	10	0
-Zambelli Limitada	2015-01-22	641	582	0
-Zambelli Limitada	2015-01-25	88	56	0
+Zalitoar	2015-09-05	1	1	0
+Zapallo	2015-03-09	1	1	0
 Zarpi	2014-03-26	20	15	0
 Zarpi	2014-03-27	24	24	0
 Zartbitter	2010-08-20	1	0	0
+Zayana	2015-05-08	395	392	0
 ZeROZ7	2013-09-03	6	2	0
 Zegwego	2012-10-14	19	10	0
 Zentaurus	2012-09-21	2	2	0
@@ -2901,9 +3436,25 @@ Zuirdj	2012-05-21	2	0	0
 Zuirdj	2012-05-30	2	1	0
 Zurdo21	2011-04-09	3	2	0
 aaron ramirez	2015-01-09	1	1	0
+aarthy	2015-09-08	2	0	0
+abel801	2015-01-28	1	0	0
+abel801	2015-03-02	20	0	0
+abel801	2015-03-16	1	0	0
+abel801	2015-03-18	1	0	0
+abel801	2015-03-25	1	0	0
+abel801	2015-05-19	1	0	0
+abel801	2015-05-21	1	0	0
+abel801	2015-05-22	1	0	0
+abel801	2015-07-10	1	0	0
+abel801	2015-07-24	1	0	0
+abel801	2015-07-30	3	1	0
+abel801	2015-07-31	1	0	0
+abel801	2015-09-06	8	8	0
+ac3filter	2015-03-27	1	0	0
+ac3filter	2015-04-07	23	0	0
 aceman444	2013-08-22	3	0	0
 acracia	2007-10-22	7	6	0
-adiazv	2010-08-31	395	282	0
+adiazv	2010-08-31	395	282	1
 adiazv	2010-09-09	81	77	0
 adjuva	2011-08-11	1	0	0
 adjuva	2011-08-13	1	0	0
@@ -2916,6 +3467,7 @@ adjuva	2013-07-10	1	0	0
 adjuva	2014-03-15	1	0	0
 adjuva	2014-05-07	1	0	0
 adjuva	2014-05-29	1	0	0
+adjuva	2015-04-26	1	0	0
 afinney	2014-04-10	4	4	0
 afonin	2009-09-24	1	0	0
 agustinf	2011-04-09	2	2	0
@@ -2954,13 +3506,17 @@ aldogl	2014-02-27	34	23	0
 aldogl	2014-03-03	78	39	0
 aldogl	2014-04-07	8	7	0
 aldogl	2014-05-26	20	8	0
+aldogl	2015-04-16	86	60	0
+aldogl	2015-04-17	32	16	0
 aleandres	2012-10-01	9	9	0
+aleguiss	2015-02-18	6	6	0
 alejher	2012-12-26	2	1	0
 alekms07	2011-05-25	15	6	0
 alemeli	2011-09-22	2	2	0
 alemitrani	2014-09-09	5	1	0
 alemitrani	2014-09-11	4	1	0
 alemitrani	2014-09-12	4	4	0
+alemitrani	2015-08-03	3	3	0
 alexis collao	2013-09-09	23	21	0
 alexrudd	2009-01-03	139	0	0
 alexrudd	2009-01-04	206	0	0
@@ -2970,6 +3526,7 @@ alexrudd	2012-07-31	6	6	0
 alexrudd	2012-08-01	9	9	0
 alexrudd	2012-08-06	6	0	0
 alfonso_	2014-09-10	64	64	0
+allonai	2015-05-08	272	271	0
 allycelones	2013-04-01	1	1	0
 aloisita	2012-07-30	37	20	0
 alsina	2010-12-29	69	63	0
@@ -3004,18 +3561,25 @@ amonares	2014-11-17	118	89	0
 amonares	2014-11-18	20	8	0
 amonares	2014-12-14	2	0	0
 amonares	2014-12-16	45	43	0
-amuck	2011-04-15	47	27	1
+amonares	2015-06-08	28	2	0
+amonares	2015-06-28	3	1	0
+amonares	2015-07-11	10	4	0
+amuck	2011-04-15	47	27	0
 amuck	2011-05-07	4	2	0
 anahum	2013-02-27	17	15	0
 anbe4711	2014-09-30	11	9	0
 anbe4711	2014-11-16	22	17	0
 anbe4711	2014-11-17	4	4	0
 anbe4711	2014-11-18	5	5	0
+anbe4711	2016-01-13	2	2	0
 andifds	2010-08-31	21	18	0
 andifds	2012-03-08	765	485	0
 andreib	2013-04-23	1	0	0
 andrewpmk	2010-02-28	163	50	0
 andygol	2014-12-14	6	1	0
+andygol	2015-03-22	18	8	0
+andygol	2015-09-10	1	0	0
+andygol	2015-10-22	2	0	0
 anibalignacio	2014-09-20	2	1	0
 antonbas	2015-01-02	13	6	0
 antonbas	2015-01-05	3	0	0
@@ -3023,14 +3587,16 @@ aramire	2011-12-15	4	4	0
 argg	2010-09-15	81	39	0
 arielcardeal	2014-10-07	5	5	0
 armadores	2013-09-11	5	4	0
+arobinsoni	2015-09-29	11	11	0
 artekus	2013-08-28	2	0	0
 aterrile	2015-01-10	9	7	0
 bacanchileno	2013-12-05	1	0	0
 bahnpirat	2008-02-17	5	5	0
 bahnpirat	2010-02-27	12	12	0
-bahnpirat	2010-03-01	89	84	2
-bahnpirat	2011-01-12	91	91	1
+bahnpirat	2010-03-01	89	84	1
+bahnpirat	2011-01-12	91	91	0
 bahnpirat	2013-08-17	132	64	0
+bahnpirat	2015-05-29	60	36	0
 balladares	2012-07-24	2	2	0
 balrog-kun	2009-07-22	21	0	0
 batmanxcl	2010-03-30	3	3	0
@@ -3042,8 +3608,11 @@ benjags	2014-08-13	15	15	0
 benjaminmejias	2012-04-28	4	2	0
 bibliotank	2013-08-13	6	4	0
 bicimapa_enzopolo	2014-12-04	16	3	0
+bicimapa_enzopolo	2015-07-09	1	1	0
+biere64	2015-09-14	5	5	0
 bikepunk	2012-07-13	772	702	0
 blakyto	2011-04-12	47	22	0
+blitox	2015-09-08	5	5	0
 bpierreb	2013-03-02	59	48	0
 bpierreb	2013-03-05	223	151	0
 bpierreb	2014-09-21	72	3	0
@@ -3051,10 +3620,19 @@ bvivi	2014-09-11	1	1	0
 bypah88	2014-06-19	5	2	0
 bypah88	2014-08-15	42	42	0
 bypah88	2014-08-17	1	1	0
+bypah88	2015-03-04	1	0	0
+bypah88	2015-04-23	1	0	0
+calfarome	2015-01-27	2	0	0
+calfarome	2015-03-31	1	0	0
+calfarome	2015-05-20	1	0	0
+calfarome	2015-05-21	2	0	0
+calfarome	2015-06-01	1	1	0
+calfarome	2015-07-15	24	22	0
 capuz	2012-03-01	13	6	0
 capuz	2012-03-02	9	8	0
 carlitos gomez	2011-09-11	90	83	0
 carlos yokens	2015-01-09	22	18	0
+carlos_1	2015-05-07	150	5	0
 carlos_felo	2012-05-02	32	10	0
 carlos_felo	2012-05-03	169	101	0
 carlos_felo	2012-06-30	4	3	0
@@ -3068,6 +3646,30 @@ cdavila	2012-05-11	29	3	0
 cdavila	2013-05-21	1	0	0
 cduarteguaman	2014-04-15	14	14	0
 cello	2012-11-17	35	35	0
+cephei1313	2015-05-19	10	1	0
+cephei1313	2015-05-21	1	0	0
+cephei1313	2015-09-06	237	146	0
+cephei1313	2015-09-07	214	116	0
+cephei1313	2015-09-08	13	12	0
+cephei1313	2015-09-09	274	6	0
+cephei1313	2015-09-13	5	5	0
+cephei1313	2015-09-17	171	150	0
+cephei1313	2015-09-18	50	50	0
+cephei1313	2015-09-19	97	73	0
+cephei1313	2015-09-20	317	289	0
+cephei1313	2015-09-21	69	50	0
+cephei1313	2015-09-22	90	72	0
+cephei1313	2015-09-23	785	344	0
+cephei1313	2015-09-26	65	56	0
+cephei1313	2015-09-27	349	256	0
+cephei1313	2015-09-29	3	0	0
+cephei1313	2015-10-04	106	62	0
+cephei1313	2015-10-05	22	7	0
+cephei1313	2015-10-10	50	15	0
+cephei1313	2015-10-12	85	79	0
+cephei1313	2015-10-18	14	7	0
+cephei1313	2015-10-20	32	28	0
+cephei1313	2015-11-01	2	2	0
 ceyockey	2010-02-28	14	1	0
 ceyockey	2010-03-01	2	1	0
 ceyockey	2010-03-02	1	0	0
@@ -3124,8 +3726,33 @@ cserpell	2014-11-21	2	1	0
 cserpell	2014-11-26	4	0	0
 cserpell	2014-12-19	4	2	0
 cserpell	2015-01-02	8	6	0
+cserpell	2015-01-27	1	1	0
+cserpell	2015-04-12	1	1	0
+cserpell	2015-04-15	3	0	0
+cserpell	2015-05-25	5	5	0
+cserpell	2015-05-27	31	21	0
+cserpell	2015-06-09	3	3	0
+cserpell	2015-06-27	1	0	0
+cserpell	2015-07-09	1	1	0
+cserpell	2015-07-15	4	4	0
+cserpell	2015-07-24	56	56	0
+cserpell	2015-07-28	4	4	0
+cserpell	2015-08-04	20	16	0
+cserpell	2015-08-05	31	30	0
+cserpell	2015-09-11	6	6	0
+cserpell	2015-09-14	1	1	0
+cserpell	2015-10-15	1	1	0
+cserpell	2015-10-31	1	1	0
+cserpell	2015-12-01	1	1	0
+cserpell	2015-12-07	4	3	0
+cserpell	2015-12-28	5	5	0
+cserpell	2015-12-29	2	2	0
+cserpell	2016-01-06	1	1	0
+cserpell	2016-01-07	1	1	0
+cserpell	2016-01-12	12	12	0
 cvillavicencio	2011-05-10	24	20	0
 cvillavicenciog	2014-11-18	16	15	0
+daavable	2015-04-01	1	0	0
 damianverde	2010-12-05	1	1	0
 danifariasm	2014-08-26	13	13	0
 danifariasm	2014-08-27	81	64	0
@@ -3136,10 +3763,25 @@ dannykath	2014-11-24	1	1	0
 dannykath	2014-12-09	1	1	0
 dannykath	2015-01-02	1	0	0
 dannykath	2015-01-15	2	2	0
+dannykath	2015-03-26	5	0	0
+dannykath	2015-07-15	2	0	0
+dannykath	2015-07-17	3	0	0
+dannykath	2015-07-24	3	0	0
+dannykath	2015-07-30	1	0	0
+dannykath	2015-08-03	1	0	0
+dannykath	2015-09-08	1	1	0
 danzed	2013-10-28	1	0	0
 darkinquirer	2010-08-15	66	35	0
 darkinquirer	2010-08-16	27	10	0
 dasher	2010-05-28	3	1	0
+davidgimenezcsw	2015-07-06	7	7	0
+davidgimenezcsw	2015-07-08	12	2	0
+davidgimenezcsw	2015-07-13	1	1	0
+davidgimenezcsw	2015-07-14	5	2	0
+davidgimenezcsw	2015-11-20	1	1	0
+davidgimenezcsw	2015-11-23	67	30	0
+davidgimenezcsw	2015-11-25	33	13	0
+davidgimenezcsw	2015-12-01	2	0	0
 davisdrumkey	2012-03-28	3	1	0
 davisdrumkey	2012-03-29	4	2	0
 davisdrumkey	2013-07-26	6	0	0
@@ -3219,6 +3861,15 @@ dbusse	2014-12-27	5	3	0
 dbusse	2014-12-31	1	0	0
 dbusse	2015-01-02	1	0	0
 dbusse	2015-01-03	2	0	0
+dbusse	2015-04-03	2	1	0
+dbusse	2015-06-02	3	0	0
+dbusse	2015-06-07	1	1	0
+dbusse	2015-06-12	23	5	0
+dbusse	2015-06-14	2	0	0
+dbusse	2015-06-28	16	2	0
+dbusse	2015-07-03	23	4	0
+dbusse	2015-10-10	1	0	0
+dbusse	2016-01-06	6	6	0
 dcs	2011-03-04	2	0	0
 denialito	2010-11-17	1	0	0
 dennistobar	2012-04-17	4	3	0
@@ -3236,6 +3887,7 @@ dennistobar	2012-05-17	81	72	0
 dennistobar	2012-10-01	12	2	0
 dennistobar	2012-11-29	17	0	0
 dennistobar	2014-04-14	1	0	0
+dennistobar	2015-06-22	2	0	0
 dequin	2012-04-16	1	1	0
 destartalado	2013-03-17	3	2	0
 devildickcl	2014-05-15	6	5	0
@@ -3243,7 +3895,10 @@ devildickcl	2014-07-01	11	11	0
 dexterex	2010-06-05	4	1	0
 dexterex	2010-06-11	15	0	0
 dexterex	2011-10-01	11	11	0
+dfalegri	2015-05-08	308	308	0
 dforsi	2008-04-26	1	0	0
+dhergos	2015-01-28	46	23	0
+dhergos	2015-01-29	1	0	0
 diazvernon	2011-01-19	8	1	0
 didier2020	2012-08-10	4	0	0
 dieMadl	2013-01-12	1	0	0
@@ -3255,7 +3910,7 @@ diegogarq	2014-04-02	1	1	0
 diegogarq	2014-04-23	2	2	0
 diegogarq	2014-09-24	1	1	0
 diegox	2013-07-03	59	41	0
-diegoxlopez	2010-11-29	13001	13001	3
+diegoxlopez	2010-11-29	13001	13001	2
 dieterdreist	2011-06-21	37	18	0
 digital0533	2014-03-23	6	0	0
 dimh	2010-11-08	6	5	0
@@ -3295,7 +3950,7 @@ dintrans_g	2012-07-30	560	478	0
 dintrans_g	2012-07-31	1141	757	0
 dintrans_g	2012-08-01	124	79	0
 dintrans_g	2012-08-03	272	195	0
-dintrans_g	2012-08-06	971	913	0
+dintrans_g	2012-08-06	971	913	2
 dintrans_g	2012-08-07	553	448	0
 dintrans_g	2012-08-08	1	1	0
 dintrans_g	2012-08-13	348	288	0
@@ -3323,7 +3978,7 @@ dintrans_g	2012-10-11	9	6	0
 dintrans_g	2012-10-19	580	282	0
 dintrans_g	2012-10-20	956	906	0
 dintrans_g	2012-10-21	806	570	0
-dintrans_g	2012-10-22	196	100	0
+dintrans_g	2012-10-22	196	100	1
 dintrans_g	2012-10-25	49	16	0
 dintrans_g	2012-11-07	1410	1086	0
 dintrans_g	2012-11-11	213	130	0
@@ -3367,7 +4022,7 @@ dintrans_g	2013-05-21	81	15	0
 dintrans_g	2013-06-06	138	85	0
 dintrans_g	2013-06-08	188	119	0
 dintrans_g	2013-06-09	207	121	0
-dintrans_g	2013-06-10	1143	879	0
+dintrans_g	2013-06-10	1143	879	2
 dintrans_g	2013-06-11	926	583	0
 dintrans_g	2013-06-12	244	44	0
 dintrans_g	2013-07-06	1650	1104	0
@@ -3383,17 +4038,17 @@ dintrans_g	2013-08-04	297	203	0
 dintrans_g	2013-08-06	554	406	0
 dintrans_g	2013-08-14	1118	996	0
 dintrans_g	2013-08-21	122	117	0
-dintrans_g	2013-08-23	785	720	0
+dintrans_g	2013-08-23	785	720	1
 dintrans_g	2013-08-25	359	338	0
 dintrans_g	2013-08-26	40	33	0
 dintrans_g	2013-09-03	668	544	0
-dintrans_g	2013-09-04	69	62	2
+dintrans_g	2013-09-04	69	62	1
 dintrans_g	2013-09-05	69	54	0
 dintrans_g	2013-10-07	306	230	0
 dintrans_g	2013-10-09	1056	920	0
 dintrans_g	2013-10-10	108	91	0
 dintrans_g	2013-10-29	294	213	0
-dintrans_g	2013-11-23	7	7	0
+dintrans_g	2013-11-23	7	7	2
 dintrans_g	2013-11-24	292	224	0
 dintrans_g	2013-12-04	1	1	0
 dintrans_g	2013-12-08	437	418	0
@@ -3403,7 +4058,7 @@ dintrans_g	2013-12-11	667	611	0
 dintrans_g	2014-01-06	56	54	0
 dintrans_g	2014-01-13	90	80	0
 dintrans_g	2014-01-14	377	322	0
-dintrans_g	2014-02-03	458	447	0
+dintrans_g	2014-02-03	458	447	1
 dintrans_g	2014-02-11	229	195	0
 dintrans_g	2014-02-12	70	40	0
 dintrans_g	2014-02-22	126	81	0
@@ -3437,7 +4092,50 @@ dintrans_g	2015-01-19	153	121	0
 dintrans_g	2015-01-20	189	71	0
 dintrans_g	2015-01-22	381	262	0
 dintrans_g	2015-01-23	251	222	0
+dintrans_g	2015-01-26	99	70	0
+dintrans_g	2015-01-28	39	24	0
+dintrans_g	2015-02-02	103	55	0
+dintrans_g	2015-02-03	127	115	0
+dintrans_g	2015-02-05	363	202	0
+dintrans_g	2015-02-06	10	0	0
+dintrans_g	2015-02-10	53	23	0
+dintrans_g	2015-02-11	39	12	0
+dintrans_g	2015-02-25	33	8	0
+dintrans_g	2015-02-27	46	7	0
+dintrans_g	2015-03-02	2	0	0
+dintrans_g	2015-03-03	64	42	0
+dintrans_g	2015-03-04	69	51	0
+dintrans_g	2015-03-05	76	51	0
+dintrans_g	2015-03-06	10	5	0
+dintrans_g	2015-03-09	430	306	0
+dintrans_g	2015-03-12	75	59	0
+dintrans_g	2015-03-20	117	64	0
+dintrans_g	2015-03-21	26	10	0
+dintrans_g	2015-04-10	539	372	0
+dintrans_g	2015-04-14	86	51	0
+dintrans_g	2015-04-15	302	178	0
+dintrans_g	2015-04-20	261	68	0
+dintrans_g	2015-04-21	1	1	0
+dintrans_g	2015-04-27	30	15	0
+dintrans_g	2015-04-29	8	6	0
+dintrans_g	2015-05-01	2016	1454	0
+dintrans_g	2015-05-02	1120	918	0
+dintrans_g	2015-05-06	386	221	0
+dintrans_g	2015-05-07	139	78	0
+dintrans_g	2015-05-08	774	643	0
+dintrans_g	2015-05-12	51	31	0
+dintrans_g	2015-05-13	181	105	0
+dintrans_g	2015-05-17	170	109	0
+dintrans_g	2015-05-18	286	219	0
+dintrans_g	2015-05-25	100	67	0
+dintrans_g	2015-05-29	14	8	0
+dintrans_g	2015-05-30	51	31	0
+dintrans_g	2015-06-01	9	6	0
+dintrans_g	2015-06-20	158	127	0
+dintrans_g	2015-11-06	1	1	0
 djsonicdh	2012-02-29	6	4	0
+dk_hk	2015-07-09	1	0	0
+dk_hk	2015-07-20	1	0	0
 dmgroom	2010-02-28	426	6	0
 dmgroom	2010-03-08	82	0	0
 dmgroom	2010-03-09	299	0	0
@@ -3452,11 +4150,20 @@ docacruz	2011-10-22	14	9	0
 dongordo	2013-03-02	26	26	0
 dperezrada	2008-03-04	13	13	0
 dperezrada	2008-03-06	38	23	0
+dsco1111	2015-12-02	44	43	0
+dsco1111	2015-12-03	46	45	0
+dsco1111	2015-12-07	50	46	0
+dsco1111	2015-12-14	55	51	0
+dsco1111	2015-12-15	44	42	0
+dsco1111	2015-12-16	12	12	0
+dsco1111	2015-12-17	67	62	0
+dsco1111	2015-12-18	11	11	0
 dugite	2014-11-24	1	1	0
 eBin	2014-07-16	3	0	0
 e_cerda	2011-05-22	4	1	0
 e_hekuta	2014-10-18	6	6	0
 eabedrapo	2014-09-06	9	2	0
+eaburto	2015-03-15	3	3	0
 ebenavides	2011-04-26	37	7	0
 ecespedesd	2014-09-05	84	84	0
 ecrayo	2012-03-01	8	5	0
@@ -3465,9 +4172,14 @@ ediyes	2014-07-17	11	11	0
 ediyes	2014-07-22	1	0	0
 ediyes	2014-08-11	1	0	0
 ediyes	2014-12-16	1	1	0
+ediyes	2015-03-12	9	0	0
+ediyes	2015-05-28	3	0	0
+ediyes	2015-07-24	1	1	0
+ediyes	2015-09-04	1	0	0
+ediyes	2015-09-07	5	5	0
 elMau	2008-11-14	17	0	0
-elbosquedigital	2013-04-29	2	1	0
-elbosquedigital	2013-04-30	1	0	0
+elcsar	2015-02-03	3	2	0
+elcsar	2015-05-17	3	3	0
 eldwin	2013-05-08	12	1	0
 eldwin	2013-05-11	4	1	0
 elkatu	2011-07-08	20	0	0
@@ -3477,7 +4189,7 @@ elpeyuko	2013-01-03	88	5	0
 emacsen_dwg	2014-11-09	1	0	0
 emacsen_dwg	2014-11-24	2	0	0
 emanuelrr	2014-09-10	57	48	0
-emanuelrr	2014-11-27	1680	1679	1
+emanuelrr	2014-11-27	1680	1679	0
 emanuelrr	2014-11-28	873	871	0
 emanuelrr	2015-01-03	52	51	0
 enrconc	2011-06-16	4	2	0
@@ -3526,6 +4238,17 @@ ernestogon	2015-01-01	6	5	0
 ernestogon	2015-01-23	2	0	0
 ernestogon	2015-01-24	2	0	0
 ernestogon	2015-01-25	44	33	0
+ernestogon	2015-01-27	12	2	0
+ernestogon	2015-01-28	3	0	0
+ernestogon	2015-03-22	6	1	0
+ernestogon	2015-04-27	2	1	0
+ernestogon	2015-06-16	20	2	0
+ernestogon	2015-07-18	7	2	0
+ernestogon	2015-07-28	2	1	0
+ernestogon	2015-07-29	157	115	0
+ernestogon	2015-08-01	47	29	0
+ernestogon	2015-08-24	3	2	0
+ernestogon	2015-08-25	14	4	0
 esquirla	2013-08-06	1	1	0
 eumiro	2009-11-22	2	0	0
 euyin	2011-11-14	8	4	0
@@ -3533,6 +4256,9 @@ euyin	2011-11-17	6	6	0
 eveyeti	2011-04-10	4	1	0
 exgaete	2014-08-03	1	0	0
 exgaete	2014-08-13	3	1	0
+exgaete	2015-07-20	69	61	0
+exgaete	2015-07-21	72	31	0
+exgaete	2015-07-22	1	0	0
 fabianeduardocg	2014-09-04	9	6	0
 fagervan	2011-01-15	8	0	0
 fathermocker	2014-03-02	54	42	0
@@ -3545,7 +4271,7 @@ felipeacsi	2010-02-18	10	10	0
 felipeacsi	2010-02-19	417	76	0
 felipeacsi	2010-02-20	116	82	0
 felipeacsi	2010-02-21	52	11	0
-felipeacsi	2010-02-23	33	19	1
+felipeacsi	2010-02-23	33	19	0
 felipeacsi	2010-02-24	4	4	0
 felipeacsi	2010-02-25	21	16	0
 felipeacsi	2010-02-26	2	0	0
@@ -3625,14 +4351,26 @@ felipeacsi	2013-11-19	76	76	0
 felipeacsi	2013-12-05	3	1	0
 felipeacsi	2014-07-29	7	5	0
 felipeacsi	2014-12-21	4	0	0
+felipeacsi	2015-02-05	55	44	0
+felipeacsi	2015-03-09	1	1	0
+felipeacsi	2015-03-13	1	0	0
+felipeacsi	2015-03-18	4	1	0
+felipeacsi	2015-03-19	4	0	0
+felipeacsi	2015-04-09	1	0	0
+felipeacsi	2015-11-10	1	0	0
+felipeacsi	2015-12-03	2	0	0
+felipeacsi	2015-12-29	10	1	0
+felipeacsi	2015-12-30	69	29	0
+felipeacsi	2015-12-31	2	0	0
+felipeacsi	2016-01-01	93	92	0
 felipeedwards	2010-09-30	2	1	0
 felipeedwards	2010-10-11	20	20	0
 felipeedwards	2010-10-19	131	104	0
 felipeedwards	2010-10-27	143	140	0
 felipeedwards	2010-10-31	288	262	0
-felipeedwards	2010-11-15	1138	1027	2
+felipeedwards	2010-11-15	1138	1027	3
 felipeedwards	2010-11-16	295	276	0
-felipeedwards	2010-11-22	10	4	0
+felipeedwards	2010-11-22	10	4	1
 felipeedwards	2010-11-28	70	61	0
 felipeedwards	2010-11-29	76	59	0
 felipeedwards	2010-11-30	73	33	0
@@ -3666,7 +4404,7 @@ felipeedwards	2011-01-25	1390	1217	0
 felipeedwards	2011-01-28	228	184	0
 felipeedwards	2011-01-30	221	181	0
 felipeedwards	2011-01-31	1	1	0
-felipeedwards	2011-02-03	8	8	1
+felipeedwards	2011-02-03	8	8	0
 felipeedwards	2011-03-02	22	12	0
 felipeedwards	2011-03-10	419	198	0
 felipeedwards	2011-03-15	5	5	0
@@ -3676,7 +4414,7 @@ felipeedwards	2011-05-02	35	35	0
 felipeedwards	2011-05-05	14	0	0
 felipeedwards	2011-05-06	828	796	0
 felipeedwards	2011-05-07	308	218	0
-felipeedwards	2011-05-08	276	231	2
+felipeedwards	2011-05-08	276	231	0
 felipeedwards	2011-05-09	679	646	0
 felipeedwards	2011-05-10	23	7	0
 felipeedwards	2011-05-18	228	219	0
@@ -3854,7 +4592,7 @@ felipeedwards	2013-03-08	108	28	0
 felipeedwards	2013-03-10	117	48	0
 felipeedwards	2013-03-14	20	19	0
 felipeedwards	2013-03-15	18	12	0
-felipeedwards	2013-03-18	226	179	1
+felipeedwards	2013-03-18	226	179	0
 felipeedwards	2013-03-21	53	41	0
 felipeedwards	2013-03-24	128	89	0
 felipeedwards	2013-03-25	536	522	0
@@ -3991,7 +4729,7 @@ felipeedwards	2013-12-04	30	16	0
 felipeedwards	2013-12-05	131	8	0
 felipeedwards	2013-12-07	8	3	0
 felipeedwards	2013-12-12	5	2	0
-felipeedwards	2013-12-13	133	118	0
+felipeedwards	2013-12-13	133	118	1
 felipeedwards	2013-12-16	38	21	0
 felipeedwards	2013-12-17	24	6	0
 felipeedwards	2013-12-18	11	0	0
@@ -4036,7 +4774,7 @@ felipeedwards	2014-10-01	94	28	0
 felipeedwards	2014-10-06	230	192	0
 felipeedwards	2014-10-10	131	64	0
 felipeedwards	2014-10-12	17	11	0
-felipeedwards	2014-10-15	1487	1452	0
+felipeedwards	2014-10-15	1487	1452	1
 felipeedwards	2014-10-16	40	35	0
 felipeedwards	2014-10-31	2	0	0
 felipeedwards	2014-11-01	22	17	0
@@ -4051,6 +4789,39 @@ felipeedwards	2014-12-30	5	5	0
 felipeedwards	2015-01-14	13	8	0
 felipeedwards	2015-01-16	60	28	0
 felipeedwards	2015-01-25	44	29	0
+felipeedwards	2015-02-09	48	44	0
+felipeedwards	2015-02-13	6	6	0
+felipeedwards	2015-03-10	1	1	0
+felipeedwards	2015-03-14	91	76	0
+felipeedwards	2015-03-15	35	14	0
+felipeedwards	2015-04-07	190	116	0
+felipeedwards	2015-04-08	21	5	0
+felipeedwards	2015-04-22	10	8	0
+felipeedwards	2015-04-24	32	20	0
+felipeedwards	2015-04-26	1	1	0
+felipeedwards	2015-04-27	19	18	0
+felipeedwards	2015-04-28	40	40	0
+felipeedwards	2015-05-17	25	3	0
+felipeedwards	2015-06-04	54	23	0
+felipeedwards	2015-06-09	25	5	0
+felipeedwards	2015-06-21	8	0	0
+felipeedwards	2015-07-29	32	32	0
+felipeedwards	2015-08-17	20	13	0
+felipeedwards	2015-08-22	28	1	0
+felipeedwards	2015-08-26	158	138	0
+felipeedwards	2015-08-27	1	1	0
+felipeedwards	2015-08-28	31	17	0
+felipeedwards	2015-09-02	1	0	0
+felipeedwards	2015-09-14	7	3	0
+felipeedwards	2015-09-15	251	174	0
+felipeedwards	2015-09-16	18	14	0
+felipeedwards	2015-09-17	2	0	0
+felipeedwards	2015-10-12	35	26	0
+felipeedwards	2015-10-24	31	19	0
+felipeedwards	2015-11-05	107	96	0
+felipeedwards	2015-12-26	23	20	0
+felipeedwards	2015-12-27	201	145	0
+felipeedwards	2016-01-16	46	33	0
 felipegalvez	2011-04-09	6	0	0
 felipegalvez	2011-04-15	3	1	0
 felipeigman	2011-04-27	3	3	0
@@ -4061,6 +4832,8 @@ fespana	2009-06-02	7	0	0
 ffuentes	2008-10-30	11	0	0
 filoii	2011-11-15	6	6	0
 fireball2	2010-08-06	1	0	0
+flabra_OSM	2015-07-08	219	219	0
+fmardones	2015-02-18	6	0	0
 fmbb	2012-04-06	6	0	0
 fmoris	2012-02-26	3	1	0
 fmoris	2012-06-06	51	0	0
@@ -4081,8 +4854,10 @@ gabycardenas	2012-07-12	1	1	0
 gabycardenas	2012-08-09	1	1	0
 gaspard	2014-03-10	3	3	0
 gdiazc	2014-01-15	9	7	0
+geodreieck4711	2015-06-22	6	0	0
 geogps	2010-10-27	1	1	0
 geozeisig	2014-10-13	2	0	0
+geozeisig	2015-12-05	18	7	0
 gerital	2009-12-19	43	43	0
 gerital	2010-01-12	52	52	0
 gerital	2010-02-01	30	30	0
@@ -4099,7 +4874,7 @@ gfhuertac	2013-02-15	1	1	0
 ggalaz	2011-04-08	10	0	0
 gongeek	2012-10-13	7	7	0
 gonzalo-bulnes	2012-08-15	69	68	0
-gorasch	2011-04-30	2	2	0
+gorasch	2011-04-30	2	2	1
 gormur	2010-08-13	1	0	0
 gormur	2011-01-01	1	0	0
 gormur	2011-01-05	1	0	0
@@ -4114,6 +4889,7 @@ gpscl	2013-05-07	7	4	0
 gquezada	2011-04-25	1	0	0
 grupoTOMA	2014-04-10	6	5	0
 gsalguero	2014-11-21	7	7	0
+gsalguero	2015-01-28	1	0	0
 guzzi333	2011-06-07	1	1	0
 gviertel	2010-08-30	3	1	0
 gwieching	2010-01-30	17	14	0
@@ -4136,8 +4912,24 @@ helloworld_cl	2013-08-31	4	3	0
 helloworld_cl	2013-09-05	149	73	0
 helloworld_cl	2013-09-06	322	116	0
 helloworld_cl	2013-09-17	4	1	0
+henry gardo	2015-08-31	5	5	0
+henry gardo	2015-09-01	53	8	0
+henry gardo	2015-09-02	157	120	0
+henry gardo	2015-09-05	20	18	0
+henry gardo	2015-09-06	64	42	0
+henry gardo	2015-09-07	21	11	0
+henry gardo	2015-09-09	34	1	0
+henry gardo	2015-09-10	21	18	0
+henry gardo	2015-09-11	83	56	0
+henry gardo	2015-09-12	73	66	0
+henry gardo	2015-09-13	106	66	0
+henry gardo	2015-09-14	51	29	0
+henry gardo	2015-09-15	4	3	0
+henry gardo	2015-09-16	11	6	0
 hescobar	2013-06-25	6	2	0
-higa4	2010-03-01	51	51	1
+hfdez	2015-05-08	90	90	0
+hfdez	2015-07-24	11	10	0
+higa4	2010-03-01	51	51	2
 hodavame	2009-09-09	3	3	0
 holajorgehola	2015-01-01	4	1	0
 holodoc	2009-09-01	21	0	0
@@ -4151,8 +4943,11 @@ humano7	2014-04-11	1	1	0
 hybridOL	2014-10-05	1	0	0
 hybridOL	2014-10-09	13	1	0
 hybridOL	2014-10-13	64	59	0
+hybridOL	2015-12-01	30	2	0
+iWowik	2015-03-12	2	0	0
 iamsputnik	2014-11-24	2	0	0
 ian29	2013-04-01	1	0	0
+ianyon	2015-09-21	4	3	0
 ibp_zippy	2012-03-10	7	1	0
 ibp_zippy	2012-03-12	51	46	0
 ibp_zippy	2012-03-15	195	172	0
@@ -4213,19 +5008,34 @@ ignacioabe	2014-11-07	96	0	0
 ignacioabe	2014-11-17	99	60	0
 ignacioabe	2014-11-18	85	38	0
 ignacioabe	2014-12-03	1	1	0
+ignacioabe	2015-02-25	5	3	0
+ignacioabe	2015-03-09	2	0	0
+ignacioabe	2015-04-16	1	1	0
+ignacioabe	2015-06-01	7	6	0
+ignacioabe	2015-06-19	28	7	0
+ignacioabe	2015-08-21	87	60	0
+ignacioabe	2015-09-03	9	9	0
+ignacioabe	2015-10-24	1	1	0
+ignacioabe	2015-11-08	1	0	0
+ignacioabe	2016-01-06	12	12	0
+ignacioabe	2016-01-12	130	44	0
+ignacioabe	2016-01-14	2	2	0
 ihto9acR8k	2013-05-06	43	31	0
 ihto9acR8k	2014-05-09	2	2	0
 ihto9acR8k	2014-05-17	1	1	0
 ilarrain	2010-08-30	1	0	0
 ilarrain	2013-09-10	10	1	0
 intib	2011-08-16	6	6	0
+ishido takahashi	2015-10-15	9	3	0
+ishido takahashi	2015-10-16	4	2	0
 ismaelsalamea	2011-03-21	1	1	0
 itbsadmin	2012-03-08	10	4	0
 itbsadmin	2012-03-09	86	78	0
 ivancini	2014-11-30	2	1	0
 ivancini	2014-12-01	2	0	0
-ivanksaade93	2011-12-07	108	106	1
-ivanksaade93	2011-12-18	171	171	0
+ivancini	2015-06-04	1	0	0
+ivanksaade93	2011-12-07	108	106	0
+ivanksaade93	2011-12-18	171	171	1
 ivannunez	2012-12-11	5	5	0
 ivannunez	2012-12-12	107	43	0
 ivannunez	2012-12-23	88	33	0
@@ -4264,9 +5074,12 @@ jcumian	2013-11-24	97	46	0
 jeceledon	2010-04-05	10	9	0
 jeceledon	2010-04-11	34	34	0
 jegrez	2011-04-10	12	5	0
+jengelh	2015-05-03	1	0	0
 jespejo	2012-09-20	82	48	0
 jespejo	2012-09-21	40	39	0
 jgarciaa	2009-01-21	108	0	0
+jgavila2901	2015-07-06	5	5	0
+jhonnygarces	2015-05-08	319	319	0
 jjeanneret	2013-01-29	14	0	0
 jjeanneret	2013-11-08	12	12	0
 jjoo	2012-08-03	1	1	0
@@ -4274,7 +5087,9 @@ jmolinak	2011-04-02	38	7	0
 jmolinak	2011-06-29	9	9	0
 joakino	2013-06-07	61	12	0
 joaquincha	2011-04-08	78	18	0
+johanemilsson	2015-04-28	6	1	0
 jonasarnfred	2012-04-29	25	0	0
+joncadierno	2015-05-08	139	139	0
 joolivar	2013-05-20	1	1	0
 joost schouppe	2014-05-04	1	1	0
 joost schouppe	2014-05-05	8	8	0
@@ -4282,15 +5097,43 @@ joost schouppe	2014-05-19	4	4	0
 joost schouppe	2014-12-18	1	1	0
 joost schouppe	2014-12-27	8	6	0
 joost schouppe	2015-01-07	37	35	0
+joost schouppe	2015-04-27	3	3	0
+jorgec87	2015-06-18	1	1	0
 joseschulbach	2014-08-27	128	78	0
 joso	2011-01-04	6	3	0
 joso	2012-03-19	2	1	0
+jotab	2016-01-15	2	2	0
+jotab	2016-01-16	1	1	0
+jparaya	2015-08-26	13	13	0
+jparaya	2015-08-27	35	35	0
 jpcortes	2013-02-14	2	1	0
+jpindependencia	2015-04-23	6	6	0
+jpindependencia	2015-04-24	15	1	0
 jpt	2010-11-18	2	0	0
+jptolosa87	2015-03-15	1	0	0
+jptolosa87	2015-03-16	1	0	0
+jptolosa87	2015-03-19	27	11	0
+jptolosa87	2015-04-06	2	0	0
+jptolosa87	2015-04-11	2	0	0
+jptolosa87	2015-04-13	1	1	0
+jptolosa87	2015-04-29	151	95	0
+jptolosa87	2015-05-07	1	0	0
+jptolosa87	2015-06-18	10	3	0
+jptolosa87	2015-06-20	224	64	0
+jptolosa87	2015-06-21	4	2	0
+jptolosa87	2015-06-22	57	50	0
+jptolosa87	2015-09-30	1	1	0
 jquense	2013-04-23	3	3	0
 jquense	2014-07-01	4	2	0
 jsantand	2009-11-11	12	0	0
 jtrh	2011-09-19	1	0	0
+jtrh	2015-05-08	3	2	0
+jtrh	2015-05-09	2	1	0
+jtrh	2015-05-11	3	0	0
+jtrh	2015-09-12	19	16	0
+jtrh	2015-09-14	1	1	0
+jtrh	2015-10-08	1	0	0
+julia7788	2015-04-17	337	337	0
 juliohernandez	2014-08-29	6	6	0
 juliohernandez	2014-09-05	22	22	0
 juvasu	2010-08-30	34	1	0
@@ -4300,11 +5143,23 @@ kaipi	2012-03-01	15	15	0
 kaipi	2012-03-02	6	1	0
 kamello	2014-02-03	2	1	0
 kamello	2014-02-19	12	11	0
+kamello	2015-06-09	6	2	0
+kamello	2015-06-15	8	7	0
 karenfarias	2014-09-07	36	32	0
 karinarv	2011-10-21	16	8	0
-katpatuka	2009-01-31	364	4	2
+karitotp	2015-03-24	24	0	0
+karitotp	2015-04-21	2	1	0
+karitotp	2015-07-13	2	0	0
+karitotp	2015-07-14	5	2	0
+karitotp	2015-07-16	18	3	0
+karitotp	2015-07-17	4	2	0
+karitotp	2015-07-21	1	1	0
+karitotp	2015-07-22	1	0	0
+karitotp	2015-09-04	1	0	0
+katpatuka	2009-01-31	364	4	1
 katpatuka	2010-02-27	5	5	0
 khrysRo	2015-01-19	7	4	0
+kisaa	2015-05-23	1	0	0
 klauxunicha	2013-11-04	150	110	0
 klauxunicha	2013-11-05	1	0	0
 klauxunicha	2013-12-12	12	9	0
@@ -4315,6 +5170,7 @@ klauxunicha	2014-06-08	7	6	0
 klauxunicha	2014-11-26	4	4	0
 klauxunicha	2014-11-27	7	6	0
 knito	2011-05-03	1	0	0
+kokoto	2015-11-30	2	0	0
 konus	2011-10-25	1	0	0
 kreaweb	2012-08-02	39	23	0
 krotovshamil	2014-11-28	1	0	0
@@ -4324,6 +5180,7 @@ kunyasobe	2012-04-08	115	63	0
 kunyasobe	2012-04-11	18	0	0
 kunyasobe	2012-05-11	30	22	0
 kunyasobe	2012-05-16	24	0	0
+kunyasobe	2015-07-12	7	7	0
 kuro hirano	2014-07-16	25	25	0
 kuroganemiyamoto	2011-02-17	11	8	0
 kuroganemiyamoto	2011-02-22	6	0	0
@@ -4334,6 +5191,7 @@ landfahrer	2013-07-18	2	2	0
 lcatalanm	2012-05-21	1	0	0
 lecnip	2014-10-01	17	16	0
 leo_massu	2014-04-04	7	6	0
+leoret	2015-02-04	1	0	0
 lesko987	2013-08-14	1	0	0
 lesko987	2013-08-16	3	0	0
 lesko987	2013-09-09	8	0	0
@@ -4341,7 +5199,9 @@ lhernandez	2012-03-10	2	1	0
 lipee	2011-07-16	1	0	0
 liturra	2012-10-04	16	14	0
 liturra	2012-10-06	8	5	0
+lks1	2015-11-20	2	0	0
 lmolina	2011-12-08	17	15	0
+lock3	2015-12-24	3	3	0
 locoparanoico	2011-01-19	16	9	0
 locoparanoico	2011-01-20	8	6	0
 locoparanoico	2011-05-01	5	5	0
@@ -4353,13 +5213,35 @@ luchooo	2014-01-04	687	255	0
 luchooo	2014-01-05	1391	429	0
 luchooo	2014-01-06	2758	956	0
 luchooo	2014-01-07	386	103	0
+luciamoretti	2015-03-11	16	16	0
 lugar_citadino	2010-12-03	39	38	0
 luinux	2009-09-26	29	1	0
 luis patricio	2011-07-06	12	11	0
 luisatala	2008-08-23	101	100	0
 luisatala	2009-09-21	19	16	0
 luiscast	2012-04-11	2	2	0
+luiscast	2015-10-20	1	1	0
 lyx	2010-03-12	4	4	0
+macabm	2015-05-14	8	8	0
+macabm	2015-05-17	66	66	0
+macabm	2015-05-18	21	11	0
+macabm	2015-05-19	58	17	0
+macabm	2015-06-05	12	11	0
+macabm	2015-06-08	12	10	0
+macabm	2015-06-09	1	0	0
+macabm	2015-06-10	23	2	0
+macabm	2015-06-11	2	2	0
+macabm	2015-06-17	28	0	0
+macabm	2015-07-18	4	4	0
+macabm	2015-07-31	8	4	0
+macabm	2015-08-04	6	5	0
+macabm	2015-08-05	54	20	0
+macabm	2015-08-06	4	0	0
+macabm	2015-08-08	3	2	0
+macabm	2015-08-13	3	1	0
+macabm	2015-08-15	19	4	0
+macabm	2015-08-16	37	18	0
+macabm	2015-08-17	71	24	0
 mackbeth	2014-08-30	1	1	0
 mackbeth	2014-09-01	6	3	0
 mackbeth	2014-09-02	2	2	0
@@ -4368,9 +5250,14 @@ mackbeth	2014-09-09	3	2	0
 mackbeth	2014-09-19	74	16	0
 mackbeth	2014-10-17	2	0	0
 mackbeth	2014-11-29	5	5	0
+mackbeth	2015-05-19	7	7	0
+mackbeth	2015-06-01	5	5	0
+mackbeth	2015-07-20	9	7	0
+mackbeth	2015-11-19	9	4	0
+maddg	2015-09-13	10	10	0
 madek	2008-05-23	106	91	3
 madek	2008-10-31	1075	67	1
-madek	2008-11-01	2596	304	7
+madek	2008-11-01	2596	304	2
 madek	2009-08-12	793	476	0
 madek	2009-08-13	923	756	0
 madek	2009-08-14	363	287	0
@@ -4379,17 +5266,17 @@ madek	2009-08-17	317	98	0
 madek	2009-08-18	379	120	0
 madek	2009-08-19	927	691	0
 madek	2009-08-20	1282	772	0
-madek	2009-08-21	816	330	2
+madek	2009-08-21	816	330	0
 madek	2009-08-22	195	66	0
 madek	2009-08-23	130	22	0
 madek	2009-08-24	617	325	0
-madek	2009-08-25	599	445	0
+madek	2009-08-25	599	445	1
 madek	2009-08-26	924	733	0
 madek	2009-08-27	440	331	0
 madek	2009-08-28	259	127	0
 madek	2009-08-29	90	61	0
 madek	2009-08-30	124	23	0
-madek	2009-08-31	737	337	8
+madek	2009-08-31	737	337	4
 madek	2009-09-01	49	11	0
 madek	2009-09-04	40	18	0
 madek	2009-09-07	78	29	0
@@ -4405,7 +5292,7 @@ madek	2009-09-17	1154	582	0
 madek	2009-09-18	452	318	0
 madek	2009-09-19	1197	310	0
 madek	2009-09-20	133	51	0
-madek	2009-09-21	849	504	1
+madek	2009-09-21	849	504	0
 madek	2009-09-22	2494	2045	0
 madek	2009-09-23	306	268	0
 madek	2009-09-24	400	244	0
@@ -4429,7 +5316,7 @@ madek	2009-10-13	71	27	0
 madek	2009-10-15	239	193	0
 madek	2009-10-17	67	49	0
 madek	2009-10-21	20	5	0
-madek	2009-10-23	67	57	5
+madek	2009-10-23	67	57	2
 madek	2009-10-24	127	127	0
 madek	2009-10-26	144	144	0
 madek	2009-10-27	91	52	0
@@ -4483,7 +5370,7 @@ madek	2010-01-28	303	189	0
 madek	2010-02-01	52	34	0
 madek	2010-02-02	1	0	0
 madek	2010-02-03	154	92	0
-madek	2010-02-04	93	72	0
+madek	2010-02-04	93	72	1
 madek	2010-02-05	41	34	0
 madek	2010-02-18	3	0	0
 madek	2010-02-25	37	21	0
@@ -4572,7 +5459,7 @@ madek	2011-02-04	24	21	0
 madek	2011-02-05	51	26	0
 madek	2011-02-06	68	31	0
 madek	2011-02-07	940	684	0
-madek	2011-02-08	612	289	1
+madek	2011-02-08	612	289	3
 madek	2011-02-09	80	45	0
 madek	2011-02-11	32	21	0
 madek	2011-02-13	25	7	0
@@ -4603,7 +5490,7 @@ madek	2011-04-01	70	44	0
 madek	2011-04-05	222	188	0
 madek	2011-04-06	536	369	1
 madek	2011-04-07	231	106	0
-madek	2011-04-08	168	129	3
+madek	2011-04-08	168	129	0
 madek	2011-04-09	8	8	0
 madek	2011-04-11	377	245	0
 madek	2011-04-12	678	428	0
@@ -4936,7 +5823,141 @@ madek	2015-01-07	2	0	0
 madek	2015-01-08	4	3	0
 madek	2015-01-16	3	2	0
 madek	2015-01-23	44	13	0
+madek	2015-02-19	9	3	0
+madek	2015-02-25	68	43	0
+madek	2015-02-26	137	80	0
+madek	2015-02-27	30	10	0
+madek	2015-02-28	24	16	0
+madek	2015-03-02	68	33	0
+madek	2015-03-03	1	1	0
+madek	2015-03-06	8	4	0
+madek	2015-03-15	30	3	0
+madek	2015-03-19	29	29	0
+madek	2015-03-23	25	25	0
+madek	2015-03-25	30	17	0
+madek	2015-03-26	16	8	0
+madek	2015-04-06	146	82	0
+madek	2015-04-08	1	0	0
+madek	2015-04-09	37	10	0
+madek	2015-04-10	47	17	0
+madek	2015-04-11	23	12	0
+madek	2015-04-13	63	12	0
+madek	2015-04-14	216	189	0
+madek	2015-04-15	156	105	0
+madek	2015-04-16	151	134	0
+madek	2015-04-17	20	12	0
+madek	2015-04-20	45	13	0
+madek	2015-04-21	24	6	0
+madek	2015-04-22	4	4	0
+madek	2015-04-23	136	99	0
+madek	2015-05-08	38	5	0
+madek	2015-05-09	102	19	0
+madek	2015-05-13	2	0	0
+madek	2015-05-14	67	63	0
+madek	2015-05-15	9	8	0
+madek	2015-05-18	33	13	0
+madek	2015-05-20	5	4	0
+madek	2015-05-21	8	7	0
+madek	2015-05-22	44	27	0
+madek	2015-06-02	20	9	0
+madek	2015-06-04	170	100	0
+madek	2015-06-05	1	0	0
+madek	2015-06-06	115	20	0
+madek	2015-06-07	54	10	0
+madek	2015-06-09	10	1	0
+madek	2015-06-10	53	29	0
+madek	2015-06-11	45	31	0
+madek	2015-06-12	8	2	0
+madek	2015-06-18	115	66	0
+madek	2015-06-21	20	4	0
+madek	2015-06-24	47	22	0
+madek	2015-06-25	49	27	0
+madek	2015-06-26	25	6	0
+madek	2015-07-02	20	11	0
+madek	2015-07-03	19	6	0
+madek	2015-07-04	67	52	0
+madek	2015-07-07	1	0	0
+madek	2015-07-08	6	2	0
+madek	2015-07-13	17	5	0
+madek	2015-07-14	19	9	0
+madek	2015-07-19	59	31	0
+madek	2015-07-20	27	10	0
+madek	2015-07-21	100	31	0
+madek	2015-07-24	38	18	0
+madek	2015-07-30	31	15	0
+madek	2015-08-01	4	1	0
+madek	2015-08-03	15	5	0
+madek	2015-08-06	49	22	0
+madek	2015-08-07	47	17	0
+madek	2015-08-10	9	2	0
+madek	2015-08-11	10	6	0
+madek	2015-08-13	26	16	0
+madek	2015-08-14	20	7	0
+madek	2015-08-24	11	4	0
+madek	2015-08-25	1	0	0
+madek	2015-08-29	34	9	0
+madek	2015-08-31	46	3	0
+madek	2015-09-01	158	74	0
+madek	2015-09-02	162	47	0
+madek	2015-09-03	85	38	0
+madek	2015-09-12	199	92	0
+madek	2015-09-14	21	5	0
+madek	2015-09-16	84	42	0
+madek	2015-09-26	21	12	0
+madek	2015-09-28	375	36	0
+madek	2015-09-29	26	5	0
+madek	2015-10-05	61	38	0
+madek	2015-10-06	13	5	0
+madek	2015-10-08	43	26	0
+madek	2015-10-09	198	89	0
+madek	2015-10-11	136	64	0
+madek	2015-10-13	51	14	0
+madek	2015-10-14	42	22	0
+madek	2015-10-19	81	68	0
+madek	2015-10-20	152	49	0
+madek	2015-10-21	44	26	0
+madek	2015-10-24	117	66	0
+madek	2015-10-26	100	49	0
+madek	2015-11-02	120	49	0
+madek	2015-11-03	24	21	0
+madek	2015-11-04	6	0	0
+madek	2015-11-05	151	83	0
+madek	2015-11-06	85	22	0
+madek	2015-11-08	103	55	0
+madek	2015-11-09	402	178	0
+madek	2015-11-12	38	6	0
+madek	2015-11-13	31	20	0
+madek	2015-11-18	72	35	0
+madek	2015-11-19	90	48	0
+madek	2015-11-24	55	15	0
+madek	2015-11-26	499	202	0
+madek	2015-11-27	35	11	0
+madek	2015-12-01	147	65	0
+madek	2015-12-02	500	140	0
+madek	2015-12-05	644	251	0
+madek	2015-12-09	82	46	0
+madek	2015-12-17	313	170	0
+madek	2015-12-18	33	10	0
+madek	2015-12-19	325	179	0
+madek	2015-12-21	207	125	0
+madek	2015-12-23	66	25	0
+madek	2015-12-28	47	24	0
+madek	2015-12-29	162	80	0
+madek	2015-12-30	603	91	0
+madek	2015-12-31	365	116	0
+madek	2016-01-02	551	378	0
+madek	2016-01-04	117	61	0
+madek	2016-01-05	163	96	0
+madek	2016-01-06	212	152	0
+madek	2016-01-07	156	46	0
+madek	2016-01-08	101	56	0
+madek	2016-01-09	434	171	0
+madek	2016-01-11	40	15	0
 maggot27	2014-08-07	1	0	0
+maggot27	2015-07-13	2	0	0
+maggot27	2015-07-15	1	0	0
+maggot27	2015-09-28	1	0	0
+maggot27	2015-10-16	14	0	0
 maive	2013-04-08	38	23	0
 maive	2013-04-23	98	85	0
 maive	2013-04-24	6	5	0
@@ -4952,6 +5973,7 @@ manolo25	2013-08-03	1	0	0
 manolo25	2013-09-27	23	0	0
 manolo25	2013-11-03	2	0	0
 maotano	2010-03-20	1	0	0
+mapa santiago	2015-08-27	7	2	0
 mapacali_z	2011-07-20	243	64	0
 mapacali_z	2011-07-21	145	70	0
 mapacali_z	2011-08-09	19	2	0
@@ -4963,10 +5985,14 @@ mapperez	2012-02-09	3	3	0
 marc_leisewitz	2014-12-29	21	13	0
 marc_leisewitz	2014-12-30	21	20	0
 marc_leisewitz	2015-01-07	24	10	0
+marc_leisewitz	2015-09-28	1	0	0
 marcelo_pe	2012-03-21	12	12	0
 marcelo_pe	2012-05-07	96	31	0
 marcelo_pe	2012-05-08	18	13	0
+marcelod	2015-10-09	1	1	0
 marcelolagos	2011-06-25	1	1	0
+marcelolagos	2016-01-07	18	10	0
+marczoutendijk	2015-02-19	1	0	0
 marek kleciak	2011-03-10	8	0	0
 mariofix	2010-05-30	1	1	0
 markuzcha	2013-06-03	56	48	0
@@ -4975,6 +6001,17 @@ markuzcha	2013-06-11	87	83	0
 marmann	2010-11-29	3	1	0
 marredondo	2011-03-01	1	1	0
 marsonauta	2013-05-12	1	1	0
+marsonauta	2015-03-30	14	14	0
+marsonauta	2015-09-07	73	37	0
+marsonauta	2015-09-14	123	97	0
+marsonauta	2015-11-04	19	19	0
+marsonauta	2015-12-14	14	7	0
+marsonauta	2015-12-15	71	61	0
+marsonauta	2015-12-16	95	88	0
+marsonauta	2015-12-17	5	5	0
+martincruzin	2015-08-07	7	7	0
+mati878	2015-09-07	15	13	0
+mati878	2015-09-08	14	4	0
 matias sime	2014-01-20	1	1	0
 matiashonour	2014-07-28	6	6	0
 matiasims	2013-05-08	64	22	0
@@ -5005,11 +6042,17 @@ megazorg	2011-03-26	4	0	0
 megazorg	2011-08-08	7	4	0
 megazorg	2014-03-02	1	0	0
 megazorg	2014-03-16	1	0	0
+megazorg	2015-02-10	4	4	0
 mentaer	2013-05-16	4	4	0
 mentaer	2013-05-28	1	0	0
 mentaer	2014-06-24	2	0	0
 mentaer	2015-01-07	6	6	0
+mentaer	2015-04-13	14	10	0
+mentaer	2015-04-20	1	0	0
+mentaer	2015-10-11	23	0	0
+mentaer	2015-11-30	18	10	0
 mentor	2014-06-08	1	0	0
+merechico	2015-01-31	2	2	0
 michael63	2013-11-09	118	104	0
 miguelavila	2014-09-17	16	8	0
 mikertw	2012-10-03	1	0	0
@@ -5017,8 +6060,9 @@ mikertw	2012-11-27	2	2	0
 milagro	2011-05-20	1	1	0
 miozzo	2010-01-29	1	0	0
 miozzo	2010-03-11	1	1	0
+miraculixOSM	2015-06-07	556	38	0
 mirantra	2014-11-01	1	1	0
-miyabi	2010-03-01	246	241	0
+miyabi	2010-03-01	246	241	2
 miyabi	2010-03-02	152	133	0
 miyabi	2010-03-03	53	52	0
 mjbravo	2010-08-31	37	37	0
@@ -5029,10 +6073,14 @@ mlagosh	2010-09-06	8	8	0
 mmc	2010-08-14	1	0	0
 mmd*2012	2011-07-10	1	1	0
 mmsalina	2011-08-16	36	25	0
+mois3s	2015-02-21	1	1	0
 momixi	2012-08-14	11	11	0
 monky	2012-03-09	20	14	0
 montecom	2010-04-12	1	1	0
 montecom	2010-04-14	2	0	0
+montecom	2015-02-11	9	6	0
+montecom	2015-03-25	2	1	0
+montecom	2015-04-07	7	4	0
 mor	2014-09-09	27	0	0
 moroniflores	2013-08-07	4	0	0
 morsya	2014-11-05	12	0	0
@@ -5043,12 +6091,15 @@ mrpulley	2010-07-27	264	247	0
 mrpulley	2010-07-29	18	17	0
 mrpulley	2013-09-17	176	0	0
 mrpulley	2013-09-18	6	0	0
+mstrube	2015-05-26	1	0	0
 mvalenzuela	2010-07-25	14	12	0
 mvalenzuela	2010-08-07	11	0	0
 mvalenzuela	2010-08-08	35	12	0
+mxbelemmi	2015-03-08	17	16	0
 nandouc	2014-05-05	6	0	0
+naoliv	2015-07-20	1	0	0
 navimont	2008-10-22	5	4	0
-navimont	2009-02-22	76	76	2
+navimont	2009-02-22	76	76	3
 navimont	2010-09-16	12	6	0
 navimont	2010-09-17	106	89	0
 navimont	2010-09-26	11	11	0
@@ -5065,7 +6116,9 @@ nicobc	2014-04-15	4	4	0
 nicobc	2014-06-20	2	2	0
 nicolaslopezj	2012-07-09	1	1	0
 nicolecita	2014-09-28	1	0	0
+nikhilprabhakar	2015-09-14	1	1	0
 nikocurk	2009-06-14	11	0	0
+nikor32	2015-05-11	1	1	0
 ninovolador	2010-04-29	9	8	0
 ninovolador	2011-06-08	3	0	0
 ninovolador	2012-11-05	6	4	0
@@ -5073,10 +6126,15 @@ ninovolador	2014-02-11	20	20	0
 nizvolzev	2010-05-24	19	12	0
 nizvolzev	2010-05-25	15	9	0
 nokutu	2014-10-04	1	0	0
+nsalazar	2015-02-18	12	8	0
 nsilvah	2014-03-02	1	0	0
+nsilvah	2015-03-03	1	1	0
 nunoaries	2011-04-21	5	5	0
 nunoaries	2011-05-03	4	1	0
+o2015	2015-09-25	1	1	0
+o2015	2015-10-11	1	1	0
 oearenas	2014-06-16	10	10	0
+oini	2015-09-11	1	0	0
 okilimu	2010-07-05	1	0	0
 okote	2014-10-14	4	4	0
 olaf1000	2014-05-17	1	0	0
@@ -5087,7 +6145,9 @@ oppidium	2009-08-04	1	0	0
 optativopedaleable	2014-08-20	56	47	0
 optativopedaleable	2014-08-25	22	22	0
 optativopedaleable	2014-09-07	67	41	0
+orlandofhc	2015-09-14	9	9	0
 oscarfer30	2011-07-20	7	7	0
+osmmaker	2015-10-16	1	0	0
 osvaldomoya	2012-03-05	40	31	0
 ouji	2012-03-23	5	4	0
 p0ns	2014-01-24	1	1	0
@@ -5095,10 +6155,13 @@ pablo-rivas	2013-09-10	5	4	0
 pablo_rk	2010-01-19	5	0	0
 pabloballester	2011-04-20	2	2	0
 pablocxra	2013-05-07	2	1	0
-pablosmh	2007-10-15	3	3	2
+pablojuica	2015-12-02	16	14	0
+pablojuica	2015-12-30	12	12	0
+pablosmh	2007-10-15	3	3	3
 pablosmh	2010-04-08	3	3	0
 pablosmh	2010-04-12	5	3	0
 pablosmh	2010-11-04	1	1	0
+pablosmh	2015-05-08	56	56	0
 pabsilva	2010-07-12	2	1	0
 pabsilva	2010-07-14	3	3	0
 pallmm	2010-12-03	6	2	0
@@ -5125,16 +6188,23 @@ perituro	2012-06-03	5	4	0
 perituro	2013-02-04	33	5	0
 pespinac	2013-04-24	3	2	0
 pespinac	2013-04-25	6	5	0
+pete42	2015-04-17	306	306	0
 pgmunoz	2012-07-11	1	0	0
 phantasmagore	2013-12-10	2	1	0
+phlustik	2015-11-02	2	2	0
+phlustik	2015-11-04	3	3	0
+phlustik	2015-11-05	3	3	0
 pialejandra	2014-05-01	1	1	0
 pineiden	2010-03-19	4	4	0
 pipehadad	2013-02-01	1	0	0
 piroby	2012-05-02	1	0	0
 plotercut	2012-11-23	1	1	0
+plotercut	2015-06-17	2	1	0
 pmatte	2009-11-28	1	0	0
 pollo4	2013-06-21	1	1	0
 pprovidel	2014-06-21	20	20	0
+privong	2015-09-12	2	2	0
+privong	2016-01-07	1	1	0
 projectluz	2010-09-18	1	1	0
 pwhelan	2008-11-06	40	0	0
 qpeso	2013-06-23	8	8	0
@@ -5147,15 +6217,19 @@ rahien	2014-08-20	36	31	0
 rahien	2014-09-03	36	30	0
 rahien	2014-09-10	50	41	0
 rahien	2014-11-12	6	6	0
+rai1	2015-10-05	114	76	0
 ramirez_maps	2012-10-22	8	3	0
 rampmaster	2012-03-10	7	5	0
 rampmaster	2013-01-12	34	34	0
 rampmaster	2013-06-21	3	1	0
+ramyaragupathy	2015-07-16	1	0	0
 raul80	2011-12-26	77	15	0
 raul80	2012-05-20	342	317	0
+rayuken50	2015-04-11	1	0	0
 rbarahona	2011-04-27	22	7	0
 rcanete	2010-08-30	6	5	0
 rcastillodesign	2010-08-31	1	1	0
+rdymac	2015-01-28	2	0	0
 realos	2010-08-30	4	1	0
 renemoralesduarte	2012-10-05	8	0	0
 revrak	2010-12-26	3	3	0
@@ -5171,7 +6245,9 @@ ricardosp	2012-04-18	1	0	0
 ricardosp	2012-06-16	3	3	0
 ricardosp	2012-10-24	9	6	0
 ricardosp	2014-08-13	35	30	0
+richi2301	2015-12-27	2	2	0
 richisovino	2014-12-17	4	4	0
+richisovino	2015-07-23	9	9	0
 rikar2s	2010-01-30	21	0	0
 rikar2s	2010-02-02	34	0	0
 rikar2s	2010-08-09	110	0	0
@@ -5187,7 +6263,8 @@ rkstro15	2008-03-01	14	13	0
 rmeza	2011-04-12	111	33	0
 rmeza	2011-04-26	7	7	0
 rmeza	2011-05-17	35	4	0
-rnaujack	2010-02-28	446	235	5
+rmolinas	2015-09-21	6	6	0
+rnaujack	2010-02-28	446	235	9
 rndzvs	2012-09-08	1333	1244	0
 rndzvs	2012-09-10	258	230	0
 rndzvs	2012-09-11	278	247	0
@@ -5199,13 +6276,18 @@ rndzvs	2013-05-10	14	14	0
 rndzvs	2013-07-29	10	10	0
 rndzvs	2013-09-15	3	3	0
 rndzvs	2013-09-16	25	25	0
+rnpesce	2015-05-08	317	317	0
+roaven	2015-02-28	1	0	0
 roberto zuñiga	2014-01-21	6	6	0
 robgeb	2012-10-19	155	67	0
 robmaster3000	2014-11-11	3	3	0
 robrooms	2012-06-15	13	5	0
 rocahezu	2011-01-04	1	1	0
+rodleiva	2015-07-22	10	10	0
 rodmazzo	2010-12-01	2	2	0
 rodrigo634	2011-02-10	9	9	0
+rodrigoatenas	2015-03-03	6	5	0
+rodrigoatenas	2015-03-04	3	3	0
 rodrigob	2012-07-24	7	7	0
 rodrigob	2013-02-12	65	40	0
 rodrigob	2013-02-13	95	70	0
@@ -5229,6 +6311,7 @@ rodrigopizarro	2012-07-09	76	40	0
 rodrigopizarro	2012-07-13	12	11	0
 rodrigopizarro	2013-10-28	17	17	0
 rodrigopizarro	2014-04-29	28	27	0
+rodrigopizarro	2015-03-11	1	1	0
 ronic	2013-01-03	3	0	0
 ronic	2013-01-08	14	8	0
 ronic	2013-01-30	4	4	0
@@ -5237,11 +6320,17 @@ rosbeef	2013-02-15	4	4	0
 rutherfordium	2014-05-10	16	16	0
 rutherfordium	2014-05-20	36	36	0
 rutherfordium	2014-05-23	1	1	0
+ruthmaben	2015-09-08	1	0	0
+ruthmaben	2015-09-11	8	0	0
 ruthver	2013-02-17	2	2	0
 ruthverdugo	2013-03-15	1	1	0
 rvergara	2009-09-09	3	2	0
 rvergara	2009-11-22	6	3	0
 sakudo	2014-10-10	50	7	0
+samely	2015-05-22	1	0	0
+samely	2015-07-10	4	4	0
+samely	2015-07-14	6	6	0
+samely	2015-07-16	18	18	0
 santiago36	2010-12-30	39	39	0
 santiago36	2011-01-03	49	49	0
 santiago36	2011-01-04	55	37	0
@@ -5257,6 +6346,7 @@ sebapcarroza	2013-10-14	27	18	0
 sebapcarroza	2014-06-25	56	23	0
 sebapcarroza	2014-06-26	9	2	0
 sebapcarroza	2014-11-11	8	8	0
+sebapcarroza	2015-06-17	1	1	0
 sebastian vejar	2014-08-27	65	17	0
 sebastian vejar	2014-09-11	48	46	0
 sejorquechile	2014-05-09	1	1	0
@@ -5266,6 +6356,7 @@ sergiolib	2009-08-05	7	0	0
 shamaspeed	2011-02-19	10	0	0
 shazkho	2011-04-06	57	41	0
 shazkho	2011-04-09	20	0	0
+shravan91	2015-02-10	1	1	0
 sib	2009-08-05	6	2	0
 sib	2009-08-07	1	1	0
 sib	2009-08-12	150	0	0
@@ -5290,24 +6381,39 @@ snavarrod	2009-01-14	177	0	0
 sndestroy	2014-03-27	25	4	0
 sndestroy	2014-11-19	171	54	0
 sndestroy	2014-11-21	115	8	0
+sndestroy	2015-03-26	46	10	0
+sniped222	2015-12-21	1	1	0
 soeren	2008-11-22	1	0	0
 sotin	2012-10-11	3	3	0
+spinxz	2015-03-15	1	1	0
 sproggle	2012-06-18	20	20	0
 sproggle	2012-06-24	3	2	0
 sproggle	2012-07-05	3	0	0
+srividya_c	2015-03-26	1	0	0
+srividya_c	2015-03-27	1	0	0
+srividya_c	2015-03-30	1	0	0
 sschnett	2011-06-15	17	1	0
 ssierralta	2011-05-02	1	0	0
+ssierralta	2015-08-26	1	1	0
+ssierralta	2015-12-01	1	0	0
 staehler	2010-04-01	1	0	0
-stevek	2008-03-06	73	54	1
+stefankolling	2015-02-25	5	5	0
+stevek	2008-03-06	73	54	0
 stoecker	2008-07-19	581	0	0
+struv3	2015-10-12	12	8	0
+talomarco	2015-09-07	2	0	0
 tamburini	2012-09-21	22	0	0
 tasahi	2014-06-01	12	12	0
+tasahi	2015-02-05	27	6	0
 tatacarrera	2009-09-19	1	1	0
+tbicr	2015-12-20	1	0	0
 tedfrancois42	2013-09-26	1	1	0
 terinchu	2010-08-31	5	5	0
 tgodoy	2013-01-24	3	0	0
+thetornado76	2015-10-06	16	16	0
 thetruedrunkard	2012-10-01	6	5	0
 tilito	2009-04-25	5	0	0
+titofdez	2015-09-30	190	174	0
 togoto	2012-02-16	1	1	0
 toniello	2011-04-14	1248	1248	0
 toniello	2011-04-15	704	704	0
@@ -5335,13 +6441,20 @@ trschober	2011-09-07	88	67	0
 uboot	2008-04-02	2	0	0
 uboot	2008-04-03	16	0	0
 uboot	2012-10-09	1	0	0
+uboot	2015-10-24	2	1	0
 ulfl	2008-02-16	1	0	0
 ulfl	2008-07-05	1	0	0
 ulfl	2008-12-13	1	0	0
 ulvida	2012-08-18	1	1	0
+unmogo	2015-02-19	4	4	0
+user_2499	2015-02-23	1	0	0
 user_5359	2011-04-10	1	0	0
 user_5359	2011-07-20	3	0	0
 user_5359	2013-01-07	1	0	0
+user_5359	2015-03-31	1	0	0
+ustroetz	2015-04-14	22	19	0
+ustroetz	2015-05-28	6	6	0
+ustroetz	2015-07-13	6	6	0
 valeriautreras	2012-03-29	9	3	0
 vannestor	2011-01-17	25	2	0
 vanomel	2010-02-27	110	90	0
@@ -5392,10 +6505,13 @@ vblanque	2013-07-19	53	44	0
 vblanque	2013-11-07	2	1	0
 vblanque	2014-05-06	9	4	0
 vblanque	2014-07-08	7	7	0
+veritopiña	2015-05-08	197	197	0
 vgarreton	2011-04-09	184	135	0
 victorc	2011-06-29	1	1	0
 vieyte	2013-10-08	1	1	0
 villaportales	2012-05-04	69	46	0
+vitorohe	2015-04-29	1	1	0
+viza13	2015-04-17	200	200	0
 vk2010	2010-11-23	1	1	0
 vk2010	2010-11-24	63	41	0
 vk2010	2010-11-25	3	2	0
@@ -5408,6 +6524,7 @@ vladzur	2012-07-07	1	1	0
 vpoblete7	2012-04-27	2	2	0
 vsperez	2012-12-18	1	1	0
 walo	2012-10-07	61	0	0
+warkoholic	2016-01-02	12	0	0
 waton	2014-10-18	4	4	0
 webllec	2013-10-29	1	1	0
 werner2101	2013-11-23	8	7	0
@@ -5459,15 +6576,27 @@ wheelmap_visitor	2013-03-08	2	0	0
 wheelmap_visitor	2013-04-08	3	0	0
 wheelmap_visitor	2013-08-04	1	0	0
 wheelmap_visitor	2013-09-02	3	0	0
+wheelmap_visitor	2015-07-27	15	0	0
+wheelmap_visitor	2015-07-28	8	0	0
+wille	2015-08-03	1	1	0
+wille	2015-09-02	7	7	0
+wille	2015-09-03	16	15	0
+wille	2015-09-05	4	2	0
+wille	2015-09-09	21	21	0
+wille	2015-09-10	19	8	0
+wille	2015-09-18	7	6	0
+wille	2015-09-21	13	11	0
 woodpeck	2013-08-06	1	0	0
 woodpeck_repair	2011-03-04	2	0	0
 woodpeck_repair	2014-02-02	1	0	0
 woodpeck_repair	2014-03-23	6	0	0
 woodpeck_repair	2014-11-29	1	0	0
+woodpeck_repair	2015-04-06	1	0	0
+woodpeck_repair	2015-05-03	1	0	0
 wvdp	2014-03-23	2	0	0
 wynlyn	2012-03-11	181	103	0
 wynlyn	2013-07-19	12	6	0
-wynlyn	2013-07-20	1103	718	0
+wynlyn	2013-07-20	1103	718	1
 wynlyn	2013-07-22	369	267	0
 wynlyn	2013-07-23	2622	1498	0
 wynlyn	2013-07-24	1023	537	0
@@ -5480,6 +6609,7 @@ wynlyn	2013-08-17	272	170	0
 wynlyn	2013-08-20	184	177	0
 wynlyn	2013-08-23	619	460	0
 wynlyn	2014-05-24	408	139	0
+wynlyn	2015-07-19	61	33	0
 x0c0	2014-05-01	6	0	0
 xManuel	2010-11-05	4	4	0
 xolrax	2014-03-03	1	1	0
@@ -5563,6 +6693,7 @@ xylome2	2009-03-11	1	0	0
 yafun	2014-09-22	3	0	0
 yocks	2012-03-11	8	4	0
 ypid	2014-01-09	1	0	0
+yummal	2015-06-06	77	76	0
 zacmccormick	2013-01-26	1	0	0
 zero_maipu	2010-12-22	23	16	0
 zirckan	2011-01-19	1	0	0

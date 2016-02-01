@@ -10,19 +10,56 @@ user_name	date	count	v1count	blankcount
 21Dirham	2015-01-03	346	120	0
 21Dirham	2015-01-17	50	20	0
 21Dirham	2015-01-18	266	250	0
+21Dirham	2015-05-11	56	11	0
+21Dirham	2015-06-17	327	140	0
+21Dirham	2015-06-18	223	155	0
+21Dirham	2015-06-20	263	90	0
+21Dirham	2015-07-20	259	113	0
+21Dirham	2015-07-22	325	286	0
+21Dirham	2015-07-24	139	126	0
+21Dirham	2015-07-28	291	256	0
+31fahmi	2015-07-22	258	257	0
+31fahmi	2015-07-23	229	201	0
+4b696d	2015-11-01	4	0	0
+4b696d	2015-11-23	2	0	0
+4rch	2015-03-31	22	0	0
 51face	2012-09-24	1	1	0
 @aurizasalim	2013-07-03	1042	988	0
 @aurizasalim	2013-07-04	51	44	0
 @aurizasalim	2013-07-07	61	26	0
-@aurizasalim	2013-07-08	326	275	0
+@aurizasalim	2013-07-08	326	275	1
+ADIP1598	2015-11-25	356	251	0
+ADIP1598	2015-11-26	269	215	0
+ADIP1598	2015-11-27	9	3	0
+ADIP1598	2015-11-28	766	636	0
+ADIP1598	2015-11-29	937	727	0
+ADIP1598	2015-11-30	138	65	0
+ADIP1598	2015-12-06	70	42	0
+ADIP1598	2015-12-12	2	2	0
+ADIP1598	2015-12-15	133	94	0
+ADIP1598	2016-01-07	31	24	0
 AMYunus	2014-07-30	6	6	0
 AMYunus	2014-07-31	3	3	0
 AOOSP	2014-04-28	30	30	0
 APS2201	2011-05-24	3	2	0
 APS2201	2011-07-01	17	10	0
 APS2201	2011-07-04	3	2	0
+ARizqiP	2015-02-24	41	29	0
+ARizqiP	2015-02-28	200	144	0
+ARizqiP	2015-03-01	63	50	0
+ARizqiP	2015-03-03	64	38	0
+ARizqiP	2015-04-10	54	52	0
+ARizqiP	2015-10-10	78	34	0
+ARizqiP	2015-10-16	59	55	0
+ARizqiP	2015-11-02	95	84	0
+ARizqiP	2015-11-04	13	7	0
+ARizqiP	2015-11-05	36	18	0
+ARizqiP	2015-11-23	143	70	0
+ARizqiP	2015-11-24	39	23	0
 Aan Agustin	2014-09-17	8	8	0
 Abhirama17	2014-12-14	21	21	0
+Abon87	2015-08-03	18	11	0
+Abu Abdillah	2015-07-30	3	0	0
 Ac Anwar	2013-12-05	5	5	0
 Adhitya Dido	2012-03-05	179	179	0
 Adi Maulana	2012-03-26	134	101	0
@@ -42,6 +79,9 @@ Adi Maulana	2014-12-04	477	408	0
 Adi Maulana	2014-12-05	732	605	0
 Adi Maulana	2014-12-09	112	34	0
 Adi Maulana	2014-12-12	37	28	0
+Adi Maulana	2015-03-26	508	375	0
+Adi Maulana	2015-03-27	595	430	0
+Adi Maulana	2015-03-30	16	8	0
 Adi Prasetya	2012-08-02	1	0	0
 Aditya Kresna	2014-09-18	4	4	0
 Adityo	2011-05-16	21	20	0
@@ -71,8 +111,14 @@ Adityo	2014-09-26	480	54	0
 Adityo	2014-10-06	42	0	0
 Adityo	2014-11-21	3	3	0
 Adityo	2015-01-03	10	10	0
+Adityo	2015-02-10	4	4	0
+Adityo	2015-06-30	202	93	0
+Adityo	2015-10-21	80	80	0
+Adityo	2015-12-07	4	4	0
 Ady M	2013-02-07	2	1	0
 Agung Wibowo	2013-12-05	26	15	0
+Ahmad Fahrurozi	2015-03-28	2	2	0
+Ahmad Fahrurozi	2015-04-04	8	8	0
 Akbar Gumbira	2013-09-09	5	4	0
 Akbar Gumbira	2013-09-10	4	4	0
 Akbarecht	2014-03-01	16	16	0
@@ -80,17 +126,22 @@ AlBanna	2013-11-04	66	57	0
 AlBanna	2013-11-05	4	4	0
 AlBanna	2013-11-07	53	42	0
 AlBanna	2014-10-24	2	0	0
+Alam Jaya	2015-04-28	7	6	0
 Alan	2014-04-17	4	4	0
 Aleks-Berlin	2014-10-26	1	0	0
+Aleks-Berlin	2015-06-27	1	0	0
+Aleks-Berlin	2015-11-30	2	0	0
+Aleks-Berlin	2015-12-01	1	0	0
+Aleks-Berlin	2016-01-12	1	0	0
 Alex Graves	2011-07-30	9	9	0
 Alex Rollin	2012-04-01	4	0	0
 Alex Rollin	2012-04-04	170	162	1
 Alex Rollin	2012-04-05	1	0	0
 Alex Rollin	2012-04-12	1	0	0
 Alex Rollin	2012-05-02	97	31	0
-Alex Rollin	2012-05-30	79	79	3
+Alex Rollin	2012-05-30	79	79	2
 Alex Rollin	2012-06-06	1189	1067	0
-Alex Rollin	2012-06-09	3034	2983	57
+Alex Rollin	2012-06-09	3034	2983	60
 Alex Rollin	2012-06-15	26	26	3
 Alex Rollin	2012-06-28	819	719	0
 Alex Rollin	2012-10-04	280	253	0
@@ -101,13 +152,14 @@ Alex Rollin	2013-01-24	1071	1015	0
 Alex Rollin	2013-02-02	3146	2875	0
 Alex Rollin	2013-04-28	185	146	0
 Alex Rollin	2013-07-31	270	5	0
-Alex Rollin	2013-09-12	621	605	1
-Alex Rollin	2013-09-17	1396	1392	0
-Alex Rollin	2013-09-26	252	252	4
+Alex Rollin	2013-09-12	621	605	0
+Alex Rollin	2013-09-17	1396	1392	1
+Alex Rollin	2013-09-26	252	252	2
 Alex Rollin	2013-12-08	166	127	0
-Alex Rollin	2014-01-16	1570	1476	1
+Alex Rollin	2014-01-16	1570	1476	5
 Alex Rollin	2014-08-04	1	1	0
 AlexanderF	2010-02-21	1	0	0
+Alexandre de Menezes	2015-06-09	1	0	0
 Aliem	2010-06-13	2	2	0
 Alir Air	2013-06-06	10	8	0
 Alir Air	2013-06-07	50	46	0
@@ -134,15 +186,24 @@ Aman_28	2012-11-19	182	141	0
 Aminos Place	2014-01-20	1	0	0
 Anang Supraba	2013-07-10	1	1	0
 Andi Wangsadijaya	2013-03-24	13	10	0
+Andika668	2015-09-13	9	9	0
+Andika668	2015-09-17	26	22	0
+Andika668	2015-10-01	36	32	0
+Andika668	2015-10-02	14	4	0
+Andika668	2015-10-06	20	12	0
 Andre68	2013-03-18	29	4	0
 Andreas G	2012-11-28	4	4	0
 AndrewBuck	2012-11-01	30	12	0
+Andri Kurniawan Adrianto	2015-11-21	88	88	0
 AngkotWebId	2013-11-29	309	291	0
 AnibalRei	2014-11-29	4	4	0
+Anne Sukmayani	2015-09-10	4	4	0
+Anne Sukmayani	2015-10-01	29	29	0
+Anne Sukmayani	2015-10-06	53	50	0
 AnnieMellan	2013-03-18	1062	1055	0
 AnnieMellan	2013-03-21	1280	1185	0
 AnnieMellan	2013-03-22	149	135	0
-Annisa Amelia	2014-10-30	1250	1226	0
+Annisa Amelia	2014-10-30	1250	1226	1
 Annisa Amelia	2014-10-31	718	716	0
 Anom	2012-03-14	10	4	0
 Anom	2012-03-16	552	503	0
@@ -158,10 +219,18 @@ Anom	2012-04-09	604	602	0
 Anom	2012-04-10	4	0	0
 Anom	2012-04-11	1271	1174	0
 Anton Nurdin	2013-11-26	4	3	0
-Arby Ligia	2012-08-02	175	175	1
+Antonius Nugroho	2015-10-30	6	6	0
+AperturePro	2015-12-18	71	66	0
+AperturePro	2015-12-19	62	50	0
+AperturePro	2015-12-20	27	19	0
+AperturePro	2016-01-04	9	9	0
+Aqisya	2015-07-29	112	112	0
+Arby Ligia	2012-08-02	175	175	3
 Arby Ligia	2012-08-03	348	342	0
-Archipelagean	2011-12-31	189	185	2
-Arga Rifki	2012-03-05	57	57	0
+Archipelagean	2011-12-31	189	185	3
+Ardhy	2015-08-03	9	7	0
+Ardhy	2015-08-04	32	27	0
+Arga Rifki	2012-03-05	57	57	1
 Arga Rifki	2012-03-13	186	186	0
 Arga Rifki	2012-03-15	110	93	0
 Arga Rifki	2012-03-29	186	177	0
@@ -189,10 +258,10 @@ ArjanO	2012-04-10	130	128	0
 ArjanO	2012-04-12	42	41	0
 ArjanO	2012-05-02	32	25	0
 ArjanO	2012-06-13	2	0	0
-ArjanO	2012-06-20	212	211	9
-ArjanO	2012-06-21	142	137	3
-ArjanO	2012-07-26	217	211	2
-ArjanO	2012-09-07	30	28	0
+ArjanO	2012-06-20	212	211	8
+ArjanO	2012-06-21	142	137	2
+ArjanO	2012-07-26	217	211	3
+ArjanO	2012-09-07	30	28	1
 ArjanO	2012-10-25	90	36	0
 ArjanO	2012-11-23	1	0	0
 ArjanO	2012-11-24	43	40	0
@@ -201,7 +270,7 @@ ArjanO	2013-01-20	33	33	0
 ArjanO	2013-01-22	53	53	0
 ArjanO	2013-02-12	208	160	3
 ArjanO	2013-02-14	394	377	0
-ArjanO	2013-02-20	39	35	0
+ArjanO	2013-02-20	39	35	1
 ArjanO	2013-03-18	654	556	0
 ArjanO	2013-03-19	95	78	0
 ArjanO	2013-03-21	96	95	0
@@ -209,7 +278,7 @@ ArjanO	2013-03-26	26	21	0
 ArjanO	2013-05-05	51	51	0
 ArjanO	2013-05-26	4	2	0
 ArjanO	2013-05-29	14	14	0
-ArjanO	2013-05-31	114	111	0
+ArjanO	2013-05-31	114	111	1
 ArjanO	2013-06-10	71	65	0
 ArjanO	2013-06-19	20	16	0
 ArjanO	2013-07-08	1	1	0
@@ -217,16 +286,22 @@ ArjanO	2013-09-09	31	31	0
 ArjanO	2013-09-24	29	27	0
 ArjanO	2013-10-18	4	4	0
 ArjanO	2013-11-11	1	0	0
+ArjanO	2015-04-04	1	1	0
+ArjanO	2015-08-12	15	13	0
+ArjanO	2015-08-27	2	2	0
+ArjanO	2015-09-12	34	34	0
+ArjanO	2015-12-04	20	8	0
 Arkka Dhiratara	2014-07-14	68	66	0
 Arleno	2012-04-09	2	1	0
 Arumee	2014-10-17	22	22	0
 Ary Gunawan	2009-09-04	8	8	0
-Arya Sadewa	2012-03-05	110	110	2
+Arya Harditya	2015-02-05	6	6	0
+Arya Sadewa	2012-03-05	110	110	1
 Arya Sadewa	2012-03-15	327	298	0
 Arya Sadewa	2012-03-20	395	395	0
 Arya Sadewa	2012-03-26	26	26	0
 Arya Sadewa	2012-07-24	205	205	0
-Arz!!!	2011-01-09	47	36	2
+Arz!!!	2011-01-09	47	36	1
 Asri Permata	2013-12-03	8	8	0
 Asrul Sani	2013-12-03	47	47	0
 Asrul Sani	2013-12-30	16	16	0
@@ -237,11 +312,41 @@ Asrul Sani	2014-01-16	62	42	0
 Asrul Sani	2014-02-06	50	50	0
 Asrul Sani	2014-02-09	640	640	0
 Asrul Sani	2014-12-30	14	14	0
+Asrul Sani	2015-04-07	29	21	0
+Asrul Sani	2015-04-09	43	43	0
+Asrul Sani	2015-04-10	158	152	0
+Asrul Sani	2015-04-26	108	106	0
+Asrul Sani	2015-05-07	136	132	0
+Asrul Sani	2015-05-17	172	168	0
+Asrul Sani	2015-05-23	284	283	0
+Asrul Sani	2015-05-24	270	270	0
+Asrul Sani	2015-06-07	15	15	0
+Asrul Sani	2015-06-20	83	80	0
+Asrul Sani	2015-06-21	145	129	0
+Asrul Sani	2015-06-28	75	75	0
+Asrul Sani	2015-07-02	75	72	0
+Asrul Sani	2015-07-05	243	238	0
+Asrul Sani	2015-07-26	794	783	0
+Asrul Sani	2015-07-28	4	4	0
+Asrul Sani	2015-07-31	112	108	0
+Asrul Sani	2015-08-01	179	177	0
+Asrul Sani	2015-08-11	38	24	0
+Asrul Sani	2015-08-12	24	17	0
+Asrul Sani	2015-08-13	62	62	0
+Asrul Sani	2015-08-14	17	13	0
+Asrul Sani	2015-08-15	295	281	0
+Asrul Sani	2015-08-16	150	130	0
+Asrul Sani	2015-08-18	5	4	0
+Asrul Sani	2015-08-19	18	18	0
+Asrul Sani	2015-08-22	116	99	0
+Asrul Sani	2015-08-23	355	319	0
+Asrul Sani	2015-09-19	24	20	0
+Asrul Sani	2015-09-20	454	419	0
 AtikWidyastuti	2013-12-03	13	13	0
 Aulia Latif	2014-05-16	21	21	0
-Ayah Fathimah	2009-12-17	85	16	1
-Ayah Fathimah	2009-12-18	62	60	1
-Ayah Fathimah	2010-01-07	190	158	1
+Ayah Fathimah	2009-12-17	85	16	0
+Ayah Fathimah	2009-12-18	62	60	0
+Ayah Fathimah	2010-01-07	190	158	2
 Ayah Fathimah	2010-01-08	182	179	1
 Ayah Fathimah	2010-01-13	205	186	0
 Ayah Fathimah	2010-01-15	110	71	0
@@ -252,6 +357,7 @@ Ayah Fathimah	2010-06-02	46	46	0
 Bagoes	2011-06-03	1	1	0
 Balancoire	2013-07-06	22	13	0
 Ballacksave	2014-06-22	2	2	0
+BartonJak	2015-02-22	2	1	0
 Baruch	2009-06-19	1	0	0
 Bayu Adi Styawan	2013-12-02	1	0	0
 Bayu Adi Styawan	2014-01-12	2	0	0
@@ -277,11 +383,40 @@ Bee	2008-11-18	284	0	0
 Bee	2008-11-22	83	0	0
 Bee	2009-01-07	268	0	0
 Bela Buscent	2014-11-26	41	34	0
+Ben Allard	2010-04-27	830	757	8
+Ben Allard	2010-05-02	37	37	5
+Ben Allard	2010-05-03	349	346	3
+Ben Allard	2010-09-15	127	126	2
+Ben Allard	2010-09-16	766	763	7
+Ben Allard	2010-09-17	167	149	0
+Ben Allard	2010-09-28	14	14	2
+Ben Allard	2011-02-18	34	34	0
 BenjiDad	2014-02-25	84	71	0
 BenjiDad	2014-03-04	44	37	0
 BenjiDad	2014-09-10	125	105	0
+BenjiDad	2015-03-20	53	23	0
+BenjiDad	2015-04-02	205	145	0
+BenjiDad	2015-04-06	8	8	0
+BenjiDad	2015-04-08	17	10	0
+BenjiDad	2015-04-10	25	24	0
+BenjiDad	2015-04-14	1	1	0
+BenjiDad	2015-04-28	9	7	0
+BenjiDad	2015-05-01	100	100	0
+BenjiDad	2015-05-04	40	40	0
+BenjiDad	2015-06-04	33	29	0
+BenjiDad	2015-06-06	12	12	0
+BenjiDad	2015-06-07	14	14	0
+BenjiDad	2015-06-08	13	13	0
+BenjiDad	2015-06-09	130	121	0
+BenjiDad	2015-06-10	353	338	0
+BenjiDad	2015-06-11	110	104	0
+BenjiDad	2015-06-15	27	1	0
+BenjiDad	2015-06-16	13	3	0
+BenjiDad	2015-10-15	57	56	0
 Bernhard Hiller	2012-02-18	3	3	1
+Bernhard W	2015-03-04	7	0	0
 BiIbo	2010-08-30	11	0	0
+Big Daddy's Barbershop - Muara Karang	2015-09-20	1	1	0
 Biondi	2014-03-28	17	17	0
 Bitcoin Indonesia	2014-04-21	4	2	0
 Biyan	2014-06-18	2	0	0
@@ -289,16 +424,19 @@ BlueArrow	2010-12-29	1	1	1
 Boy Haig R	2014-12-30	5	5	0
 Boy Haig R	2014-12-31	6	1	0
 Brama	2014-12-02	17	16	0
-BudiRustandi	2008-10-05	4	4	0
-BudiRustandi	2008-10-17	584	68	0
-BudiRustandi	2008-10-25	6688	1078	0
+BudiArtanaYasa	2015-02-09	1	1	0
+BudiArtanaYasa	2015-02-13	4	4	0
+BudiRustandi	2008-10-05	4	4	1
+BudiRustandi	2008-10-17	584	68	2
+BudiRustandi	2008-10-25	6688	1078	1
 BudiRustandi	2008-11-15	12364	1883	6
-BudiRustandi	2008-11-16	785	175	2
+BudiRustandi	2008-11-16	785	175	0
 BudiRustandi	2008-11-25	255	0	0
-BudiRustandi	2008-12-04	3	3	1
+BudiRustandi	2008-12-04	3	3	0
 BudiRustandi	2008-12-14	356	105	1
 BudiRustandi	2008-12-19	3	0	0
 BugBuster	2009-09-30	4	0	0
+CCG LLC	2015-10-02	1	1	0
 CITRA OCTAVIA	2011-07-06	33	33	0
 CandraCEM	2015-01-10	4	4	0
 Cawang Jakarta Timur	2012-03-20	139	138	0
@@ -315,7 +453,13 @@ Che Bizarro	2014-03-13	1	1	0
 Che Bizarro	2014-05-14	1	1	0
 Che Bizarro	2014-05-31	1	0	0
 Che Bizarro	2014-06-08	1	1	0
+Chetan_Gowda	2015-06-12	5	0	0
+Chetan_Gowda	2015-09-10	2	0	0
+ChrissW-R1	2015-12-21	82	0	0
+ChrissW-R1	2016-01-14	1	0	0
+ChrissW-R1	2016-01-15	1	0	0
 ChristinaGriffin	2012-06-21	4	4	0
+Christoph Lotz	2015-03-02	2	0	0
 Ciganjur	2012-03-29	170	170	0
 Ciliwung Institute	2014-03-01	4	2	0
 Cipinang Cempedak	2012-03-20	371	370	0
@@ -323,14 +467,18 @@ Cipto	2014-02-14	16	10	0
 Claudius Henrichs	2010-10-06	13	0	0
 Claudius Henrichs	2010-11-22	1	0	0
 Claudius Henrichs	2014-01-02	4	0	0
+CloCkWeRX	2015-12-28	65	64	0
+CloCkWeRX	2016-01-04	19	19	0
 CompilationSuccess	2014-06-20	18	7	0
 CompilationSuccess	2014-06-21	9	7	0
 D' Mad	2014-04-04	4	4	0
 Damkar	2012-03-07	36	35	0
+Danang Wijaya	2015-05-07	6	6	0
+Danang Wijaya	2015-08-04	2	2	0
 DanceSignal	2012-11-25	4	1	0
-Danu	2008-11-05	3	3	2
+Danu	2008-11-05	3	3	1
 Danu	2009-05-14	29	26	0
-Danu	2009-07-01	66	65	0
+Danu	2009-07-01	66	65	1
 Danu	2012-10-12	30	14	0
 Danu	2013-04-03	97	81	0
 Dany Laksono	2013-04-26	12	0	0
@@ -339,7 +487,7 @@ DarkRider910	2014-09-03	137	68	0
 DarkRider910	2014-09-04	629	550	0
 DarkRider910	2014-09-05	403	328	0
 DarkRider910	2014-09-06	1	1	0
-DarkRider910	2014-09-08	802	714	1
+DarkRider910	2014-09-08	802	714	0
 DarkRider910	2014-09-09	569	498	0
 DarkRider910	2014-09-10	245	227	0
 DarkRider910	2014-09-12	475	380	0
@@ -350,17 +498,20 @@ DaudHW	2013-06-10	345	310	0
 DaudHW	2013-06-11	158	112	0
 DaudHW	2013-07-16	370	343	0
 DaudHW	2013-07-17	72	61	0
-DaudHW	2013-07-18	178	174	1
+DaudHW	2013-07-18	178	174	0
 DaudHW	2013-07-25	146	145	0
 DaudHW	2013-08-16	253	246	0
 DaudHW	2013-09-07	24	24	0
 DaudHW	2014-02-21	30	30	0
+David & Christine Schmitt	2015-07-20	1266	309	0
 DeNurie	2013-04-25	1256	1248	0
 Dedy Kurniawan	2012-03-15	693	475	0
+DeepBlueSea	2015-09-02	9	4	0
 Deni Lukmanul Hakim	2013-02-25	3	2	0
 Denis Gangsar Nuari	2012-03-05	172	172	0
 Denis Gangsar Nuari	2012-03-21	802	802	0
 Denis Gangsar Nuari	2012-08-01	536	530	0
+Depsy	2015-08-31	3	2	0
 Desis	2011-10-05	81	72	0
 Dewi Sulistioningrum	2012-03-11	586	586	1
 Dewi Sulistioningrum	2012-03-13	1174	1172	0
@@ -433,7 +584,12 @@ Dewi Sulistioningrum	2015-01-09	2	1	0
 Dewi Sulistioningrum	2015-01-12	1	1	0
 Dewi Sulistioningrum	2015-01-19	10	3	0
 Dewi Sulistioningrum	2015-01-20	41	21	0
+Dewi Sulistioningrum	2015-09-29	33	29	0
+Dewi Sulistioningrum	2015-09-30	6	1	0
+Dewi Sulistioningrum	2015-11-21	113	109	0
 Dhurandhara	2014-03-01	4	4	0
+Dian Okti	2015-08-03	23	23	0
+Dian Okti	2015-08-04	296	267	0
 Dias Widyosuwasto	2014-10-14	37	25	0
 Dias Widyosuwasto	2014-10-17	25	21	0
 DickSilent	2010-05-21	1	0	0
@@ -442,8 +598,10 @@ Diego Guidotti	2012-05-31	914	902	0
 Dimas Rizqi Dwiaji	2014-11-02	20	18	0
 DimasIgnatius	2013-09-04	4	0	0
 DimeDeviL	2014-07-26	7	7	0
-Divjo	2012-04-29	782	780	1
+Divjo	2012-04-29	782	780	0
+Diwan	2015-03-26	3	0	0
 Djati Satria	2014-08-12	73	66	0
+Dody Setiawan	2015-09-02	8	8	0
 Dody Suria Wijaya	2014-10-30	114	90	0
 Dody Suria Wijaya	2014-10-31	23	20	0
 Dody Suria Wijaya	2014-11-03	87	86	0
@@ -455,6 +613,37 @@ Dody Suria Wijaya	2014-11-13	282	282	0
 Dody Suria Wijaya	2014-11-24	8	8	0
 Dolfi Oktavianus	2014-07-11	13503	13498	0
 Dolfi Oktavianus	2014-07-14	84	83	0
+Dony Lay	2015-04-26	133	67	0
+Dony Lay	2015-04-27	640	608	0
+Dony Lay	2015-04-28	292	236	0
+Dony Lay	2015-04-29	150	68	0
+Dony Lay	2015-04-30	306	285	0
+Dony Lay	2015-05-01	81	73	0
+Dony Lay	2015-05-02	46	41	0
+Dony Lay	2015-05-03	237	233	0
+Dony Lay	2015-05-06	180	156	0
+Dony Lay	2015-05-07	205	146	0
+Dony Lay	2015-05-08	401	296	0
+Dony Lay	2015-05-09	100	60	0
+Dony Lay	2015-05-10	158	113	0
+Dony Lay	2015-05-11	99	61	0
+Dony Lay	2015-05-12	85	48	0
+Dony Lay	2015-05-13	77	40	0
+Dony Lay	2015-05-14	121	112	0
+Dony Lay	2015-05-15	15	14	0
+Dony Lay	2015-05-16	22	21	2
+Dony Lay	2015-05-17	22	22	0
+Dony Lay	2015-05-19	26	26	0
+Dony Lay	2015-05-20	81	76	0
+Dony Lay	2015-05-21	19	19	0
+Dony Lay	2015-05-22	15	14	0
+Dony Lay	2015-05-23	14	13	0
+Dony Lay	2015-05-24	1	1	0
+Dony Lay	2015-05-31	1	1	0
+Dony Lay	2015-06-11	64	40	0
+Dony Lay	2015-06-12	119	86	0
+Dony Lay	2015-06-14	41	31	0
+Doomd	2015-11-02	17	8	0
 Dosandriani	2014-08-27	656	647	0
 Dosandriani	2014-08-28	1527	1507	0
 Dosandriani	2014-08-29	1138	1117	0
@@ -483,8 +672,11 @@ DoubleA	2013-12-24	11	0	0
 DoubleA	2014-01-06	4	0	0
 DoubleA	2014-01-27	121	102	0
 Doviana	2012-11-04	5	5	0
+Dr Kludge	2015-07-12	1	0	0
 DrSeuthberg	2012-08-31	1	0	0
 Dudy Siregar	2014-07-31	69	69	0
+Dwita	2015-08-03	24	24	0
+Dwita	2015-08-04	39	39	0
 Dyota	2012-05-08	2	0	0
 Dyota	2012-05-09	50	50	0
 Dyota	2012-05-10	73	66	0
@@ -493,8 +685,21 @@ Dyota	2012-05-14	152	130	0
 Dyota	2012-05-15	9	5	0
 Dyota	2012-08-01	65	59	0
 Dyota	2012-08-02	1	1	0
+Edo Kurnia38	2015-04-09	29	28	0
+Edwin Enifri	2015-10-25	48	48	0
+Edwin Enifri	2015-10-26	946	799	0
+Edwin Enifri	2015-10-27	424	406	0
+Edwin Enifri	2015-11-02	79	46	0
+Edwin Enifri	2016-01-04	27	27	0
+Eka Gunadi	2016-01-07	28	22	0
+Elisa Sutanudjaja	2015-02-26	23	22	0
+Elva Ana	2015-10-25	436	405	0
+Elva Ana	2015-11-03	454	351	0
+Elva Ana	2015-11-04	362	150	0
+Emir Darsana	2015-09-06	152	144	0
+Emir Darsana	2015-09-10	14	12	0
 Enggar S	2014-07-15	3	3	0
-Eric Fischer	2013-07-06	351	350	2
+Eric Fischer	2013-07-06	351	350	3
 Eric-Chambly	2013-11-27	41	40	0
 Eric-Chambly	2013-11-28	221	221	0
 Erik Nugroho	2012-02-24	1	1	0
@@ -511,17 +716,28 @@ Ezagren	2014-11-17	4	0	0
 Ezagren	2014-11-19	26	20	0
 Ezagren	2014-11-21	1	0	0
 Ezagren	2014-11-24	30	11	0
+Ezagren	2015-07-06	1	0	0
 FIRMAN	2012-03-29	295	139	0
 Fadlia Hana	2013-12-05	24	23	0
 Faiz-DJ	2013-10-10	2	2	0
-Fajar_Wisnu_Hardono	2014-01-27	518	426	2
+Fajar_Wisnu_Hardono	2014-01-27	518	426	0
 Fajar_Wisnu_Hardono	2014-01-28	1174	1010	0
-Fajar_Wisnu_Hardono	2014-01-29	1462	1259	1
+Fajar_Wisnu_Hardono	2014-01-29	1462	1259	0
 Fajar_Wisnu_Hardono	2014-01-30	2	0	0
 Fajar_Wisnu_Hardono	2014-02-03	66	50	0
 Fajar_Wisnu_Hardono	2014-02-04	126	82	0
 Fajar_Wisnu_Hardono	2014-04-07	561	542	0
 Fajar_Wisnu_Hardono	2014-08-12	38	30	0
+Fajar_Wisnu_Hardono	2015-04-13	113	110	0
+Fajar_Wisnu_Hardono	2015-04-14	50	50	0
+Fajar_Wisnu_Hardono	2015-04-16	196	165	0
+Fajar_Wisnu_Hardono	2015-04-17	40	24	0
+Fajar_Wisnu_Hardono	2015-06-10	7	7	0
+Fajar_Wisnu_Hardono	2015-07-07	3	3	0
+Fardi_ali	2015-01-31	46	46	0
+Fardi_ali	2015-02-01	151	133	0
+Fardi_ali	2015-02-03	270	270	0
+Fardi_ali	2015-02-04	15	1	0
 Fareiska722	2014-04-04	1	1	0
 Fariz Ramadhan	2012-07-10	4	1	0
 Fariz Ramadhan	2012-08-05	70	48	0
@@ -537,13 +753,66 @@ Farras	2014-09-11	56	4	0
 Farras	2014-10-14	235	190	0
 Farras	2014-10-15	527	494	0
 Farras	2014-10-16	237	230	0
-Farras	2014-10-18	809	681	1
+Farras	2014-10-18	809	681	0
 Farras	2014-11-05	520	441	0
 Farras	2015-01-15	219	217	0
+Farras	2015-01-28	1053	753	0
+Farras	2015-02-09	10	5	0
+Farras	2015-02-15	5272	4705	2
+Farras	2015-02-16	1100	1073	1
+Farras	2015-02-18	4	0	0
+Farras	2015-02-28	120	48	0
+Farras	2015-03-18	53	53	0
+Farras	2015-04-26	36	21	0
+Farras	2015-05-04	3	3	0
+Farras	2015-05-08	83	83	0
+Farras	2015-07-08	1021	896	0
+Farras	2015-07-09	3174	3083	0
+Farras	2015-07-10	170	170	0
+Farras	2015-07-11	35	35	0
+Farras	2015-07-12	588	519	0
+Farras	2015-07-13	256	244	0
+Farras	2015-07-14	540	473	0
+Farras	2015-07-15	487	487	0
+Farras	2015-07-18	284	279	0
+Farras	2015-07-20	171	149	0
+Farras	2015-07-21	237	236	0
+Farras	2015-07-22	2841	2621	0
+Farras	2015-07-23	1312	1246	0
+Farras	2015-07-26	890	751	0
+Farras	2015-07-28	1515	1440	0
+Farras	2015-07-29	1694	1551	0
+Farras	2015-07-30	428	402	0
+Farras	2015-07-31	1	0	0
+Farras	2015-08-01	1782	1723	0
+Farras	2015-08-02	985	945	0
+Farras	2015-08-03	1037	969	0
+Farras	2015-08-04	477	423	0
+Farras	2015-08-07	377	365	0
+Farras	2015-08-10	56	32	0
+Farras	2015-08-12	389	375	0
+Farras	2015-08-18	446	417	0
+Farras	2015-08-22	1504	1259	0
+Farras	2015-08-23	179	157	0
+Farras	2015-08-26	1866	1369	0
+Farras	2015-08-27	1264	983	0
+Farras	2015-08-28	1102	1007	0
+Farras	2015-08-29	717	695	0
+Farras	2015-09-01	1993	1433	0
+Farras	2015-09-02	149	36	0
+Farras	2015-09-07	909	496	0
+Farras	2015-09-08	6	0	0
+Farras	2015-10-05	504	205	0
+Farras	2015-10-06	578	578	0
+Farras	2015-12-12	248	247	5
+Farras	2015-12-30	65	63	0
+Fathul H	2015-12-16	49	48	0
+Febriana Tri Hartina	2015-04-10	2	1	0
 Febrina Dewi	2012-03-20	143	143	0
 Febrina Dewi	2012-03-27	1653	1653	0
 Febrina Dewi	2012-03-29	235	216	0
 Febrina Dewi	2012-03-30	6936	6755	0
+Febrina Dewi	2015-08-21	4129	4129	0
 Ferry Cornelius	2012-03-13	626	601	0
 Fidelis Awig Atmoko	2011-06-25	9	5	0
 Fidelis Awig Atmoko	2011-06-27	69	56	0
@@ -551,13 +820,17 @@ Fidelis Awig Atmoko	2011-06-29	9	9	0
 Fidelis Awig Atmoko	2011-07-03	32	28	0
 Fidelis Awig Atmoko	2011-07-11	354	313	0
 Fidelis Awig Atmoko	2012-03-05	47	47	0
-Firman Hadi	2008-11-01	10457	793	7
-Firman Hadi	2008-11-02	5654	579	9
-Firman Hadi	2008-11-03	18529	961	1
+Fidelis Awig Atmoko	2015-12-23	147	132	0
+Fikri Kamal	2015-10-01	100	100	0
+Filezz	2015-07-17	5	4	0
+Filezz	2015-07-18	38	34	0
+Firman Hadi	2008-11-01	10457	793	3
+Firman Hadi	2008-11-02	5654	579	7
+Firman Hadi	2008-11-03	18529	961	0
 Firman Hadi	2008-11-04	16855	986	0
 Firman Hadi	2008-11-05	8897	590	0
 Firman Hadi	2008-11-06	2363	81	0
-Firman Hadi	2008-11-07	14793	447	1
+Firman Hadi	2008-11-07	14793	447	2
 Firman Hadi	2008-11-08	2432	155	1
 Firman Hadi	2008-11-09	847	71	0
 Firman Hadi	2008-11-13	880	139	0
@@ -570,22 +843,22 @@ Firman Hadi	2008-11-28	7702	284	0
 Firman Hadi	2008-11-29	4215	354	0
 Firman Hadi	2008-11-30	11340	758	1
 Firman Hadi	2008-12-01	1125	367	3
-Firman Hadi	2008-12-02	4641	1097	21
-Firman Hadi	2008-12-03	5560	841	1
-Firman Hadi	2008-12-04	8873	676	7
-Firman Hadi	2008-12-05	5766	851	29
-Firman Hadi	2008-12-06	5028	565	30
-Firman Hadi	2008-12-07	5943	598	2
+Firman Hadi	2008-12-02	4641	1097	23
+Firman Hadi	2008-12-03	5560	841	2
+Firman Hadi	2008-12-04	8873	676	11
+Firman Hadi	2008-12-05	5766	851	31
+Firman Hadi	2008-12-06	5028	565	29
+Firman Hadi	2008-12-07	5943	598	3
 Firman Hadi	2008-12-08	11761	874	17
 Firman Hadi	2008-12-09	12	0	0
 Firman Hadi	2008-12-10	1121	116	0
-Firman Hadi	2008-12-11	1220	145	3
-Firman Hadi	2008-12-12	1028	921	0
-Firman Hadi	2008-12-13	1262	375	1
-Firman Hadi	2008-12-14	1829	819	2
-Firman Hadi	2008-12-15	8423	787	5
+Firman Hadi	2008-12-11	1220	145	4
+Firman Hadi	2008-12-12	1028	921	2
+Firman Hadi	2008-12-13	1262	375	0
+Firman Hadi	2008-12-14	1829	819	1
+Firman Hadi	2008-12-15	8423	787	3
 Firman Hadi	2008-12-16	1351	274	0
-Firman Hadi	2008-12-17	11012	786	4
+Firman Hadi	2008-12-17	11012	786	3
 Firman Hadi	2008-12-18	1227	608	0
 Firman Hadi	2008-12-19	3625	708	0
 Firman Hadi	2008-12-20	536	509	0
@@ -595,45 +868,45 @@ Firman Hadi	2008-12-23	293	5	0
 Firman Hadi	2008-12-24	1	0	0
 Firman Hadi	2008-12-25	1697	4	0
 Firman Hadi	2008-12-26	856	286	0
-Firman Hadi	2008-12-27	2961	299	11
+Firman Hadi	2008-12-27	2961	299	13
 Firman Hadi	2008-12-28	1479	566	0
-Firman Hadi	2008-12-29	1690	755	1
-Firman Hadi	2008-12-30	570	190	1
+Firman Hadi	2008-12-29	1690	755	0
+Firman Hadi	2008-12-30	570	190	0
 Firman Hadi	2008-12-31	26	0	0
 Firman Hadi	2009-01-01	981	490	1
 Firman Hadi	2009-01-02	182	181	0
-Firman Hadi	2009-01-03	1053	950	0
+Firman Hadi	2009-01-03	1053	950	1
 Firman Hadi	2009-01-04	747	743	8
 Firman Hadi	2009-01-05	1044	977	3
-Firman Hadi	2009-01-06	1573	1285	4
-Firman Hadi	2009-01-07	1182	1133	0
+Firman Hadi	2009-01-06	1573	1285	2
+Firman Hadi	2009-01-07	1182	1133	1
 Firman Hadi	2009-01-08	801	781	0
 Firman Hadi	2009-01-09	695	533	6
-Firman Hadi	2009-01-10	5522	2017	11
-Firman Hadi	2009-01-11	1044	765	1
-Firman Hadi	2009-01-12	9321	644	6
-Firman Hadi	2009-01-13	971	957	5
-Firman Hadi	2009-01-14	1061	1043	1
+Firman Hadi	2009-01-10	5522	2017	10
+Firman Hadi	2009-01-11	1044	765	3
+Firman Hadi	2009-01-12	9321	644	3
+Firman Hadi	2009-01-13	971	957	6
+Firman Hadi	2009-01-14	1061	1043	0
 Firman Hadi	2009-01-15	485	456	0
-Firman Hadi	2009-01-16	392	383	0
-Firman Hadi	2009-01-17	661	653	1
+Firman Hadi	2009-01-16	392	383	1
+Firman Hadi	2009-01-17	661	653	0
 Firman Hadi	2009-01-18	86	82	0
-Firman Hadi	2009-01-19	101	101	0
-Firman Hadi	2009-01-20	409	401	4
-Firman Hadi	2009-01-21	152	151	2
-Firman Hadi	2009-01-22	214	211	5
+Firman Hadi	2009-01-19	101	101	1
+Firman Hadi	2009-01-20	409	401	3
+Firman Hadi	2009-01-21	152	151	3
+Firman Hadi	2009-01-22	214	211	4
 Firman Hadi	2009-01-23	57	0	0
-Firman Hadi	2009-02-02	585	573	2
+Firman Hadi	2009-02-02	585	573	1
 Firman Hadi	2009-02-03	167	159	1
 Firman Hadi	2009-02-04	201	190	0
 Firman Hadi	2009-02-06	388	388	1
-Firman Hadi	2009-02-07	1351	766	2
+Firman Hadi	2009-02-07	1351	766	1
 Firman Hadi	2009-02-08	1147	1118	2
 Firman Hadi	2009-02-10	1706	979	0
 Firman Hadi	2009-02-11	830	744	0
 Firman Hadi	2009-02-12	805	794	5
 Firman Hadi	2009-02-13	16	16	0
-Firman Hadi	2009-02-14	904	891	1
+Firman Hadi	2009-02-14	904	891	0
 Firman Hadi	2009-02-15	828	426	0
 Firman Hadi	2009-02-16	125	120	0
 Firman Hadi	2009-02-17	393	385	0
@@ -644,9 +917,9 @@ Firman Hadi	2009-02-21	555	511	0
 Firman Hadi	2009-02-22	423	139	0
 Firman Hadi	2009-02-23	165	164	0
 Firman Hadi	2009-02-24	600	578	0
-Firman Hadi	2009-02-25	1014	643	6
+Firman Hadi	2009-02-25	1014	643	5
 Firman Hadi	2009-02-26	350	342	0
-Firman Hadi	2009-02-27	510	468	3
+Firman Hadi	2009-02-27	510	468	5
 Firman Hadi	2009-02-28	370	356	0
 Firman Hadi	2009-03-01	237	218	0
 Firman Hadi	2009-03-02	144	138	0
@@ -654,25 +927,25 @@ Firman Hadi	2009-03-03	96	95	0
 Firman Hadi	2009-03-04	400	332	0
 Firman Hadi	2009-03-05	598	594	0
 Firman Hadi	2009-03-06	1046	924	0
-Firman Hadi	2009-03-07	1278	718	5
-Firman Hadi	2009-03-08	575	546	0
-Firman Hadi	2009-03-09	1092	1039	22
-Firman Hadi	2009-03-10	397	315	3
-Firman Hadi	2009-03-11	1397	1036	29
-Firman Hadi	2009-03-12	3306	1131	18
-Firman Hadi	2009-03-13	2832	564	5
-Firman Hadi	2009-03-14	731	472	0
+Firman Hadi	2009-03-07	1278	718	6
+Firman Hadi	2009-03-08	575	546	2
+Firman Hadi	2009-03-09	1092	1039	23
+Firman Hadi	2009-03-10	397	315	1
+Firman Hadi	2009-03-11	1397	1036	27
+Firman Hadi	2009-03-12	3306	1131	19
+Firman Hadi	2009-03-13	2832	564	4
+Firman Hadi	2009-03-14	731	472	2
 Firman Hadi	2009-03-15	486	411	0
-Firman Hadi	2009-03-16	871	305	0
-Firman Hadi	2009-03-17	911	861	1
+Firman Hadi	2009-03-16	871	305	1
+Firman Hadi	2009-03-17	911	861	0
 Firman Hadi	2009-03-18	544	519	0
 Firman Hadi	2009-03-19	194	149	0
 Firman Hadi	2009-03-20	9	0	0
 Firman Hadi	2009-03-22	72	27	0
 Firman Hadi	2009-03-24	160	55	0
 Firman Hadi	2009-03-25	132	109	0
-Firman Hadi	2009-03-30	239	220	3
-Firman Hadi	2009-03-31	93	89	1
+Firman Hadi	2009-03-30	239	220	4
+Firman Hadi	2009-03-31	93	89	0
 Firman Hadi	2009-04-01	151	130	1
 Firman Hadi	2009-04-02	224	206	0
 Firman Hadi	2009-04-08	81	63	0
@@ -681,17 +954,17 @@ Firman Hadi	2009-04-10	313	177	0
 Firman Hadi	2009-04-11	195	137	0
 Firman Hadi	2009-04-12	93	50	0
 Firman Hadi	2009-04-13	420	270	0
-Firman Hadi	2009-04-14	606	570	2
-Firman Hadi	2009-04-15	685	659	3
+Firman Hadi	2009-04-14	606	570	3
+Firman Hadi	2009-04-15	685	659	5
 Firman Hadi	2009-04-16	357	350	0
 Firman Hadi	2009-04-23	93	89	0
 Firman Hadi	2009-04-24	50	48	0
 Firman Hadi	2009-04-27	218	216	1
 Firman Hadi	2009-04-28	224	204	0
-Firman Hadi	2009-04-29	310	292	1
+Firman Hadi	2009-04-29	310	292	0
 Firman Hadi	2009-04-30	175	164	0
 Firman Hadi	2009-05-01	344	310	0
-Firman Hadi	2009-05-02	539	518	1
+Firman Hadi	2009-05-02	539	518	0
 Firman Hadi	2009-05-03	71	59	0
 Firman Hadi	2009-05-04	481	474	0
 Firman Hadi	2009-05-05	795	748	0
@@ -706,13 +979,13 @@ Firman Hadi	2009-05-13	140	130	0
 Firman Hadi	2009-05-14	116	101	0
 Firman Hadi	2009-05-15	549	503	0
 Firman Hadi	2009-05-16	287	261	0
-Firman Hadi	2009-05-17	457	407	3
+Firman Hadi	2009-05-17	457	407	1
 Firman Hadi	2009-05-18	868	706	0
 Firman Hadi	2009-05-19	712	675	1
-Firman Hadi	2009-05-20	896	811	1
-Firman Hadi	2009-05-21	937	766	11
-Firman Hadi	2009-05-22	715	679	0
-Firman Hadi	2009-05-23	337	327	0
+Firman Hadi	2009-05-20	896	811	2
+Firman Hadi	2009-05-21	937	766	12
+Firman Hadi	2009-05-22	715	679	1
+Firman Hadi	2009-05-23	337	327	2
 Firman Hadi	2009-05-24	411	403	0
 Firman Hadi	2009-05-25	440	405	0
 Firman Hadi	2009-05-26	297	276	0
@@ -730,21 +1003,21 @@ Firman Hadi	2009-06-09	196	144	0
 Firman Hadi	2009-06-20	8	1	0
 Firman Hadi	2009-06-21	82	79	1
 Firman Hadi	2009-06-22	110	66	0
-Firman Hadi	2009-06-25	364	347	11
-Firman Hadi	2009-06-26	58	56	1
+Firman Hadi	2009-06-25	364	347	13
+Firman Hadi	2009-06-26	58	56	0
 Firman Hadi	2009-06-27	75	60	1
 Firman Hadi	2009-06-28	15	9	0
 Firman Hadi	2009-06-29	95	67	0
 Firman Hadi	2009-07-02	2	1	0
 Firman Hadi	2009-07-03	4	4	0
-Firman Hadi	2009-07-05	108	101	4
+Firman Hadi	2009-07-05	108	101	3
 Firman Hadi	2009-07-12	4	2	0
 Firman Hadi	2009-07-20	7	5	0
-Firman Hadi	2009-08-02	136	130	0
+Firman Hadi	2009-08-02	136	130	1
 Firman Hadi	2009-08-29	34	31	0
 Firman Hadi	2009-08-30	36	29	0
-Firman Hadi	2009-09-05	172	145	1
-Firman Hadi	2009-09-10	107	54	3
+Firman Hadi	2009-09-05	172	145	0
+Firman Hadi	2009-09-10	107	54	1
 Firman Hadi	2009-09-12	206	154	0
 Firman Hadi	2009-09-13	20	4	0
 Firman Hadi	2009-09-19	35	31	0
@@ -768,7 +1041,7 @@ Firman Hadi	2010-07-31	158	154	0
 Firman Hadi	2010-08-01	19	19	0
 Firman Hadi	2010-09-19	12	10	0
 Firman Hadi	2011-02-01	52	46	0
-Firman Hadi	2011-02-03	702	526	0
+Firman Hadi	2011-02-03	702	526	1
 Firman Hadi	2011-02-04	812	749	0
 Firman Hadi	2011-02-05	40	40	0
 Firman Hadi	2011-02-06	622	534	0
@@ -798,7 +1071,7 @@ Firman Hadi	2011-05-28	129	29	0
 Firman Hadi	2011-06-04	50	31	0
 Firman Hadi	2011-06-07	369	286	0
 Firman Hadi	2011-06-08	64	37	0
-Firman Hadi	2011-06-10	560	506	0
+Firman Hadi	2011-06-10	560	506	1
 Firman Hadi	2011-06-11	257	157	0
 Firman Hadi	2011-06-12	510	453	0
 Firman Hadi	2011-06-13	361	336	0
@@ -853,7 +1126,7 @@ Firman Hadi	2011-10-16	394	246	0
 Firman Hadi	2011-10-20	244	238	0
 Firman Hadi	2011-10-21	117	109	0
 Firman Hadi	2011-10-22	418	392	0
-Firman Hadi	2011-10-23	266	266	0
+Firman Hadi	2011-10-23	266	266	1
 Firman Hadi	2011-10-27	193	137	0
 Firman Hadi	2011-12-28	76	76	0
 Firman Hadi	2011-12-29	14	1	0
@@ -920,32 +1193,71 @@ Firman Hadi	2014-01-08	9	6	0
 Firman Hadi	2014-02-05	16	6	0
 Firman Hadi	2014-07-21	2	2	0
 Firman Hadi	2014-08-09	53	46	0
+Firman Hadi	2015-05-16	7	5	0
+Firman Hadi	2015-05-27	10	6	0
+Firman Hadi	2015-06-03	8	8	0
+Firman Hadi	2015-06-04	39	39	0
+Firman Hadi	2015-06-06	11	4	0
+Firman Hadi	2015-07-11	5	1	0
+Firman Hadi	2015-07-12	39	12	0
+Firman Hadi	2015-07-22	41	13	0
+Firman Hadi	2015-07-23	2	0	0
+Firman Hadi	2015-07-26	11	7	0
+Firman Hadi	2015-08-04	12	8	0
+Firman Hadi	2015-12-12	5	5	0
 Fitria Wahid	2013-12-03	4	4	0
+Flynn Marquardt	2015-03-11	1	0	0
 FranBoon	2008-05-13	9	6	0
 Frans Thamura	2011-11-06	7	7	0
 Frans Thamura	2011-12-05	1	0	0
 Frenchie1234	2014-08-10	10	8	0
+Frunz77	2015-05-06	41	35	0
+FvGordon	2015-05-06	3	1	0
 G A Mantiri	2012-04-15	50	34	0
 G A Mantiri	2012-05-05	11	10	0
 Gadelaza	2012-09-22	119	112	0
 Gagravarr	2007-03-19	1	1	1
 Gallanta Arga	2014-03-05	11	10	0
 Gallery Kemang 58	2015-01-04	2	1	0
+Gallery Kemang 58	2015-10-10	1	0	0
 Ganjar Nugroho	2013-12-27	2	2	0
+Gatot Pramono	2015-08-14	17	17	0
 Geogast	2010-06-18	1	0	0
 Gerald Logor	2012-03-16	5	5	0
-Giv	2012-01-17	6	6	2
+GerdP	2015-09-22	2	1	0
+GerdP	2015-09-24	9	8	0
+GerdP	2015-10-17	8	4	0
+GerdP	2015-11-24	12	3	0
+Gilang Scout Rescue Kwarda DKI Jakarta	2015-11-29	14	14	0
+Gilang Scout Rescue Kwarda DKI Jakarta	2015-12-09	20	4	0
+Gilang Scout Rescue Kwarda DKI Jakarta	2015-12-12	4	4	0
+Giv	2012-01-17	6	6	1
 Gugun Muhammad	2014-11-06	20	16	0
+Gugun Muhammad	2015-01-31	7	7	0
+Gunawan MS	2015-04-02	24	24	0
 Guntur_PIX	2013-09-02	37	35	0
+Guntur_PIX	2015-02-04	1	1	0
+Gutsycat	2015-11-03	1	0	0
+Gutsycat	2015-11-04	1	0	0
+HHCacher	2015-04-26	1	0	0
 Handoyo Taher	2013-05-10	1	1	0
+Hanif Al Husaini	2015-02-22	74	68	0
+Hanif Al Husaini	2015-02-24	9	9	0
+Hanif Al Husaini	2015-05-15	24	4	0
+Hanif Al Husaini	2015-06-18	53	39	0
+Hanif Al Husaini	2015-06-28	3	2	0
+Hanif Ismail	2015-10-25	9	9	0
 HannesHH	2008-11-01	161	161	9
-HannesHH	2008-11-04	173	137	9
-Hari Danarbroto	2008-10-05	606	399	7
+HannesHH	2008-11-04	173	137	10
+Hari Danarbroto	2008-10-05	606	399	8
 Hari Danarbroto	2008-10-09	15	0	0
 Hasan Nur Aminudin	2012-03-05	196	196	0
-Hasin	2011-06-28	3	2	1
+Hasin	2011-06-28	3	2	0
 Hasin	2011-06-30	2	1	0
 Hefaistos Dev	2013-12-14	8	8	0
+Helmchen42	2015-12-05	215	173	0
+Hendra Prastiawan	2015-11-21	4	4	0
+Hendra Prastiawan	2015-11-24	16	16	0
 Heri Mardiyanto	2013-06-13	1	1	0
 HeruLS	2014-03-01	5	5	0
 Herwin Adriansyah	2013-02-14	35	35	0
@@ -956,7 +1268,25 @@ Herwin Lesmana	2013-05-19	5	1	0
 Herwin Lesmana	2013-09-02	3	1	0
 Herwin Lesmana	2014-05-20	9	8	0
 HexaKreasi	2014-04-16	1604	1604	0
+Hilman Kurniawan	2015-07-09	46	39	0
+Hilman Kurniawan	2015-07-22	26	17	0
+Hobbies Store	2015-09-09	1	1	0
+Hugo Bachellier	2015-09-03	46	45	0
+Hugo Bachellier	2015-09-04	3	3	0
+Hugo Bachellier	2015-09-07	36	30	0
+Hugo Bachellier	2015-09-08	42	42	0
+Hugo Bachellier	2015-09-09	2	0	0
+Hugo Bachellier	2015-09-10	33	29	0
+Hugo Bachellier	2015-09-11	70	55	0
+Hugo Bachellier	2015-09-14	40	39	0
+Hugo Bachellier	2015-09-16	16	15	0
+Hugo Bachellier	2015-09-23	9	8	0
 Hutasoit	2014-04-01	8	0	0
+Hysocc	2015-05-03	256	214	0
+Hysocc	2015-05-07	12	11	0
+Hysocc	2015-05-09	44	40	0
+Hysocc	2015-05-16	235	232	0
+Hysocc	2015-06-07	18	16	0
 IZMANR	2013-04-25	1053	970	0
 IZMANR	2013-05-17	244	244	0
 Ian Granger	2011-12-27	6	3	0
@@ -980,9 +1310,12 @@ Ian Granger	2013-09-06	3	1	0
 Ian Granger	2013-09-09	30	0	0
 Ian Granger	2013-09-15	133	125	0
 Ian Granger	2014-11-03	36	17	0
+Ian Granger	2015-12-31	21	19	0
+Ian Granger	2016-01-11	9	5	0
 Ibni	2011-06-27	53	53	0
 Iftakhul Anwar	2013-06-13	42	5	0
 Iftakhul Anwar	2013-07-08	118	31	0
+Ika Prahasti Nuriana	2015-08-19	8	8	0
 IknowJoseph	2012-06-16	9	4	0
 IknowJoseph	2012-06-17	2	0	0
 IknowJoseph	2012-06-19	3	3	0
@@ -997,6 +1330,9 @@ IknowJoseph	2012-10-04	146	135	0
 IknowJoseph	2012-10-08	1	1	0
 IknowJoseph	2014-09-17	1	0	0
 IknowJoseph	2014-10-01	8	8	0
+Ila Nurul Fadilah	2015-04-10	14	9	0
+Ila Nurul Fadilah	2015-10-01	18	18	0
+Ila Nurul Fadilah	2015-10-08	70	66	0
 Ilham Suaib	2013-06-20	31	4	0
 Ilham Suaib	2013-06-21	37	14	0
 Ilham Suaib	2013-06-24	12	6	0
@@ -1005,7 +1341,12 @@ Ilham Suaib	2013-07-09	129	8	0
 Ilham Suaib	2013-07-10	441	73	0
 Immanuel Manurung	2010-06-03	22	0	0
 Ina HN	2013-04-25	421	348	0
+Indah Nafidah Hayati	2015-04-10	20	12	0
+Indah Nafidah Hayati	2015-10-06	1	1	0
+Indah Nafidah Hayati	2015-10-20	20	20	0
 IndoFio	2012-07-31	72	64	0
+IpulGeo	2015-10-21	26	19	0
+Ir Sobirin	2015-08-31	33	32	0
 Irandi Pratomo	2014-04-15	4	4	0
 Irfan Muhammad	2014-01-02	70	69	0
 Irfan Muhammad	2014-01-16	363	214	0
@@ -1025,6 +1366,8 @@ Islander The Great	2014-06-01	67	64	0
 Islander The Great	2014-06-02	18	18	0
 Ivo setyadi	2010-09-14	1	1	0
 Iwan Has	2013-08-21	94	79	0
+Iwan Papedsko	2015-11-03	1	1	0
+Iwan Petroza	2015-12-17	5	3	0
 Iyan	2013-07-05	1	1	0
 Iyan	2013-07-16	12	12	0
 Iyan	2013-07-18	8	8	0
@@ -1056,24 +1399,79 @@ Iyan	2014-12-27	38	22	0
 Iyan	2014-12-31	222	0	0
 Iyan	2015-01-05	26	12	0
 Iyan	2015-01-09	4	0	0
+Iyan	2015-01-30	12	12	0
+Iyan	2015-02-04	5	5	0
+Iyan	2015-02-21	6	3	0
+Iyan	2015-02-28	126	58	0
+Iyan	2015-03-11	4	4	0
+Iyan	2015-03-16	4	4	0
+Iyan	2015-04-15	49	31	0
+Iyan	2015-04-27	31	25	0
+Iyan	2015-08-31	10	10	0
+Iyan	2015-09-20	27	27	0
+Iyan	2015-11-16	45	31	0
+Iyan	2015-11-28	28	28	0
+Iyan	2015-12-01	5	5	0
+Iyan	2015-12-02	4	4	0
+Iyan	2016-01-14	8	8	0
 Izoel	2013-05-17	23	13	0
 Izoel	2014-05-19	4	4	0
 JANU EKA SETIAWAN	2013-07-24	6	2	0
 JOKO SUPARNO	2012-03-26	145	81	0
 Jack Hazem	2013-06-06	102	101	0
 Jack Pham	2013-10-17	2	2	0
+JakArtisan	2015-06-05	21	21	0
+JakArtisan	2015-06-06	265	263	0
+JakArtisan	2015-06-07	54	54	0
+JakArtisan	2015-06-08	27	26	0
+JakArtisan	2015-06-11	15	14	0
+JakArtisan	2015-06-14	38	34	0
+JakArtisan	2015-06-15	140	140	0
+JakArtisan	2015-06-17	44	44	0
+JakArtisan	2015-06-18	51	50	0
+JakArtisan	2015-06-19	112	111	0
+JakArtisan	2015-06-20	106	106	0
+JakArtisan	2015-06-21	4	4	0
+JakArtisan	2015-06-22	323	322	0
+JakArtisan	2015-06-24	220	217	0
+JakArtisan	2015-06-25	24	16	0
+JakArtisan	2015-06-26	313	312	0
+JakArtisan	2015-06-28	181	175	0
+JakArtisan	2015-06-29	301	297	0
+JakArtisan	2015-06-30	96	96	0
+JakArtisan	2015-07-01	131	117	0
+JakArtisan	2015-07-02	253	251	0
+JakArtisan	2015-07-03	223	157	0
+JakArtisan	2015-07-06	307	255	0
+JakArtisan	2015-07-07	207	189	0
+JakArtisan	2015-07-08	97	97	0
+JakArtisan	2015-07-14	25	24	0
+JakArtisan	2015-07-15	56	54	0
+JakArtisan	2015-07-18	76	68	0
+JakArtisan	2015-07-19	78	76	0
+JakArtisan	2015-07-20	13	13	0
+JakArtisan	2015-07-22	6	6	0
+JakArtisan	2015-07-23	74	74	0
+JakArtisan	2015-07-24	118	99	0
+JakArtisan	2015-07-26	40	15	0
+JakArtisan	2015-07-28	16	9	0
+JakArtisan	2015-07-29	22	21	0
+JakArtisan	2015-07-30	2	1	0
 Jakarta Toastmasters Club	2012-05-23	1	1	0
 Jake Strine	2014-05-02	1	0	0
 Jano John Akim Franke	2013-10-04	1	0	0
 Jase Indo	2013-11-29	1	1	0
 Jayuda	2014-12-15	1	1	0
+Jean-Robert Chauvot	2015-01-26	4	3	0
 Jeply Murdiaman Guci	2011-07-06	35	35	0
+Jesse Jeremiah	2015-09-19	35	1	0
+Joe Contini	2015-11-13	2	1	0
 Joe Iska	2010-11-15	2	2	0
 JoeJakarta	2013-01-22	2	1	0
 John Vandenberg	2012-11-04	4	4	0
 JohnSmith	2010-06-30	49	0	0
 Johnny Arifin	2015-01-11	2	1	0
-Johnny Carlsen	2013-04-27	274	268	0
+Johnny Carlsen	2013-04-27	274	268	1
 Johnny Carlsen	2013-04-28	53	44	0
 Johnwhelan	2014-10-19	25	25	0
 Jonathan Tobing	2010-11-07	1	0	0
@@ -1088,9 +1486,13 @@ Josef73	2014-03-13	2	0	0
 Julian Reza	2013-10-08	33	28	0
 Julian Reza	2013-10-10	55	36	0
 JulienBalas	2010-08-08	2	0	0
+Julien_N	2015-11-26	2	0	0
 KELAPA GADING TIMUR	2012-03-13	220	220	0
 KELAPA GADING TIMUR	2012-03-15	60	56	0
 KELURAHAN CEMPAKA PUTIH TIMUR	2012-03-15	118	106	0
+KIngaJOnes	2015-12-11	2	0	0
+KIngaJOnes	2015-12-12	8	7	0
+KIngaJOnes	2015-12-21	3	1	0
 Kahardityo	2013-07-03	31	26	0
 Kahardityo	2013-07-04	95	77	0
 Kahardityo	2013-07-29	4	4	0
@@ -1100,6 +1502,7 @@ Kamya	2013-03-18	460	423	0
 Kamya	2013-03-21	1723	1718	0
 Kamya	2013-03-22	736	735	0
 Kamya	2013-03-23	1417	1417	0
+Kanu Canoe	2015-12-21	84	72	0
 Kapuk	2012-03-26	34	33	0
 Kapuk Muara	2012-03-13	364	364	0
 Kapuk Muara	2012-03-15	265	261	0
@@ -1126,7 +1529,7 @@ Kelurahan Batu Ampar	2012-03-20	607	606	0
 Kelurahan Benhil	2012-03-15	322	271	0
 Kelurahan Bintaro 2	2012-03-29	323	323	0
 Kelurahan Cakung Barat	2012-03-20	369	369	0
-Kelurahan Ceger	2012-03-20	482	463	1
+Kelurahan Ceger	2012-03-20	482	463	0
 Kelurahan Cengkareng Barat	2012-03-26	48	48	0
 Kelurahan Cikini	2012-03-15	150	150	0
 Kelurahan Cikoko	2012-03-29	247	220	0
@@ -1170,7 +1573,7 @@ Kelurahan Rawa Buaya	2012-03-26	340	331	0
 Kelurahan Selong	2012-03-29	171	166	0
 Kelurahan Sukapura	2012-03-13	294	284	0
 Kelurahan Sunter Jaya	2012-03-13	402	400	0
-Kelurahan Susukan	2012-03-20	597	579	1
+Kelurahan Susukan	2012-03-20	597	579	0
 Kelurahan Tangki	2012-03-26	209	208	0
 Kelurahan Tangki	2012-03-27	353	64	0
 Kelurahan Tanjung Duren Selatan	2012-03-26	293	293	0
@@ -1183,6 +1586,7 @@ Kerfy	2014-10-25	55	55	0
 Koepz Loekmann	2011-08-11	139	110	0
 Koepz Loekmann	2011-08-12	191	152	0
 Kolossos	2012-10-18	1	0	0
+Komяpa	2015-07-23	1	0	0
 Kon'x	2013-04-25	478	477	0
 Krishdy	2011-07-26	1	0	0
 Kristo Putranda	2012-06-14	3	3	0
@@ -1195,17 +1599,26 @@ Kristy	2012-04-05	32	8	0
 Kristy	2012-06-04	12	4	0
 Kuningan Timur	2012-03-29	87	83	0
 Kuntoro Andri	2014-06-15	20	3	0
+Kurniawan Haikal	2015-03-27	24	24	0
 Kusmana	2012-03-13	90	90	0
 LLAQWA	2014-06-05	201	201	1
 Laksmi Soedarsono	2014-03-01	29	29	0
+Laksono Hari	2015-08-22	109	59	0
 LaluAFHakim	2014-07-17	55	45	0
+Larry Freil	2015-08-01	39	35	0
 Latze	2011-10-13	2255	2252	0
 Latze	2011-11-17	1320	1320	0
 Latze	2013-02-05	3468	3465	0
+Latze	2015-08-08	16	16	0
+Latze	2015-08-10	21	19	0
+Lay Mungphin	2015-04-16	31	31	0
+Lay Mungphin	2015-04-17	158	157	0
+Leni Noertam	2015-11-21	14	14	0
 Lia Indriati	2014-09-15	4	4	0
 Lilis Chodijah	2011-05-16	9	8	0
 Lilis Chodijah	2012-08-01	392	392	0
 Lilis Margaret	2013-02-19	2	1	0
+Linus A	2015-11-26	2	2	0
 LinuxKu	2013-10-04	1	1	0
 Liong	2012-09-11	1	1	0
 Liong	2012-09-19	64	62	0
@@ -1215,16 +1628,17 @@ Liong	2012-10-11	119	82	0
 Liong	2012-10-13	176	137	0
 Liong	2012-10-24	526	475	0
 Liong	2012-11-14	172	132	0
-Liong	2012-11-22	1166	1124	0
-Liong	2012-11-23	1017	918	3
-Liong	2012-11-24	206	145	0
+Liong	2012-11-22	1166	1124	2
+Liong	2012-11-23	1017	918	1
+Liong	2012-11-24	206	145	1
 Liong	2012-11-25	526	406	0
 Liong	2012-11-26	649	482	0
 Liong	2012-11-29	344	332	0
 Liong	2012-11-30	538	348	0
-Liong	2013-01-12	373	333	1
-Liong	2013-01-13	1384	1212	5
+Liong	2013-01-12	373	333	0
+Liong	2013-01-13	1384	1212	7
 Liong	2013-05-14	6	0	0
+LuckyOSM	2015-09-01	17	17	0
 Luis36995	2014-07-22	1	0	0
 Luis36995	2014-07-29	1	0	0
 Luis36995	2014-07-31	4	0	0
@@ -1242,8 +1656,19 @@ Luis36995	2014-12-18	1	0	0
 Luis36995	2014-12-23	2	1	0
 Luis36995	2015-01-13	7	1	0
 Luis36995	2015-01-24	6	1	0
+Luis36995	2015-07-11	9	3	0
+Luis36995	2015-07-24	5	0	0
+Luis36995	2015-07-30	1	0	0
+Luis36995	2015-08-01	1	0	0
+Luis36995	2015-08-04	17	0	0
+Luis36995	2015-08-11	4	0	0
+Luis36995	2015-08-26	6	1	0
+Luis36995	2015-09-07	1	0	0
+Lulur Nature Organic	2015-07-09	1	1	0
 Lurah Kelik	2012-03-13	522	522	0
 MAINDATAshop	2014-01-11	1	1	0
+MAPconcierge	2015-09-01	12	12	0
+M_Hafidz_Alimi	2015-10-08	25	20	0
 M_Ridwan	2013-10-01	1937	1781	0
 M_Ridwan	2013-10-03	15	0	0
 M_Ridwan	2013-10-10	20	0	0
@@ -1256,6 +1681,10 @@ M_Ridwan	2013-12-04	2	2	0
 M_Ridwan	2013-12-29	2	2	0
 M_Ridwan	2013-12-30	6	3	0
 Maarten Deen	2009-02-28	80	0	0
+Madu Sehat	2015-08-04	1	1	0
+Maenik Meinika	2015-03-19	22	22	0
+Maenik Meinika	2015-03-21	23	22	0
+Maenik Meinika	2015-03-22	11	2	0
 Maestro89	2014-01-12	5	5	0
 Mafaaza	2013-01-10	13	9	0
 ManAboutCouch	2014-05-13	9	9	0
@@ -1264,10 +1693,15 @@ Manu1400	2013-04-30	1	0	0
 Manu1400	2013-05-04	1	0	0
 Manu1400	2013-05-20	69	11	0
 Manu1400	2013-12-14	1	0	0
+MappingSpectrum	2015-03-29	2	1	0
+Mariska20	2015-04-10	21	11	0
+Mariska20	2015-10-01	10	10	0
+Mariska20	2015-10-03	3	3	0
+Mariska20	2015-10-04	5	3	0
 Martin M Baihaqi	2014-03-03	4	4	0
-Mas Ben	2012-03-05	14	14	1
+Mas Ben	2012-03-05	14	14	2
 Mas Ben	2012-03-16	1918	1872	1
-Mas Ben	2012-03-20	712	699	3
+Mas Ben	2012-03-20	712	699	0
 Mas Ben	2012-03-21	6692	6676	0
 Mas Ben	2014-10-13	89	61	0
 Mas Ben	2014-10-14	300	276	0
@@ -1294,6 +1728,9 @@ Mas Ben	2014-12-18	288	187	0
 Mas Ben	2014-12-19	7	2	0
 Mas Ben	2015-01-08	9	4	0
 Mas Ben	2015-01-15	214	146	0
+Mas Ben	2015-03-27	684	605	0
+Mas Ben	2015-03-30	24	2	0
+Mas Ben	2015-04-09	238	137	0
 Mathbau	2010-09-08	2	0	0
 Mathbau	2013-02-08	1	0	0
 Maulana1331	2014-10-11	45	25	0
@@ -1331,10 +1768,18 @@ Mia Renauly	2014-12-16	46	42	0
 Mia Renauly	2014-12-17	50	11	0
 Mia Renauly	2015-01-05	9	9	0
 Mia Renauly	2015-01-12	2	0	0
+Mia Renauly	2015-03-26	291	279	0
+Mia Renauly	2015-03-27	406	337	0
+Mia Renauly	2015-03-30	524	334	0
+Mia Renauly	2015-04-01	7	5	0
+Mia Renauly	2015-04-06	63	55	0
+Mia Renauly	2015-04-08	10	8	0
 MichaelCollinson	2008-11-06	1	0	0
 MichaelCollinson	2009-07-19	19	0	0
+Mirzadelya Devanastya	2015-07-09	19	18	0
 MisdiantoTintin	2014-11-26	23	22	0
 Mishari	2013-01-06	2	2	0
+Mochamad Zaenudin	2015-11-21	122	116	0
 Moh Muhajirin	2014-01-14	5	3	0
 MrSyeh	2011-12-05	1	0	0
 MuhDadang	2013-06-20	46	23	0
@@ -1343,15 +1788,28 @@ MuhDadang	2013-07-07	115	15	0
 MuhDadang	2013-07-08	53	8	0
 MuhDadang	2013-07-10	54	1	0
 Muhamad Taufik	2013-04-25	2531	2519	0
+Muhammad Agiet Putra	2015-09-15	1	1	0
+Muhammad Agiet Putra	2015-10-01	8	8	0
+Muhammad Agiet Putra	2015-10-04	8	8	0
+Muhammad Agiet Putra	2016-01-17	653	649	0
 Muhammad Novianto	2012-12-07	12	0	0
 Muhammad Novianto	2012-12-10	113	93	0
-Mukti A	2012-11-16	123	120	1
+Mukti A	2012-11-16	123	120	0
+Multazam Utama	2015-04-13	4	4	0
+Multazam Utama Travel	2015-02-10	3	3	0
 Mulyono	2013-04-25	623	615	0
-Mulyono	2013-05-09	122	122	3
+Mulyono	2013-05-09	122	122	4
 Mutiah Faizah	2011-06-27	16	16	0
 MvB434AXfXr1crVJRXJE	2010-09-27	1	1	0
 MvB434AXfXr1crVJRXJE	2012-04-09	5	4	0
+NA70HT	2015-07-05	89	20	0
+NA70HT	2015-07-21	97	46	0
 Nadine Sagala	2014-09-10	11	4	0
+NahliaRoseno	2015-09-23	6	6	0
+NahliaRoseno	2015-10-01	37	34	0
+NahliaRoseno	2015-10-02	33	33	0
+NahliaRoseno	2015-10-08	26	26	0
+NahliaRoseno	2016-01-17	969	962	0
 Nana Mulyana	2013-11-04	38	7	0
 Nana Mulyana	2014-04-16	64	63	0
 Nanda Bachtiar	2013-12-05	53	39	0
@@ -1363,6 +1821,11 @@ Naufal Afif	2013-06-24	42	0	0
 Naufal Afif	2013-07-05	225	15	0
 Naufal Afif	2013-07-09	21	7	0
 Naufal Afif	2013-07-10	58	10	0
+Naval Scene	2015-11-21	9	6	0
+Naval Scene	2015-11-24	54	29	0
+Naval Scene	2015-11-30	33	28	0
+Naval Scene	2015-12-15	5	3	0
+Neny Widhayanti	2015-04-14	14	14	0
 Netzwolf	2013-01-25	1	0	0
 Nico Yan Bernard	2013-02-22	35	33	0
 Nico Yan Bernard	2013-05-08	28	22	0
@@ -1376,15 +1839,27 @@ Nike Diah	2012-04-11	618	618	0
 Nike Diah	2012-04-13	27624	27624	0
 Nike Diah	2012-04-17	2524	2489	0
 Nikesh23	2014-08-13	4	4	0
+NikoWicaksono	2015-03-13	28	28	0
+NikoWicaksono	2015-03-14	41	40	0
+NikoWicaksono	2015-03-16	205	113	0
+NikoWicaksono	2015-03-17	223	160	0
+NikoWicaksono	2015-03-18	779	598	0
+NikoWicaksono	2015-03-19	660	357	0
+NikoWicaksono	2015-03-20	48	29	0
 Noel Pitoy	2012-03-07	10	9	0
+NoobFirst	2015-05-18	1	0	0
 Notaris	2008-11-03	1	0	0
 Nuku25	2014-05-08	11	11	0
+Nurjanah	2015-09-02	6	6	0
 Nurlatipah Hari	2012-03-08	375	262	0
 Nurlatipah Hari	2012-03-09	194	194	0
 Nurlatipah Hari	2012-03-19	42	42	0
 Nurlatipah Hari	2012-03-21	1079	1078	0
 Nusa Ads Media	2014-11-06	3	2	0
 Nusa Ads Media	2015-01-16	1	0	0
+Nusa Ads Media	2015-03-09	2	0	0
+Nyoman Indrawan	2015-05-17	71	46	0
+OPerivar	2016-01-03	78	22	0
 OSMF Redaction Account	2012-07-21	27	0	0
 Oberaffe	2012-04-10	4	0	0
 Oberpfälzer	2014-11-09	17	0	0
@@ -1400,8 +1875,8 @@ Olivia M-H	2013-03-16	34	5	0
 Olivia M-H	2013-04-30	57	53	0
 Olivia M-H	2013-05-05	136	102	0
 Olivia M-H	2013-05-06	1135	286	0
-Onno Purbo	2012-05-29	33	31	0
-Onno Purbo	2012-06-04	273	260	2
+Onno Purbo	2012-05-29	33	31	1
+Onno Purbo	2012-06-04	273	260	0
 Onny	2012-07-18	2	2	0
 Onny	2012-12-15	1	1	0
 Onny	2013-03-18	175	164	0
@@ -1420,11 +1895,16 @@ PelleV	2013-12-28	18	17	0
 PelleV	2014-02-01	37	34	0
 PelleV	2014-03-04	30	30	0
 PelleV	2014-05-31	30	28	0
+PelleV	2015-05-03	2	2	0
+PelleV	2015-05-05	28	15	0
+PlaneMad	2015-09-09	1	0	0
 PocketSizeSun	2014-12-25	66	65	0
+Prasetya	2015-01-28	48	48	0
 Prayojana Raditya Murti	2012-06-28	1	1	0
 Prayojana Raditya Murti	2013-02-04	18	6	0
 Priadharma CDSP	2013-09-09	13	13	0
-Priyadi	2008-03-22	9	2	0
+Priadharma CDSP	2015-02-24	9	9	0
+Priyadi	2008-03-22	9	2	1
 Prot D	2014-11-23	3	3	0
 Pustakaby	2012-09-22	9	3	0
 PutriRachiemnys	2014-08-27	861	852	0
@@ -1464,6 +1944,11 @@ Rangga	2011-10-06	2	0	0
 Rangga	2011-10-10	2	2	0
 Rangga	2013-03-12	7	4	0
 Rano Sumarno	2012-12-03	20	20	0
+RaodMapper	2016-01-04	3	3	0
+Rapiddash189	2015-05-01	19	18	0
+Ratihseffendi	2015-09-23	11	8	0
+Ratihseffendi	2015-10-01	85	53	0
+Ratihseffendi	2015-10-06	42	38	0
 Ratry Chairunnisa	2012-03-05	84	84	0
 Ratry Chairunnisa	2012-03-20	394	388	0
 Ratry Chairunnisa	2012-03-27	5116	5105	0
@@ -1488,6 +1973,13 @@ Ratry Chairunnisa	2014-12-12	84	37	0
 Ratry Chairunnisa	2014-12-16	224	187	0
 Ratry Chairunnisa	2014-12-17	3	1	0
 Ratry Chairunnisa	2015-01-12	1	0	0
+Ratry Chairunnisa	2015-03-26	533	490	0
+Ratry Chairunnisa	2015-03-27	655	621	0
+Ratry Chairunnisa	2015-03-30	640	597	0
+Ratry Chairunnisa	2015-03-31	4	4	0
+Ratry Chairunnisa	2015-04-01	8	8	0
+Ratry Chairunnisa	2015-04-06	104	96	0
+Ratry Chairunnisa	2015-04-08	113	24	0
 Ray Marcelo	2011-11-02	1	1	0
 Ray Pahlevi	2012-03-10	3	3	0
 Rbanick	2012-03-14	31	31	0
@@ -1500,11 +1992,19 @@ Rbanick	2013-06-07	4	4	0
 Rbanick	2013-06-29	66	49	0
 Rbanick	2013-07-01	180	163	0
 RedFox	2009-08-05	2	0	0
-Reza Primardiansyah	2008-06-03	19	19	2
+Regia Andi	2015-10-07	25	21	0
+Regia Andi	2015-10-21	45	28	0
+Reinhart Previano	2015-10-30	23	4	0
+Reinhart Previano	2015-11-15	53	8	0
+Reinhart Previano	2015-11-18	29	21	0
+Reza Primardiansyah	2008-06-03	19	19	1
 Reza Primardiansyah	2008-06-24	168	168	3
-Reza Primardiansyah	2010-09-26	106	105	1
+Reza Primardiansyah	2010-09-26	106	105	0
 Reza Primardiansyah	2010-09-28	18	18	0
 Reza Primardiansyah	2012-04-08	28	27	0
+Reza Primardiansyah	2016-01-10	12	9	0
+Reza Primardiansyah	2016-01-12	101	99	0
+RezaJayadikara	2015-11-21	13	13	0
 Rheza	2013-12-30	10	9	0
 Rica tri wahyuni	2014-08-27	2525	2484	0
 Rica tri wahyuni	2014-08-28	4787	4777	0
@@ -1531,9 +2031,18 @@ RichRico	2014-12-05	3	2	0
 RichRico	2014-12-11	3	0	0
 RichRico	2014-12-16	4	0	0
 RichRico	2014-12-18	2	0	0
+RichRico	2015-07-10	1	0	0
+RichRico	2015-07-24	1	1	0
+RichRico	2015-07-31	2	0	0
+RichRico	2015-08-01	1	0	0
+RichRico	2015-08-11	1	0	0
+RichRico	2015-08-26	1	1	0
+RichRico	2015-09-01	1	1	0
 Richie Rich	2012-03-19	3	1	0
 Rickyarm	2013-01-10	4	4	0
 Rickyarm	2013-01-16	1	0	0
+RideHunt	2015-07-27	62	12	0
+Ridho F	2015-05-01	4	4	0
 Ridwan Firdaus	2012-03-12	13	13	0
 Ridwan Firdaus	2012-03-13	131	123	0
 Ridwan Firdaus	2012-03-14	287	164	0
@@ -1541,9 +2050,11 @@ Ridwan Firdaus	2012-03-15	54	54	0
 Ridwan Firdaus	2012-03-20	463	449	0
 Ridwan Firdaus	2012-03-26	923	904	0
 Ridwan Firdaus	2012-03-29	183	164	0
+Rifco	2015-09-06	7	4	0
 Rifki Husin	2012-08-27	2	1	0
 Rikram8	2015-01-06	14	8	0
 Rikram8	2015-01-08	20	8	0
+Rio Alif Mustaqim	2015-06-07	8	2	0
 Riyani Gani	2012-03-15	58	58	0
 Riyani Gani	2012-03-26	343	343	0
 Riyani Gani	2012-04-06	2	2	0
@@ -1558,8 +2069,8 @@ RomEvg	2014-04-14	826	8	0
 RomEvg	2014-05-02	29	3	0
 Ronald Simanjuntak	2013-08-28	12	12	0
 Ronald Suparmin	2013-04-25	73	73	0
-Ropino	2012-06-10	539	314	1
-Ropino	2012-06-11	42	34	0
+Ropino	2012-06-10	539	314	0
+Ropino	2012-06-11	42	34	1
 Ropino	2012-06-30	56	12	0
 Ropino	2012-07-03	233	4	0
 Rub21	2014-07-18	1	0	0
@@ -1569,19 +2080,28 @@ Rub21	2014-07-24	1	1	0
 Rub21	2014-07-25	6	1	0
 Rub21	2014-07-30	5	4	0
 Rub21	2015-01-10	18	18	0
+Rub21	2015-07-16	1	0	0
+Rub21	2015-11-23	45	0	0
 Ruby_M	2012-12-10	8	7	0
 Rudi Heitbaum	2012-02-11	29	16	0
 Rwsyah	2014-03-23	2	2	0
 Rylan Homscheid	2013-03-23	616	614	0
 Rylan Homscheid	2013-03-26	3780	3737	0
 SDS LEMBAGA PUTRA KITA	2012-12-30	16	8	0
+Sabda Nayoko	2015-04-10	13	13	0
+Sabda Nayoko	2015-10-01	55	16	0
+Sabda Nayoko	2015-10-06	28	27	0
+Sabda Nayoko	2015-10-08	32	31	0
 Sabdo	2011-11-04	5	1	0
 Sagika	2011-07-06	11	11	0
 Sam Sandoro	2014-07-20	21	21	0
 SamSam888	2014-03-29	1	1	0
+Samhamsam	2016-01-17	1	1	0
+Samm Ascanio	2015-07-21	2	2	0
 Samuel Liputra	2014-09-15	2	2	0
 Sandhy	2012-04-11	34	34	0
 Sarmada	2012-03-20	522	522	0
+Sarvihepo	2015-07-05	3	0	0
 Satria Indratmoko	2011-05-16	7	7	0
 SebastianMolina	2013-03-14	1834	1834	0
 SebastianMolina	2013-03-15	1517	1517	0
@@ -1609,12 +2129,26 @@ Serpens	2014-12-31	1	0	0
 Serpens	2015-01-03	4	0	0
 Serpico	2011-08-18	104	101	0
 Serpico	2011-08-20	18	16	0
+Serpico	2015-07-05	19	17	0
+Serpico	2015-07-11	409	403	0
+Serpico	2015-07-12	11	11	0
+Serpico	2015-07-13	35	35	0
+Serpico	2015-07-14	53	50	0
+Serpico	2015-07-17	16	16	0
+Serpico	2015-07-19	16	16	0
+Serpico	2015-10-11	54	54	0
+Serpico	2015-10-12	93	93	0
+Serpico	2016-01-11	11	11	1
 Setiaji Kurniawan	2014-07-04	1	0	0
+Shangkuanlc	2015-09-02	4	4	0
+Shiddiq Sugiono	2015-08-10	13	13	0
 Si Jawir	2011-12-16	6	6	0
+Sidik Hadiwijaya	2015-04-10	5	5	0
 Siska Leonita	2012-03-20	655	638	0
 Skywave	2008-01-26	1	0	0
-Skywave	2008-11-01	1477	463	13
+Skywave	2008-11-01	1477	463	16
 Social Media Digital Marketing Advertising Agency Services Indonesia	2015-01-08	10	4	0
+SomeoneElse_Revert	2015-11-27	2	0	0
 Steafy	2012-10-13	18	12	0
 Stef_tedja	2012-08-09	3	2	0
 Stemby	2014-07-01	1	0	0
@@ -1626,6 +2160,7 @@ Subur Furniture	2013-12-07	10	10	0
 Sugeng Wibowo	2013-10-03	5	5	0
 Sungai Bambu	2012-03-13	120	116	0
 Suranta 66	2012-03-13	167	166	0
+Surya G S	2015-05-19	2	2	0
 Suryadi Suryanullah	2013-09-18	1	1	0
 Suryadi Suryanullah	2013-09-25	28	15	0
 Suryadi Suryanullah	2013-10-02	11	11	0
@@ -1633,7 +2168,10 @@ Suryarin	2013-05-03	1	0	0
 Suyono	2012-03-15	298	298	0
 Syafril Hermansyah	2009-12-08	13	5	0
 Syamsulx	2015-01-05	5	5	0
+Syatitah16	2015-10-01	4	4	0
+Syatitah16	2015-10-07	139	106	0
 Sylpheed	2014-10-05	3	3	0
+Syntaxial	2016-01-14	44	29	0
 TG58	2015-01-25	6	6	0
 T_9er	2013-03-27	372	361	0
 Taman Sari	2012-03-26	208	208	0
@@ -1646,6 +2184,7 @@ Tea One	2011-03-30	7	7	0
 Teguh Caesar	2015-01-21	1	1	0
 Teguh Prasetyo	2014-11-06	8	8	0
 The Skrillex	2015-01-16	4	4	0
+Thomas8122	2016-01-16	1	0	0
 TimoKoester	2010-07-19	71	71	0
 Timotius Iman Rachmadi	2014-05-07	37	22	0
 Titius Kurnia Dinata	2014-08-28	126	126	0
@@ -1658,12 +2197,17 @@ Tri Selasa	2012-03-13	186	186	0
 Tri Utami H	2014-06-24	8	8	0
 TriSudibyo	2013-05-10	7	0	0
 Triyoga Widiastomo	2012-03-27	39	39	0
-Triyoga Widiastomo	2012-08-01	380	377	0
+Triyoga Widiastomo	2012-08-01	380	377	1
 Triyoga Widiastomo	2012-08-06	20	20	0
 Triyoga Widiastomo	2012-08-24	14	14	0
-Tuan Ifan Vpy	2014-12-12	247	178	0
-Tuan Ifan Vpy	2014-12-13	105	82	0
+TuanIfan	2014-12-12	247	178	0
+TuanIfan	2014-12-13	105	82	0
+TylerOSM	2015-12-05	2	1	0
+Ubaidillah Ahmad	2015-04-10	101	101	0
+Ubaidillah Ahmad	2015-10-01	113	108	0
+Ubaidillah Ahmad	2015-11-05	44	36	0
 UkiTukijo	2012-03-29	111	111	0
+UnfixedAzimuth	2015-03-25	78	65	0
 Untung Pitoyo	2012-03-21	19	17	0
 Unusual User Name	2009-10-28	4	4	0
 Unusual User Name	2009-12-03	23	23	0
@@ -1681,7 +2225,9 @@ Uyet	2014-02-20	8	4	0
 VannySVB	2013-10-08	1	1	0
 VannySVB	2013-10-10	4	4	0
 Vareza	2009-02-08	187	0	0
-Vicknesh	2010-07-07	13	13	1
+Vera Ramdhani	2015-04-10	16	12	0
+Vera Ramdhani	2015-10-01	17	17	0
+Vicknesh	2010-07-07	13	13	0
 Vivianecahen	2013-03-22	219	217	0
 Vivianecahen	2013-03-23	1173	1173	0
 Vlijmen Fileer	2014-01-05	5	3	0
@@ -1697,13 +2243,19 @@ WillieShu	2013-09-05	1	1	0
 Wilson alunpah	2011-08-25	1	1	0
 Winsang	2013-12-06	8	8	0
 Winuhoro	2011-06-29	71	49	0
-Wirapati	2011-02-24	204	203	1
+Wirapati	2011-02-24	204	203	2
 Wirapati	2011-02-25	4	4	0
 Wolfram Sobotta	2012-04-27	48	48	2
 Wuzzy	2013-04-11	1	0	0
+X38	2015-04-23	24	20	0
+YOGAPOLHONG	2015-06-26	150	141	0
+YOGAPOLHONG	2015-06-29	107	107	0
+YOGAPOLHONG	2015-07-30	141	127	0
 Yahya MD	2012-03-15	113	110	0
 Yos Maryo	2013-07-07	1	1	0
+Yoshinion	2015-12-01	8	8	0
 Yudistira	2014-04-08	1	1	0
+Yulis Rianto	2015-11-09	20	19	0
 ZF AUTOMEGA	2014-04-14	92	81	0
 Zulfan Chaniago	2012-03-15	377	369	0
 ZulfikarID	2014-02-07	1	1	0
@@ -1711,10 +2263,38 @@ _DMKM	2014-05-05	132	63	0
 _DMKM	2014-05-26	12	12	0
 _ktk_	2013-12-18	2	1	0
 a_irawanto	2012-07-11	70	49	0
+aakiky	2015-03-13	1	1	0
 aaziss	2012-08-02	7	7	0
 abangagun	2013-08-12	8	8	0
 abdhafiz	2014-02-23	18	17	0
+abdullahali	2015-10-24	20	19	0
 abednb	2014-02-21	4	4	0
+abel801	2015-01-29	1	0	0
+abel801	2015-02-27	2	0	0
+abel801	2015-03-02	1	0	0
+abel801	2015-03-03	5	1	0
+abel801	2015-03-04	5	0	0
+abel801	2015-03-05	7	0	0
+abel801	2015-03-06	14	0	0
+abel801	2015-03-09	9	0	0
+abel801	2015-03-10	9	4	0
+abel801	2015-03-12	1	0	0
+abel801	2015-03-13	2	0	0
+abel801	2015-03-14	5	0	0
+abel801	2015-04-01	1	1	0
+abel801	2015-05-22	1	0	0
+abel801	2015-07-17	4	0	0
+abel801	2015-07-22	2	0	0
+abel801	2015-07-23	1	0	0
+abel801	2015-07-30	1	0	0
+abel801	2015-07-31	1	0	0
+abel801	2015-08-05	3	2	0
+abel801	2015-08-06	1	0	0
+abel801	2015-08-07	1	0	0
+abel801	2015-08-12	1	0	0
+abel801	2015-08-26	1	0	0
+abel801	2015-09-01	1	0	0
+abel801	2015-09-10	1	1	0
 aboen	2014-12-20	52	48	0
 account_deleted_1011	2009-04-12	2	0	0
 aceman444	2013-08-23	3	0	0
@@ -1746,14 +2326,6 @@ agushikmat	2014-11-20	75	75	0
 agusn	2010-06-05	25	6	0
 ahmadzakaria	2012-05-27	3	1	0
 ajundjoen	2013-11-28	8	8	0
-al-yazdi	2010-04-27	830	757	7
-al-yazdi	2010-05-02	37	37	4
-al-yazdi	2010-05-03	349	346	4
-al-yazdi	2010-09-15	127	126	1
-al-yazdi	2010-09-16	766	763	9
-al-yazdi	2010-09-17	167	149	0
-al-yazdi	2010-09-28	14	14	1
-al-yazdi	2011-02-18	34	34	0
 alester	2011-12-16	1	0	0
 alextacy	2010-05-19	3	2	0
 alfinofadjar	2014-03-01	98	94	0
@@ -1768,12 +2340,14 @@ amai	2009-04-09	3509	0	0
 amai	2010-03-06	1	0	0
 amellema	2008-11-01	66	14	1
 anang prasetyo	2013-06-14	1	0	0
+andalantama	2015-08-31	22	20	0
 andi9876	2013-09-21	2	2	0
 andika	2009-05-28	13	7	0
 andikamalreza	2014-03-01	4	4	0
 anditibia	2013-10-08	18	7	0
 andreakbar	2013-01-04	7	7	0
 andreib	2013-04-22	1	0	0
+andrewpmk	2015-06-23	1	0	0
 andri kurniawan	2012-11-30	661	661	0
 andyatworkz	2014-08-23	3	3	0
 andygol	2014-11-25	18	3	0
@@ -1783,6 +2357,11 @@ andygol	2014-12-05	2	0	0
 andygol	2014-12-10	1	0	0
 andygol	2014-12-26	11	6	0
 andygol	2015-01-08	1	0	0
+andygol	2015-05-19	3	1	0
+andygol	2015-06-30	4	0	0
+andygol	2015-07-16	1	0	0
+andygol	2015-10-23	2	0	0
+andylaode	2015-12-16	1	0	0
 anisa berliana	2014-08-28	2	2	0
 anisa berliana	2014-08-29	957	877	0
 anisa berliana	2014-10-15	4014	4014	0
@@ -1794,6 +2373,7 @@ anisa berliana	2014-10-24	244	244	0
 anisa berliana	2014-10-25	4782	4782	0
 anisa berliana	2014-10-26	46	46	0
 anisa berliana	2014-10-27	3191	3191	0
+anisa utari	2015-11-03	479	379	0
 annisasolihat	2014-03-21	3	3	0
 aphaits	2013-05-14	61	46	0
 aquacoach	2009-09-10	197	197	0
@@ -1842,6 +2422,24 @@ arieladele	2014-10-25	726	601	0
 arieladele	2014-11-06	5	5	0
 arieladele	2014-11-07	3	2	0
 arieladele	2015-01-21	50	49	0
+arieladele	2015-01-26	4	4	0
+arieladele	2015-01-31	110	80	0
+arieladele	2015-02-01	280	99	0
+arieladele	2015-02-04	54	54	0
+arieladele	2015-02-28	205	106	0
+arieladele	2015-03-08	223	223	0
+arieladele	2015-03-09	267	266	0
+arieladele	2015-03-10	510	508	0
+arieladele	2015-03-11	813	272	0
+arieladele	2015-03-13	196	196	0
+arieladele	2015-03-14	762	647	0
+arieladele	2015-03-28	106	88	0
+arieladele	2015-03-31	88	4	0
+arieladele	2015-04-02	40	31	0
+arieladele	2015-04-11	28	17	0
+arieladele	2015-05-12	86	68	0
+arieladele	2015-09-13	430	342	0
+arieladele	2015-10-23	30	30	0
 arielp	2010-10-07	1	1	0
 ariodeh	2010-10-31	42	42	0
 arishern	2014-09-01	1	0	0
@@ -1859,7 +2457,7 @@ arumnw	2012-04-10	2641	2610	0
 arumnw	2012-04-11	1397	1377	0
 arumnw	2012-04-13	1666	1666	0
 arumnw	2012-04-14	5240	5240	0
-arumnw	2012-04-16	632	632	1
+arumnw	2012-04-16	632	632	0
 arumnw	2012-04-17	2306	2297	0
 arumnw	2012-05-07	60	59	0
 arumnw	2012-05-08	99	96	0
@@ -1869,6 +2467,7 @@ arumnw	2012-05-11	139	122	0
 arumnw	2012-05-13	41	41	0
 asepcenko	2012-11-22	1	1	0
 asiorestia	2014-07-27	13	4	0
+asri pertiwi	2015-04-10	5	5	0
 asti_shinoda	2014-09-15	8	8	0
 asti_shinoda	2014-11-21	220	184	0
 asti_shinoda	2014-11-22	351	310	0
@@ -1894,30 +2493,38 @@ asti_shinoda	2014-12-29	492	475	0
 asti_shinoda	2014-12-30	74	53	0
 asti_shinoda	2015-01-16	36	36	0
 asti_shinoda	2015-01-19	10	10	0
+asti_shinoda	2015-03-26	337	221	0
+asti_shinoda	2015-03-27	555	522	0
+asti_shinoda	2015-03-30	16	0	0
+asti_shinoda	2015-04-01	104	95	0
 aswinmaul	2014-05-28	43	43	0
 aswinter	2014-06-29	160	160	0
 asyra	2013-10-25	1	0	0
 atho	2011-03-24	7	2	0
-aulia	2012-03-20	595	595	0
+atika dwi fazrin	2015-10-25	266	266	0
+atika dwi fazrin	2015-11-03	256	252	0
+aulia	2012-03-20	595	595	1
 aulia	2012-03-26	68	68	0
 aulia	2012-03-29	161	161	0
 avliya asya	2011-03-19	105	105	0
 awid05	2013-09-25	4	4	0
 awid05	2013-10-02	42	38	0
 awijayanto	2011-07-13	1	1	0
+ayasin	2015-06-11	1	0	0
 azinar	2014-04-04	58	58	0
 azinar	2014-04-17	5	5	0
+azinar	2015-07-09	12	12	0
 azis ramon	2013-10-02	10	10	0
 azisj_	2014-09-21	4	4	0
 azkaff	2013-12-06	1	1	0
 azwinur	2013-10-09	37	30	0
 bahnpirat	2008-05-27	3	3	3
-bahnpirat	2012-05-03	265	258	7
-bahnpirat	2012-05-09	388	305	3
+bahnpirat	2012-05-03	265	258	10
+bahnpirat	2012-05-09	388	305	0
 bahnpirat	2012-05-10	22	12	0
 bahnpirat	2012-05-11	24	24	0
 bahnpirat	2012-05-12	34	34	4
-bahnpirat	2012-05-13	68	67	2
+bahnpirat	2012-05-13	68	67	3
 bahnpirat	2012-05-16	15	14	0
 bakrie	2012-03-20	86	49	0
 bakrie	2012-03-26	14	10	0
@@ -1925,8 +2532,18 @@ bakthariq	2013-09-04	45	40	0
 balrog-kun	2009-07-24	37	0	0
 bambangsp	2012-03-07	1578	346	0
 bambangsp	2012-07-04	2	1	0
+bambangtriS	2015-08-03	7	7	0
+bambangtriS	2015-08-04	21	21	0
+bapaogoreng	2015-05-15	1	1	0
+bapaogoreng	2016-01-07	1	1	0
 bauerpower	2014-10-08	27	9	0
+bauerpower	2015-09-27	4	4	0
+bauerpower	2015-10-04	1	1	0
+bauerpower	2015-10-05	1	0	0
 bcrosby	2010-12-17	1	1	1
+bdiscoe	2015-10-22	58	6	0
+bdiscoe	2015-10-23	17	0	0
+bdiscoe	2015-11-05	6	1	0
 bebekaret	2014-08-07	1	1	0
 belasarius	2012-06-10	1	1	0
 bellamy	2012-03-09	154	132	0
@@ -1934,18 +2551,23 @@ beweta	2014-01-04	1	0	0
 bgr	2009-10-06	1	0	0
 bgr	2013-05-17	11	8	0
 bgr	2013-06-02	6	4	0
+bigopenmac	2015-03-08	2	0	0
 billypunya	2013-07-02	13	9	0
 billypunya	2013-07-03	1	1	0
 bimasakti	2013-02-28	2	2	0
-bintang	2010-01-10	581	484	3
+bintang	2010-01-10	581	484	4
 bintang	2010-01-11	18	14	0
 bintang	2011-05-05	40	34	0
-bintang	2011-05-07	973	741	12
+bintang	2011-05-07	973	741	11
 bintang	2011-07-16	746	534	0
+bintangrefill	2015-08-15	4	4	0
 bligus	2012-11-08	142	141	0
 bligus	2013-11-25	43	32	0
 bligus	2013-11-26	111	105	0
+bligus	2015-07-07	6	4	0
+blink_me92	2015-11-06	83	81	0
 bocah223	2012-09-12	2	0	0
+bogorkreasi	2015-03-31	15	2	0
 bokal212	2014-10-26	4	0	0
 bokal212	2014-10-27	2	2	0
 bokal212	2015-01-07	45	45	0
@@ -1963,12 +2585,12 @@ branityo	2012-03-27	299	299	0
 branityo	2012-03-28	45	45	0
 branityo	2012-03-30	1632	1629	0
 branityo	2012-03-31	650	650	0
-branityo	2012-04-09	488	488	2
-branityo	2012-04-10	3473	3470	5
+branityo	2012-04-09	488	488	0
+branityo	2012-04-10	3473	3470	0
 branityo	2012-04-11	906	906	0
 branityo	2012-04-13	5763	5763	0
 branityo	2012-04-14	3069	3069	0
-branityo	2012-04-16	1011	1011	1
+branityo	2012-04-16	1011	1011	0
 branityo	2012-05-07	23	23	0
 branityo	2012-05-08	244	229	0
 branityo	2012-05-09	75	73	0
@@ -1977,15 +2599,30 @@ branityo	2012-05-11	111	105	0
 branityo	2012-05-14	210	210	0
 branityo	2012-08-01	61	61	0
 branityo	2012-08-02	23	22	0
+brogo	2015-10-27	3	1	0
+brogo	2015-10-29	3	3	0
+brogo	2015-11-14	1	0	0
 brow	2012-03-13	64	64	0
-brumbaer	2009-05-11	30	15	0
+brumbaer	2009-05-11	30	15	1
 brumbaer	2011-01-27	15	2	0
 brumbaer	2011-01-28	3	2	0
 brumbaer	2011-01-29	34	21	0
+btyop	2015-08-06	28	28	0
+btyop	2015-11-14	26	25	0
+budisatu	2015-08-03	13	13	0
+budisatu	2015-08-04	12	12	0
+buditux	2015-12-20	27	27	0
+buditux	2015-12-23	1	0	0
+buditux	2015-12-25	20	20	0
+buditux	2015-12-26	65	65	0
 buluksapi	2014-02-13	5	5	0
 buluksapi	2014-04-17	4	4	0
 buluksapi	2014-10-16	2	2	0
 buluksapi	2014-10-30	7	7	0
+cah_bagus	2015-08-24	3	2	0
+cah_bagus	2015-09-10	7	7	0
+cah_bagus	2015-10-01	23	22	0
+cah_bagus	2015-10-06	13	5	0
 cahya	2012-03-29	767	767	0
 cak sam	2013-07-01	20	2	0
 cak sam	2013-07-06	16	15	0
@@ -1995,6 +2632,24 @@ cak sam	2013-07-13	51	27	0
 cak sam	2013-07-19	130	80	0
 cak sam	2013-07-22	9	8	0
 cak sam	2013-07-28	30	26	0
+calfarome	2015-01-27	2	0	0
+calfarome	2015-01-28	1	0	0
+calfarome	2015-01-30	6	0	0
+calfarome	2015-05-26	1	0	0
+calfarome	2015-07-11	1	0	0
+calfarome	2015-07-13	10	6	0
+calfarome	2015-07-16	8	6	0
+calfarome	2015-07-17	1	0	0
+calfarome	2015-07-18	6	5	0
+calfarome	2015-07-21	3	3	0
+calfarome	2015-07-24	1	1	0
+calfarome	2015-07-31	7	2	0
+calfarome	2015-08-04	3	0	0
+calfarome	2015-08-26	3	0	0
+calfarome	2015-09-10	7	4	0
+capiscuas	2015-08-15	27	18	0
+capiscuas	2015-09-26	18	18	0
+capiscuas	2015-11-13	2	2	0
 capuletz	2015-01-03	32	32	0
 carlos m	2013-05-01	366	366	0
 caviska	2013-10-10	2	2	0
@@ -2010,6 +2665,7 @@ cgu66	2012-04-15	2	0	0
 cgu66	2012-08-21	1	0	0
 cgu66	2012-11-03	1	0	0
 cgu66	2013-02-26	1	0	0
+cgu66	2015-04-27	1	0	0
 chan	2011-03-26	11	11	0
 chatock	2014-05-23	1	1	0
 chdr	2012-02-08	229	224	0
@@ -2038,10 +2694,11 @@ chinciaw	2012-05-09	101	94	0
 chinciaw	2012-05-10	147	142	0
 chinciaw	2012-05-11	151	112	0
 chinciaw	2012-05-14	252	222	0
+chippy	2015-06-15	1	0	0
 chistiani123	2013-10-08	12	12	0
 chistiani123	2013-10-10	2	2	0
 choii_siwon	2012-03-18	19	19	0
-chricycle	2007-11-16	84	82	1
+chricycle	2007-11-16	84	82	3
 chrisnayudi	2013-10-08	5	3	0
 cibul	2014-07-05	52	52	0
 ciclista	2011-12-27	1	0	0
@@ -2050,8 +2707,9 @@ cipta hari bakti	2012-03-05	29	29	0
 cipta hari bakti	2012-03-20	384	261	0
 cipta hari bakti	2012-03-26	128	116	0
 cipta hari bakti	2012-03-29	424	424	0
+citra wulandari	2015-01-26	1	1	0
 clhall	2014-03-01	5	5	0
-comrade_13	2012-06-15	128	39	2
+comrade_13	2012-06-15	128	39	1
 cquest	2012-05-25	18	0	0
 cukupbayu	2014-07-30	9	9	0
 cylant	2014-11-10	7	6	0
@@ -2099,6 +2757,19 @@ dannykath	2015-01-07	1624	1540	0
 dannykath	2015-01-08	431	349	0
 dannykath	2015-01-12	9	7	0
 dannykath	2015-01-13	17	0	0
+dannykath	2015-07-10	1	0	0
+dannykath	2015-07-11	3	2	0
+dannykath	2015-07-23	17	9	0
+dannykath	2015-07-24	2	2	0
+dannykath	2015-07-25	1	1	0
+dannykath	2015-07-30	2	0	0
+dannykath	2015-07-31	1	0	0
+dannykath	2015-08-01	1	0	0
+dannykath	2015-08-06	6	2	0
+dannykath	2015-08-10	2	0	0
+dannykath	2015-08-11	6	5	0
+dannykath	2015-09-01	1	1	0
+dannykath	2015-09-05	1	1	0
 darvito	2012-06-05	1	0	0
 david cs	2013-10-07	9	9	0
 david cs	2013-10-08	6	5	0
@@ -2120,7 +2791,7 @@ ddipietro216	2013-03-23	2044	2017	0
 debrianruhut	2013-12-30	34	33	0
 deden	2009-03-20	13	0	0
 deden	2009-03-22	6	0	0
-dedicakungtimur	2012-03-20	164	163	0
+dedicakungtimur	2012-03-20	164	163	1
 dee_ratrie	2014-04-04	1	1	0
 del tyoro	2012-03-05	29	29	0
 del tyoro	2012-03-20	272	272	0
@@ -2143,6 +2814,7 @@ della ananto	2014-12-17	73	34	0
 delpaijo	2014-04-04	19	19	0
 delta hadi juliantoro	2013-10-02	216	216	0
 denipluit	2013-10-02	16	15	0
+desi indonesia	2015-10-06	76	28	0
 devi saadah	2013-12-03	8	8	0
 devimandiri	2014-04-29	11	11	0
 dewanto edi	2012-03-07	463	441	0
@@ -2169,6 +2841,7 @@ dfo	2014-10-24	2957	2956	0
 dfo	2014-10-25	4097	4088	0
 dfo	2014-10-26	21158	19826	0
 dfo	2014-10-27	3697	3647	0
+dfo	2015-01-28	177	177	0
 dhanifajri	2012-07-24	2	1	0
 dhanstar	2012-08-22	11	1	0
 dhanty	2011-07-06	7	7	0
@@ -2180,15 +2853,16 @@ dibba	2012-03-05	54	54	0
 dibba	2012-03-20	12	12	0
 didik I_M @Endangered Species	2014-01-03	20	19	0
 didik I_M @Endangered Species	2014-01-04	50	50	0
+dika_saja	2015-05-23	23	0	0
 dimdim02	2011-06-27	74	74	0
-dimdim02	2011-06-28	980	980	1
+dimdim02	2011-06-28	980	980	2
 dimdim02	2011-06-29	133	133	0
-dimdim02	2011-06-30	552	552	0
-dimdim02	2011-07-01	354	354	1
-dimdim02	2011-07-02	349	349	3
+dimdim02	2011-06-30	552	552	1
+dimdim02	2011-07-01	354	354	0
+dimdim02	2011-07-02	349	349	0
 dimdim02	2011-07-03	511	511	0
 dimdim02	2011-07-04	103	103	0
-dimdim02	2011-07-05	509	505	1
+dimdim02	2011-07-05	509	505	0
 dimdim02	2011-07-06	688	678	0
 dimdim02	2011-07-07	440	440	0
 dimdim02	2011-07-08	498	486	0
@@ -2222,19 +2896,22 @@ dimzy	2013-10-21	48	46	0
 dinala89	2013-12-16	1	0	0
 dino_andalananto	2012-08-02	2	2	0
 dityodwi	2014-09-10	27	27	0
+diyan andry	2015-08-03	27	27	0
+diyid	2015-11-18	9	9	0
 djackz	2011-07-06	13	13	0
 djsianturi	2013-06-30	1	1	0
 dkabul	2009-04-29	97	66	0
 do++op	2011-04-02	11	7	0
 do++op	2011-04-04	70	66	0
 do++op	2011-04-05	7	6	0
-do++op	2011-04-10	19	18	0
+do++op	2011-04-10	19	18	1
 do++op	2011-04-18	26	19	0
 dolson2110	2013-03-15	187	187	0
 dolson2110	2013-03-18	931	918	0
 dolson2110	2013-03-19	977	955	0
 dolson2110	2013-03-20	1007	989	0
 dolson2110	2013-03-21	1683	1572	0
+donbento	2015-11-14	6	6	0
 durikepa	2012-03-28	162	162	0
 dvertx	2013-04-14	12	0	0
 dwd	2010-10-05	3	2	0
@@ -2242,7 +2919,7 @@ dwi fanny wulandari	2014-08-27	4	4	0
 dwi fanny wulandari	2014-08-28	365	364	0
 dwi fanny wulandari	2014-08-29	282	273	0
 dwiprasetyo	2011-07-01	225	225	1
-dwiprasetyo	2011-07-02	394	394	3
+dwiprasetyo	2011-07-02	394	394	1
 dwiprasetyo	2011-07-05	107	107	0
 dwiprasetyo	2011-07-11	41	41	0
 dwiprasetyo	2011-07-12	5	5	0
@@ -2251,6 +2928,7 @@ dwiprasetyo	2011-07-26	10	10	0
 dwiprasetyo	2011-08-05	128	125	0
 dwiprasetyo	2012-03-05	36	36	0
 dwiyantikusuma	2011-06-27	3	3	0
+ebaebachan	2015-09-02	2	0	0
 edita7x	2013-10-08	2	1	0
 edita7x	2013-10-10	2	2	0
 ediyes	2014-07-16	2	0	0
@@ -2276,6 +2954,14 @@ ediyes	2014-12-04	165	159	0
 ediyes	2014-12-05	42	42	0
 ediyes	2014-12-24	1	0	0
 ediyes	2015-01-20	1	0	0
+ediyes	2015-07-11	15	2	0
+ediyes	2015-07-15	1	1	0
+ediyes	2015-07-31	5	0	0
+ediyes	2015-08-01	3	0	0
+ediyes	2015-09-01	4	3	0
+ediyes	2015-09-05	1	0	0
+ediyes	2015-09-08	2	2	0
+ediyes	2015-09-09	2	2	0
 edvac	2014-01-18	1	0	0
 edwinkun	2013-02-15	4	4	0
 eejoes	2010-10-05	8	8	0
@@ -2291,7 +2977,7 @@ elladove	2013-03-15	61	61	0
 elladove	2013-03-20	429	429	0
 elladove	2013-03-22	258	258	0
 elpiar	2013-04-16	1	0	0
-emirhartato	2011-05-16	67	55	0
+emirhartato	2011-05-16	67	55	1
 emirhartato	2011-05-25	17	8	0
 emirhartato	2012-03-07	1	1	0
 emirhartato	2012-03-14	647	242	0
@@ -2305,8 +2991,8 @@ emirhartato	2012-03-30	89	16	0
 emirhartato	2012-04-04	8	0	0
 emirhartato	2012-04-05	1299	1082	0
 emirhartato	2012-04-06	6	0	0
-emirhartato	2012-04-09	1083	1054	1
-emirhartato	2012-04-10	2042	2006	4
+emirhartato	2012-04-09	1083	1054	2
+emirhartato	2012-04-10	2042	2006	3
 emirhartato	2012-04-11	3852	3646	0
 emirhartato	2012-04-12	867	867	0
 emirhartato	2012-04-13	44	12	0
@@ -2337,7 +3023,7 @@ emirhartato	2014-09-04	5	5	0
 emksoft	2013-11-14	4	4	0
 empiie	2014-07-06	4917	4917	0
 empiie	2014-07-14	1019	1019	0
-engine-kyo	2012-06-21	240	210	1
+engine-kyo	2012-06-21	240	210	2
 ensevalgis	2011-09-06	11	11	0
 eputra	2015-01-07	209	124	0
 errybest	2014-09-22	233	212	0
@@ -2346,7 +3032,7 @@ errybest	2014-09-24	234	224	1
 errybest	2014-09-25	26	14	0
 errybest	2014-09-30	76	64	0
 errybest	2014-10-01	132	131	0
-errybest	2014-10-02	51	51	1
+errybest	2014-10-02	51	51	0
 errybest	2014-10-03	15	15	0
 errybest	2014-10-06	3	3	0
 errybest	2014-10-09	4	4	0
@@ -2360,18 +3046,47 @@ errybest	2014-11-19	37	34	0
 errybest	2014-12-01	27	22	0
 errybest	2015-01-22	6	5	0
 errybest	2015-01-23	32	24	0
-esambuaga	2007-12-24	2256	1408	62
-esambuaga	2007-12-27	840	650	24
-esambuaga	2007-12-28	619	528	2
+errybest	2015-02-11	2	2	0
+errybest	2015-02-20	3	3	0
+errybest	2015-02-22	124	118	0
+errybest	2015-02-23	21	2	0
+errybest	2015-02-24	1	0	0
+errybest	2015-03-02	7	7	0
+errybest	2015-03-11	3	0	0
+errybest	2015-03-19	122	121	0
+errybest	2015-03-20	4	4	0
+errybest	2015-03-25	288	266	0
+errybest	2015-03-27	644	637	0
+errybest	2015-03-30	615	605	0
+errybest	2015-03-31	257	253	0
+errybest	2015-04-01	311	300	0
+errybest	2015-04-07	8	8	0
+errybest	2015-04-09	24	15	0
+errybest	2015-04-22	20	14	0
+errybest	2015-04-24	8	8	0
+errybest	2015-05-12	4	4	0
+errybest	2015-05-13	4	4	0
+errybest	2015-05-25	136	136	0
+errybest	2015-06-12	105	104	0
+errybest	2015-06-26	9	9	0
+errybest	2015-06-29	32	32	0
+errybest	2015-07-28	4	4	0
+errybest	2015-07-31	297	297	0
+errybest	2015-08-05	41	41	0
+errybest	2015-08-11	36	35	0
+erva kurniawan	2015-03-27	74	74	0
+esambuaga	2007-12-24	2256	1408	61
+esambuaga	2007-12-27	840	650	21
+esambuaga	2007-12-28	619	528	3
 esambuaga	2007-12-29	43	29	0
-esambuaga	2007-12-30	633	377	9
+esambuaga	2007-12-30	633	377	8
 esambuaga	2008-01-02	17	16	7
 esambuaga	2008-01-03	169	67	2
-esambuaga	2008-01-19	355	346	50
+esambuaga	2008-01-19	355	346	49
 esambuaga	2008-02-03	18	17	0
 esambuaga	2011-06-08	1	1	0
-esambuaga	2011-06-27	22	22	1
-esambuaga	2011-07-16	34	34	1
+esambuaga	2011-06-27	22	22	0
+esambuaga	2011-07-16	34	34	0
 esambuaga	2011-07-17	24	24	0
 esambuaga	2011-07-30	1	0	0
 eschnitt	2013-03-15	292	292	0
@@ -2383,6 +3098,8 @@ esoedjasa	2011-04-04	92	92	0
 esoedjasa	2011-04-06	19	19	0
 esoedjasa	2011-04-15	62	62	0
 et1	2010-04-04	50	26	0
+etajin	2015-11-10	1	0	0
+etajin	2015-12-23	1	0	0
 etimer	2012-03-26	143	143	0
 eturner1	2013-03-11	147	147	0
 eturner1	2013-03-15	810	799	0
@@ -2407,32 +3124,43 @@ fajran	2013-10-19	372	356	2
 fajran	2013-10-22	204	201	0
 fajran	2013-11-22	1	1	0
 fajrin_un	2014-04-04	9	9	0
+farida_osm	2015-04-26	10	10	0
 faris zulkarnain	2012-03-05	416	416	0
 faris zulkarnain	2012-03-21	526	526	0
 faris zulkarnain	2012-03-27	708	147	0
 faris zulkarnain	2012-03-30	454	95	0
 faris zulkarnain	2012-08-02	59	58	0
+farisi	2015-06-07	23	23	0
 farlokko	2008-07-24	1	0	0
 fathia_92	2011-06-27	20	20	0
 fathoni_am	2013-04-09	1	1	0
+fathurfakhri	2015-09-01	28	28	0
 fatisyailani	2012-03-05	29	29	0
 fatisyailani	2012-03-06	63	63	0
 fatisyailani	2012-03-19	2	2	0
 fausinapoy	2014-03-01	7	6	0
 fazaruddin	2012-03-26	183	183	0
+fbax	2015-11-17	1	0	0
+fbax	2015-11-19	1	0	0
 fdsimon	2014-04-28	295	222	0
 febrya2781	2014-11-10	3	1	0
+felix_yew	2015-08-04	24	24	0
 ferysugriya	2013-09-25	9	7	0
 fjahja	2008-11-29	53	0	0
 flierfy	2012-05-18	1208	1023	0
 flierfy	2012-05-19	1000	916	0
+frankydotid	2015-11-19	4	3	0
 freietonne-db	2013-10-03	1	0	0
+fukoimori	2015-05-19	4	4	0
 gandariaselatan	2012-03-29	416	416	0
 gandut61	2012-03-29	53	53	0
 ganung	2013-06-14	431	0	0
 gelbkef	2013-06-19	21	14	0
 gelo sahrul	2011-03-24	6	5	0
+geodreieck4711	2015-07-05	7	0	0
 geolover	2013-09-26	1	1	0
+geozeisig	2015-12-03	9	9	0
+geozeisig	2015-12-24	10	10	0
 geuna	2012-08-03	3	0	0
 ghodel	2012-03-19	66	60	0
 ghodel	2012-03-20	459	449	0
@@ -2442,29 +3170,33 @@ glenirawan	2012-11-22	11	6	0
 glsgls	2011-01-08	2	2	0
 glsgls	2011-01-09	14	8	0
 gnemok	2011-06-27	89	89	0
-gnemok	2011-07-01	511	482	0
+gnemok	2011-07-01	511	482	1
 gnemok	2011-07-11	89	89	0
 gnemok	2011-07-12	782	666	0
 gnemok	2011-07-13	302	297	0
-gnemok	2011-07-14	671	610	0
+gnemok	2011-07-14	671	610	1
 gnemok	2011-07-15	194	150	0
 gnemok	2011-07-18	219	218	0
 gnemok	2011-07-21	16	16	0
 gnemok	2011-07-25	153	124	0
 gnemok	2011-07-27	221	213	0
-gnemok	2011-07-28	789	735	2
+gnemok	2011-07-28	789	735	1
 gnemok	2011-07-29	53	53	0
 gnemok	2011-08-02	170	153	0
 gnemok	2011-08-03	41	41	0
 gnemok	2011-08-04	30	30	0
 gnemok	2011-08-08	86	72	0
+gnocin	2015-02-25	4	4	0
+gnocin	2015-02-26	4	4	0
 gondar	2013-10-08	1	1	0
 gormur	2013-01-26	15	3	0
 gormur	2013-01-27	2	0	0
 gormur	2013-07-07	2	2	0
 gormur	2013-08-07	11	3	0
+gormur	2015-02-04	2	2	0
 gravy	2012-11-13	2	2	0
-guernica44	2012-05-19	9	9	0
+guernica44	2012-05-19	9	9	1
+gugun jkt	2015-06-20	8	8	0
 gunawanw	2013-10-15	53	40	0
 gunawanw	2013-10-17	4	0	0
 gunung sahari selatan	2012-03-15	136	136	0
@@ -2474,6 +3206,11 @@ hafada choirunisa	2014-08-29	1136	1136	0
 haji son	2012-03-20	217	217	0
 hamangku	2013-04-10	1	1	0
 handokovska	2013-11-20	37	37	0
+handokovska	2015-09-01	188	181	0
+handokovska	2015-09-02	293	291	0
+handokovska	2015-09-03	813	813	0
+handokovska	2015-09-04	199	199	0
+handokovska	2015-09-05	626	624	0
 haniefhan	2014-11-24	14	14	0
 harfner	2008-11-03	226	130	0
 hariadhi	2014-12-23	106	99	0
@@ -2490,7 +3227,7 @@ harrymahar	2012-10-23	38	13	0
 harrymahar	2012-10-31	6	2	0
 harrymahar	2012-11-02	33	11	0
 harrymahar	2012-11-26	5	0	0
-harrymahar	2013-01-30	51	51	3
+harrymahar	2013-01-30	51	51	1
 harrymahar	2013-02-11	4	4	0
 harrymahar	2013-07-17	4	4	0
 harrymahar	2013-07-22	46	36	0
@@ -2513,15 +3250,28 @@ harrymahar	2014-06-18	4	4	0
 harrymahar	2014-09-15	8	4	0
 harrymahar	2014-12-31	1	0	0
 harrymahar	2015-01-14	2	2	0
+harrymahar	2015-03-24	4	4	0
+harrymahar	2015-03-26	24	14	0
+harrymahar	2015-03-27	40	24	0
+harrymahar	2015-04-26	13	9	0
+harrymahar	2015-10-12	1	0	0
+harrymahar	2015-10-26	161	65	0
+harrymahar	2015-10-27	5	0	0
+harrymahar	2015-11-05	8	8	0
+harrymahar	2015-11-19	3	1	0
+harrymahar	2015-11-30	8	0	0
 hdayhs	2015-01-25	8	8	0
+helloguys!	2015-11-10	34	17	0
 herin	2012-03-07	28	13	0
 hermandr	2012-01-17	1	1	0
 herwina	2012-03-05	353	353	0
 hfu	2013-03-26	8	8	0
 hikmahua	2013-12-03	17	1	0
+hilman_agung	2016-01-11	41	40	0
 hirodonoz	2014-08-21	28	23	0
 hirodonoz	2014-08-26	5	1	0
 hofoen	2014-10-09	1	0	0
+hurra	2015-12-12	1	1	0
 iconk	2011-07-06	80	76	0
 iftakhul_anwar	2011-11-17	1	1	0
 ihsanmuafiry	2014-10-10	39	39	0
@@ -2531,46 +3281,59 @@ ilhamdwif	2013-10-30	450	450	0
 ilhamije	2014-03-11	9	9	0
 ilhamrifai	2013-10-08	20	14	0
 imam maulana	2012-08-06	1	1	0
+imamtririzki	2015-11-21	17	17	0
+importer2015	2015-12-24	74935	74935	0
+importer2015	2015-12-26	149168	149168	0
+importer2015	2015-12-27	74420	74420	0
+importer2015	2015-12-29	17	5	0
 indahnesia	2011-05-16	48	1	0
-indomapper	2008-04-13	6	6	1
-indomapper	2008-05-01	43	41	5
-indomapper	2008-05-08	33	33	8
-indomapper	2008-06-15	244	214	1
+indomapper	2008-04-13	6	6	0
+indomapper	2008-05-01	43	41	3
+indomapper	2008-05-08	33	33	12
+indomapper	2008-06-15	244	214	3
 indomapper	2008-06-22	18	0	0
 indomapper	2008-06-24	1	0	0
 indomapper	2008-07-03	513	507	30
-indomapper	2008-07-13	29	27	14
+indomapper	2008-07-13	29	27	15
 indoplaces	2013-05-29	16	12	0
 indoplaces	2013-05-30	2	2	0
 indr4_8	2014-04-04	26	26	0
 indra bayu	2012-03-05	71	71	0
 indradj	2011-05-19	59	45	0
+indyKK	2015-09-07	2	2	0
 infomacet	2012-02-15	1	1	0
 ingenieroariel	2011-03-31	8	8	0
+insaninsun	2015-09-30	1	1	0
 insetiadi	2011-02-09	4	3	0
-insetiadi	2011-02-10	98	68	3
+insetiadi	2011-02-10	98	68	4
 intancynthia	2011-05-16	16	15	0
 inugroho	2014-12-09	1	1	0
 iqbalbabols	2011-05-16	5	5	0
 irahmansyah	2012-03-03	2	1	0
 irahmansyah	2012-12-25	5	5	0
 irasesu	2012-11-19	62	46	0
+irfan1104	2015-02-03	2	1	0
 irina siregar	2014-07-04	4	4	0
 irnawati	2012-03-15	130	129	0
 irvanism	2013-10-10	19	19	0
 irwansutisna	2012-03-29	5	2	0
-ismangun	2010-11-27	211	206	1
+ismangun	2010-11-27	211	206	0
+isync	2015-10-07	33	20	0
 ivan elangrawa	2012-08-02	23	10	0
+ivanslaughter	2015-02-09	10	4	0
+iwan9191	2015-02-09	1	0	0
 iyong	2012-07-04	2	2	0
+izjenie	2015-08-03	1	1	0
 jaakkoh	2014-10-28	8	0	0
 jaizkibel	2012-08-29	68	25	0
 jamesbondan	2014-03-10	13	5	0
 jamesbondan	2014-03-11	9	8	0
-jamicu	2008-11-13	89	20	1
+jamicu	2008-11-13	89	20	0
 jan jun	2013-06-15	4	0	0
 jan jun	2013-06-17	26	0	0
 jan jun	2013-06-18	76	3	0
 janson	2011-09-06	6	6	0
+jarot Riyanto	2015-03-05	6	4	0
 jarot mulyo semedi	2012-03-27	26	25	0
 jarot mulyo semedi	2012-04-13	96	96	3
 jarot mulyo semedi	2012-08-03	495	137	0
@@ -2580,13 +3343,23 @@ jarot mulyo semedi	2014-06-18	67	52	0
 jarot mulyo semedi	2014-08-12	39	28	0
 jarot mulyo semedi	2014-10-22	416	248	0
 jarot mulyo semedi	2014-10-24	385	340	0
+jarot mulyo semedi	2015-12-23	37	3	0
 jatipadang1	2012-03-29	219	217	0
-jeffhaack	2011-06-02	534	534	113
+jeffhaack	2011-06-02	534	534	109
 jeffhaack	2011-06-22	6	6	0
 jeffhaack	2011-06-24	254	187	0
 jemirulloh	2014-07-15	10	10	0
+jenafurgee	2015-04-29	14	4	0
+jengelh	2015-05-03	1	0	0
 jgc	2013-03-06	1	0	0
+jihancantiqu	2015-10-25	148	136	0
+jihancantiqu	2015-11-03	344	130	0
+jihannursabriya1	2015-10-25	337	312	0
+jihannursabriya1	2015-11-03	560	544	0
+jihannursabriya1	2015-11-04	211	149	0
 jiipie	2014-12-16	2	2	0
+jinalfoflia	2015-09-08	12	0	0
+jinalfoflia	2015-09-11	5	0	0
 joandi85	2013-03-11	1	1	0
 joandi85	2013-04-15	171	130	0
 joandi85	2013-04-16	141	119	0
@@ -2603,17 +3376,37 @@ jonhari	2014-11-12	42970	42970	0
 jonhari	2014-11-14	97970	97970	0
 jonisetiawan	2012-03-07	46	44	0
 jsnel	2014-08-18	27	27	0
+juliushermawan	2015-10-29	8	8	0
+juragankapuk	2015-07-27	1	1	0
 justjazz	2014-09-17	5	1	0
 jwblankenship	2011-04-30	1	1	0
 kageino	2012-03-15	33	33	0
 kageino	2012-03-20	316	311	0
+kaharman	2015-03-19	4	4	0
+kaharman	2015-03-20	7	0	0
+kaharman	2015-03-22	6	6	0
+kaharman	2015-03-25	1	0	0
+kaharman	2015-03-31	34	32	0
+kaharman	2015-04-22	23	23	0
+kaharman	2015-04-24	49	45	0
+kaharman	2015-05-01	68	61	0
+kaharman	2015-05-04	21	18	0
+kaharman	2015-06-02	3	0	0
+kaharman	2015-06-03	3	0	0
+kaharman	2015-06-09	4	0	0
+kaharman	2015-06-10	12	12	0
+kaharman	2015-06-22	5	4	0
+kaharman	2015-06-23	9	5	0
+kaharman	2015-07-01	2	0	0
+kaharman	2015-07-08	4	4	0
+kaharman	2015-07-16	38	35	0
 kalibata	2012-03-29	227	227	0
 kalisari	2012-03-21	82	22	0
-kammann	2007-06-04	635	635	51
+kammann	2007-06-04	635	635	50
 kampung_bali	2012-03-15	231	226	0
 kang dede	2013-04-25	834	834	0
 kang miko	2014-03-01	8	8	0
-karida	2013-04-12	123	73	0
+karida	2013-04-12	123	73	1
 karida	2013-06-13	16	2	0
 karida	2013-06-16	765	0	0
 karida	2013-06-20	429	0	0
@@ -2622,25 +3415,39 @@ karida	2013-06-28	169	26	0
 karida	2013-06-29	547	4	0
 karida	2013-07-09	515	14	0
 karida	2013-07-10	890	6	0
+karitotp	2015-07-10	46	0	0
+karitotp	2015-07-15	5	4	0
+karitotp	2015-07-17	3	0	0
+karitotp	2015-07-23	28	2	0
+karitotp	2015-07-30	1	0	0
+karitotp	2015-07-31	4	1	0
+karitotp	2015-08-04	11	7	0
+karitotp	2015-08-26	2	2	0
+karitotp	2015-09-04	3	2	0
+karitotp	2015-09-09	8	2	0
+karitotp	2015-09-10	9	9	0
 katpatuka	2009-10-26	12	8	0
 katpatuka	2009-10-29	2	1	1
-katpatuka	2010-02-20	319	286	35
-katpatuka	2010-04-11	22	22	0
-katpatuka	2010-04-17	1364	1302	42
+katpatuka	2010-02-20	319	286	34
+katpatuka	2010-04-11	22	22	1
+katpatuka	2010-04-17	1364	1302	43
 katpatuka	2010-04-27	1	0	0
-katpatuka	2010-07-18	482	472	12
-katpatuka	2010-08-15	480	448	6
+katpatuka	2010-07-18	482	472	10
+katpatuka	2010-08-15	480	448	3
 katwang	2014-08-27	367	362	0
 katwang	2014-08-28	780	780	0
 katwang	2014-08-29	2257	2176	0
 katwang	2014-09-04	53	53	0
 katwang	2014-09-06	1199	1196	0
 katwang	2014-09-17	2131	2130	0
+kbebeng	2015-09-09	4	4	0
 kebayoran lama utara	2012-03-29	231	231	0
+keepyour Fai	2015-11-04	6	5	0
 kefastimothy	2014-01-06	23	23	0
 keinseier	2012-07-10	129	127	0
 kel duri selatan	2012-03-26	165	165	0
 kel_psminggu	2012-03-29	178	177	0
+kelana	2015-06-05	8	8	0
 kelapadua	2012-03-28	739	692	0
 kelbalimester	2012-03-20	300	280	0
 kelcilandaktimur	2012-03-29	223	209	0
@@ -2714,6 +3521,8 @@ khrisnol	2014-07-01	4	0	0
 khrisnol	2014-07-15	18	15	0
 khrisnol	2014-09-29	64	30	0
 khrisnol	2014-11-03	5	5	0
+khrisnol	2015-06-11	12	0	0
+khrisnol	2015-08-21	7	0	0
 kido	2012-03-08	35	35	0
 kiky	2012-03-20	879	866	0
 kinrizky	2012-03-05	966	966	0
@@ -2722,7 +3531,8 @@ kinrizky	2012-03-29	23	23	0
 kinrizky	2012-03-30	584	508	0
 kintaniptr	2013-10-08	14	13	0
 kintaniptr	2013-10-10	145	141	0
-kisti	2010-11-14	57	56	1
+kisaa	2015-05-22	1	0	0
+kisti	2010-11-14	57	56	2
 kisti	2010-11-17	24	15	0
 kisti	2012-07-23	15	8	0
 kisti	2012-12-24	12	11	0
@@ -2733,13 +3543,13 @@ kramatpela	2012-03-29	87	86	0
 krisna heru	2012-03-07	42	29	0
 kruget	2012-03-28	1	0	0
 kruget	2012-04-01	1	1	0
-kruget	2012-06-17	82	76	2
+kruget	2012-06-17	82	76	4
 kruget	2012-06-20	13	11	0
 kruget	2012-07-15	29	15	0
 kruget	2012-11-03	104	82	0
 kruget	2012-11-12	1	1	0
 kruget	2012-11-29	48	46	3
-kruget	2012-12-20	299	295	0
+kruget	2012-12-20	299	295	1
 kruget	2013-01-05	22	14	0
 kruget	2013-01-13	11	9	0
 kruget	2013-01-24	1	1	0
@@ -2750,7 +3560,7 @@ kruget	2013-04-27	99	35	0
 kruget	2013-05-11	22	18	0
 kruget	2013-05-26	149	119	0
 kruget	2013-06-19	10	8	0
-kruget	2013-06-30	48	48	0
+kruget	2013-06-30	48	48	1
 kruget	2013-07-02	44	40	1
 kruget	2013-07-05	1	1	0
 kruget	2013-09-11	2	1	0
@@ -2759,35 +3569,35 @@ krz9000	2011-12-14	157	154	0
 krz9000	2011-12-15	151	149	1
 krz9000	2011-12-19	615	585	0
 krz9000	2011-12-26	312	292	0
-krz9000	2012-01-07	2045	1698	1
-krz9000	2012-02-18	1541	1260	3
-krz9000	2012-02-21	4191	3114	2
-krz9000	2012-02-22	1974	1755	1
-krz9000	2012-02-26	1340	1107	2
-krz9000	2012-02-27	2368	2322	10
+krz9000	2012-01-07	2045	1698	3
+krz9000	2012-02-18	1541	1260	7
+krz9000	2012-02-21	4191	3114	0
+krz9000	2012-02-22	1974	1755	0
+krz9000	2012-02-26	1340	1107	1
+krz9000	2012-02-27	2368	2322	8
 krz9000	2012-03-08	1014	1009	0
 krz9000	2012-03-12	1433	1371	0
-krz9000	2012-03-25	971	718	1
-krz9000	2012-04-08	2039	2017	0
+krz9000	2012-03-25	971	718	0
+krz9000	2012-04-08	2039	2017	1
 krz9000	2012-04-09	1081	1035	0
 krz9000	2012-05-05	113	100	0
 krz9000	2012-05-16	10	10	0
 krz9000	2012-08-18	789	670	0
-kto	2011-03-08	149	66	0
+kto	2011-03-08	149	66	1
 kto	2011-04-02	7	0	0
 kto	2011-04-07	518	304	0
 kto	2011-04-08	135	33	0
 kto	2011-04-30	1	0	0
 kumstanoc	2014-04-04	4	4	0
-kupinggepeng	2012-08-20	65	62	0
-kurniawan	2012-03-13	256	256	0
+kupinggepeng	2012-08-20	65	62	1
+kurniawan	2012-03-13	256	256	1
 kurniawan	2012-03-29	272	263	0
 kusnanto	2012-03-13	171	171	0
 kusnanto	2012-03-26	126	126	0
 kyasa	2014-12-17	14	14	0
-kyasa	2014-12-27	180	142	1
+kyasa	2014-12-27	180	142	0
 kyasa	2014-12-28	48	47	0
-kyasa	2014-12-29	242	225	1
+kyasa	2014-12-29	242	225	2
 kyasa	2014-12-30	15	14	0
 kyhananto	2011-06-08	2	1	0
 lammy	2008-10-24	922	0	0
@@ -2795,10 +3605,15 @@ lanang	2012-03-07	70	70	0
 landfahrer	2014-01-08	7	3	0
 lentengagung	2012-03-29	1214	1170	0
 lesko987	2013-09-09	1	0	0
+lexie123	2015-09-18	1	1	0
 lgarcia3	2013-03-15	310	306	0
 lgarcia3	2013-03-21	3672	3557	0
-listoflights	2011-05-20	23	23	1
+listoflights	2011-05-20	23	23	4
 little_piece	2011-05-05	113	63	0
+lks1	2015-09-09	1	0	0
+lks1	2015-09-10	1	0	0
+lks1	2015-11-20	12	3	0
+lks1	2016-01-05	2	1	0
 lockmote	2014-11-27	1	0	0
 lparmley	2013-03-15	1418	1404	0
 lparmley	2013-03-17	1432	1432	0
@@ -2807,6 +3622,8 @@ lparmley	2013-03-21	663	663	0
 lucianmanescu	2014-08-01	161	145	0
 lukmanmrluck	2013-10-02	7	7	0
 luqiluck	2011-09-04	6	5	0
+lxbarth	2015-02-23	25	14	0
+m4m4n6	2015-12-17	47	46	0
 macmoen	2011-03-24	14	12	0
 made_geodesi	2013-10-11	10	10	0
 madelineparrish	2013-03-15	1137	1105	0
@@ -2814,6 +3631,9 @@ madelineparrish	2013-03-21	514	509	0
 madelineparrish	2013-03-22	531	527	0
 maggot27	2014-03-02	1	0	0
 maggot27	2014-03-03	1	0	0
+maggot27	2015-07-03	1	0	0
+maggot27	2015-07-04	1	0	0
+maggot27	2015-07-13	3	0	0
 mahardika fadmastuti	2012-03-05	28	28	0
 mahardika fadmastuti	2012-03-13	173	173	0
 mahardika fadmastuti	2012-03-21	1039	1004	0
@@ -2851,10 +3671,11 @@ mahardika fadmastuti	2014-03-20	71	38	0
 mahardika fadmastuti	2014-03-21	22	22	0
 mahardika fadmastuti	2014-03-28	14	13	0
 mahardika fadmastuti	2014-04-22	56	11	0
-mahau	2014-03-02	972	399	1
-mahau	2014-03-06	421	311	2
-mahau	2014-03-26	105	60	1
-mahau	2014-04-03	190	159	4
+mahardika fadmastuti	2016-01-04	11	1	0
+mahau	2014-03-02	972	399	2
+mahau	2014-03-06	421	311	5
+mahau	2014-03-26	105	60	0
+mahau	2014-04-03	190	159	7
 mahau	2014-05-09	11	7	0
 mailsm	2012-04-23	1	1	0
 malcolmh	2011-06-16	10	0	0
@@ -2863,6 +3684,7 @@ malcolmh	2013-03-19	1	0	0
 malcolmh	2013-08-20	8	0	0
 malcolmh	2014-01-03	4	0	0
 malcolmh	2014-08-23	1	0	0
+malcolmh	2015-08-28	3	0	0
 malenki	2014-06-22	4	0	0
 mama noah	2013-12-17	1	1	0
 mamanada	2008-12-21	38	0	0
@@ -2872,13 +3694,15 @@ manggarai	2012-03-29	620	620	0
 manggarai selatan	2012-03-21	35	31	0
 manggarai selatan	2012-03-22	16	14	0
 manicrjs	2011-08-06	145	88	0
-mapeco	2012-07-31	60	60	1
+mapeco	2012-07-31	60	60	0
 mappingkat	2012-07-18	35	33	0
 mappingkat	2012-11-04	41	20	0
 mappingkat	2013-01-11	14	12	0
 mappingkat	2013-02-22	5	3	0
 mappingkat	2013-03-07	4	4	0
 mapsinE3	2010-03-31	20	0	0
+mariobelseran943	2015-08-16	1	1	0
+mariobelseran943	2015-08-19	86	85	0
 martabakjhony	2013-04-25	680	655	0
 maryamazizahhanif	2014-12-22	5	4	0
 matiassingers	2012-05-25	121	99	0
@@ -2889,8 +3713,9 @@ mbAce1540	2013-03-15	326	326	0
 mbAce1540	2013-03-17	473	465	0
 mbAce1540	2013-03-19	686	686	0
 mbAce1540	2013-03-20	1251	1251	0
-mbAce1540	2013-03-21	182	182	0
+mbAce1540	2013-03-21	182	182	2
 mbernasocchi	2012-11-14	13	13	0
+mbokowatu	2015-11-15	10	0	0
 mentengujung	2012-03-20	110	110	0
 mentor	2014-06-09	4	0	0
 mgeiser	2008-04-23	2	2	1
@@ -2915,17 +3740,27 @@ miftajnh	2014-10-30	5875	5795	0
 mikli	2014-05-16	11	6	0
 mirth711	2012-04-11	38	37	0
 miyatama	2014-07-30	2	2	0
+mkamil	2015-01-31	29	27	0
+mkamil	2015-02-04	247	201	0
+mkamil	2015-02-07	4	3	0
+mkamil	2015-08-04	10	4	0
+mkamil	2015-08-12	38	37	0
+ml2000id	2015-06-10	14	14	0
+ml2000id	2015-06-13	1	1	0
 mnmn	2013-11-01	2	2	0
 mobilmobilan	2014-12-17	8	8	0
 modjo83	2014-02-17	2	1	0
+moelyana	2015-04-24	2	2	0
 mortenjc	2014-09-07	16	16	0
 mpig	2013-08-05	10	10	0
 mqd90	2011-06-27	69	50	0
+mtmail	2015-03-15	2	0	0
 muchlisin	2012-03-15	240	240	0
 muhammad fauzi	2014-07-05	227	227	0
 muhammad fauzi	2014-07-06	92	88	0
 muhammad fauzi	2014-07-07	152	152	0
 muhammad isa ismail	2012-03-20	278	274	0
+muhammad_rasyid	2015-01-30	3	3	0
 muhammadgyan	2011-04-22	6	5	0
 muhammadgyan	2011-04-23	1	1	0
 muhammadgyan	2011-04-24	8	3	0
@@ -2937,7 +3772,7 @@ mutiafaiza	2012-03-15	227	174	0
 mutiafaiza	2012-03-20	346	334	0
 mutiafaiza	2012-03-26	294	202	0
 myscode	2013-01-11	1	0	0
-mzve	2013-06-18	32	32	0
+mzve	2013-06-18	32	32	1
 nabilakentjana	2014-08-27	817	817	0
 nabilakentjana	2014-08-28	119	119	0
 nabilakentjana	2014-08-29	892	890	0
@@ -2954,6 +3789,7 @@ nairdaotnatus	2012-08-06	1	1	0
 nana farhana	2014-09-17	8	8	0
 nanay	2014-07-10	681	681	0
 nanay	2014-08-16	84	84	0
+nandhikawph	2015-07-11	10	10	0
 naomiangelia	2014-08-27	202	202	0
 naomiangelia	2014-08-28	1189	1187	0
 naomiangelia	2014-08-29	1957	1953	0
@@ -2973,6 +3809,10 @@ naomiangelia	2014-10-27	3664	3233	0
 naomiangelia	2014-10-28	1172	1140	0
 ndar	2014-04-04	6	3	0
 nike shabrina	2014-03-01	4	4	0
+nikhilprabhakar	2015-07-27	6	4	0
+nikhilprabhakar	2015-09-08	3	0	0
+nikhilprabhakar	2015-09-11	1	1	0
+nikhilprabhakar	2015-09-14	1	1	0
 nikkinikki	2009-06-18	1	0	0
 nimix	2012-07-20	1	0	0
 ninamarlena	2013-10-08	4	4	0
@@ -2986,6 +3826,7 @@ nsaqer	2013-03-18	260	260	0
 nsaqer	2013-03-20	1386	1373	0
 nur rohmawanto	2014-01-02	1	0	0
 nurlatipah	2011-05-16	29	29	0
+odon362	2015-11-11	1	1	0
 oghutz	2014-07-05	267	267	0
 oghutz	2014-07-06	1508	1508	0
 oghutz	2014-07-10	88	88	0
@@ -2997,8 +3838,16 @@ oglex11	2014-07-17	33	32	0
 oglex11	2014-07-26	157	102	0
 oglex11	2014-08-12	84	84	0
 oglex11	2014-08-18	70	69	0
+oglex11	2015-09-26	40	0	0
+ogregum	2016-01-06	14	10	0
+oini	2015-09-11	11	0	0
 okas95	2014-12-30	55	44	0
+okas95	2015-11-13	60	23	0
+okas95	2015-11-19	151	105	0
+okas95	2015-11-20	98	93	0
+okas95	2015-12-29	61	27	0
 okono0403	2014-11-11	6	0	0
+okono0403	2015-09-02	20	12	0
 oktodearputra	2014-10-13	9	9	0
 oktodearputra	2014-10-14	5	0	0
 oktodearputra	2014-11-24	43	4	0
@@ -3022,6 +3871,7 @@ oldenburg69	2014-03-04	1	1	0
 oldenburg69	2014-03-19	2	2	0
 oldenburg69	2014-04-30	1	1	0
 omegy	2014-10-22	7	3	0
+omiqlobadut	2015-06-30	2	1	0
 orgo76	2014-07-05	203	203	0
 orgo76	2014-07-06	728	728	0
 orgo76	2014-07-16	355	348	0
@@ -3029,13 +3879,21 @@ orgo76	2014-07-17	1024	1024	0
 osieardi	2014-04-25	10	10	0
 osm-hft-jun10	2010-06-02	26	14	0
 osmar shalih	2012-03-05	129	129	0
+osmmaker	2015-10-17	1	0	0
 pademangan02	2012-03-13	332	332	0
 pademangan02	2012-03-15	222	222	0
 pademangan02	2012-03-20	358	342	0
 paschalis2103	2014-01-13	1	1	0
+pberge78	2015-09-14	8	4	0
+pberge78	2015-10-07	92	79	0
 pejaten barat	2012-03-29	196	196	0
 pela mampang	2012-03-29	899	899	0
+permanart	2015-04-10	30	26	0
+permanart	2015-10-01	71	71	0
+permanart	2015-10-03	38	37	0
+permanart	2016-01-17	1432	1412	0
 permatabank	2013-02-10	1	1	0
+petaupc	2015-06-27	79	79	0
 petogogan	2012-03-29	623	623	0
 phermana_map	2013-08-01	72	67	0
 phermana_map	2013-08-02	12	8	0
@@ -3047,42 +3905,55 @@ phermana_map	2013-08-24	161	157	0
 phermana_map	2013-09-07	1	0	0
 phermana_map	2013-09-26	1	0	0
 phermana_map	2013-09-27	1	0	0
+pieterprinsloo	2015-12-04	24	24	0
 pinangranti	2012-03-20	2067	2064	0
 pipow	2011-10-13	10	9	0
+pisauikan	2015-02-19	2	2	0
 pitaardani	2014-10-11	370	355	0
 pitaardani	2014-10-12	512	458	0
+poschon	2015-06-12	7	0	0
+prabowo ramelan	2015-09-03	4	4	0
 prabu88	2013-02-22	18	2	0
 prabu88	2013-02-23	19	5	0
 prabu88	2013-03-23	34	28	0
 prabu88	2013-03-24	100	50	0
+prananda	2015-05-22	1	1	0
+pratikyadav	2015-07-23	2	2	0
 pratz	2012-05-31	1	1	0
 pridityo1	2013-04-01	3	2	0
 proxodimec	2014-09-02	5	5	0
 pulo gebang	2012-03-20	287	287	0
-r_bushmann	2013-03-05	75	75	0
-r_bushmann	2014-01-19	53	53	1
+r_bushmann	2013-03-05	75	75	1
+r_bushmann	2014-01-19	53	53	0
 rachmatwhd	2014-11-01	3	2	0
 radenpatah	2011-01-05	3	3	0
 radentomi	2014-03-19	29	1	0
 radityapratama	2014-08-18	203	157	0
+raflysafadanu	2015-05-06	14	14	0
 ragetegar	2013-12-06	2	2	0
 ragildimas	2013-10-10	7	7	0
 ragunan	2012-03-29	641	641	0
+raihanizar	2015-07-12	1	1	0
 rainerr	2008-08-02	3	3	0
 rainerr	2008-08-04	44	44	0
 raisgowa	2014-07-14	17	15	0
 raja_semut	2009-03-12	5	0	0
 ramdayz	2013-07-31	3	3	0
+ramyaragupathy	2015-09-08	2	0	0
+ramyaragupathy	2015-09-09	5	0	0
+ramyaragupathy	2015-09-10	7	4	0
+ramyaragupathy	2015-09-11	10	0	0
+ramyaragupathy	2015-09-22	1	0	0
 raniedwi	2011-07-11	141	80	0
-raniedwianugrah	2012-03-13	562	543	2
+raniedwianugrah	2012-03-13	562	543	0
 raniedwianugrah	2012-03-15	384	317	0
 raniedwianugrah	2012-03-20	519	425	0
 raniedwianugrah	2012-03-21	2502	2492	0
 raniedwianugrah	2012-03-26	579	458	0
-raniedwianugrah	2012-03-28	689	668	1
+raniedwianugrah	2012-03-28	689	668	0
 raniedwianugrah	2012-03-29	572	309	0
 raniedwianugrah	2012-04-17	3446	3100	0
-raniedwianugrah	2012-07-30	198	198	0
+raniedwianugrah	2012-07-30	198	198	1
 raniedwianugrah	2012-07-31	634	515	0
 raniedwianugrah	2012-09-11	193	189	0
 raniedwianugrah	2012-09-12	10	1	0
@@ -3144,6 +4015,21 @@ raniedwianugrah	2014-10-29	813	149	0
 raniedwianugrah	2014-10-31	179	16	0
 raniedwianugrah	2015-01-05	4	4	0
 raniedwianugrah	2015-01-25	16	16	0
+raniedwianugrah	2015-04-10	14	6	0
+raniedwianugrah	2015-07-06	4	2	0
+raniedwianugrah	2015-07-09	45	3	0
+raniedwianugrah	2015-07-27	171	0	0
+raniedwianugrah	2015-07-28	40	0	0
+raniedwianugrah	2015-08-03	32	32	0
+raniedwianugrah	2015-08-07	79	23	0
+raniedwianugrah	2015-08-27	72	34	0
+raniedwianugrah	2015-09-14	1437	851	0
+raniedwianugrah	2015-10-26	67	43	0
+raniedwianugrah	2015-10-27	1597	875	0
+raniedwianugrah	2015-11-04	8	3	0
+raniedwianugrah	2015-11-10	2	0	0
+raniedwianugrah	2015-11-20	294	230	0
+raniedwianugrah	2015-11-25	18	0	0
 raskiban	2012-03-05	422	422	0
 raskiban	2012-03-20	323	280	0
 raskiban	2012-03-26	8	8	0
@@ -3159,6 +4045,8 @@ raymonhm	2014-10-17	431	431	0
 raymonhm	2014-10-20	882	882	0
 raymonhm	2014-10-23	74	74	0
 rcolsm	2013-01-11	11	11	0
+redyiskandar	2015-03-05	23	17	0
+redyiskandar	2015-03-09	41	37	0
 reg111	2014-12-01	336	323	0
 rentairo	2012-11-07	11	11	0
 rentairo	2013-01-09	1	1	0
@@ -3223,6 +4111,7 @@ riksapw	2013-10-10	251	251	0
 riksapw	2013-10-13	19	19	0
 riksapw	2013-10-15	32	32	0
 rinnengan10	2013-04-08	95	92	0
+rizali	2015-09-12	33	25	0
 rizka nurul	2012-08-02	62	62	0
 rizqihandari	2012-03-05	22	22	0
 rizqihandari	2012-03-15	152	98	0
@@ -3230,27 +4119,62 @@ rizqihandari	2012-03-16	669	471	0
 rizqihandari	2012-03-22	215	103	0
 rizqihandari	2012-03-26	848	715	0
 rizqihandari	2012-03-29	83	60	0
-rizqihandari	2012-08-02	496	306	0
+rizqihandari	2012-08-02	496	306	1
 rizqihandari	2012-08-03	632	574	0
+rizqihandari	2015-09-02	102	13	0
+rizqihandari	2015-10-31	34	33	0
 rkkautsar	2013-08-07	371	355	0
 rkkautsar	2013-08-25	106	101	0
 robgeb	2011-06-28	41	39	0
 robgeb	2012-09-19	57	5	0
 roedy_darmawan	2014-04-04	11	11	0
+rojally	2015-04-10	4	4	0
 rose linggar	2013-10-02	27	27	0
+roufabd	2015-11-12	22	20	0
 royshadowz	2013-11-19	2	1	0
 rullyvm	2011-07-09	1	1	0
 rushme	2013-03-05	1	1	0
+ruthmaben	2015-02-23	3	1	0
+ruthmaben	2015-03-04	1	0	0
+ruthmaben	2015-04-13	1	1	0
+ruthmaben	2015-05-04	73	73	0
+ruthmaben	2015-05-28	36	29	0
+ruthmaben	2015-08-17	312	312	0
+ruthmaben	2015-09-08	5	0	0
+ruthmaben	2015-09-09	4	0	0
+ruthmaben	2015-09-11	31	10	0
+ruthmaben	2015-09-14	3	2	0
 rwb	2014-07-01	17	7	0
+rwb	2015-10-21	33	27	0
 rzrinanda	2013-09-17	2	2	0
 rzvx	2013-11-25	4	2	0
 sabilibni	2014-08-27	272	272	0
 sadea	2013-08-28	5	5	0
+saerdnaer	2015-05-17	2	0	0
 safranyusri	2013-12-05	5	4	0
 saiful	2012-03-05	103	103	0
 saiful	2012-03-26	204	204	0
+saiful	2015-03-26	3	3	0
 saifulmuhajir	2012-01-30	10	0	0
 sakiyah81	2012-03-20	407	407	0
+salmansatya	2015-02-10	77	77	0
+salmansatya	2015-03-04	12	11	0
+salmansatya	2015-03-10	414	370	0
+samely	2015-05-26	1	0	0
+samely	2015-07-10	1	0	0
+samely	2015-07-15	3	3	0
+samely	2015-07-23	2	0	0
+samely	2015-07-24	1	1	0
+samely	2015-07-30	1	0	0
+samely	2015-07-31	2	0	0
+samely	2015-08-01	1	0	0
+samely	2015-08-04	2	0	0
+samely	2015-08-06	1	0	0
+samely	2015-08-11	1	0	0
+samely	2015-08-27	18	2	0
+samely	2015-08-31	1	0	0
+samiunn	2015-09-20	12	9	0
+samnawi	2015-06-23	33	33	0
 samsul bahri100113	2013-10-02	56	56	0
 samuelsurya	2011-01-15	1	1	0
 samycode	2014-04-10	229	131	0
@@ -3262,22 +4186,36 @@ sapidadarman	2013-06-27	34	32	0
 saptaananda	2007-10-29	1620	651	25
 saptaananda	2007-11-02	1638	641	39
 saptaananda	2007-11-03	7	4	0
-saptaananda	2007-11-09	654	654	33
-saptaananda	2007-11-10	1748	998	82
-saptaananda	2007-11-20	363	277	21
-saptaananda	2007-11-27	1218	686	84
-saptaananda	2009-10-26	179	166	0
+saptaananda	2007-11-09	654	654	32
+saptaananda	2007-11-10	1748	998	81
+saptaananda	2007-11-20	363	277	20
+saptaananda	2007-11-27	1218	686	88
+saptaananda	2009-10-26	179	166	1
 saptaananda	2011-09-28	4	3	0
 saragat	2012-05-14	43	43	0
 sarahswig	2013-03-22	3048	3031	0
 sarahswig	2013-03-23	80	80	0
+satriaphinandita	2015-04-09	33	28	0
 satrio dwi n	2014-09-19	4	4	0
 satrio dwi n	2014-09-20	39	37	0
+satrio wibowo budi mulyo	2015-12-01	37	36	0
+saveciliwung	2015-04-29	83	36	0
+saveciliwung	2015-05-01	94	50	0
+saveciliwung	2015-05-04	48	44	0
+saveciliwung	2015-05-11	47	27	0
+saveciliwung	2015-05-12	560	448	0
+saveciliwung	2015-05-15	22	18	0
+saveciliwung	2015-05-19	37	26	0
+saveciliwung	2015-05-22	343	169	0
+saveciliwung	2015-05-23	263	201	0
+saveciliwung	2015-05-24	136	100	0
+saveciliwung	2015-05-27	210	189	0
 scalvit	2013-03-18	895	895	0
 scalvit	2013-03-21	562	562	0
 scalvit	2013-03-22	315	309	0
 seapilot	2012-09-21	7	7	1
 sedas	2013-08-08	2	2	0
+sejohnson	2015-09-11	8	6	0
 septian_rahmadi	2012-05-07	20	20	0
 septian_rahmadi	2012-05-08	117	113	0
 septian_rahmadi	2012-05-09	347	347	0
@@ -3290,11 +4228,20 @@ shinta pratama	2013-10-10	7	6	0
 shinya009	2012-10-02	15	15	0
 shirleymeliala	2010-07-08	9	2	0
 shravan91	2015-01-16	1	1	0
+shravan91	2015-02-11	1	1	0
+shravan91	2015-02-13	1	0	0
+shravan91	2015-03-10	1	0	0
+shravan91	2015-03-11	1	0	0
+shravan91	2015-03-16	2	0	0
 shreyas208	2013-04-26	74	74	0
+shvrm	2015-09-09	12	1	0
 siddikthoha	2013-12-05	20	20	0
-sigit santosa	2008-11-19	159	37	1
+sigit santosa	2008-11-19	159	37	2
 sigit santosa	2008-12-03	31	0	0
+sigitsj	2015-06-07	71	52	0
 silvestermoannurak	2013-04-25	926	924	0
+sipereog	2015-08-03	27	27	0
+sirasturn	2015-03-28	2	2	0
 siti ekasari	2012-03-13	248	240	0
 siti ekasari	2012-03-15	289	289	0
 siti ekasari	2012-03-20	414	414	0
@@ -3315,11 +4262,19 @@ sndap	2012-04-07	250	77	0
 sndap	2012-04-08	24	5	0
 snydez	2014-10-31	2	2	0
 soffi amina	2011-12-05	3	2	0
+solusi	2015-10-05	3	1	0
 soraya bunga larasati	2013-08-28	67	61	0
+sotmasia	2015-09-02	12	8	0
+spatialbits	2015-08-25	12	1	0
 sravani	2013-02-24	19	18	0
 srengseng	2012-03-26	88	88	0
+srividya_c	2015-09-11	6	1	0
+srividya_c	2015-09-14	8	7	0
+srividya_c	2015-09-15	15	0	0
+srividya_c	2015-10-26	103	102	0
 ssapper	2013-03-20	808	808	0
 ssapper	2013-03-23	3021	3021	0
+steve_melb	2015-12-19	1	1	0
 subhanms	2014-10-16	10	10	0
 subhanms	2015-01-18	3	3	0
 sukabumi_selatan	2012-03-26	177	177	0
@@ -3330,8 +4285,8 @@ sumaryo	2012-11-23	910	644	0
 sumaryo	2012-11-26	4	4	0
 sumaryo	2012-11-27	147	122	0
 sumaryo	2012-11-28	425	241	0
-sumaryo	2012-12-05	3806	3654	3
-sumaryo	2012-12-06	1297	1251	2
+sumaryo	2012-12-05	3806	3654	1
+sumaryo	2012-12-06	1297	1251	0
 sumaryo	2012-12-11	241	222	0
 sumaryo	2012-12-14	7	7	0
 sumaryo	2012-12-21	3	3	0
@@ -3343,15 +4298,24 @@ super1974	2014-11-26	1	1	0
 suryaig	2014-01-09	18	18	0
 suryaig	2014-01-10	1	0	0
 susilonurcahyo	2013-01-26	6	6	0
+swrichards	2015-08-07	5	5	0
 syahril arhamdan	2013-10-02	12	12	0
 synnisme	2014-03-01	54	32	0
 tanah_sereal	2012-03-26	126	113	0
+tantriapriya	2015-12-05	11	6	0
+tantriapriya	2015-12-25	6	6	0
+tantriapriya	2016-01-04	12	12	0
+tantriapriya	2016-01-05	8	8	0
+tantriapriya	2016-01-14	29	17	0
+tantriapriya	2016-01-15	261	170	0
 tanvishah1	2013-03-15	1638	1609	0
 tanvishah1	2013-03-20	2433	2414	0
 tanvishah1	2013-03-21	2795	2780	0
 tanvishah1	2013-04-24	13	2	0
 tarikh_azhar	2011-09-28	47	47	0
 tebet_timur	2012-03-29	329	328	0
+thejual	2015-10-23	1	1	0
+thetitoo	2015-02-20	13	12	0
 thy_189	2011-07-06	4	4	0
 tika yulianidar	2011-06-27	15	15	0
 tika yulianidar	2011-06-30	281	281	0
@@ -3360,28 +4324,41 @@ tika yulianidar	2011-07-09	174	173	0
 tika yulianidar	2011-07-11	74	69	0
 tika yulianidar	2011-07-14	35	35	0
 tikusnewton	2013-01-22	3	3	0
+tippfeler	2015-10-17	1	0	0
 tiyok	2013-09-22	375	375	0
 tiyok	2013-09-23	4	4	0
 tmcw	2012-04-25	20	20	0
 toolking	2012-03-30	5	0	0
 totochan24	2013-08-15	1	0	0
-trev1881	2012-06-11	4	1	1
+trev1881	2012-06-11	4	1	0
 trio mardiansyah	2012-03-27	189	189	0
 triono	2014-01-17	7	6	0
 triosaputro	2013-04-25	2671	2573	0
 triyogatama	2011-05-16	14	13	0
 tsanazhafira	2014-03-01	3	3	0
 tukangkopi	2013-12-25	2	1	0
+tukangpeta	2015-04-26	2	1	0
 tulakev	2014-08-24	211	185	0
 tulakev	2014-08-25	313	303	0
 tulakev	2014-08-27	9	9	0
 tutorial_osm	2014-04-22	11	11	0
 uboot	2008-04-03	1	0	0
 uboot	2008-04-04	21	0	0
+uboot	2015-03-20	1	0	0
+uboot	2015-05-13	1	0	0
+uboot	2015-05-30	1	0	0
+uboot	2015-10-26	38	15	0
+uboot	2015-10-27	15	12	0
+uboot	2015-10-30	1	1	0
+uboot	2015-11-14	6	1	0
+uboot	2015-11-15	2	2	0
+uboot	2015-11-26	3	3	0
+uboot	2015-11-29	54	1	0
 udayalaks	2014-04-10	4	1	0
 ulfl	2008-11-27	1	0	0
 ulfl	2008-12-20	1	0	0
 ulfl	2009-03-08	1	0	0
+umiatun hasanah	2015-01-26	2	2	0
 uniomni	2010-03-23	5	4	0
 user_5359	2013-01-01	1	0	0
 user_5359	2013-03-16	1	0	0
@@ -3390,7 +4367,7 @@ uswatunkh21	2012-09-13	47	46	0
 uswatunkh21	2012-11-02	1	0	0
 uswatunkh21	2013-02-26	79	79	0
 ututrara	2012-03-05	208	208	0
-ututrara	2012-07-30	149	149	0
+ututrara	2012-07-30	149	149	1
 ututrara	2012-07-31	41	41	0
 vanpuk	2011-09-24	2	1	0
 vanpuk	2011-10-06	4	1	0
@@ -3403,7 +4380,7 @@ vanpuk	2012-03-20	160	160	0
 vanpuk	2012-03-23	3485	3485	0
 vanpuk	2012-03-25	3354	3139	0
 vanpuk	2012-03-30	279	279	0
-vanpuk	2012-04-08	49	25	2
+vanpuk	2012-04-08	49	25	0
 vanpuk	2013-01-11	1	1	0
 vanpuk	2013-01-12	1	1	0
 vanpuk	2013-01-28	866	866	0
@@ -3417,7 +4394,7 @@ vanpuk	2014-02-18	4	4	0
 vanpuk	2014-05-20	190	190	0
 vasanthi	2011-05-16	51	49	0
 vasanthi	2011-07-08	80	78	0
-vasanthi	2011-12-09	249	249	0
+vasanthi	2011-12-09	249	249	1
 vasanthi	2012-08-03	1	1	0
 vasanthi	2012-10-29	36	22	0
 vasanthi	2013-01-31	2456	2456	0
@@ -3435,11 +4412,20 @@ vasanthi	2014-04-01	2	2	0
 vasanthi	2014-09-06	1	1	0
 vasanthi	2014-11-20	1009	1009	0
 vasanthi	2014-12-02	8	4	0
+vasanthi	2015-03-22	11	11	0
+vasanthi	2015-04-26	6	6	0
+vasanthi	2015-08-04	48	8	0
+vasanthi	2015-09-12	1	1	0
+vasanthi	2015-09-14	29	21	0
+vasanthi	2015-10-27	63	63	0
+vasanthi	2015-12-10	1	1	0
+vasanthi	2015-12-15	24	24	0
 vayshal	2013-02-09	2	2	0
 vdjay	2014-11-11	19	12	0
 verinux	2010-10-15	18	18	0
 vicong	2011-08-11	4	0	0
 vilcia	2015-01-25	5	5	0
+vinsent_favian	2015-12-07	15	15	0
 virdha	2013-10-08	5	5	0
 visana	2012-09-01	1759	1756	6
 visana	2012-09-05	2	1	0
@@ -3447,7 +4433,8 @@ vitajaringan	2011-12-07	34	33	0
 vitus dwi indarto	2012-03-07	4	4	0
 vlnur	2013-01-08	2	1	0
 vlnur	2013-01-11	2	2	0
-wahyu_jenong	2011-06-13	28	26	2
+wahid1005	2015-12-29	3	3	0
+wahyu_jenong	2011-06-13	28	26	1
 wahyu_jenong	2011-06-14	11	9	0
 wahyu_jenong	2011-06-15	22	21	0
 wahyu_jenong	2011-07-09	99	38	0
@@ -3455,8 +4442,9 @@ wahyu_jenong	2011-08-19	7	3	0
 wahyu_jenong	2011-09-15	8	1	0
 wahyudipm	2012-12-17	3	3	0
 wambacher	2014-05-12	4	0	0
+wambacher	2015-12-30	2	1	0
 wardizt	2012-12-13	261	261	0
-wardizt	2012-12-18	397	388	2
+wardizt	2012-12-18	397	388	0
 wardizt	2012-12-21	47	47	0
 wardizt	2012-12-25	564	564	0
 wardizt	2012-12-30	358	358	0
@@ -3470,22 +4458,28 @@ wheelmap_visitor	2011-04-01	1	0	0
 wheelmap_visitor	2011-04-02	1	0	0
 wheelmap_visitor	2011-04-03	1	0	0
 wheelmap_visitor	2011-05-23	1	0	0
+wheelmap_visitor	2015-11-14	2	0	0
 wibowo	2011-04-08	111	68	0
 wibowo	2011-04-09	76	29	0
-wibowo	2011-04-13	270	98	0
+wibowo	2011-04-13	270	98	1
 wibowo	2011-04-14	23	1	0
 wibowo	2011-04-19	5	3	0
 wibowo	2011-04-25	5	3	0
 wibowo	2011-05-16	5	4	0
 wibowo	2011-05-20	1	1	0
+wicaksono777	2015-10-23	74	66	0
 widyaulia	2014-03-01	52	52	0
 wikaristya3	2012-07-27	28	28	0
 wildabdat	2013-02-05	1	1	0
+wildabdat	2015-05-26	1	1	0
+winamp_03	2015-12-17	57	57	0
 winata	2013-04-25	1809	1785	0
 wind rose	2014-04-17	3	3	0
 winhard	2011-08-08	35	35	0
 winhard	2011-09-09	10	8	0
-winhard	2011-09-14	111	111	0
+winhard	2011-09-14	111	111	1
+winhard	2015-10-22	5	4	0
+woha	2015-11-25	157	147	0
 wolvie	2014-04-04	12	12	0
 wonderchook	2011-03-21	23	19	0
 wonderchook	2011-05-16	11	6	0
@@ -3528,6 +4522,8 @@ wonderchook	2014-02-22	7	7	0
 woodpeck	2012-05-11	1	1	0
 woodpeck	2013-08-06	1	0	0
 woodpeck_repair	2014-02-03	17	0	0
+woodpeck_repair	2015-05-04	1	0	0
+woodpeck_repair	2016-01-16	10	0	0
 wulanfitriani	2014-04-04	14	14	0
 wulankhairunisa	2012-03-05	11	11	0
 wulankhairunisa	2012-03-17	132	132	0
@@ -3567,6 +4563,36 @@ wulankhairunisa	2014-08-11	917	465	0
 wulankhairunisa	2014-08-12	2	2	0
 wulankhairunisa	2014-08-27	40	40	0
 wulankhairunisa	2015-01-05	209	209	0
+wulankhairunisa	2015-02-04	18	18	0
+wulankhairunisa	2015-03-18	244	0	0
+wulankhairunisa	2015-03-19	41	4	0
+wulankhairunisa	2015-03-24	1385	1384	0
+wulankhairunisa	2015-04-01	209	0	0
+wulankhairunisa	2015-04-10	45	45	0
+wulankhairunisa	2015-07-09	41	36	2
+wulankhairunisa	2015-07-28	38	0	0
+wulankhairunisa	2015-09-14	106	98	0
+wulankhairunisa	2015-10-01	603	521	0
+wulankhairunisa	2015-10-09	1	1	0
+wulankhairunisa	2015-10-12	19	14	0
+wulankhairunisa	2015-10-13	492	408	0
+wulankhairunisa	2015-10-16	454	404	0
+wulankhairunisa	2015-10-21	173	128	0
+wulankhairunisa	2015-10-24	184	154	0
+wulankhairunisa	2015-10-25	174	158	0
+wulankhairunisa	2015-10-26	1439	1304	0
+wulankhairunisa	2015-10-27	223	127	0
+wulankhairunisa	2015-10-29	82	49	0
+wulankhairunisa	2015-11-02	235	203	0
+wulankhairunisa	2015-11-03	141	2	0
+wulankhairunisa	2015-11-04	581	288	0
+wulankhairunisa	2015-11-05	733	344	0
+wulankhairunisa	2015-11-06	164	51	0
+wulankhairunisa	2015-11-07	330	133	0
+wulankhairunisa	2015-11-08	281	102	0
+wulankhairunisa	2015-11-09	864	149	0
+wulankhairunisa	2015-11-10	866	240	0
+wulankhairunisa	2015-11-30	7	5	0
 wvdp	2014-03-26	1	0	0
 xenrolf	2012-08-07	110	108	0
 xeysx	2013-08-14	2	1	0
@@ -3592,6 +4618,7 @@ xybot	2011-09-25	1	0	0
 xybot	2011-11-07	1	0	0
 xybot	2012-03-25	2	0	0
 xybot	2012-03-30	1	0	0
+y_kazhim	2013-07-14	14	13	0
 yam hiong	2014-09-05	5	5	0
 yanamillia	2014-08-27	202	202	0
 yanamillia	2014-08-28	313	313	0
@@ -3603,7 +4630,6 @@ yanamillia	2014-10-18	1634	1630	0
 yanamillia	2014-10-19	1213	1209	0
 yanamillia	2014-10-20	736	736	0
 yanamillia	2014-10-21	2294	2276	0
-yasowalski	2013-07-14	14	13	0
 yc1ohe	2013-01-18	16	16	1
 ydwis40	2011-08-07	32	22	0
 ydwis40	2011-10-28	7	7	0
@@ -3614,6 +4640,10 @@ yenchen23	2014-03-24	17	17	0
 ygunadi	2009-04-01	86	13	0
 yonifm	2014-09-27	23	15	0
 yonifm	2014-10-09	4	4	0
+yos405	2015-01-28	4	4	0
+yos405	2015-03-17	4	4	0
+yos405	2015-03-20	5	0	0
+yos405	2015-09-03	12	12	0
 ypid	2013-12-17	1	0	0
 ypid	2013-12-31	2	0	0
 ypid	2014-01-15	1	0	0
@@ -3650,7 +4680,18 @@ zahrabanu	2014-10-26	11197	11197	0
 zahrabanu	2014-10-27	5346	5346	0
 zahrabanu	2014-10-28	3447	3447	0
 zaqr	2012-09-10	11	10	0
-zenfunk	2013-08-17	51	32	1
+zenfunk	2013-08-17	51	32	3
+zeta_reticuli	2015-05-16	1	1	0
+zeta_reticuli	2015-05-17	3	3	0
+zeta_reticuli	2015-05-21	215	209	0
+zeta_reticuli	2015-05-23	33	32	0
+zeta_reticuli	2015-05-31	91	83	0
+zeta_reticuli	2015-06-01	300	290	0
+zeta_reticuli	2015-06-02	131	126	0
+zeta_reticuli	2015-06-06	7	6	0
+zeta_reticuli	2015-06-24	76	76	0
+zeta_reticuli	2015-07-06	25	24	0
+zeta_reticuli	2015-08-16	1	1	0
 zors1843	2013-04-22	2	0	0
 zswartz	2013-03-15	876	876	0
 zswartz	2013-03-20	451	428	0
@@ -3658,3 +4699,6 @@ zswartz	2013-03-21	422	422	0
 zswartz	2013-03-22	518	502	0
 zulhendri	2013-04-25	1577	1574	0
 Ævar Arnfjörð Bjarmason	2009-09-08	1	0	0
+عقبة بن نافع	2016-01-07	1	0	0
+عقبة بن نافع	2016-01-09	4	0	0
+عقبة بن نافع	2016-01-16	4	0	0
