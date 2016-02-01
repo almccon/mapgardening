@@ -62,7 +62,7 @@ else:
 
 MapGardening.init_logging()
 
-for placename in places.keys():
+for placename in sorted(places.keys()):
 
     # Each place exists in a different database, so we connect/disconnect inside the places loop    
     (conn, cur) = MapGardening.init_db(places[placename]['dbname'])
