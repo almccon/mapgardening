@@ -1,6 +1,7 @@
 user_name	date	count	v1count	blankcount
 22HERTZ	2013-11-26	3	3	0
 23WLakeshore	2014-11-13	4	4	0
+246mp	2015-06-29	1	1	0
 2JOUR	2011-10-16	4	2	0
 2dfx	2008-11-23	46	0	0
 2dfx	2008-11-25	115	0	0
@@ -19,6 +20,8 @@ user_name	date	count	v1count	blankcount
 2dfx	2009-03-11	504	12	0
 2dfx	2009-03-16	143	1	0
 2dfx	2009-03-17	167	0	0
+2morrow	2015-05-12	1	1	0
+2morrow	2015-05-13	6	6	0
 3023ogilvyd	2010-10-23	5	2	0
 42429	2012-05-25	162	57	0
 42429	2012-06-16	173	77	0
@@ -37,28 +40,44 @@ APAssociates	2013-04-16	4	4	0
 ARiddZ	2013-01-05	24	0	0
 AS1	2009-01-25	41	0	0
 Aamirb	2012-03-09	18	14	0
+Abu Jahl	2014-10-14	27	14	0
+Abu Jahl	2015-02-11	2	1	0
+Abu Jahl	2015-02-12	5	4	0
+Abu Jahl	2015-03-02	7	1	0
+Abu Jahl	2015-04-26	39	10	0
+Abu Jahl	2015-04-27	7	5	0
+Abu Jahl	2015-04-28	2	2	0
+Abu Jahl	2015-05-12	1	0	0
+Abu Jahl	2015-06-05	204	30	0
+Abu Jahl	2015-11-07	4	1	0
+Abu Jahl	2016-01-01	26	12	0
 Adam_Canada	2008-12-26	59	0	0
 Adam_Canada	2008-12-27	177	0	0
 Adam_Canada	2009-01-03	123	0	0
 Adam_Canada	2009-01-06	177	0	0
 Adam_Canada	2009-04-11	50	0	0
 Adamm	2007-07-31	16	16	7
-Adamm	2007-08-14	8	8	6
-Adamm	2007-08-15	19	19	7
+Adamm	2007-08-14	8	8	7
+Adamm	2007-08-15	19	19	8
 Adi900	2011-08-04	1	1	0
 Adi900	2011-08-17	1	1	0
 Adi900	2011-10-26	330	330	0
-Adrian Borrmann	2013-04-19	3	0	0
+Ahrabee	2015-01-27	2	2	0
+Ahrabee	2015-01-29	11	6	0
 AidenM	2012-04-30	2	2	0
 Ailatix	2009-01-17	5	2	0
+AkeemOF	2015-01-28	1	1	0
 Alan Page	2010-07-27	8	6	0
 Alan Page	2010-07-30	8	1	0
 Alan Page	2010-08-01	4	2	0
 AlaskaDave	2013-02-17	1	0	0
+AlekL	2015-05-27	5	3	0
+Aleks-Berlin	2016-01-01	1	0	0
 Alex Jenkins	2012-05-09	1	1	0
 AlexTheTechGuy	2014-11-12	1	1	0
 AlexanderF	2009-12-28	4	0	0
 AlfredoArias	2012-05-09	5	1	0
+Ali V6	2015-11-12	8	2	0
 Alistair Boyer	2010-06-29	1	0	0
 Alsone	2012-10-15	424	164	0
 Amazing77	2013-01-06	3	3	0
@@ -106,6 +125,7 @@ ArbiterXero	2014-06-20	3	3	0
 ArbiterXero	2014-06-22	756	751	0
 ArbiterXero	2014-06-24	294	281	0
 ArbiterXero	2014-06-25	66	54	0
+Arcady Genkin	2015-10-02	1	1	0
 ArcherofSkye	2014-01-05	4	0	0
 Arcseco	2014-07-02	7	2	0
 Arctic_1980	2013-09-06	1	0	0
@@ -117,11 +137,17 @@ AtulOSM	2014-04-30	1	1	0
 AtulOSM	2015-01-05	1	1	0
 Augusto Chaves	2013-07-24	1	1	0
 Aurelia Kyles	2013-03-01	2	2	0
+Aury88	2015-09-06	9	0	0
+AutomaticJ	2015-04-29	1	0	0
 Avernar	2009-06-16	270	127	0
 BBO	2010-09-14	1	0	0
+BCNorwich	2015-12-03	8	0	0
+BCNorwich	2015-12-04	102	0	0
 BDM391	2013-09-22	17	17	0
 BDM391	2013-09-23	18	18	0
 BEI Group	2013-12-03	1	1	0
+BJAY-gmail	2015-05-24	6	6	0
+BJAY-gmail	2015-09-07	1	1	0
 BJBond	2010-02-18	27	4	0
 BJC	2009-10-19	1	0	0
 BQ Jones	2014-03-16	2	2	0
@@ -160,6 +186,9 @@ Be A Mapper	2014-09-23	2	1	0
 Be A Mapper	2014-09-27	1	1	0
 Be A Mapper	2014-10-10	1	1	0
 Be A Mapper	2014-11-17	14	10	0
+Be A Mapper	2015-02-06	3	1	0
+Be A Mapper	2015-03-02	2	1	0
+Be A Mapper	2015-04-13	2	1	0
 BeeRich	2008-02-05	1	0	0
 Ben Konrath	2009-07-12	255	10	0
 Ben Konrath	2009-07-13	20	2	0
@@ -204,7 +233,7 @@ Biff	2013-06-14	98	34	0
 Big Toronto Jim	2013-10-31	22	10	0
 Big Toronto Jim	2013-11-05	5	1	0
 Bike	2009-08-10	114	0	0
-Bikerbob	2007-11-30	184	106	2
+Bikerbob	2007-11-30	184	106	3
 Bikerbob	2007-12-02	3	3	0
 Bill Andersen	2008-06-04	1	1	0
 Bill Andersen	2012-09-15	13	8	0
@@ -219,6 +248,16 @@ BitcoinMaps	2014-09-02	1	1	0
 BitcoinMaps	2014-12-12	1	1	0
 BitcoinMaps	2015-01-16	1	1	0
 BitcoinMaps	2015-01-17	1	1	0
+BitcoinMaps	2015-02-06	1	1	0
+BitcoinMaps	2015-02-11	1	1	0
+BitcoinMaps	2015-02-13	1	1	0
+BitcoinMaps	2015-03-03	1	1	0
+BitcoinMaps	2015-03-04	1	1	0
+BitcoinMaps	2015-03-15	1	1	0
+BitcoinMaps	2015-04-07	1	1	0
+BitcoinMaps	2015-05-24	1	1	0
+BitcoinMaps	2015-05-26	1	1	0
+Bkissin	2015-07-21	79	71	0
 Blackoptek	2011-05-05	2	2	0
 Blaine	2009-05-18	10	2	0
 Blaine	2009-05-19	54	1	0
@@ -641,9 +680,196 @@ Bootprint	2014-12-31	9	6	0
 Bootprint	2015-01-08	1	0	0
 Bootprint	2015-01-10	1	0	0
 Bootprint	2015-01-25	2	0	0
+Bootprint	2015-01-26	1	0	0
+Bootprint	2015-01-30	11	1	0
+Bootprint	2015-02-03	33	6	0
+Bootprint	2015-02-04	43	24	0
+Bootprint	2015-02-09	77	39	0
+Bootprint	2015-02-10	169	95	0
+Bootprint	2015-02-11	2	1	0
+Bootprint	2015-02-12	50	21	0
+Bootprint	2015-02-13	106	73	0
+Bootprint	2015-02-14	77	51	0
+Bootprint	2015-02-16	4	0	0
+Bootprint	2015-02-19	1	1	0
+Bootprint	2015-02-27	57	49	0
+Bootprint	2015-02-28	22	13	0
+Bootprint	2015-03-02	41	24	0
+Bootprint	2015-03-03	1	0	0
+Bootprint	2015-03-04	2	0	0
+Bootprint	2015-03-05	138	95	0
+Bootprint	2015-03-09	26	13	0
+Bootprint	2015-03-10	59	19	0
+Bootprint	2015-03-14	50	5	0
+Bootprint	2015-03-15	59	49	0
+Bootprint	2015-03-16	503	356	0
+Bootprint	2015-03-20	31	15	0
+Bootprint	2015-03-21	223	106	0
+Bootprint	2015-03-22	144	38	0
+Bootprint	2015-03-23	57	52	0
+Bootprint	2015-03-24	78	49	0
+Bootprint	2015-03-25	71	36	0
+Bootprint	2015-03-26	88	45	0
+Bootprint	2015-03-27	3	0	0
+Bootprint	2015-03-29	94	59	0
+Bootprint	2015-03-31	36	8	0
+Bootprint	2015-04-01	4	3	0
+Bootprint	2015-04-02	33	18	0
+Bootprint	2015-04-04	265	158	0
+Bootprint	2015-04-05	52	31	0
+Bootprint	2015-04-06	14	3	0
+Bootprint	2015-04-07	15	13	0
+Bootprint	2015-04-08	26	7	0
+Bootprint	2015-04-09	301	255	0
+Bootprint	2015-04-12	147	74	0
+Bootprint	2015-04-13	63	20	0
+Bootprint	2015-04-14	29	17	0
+Bootprint	2015-04-15	192	120	0
+Bootprint	2015-04-16	145	84	0
+Bootprint	2015-04-18	3	0	0
+Bootprint	2015-04-19	227	70	0
+Bootprint	2015-04-20	89	64	0
+Bootprint	2015-04-21	51	17	0
+Bootprint	2015-04-22	3	0	0
+Bootprint	2015-04-23	16	8	0
+Bootprint	2015-04-24	247	119	0
+Bootprint	2015-04-26	29	13	0
+Bootprint	2015-04-27	14	10	0
+Bootprint	2015-04-28	172	100	0
+Bootprint	2015-04-29	369	191	0
+Bootprint	2015-04-30	7	6	0
+Bootprint	2015-05-01	16	3	0
+Bootprint	2015-05-02	268	135	0
+Bootprint	2015-05-03	9	7	0
+Bootprint	2015-05-04	1	0	0
+Bootprint	2015-05-05	1	0	0
+Bootprint	2015-05-11	3	0	0
+Bootprint	2015-05-14	2	0	0
+Bootprint	2015-05-25	2	0	0
+Bootprint	2015-06-07	2	0	0
+Bootprint	2015-06-17	2	0	0
+Bootprint	2015-06-18	9	0	0
+Bootprint	2015-06-19	7	5	0
+Bootprint	2015-06-26	4	0	0
+Bootprint	2015-06-27	25	11	0
+Bootprint	2015-07-05	1	0	0
+Bootprint	2015-07-06	27	19	0
+Bootprint	2015-07-07	65	20	0
+Bootprint	2015-07-08	150	119	0
+Bootprint	2015-07-09	48	47	0
+Bootprint	2015-07-10	49	24	0
+Bootprint	2015-07-11	42	25	0
+Bootprint	2015-07-16	205	145	0
+Bootprint	2015-07-17	2	0	0
+Bootprint	2015-07-21	1	0	0
+Bootprint	2015-07-24	9	1	0
+Bootprint	2015-07-28	16	8	0
+Bootprint	2015-07-29	36	27	0
+Bootprint	2015-08-07	16	3	0
+Bootprint	2015-08-10	75	24	0
+Bootprint	2015-08-14	7	1	0
+Bootprint	2015-08-19	187	124	0
+Bootprint	2015-08-25	8	4	0
+Bootprint	2015-08-28	79	51	0
+Bootprint	2015-08-29	3	0	0
+Bootprint	2015-08-31	4	0	0
+Bootprint	2015-09-04	84	48	0
+Bootprint	2015-09-07	15	7	0
+Bootprint	2015-09-08	9	2	0
+Bootprint	2015-09-09	29	3	0
+Bootprint	2015-09-10	314	253	0
+Bootprint	2015-09-11	400	259	0
+Bootprint	2015-09-12	229	138	0
+Bootprint	2015-09-13	378	207	0
+Bootprint	2015-09-14	171	75	0
+Bootprint	2015-09-15	166	64	0
+Bootprint	2015-09-16	725	275	0
+Bootprint	2015-09-17	645	391	0
+Bootprint	2015-09-18	181	44	0
+Bootprint	2015-09-19	69	19	0
+Bootprint	2015-09-20	283	95	0
+Bootprint	2015-09-21	555	223	0
+Bootprint	2015-09-22	488	216	0
+Bootprint	2015-09-23	214	56	0
+Bootprint	2015-09-24	339	230	0
+Bootprint	2015-09-25	155	70	0
+Bootprint	2015-09-26	132	82	0
+Bootprint	2015-09-27	220	132	0
+Bootprint	2015-09-28	546	343	0
+Bootprint	2015-09-29	119	75	0
+Bootprint	2015-10-04	1	0	0
+Bootprint	2015-10-05	14	4	0
+Bootprint	2015-10-07	39	18	0
+Bootprint	2015-10-14	14	4	0
+Bootprint	2015-10-17	1	0	0
+Bootprint	2015-10-19	28	3	0
+Bootprint	2015-10-22	10	1	0
+Bootprint	2015-10-28	6	1	0
+Bootprint	2015-10-29	63	33	0
+Bootprint	2015-10-31	137	133	0
+Bootprint	2015-11-01	167	113	0
+Bootprint	2015-11-02	160	47	0
+Bootprint	2015-11-03	2	0	0
+Bootprint	2015-11-04	84	45	0
+Bootprint	2015-11-05	22	12	0
+Bootprint	2015-11-06	81	61	0
+Bootprint	2015-11-07	15	6	0
+Bootprint	2015-11-11	9	2	0
+Bootprint	2015-11-12	448	285	0
+Bootprint	2015-11-13	9	0	0
+Bootprint	2015-11-17	1	0	0
+Bootprint	2015-11-18	1	0	0
+Bootprint	2015-11-23	141	49	0
+Bootprint	2015-11-25	18	0	0
+Bootprint	2015-11-27	1	0	0
+Bootprint	2015-11-29	14	5	0
+Bootprint	2015-11-30	95	57	0
+Bootprint	2015-12-01	93	54	0
+Bootprint	2015-12-02	24	20	0
+Bootprint	2015-12-03	6	0	0
+Bootprint	2015-12-04	1	1	0
+Bootprint	2015-12-06	35	21	0
+Bootprint	2015-12-07	11	7	0
+Bootprint	2015-12-08	88	14	0
+Bootprint	2015-12-10	210	76	0
+Bootprint	2015-12-11	96	71	0
+Bootprint	2015-12-12	13	8	0
+Bootprint	2015-12-14	50	26	0
+Bootprint	2015-12-15	52	33	0
+Bootprint	2015-12-16	24	10	0
+Bootprint	2015-12-17	9	7	0
+Bootprint	2015-12-18	102	69	0
+Bootprint	2015-12-19	29	20	0
+Bootprint	2015-12-20	73	40	0
+Bootprint	2015-12-21	154	110	0
+Bootprint	2015-12-22	120	89	0
+Bootprint	2015-12-23	218	164	0
+Bootprint	2015-12-24	13	8	0
+Bootprint	2015-12-25	187	123	0
+Bootprint	2015-12-26	14	11	0
+Bootprint	2015-12-30	44	19	0
+Bootprint	2015-12-31	1	0	0
+Bootprint	2016-01-01	45	10	0
+Bootprint	2016-01-02	151	83	0
+Bootprint	2016-01-03	126	96	0
+Bootprint	2016-01-04	243	163	0
+Bootprint	2016-01-05	633	425	0
+Bootprint	2016-01-06	312	188	0
+Bootprint	2016-01-07	476	335	0
+Bootprint	2016-01-08	214	105	0
+Bootprint	2016-01-09	96	87	0
+Bootprint	2016-01-10	112	71	0
+Bootprint	2016-01-11	95	47	0
+Bootprint	2016-01-12	467	268	0
+Bootprint	2016-01-13	471	287	0
+Bootprint	2016-01-14	440	290	0
+Bootprint	2016-01-15	147	82	0
+Bootprint	2016-01-16	80	26	0
+BorisIvanovic	2016-01-11	9	9	0
 Brad Edwards	2015-01-23	13	10	0
 Brad Edwards	2015-01-24	1	1	0
 Brad Edwards	2015-01-25	2	2	0
+Brad Edwards	2015-01-28	1	0	0
 BradEdwards	2014-05-23	2	1	0
 Brett Reynolds	2014-01-16	6	6	0
 Brian Chick	2010-10-18	2	0	0
@@ -651,15 +877,22 @@ Brian Crockford	2014-05-22	10	10	0
 Brian de Alwis	2014-03-08	1	1	0
 Brian de Alwis	2014-05-04	1	1	0
 Brian@Brea	2014-01-14	1	0	0
+Brian@Brea	2015-03-16	5	0	0
+Bryan Hill	2015-07-22	4	2	0
 Bryan_F	2013-12-08	30	29	0
+Bryandale	2015-07-02	2	1	0
 Bryce C Nesbitt	2013-06-18	20	19	0
 Bryce C Nesbitt	2013-07-29	4	0	0
 Bryce C Nesbitt	2013-08-20	2	2	0
 Bryce C Nesbitt	2013-09-30	8	8	0
+Bryce C Nesbitt	2015-03-19	1	0	0
+Bryce C Nesbitt	2015-03-20	1	0	0
 Btc2sms	2013-11-15	1	1	0
 BugBuster	2009-09-29	4	0	0
 BuganiniQ	2014-05-06	5	0	0
 BuganiniQ	2014-05-12	7	0	0
+Bullroarer	2015-05-02	1	0	0
+Bxy99	2015-09-02	43	43	0
 C-FTFC	2011-08-21	44	18	0
 C-FTFC	2011-09-01	26	17	0
 C-FTFC	2014-07-03	1	0	0
@@ -669,6 +902,7 @@ CBraves	2013-03-10	1	1	0
 CCIPAEditor	2014-01-08	1	1	0
 CDNmapper	2013-02-19	8	8	0
 CDNmapper	2013-09-27	117	56	0
+CGmuzzi	2016-01-03	2	1	0
 CMahoney	2012-10-30	48	45	0
 CPLAA	2013-10-14	7	7	0
 CYL	2011-12-18	5	0	0
@@ -682,12 +916,15 @@ Canterbury Tail	2011-07-30	2	0	0
 CapC	2012-10-06	10	1	0
 Cay	2010-02-08	5	1	0
 Century21PresidentRealtyBrokerageInc	2014-09-23	1	0	0
+Chad Thomas	2015-02-17	3	1	0
 Chaka2407	2012-05-01	1	1	0
 Charles Duncan	2012-07-27	124	124	0
+Che Gibson	2015-09-21	86	82	0
 Cheburashka	2011-06-29	10	5	0
 Cheburashka	2011-07-03	37	35	0
 Cheburashka	2011-07-04	130	129	0
 Cheburashka	2011-07-21	4	4	0
+CheefKeef	2015-10-01	15	14	0
 ChiefScout2000	2012-08-21	2	1	0
 Chivalryder	2014-04-06	45	33	0
 Chookolingo	2013-07-23	1	1	0
@@ -695,9 +932,20 @@ Chris Aviss	2013-06-07	2	2	0
 ChrisZontine	2014-06-19	1	0	0
 Chrisaknight	2013-01-26	13	0	0
 ChrissW-R1	2014-02-24	3	0	0
+ChrissW-R1	2015-10-23	5	0	0
+ChrissW-R1	2015-10-28	1	0	0
+ChrissW-R1	2015-12-18	2	0	0
+ChrissW-R1	2015-12-26	2	0	0
+ChrissW-R1	2016-01-14	2	0	0
+ChrissW-R1	2016-01-15	1	0	0
+Christine Joannou	2015-11-02	6	6	0
+Christine Joannou	2015-11-05	4	4	0
+Christoph Lotz	2015-10-15	1	0	0
+Christoph Lotz	2016-01-12	79	0	0
 Christopher Browne	2009-01-23	207	13	0
 CiroTheDesertWind	2011-12-26	7	7	0
 CiroTheDesertWind	2011-12-27	36	34	0
+Claude Will	2015-07-23	2	0	0
 Claudius Henrichs	2010-05-10	2	0	0
 Claudius Henrichs	2010-07-17	4	0	0
 Claudius Henrichs	2010-07-18	5	0	0
@@ -708,12 +956,15 @@ Claudius Henrichs	2010-11-26	1	0	0
 Claudius Henrichs	2010-12-10	1	0	0
 Claudius Henrichs	2013-01-20	1	0	0
 Claudius Henrichs	2013-02-21	2	1	0
+Claudius Henrichs	2015-04-12	1	0	0
+Claudius Henrichs	2015-05-19	1	0	0
 Clinton Gladstone	2008-10-08	2	2	0
 Clinton Gladstone	2009-10-12	1	1	0
 Clorox	2011-04-15	2	0	0
 Clorox	2012-04-15	16	2	0
 CmdrThor	2013-02-18	18	13	0
 Cobra	2012-03-27	182	0	0
+Coindero	2015-08-05	1	0	0
 Colin McGregor	2008-08-28	4	3	0
 Colin McGregor	2008-08-29	1	1	0
 Colin McGregor	2008-08-31	20	9	0
@@ -721,7 +972,7 @@ Colin McGregor	2008-09-03	1	0	0
 Colin McGregor	2008-09-04	3	2	0
 Colin McGregor	2008-09-06	31	24	0
 Colin McGregor	2008-09-08	17	10	0
-Colin McGregor	2008-09-12	628	625	0
+Colin McGregor	2008-09-12	628	625	2
 Colin McGregor	2008-09-13	95	94	0
 Colin McGregor	2008-10-02	2	0	0
 Colin McGregor	2008-10-26	222	33	0
@@ -788,6 +1039,18 @@ Colin McGregor	2014-06-22	5	0	0
 Colin McGregor	2014-10-13	2	0	0
 Colin McGregor	2014-10-21	3	0	0
 Colin McGregor	2014-11-13	6	0	0
+Colin McGregor	2015-03-14	1	0	0
+Colin McGregor	2015-04-16	4	4	0
+Colin McGregor	2015-08-11	14	14	0
+Colin McGregor	2015-08-25	1	0	0
+Colin McGregor	2015-09-14	1	0	0
+Colin McGregor	2015-10-08	26	24	0
+Colin McGregor	2015-10-14	9	5	0
+Colin McGregor	2015-11-23	12	12	0
+Colin McGregor	2015-12-05	1	1	0
+Colin McGregor	2016-01-12	62	62	0
+Colin McGregor	2016-01-13	65	64	0
+Colin McGregor	2016-01-14	24	24	0
 Colin06pifr	2013-12-18	1	1	0
 ColosseumOnline	2014-02-24	1	0	0
 ComputerMage	2008-03-06	217	205	0
@@ -799,6 +1062,9 @@ ConorAnderson	2009-11-09	30	21	0
 Constable	2014-01-14	1	1	0
 Constable	2014-03-26	4	4	0
 Constable	2014-04-03	14	13	0
+Corporate Gadfly	2015-05-11	14	4	0
+Corporate Gadfly	2015-05-12	20	20	0
+Cory Zanatta	2015-05-11	6	6	0
 CplHenderson	2014-01-14	21	18	0
 CplHenderson	2014-03-05	14	3	0
 CplHenderson	2014-08-27	1	0	0
@@ -807,23 +1073,27 @@ Crid	2008-05-25	2	2	0
 Crid	2008-05-26	6	6	0
 Cristian Muresanu	2014-11-02	14	14	0
 Crokinole	2009-08-27	4	2	0
-Crypto Willy	2008-05-30	127	125	4
+CromDubh	2015-05-21	1	0	0
+CromDubh	2015-08-02	1	1	0
+Crypto Willy	2008-05-30	127	125	5
 Crypto Willy	2008-05-31	52	50	0
-Crypto Willy	2008-06-01	243	241	0
-Crypto Willy	2008-06-05	21	20	0
-Crypto Willy	2008-06-06	36	36	0
+Crypto Willy	2008-06-01	243	241	1
+Crypto Willy	2008-06-05	21	20	1
+Crypto Willy	2008-06-06	36	36	1
 Crypto Willy	2008-06-09	22	20	0
-Crypto Willy	2008-06-28	85	85	1
+Crypto Willy	2008-06-28	85	85	0
 CyberStingray	2009-02-11	522	196	0
 CyberStingray	2009-02-12	195	50	0
 CyberStingray	2009-02-13	89	16	0
 CyberStingray	2009-02-14	128	71	0
 CyberStingray	2009-02-19	18	0	0
 CyberStingray	2011-12-31	45	38	0
+CyberStingray	2015-05-20	12	7	0
 Cyril Morin	2014-11-24	3	1	0
 Cyril Morin	2014-11-25	1	0	0
 D'Arcy J M Cain	2014-05-16	6	6	0
 D888	2013-06-26	3	1	0
+DAC LLM	2015-06-12	1	1	0
 DJSparky	2012-10-12	10	9	0
 DKNOTT	2013-12-19	2	0	0
 DLichti	2013-01-25	1	1	0
@@ -834,13 +1104,20 @@ DMR88	2008-11-16	36	0	0
 DMizzi	2014-01-10	281	167	0
 DMizzi	2014-01-12	11	9	0
 DMizzi	2014-01-13	71	53	0
+DMizzi	2015-04-11	2	1	0
 DZabienski	2012-06-09	1	0	0
 DaCor	2013-01-13	1	1	0
 Daletiel	2010-12-09	1	1	0
+Dami_Tn	2015-05-08	2	0	0
 Dan Bulger	2009-11-18	3	0	0
+Dan Emmons-Norkum	2015-03-05	1	1	0
 Dan Goldstein	2013-12-09	3	2	0
 DanHomerick	2009-11-03	7	7	0
 DanMcco	2013-12-15	5	5	0
+DangNgu	2015-08-12	9	9	0
+DangNgu	2015-08-24	6	6	0
+DangNgu	2015-08-25	29	29	0
+Daniel Perz	2015-02-28	5	5	0
 DansWdb	2012-09-17	6	6	0
 Danujo	2014-05-12	2	2	0
 Darksydecad	2012-03-01	4	4	0
@@ -854,6 +1131,7 @@ Darren70	2012-05-01	10	4	0
 DarrylH	2013-02-08	91	26	0
 Data411	2013-01-26	1	0	0
 David Collier-Brown	2015-01-04	2	2	0
+David Collier-Brown	2015-10-22	1	1	0
 David Cox	2013-02-28	2	2	0
 David Crochet	2014-04-05	1	0	0
 David Cumming	2012-01-24	1	1	0
@@ -868,7 +1146,7 @@ David Wetzel	2013-09-29	2	2	0
 David Wetzel	2015-01-04	1	1	0
 David X	2014-08-21	464	114	0
 Dayton416	2012-06-08	12	12	0
-Dayton416	2012-08-10	249	229	3
+Dayton416	2012-08-10	249	229	5
 DaytonTX	2009-02-03	175	0	0
 DaytonTX	2014-03-11	308	300	0
 De Idstaaner	2009-04-16	1	1	0
@@ -877,13 +1155,19 @@ Deanna Earley	2013-01-28	6	0	0
 Deanna Earley	2013-02-09	4	0	0
 Decentral	2014-07-14	1	0	0
 Decentral	2014-09-06	2	0	0
+DeniskMikhailov	2015-02-15	21	9	0
+DeniskMikhailov	2015-02-16	40	9	0
+DeniskMikhailov	2015-02-28	72	55	0
 DennisL	2013-01-13	5	0	0
 DennisL	2013-02-10	1	0	0
 DennisL	2013-02-22	1	0	0
-Denver Gingerich	2008-08-17	3	2	2
-Denver Gingerich	2008-08-23	43	43	1
+Denver Gingerich	2008-08-17	3	2	1
+Denver Gingerich	2008-08-23	43	43	0
 Denver Gingerich	2008-08-24	5	5	1
 Denver Gingerich	2008-11-08	39	39	0
+Derek Porritt	2015-04-21	15	0	0
+Derick Rethans	2015-11-07	12	7	0
+DiGro	2016-01-16	1	0	0
 Dimitri_Junker	2014-06-16	15	15	0
 Dodsworth	2010-02-23	8	8	0
 Dorothy Cook	2012-06-03	8	7	0
@@ -893,6 +1177,10 @@ DoubleA	2013-12-08	1	1	0
 DoubleA	2014-01-02	9	0	0
 DoubleA	2014-01-30	41	10	0
 Doug Pogue	2012-12-30	4	2	0
+Doug Underwood	2015-09-29	2	2	0
+Dr Khan	2016-01-01	1	1	0
+Dr Kludge	2015-06-21	1	0	0
+Dr Kludge	2015-07-14	4	0	0
 DrMark	2008-07-17	16	0	0
 Duplodocus	2013-07-16	1	0	0
 Dylan Smith	2008-06-06	307	292	0
@@ -916,6 +1204,8 @@ ElieMak	2014-03-17	4	4	0
 Elisabeth Antonacci	2013-01-04	2	1	0
 Elwin133	2011-02-09	6	5	0
 Elwin133	2011-09-26	2	2	0
+Emilieex	2015-05-05	23	23	0
+Emma Gangbar	2015-11-05	3	2	0
 EngineerZ	2013-12-21	1	0	0
 Eric Hacke	2009-08-28	17	12	0
 Eric Hacke	2012-03-24	14	5	0
@@ -926,8 +1216,16 @@ Ervin2	2011-02-08	115	101	0
 Esri Can	2011-08-09	1	1	0
 EtricCeline	2008-07-05	1	0	0
 Euro Flowers	2014-11-23	3	0	0
+ExecuPaws Yorkville	2015-12-27	1	1	0
 EzekielT	2014-09-06	1	1	0
+EzekielT	2015-06-14	1	1	0
+EzekielT	2015-06-16	1	0	0
+EzekielT	2015-06-20	1	1	0
+EzekielT	2015-06-22	1	1	0
+EzekielT	2015-06-26	1	1	0
+EzekielT	2015-12-13	1	0	0
 Ezhick	2011-04-08	3	0	0
+FTA	2015-06-14	3	0	0
 FarDorocha	2014-04-14	12	7	0
 Farol	2015-01-24	3	1	0
 Faster Logistics Montréal	2012-07-29	1	1	0
@@ -948,7 +1246,12 @@ FrankSBradley	2012-02-02	2	2	0
 Frazeman	2010-02-08	16	0	0
 Frink Labs	2010-08-05	1	0	0
 Funkin2x	2010-08-17	3	3	0
+FvGordon	2015-12-25	6	0	0
+FvGordon	2015-12-26	1	0	0
+FvGordon	2016-01-13	1	0	0
+FvGordon	2016-01-14	3	0	0
 GHunter	2013-05-23	1	1	0
+GMY	2015-10-08	4	4	0
 GRagib	2008-01-11	13	12	0
 GRagib	2008-08-24	3	3	0
 GRagib	2008-08-25	5	1	0
@@ -960,28 +1263,34 @@ GRagib	2012-08-17	70	43	0
 GVRD	2009-06-08	1	0	0
 GabeB	2010-06-20	11	4	0
 Gagravarr	2007-02-24	24	24	0
-Gagravarr	2007-02-28	533	533	85
+Gagravarr	2007-02-28	533	533	93
 Gagravarr	2007-03-01	2	2	0
 Gagravarr	2007-03-18	1	1	1
 Garrybowers	2011-01-09	12	2	0
 Garrybowers	2011-01-13	1	1	0
 Gary GG	2013-11-05	10	7	0
 General Zod	2013-11-21	1	0	0
+GeoHigh125	2015-04-08	1	0	0
 Geogast	2010-02-28	13	0	0
 Geogast	2010-06-18	1	0	0
 Geogast	2010-09-22	1	0	0
 Geogast	2010-10-19	5	0	0
 Geogast	2011-07-25	2	0	0
 Geogast	2014-12-12	1	0	0
+Geomapping	2015-01-30	1	1	0
+George Silva	2015-07-30	2	2	0
+GerdP	2015-09-26	10	7	0
+GerdP	2015-10-01	1	0	0
+GerdP	2015-10-29	1	0	0
 Gerit Wagner	2009-04-01	59	29	0
 Gerit Wagner	2009-04-02	1887	476	0
-Gerit Wagner	2009-04-03	18153	5098	7
-Gerit Wagner	2009-04-04	13461	3822	3
+Gerit Wagner	2009-04-03	18153	5098	14
+Gerit Wagner	2009-04-04	13461	3822	2
 Gerit Wagner	2009-04-05	14363	4216	0
 Gerit Wagner	2009-04-06	15506	3236	0
 Gerit Wagner	2009-04-07	2692	775	0
-Gerit Wagner	2009-04-08	13936	4061	1
-Gerit Wagner	2009-04-09	2718	532	0
+Gerit Wagner	2009-04-08	13936	4061	0
+Gerit Wagner	2009-04-09	2718	532	1
 Gerit Wagner	2009-04-10	12329	3356	0
 Gerit Wagner	2009-04-11	4044	1307	0
 Gerit Wagner	2009-04-12	7472	1408	0
@@ -989,25 +1298,25 @@ Gerit Wagner	2009-04-13	4456	1395	0
 Gerit Wagner	2009-04-14	3644	1246	0
 Gerit Wagner	2009-04-15	1597	579	0
 Gerit Wagner	2009-04-16	6754	1141	0
-Gerit Wagner	2009-04-17	3953	1046	0
+Gerit Wagner	2009-04-17	3953	1046	1
 Gerit Wagner	2009-04-21	29	29	0
 Gerit Wagner	2009-04-22	208	190	0
 Gerit Wagner	2009-04-23	935	922	0
-Gerit Wagner	2009-04-24	2643	2612	2
+Gerit Wagner	2009-04-24	2643	2612	3
 Gerit Wagner	2009-04-25	1318	1308	0
 Gerit Wagner	2009-04-26	7335	7225	1
-Gerit Wagner	2009-04-27	4036	3983	0
-Gerit Wagner	2009-04-28	5903	5836	10
+Gerit Wagner	2009-04-27	4036	3983	2
+Gerit Wagner	2009-04-28	5903	5836	8
 Gerit Wagner	2009-04-29	507	454	0
 Gerit Wagner	2009-04-30	5723	5648	2
-Gerit Wagner	2009-05-01	4593	4537	75
-Gerit Wagner	2009-05-02	809	796	2
+Gerit Wagner	2009-05-01	4593	4537	76
+Gerit Wagner	2009-05-02	809	796	4
 Gerit Wagner	2009-05-04	574	551	0
 Gerit Wagner	2009-05-05	20	20	0
 Gerit Wagner	2009-05-06	1049	1004	0
 Gerit Wagner	2009-05-07	1367	1349	0
 Gerit Wagner	2009-05-08	1832	1792	0
-Gerit Wagner	2009-05-09	3646	3630	9
+Gerit Wagner	2009-05-09	3646	3630	11
 Gerit Wagner	2009-05-10	2893	2853	1
 Gerit Wagner	2009-05-11	1937	1910	0
 Gerit Wagner	2009-05-12	2938	2921	0
@@ -1023,33 +1332,75 @@ Gerit Wagner	2009-05-21	40	40	0
 Gerit Wagner	2009-06-01	640	640	2
 Ghealron	2009-03-11	12	0	0
 GiovanniMiceli	2013-12-01	12	0	0
-GlobalMedic2	2013-05-14	2	1	0
-GlobalMedic2	2013-06-07	1	1	0
-GlobalMedic2	2013-08-01	4	3	0
-GlobalMedic2	2013-08-10	1	1	0
-GlobalMedic2	2014-09-14	1	0	0
-GlobalMedic2	2014-09-16	6	6	0
 Gone	2010-04-06	2	0	0
 Gone	2010-04-24	8	2	0
 Gone	2010-05-03	3	0	0
 Gone	2010-05-14	323	0	0
 Gone	2011-03-07	10	8	0
+Goran Miscevic	2016-01-17	239	180	0
+GordieGii	2015-06-14	157	42	0
 Goulorn	2015-01-14	15	13	0
 Goulorn	2015-01-18	2	1	0
 GrantHeaslip	2011-07-22	2	2	0
 Grenamier	2012-03-10	16	3	0
 Grenamier	2012-09-21	1	0	0
 Greying_Geezer	2014-12-15	24	22	0
+Greying_Geezer	2015-03-07	8	0	0
+Greying_Geezer	2015-03-17	33	32	0
+Greying_Geezer	2015-03-18	7	7	0
+Greying_Geezer	2015-03-23	29	17	0
+Greying_Geezer	2015-03-28	13	13	0
+Greying_Geezer	2015-03-29	30	30	0
+Greying_Geezer	2015-04-15	1	1	0
+Greying_Geezer	2015-04-17	224	200	0
+Greying_Geezer	2015-04-18	7	7	0
+Greying_Geezer	2015-04-19	88	85	0
+Greying_Geezer	2015-04-20	2	2	0
+Greying_Geezer	2015-04-21	15	14	0
+Greying_Geezer	2015-04-24	22	8	0
+Greying_Geezer	2015-04-26	71	69	0
+Greying_Geezer	2015-04-29	39	33	0
+Greying_Geezer	2015-04-30	19	14	0
+Greying_Geezer	2015-05-03	41	39	0
+Greying_Geezer	2015-05-05	1	0	0
+Greying_Geezer	2015-05-06	7	7	0
+Greying_Geezer	2015-05-08	156	148	0
+Greying_Geezer	2015-05-09	22	17	0
+Greying_Geezer	2015-05-10	14	14	0
+Greying_Geezer	2015-05-12	75	73	0
+Greying_Geezer	2015-05-14	263	233	0
+Greying_Geezer	2015-05-15	6	6	0
+Greying_Geezer	2015-05-25	18	5	0
+Greying_Geezer	2015-06-11	2	0	0
+Greying_Geezer	2015-06-30	8	8	0
+Greying_Geezer	2015-07-01	4	2	0
+Greying_Geezer	2015-07-03	110	65	0
+Greying_Geezer	2015-07-04	26	14	0
+Greying_Geezer	2015-07-22	1	1	0
+Greying_Geezer	2015-08-06	23	8	0
+Greying_Geezer	2015-08-09	4	4	0
+Greying_Geezer	2015-08-10	75	62	0
+Greying_Geezer	2015-09-03	7	7	0
+Greying_Geezer	2015-09-11	1	0	0
+Greying_Geezer	2015-09-28	61	15	0
+Greying_Geezer	2015-10-02	267	214	0
+Greying_Geezer	2015-10-03	1	1	0
+Greying_Geezer	2015-11-13	3	2	0
+Greying_Geezer	2015-11-24	10	10	0
+Greying_Geezer	2016-01-14	1	1	0
+Greying_Geezer	2016-01-16	7	3	0
 GuyToronto	2009-10-18	86	69	0
 Gwalsh	2010-12-25	21	21	0
 Gwalsh	2010-12-29	9	9	0
 H_S_Rai	2009-08-01	8	8	0
 H_S_Rai	2009-08-02	67	41	0
 HaBazza	2014-08-16	6	4	0
+HaldimandGIS	2015-06-16	78	46	0
 Hans Boldt	2012-09-19	52	48	0
 Happy880	2014-08-21	5	5	0
 Harapu	2012-11-10	2	2	0
 Harry Wood	2013-01-30	3	1	0
+Harrym0n	2015-12-14	42	15	0
 Head	2010-07-30	1	0	0
 Head	2010-08-20	6	0	0
 Head	2012-01-12	2	0	0
@@ -1057,6 +1408,7 @@ Heather Leson	2011-06-11	20	11	0
 Hedaja	2013-01-29	18	1	0
 Hedaja	2013-01-30	2	0	0
 Hedaja	2013-01-31	1	0	0
+Hedaja	2015-04-28	1	0	0
 Heliosity	2014-03-01	2	2	0
 Hello71b	2014-11-13	22	12	0
 HerbBikes	2011-07-06	1	1	0
@@ -1066,12 +1418,14 @@ HolgerJeromin	2011-12-22	1	0	0
 HolgerJeromin	2011-12-27	2	0	0
 HolgerJeromin	2012-03-29	1	0	0
 HolgerJeromin	2013-09-26	1	0	0
+HolgerJeromin	2015-03-15	1	0	0
+HolgerJeromin	2015-10-06	1	0	0
 HomeAlone	2013-07-30	51	38	0
 HomeAlone	2013-07-31	3126	915	0
 HomeAlone	2013-08-01	170	22	0
 HorseHat	2014-07-02	3	1	0
 HorseHat	2014-09-30	17	17	0
-Hrishikesh Joshi	2010-12-06	3	3	2
+Hrishikesh Joshi	2010-12-06	3	3	1
 HupaMan	2013-09-23	5	5	0
 IXPmapper	2014-03-22	6	3	0
 IXPmapper	2014-03-25	2	0	0
@@ -1082,6 +1436,7 @@ Iggybouv	2014-12-06	1	1	0
 Ijon_Tichy	2014-09-15	43	29	0
 Ilis	2011-02-02	1	0	0
 Incognito1	2010-06-01	5	3	0
+InterContinental Toronto Yorkville	2015-11-02	1	0	0
 Ivan Avery Frey	2008-08-27	8	5	0
 Ivan Avery Frey	2011-08-17	2	1	0
 JAB43	2010-06-16	1	1	0
@@ -1096,6 +1451,7 @@ JHGRedekop	2009-09-09	4	0	0
 JLS	2007-03-03	1	1	0
 JMKucharz	2013-01-07	1	1	0
 JONGEORYE	2015-01-25	3	0	0
+JONGEORYE	2015-01-28	1	0	0
 JSGalt	2014-10-25	3	1	0
 Jack Pham	2013-10-17	2	2	0
 Jack2004	2008-04-01	1	0	0
@@ -1109,7 +1465,10 @@ James Deng	2011-12-17	1	1	0
 James Deng	2012-01-13	2	1	0
 James Deng	2012-10-18	2	1	0
 James MCarthy	2014-05-21	1	1	0
+James McDermott	2015-10-13	3	0	0
+James036a3rd3	2015-11-03	1	1	0
 Jan Zwaenepoel	2011-03-28	1	0	0
+JanCBorchardt	2015-06-18	1	1	0
 Jano John Akim Franke	2013-04-24	60	0	0
 Jarrek	2010-03-20	89	89	0
 Jarrek	2010-03-22	69	69	0
@@ -1132,19 +1491,25 @@ Jedrzej Pelka	2014-01-15	4	4	0
 Jedrzej Pelka	2014-04-18	13	0	0
 JeffClark	2011-11-30	8	8	0
 JeffreyM	2011-04-19	2	2	0
+JeromeGV	2015-02-07	1	0	0
 Jesse Phillips	2013-01-25	1	1	0
 JesseHermit	2014-03-19	2	2	0
 JettClark	2013-06-26	58	53	0
 JettClark	2013-07-14	323	267	0
+JettClark	2016-01-07	15	15	0
 Ji Li	2014-03-30	6	6	0
 Ji Li	2014-03-31	2	2	0
+Ji Li	2015-08-13	7	7	0
+Ji Li	2015-08-15	7	4	0
+Ji Li	2015-09-06	4	2	0
+Ji Li	2015-09-07	23	14	0
 Jigoor	2014-01-03	3	2	0
 Jim Koo	2012-12-02	4	2	0
 Jim Koo	2012-12-03	22	19	0
 Jiro Ueda	2011-09-16	2	1	0
-Jochen Riehm	2008-11-25	1656	324	0
-Jochen Topf	2007-10-27	226	197	5
+Jochen Topf	2007-10-27	226	197	7
 Joe Barbara	2012-02-07	1	0	0
+Joe Rayment	2015-04-05	4	4	0
 Joe42	2007-09-23	25	25	0
 Joe42	2007-09-25	125	125	0
 Joe42	2007-10-02	393	393	3
@@ -1164,7 +1529,7 @@ Joe42	2008-09-20	1	0	0
 Joe42	2008-10-05	97	80	0
 Joe42	2012-06-04	2	0	0
 John Dobrowolski	2012-09-11	12	6	0
-John Peterson	2008-11-07	3	3	1
+John Peterson	2008-11-07	3	3	0
 John Peterson	2009-10-08	8	8	0
 John Peterson	2009-10-09	4	0	0
 John Taranu	2010-02-19	8	2	0
@@ -1176,6 +1541,11 @@ Johnny Carlsen	2013-03-20	2	1	0
 Johnny Carlsen	2014-12-23	2	0	0
 Jon Burgess	2008-08-14	1	0	0
 Jon Burgess	2013-02-03	1	1	0
+Jonathan ZHAO	2015-08-05	1	1	0
+JonathanHK	2015-09-21	12	11	0
+JonathanHK	2015-09-27	9	6	0
+JonathanHK	2015-10-19	15	10	0
+JonathanHK	2015-10-25	2	0	0
 JonathanToronto	2013-01-12	13	7	0
 Jonnybob	2008-01-09	1	0	0
 JordanMatadeen	2015-01-21	113	53	0
@@ -1186,12 +1556,16 @@ JosYule	2014-08-05	297	112	0
 JosYule	2014-08-06	15	13	0
 JosYule	2014-08-07	5	5	0
 JosYule	2014-08-08	8	8	0
+JosYule	2015-05-23	4	4	0
+JosYule	2015-06-10	1	1	0
 Josef73	2013-10-30	1	0	0
 Josef73	2013-11-03	1	0	0
 Josef73	2013-11-08	1	0	0
 Josef73	2013-12-25	1	0	0
 Josef73	2013-12-31	1	0	0
 Josef73	2014-04-25	2	0	0
+Josef73	2015-05-25	1	0	0
+Joseph Tinoco	2015-04-24	10	10	0
 JosephThadmilly	2013-02-28	1	1	0
 Jpatokal	2007-10-30	2	0	0
 Jscott	2007-10-25	7	2	0
@@ -1212,6 +1586,7 @@ Kalogiannides Law	2014-12-12	4	0	0
 Kalogiannides Law	2014-12-14	4	1	0
 Kalogiannides Law	2014-12-15	1	0	0
 Karl Siroky	2009-06-05	3	2	0
+Karta01ru	2015-07-13	1	1	0
 Katesterface	2012-04-08	3	1	0
 Katesterface	2012-04-09	1	1	0
 Kayomars	2013-08-09	1	1	0
@@ -1222,12 +1597,14 @@ Keith Nunn	2014-10-07	34	34	0
 Kejimkujik	2009-09-12	13	0	0
 KelBel80	2015-01-21	3	3	0
 Kevin Branigan	2010-07-13	22	1	0
+Kevin Montgomery	2015-09-16	1	1	0
+Kevin Montgomery	2015-09-18	6	5	0
 Kevin Saldanha	2014-09-13	1	1	0
 KevinLambe	2014-09-07	28	28	0
 KevinLambe	2014-09-08	19	19	0
-Kevo	2008-06-01	28	28	3
+Kevo	2008-06-01	28	28	2
 Kevo	2008-07-08	6	6	2
-Kevo	2008-07-10	123	112	0
+Kevo	2008-07-10	123	112	1
 Kevo	2008-07-12	25	15	0
 Kevo	2008-07-22	1	1	0
 Kevo	2009-02-21	1	1	0
@@ -1654,7 +2031,184 @@ Kevo	2015-01-16	41	38	0
 Kevo	2015-01-18	319	208	0
 Kevo	2015-01-23	763	327	0
 Kevo	2015-01-24	1500	740	0
-Kevo	2015-01-25	1124	630	0
+Kevo	2015-01-25	1477	887	0
+Kevo	2015-01-27	585	468	0
+Kevo	2015-01-28	1150	977	0
+Kevo	2015-01-29	503	361	0
+Kevo	2015-01-30	313	264	0
+Kevo	2015-01-31	110	56	0
+Kevo	2015-02-01	882	703	0
+Kevo	2015-02-02	387	272	0
+Kevo	2015-02-03	421	311	0
+Kevo	2015-02-04	441	288	0
+Kevo	2015-02-05	202	156	0
+Kevo	2015-02-07	642	348	0
+Kevo	2015-02-08	294	192	0
+Kevo	2015-02-09	138	54	0
+Kevo	2015-02-10	168	143	0
+Kevo	2015-02-11	292	275	0
+Kevo	2015-02-12	449	345	0
+Kevo	2015-02-13	636	576	0
+Kevo	2015-02-18	302	216	0
+Kevo	2015-02-19	180	135	0
+Kevo	2015-02-20	23	10	0
+Kevo	2015-02-21	340	65	0
+Kevo	2015-02-22	53	29	0
+Kevo	2015-02-23	155	103	0
+Kevo	2015-02-24	17	6	0
+Kevo	2015-02-25	2	0	0
+Kevo	2015-02-28	414	302	0
+Kevo	2015-03-01	42	38	0
+Kevo	2015-03-03	398	301	0
+Kevo	2015-03-04	376	300	0
+Kevo	2015-03-06	7	2	0
+Kevo	2015-03-08	1927	1223	0
+Kevo	2015-03-09	605	260	0
+Kevo	2015-03-11	322	200	0
+Kevo	2015-03-14	37	25	0
+Kevo	2015-03-15	2675	1131	0
+Kevo	2015-03-16	1303	1019	0
+Kevo	2015-03-17	800	530	0
+Kevo	2015-03-18	1074	315	0
+Kevo	2015-03-24	758	431	0
+Kevo	2015-03-26	483	198	0
+Kevo	2015-03-27	86	46	0
+Kevo	2015-03-29	173	20	0
+Kevo	2015-03-30	255	152	0
+Kevo	2015-03-31	72	43	0
+Kevo	2015-04-02	153	100	0
+Kevo	2015-04-03	170	122	0
+Kevo	2015-04-04	3	1	0
+Kevo	2015-04-06	22	16	0
+Kevo	2015-04-07	1168	954	0
+Kevo	2015-04-08	1171	1167	0
+Kevo	2015-04-09	325	323	0
+Kevo	2015-04-11	561	542	0
+Kevo	2015-04-12	30	15	0
+Kevo	2015-04-14	387	284	0
+Kevo	2015-04-15	370	323	0
+Kevo	2015-04-16	192	117	0
+Kevo	2015-04-17	324	219	0
+Kevo	2015-04-19	398	201	0
+Kevo	2015-04-20	370	146	0
+Kevo	2015-04-21	410	317	0
+Kevo	2015-04-22	223	119	0
+Kevo	2015-04-23	419	288	0
+Kevo	2015-04-24	16	0	0
+Kevo	2015-04-25	871	794	0
+Kevo	2015-04-26	618	408	0
+Kevo	2015-04-27	24	5	0
+Kevo	2015-04-28	366	336	0
+Kevo	2015-04-29	238	168	0
+Kevo	2015-05-02	7	0	0
+Kevo	2015-05-03	20	14	0
+Kevo	2015-05-04	51	43	0
+Kevo	2015-05-09	243	146	0
+Kevo	2015-05-10	342	166	0
+Kevo	2015-05-15	52	51	0
+Kevo	2015-05-16	16	10	0
+Kevo	2015-05-21	16	12	0
+Kevo	2015-05-22	380	294	0
+Kevo	2015-05-24	567	227	0
+Kevo	2015-05-25	2103	2052	0
+Kevo	2015-05-26	275	177	0
+Kevo	2015-05-28	161	125	0
+Kevo	2015-05-30	595	397	0
+Kevo	2015-05-31	604	298	0
+Kevo	2015-06-01	174	149	0
+Kevo	2015-06-03	65	39	0
+Kevo	2015-06-08	89	51	0
+Kevo	2015-06-09	162	90	0
+Kevo	2015-06-10	165	122	0
+Kevo	2015-06-11	44	21	0
+Kevo	2015-06-12	52	16	0
+Kevo	2015-06-13	209	193	0
+Kevo	2015-06-15	207	148	0
+Kevo	2015-06-16	700	586	0
+Kevo	2015-06-17	408	371	0
+Kevo	2015-06-18	23	18	0
+Kevo	2015-06-21	4	1	0
+Kevo	2015-06-24	3	0	0
+Kevo	2015-07-02	27	22	0
+Kevo	2015-07-13	18	5	0
+Kevo	2015-07-27	1002	844	0
+Kevo	2015-07-28	400	315	0
+Kevo	2015-07-30	648	575	0
+Kevo	2015-08-04	5	5	0
+Kevo	2015-08-05	195	86	0
+Kevo	2015-08-11	55	34	0
+Kevo	2015-08-12	77	32	0
+Kevo	2015-08-13	109	54	0
+Kevo	2015-08-15	63	41	0
+Kevo	2015-08-16	64	54	0
+Kevo	2015-08-17	204	124	0
+Kevo	2015-08-19	262	141	0
+Kevo	2015-08-20	87	38	0
+Kevo	2015-08-21	30	29	0
+Kevo	2015-08-22	513	271	0
+Kevo	2015-08-23	140	36	0
+Kevo	2015-08-24	258	240	0
+Kevo	2015-08-25	252	239	0
+Kevo	2015-08-26	73	41	0
+Kevo	2015-08-29	28	21	0
+Kevo	2015-08-31	5	4	0
+Kevo	2015-09-01	259	145	0
+Kevo	2015-09-02	1032	618	0
+Kevo	2015-09-03	508	233	0
+Kevo	2015-09-04	62	30	0
+Kevo	2015-09-06	915	595	0
+Kevo	2015-09-09	17	13	0
+Kevo	2015-09-10	99	59	0
+Kevo	2015-09-11	204	140	0
+Kevo	2015-09-12	558	511	0
+Kevo	2015-09-18	175	128	0
+Kevo	2015-09-19	59	18	0
+Kevo	2015-09-27	253	69	0
+Kevo	2015-09-29	84	49	0
+Kevo	2015-09-30	268	197	0
+Kevo	2015-10-01	188	98	0
+Kevo	2015-10-04	10	8	0
+Kevo	2015-10-06	375	250	0
+Kevo	2015-10-08	309	184	0
+Kevo	2015-10-09	1181	1011	0
+Kevo	2015-10-10	494	456	0
+Kevo	2015-11-03	19	8	0
+Kevo	2015-11-04	55	55	0
+Kevo	2015-11-07	111	5	0
+Kevo	2015-11-08	43	34	0
+Kevo	2015-11-10	5	5	0
+Kevo	2015-11-14	524	230	0
+Kevo	2015-11-15	249	159	0
+Kevo	2015-11-21	136	73	0
+Kevo	2015-11-22	518	348	0
+Kevo	2015-12-01	412	260	0
+Kevo	2015-12-02	729	535	0
+Kevo	2015-12-03	543	335	0
+Kevo	2015-12-04	558	328	0
+Kevo	2015-12-05	248	99	0
+Kevo	2015-12-06	529	313	0
+Kevo	2015-12-07	35	32	0
+Kevo	2015-12-08	319	150	0
+Kevo	2015-12-09	199	88	0
+Kevo	2015-12-10	304	188	0
+Kevo	2015-12-11	552	253	0
+Kevo	2015-12-13	369	189	0
+Kevo	2015-12-14	67	33	0
+Kevo	2015-12-16	226	124	0
+Kevo	2015-12-17	29	1	0
+Kevo	2015-12-19	636	612	0
+Kevo	2015-12-20	112	26	0
+Kevo	2015-12-22	320	317	0
+Kevo	2015-12-24	760	697	0
+Kevo	2016-01-04	51	32	0
+Kevo	2016-01-05	11	5	0
+Kevo	2016-01-06	199	142	0
+Kevo	2016-01-12	537	489	0
+Kevo	2016-01-13	145	142	0
+Kevo	2016-01-14	379	245	0
+Kevo	2016-01-15	205	161	0
+Kevo	2016-01-16	664	395	0
+Kevo	2016-01-17	964	875	0
 Keypunch	2014-03-13	1	0	0
 Kieron Hodgson	2015-01-21	3	1	0
 Killerdackel	2009-05-03	110	65	0
@@ -1669,8 +2223,13 @@ Kirill_Krylov	2014-07-30	4	4	0
 Kitchen Wych	2014-06-26	1	1	0
 KiwiBri	2014-10-27	15	15	0
 Klampwave™ TV Antenna	2014-04-04	2	1	0
+Knightsbridge Foreign Exchange	2015-03-17	2	1	0
+KoolADE85	2013-04-19	3	0	0
+KoolADE85	2015-12-31	14	7	0
 Kris_Jane	2011-11-26	1	1	0
 Kristi Singh	2015-01-21	6	6	0
+KryptoNatasha	2015-12-09	6	2	0
+Kylethelegobuilder	2015-06-07	3	2	0
 Langlaeufer	2014-10-08	25	17	0
 LauraE	2012-03-17	99	76	0
 LauraE	2012-03-20	34	25	0
@@ -1679,14 +2238,16 @@ LauraE	2012-03-22	1	1	0
 LauraE	2012-03-24	30	24	0
 Laurence	2013-10-23	2	2	0
 Lazarev_g	2010-03-28	4	2	0
-Ledif	2008-05-05	15	15	1
+Ledif	2008-05-05	15	15	2
 Ledif	2008-05-11	12	12	0
 Ledif	2008-05-12	11	11	0
-Ledif	2008-05-25	56	56	2
+Ledif	2008-05-25	56	56	1
 Ledif	2008-08-19	1	0	0
 Lee Horrocks	2010-02-03	22	20	0
 Lee Horrocks	2013-12-03	2	1	0
 Lelio_it	2011-08-01	161	161	0
+Leva_ca	2015-11-09	1	1	0
+Level Auto	2016-01-08	2	1	0
 Lifesgood	2011-01-18	3	2	0
 Lifesgood	2011-02-15	1	0	0
 Lifesgood	2011-04-12	1	0	0
@@ -1699,17 +2260,25 @@ Lokatana	2014-03-02	1	0	0
 LordOfMaps	2013-12-29	28	28	0
 Loretta BOB	2009-05-12	115	34	0
 Loretta BOB	2009-06-06	87	82	0
+Lucaballa	2015-05-22	54	52	0
 Lucio Menzel	2014-03-09	4	4	0
+Luis36995	2015-05-26	1	0	0
+Luis36995	2015-09-07	7	1	0
+Lulu-Ann	2015-06-26	1	0	0
 M Lavers	2014-09-06	33	33	0
 M Lavers	2014-10-16	11	0	0
 M Lavers	2014-10-28	41	0	0
+MAKSz	2015-08-25	1	0	0
+MGangl	2015-01-28	2	2	0
 MKnight	2013-01-13	2	0	0
 MKnight	2014-12-01	1	0	0
 MKnight	2014-12-03	1	0	0
+MKnight	2015-03-25	1	0	0
 MRJ	2009-08-04	3	2	0
 MVSCC	2014-05-03	9	2	0
 MaZderMind	2014-11-03	1	0	0
 Madhur_Brampton	2013-03-10	2	0	0
+Madsad	2015-10-16	7	5	0
 Magdiel	2013-02-23	8	6	0
 Magnus the Great	2008-09-18	29	29	0
 ManAboutCouch	2013-02-04	7	0	0
@@ -1731,6 +2300,9 @@ Manu1400	2013-12-23	1	0	0
 Manu1400	2013-12-24	1	0	0
 Manu1400	2014-01-02	1	0	0
 Manu1400	2014-01-05	1	0	0
+Manu1400	2015-02-22	1	0	0
+Manu1400	2015-08-11	1	0	0
+Manu1400	2015-08-19	1	0	0
 MapWes	2013-02-13	3	3	0
 MapWes	2013-02-14	1	1	0
 MappaPapa	2012-01-22	16	15	0
@@ -1754,23 +2326,32 @@ Mapster2013	2014-10-29	9	7	0
 MarcEscape	2014-08-20	1	0	0
 Marcus Wolschon	2007-10-25	1	0	0
 Marcussacapuces91	2009-12-25	8	0	0
+Marion Barry	2015-10-17	2	2	0
+Marion Barry	2015-10-18	5	4	0
+Marion Barry	2015-10-20	10	8	0
+MarkNDennnis	2015-03-09	4	4	0
 MarkhamInfiniti	2013-12-14	5	3	0
 Markus59	2013-12-19	1	0	0
 Markus59	2013-12-21	7	0	0
 Markus59	2013-12-25	7	0	0
 Markus59	2013-12-27	1	0	0
 Markus59	2014-06-10	2	0	0
+Martina Riehm	2008-11-25	1656	324	0
+Mary Rinaldi	2015-09-28	3	1	0
 Mason Huycke	2012-10-30	14	3	0
 Mason Huycke	2012-11-02	6	0	0
 Math1985	2014-01-01	5	0	0
 Math1985	2014-10-30	1	0	0
 Math1985	2014-11-11	1	0	0
+Mathew Priest	2015-06-25	6	6	0
 Matija Nalis	2009-09-08	2	2	0
+Matt Cianfarani	2015-04-10	1	0	0
 Matt Dibden	2012-10-30	25	25	0
 Matt1993	2014-10-21	26	3	0
 Matthew99	2013-07-17	3	1	0
 Matthias77	2013-12-14	1	1	0
 MatthieuMartin	2014-11-10	13	0	0
+MatthieuMartin	2015-10-03	1	0	0
 Mauitz	2009-10-15	3	0	0
 Mauitz	2009-10-16	28	26	0
 Mauitz	2009-10-17	55	17	0
@@ -1795,6 +2376,8 @@ Mauitz	2009-12-05	20	11	0
 Mauitz	2010-04-02	13	4	0
 Mauls	2014-04-19	1	0	0
 McWolf  DAC	2014-05-12	5	5	0
+Med	2015-06-20	1	0	0
+Med	2015-07-11	1	0	0
 Mediaburn	2010-06-01	4	4	0
 Meggo	2010-04-04	6	4	0
 Meggo	2010-04-13	1	1	0
@@ -1803,24 +2386,28 @@ Meggo	2010-05-30	35	30	0
 Meggo	2010-06-06	102	40	0
 Meggo	2010-06-13	1	1	0
 Meggo	2014-10-31	1	0	0
+MelissaDennison	2015-05-02	11	10	0
 Michael Krotowski	2012-12-04	17	11	0
 Michael Pelletier	2008-10-04	1	1	0
 MichaelCollinson	2008-10-13	1	0	0
 MichaelCollinson	2008-11-05	4	0	0
+Michael_Phillips_	2015-11-05	21	16	0
 MidnightJ	2013-11-25	3	1	0
+Mig21Kulikov	2015-12-03	103	103	0
+Mig21Kulikov	2015-12-19	23	22	0
 Mikefattori	2012-04-12	2	2	0
 MikeyCarter	2010-02-25	370	345	0
 MikeyCarter	2010-02-27	139	139	0
-MikeyCarter	2010-03-31	1696	1696	11
-MikeyCarter	2010-04-01	50471	50471	18
-MikeyCarter	2010-04-14	13401	13401	2
+MikeyCarter	2010-03-31	1696	1696	8
+MikeyCarter	2010-04-01	50471	50471	24
+MikeyCarter	2010-04-14	13401	13401	0
 MikeyCarter	2010-04-15	21034	21034	0
 MikeyCarter	2010-04-16	1578	1578	0
 MikeyCarter	2010-04-23	3	0	0
 MikeyCarter	2010-04-26	4	0	0
 MikeyCarter	2010-05-10	154	83	0
 MikeyCarter	2010-05-12	2	0	0
-MikeyCarter	2010-07-06	1748	1634	64
+MikeyCarter	2010-07-06	1748	1634	62
 MikeyCarter	2010-07-07	4	4	0
 MikeyCarter	2011-06-26	3	2	0
 Mindmatrix	2014-09-02	53	49	0
@@ -1830,6 +2417,8 @@ Miroshi	2009-10-14	7	0	0
 Miroslav Glavic	2013-01-29	3	2	0
 MisterManager	2009-03-15	10	0	0
 MitchellCournes1990	2013-02-25	4	2	0
+Mo Li	2015-09-29	86	59	0
+Mo Li	2015-09-30	99	80	0
 MonkeyCat	2009-08-19	8	7	0
 MonkeyCat	2009-08-20	3	0	0
 MonkeyCat	2009-08-24	32	32	0
@@ -1840,7 +2429,7 @@ MrEnneract	2014-06-26	1	0	0
 Mr_Israel	2014-11-07	125	120	0
 Mr_Praline	2014-11-27	1	0	0
 Mubarak Chaudhry	2010-06-26	1	1	0
-Muhammad Kamran Shafi	2008-02-27	15	15	3
+Muhammad Kamran Shafi	2008-02-27	15	15	2
 Mullered	2008-12-10	177	0	0
 Muskoka	2012-02-13	139	44	0
 Muskoka	2012-02-14	506	267	0
@@ -1858,7 +2447,45 @@ NE2	2011-08-27	3	0	0
 NIAH	2013-03-17	1	1	0
 Najam Penn	2013-12-18	3	3	0
 Nama	2008-03-28	2	2	0
+NateDoc	2015-07-03	1	1	0
+Nate_Wessel	2015-03-17	22	22	0
+Nate_Wessel	2015-03-24	7	0	0
+Nate_Wessel	2015-04-09	64	18	0
+Nate_Wessel	2015-04-11	64	50	0
+Nate_Wessel	2015-07-28	351	301	0
+Nate_Wessel	2015-07-29	31	31	0
+Nate_Wessel	2015-07-30	90	45	0
+Nate_Wessel	2015-07-31	343	276	0
+Nate_Wessel	2015-08-01	326	288	0
+Nate_Wessel	2015-08-03	228	122	0
+Nate_Wessel	2015-08-06	24	24	0
+Nate_Wessel	2015-08-07	77	47	0
+Nate_Wessel	2015-08-08	159	83	0
+Nate_Wessel	2015-08-09	42	12	0
+Nate_Wessel	2015-08-10	34	17	0
+Nate_Wessel	2015-08-11	26	22	0
+Nate_Wessel	2015-08-12	123	112	0
+Nate_Wessel	2015-08-13	70	24	0
+Nate_Wessel	2015-08-15	164	98	0
+Nate_Wessel	2015-09-02	29	27	0
+Nate_Wessel	2015-10-31	38	10	0
+Nate_Wessel	2015-11-22	206	46	0
+Nate_Wessel	2015-11-30	106	57	0
+Nate_Wessel	2015-12-11	1	1	0
+Nate_Wessel	2015-12-12	1	0	0
+Nate_Wessel (consulting)	2015-08-16	314	173	0
+Nate_Wessel (consulting)	2015-08-17	269	217	0
+Nate_Wessel (consulting)	2015-08-18	127	78	0
+Nate_Wessel (consulting)	2015-08-19	270	139	0
+Nate_Wessel (consulting)	2015-08-20	86	0	0
+Nate_Wessel (consulting)	2015-08-21	204	115	0
+Nate_Wessel (consulting)	2015-08-22	241	130	0
+Nate_Wessel (consulting)	2015-08-24	323	268	0
+Nate_Wessel (consulting)	2015-08-25	168	88	0
+Nate_Wessel (consulting)	2015-08-26	279	144	0
+Nate_Wessel (consulting)	2015-08-30	56	41	0
 Nathan Kidd	2011-04-19	1	0	0
+Nathan Kidd	2015-07-08	1	1	0
 Naumburger	2011-07-16	2	0	0
 Neil Cawse	2007-11-13	2	0	0
 Neil Hepburn	2009-02-22	244	77	0
@@ -1881,18 +2508,19 @@ Nerd Runner	2014-07-03	4	3	0
 Nerd Runner	2014-07-05	4	0	0
 Nerd Runner	2014-07-10	1	1	0
 Netzwolf	2013-01-25	1	0	0
+New Hope Fellowship	2015-09-01	1	1	0
 Nicholas A	2009-07-14	174	39	0
 NicholasMoreau	2009-06-30	22	16	0
 NicholasMoreau	2012-08-24	4	2	0
 Nick A	2012-05-26	25	25	0
 Nick A	2012-10-04	6	4	0
-Niels Elgaard Larsen	2007-06-21	79	79	30
+Niels Elgaard Larsen	2007-06-21	79	79	24
 Niels Elgaard Larsen	2007-06-22	8	8	0
-Niels Elgaard Larsen	2009-01-19	45	28	2
+Niels Elgaard Larsen	2009-01-19	45	28	1
 Niels Elgaard Larsen	2009-01-20	37	0	0
 Niels Elgaard Larsen	2009-01-22	40	22	0
 Niels Elgaard Larsen	2009-01-23	124	4	1
-Niels Elgaard Larsen	2009-01-24	70	18	0
+Niels Elgaard Larsen	2009-01-24	70	18	1
 Niels Elgaard Larsen	2009-02-01	48	0	0
 Niels Elgaard Larsen	2009-02-02	43	14	0
 Niels Elgaard Larsen	2012-01-20	4	2	0
@@ -1931,6 +2559,23 @@ Niels Elgaard Larsen	2014-07-19	48	40	0
 Niels Elgaard Larsen	2014-07-20	6	3	0
 Niels Elgaard Larsen	2014-07-30	20	19	0
 Niels Elgaard Larsen	2014-10-22	53	44	0
+Niels Elgaard Larsen	2015-04-25	117	93	0
+Niels Elgaard Larsen	2015-04-28	12	10	0
+Niels Elgaard Larsen	2015-05-03	1	0	0
+Niels Elgaard Larsen	2015-05-05	110	91	0
+Niels Elgaard Larsen	2015-05-06	1	0	0
+Niels Elgaard Larsen	2015-05-11	321	265	0
+Niels Elgaard Larsen	2015-05-18	40	34	0
+Niels Elgaard Larsen	2015-05-21	141	125	0
+Niels Elgaard Larsen	2015-07-26	59	57	0
+Niels Elgaard Larsen	2015-08-01	22	22	0
+Niels Elgaard Larsen	2015-08-04	1	0	0
+Niels Elgaard Larsen	2015-10-18	6	5	0
+Nigel David Allen	2015-08-16	9	8	0
+Nigel David Allen	2015-08-17	2	0	0
+Nigel David Allen	2015-10-19	1	0	0
+Nima153	2015-02-06	13	8	0
+Nima153	2015-04-25	4	4	0
 Ninjade	2009-07-29	1	0	0
 NobodyOfNaught	2011-01-18	15	15	0
 OCED	2014-08-08	282	267	0
@@ -1988,6 +2633,14 @@ Olrik	2009-07-22	25	24	0
 Olrik	2009-07-23	161	161	0
 Olrik	2010-01-28	75	74	0
 Olrik	2010-04-25	10	10	0
+Olti1986	2015-10-19	1	1	0
+OntarioEditor	2014-11-27	1	1	0
+OntarioEditor	2014-12-10	1	0	0
+OntarioEditor	2014-12-17	14	0	0
+OntarioEditor	2014-12-25	18	12	0
+OntarioEditor	2014-12-26	3	0	0
+OnyxOsirius	2015-06-16	91	90	0
+Open Mapper	2015-03-11	2	1	0
 OpenBeerMapContributor	2014-10-21	1	0	0
 OpenBeerMapContributor	2014-10-22	1	0	0
 Orijohnal	2012-03-05	1	1	0
@@ -2004,19 +2657,30 @@ PA94	2011-03-05	1	0	0
 PHerison	2013-01-30	20	9	0
 Padrig	2013-10-20	1	0	0
 PairoWoodies	2014-04-07	1	1	0
+Paladin093	2015-07-24	73	67	0
+Paladin093	2015-07-30	21	21	0
 Papageno42	2013-06-12	2	2	0
 Papageno42	2013-07-16	1	1	0
 Papageno42	2013-11-08	12	10	0
 Papageno42	2014-05-16	1	1	0
 Papageno42	2014-05-27	4	4	0
+Papageno42	2015-08-19	1	1	0
 Pasha	2011-04-24	14	5	0
 Paul Johnson	2011-10-29	26	22	0
 Paul Johnson	2014-06-12	12	0	0
+PaulchenPanther	2015-09-01	1	1	0
 Pavanjit_1	2014-09-15	55	54	0
 Payvand	2015-01-21	3	2	0
+Pd1001	2015-02-18	4	4	0
 PearceKnight	2012-10-30	3	3	0
 Pedro Batista	2012-02-07	1	1	0
 Pen Beuz	2014-10-17	16	15	0
+Pet8k	2013-05-14	2	1	0
+Pet8k	2013-06-07	1	1	0
+Pet8k	2013-08-01	4	3	0
+Pet8k	2013-08-10	1	1	0
+Pet8k	2014-09-14	1	0	0
+Pet8k	2014-09-16	6	6	0
 Peter Vukosavljev	2013-01-06	83	6	0
 Peter Vukosavljev	2013-01-07	36	6	0
 Peter Vukosavljev	2013-02-04	4	0	0
@@ -2024,13 +2688,16 @@ Peter14	2013-01-26	2	0	0
 Peter14	2013-02-24	1	0	0
 Peter9477	2011-09-16	18	18	0
 PeterEastern	2011-06-27	13	10	0
+PeterFarkas	2015-07-27	6	0	0
 PeterT1959	2014-01-29	1	0	0
 PeterT1959	2014-01-30	3	0	0
+Peters79	2015-07-21	3	2	0
 Peuc	2014-04-04	1	0	0
 Phil Scherer	2012-12-15	4	4	0
 Phil Scherer	2013-05-16	6	2	0
 Phil Shipley	2008-08-27	41	39	0
 Phil Shipley	2009-01-09	1	0	0
+Physiobility	2015-04-21	3	2	0
 PickyPicky	2013-10-23	7	7	0
 PickyPicky	2013-10-24	3	1	0
 PickyPicky	2013-10-28	11	11	0
@@ -2038,9 +2705,13 @@ PickyPicky	2013-11-08	21	16	0
 PierZen	2015-01-03	7	7	0
 Pigseer	2009-11-01	1	1	0
 Pink Duck	2010-06-10	933	0	0
-Piober	2008-08-19	82	62	1
+Piober	2008-08-19	82	62	2
+PlaneMad	2015-11-09	1	0	0
+Platypus123	2016-01-03	11	4	0
 Poker_C	2012-07-24	21	14	0
 Poker_C	2012-09-18	35	28	0
+Poluxus	2015-04-06	3	1	0
+Poluxus	2015-06-02	2	2	0
 Poodz	2010-03-18	17	7	0
 Poodz	2012-03-23	5	5	0
 Psammead	2011-12-28	4	2	0
@@ -2048,7 +2719,7 @@ PurpleMustang	2008-03-29	1	0	0
 PurpleMustang	2008-11-07	4	4	0
 PurpleMustang	2012-02-01	316	314	0
 PurpleMustang	2012-02-04	33	32	0
-PurpleMustang	2012-02-06	447	434	0
+PurpleMustang	2012-02-06	447	434	1
 PurpleMustang	2012-02-07	94	92	0
 PurpleMustang	2012-02-08	23	0	0
 PurpleMustang	2012-03-07	2	2	0
@@ -2061,6 +2732,11 @@ Qehgt	2012-06-23	1	0	0
 Qehgt	2012-07-26	2	2	0
 Qehgt	2012-09-12	1	0	0
 Qehgt	2013-09-23	1	0	0
+Qehgt	2015-04-13	1	1	0
+Qehgt	2015-11-10	12	12	0
+R0bst3r	2015-04-14	1	0	0
+R0bst3r	2015-05-13	1	0	0
+R0bst3r	2015-11-22	1	0	0
 RC7	2014-02-28	13	12	0
 RC7	2014-03-02	19	17	0
 RC7	2014-03-04	6	4	0
@@ -2069,6 +2745,7 @@ RC7	2014-03-13	1	1	0
 RC7	2014-03-24	9	8	0
 RC7	2014-03-26	8	8	0
 RC7	2014-11-07	1	0	0
+RC7	2015-11-25	5	4	0
 RJP16	2013-03-09	6	4	0
 RJP16	2013-03-24	1	1	0
 RJP16	2013-09-16	2	1	0
@@ -2080,16 +2757,18 @@ RajK	2009-01-02	242	121	0
 RajK	2009-01-03	226	225	1
 Rashid	2011-06-01	2	2	0
 RavK	2011-02-10	8	1	0
+Reclus	2015-12-19	1	0	0
+Redeye101	2015-11-25	5	5	0
 Reham05pal	2013-12-18	1	0	0
 Rehfer	2008-11-28	294	122	0
 Rehfer	2008-12-12	1937	387	0
-Rehfer	2008-12-15	5873	1496	14
-Rehfer	2008-12-16	4797	771	2
-Rehfer	2008-12-17	3326	659	15
-Rehfer	2008-12-18	3934	326	2
+Rehfer	2008-12-15	5873	1496	17
+Rehfer	2008-12-16	4797	771	4
+Rehfer	2008-12-17	3326	659	12
+Rehfer	2008-12-18	3934	326	1
 Rehfer	2008-12-19	3100	814	3
-Rehfer	2008-12-20	1160	257	1
-Rehfer	2008-12-21	344	126	14
+Rehfer	2008-12-20	1160	257	0
+Rehfer	2008-12-21	344	126	12
 Rehfer	2009-02-11	22	8	0
 Rehfer	2011-08-20	93	87	0
 Rehfer	2011-08-21	83	77	0
@@ -2127,6 +2806,10 @@ Revg	2011-09-17	2	0	0
 Revg	2011-09-25	46	24	0
 Revg	2011-10-10	38	22	0
 RhondaEphiculd	2013-02-28	1	1	0
+RichRico	2015-03-24	13	10	0
+RichRico	2015-07-15	1	0	0
+RichRico	2015-07-16	1	0	0
+RichRico	2015-07-24	1	1	0
 Richard	2007-11-25	3	0	0
 RichardLogesterme	2013-02-28	2	2	0
 RickOzone	2009-08-30	16	7	0
@@ -2137,6 +2820,7 @@ Rizadh	2011-04-26	37	13	0
 Rizadh	2013-01-17	1	1	0
 Rizadh	2013-09-25	67	41	0
 Rizadh	2013-09-26	1	0	0
+Ro1	2015-08-28	1	0	0
 RoadLessTraveled	2013-05-09	107	107	0
 RoadLessTraveled	2013-11-04	41	13	0
 RoadLessTraveled	2014-02-03	1	1	0
@@ -2194,6 +2878,15 @@ RoadLessTraveled	2014-11-18	1	1	0
 RoadLessTraveled	2014-12-02	2	0	0
 RoadLessTraveled	2014-12-05	2	2	0
 RoadLessTraveled	2014-12-18	23	22	0
+RoadLessTraveled	2015-05-26	2	2	0
+RoadLessTraveled	2015-05-29	1	1	0
+RoadLessTraveled	2015-05-30	10	6	0
+RoadLessTraveled	2015-06-04	3	0	0
+RoadLessTraveled	2015-06-23	4	1	0
+RoadLessTraveled	2015-06-24	1	0	0
+RoadLessTraveled	2015-06-25	1	0	0
+RoadLessTraveled	2015-07-05	1	0	0
+RoadLessTraveled	2015-07-06	2	2	0
 Roadrunner21	2013-01-15	22	9	0
 Roadrunner21	2013-01-28	5	0	0
 Roadrunner21	2013-02-11	2	1	0
@@ -2205,6 +2898,9 @@ RobTO	2008-11-06	74	0	0
 Robert Peacock	2013-02-28	1	1	0
 Robert Weemeyer	2011-08-21	1	1	0
 Roger Wicks	2013-08-09	1	0	0
+Ron Jenkins	2015-12-10	86	81	0
+Ron Jenkins	2015-12-11	42	42	0
+Ron Jenkins	2015-12-12	22	0	0
 Rooke	2011-10-25	40	40	0
 Rooke	2011-10-26	9	0	0
 Ropino	2009-08-17	1	0	0
@@ -2242,6 +2938,11 @@ Rps333	2014-05-27	5	0	0
 Rps333	2014-12-21	1	1	0
 Rps333	2014-12-22	14	4	0
 Rps333	2014-12-24	8	5	0
+Rps333	2015-03-25	6	5	0
+Rps333	2015-03-28	2	2	0
+Rps333	2015-04-14	1	0	0
+Rps333	2015-07-26	204	57	0
+Rps333	2015-12-08	18	17	0
 RsHRsH	2011-01-20	8	6	0
 RsHRsH	2012-12-09	18	10	0
 Rub21	2014-07-18	1	0	0
@@ -2262,6 +2963,9 @@ SCfixer	2014-04-28	3	3	0
 SK53	2013-01-20	1	0	0
 SK53	2013-10-25	3	0	0
 SMJR2000	2014-12-02	1	0	0
+SUKHJIT SINGH SEHRA	2015-11-08	9	6	0
+SUKHJIT SINGH SEHRA	2015-11-10	11	1	0
+SUKHJIT SINGH SEHRA	2015-11-13	1	1	0
 SV Alchemy	2012-07-22	1	1	0
 Samuel Bridges	2013-02-28	2	2	0
 Samw	2010-07-26	1	1	0
@@ -2277,17 +2981,21 @@ Sanjak	2014-02-10	1	0	0
 Sarabjit	2013-02-12	1	1	0
 Sarah87	2011-03-08	14	13	0
 SarahEmm	2007-10-25	2	0	0
+Savtek	2015-12-01	1	0	0
 Scorchez	2008-10-21	481	101	0
 Scorchez	2011-06-05	1	1	0
 ScottAnderson	2009-10-22	6	1	0
 ScottF	2011-01-29	8	8	0
 ScottN	2008-01-14	9	2	0
 ScottN	2008-07-04	3	1	0
+Sebastien April	2015-10-03	6	1	0
+Sebastien April	2015-11-05	81	43	0
 Seena85	2014-03-24	1	0	0
 Seena85	2014-03-27	47	40	0
 Senalba	2014-08-26	24	21	0
+Sendiri	2015-07-04	1	0	0
 Sentinel 365	2012-03-11	11	0	0
-Serge Sopotov	2008-11-12	4609	648	1
+Serge Sopotov	2008-11-12	4609	648	0
 Serge Sopotov	2008-11-13	936	87	0
 Serge Sopotov	2008-11-14	1413	279	0
 Serge Sopotov	2008-11-16	3	0	0
@@ -2314,12 +3022,15 @@ Sergei Mutovkin	2012-03-12	75	75	0
 Sergei Mutovkin	2012-07-26	222	48	0
 Sergei Mutovkin	2013-05-07	1	0	0
 Sergey B	2010-10-06	1	1	0
+Sergey Lobachev	2015-06-17	1	1	0
 Sergio Durigan Junior	2014-10-21	1	0	0
 Sergio Durigan Junior	2014-12-21	1	0	0
 Serpens	2009-08-09	1	0	0
 Serpens	2011-04-08	1	0	0
 Shabis	2014-01-16	3	1	0
 ShameerA	2014-01-14	14	14	0
+Shipllama	2016-01-07	1	1	0
+Shirviu	2015-10-06	198	106	0
 Shmias	2012-10-08	1	0	0
 Shrinks99	2014-03-02	102	31	0
 Shrinks99	2014-03-05	115	17	0
@@ -2330,16 +3041,37 @@ Shrinks99	2014-04-21	408	131	0
 Shrinks99	2014-05-09	125	10	0
 Shrinks99	2014-08-18	75	20	0
 Shrinks99	2014-09-20	72	0	0
+Shrinks99	2015-03-01	291	122	0
+Shrinks99	2015-03-13	123	10	0
+Shrinks99	2015-03-16	292	101	0
+Shrinks99	2015-03-28	24	2	0
+Shrinks99	2015-05-21	471	183	0
+Shrinks99	2015-06-02	10	0	0
+Shrinks99	2015-07-31	8	8	0
+Shrinks99	2015-09-07	980	759	0
+Shrinks99	2015-09-08	127	49	0
+Shrinks99	2015-09-10	6	0	0
 Si_Bear	2014-05-25	38	38	0
 Sicarius	2009-07-02	1	0	0
 Silver Tongued Beaver	2009-02-18	8	0	0
+Singh81	2015-07-09	3	1	0
+Singh81	2015-10-20	238	147	0
+Singh81	2015-10-31	5	3	0
+Singh81	2015-11-25	19	19	0
+Sir Laffalot	2015-07-25	1	1	0
 Sireeps	2011-09-22	2	2	0
 Skippern	2012-10-31	1	0	0
 Skywave	2008-01-26	1	0	0
 SlavW	2014-08-10	22	21	0
 Slayer68	2014-10-30	14	0	0
 Sobhan Ernest	2013-02-07	6	4	0
+Sohan Vandem	2015-10-10	5	5	0
+Sohan Vandem	2015-10-11	5	5	0
 SomeoneElse_Revert	2014-02-24	1	0	0
+SomeoneElse_Revert	2015-09-16	28	0	0
+Sophia62	2015-10-10	2	2	0
+Sophia62	2015-10-12	2	2	0
+Sophia62	2015-10-13	4	2	0
 SoroSuub1	2013-06-01	20	15	0
 SoulMap	2013-01-26	17	0	0
 Soul_Est	2014-03-03	11	11	0
@@ -2351,6 +3083,8 @@ Springer	2009-03-13	6	0	0
 Spudd	2010-10-30	4	4	0
 Spudd	2014-06-14	1	0	0
 Squiggle	2014-01-14	1	0	0
+StatsWong	2015-02-02	85	82	0
+StatsWong	2015-02-03	123	107	0
 StellanL	2013-01-11	2	1	0
 StellanL	2013-01-16	1	0	0
 StellanL	2013-02-03	86	4	0
@@ -2364,16 +3098,18 @@ Stephie_C	2011-08-13	4	4	0
 Steve_yyz	2013-11-21	9	9	0
 StevenCK	2014-01-14	3	2	0
 StevenCK	2014-01-16	2	2	0
+StevenCK	2015-12-31	1	0	0
 StevenFlannigan	2013-03-14	1513	659	0
 StevenFlannigan	2013-03-15	1072	369	0
 StevenFlannigan	2013-03-18	1272	657	0
 StevenFlannigan	2013-03-19	368	132	0
 StevenFlannigan	2013-03-20	410	99	0
+StevenFlannigan	2015-07-28	45	14	0
 Stray-Dog	2014-07-07	2	1	0
 Stray-Dog	2014-07-11	2	2	0
-Streethawk	2008-08-19	145	133	12
+Streethawk	2008-08-19	145	133	14
 Streethawk	2008-08-21	26	26	5
-Streethawk	2008-08-31	15	15	0
+Streethawk	2008-08-31	15	15	1
 Streethawk	2008-09-09	157	157	0
 Streethawk	2009-03-19	171	1	0
 Streethawk	2009-08-14	1	1	0
@@ -2391,6 +3127,11 @@ Swiq	2015-01-09	1	1	0
 Swiq	2015-01-13	1	1	0
 Swiq	2015-01-20	2	1	0
 Swiq	2015-01-22	1	1	0
+Swiq	2015-01-30	4	0	0
+Swiq	2015-02-12	1	1	0
+Swiq	2015-05-21	2	2	0
+Swiq	2015-06-18	2	0	0
+Swiq	2015-09-12	1	1	0
 Syl	2011-03-01	2	0	0
 Syl	2012-10-04	2	0	0
 Syl	2013-08-24	1	0	0
@@ -2407,6 +3148,9 @@ TakW	2013-01-26	1	0	0
 TammyWict1985	2013-02-27	1	1	0
 Taroc	2013-02-02	1	0	0
 Taroc	2013-02-03	7	3	0
+TeeOhDave	2015-11-24	7	6	0
+TeeOhDave	2015-11-26	1	0	0
+Telecas	2015-10-07	131	86	0
 Tempel	2010-03-23	4	0	0
 Terrametrics	2012-12-20	36	0	0
 Terrametrics	2012-12-21	56	35	0
@@ -2416,6 +3160,7 @@ Terrametrics	2015-01-02	3	0	0
 Terrametrics	2015-01-07	98	52	0
 Terrametrics	2015-01-08	411	250	0
 Terrametrics	2015-01-17	23	16	0
+Terrametrics	2015-03-18	30	14	0
 TerrorInt	2013-06-18	12	12	0
 Thadeaux	2011-02-19	2	1	0
 Thadeaux	2011-02-24	2	2	0
@@ -2469,9 +3214,11 @@ Thelione	2014-09-03	28	23	0
 Thelione	2014-09-09	18	4	0
 Thelione	2014-09-13	2	0	0
 Theodin	2014-08-28	1	1	0
+Thirdman3	2015-04-04	3	2	0
+Thirdman3	2015-04-14	7	4	0
 Thomas Espinosa	2013-03-04	2	2	0
 Thomas Matern	2007-12-09	2	0	0
-Thorenn	2010-03-15	17	4	0
+Thorenn	2010-03-15	17	4	1
 TimSC_Data_CC0_To_Andy_Allan	2011-02-14	1	0	0
 Timing	2011-04-24	1	0	0
 Tlloyd	2012-03-20	1	1	0
@@ -2479,6 +3226,7 @@ ToeBee	2014-12-21	1	1	0
 Tom4Arthr	2013-12-18	6	6	0
 Tompw	2013-10-03	5	5	0
 TorMel	2011-12-05	13	9	0
+TorhamZed	2015-07-06	17	5	0
 Toronto	2010-07-06	13	5	0
 Toronto	2010-07-07	31	12	0
 Toronto Zoo	2012-08-13	345	345	0
@@ -2488,11 +3236,13 @@ Toronto Zoo	2013-01-27	39	29	0
 Toronto Zoo	2013-02-15	68	68	0
 Toronto Zoo	2013-02-28	5	4	0
 Toronto Zoo	2014-10-04	48	47	0
+Toronto Zoo	2015-02-03	30	26	0
 TorontoHome	2012-11-25	15	12	0
 TorontoHome	2012-12-01	2	2	0
 TorontoHome	2014-04-15	3	1	0
 Toyotaspeed	2011-01-14	1	1	0
 TranscendentalPi	2013-01-26	10	0	0
+Trevor McLellan	2015-11-05	3	3	0
 Tric	2010-03-10	1	1	1
 Tric	2011-02-20	1	0	0
 TristanA	2014-02-27	27	21	0
@@ -2501,9 +3251,75 @@ TristanA	2014-06-11	92	58	0
 TristanA	2014-06-12	427	315	0
 TristanA	2014-06-13	70	70	0
 TristanA	2014-06-20	101	101	0
+TristanA	2015-01-27	85	78	0
+TristanA	2015-01-28	119	97	0
+TristanA	2015-02-21	13	10	0
+TristanA	2015-03-24	471	318	0
+TristanA	2015-03-25	553	399	0
+TristanA	2015-03-26	538	383	0
+TristanA	2015-03-27	402	309	0
+TristanA	2015-03-28	471	380	0
+TristanA	2015-03-29	193	149	0
+TristanA	2015-03-30	1001	789	0
+TristanA	2015-03-31	866	662	0
+TristanA	2015-04-01	1080	783	0
+TristanA	2015-04-02	347	236	0
+TristanA	2015-04-06	861	586	0
+TristanA	2015-04-15	145	129	0
+TristanA	2015-04-16	796	701	0
+TristanA	2015-04-20	411	344	0
+TristanA	2015-04-21	156	129	0
+TristanA	2015-05-28	435	371	0
+TristanA	2015-05-29	246	224	0
+TristanA	2015-06-01	163	116	0
+TristanA	2015-06-02	54	54	0
+TristanA	2015-06-03	64	60	0
+TristanA	2015-06-04	212	190	0
+TristanA	2015-06-08	671	586	0
+TristanA	2015-06-09	82	82	0
+TristanA	2015-06-10	653	569	0
+TristanA	2015-06-11	511	458	0
+TristanA	2015-06-12	202	186	0
+TristanA	2015-06-18	54	54	0
+TristanA	2015-06-19	311	224	0
+TristanA	2015-06-23	233	233	0
+TristanA	2015-06-24	86	86	0
+TristanA	2015-07-01	30	16	0
+TristanA	2015-07-03	37	32	0
+TristanA	2015-07-28	620	555	0
+TristanA	2015-08-04	24	10	0
+TristanA	2015-08-05	527	456	0
+TristanA	2015-08-06	23	20	0
+TristanA	2015-09-02	106	101	0
+TristanA	2015-09-14	70	49	0
+TristanA	2015-09-29	150	118	0
+TristanA	2015-09-30	175	162	0
+TristanA	2015-10-01	9	9	0
+TristanA	2015-10-02	74	73	0
+TristanA	2015-10-14	888	802	0
+TristanA	2015-10-15	530	506	0
+TristanA	2015-11-16	203	185	0
+TristanA	2015-11-17	9	8	0
+TristanA	2015-11-18	26	26	0
+TristanA	2015-11-19	35	27	0
+TristanA	2015-11-23	33	28	0
+TristanA	2015-11-24	38	33	0
+TristanA	2015-11-25	75	61	0
+TristanA	2015-11-26	4	4	0
+TristanA	2015-12-03	2	2	0
+TristanA	2015-12-12	74	55	0
+TristanA	2015-12-17	34	31	0
+TristanA	2015-12-18	3	2	0
+TristanA	2015-12-19	115	106	0
+TristanA	2015-12-22	4	4	0
+TristanA	2015-12-28	38	32	0
+TristanA	2016-01-01	10	10	0
+TristanA	2016-01-03	6	6	0
+TristanA	2016-01-14	55	53	0
 Tristramg	2014-04-06	1	0	0
 Troy O M	2010-10-27	44	43	0
 Turbinator	2011-05-12	2	2	0
+Turbinator	2015-12-03	16	8	0
 Tygunn	2010-07-05	51	51	0
 Tzafrir Cohen	2013-01-13	1	0	0
 Ubacher	2012-11-25	39	39	0
@@ -2522,16 +3338,20 @@ Urfin78	2013-01-29	2	0	0
 Ushnish	2011-06-11	7	3	0
 V-Tom	2012-01-17	3	3	0
 V-Tom	2012-10-23	3	2	0
+VE3NWE	2015-02-26	68	53	0
 VE6SRV	2008-04-06	1	0	0
+VMeyer	2015-12-14	35	0	0
+Valerie007	2015-05-25	2	0	0
+Vcfrth	2015-02-05	3	1	0
 Vecinu	2010-05-09	6	6	0
 Vecinu	2014-01-05	5	2	0
 Victor Bielawski	2008-05-20	276	248	0
 Victor Bielawski	2008-06-01	103	85	0
 Victor Bielawski	2008-09-18	402	155	0
 Victor Bielawski	2008-10-09	890	347	2
-Victor Bielawski	2008-10-13	967	48	0
+Victor Bielawski	2008-10-13	967	48	1
 Victor Bielawski	2008-10-14	141	2	0
-Victor Bielawski	2008-10-16	740	174	1
+Victor Bielawski	2008-10-16	740	174	0
 Victor Bielawski	2008-10-17	117	0	0
 Victor Bielawski	2008-10-20	51	13	0
 Victor Bielawski	2008-10-22	2381	82	0
@@ -2539,13 +3359,13 @@ Victor Bielawski	2008-10-23	493	20	0
 Victor Bielawski	2008-10-27	5237	613	0
 Victor Bielawski	2008-10-28	2840	249	0
 Victor Bielawski	2008-10-29	16	0	0
-Victor Bielawski	2008-10-30	1446	131	0
+Victor Bielawski	2008-10-30	1446	131	1
 Victor Bielawski	2008-11-04	667	230	0
 Victor Bielawski	2008-11-05	4687	1205	0
-Victor Bielawski	2008-11-06	7480	1716	1
-Victor Bielawski	2008-11-07	1268	202	1
+Victor Bielawski	2008-11-06	7480	1716	2
+Victor Bielawski	2008-11-07	1268	202	0
 Victor Bielawski	2008-11-08	1546	208	0
-Victor Bielawski	2008-11-09	3102	622	0
+Victor Bielawski	2008-11-09	3102	622	1
 Victor Bielawski	2008-11-10	92	9	0
 Victor Bielawski	2008-11-12	331	137	0
 Victor Bielawski	2008-11-13	186	10	0
@@ -2557,8 +3377,8 @@ Victor Bielawski	2008-11-25	1523	386	0
 Victor Bielawski	2008-11-29	325	325	0
 Victor Bielawski	2008-12-01	349	349	0
 Victor Bielawski	2008-12-03	717	534	0
-Victor Bielawski	2008-12-07	452	447	6
-Victor Bielawski	2008-12-08	486	477	9
+Victor Bielawski	2008-12-07	452	447	8
+Victor Bielawski	2008-12-08	486	477	11
 Victor Bielawski	2008-12-09	107	88	0
 Victor Bielawski	2008-12-12	999	957	1
 Victor Bielawski	2008-12-13	284	283	0
@@ -2573,13 +3393,13 @@ Victor Bielawski	2009-01-01	612	606	0
 Victor Bielawski	2009-01-02	87	87	0
 Victor Bielawski	2009-01-04	207	200	0
 Victor Bielawski	2009-01-08	87	84	0
-Victor Bielawski	2009-01-13	762	692	2
+Victor Bielawski	2009-01-13	762	692	1
 Victor Bielawski	2009-01-16	580	548	0
 Victor Bielawski	2009-01-20	12	12	0
 Victor Bielawski	2009-01-21	125	125	0
 Victor Bielawski	2009-01-22	208	109	0
-Victor Bielawski	2009-01-23	289	284	5
-Victor Bielawski	2009-01-24	42	42	7
+Victor Bielawski	2009-01-23	289	284	3
+Victor Bielawski	2009-01-24	42	42	8
 Victor Bielawski	2009-01-26	278	245	0
 Victor Bielawski	2009-01-31	45	3	0
 Victor Bielawski	2009-02-01	165	165	0
@@ -2589,7 +3409,7 @@ Victor Bielawski	2009-02-12	963	227	0
 Victor Bielawski	2009-02-15	339	194	0
 Victor Bielawski	2009-02-16	55	20	0
 Victor Bielawski	2009-02-27	10	6	0
-Victor Bielawski	2009-02-28	312	290	1
+Victor Bielawski	2009-02-28	312	290	2
 Victor Bielawski	2009-03-14	155	144	0
 Victor Bielawski	2009-03-15	11	8	0
 Victor Bielawski	2009-03-17	118	88	0
@@ -2608,7 +3428,7 @@ Victor Bielawski	2009-04-04	139	66	0
 Victor Bielawski	2009-04-05	1033	1029	0
 Victor Bielawski	2009-04-06	1334	977	0
 Victor Bielawski	2009-04-07	383	381	0
-Victor Bielawski	2009-04-08	277	230	1
+Victor Bielawski	2009-04-08	277	230	0
 Victor Bielawski	2009-04-09	71	23	0
 Victor Bielawski	2009-04-10	323	306	0
 Victor Bielawski	2009-04-11	36	24	0
@@ -2919,6 +3739,7 @@ Vintaged Clothing	2014-06-06	2	0	0
 Vortexmb	2014-04-20	1	1	0
 Waldensol	2011-03-28	7	1	0
 Wally434	2010-08-21	1	1	0
+Walrib	2015-11-21	23	8	0
 Walter Schlögl	2010-02-25	7	0	0
 Walter Schlögl	2010-10-29	4	0	0
 Walter Schlögl	2012-01-15	1	0	0
@@ -2939,6 +3760,9 @@ Walter Schlögl	2014-12-29	1	0	0
 Walter Schlögl	2014-12-31	2	0	0
 Walter Schlögl	2015-01-01	1	0	0
 Walter Schlögl	2015-01-03	1	0	0
+Walter Schlögl	2015-03-07	1	0	0
+Walter Schlögl	2015-03-28	2	0	0
+Walter Schlögl	2015-05-06	1	0	0
 WanMil	2009-09-21	28	0	0
 WanMil	2010-03-17	2	0	0
 Warfroggy	2014-02-10	1	0	0
@@ -2995,6 +3819,7 @@ WhiskyMacK	2014-09-19	143	55	0
 WhiskyMacK	2014-09-21	264	79	0
 WhiskyMacK	2014-09-24	6	0	0
 WhiskyMacK	2014-11-04	104	75	0
+WhiskyMacK	2015-06-02	244	192	0
 Will Flanagan	2008-04-04	14	13	0
 Will Flanagan	2009-03-05	102	11	0
 Will Flanagan	2009-03-20	47	20	0
@@ -3006,6 +3831,7 @@ Wolseleydog	2012-08-25	1	0	0
 WorldlyCanuck	2013-12-01	4	0	0
 WorldlyCanuck	2013-12-10	7	7	0
 WorldlyCanuck	2013-12-11	4	1	0
+X0M1	2015-09-28	74	74	0
 Xpat	2013-04-21	4	0	0
 Xylem	2008-09-06	29	28	0
 Xylem	2008-09-07	17	14	0
@@ -3030,9 +3856,9 @@ Xylem	2008-10-18	1619	235	0
 Xylem	2008-10-19	457	78	0
 Xylem	2008-10-20	286	22	0
 Xylem	2008-10-21	5	0	0
-Xylem	2008-10-25	468	86	4
-Xylem	2008-10-26	721	243	0
-Xylem	2008-10-27	451	10	1
+Xylem	2008-10-25	468	86	3
+Xylem	2008-10-26	721	243	2
+Xylem	2008-10-27	451	10	2
 Xylem	2008-10-28	480	148	0
 Xylem	2008-10-30	511	82	0
 Xylem	2008-11-05	214	19	0
@@ -3045,7 +3871,7 @@ Xylem	2009-01-17	16	4	0
 Xylem	2009-02-26	523	68	0
 Xylem	2009-03-04	1250	173	1
 Xylem	2009-03-05	523	86	0
-Xylem	2009-03-07	2856	469	1
+Xylem	2009-03-07	2856	469	2
 Xylem	2009-03-08	3772	860	1
 Xylem	2009-03-10	17	17	0
 Xylem	2009-03-20	734	135	0
@@ -3055,7 +3881,7 @@ Xylem	2009-03-28	455	124	0
 Xylem	2009-04-04	1924	339	0
 Xylem	2009-04-07	791	58	0
 Xylem	2009-04-08	1710	215	0
-Xylem	2009-04-09	3534	591	11
+Xylem	2009-04-09	3534	591	10
 Xylem	2009-04-10	327	78	0
 Xylem	2009-09-07	18	10	0
 Xylem	2009-09-13	536	450	0
@@ -3094,44 +3920,45 @@ Xylem	2014-03-09	22	13	0
 Xylem	2014-10-26	53	47	0
 YaOc	2010-08-12	3	0	0
 YaZug	2007-09-04	1	1	0
-Yani Ioannou	2007-07-19	375	375	22
-Yani Ioannou	2007-07-20	2566	2566	69
-Yani Ioannou	2007-07-21	799	799	13
-Yani Ioannou	2007-07-25	197	197	0
+Yani Ioannou	2007-07-19	375	375	21
+Yani Ioannou	2007-07-20	2566	2566	68
+Yani Ioannou	2007-07-21	799	799	16
+Yani Ioannou	2007-07-25	197	197	1
 Yani Ioannou	2007-07-27	12	12	0
 Yani Ioannou	2007-07-28	185	185	1
 Yani Ioannou	2007-08-04	118	118	5
 Yani Ioannou	2007-08-05	277	277	0
-Yani Ioannou	2007-08-27	316	316	0
-Yani Ioannou	2007-08-30	32	32	11
-Yani Ioannou	2007-08-31	516	516	22
-Yani Ioannou	2007-09-03	606	606	51
-Yani Ioannou	2007-09-04	458	458	5
+Yani Ioannou	2007-08-27	316	316	1
+Yani Ioannou	2007-08-30	32	32	9
+Yani Ioannou	2007-08-31	516	516	26
+Yani Ioannou	2007-09-03	606	606	47
+Yani Ioannou	2007-09-04	458	458	2
 Yani Ioannou	2007-09-07	117	117	0
 Yani Ioannou	2007-09-08	134	134	0
 Yani Ioannou	2007-09-26	196	196	0
 Yani Ioannou	2007-11-26	543	262	1
-Yani Ioannou	2007-11-27	7927	3252	8
+Yani Ioannou	2007-11-27	7927	3252	6
 Yani Ioannou	2007-11-28	6667	2619	57
-Yani Ioannou	2007-11-30	628	267	1
+Yani Ioannou	2007-11-30	628	267	0
 Yani Ioannou	2008-01-21	513	503	0
 Yaron	2013-01-18	1	1	0
 Yaron	2013-12-02	3	3	0
+YasnaK	2015-09-19	13	10	0
+YasnaK	2015-09-20	63	60	0
+YasnaK	2015-09-23	46	46	0
 Yathusan	2009-07-11	5	0	0
 Yathusan	2009-07-26	1	0	0
 Yathusan	2009-07-28	1	0	0
 Yathusan	2009-08-04	2	0	0
 Yellowpiper	2015-01-14	3	1	0
-Zachary77F	2014-11-27	1	1	0
-Zachary77F	2014-12-10	1	0	0
-Zachary77F	2014-12-17	37	0	0
-Zachary77F	2014-12-20	1	0	0
-Zachary77F	2014-12-25	18	12	0
-Zachary77F	2014-12-26	3	0	0
 Zap Courier	2014-10-14	46	46	0
+Zapper71	2015-03-17	1	1	0
+Zassil	2015-02-09	8	6	0
 Zcor	2013-10-20	1	0	0
 ZedSmart	2014-05-21	2	1	0
 Zinzan Studio	2013-12-22	3	1	0
+Zoranbo	2015-05-03	2	2	0
+Zverik	2015-10-19	1	1	0
 _Dima	2009-04-21	235	169	0
 _Dima	2009-04-22	577	347	0
 _Dima	2009-04-23	473	279	0
@@ -3177,6 +4004,17 @@ aaronmhamilton	2014-01-08	20	11	0
 aaronmhamilton	2014-01-14	2	0	0
 aaronmhamilton	2014-02-06	1	0	0
 aaronmhamilton	2014-03-04	8	0	0
+aarthy	2015-08-24	426	342	0
+abel801	2015-03-16	1	0	0
+abel801	2015-03-24	2	0	0
+abel801	2015-05-19	1	0	0
+abel801	2015-05-26	1	0	0
+abel801	2015-05-28	1	0	0
+abel801	2015-07-17	6	1	0
+abel801	2015-07-24	1	1	0
+abel801	2015-08-26	1	0	0
+abel801	2015-09-01	1	1	0
+abel801	2015-09-09	5	1	0
 account_deleted_1011	2009-04-11	1	0	0
 aceman444	2014-09-22	1	1	0
 aceman444	2014-10-11	1	1	0
@@ -3193,6 +4031,8 @@ acli	2013-08-10	44	42	0
 acli	2013-08-11	2	1	0
 acli	2013-08-13	9	9	0
 acli	2013-11-03	1	0	0
+acli	2015-06-16	7	5	0
+adi_z	2015-10-01	1	0	0
 adjuva	2011-08-26	2	0	0
 adjuva	2011-12-03	3	0	0
 adjuva	2011-12-29	1	0	0
@@ -3206,15 +4046,20 @@ adjuva	2014-03-22	3	0	0
 adjuva	2014-04-19	1	0	0
 adjuva	2014-05-30	1	0	0
 adjuva	2014-06-21	2	0	0
+adjuva	2015-07-04	1	0	0
 adoborepublic	2010-10-11	2	0	0
 adzik	2010-10-27	12	11	0
 aerolite	2013-02-28	4	0	0
 aestus	2009-02-14	21	0	0
 ag25	2013-09-03	62	59	0
 ahaines	2012-08-29	1	0	0
+ahinves	2015-09-03	8	4	0
+ahinves	2015-09-17	325	325	0
+ahinves	2015-09-18	366	137	0
 ahlara	2014-01-05	20	13	0
 aighes	2010-05-01	22	0	0
 ajak	2008-12-29	44	0	0
+ajan85	2015-03-20	3	2	0
 ajashton	2012-02-24	24	5	0
 ajashton	2012-04-12	16	0	0
 ajashton	2012-04-13	17	8	0
@@ -3222,16 +4067,17 @@ ajashton	2012-08-22	1	1	0
 ajashton	2012-11-20	1	0	0
 ajashton	2013-01-08	20	18	0
 ajashton	2013-04-05	4	0	0
+ajashton	2015-03-27	3	0	0
 akana	2012-07-07	1	0	0
 akarnick	2012-04-10	2	2	0
 alecs	2007-08-10	2	2	0
-alecs	2007-09-12	8	8	1
-alecs	2007-09-13	290	290	34
+alecs	2007-09-12	8	8	0
+alecs	2007-09-13	290	290	30
 alecs	2007-09-14	1	1	0
-alecs	2007-09-27	206	206	5
-alecs	2007-09-28	235	235	3
+alecs	2007-09-27	206	206	11
+alecs	2007-09-28	235	235	2
 alecs	2007-10-01	64	64	0
-alecs	2007-10-02	179	179	0
+alecs	2007-10-02	179	179	1
 alecs	2007-10-10	7	6	0
 alecs	2007-10-14	1	1	0
 alex-map	2012-01-06	37	27	0
@@ -3241,7 +4087,7 @@ alex-map	2012-01-18	8	7	0
 alex6999	2009-05-24	9	0	0
 alexst	2010-03-19	1	0	0
 alias10001	2008-01-11	6	4	0
-alias10001	2008-01-23	17	14	0
+alias10001	2008-01-23	17	14	1
 alias10001	2008-02-04	37	5	0
 alias10001	2008-02-14	4	0	0
 almich	2013-01-24	5	0	0
@@ -3249,31 +4095,32 @@ almich	2013-01-25	13	0	0
 alphapm	2010-07-28	11	5	0
 altruest	2012-01-05	1	1	0
 amana	2012-09-21	44	28	0
-amarinel	2014-06-30	8	0	0
+amarinelli	2014-06-30	8	0	0
+andiniki	2015-08-24	1	0	0
 andrewpmk	2006-11-01	38	38	2
 andrewpmk	2007-05-25	8	8	0
-andrewpmk	2007-05-26	1291	1291	36
-andrewpmk	2007-05-27	896	896	62
+andrewpmk	2007-05-26	1291	1291	32
+andrewpmk	2007-05-27	896	896	65
 andrewpmk	2007-06-01	27	27	0
-andrewpmk	2007-07-27	347	347	37
-andrewpmk	2007-08-04	133	133	4
+andrewpmk	2007-07-27	347	347	38
+andrewpmk	2007-08-04	133	133	7
 andrewpmk	2007-08-14	57	57	0
-andrewpmk	2007-08-16	155	155	0
+andrewpmk	2007-08-16	155	155	1
 andrewpmk	2007-08-18	89	89	0
-andrewpmk	2007-08-20	16	16	0
-andrewpmk	2007-08-25	833	833	0
+andrewpmk	2007-08-20	16	16	2
+andrewpmk	2007-08-25	833	833	3
 andrewpmk	2007-08-28	71	71	0
-andrewpmk	2007-09-01	306	306	4
+andrewpmk	2007-09-01	306	306	5
 andrewpmk	2007-09-05	194	194	0
 andrewpmk	2007-09-07	84	84	0
-andrewpmk	2007-09-08	252	252	1
+andrewpmk	2007-09-08	252	252	0
 andrewpmk	2007-09-09	367	367	0
 andrewpmk	2007-09-10	189	189	0
 andrewpmk	2007-09-13	181	181	0
 andrewpmk	2007-09-14	9	9	0
 andrewpmk	2007-09-17	116	116	0
-andrewpmk	2007-09-20	582	582	0
-andrewpmk	2007-09-21	1145	1145	6
+andrewpmk	2007-09-20	582	582	1
+andrewpmk	2007-09-21	1145	1145	5
 andrewpmk	2007-09-22	200	200	1
 andrewpmk	2007-09-23	423	423	0
 andrewpmk	2007-09-24	54	54	0
@@ -3281,32 +4128,32 @@ andrewpmk	2007-09-25	39	39	0
 andrewpmk	2007-09-26	4	4	0
 andrewpmk	2007-09-27	63	63	0
 andrewpmk	2007-09-28	236	236	0
-andrewpmk	2007-10-01	1104	1104	17
-andrewpmk	2007-10-03	455	455	2
+andrewpmk	2007-10-01	1104	1104	16
+andrewpmk	2007-10-03	455	455	0
 andrewpmk	2007-10-04	307	307	0
 andrewpmk	2007-10-05	24	24	0
 andrewpmk	2007-10-06	603	603	0
 andrewpmk	2007-10-07	693	505	0
 andrewpmk	2007-10-08	110	110	0
-andrewpmk	2007-10-09	131	79	4
+andrewpmk	2007-10-09	131	79	2
 andrewpmk	2007-10-10	521	280	0
 andrewpmk	2007-10-11	120	99	0
 andrewpmk	2007-10-12	397	260	0
 andrewpmk	2007-10-13	138	93	0
-andrewpmk	2007-10-14	830	641	5
+andrewpmk	2007-10-14	830	641	3
 andrewpmk	2007-10-15	184	37	0
 andrewpmk	2007-10-17	767	705	14
 andrewpmk	2007-10-20	45	37	0
 andrewpmk	2007-10-21	187	152	0
 andrewpmk	2007-10-22	344	328	0
 andrewpmk	2007-10-23	29	15	0
-andrewpmk	2007-10-24	421	350	2
+andrewpmk	2007-10-24	421	350	1
 andrewpmk	2007-10-25	158	131	0
 andrewpmk	2007-10-26	166	160	0
 andrewpmk	2007-10-27	317	106	0
-andrewpmk	2007-10-29	20	19	7
+andrewpmk	2007-10-29	20	19	6
 andrewpmk	2007-11-01	148	48	0
-andrewpmk	2007-11-02	533	344	1
+andrewpmk	2007-11-02	533	344	0
 andrewpmk	2007-11-04	320	268	0
 andrewpmk	2007-11-06	107	51	0
 andrewpmk	2007-11-16	533	169	0
@@ -3316,12 +4163,12 @@ andrewpmk	2007-11-22	739	207	0
 andrewpmk	2007-11-23	1990	644	0
 andrewpmk	2007-11-24	271	133	0
 andrewpmk	2007-11-26	1	0	0
-andrewpmk	2007-11-28	2063	600	14
+andrewpmk	2007-11-28	2063	600	12
 andrewpmk	2007-11-29	58	4	0
 andrewpmk	2007-11-30	9	7	0
 andrewpmk	2007-12-01	1840	694	15
 andrewpmk	2007-12-02	910	101	0
-andrewpmk	2007-12-03	794	269	0
+andrewpmk	2007-12-03	794	269	1
 andrewpmk	2007-12-06	1931	701	0
 andrewpmk	2007-12-07	428	286	0
 andrewpmk	2007-12-08	582	399	0
@@ -3332,26 +4179,26 @@ andrewpmk	2007-12-12	176	11	0
 andrewpmk	2007-12-18	1	1	0
 andrewpmk	2007-12-22	465	104	0
 andrewpmk	2007-12-23	50	19	0
-andrewpmk	2007-12-26	266	97	2
-andrewpmk	2008-01-01	2387	653	15
+andrewpmk	2007-12-26	266	97	0
+andrewpmk	2008-01-01	2387	653	13
 andrewpmk	2008-01-03	27	0	0
 andrewpmk	2008-01-06	546	373	0
-andrewpmk	2008-01-07	1425	803	2
+andrewpmk	2008-01-07	1425	803	3
 andrewpmk	2008-01-08	56	38	0
 andrewpmk	2008-01-09	135	81	0
 andrewpmk	2008-01-10	88	57	0
 andrewpmk	2008-01-11	21	6	0
 andrewpmk	2008-01-12	186	56	0
 andrewpmk	2008-01-13	37	29	0
-andrewpmk	2008-01-15	524	172	1
-andrewpmk	2008-01-16	83	30	1
+andrewpmk	2008-01-15	524	172	5
+andrewpmk	2008-01-16	83	30	0
 andrewpmk	2008-01-18	57	46	0
 andrewpmk	2008-01-19	448	338	0
 andrewpmk	2008-01-20	322	268	0
 andrewpmk	2008-01-21	495	323	0
 andrewpmk	2008-01-22	37	33	0
 andrewpmk	2008-01-24	1	1	0
-andrewpmk	2008-01-25	548	491	0
+andrewpmk	2008-01-25	548	491	1
 andrewpmk	2008-01-26	359	249	0
 andrewpmk	2008-01-28	123	112	0
 andrewpmk	2008-01-29	14	6	0
@@ -3363,13 +4210,13 @@ andrewpmk	2008-02-06	12	4	0
 andrewpmk	2008-02-07	102	95	0
 andrewpmk	2008-02-08	105	84	0
 andrewpmk	2008-02-10	281	216	0
-andrewpmk	2008-02-11	925	809	3
+andrewpmk	2008-02-11	925	809	4
 andrewpmk	2008-02-12	215	126	0
 andrewpmk	2008-02-13	30	12	0
-andrewpmk	2008-02-14	188	135	0
-andrewpmk	2008-02-15	843	807	0
-andrewpmk	2008-02-16	1801	1637	1
-andrewpmk	2008-02-18	1039	943	27
+andrewpmk	2008-02-14	188	135	1
+andrewpmk	2008-02-15	843	807	1
+andrewpmk	2008-02-16	1801	1637	0
+andrewpmk	2008-02-18	1039	943	28
 andrewpmk	2008-02-19	137	131	2
 andrewpmk	2008-02-20	73	30	0
 andrewpmk	2008-02-25	85	41	0
@@ -3378,21 +4225,21 @@ andrewpmk	2008-02-27	37	28	0
 andrewpmk	2008-02-28	60	21	0
 andrewpmk	2008-02-29	1118	932	0
 andrewpmk	2008-03-01	264	204	0
-andrewpmk	2008-03-02	382	286	3
+andrewpmk	2008-03-02	382	286	2
 andrewpmk	2008-03-04	4	2	0
-andrewpmk	2008-03-07	586	397	0
-andrewpmk	2008-03-08	836	585	1
-andrewpmk	2008-03-09	296	34	0
+andrewpmk	2008-03-07	586	397	1
+andrewpmk	2008-03-08	836	585	0
+andrewpmk	2008-03-09	296	34	1
 andrewpmk	2008-03-10	1	1	0
-andrewpmk	2008-03-11	106	95	2
+andrewpmk	2008-03-11	106	95	4
 andrewpmk	2008-03-14	296	206	0
-andrewpmk	2008-03-15	366	341	1
-andrewpmk	2008-03-16	1133	1008	17
+andrewpmk	2008-03-15	366	341	2
+andrewpmk	2008-03-16	1133	1008	18
 andrewpmk	2008-03-17	548	434	0
 andrewpmk	2008-03-19	351	127	0
-andrewpmk	2008-03-20	680	625	0
+andrewpmk	2008-03-20	680	625	1
 andrewpmk	2008-03-21	609	558	0
-andrewpmk	2008-03-22	901	510	3
+andrewpmk	2008-03-22	901	510	2
 andrewpmk	2008-03-24	893	499	0
 andrewpmk	2008-03-25	307	188	0
 andrewpmk	2008-03-26	27	5	0
@@ -3420,13 +4267,13 @@ andrewpmk	2008-04-28	423	251	0
 andrewpmk	2008-04-29	307	241	0
 andrewpmk	2008-04-30	39	20	0
 andrewpmk	2008-05-01	42	29	0
-andrewpmk	2008-05-02	2300	2013	1
-andrewpmk	2008-05-03	1659	1469	3
+andrewpmk	2008-05-02	2300	2013	0
+andrewpmk	2008-05-03	1659	1469	2
 andrewpmk	2008-05-04	1097	765	0
 andrewpmk	2008-05-05	872	450	0
 andrewpmk	2008-05-06	1097	993	0
-andrewpmk	2008-05-07	1250	1048	0
-andrewpmk	2008-05-08	492	246	0
+andrewpmk	2008-05-07	1250	1048	1
+andrewpmk	2008-05-08	492	246	1
 andrewpmk	2008-05-09	63	29	0
 andrewpmk	2008-05-11	4	4	0
 andrewpmk	2008-05-12	179	144	0
@@ -3438,15 +4285,15 @@ andrewpmk	2008-05-17	90	75	0
 andrewpmk	2008-05-18	170	137	0
 andrewpmk	2008-05-19	811	706	0
 andrewpmk	2008-05-20	1608	1493	1
-andrewpmk	2008-05-21	453	368	0
+andrewpmk	2008-05-21	453	368	1
 andrewpmk	2008-05-22	1444	1154	0
 andrewpmk	2008-05-23	700	607	0
 andrewpmk	2008-05-24	280	229	0
 andrewpmk	2008-05-25	1120	975	0
 andrewpmk	2008-05-27	117	85	0
-andrewpmk	2008-05-28	463	446	3
+andrewpmk	2008-05-28	463	446	2
 andrewpmk	2008-05-29	236	123	0
-andrewpmk	2008-05-30	882	836	1
+andrewpmk	2008-05-30	882	836	2
 andrewpmk	2008-05-31	49	27	0
 andrewpmk	2008-06-01	401	364	0
 andrewpmk	2008-06-02	147	63	0
@@ -3460,7 +4307,7 @@ andrewpmk	2008-06-09	161	90	0
 andrewpmk	2008-06-10	204	87	0
 andrewpmk	2008-06-11	39	32	0
 andrewpmk	2008-06-12	2	0	0
-andrewpmk	2008-06-14	804	592	1
+andrewpmk	2008-06-14	804	592	0
 andrewpmk	2008-06-16	70	48	0
 andrewpmk	2008-06-17	53	16	0
 andrewpmk	2008-06-18	10	3	0
@@ -3488,7 +4335,7 @@ andrewpmk	2008-07-16	1	0	0
 andrewpmk	2008-07-17	129	57	0
 andrewpmk	2008-07-18	53	13	0
 andrewpmk	2008-07-19	321	206	0
-andrewpmk	2008-07-20	49	37	1
+andrewpmk	2008-07-20	49	37	4
 andrewpmk	2008-07-21	240	214	0
 andrewpmk	2008-07-22	323	203	0
 andrewpmk	2008-07-23	86	41	0
@@ -3502,7 +4349,7 @@ andrewpmk	2008-07-30	38	2	0
 andrewpmk	2008-07-31	846	833	0
 andrewpmk	2008-08-05	5	3	0
 andrewpmk	2008-08-06	24	16	0
-andrewpmk	2008-08-07	1974	1883	0
+andrewpmk	2008-08-07	1974	1883	1
 andrewpmk	2008-08-08	363	289	0
 andrewpmk	2008-08-09	194	167	0
 andrewpmk	2008-08-10	1	0	0
@@ -3571,7 +4418,7 @@ andrewpmk	2008-11-17	7	5	0
 andrewpmk	2008-11-18	80	21	0
 andrewpmk	2008-11-19	60	22	0
 andrewpmk	2008-11-20	250	10	0
-andrewpmk	2008-11-21	1191	957	1
+andrewpmk	2008-11-21	1191	957	0
 andrewpmk	2008-11-23	129	20	0
 andrewpmk	2008-11-24	392	264	0
 andrewpmk	2008-11-25	37	10	0
@@ -3655,9 +4502,9 @@ andrewpmk	2009-03-11	479	403	0
 andrewpmk	2009-03-12	135	133	0
 andrewpmk	2009-03-13	84	48	0
 andrewpmk	2009-03-14	1186	1021	0
-andrewpmk	2009-03-15	2669	2549	0
+andrewpmk	2009-03-15	2669	2549	2
 andrewpmk	2009-03-16	538	496	0
-andrewpmk	2009-03-17	624	577	0
+andrewpmk	2009-03-17	624	577	1
 andrewpmk	2009-03-18	1556	1456	0
 andrewpmk	2009-03-19	2133	2055	0
 andrewpmk	2009-03-20	158	73	0
@@ -3672,7 +4519,7 @@ andrewpmk	2009-03-29	2044	1992	0
 andrewpmk	2009-03-30	128	120	0
 andrewpmk	2009-03-31	1084	986	0
 andrewpmk	2009-04-01	643	555	0
-andrewpmk	2009-04-02	238	227	1
+andrewpmk	2009-04-02	238	227	3
 andrewpmk	2009-04-03	23	18	0
 andrewpmk	2009-04-04	1314	1202	0
 andrewpmk	2009-04-05	646	581	0
@@ -3684,19 +4531,19 @@ andrewpmk	2009-04-10	1136	1066	0
 andrewpmk	2009-04-11	2493	2179	0
 andrewpmk	2009-04-12	1211	927	0
 andrewpmk	2009-04-13	369	290	0
-andrewpmk	2009-04-14	8293	8243	3
-andrewpmk	2009-04-15	633	451	2
+andrewpmk	2009-04-14	8293	8243	1
+andrewpmk	2009-04-15	633	451	1
 andrewpmk	2009-04-16	4393	4051	0
 andrewpmk	2009-04-17	1326	1174	0
 andrewpmk	2009-04-21	4834	4287	4
-andrewpmk	2009-04-22	1207	1075	1
-andrewpmk	2009-04-23	2587	2371	5
+andrewpmk	2009-04-22	1207	1075	2
+andrewpmk	2009-04-23	2587	2371	6
 andrewpmk	2009-04-24	3084	2530	0
-andrewpmk	2009-04-25	2055	1406	1
+andrewpmk	2009-04-25	2055	1406	0
 andrewpmk	2009-04-26	1051	869	0
 andrewpmk	2009-04-27	172	103	0
 andrewpmk	2009-04-28	2330	1801	0
-andrewpmk	2009-04-29	1625	1029	1
+andrewpmk	2009-04-29	1625	1029	0
 andrewpmk	2009-04-30	366	261	0
 andrewpmk	2009-05-01	711	527	0
 andrewpmk	2009-05-02	193	155	0
@@ -3705,19 +4552,19 @@ andrewpmk	2009-05-04	695	519	0
 andrewpmk	2009-05-05	1313	977	0
 andrewpmk	2009-05-06	570	546	0
 andrewpmk	2009-05-07	3788	2475	0
-andrewpmk	2009-05-08	2964	2756	1
+andrewpmk	2009-05-08	2964	2756	0
 andrewpmk	2009-05-09	633	565	0
 andrewpmk	2009-05-10	1088	922	0
-andrewpmk	2009-05-11	658	631	8
+andrewpmk	2009-05-11	658	631	7
 andrewpmk	2009-05-12	2846	2365	0
 andrewpmk	2009-05-13	1428	1300	0
 andrewpmk	2009-05-14	1523	1415	0
 andrewpmk	2009-05-15	1006	729	0
-andrewpmk	2009-05-16	4949	3501	1
-andrewpmk	2009-05-17	791	779	1
+andrewpmk	2009-05-16	4949	3501	0
+andrewpmk	2009-05-17	791	779	2
 andrewpmk	2009-05-18	308	270	0
-andrewpmk	2009-05-19	2215	2066	0
-andrewpmk	2009-05-20	440	354	0
+andrewpmk	2009-05-19	2215	2066	1
+andrewpmk	2009-05-20	440	354	1
 andrewpmk	2009-05-21	1243	1126	0
 andrewpmk	2009-05-22	519	505	0
 andrewpmk	2009-05-23	890	805	0
@@ -3734,7 +4581,7 @@ andrewpmk	2009-06-02	1686	991	0
 andrewpmk	2009-06-03	791	445	0
 andrewpmk	2009-06-04	1035	862	0
 andrewpmk	2009-06-05	2284	1849	0
-andrewpmk	2009-06-06	1924	1606	1
+andrewpmk	2009-06-06	1924	1606	0
 andrewpmk	2009-06-07	829	285	0
 andrewpmk	2009-06-08	1373	1124	0
 andrewpmk	2009-06-09	8	8	0
@@ -3767,7 +4614,7 @@ andrewpmk	2009-07-06	1032	831	0
 andrewpmk	2009-07-07	2771	2264	0
 andrewpmk	2009-07-08	2877	2563	0
 andrewpmk	2009-07-09	4794	2699	0
-andrewpmk	2009-07-10	4714	4028	1
+andrewpmk	2009-07-10	4714	4028	3
 andrewpmk	2009-07-11	437	363	0
 andrewpmk	2009-07-14	2377	2029	0
 andrewpmk	2009-07-15	567	421	0
@@ -3855,7 +4702,7 @@ andrewpmk	2009-10-21	177	121	0
 andrewpmk	2009-10-22	568	427	0
 andrewpmk	2009-10-23	59	56	0
 andrewpmk	2009-10-24	350	333	0
-andrewpmk	2009-10-25	987	749	0
+andrewpmk	2009-10-25	987	749	1
 andrewpmk	2009-10-26	307	201	0
 andrewpmk	2009-10-27	857	728	0
 andrewpmk	2009-10-28	745	195	0
@@ -3865,10 +4712,10 @@ andrewpmk	2009-10-31	292	202	0
 andrewpmk	2009-11-01	703	584	0
 andrewpmk	2009-11-02	1221	1026	0
 andrewpmk	2009-11-03	176	149	0
-andrewpmk	2009-11-04	56670	56582	2
+andrewpmk	2009-11-04	56670	56582	3
 andrewpmk	2009-11-05	165	88	0
 andrewpmk	2009-11-06	6644	6434	1
-andrewpmk	2009-11-07	13369	13358	87
+andrewpmk	2009-11-07	13369	13358	78
 andrewpmk	2009-11-08	41	18	0
 andrewpmk	2009-11-09	126	66	0
 andrewpmk	2009-11-10	516	347	0
@@ -3933,7 +4780,7 @@ andrewpmk	2010-01-19	40	35	0
 andrewpmk	2010-01-20	699	668	0
 andrewpmk	2010-01-21	4	2	0
 andrewpmk	2010-01-22	143	125	0
-andrewpmk	2010-01-23	1285	1240	4
+andrewpmk	2010-01-23	1285	1240	2
 andrewpmk	2010-01-24	146	44	0
 andrewpmk	2010-01-25	13	12	0
 andrewpmk	2010-01-26	25	23	0
@@ -3972,13 +4819,13 @@ andrewpmk	2010-03-13	17	14	0
 andrewpmk	2010-03-14	772	730	0
 andrewpmk	2010-03-16	4	0	0
 andrewpmk	2010-03-18	213	135	0
-andrewpmk	2010-03-20	12520	11072	11
+andrewpmk	2010-03-20	12520	11072	12
 andrewpmk	2010-03-21	1	0	0
 andrewpmk	2010-03-23	1	0	0
 andrewpmk	2010-03-26	190	169	0
 andrewpmk	2010-03-28	3	0	0
 andrewpmk	2010-03-29	220	191	0
-andrewpmk	2010-03-30	193	124	1
+andrewpmk	2010-03-30	193	124	0
 andrewpmk	2010-04-01	236	120	0
 andrewpmk	2010-04-02	179	143	0
 andrewpmk	2010-04-03	596	529	0
@@ -4073,12 +4920,12 @@ andrewpmk	2010-07-04	264	211	0
 andrewpmk	2010-07-05	9742	9735	0
 andrewpmk	2010-07-06	99451	99385	0
 andrewpmk	2010-07-07	73	59	0
-andrewpmk	2010-07-08	1931	1923	1
+andrewpmk	2010-07-08	1931	1923	0
 andrewpmk	2010-07-09	19639	19440	1
 andrewpmk	2010-07-10	24977	24879	0
-andrewpmk	2010-07-11	11636	11631	2
-andrewpmk	2010-07-12	51339	51312	14
-andrewpmk	2010-07-13	4862	4831	1
+andrewpmk	2010-07-11	11636	11631	0
+andrewpmk	2010-07-12	51339	51312	7
+andrewpmk	2010-07-13	4862	4831	0
 andrewpmk	2010-07-14	10907	10720	0
 andrewpmk	2010-07-15	9103	8881	0
 andrewpmk	2010-07-16	4697	4531	0
@@ -4130,7 +4977,7 @@ andrewpmk	2010-09-06	447	398	0
 andrewpmk	2010-09-07	793	704	0
 andrewpmk	2010-09-08	645	572	0
 andrewpmk	2010-09-09	187	104	0
-andrewpmk	2010-09-10	7683	7682	0
+andrewpmk	2010-09-10	7683	7682	5
 andrewpmk	2010-09-12	12	12	0
 andrewpmk	2010-09-13	20	15	0
 andrewpmk	2010-09-14	73	69	0
@@ -4235,7 +5082,7 @@ andrewpmk	2011-01-07	39857	39482	0
 andrewpmk	2011-01-08	12157	11698	0
 andrewpmk	2011-01-09	5143	5058	0
 andrewpmk	2011-01-10	6175	6014	0
-andrewpmk	2011-01-11	2080	1786	1
+andrewpmk	2011-01-11	2080	1786	0
 andrewpmk	2011-01-13	50	45	0
 andrewpmk	2011-01-14	297	256	0
 andrewpmk	2011-01-16	3	1	0
@@ -4385,7 +5232,7 @@ andrewpmk	2011-06-22	1013	234	0
 andrewpmk	2011-06-23	518	151	0
 andrewpmk	2011-06-24	217	138	0
 andrewpmk	2011-06-25	397	252	0
-andrewpmk	2011-06-26	1660	1209	1
+andrewpmk	2011-06-26	1660	1209	0
 andrewpmk	2011-06-27	337	237	0
 andrewpmk	2011-06-28	251	180	0
 andrewpmk	2011-06-29	101	31	0
@@ -5569,11 +6416,335 @@ andrewpmk	2015-01-17	648	115	0
 andrewpmk	2015-01-18	148	89	0
 andrewpmk	2015-01-19	737	417	0
 andrewpmk	2015-01-20	161	116	0
-andrewpmk	2015-01-21	1074	118	0
+andrewpmk	2015-01-21	1073	118	0
 andrewpmk	2015-01-22	215	78	0
 andrewpmk	2015-01-23	16	3	0
 andrewpmk	2015-01-24	546	478	0
 andrewpmk	2015-01-25	377	219	0
+andrewpmk	2015-01-26	308	261	0
+andrewpmk	2015-01-27	51	29	0
+andrewpmk	2015-01-28	158	77	0
+andrewpmk	2015-01-29	101	43	0
+andrewpmk	2015-01-30	36	31	0
+andrewpmk	2015-02-02	463	348	0
+andrewpmk	2015-02-03	228	193	0
+andrewpmk	2015-02-04	57	45	0
+andrewpmk	2015-02-06	2	1	0
+andrewpmk	2015-02-07	406	239	0
+andrewpmk	2015-02-09	419	263	0
+andrewpmk	2015-02-10	344	45	0
+andrewpmk	2015-02-11	59	34	0
+andrewpmk	2015-02-12	8	0	0
+andrewpmk	2015-02-13	11	4	0
+andrewpmk	2015-02-14	1	0	0
+andrewpmk	2015-02-16	663	460	0
+andrewpmk	2015-02-17	76	38	0
+andrewpmk	2015-02-18	1	0	0
+andrewpmk	2015-02-19	584	339	0
+andrewpmk	2015-02-20	165	117	0
+andrewpmk	2015-02-21	460	311	0
+andrewpmk	2015-02-22	136	84	0
+andrewpmk	2015-02-23	88	66	0
+andrewpmk	2015-02-25	719	290	0
+andrewpmk	2015-02-26	18	7	0
+andrewpmk	2015-02-28	628	396	0
+andrewpmk	2015-03-01	333	294	0
+andrewpmk	2015-03-02	434	300	0
+andrewpmk	2015-03-04	1049	698	0
+andrewpmk	2015-03-05	120	63	0
+andrewpmk	2015-03-06	159	86	0
+andrewpmk	2015-03-07	268	184	0
+andrewpmk	2015-03-09	48	36	0
+andrewpmk	2015-03-10	103	80	0
+andrewpmk	2015-03-11	5	2	0
+andrewpmk	2015-03-12	1452	418	0
+andrewpmk	2015-03-13	1079	165	0
+andrewpmk	2015-03-14	32	17	0
+andrewpmk	2015-03-15	438	237	0
+andrewpmk	2015-03-16	365	243	0
+andrewpmk	2015-03-17	530	351	0
+andrewpmk	2015-03-18	1106	206	0
+andrewpmk	2015-03-19	49	25	0
+andrewpmk	2015-03-20	208	105	0
+andrewpmk	2015-03-21	192	132	0
+andrewpmk	2015-03-22	170	104	0
+andrewpmk	2015-03-23	776	331	0
+andrewpmk	2015-03-24	37	22	0
+andrewpmk	2015-03-25	566	346	0
+andrewpmk	2015-03-26	820	604	0
+andrewpmk	2015-03-27	372	241	0
+andrewpmk	2015-03-28	53	24	0
+andrewpmk	2015-03-29	1130	624	0
+andrewpmk	2015-03-30	1641	1044	0
+andrewpmk	2015-03-31	582	205	0
+andrewpmk	2015-04-02	835	331	0
+andrewpmk	2015-04-03	338	207	0
+andrewpmk	2015-04-04	11	2	0
+andrewpmk	2015-04-05	164	93	0
+andrewpmk	2015-04-06	81	53	0
+andrewpmk	2015-04-07	374	199	0
+andrewpmk	2015-04-08	10	8	0
+andrewpmk	2015-04-09	151	56	0
+andrewpmk	2015-04-10	74	60	0
+andrewpmk	2015-04-11	210	157	0
+andrewpmk	2015-04-12	178	147	0
+andrewpmk	2015-04-13	75	54	0
+andrewpmk	2015-04-14	130	84	0
+andrewpmk	2015-04-15	287	215	0
+andrewpmk	2015-04-16	599	178	0
+andrewpmk	2015-04-17	51	24	0
+andrewpmk	2015-04-18	190	125	0
+andrewpmk	2015-04-19	1462	363	0
+andrewpmk	2015-04-20	375	318	0
+andrewpmk	2015-04-21	2	0	0
+andrewpmk	2015-04-22	1	0	0
+andrewpmk	2015-04-23	317	217	0
+andrewpmk	2015-04-25	202	109	0
+andrewpmk	2015-04-26	433	364	0
+andrewpmk	2015-04-27	446	328	0
+andrewpmk	2015-04-28	379	302	0
+andrewpmk	2015-04-29	532	499	0
+andrewpmk	2015-04-30	44	34	0
+andrewpmk	2015-05-01	78	67	0
+andrewpmk	2015-05-02	22	11	0
+andrewpmk	2015-05-03	132	85	0
+andrewpmk	2015-05-04	81	65	0
+andrewpmk	2015-05-05	7	5	0
+andrewpmk	2015-05-06	7	2	0
+andrewpmk	2015-05-07	68	60	0
+andrewpmk	2015-05-08	78	41	0
+andrewpmk	2015-05-09	781	480	0
+andrewpmk	2015-05-10	122	87	0
+andrewpmk	2015-05-11	42	34	0
+andrewpmk	2015-05-12	333	219	0
+andrewpmk	2015-05-14	101	85	0
+andrewpmk	2015-05-15	255	233	0
+andrewpmk	2015-05-16	3	0	0
+andrewpmk	2015-05-17	49	44	0
+andrewpmk	2015-05-18	194	98	0
+andrewpmk	2015-05-20	4	0	0
+andrewpmk	2015-05-21	50	42	0
+andrewpmk	2015-05-23	95	93	0
+andrewpmk	2015-05-24	19	16	0
+andrewpmk	2015-05-25	387	336	0
+andrewpmk	2015-05-26	328	252	0
+andrewpmk	2015-05-27	112	81	0
+andrewpmk	2015-05-28	51	31	0
+andrewpmk	2015-05-29	2	0	0
+andrewpmk	2015-05-30	1	0	0
+andrewpmk	2015-05-31	386	343	0
+andrewpmk	2015-06-01	191	106	0
+andrewpmk	2015-06-03	31	15	0
+andrewpmk	2015-06-04	55	29	0
+andrewpmk	2015-06-05	13	12	0
+andrewpmk	2015-06-06	108	91	0
+andrewpmk	2015-06-07	64	36	0
+andrewpmk	2015-06-08	17	15	0
+andrewpmk	2015-06-09	186	157	0
+andrewpmk	2015-06-10	55	50	0
+andrewpmk	2015-06-11	3	0	0
+andrewpmk	2015-06-12	397	235	0
+andrewpmk	2015-06-13	94	55	0
+andrewpmk	2015-06-14	58	20	0
+andrewpmk	2015-06-15	283	224	0
+andrewpmk	2015-06-16	246	148	0
+andrewpmk	2015-06-17	254	157	0
+andrewpmk	2015-06-18	85	68	0
+andrewpmk	2015-06-19	52	30	0
+andrewpmk	2015-06-20	8	2	0
+andrewpmk	2015-06-21	17	11	0
+andrewpmk	2015-06-22	19	11	0
+andrewpmk	2015-06-23	117	66	0
+andrewpmk	2015-06-24	13	8	0
+andrewpmk	2015-06-25	549	133	0
+andrewpmk	2015-06-26	220	188	0
+andrewpmk	2015-06-27	8	8	0
+andrewpmk	2015-06-28	243	204	0
+andrewpmk	2015-06-29	3	0	0
+andrewpmk	2015-07-01	104	84	0
+andrewpmk	2015-07-02	156	143	0
+andrewpmk	2015-07-03	10	10	0
+andrewpmk	2015-07-04	32	32	0
+andrewpmk	2015-07-05	166	129	0
+andrewpmk	2015-07-06	1630	1336	0
+andrewpmk	2015-07-07	383	323	0
+andrewpmk	2015-07-08	198	176	0
+andrewpmk	2015-07-09	1	1	0
+andrewpmk	2015-07-11	18	6	0
+andrewpmk	2015-07-12	304	201	0
+andrewpmk	2015-07-13	196	179	0
+andrewpmk	2015-07-14	15	12	0
+andrewpmk	2015-07-15	490	459	0
+andrewpmk	2015-07-16	29	24	0
+andrewpmk	2015-07-17	40	39	0
+andrewpmk	2015-07-18	111	105	0
+andrewpmk	2015-07-19	58	28	0
+andrewpmk	2015-07-20	23	13	0
+andrewpmk	2015-07-21	393	67	0
+andrewpmk	2015-07-22	12	10	0
+andrewpmk	2015-07-23	12	5	0
+andrewpmk	2015-07-24	15	4	0
+andrewpmk	2015-07-26	116	61	0
+andrewpmk	2015-07-27	18	2	0
+andrewpmk	2015-07-28	20	8	0
+andrewpmk	2015-07-29	33	26	0
+andrewpmk	2015-07-31	19	17	0
+andrewpmk	2015-08-01	5	0	0
+andrewpmk	2015-08-02	3	1	0
+andrewpmk	2015-08-03	21	15	0
+andrewpmk	2015-08-04	21	15	0
+andrewpmk	2015-08-05	16	14	0
+andrewpmk	2015-08-06	1	0	0
+andrewpmk	2015-08-08	227	201	0
+andrewpmk	2015-08-09	7	1	0
+andrewpmk	2015-08-10	197	167	0
+andrewpmk	2015-08-11	663	586	0
+andrewpmk	2015-08-12	197	156	0
+andrewpmk	2015-08-13	854	790	0
+andrewpmk	2015-08-14	324	303	0
+andrewpmk	2015-08-15	63	23	0
+andrewpmk	2015-08-16	180	91	0
+andrewpmk	2015-08-17	42	31	0
+andrewpmk	2015-08-18	80	9	0
+andrewpmk	2015-08-19	81	32	0
+andrewpmk	2015-08-20	1321	1233	0
+andrewpmk	2015-08-21	699	602	0
+andrewpmk	2015-08-22	48	41	0
+andrewpmk	2015-08-23	457	420	0
+andrewpmk	2015-08-24	36	34	0
+andrewpmk	2015-08-25	439	281	0
+andrewpmk	2015-08-26	113	99	0
+andrewpmk	2015-08-27	584	548	0
+andrewpmk	2015-08-28	141	122	0
+andrewpmk	2015-08-29	314	288	0
+andrewpmk	2015-08-30	468	429	0
+andrewpmk	2015-08-31	502	410	0
+andrewpmk	2015-09-01	505	453	0
+andrewpmk	2015-09-02	1156	953	0
+andrewpmk	2015-09-03	799	726	0
+andrewpmk	2015-09-04	119	80	0
+andrewpmk	2015-09-05	507	483	0
+andrewpmk	2015-09-06	83	57	0
+andrewpmk	2015-09-07	367	331	0
+andrewpmk	2015-09-08	104	91	0
+andrewpmk	2015-09-09	249	220	0
+andrewpmk	2015-09-11	253	157	0
+andrewpmk	2015-09-12	387	330	0
+andrewpmk	2015-09-13	614	550	0
+andrewpmk	2015-09-14	238	197	0
+andrewpmk	2015-09-15	59	54	0
+andrewpmk	2015-09-16	270	227	0
+andrewpmk	2015-09-17	588	446	0
+andrewpmk	2015-09-18	10	8	0
+andrewpmk	2015-09-19	305	191	0
+andrewpmk	2015-09-20	49	39	0
+andrewpmk	2015-09-21	256	206	0
+andrewpmk	2015-09-22	87	44	0
+andrewpmk	2015-09-23	120	100	0
+andrewpmk	2015-09-25	54	39	0
+andrewpmk	2015-09-26	151	136	0
+andrewpmk	2015-09-27	203	147	0
+andrewpmk	2015-09-28	176	128	0
+andrewpmk	2015-09-29	130	101	0
+andrewpmk	2015-09-30	22	13	0
+andrewpmk	2015-10-01	87	51	0
+andrewpmk	2015-10-02	19	15	0
+andrewpmk	2015-10-03	34	27	0
+andrewpmk	2015-10-04	427	147	0
+andrewpmk	2015-10-05	455	203	0
+andrewpmk	2015-10-06	114	89	0
+andrewpmk	2015-10-07	67	40	0
+andrewpmk	2015-10-08	8	8	0
+andrewpmk	2015-10-09	123	93	0
+andrewpmk	2015-10-10	98	79	0
+andrewpmk	2015-10-11	408	153	0
+andrewpmk	2015-10-12	207	126	0
+andrewpmk	2015-10-13	2	2	0
+andrewpmk	2015-10-14	20	17	0
+andrewpmk	2015-10-15	93	71	0
+andrewpmk	2015-10-16	148	115	0
+andrewpmk	2015-10-17	375	192	0
+andrewpmk	2015-10-18	280	150	0
+andrewpmk	2015-10-21	118	35	0
+andrewpmk	2015-10-22	11	2	0
+andrewpmk	2015-10-23	314	120	0
+andrewpmk	2015-10-24	109	74	0
+andrewpmk	2015-10-25	342	260	0
+andrewpmk	2015-10-26	49	34	0
+andrewpmk	2015-10-28	19	9	0
+andrewpmk	2015-10-29	9	4	0
+andrewpmk	2015-10-30	373	194	0
+andrewpmk	2015-10-31	284	189	0
+andrewpmk	2015-11-01	1447	549	0
+andrewpmk	2015-11-02	413	287	0
+andrewpmk	2015-11-03	93	19	0
+andrewpmk	2015-11-04	2739	192	0
+andrewpmk	2015-11-05	53	9	0
+andrewpmk	2015-11-06	39	29	0
+andrewpmk	2015-11-07	388	288	0
+andrewpmk	2015-11-08	463	345	0
+andrewpmk	2015-11-09	402	241	0
+andrewpmk	2015-11-10	38	38	0
+andrewpmk	2015-11-11	37	11	0
+andrewpmk	2015-11-12	301	225	0
+andrewpmk	2015-11-13	271	186	0
+andrewpmk	2015-11-14	781	337	0
+andrewpmk	2015-11-15	397	243	0
+andrewpmk	2015-11-16	25	18	0
+andrewpmk	2015-11-17	366	285	0
+andrewpmk	2015-11-18	878	502	0
+andrewpmk	2015-11-19	102	49	0
+andrewpmk	2015-11-20	292	104	0
+andrewpmk	2015-11-21	151	129	0
+andrewpmk	2015-11-22	823	305	0
+andrewpmk	2015-11-23	211	160	0
+andrewpmk	2015-11-25	839	572	0
+andrewpmk	2015-11-26	402	312	0
+andrewpmk	2015-11-27	442	334	0
+andrewpmk	2015-11-28	41	32	0
+andrewpmk	2015-11-29	43	24	0
+andrewpmk	2015-11-30	556	149	0
+andrewpmk	2015-12-01	79	52	0
+andrewpmk	2015-12-02	45	35	0
+andrewpmk	2015-12-03	63	43	0
+andrewpmk	2015-12-04	1527	362	0
+andrewpmk	2015-12-05	236	166	0
+andrewpmk	2015-12-11	157	134	0
+andrewpmk	2015-12-12	58	30	0
+andrewpmk	2015-12-13	1665	1136	0
+andrewpmk	2015-12-14	310	272	0
+andrewpmk	2015-12-16	22	11	0
+andrewpmk	2015-12-18	12	12	0
+andrewpmk	2015-12-19	310	233	0
+andrewpmk	2015-12-20	343	250	0
+andrewpmk	2015-12-21	63	40	0
+andrewpmk	2015-12-22	173	154	0
+andrewpmk	2015-12-23	1093	957	0
+andrewpmk	2015-12-24	1591	1243	0
+andrewpmk	2015-12-25	2323	1831	0
+andrewpmk	2015-12-26	189	173	0
+andrewpmk	2015-12-27	153	138	0
+andrewpmk	2015-12-28	56	39	0
+andrewpmk	2015-12-29	681	554	0
+andrewpmk	2015-12-30	114	87	0
+andrewpmk	2015-12-31	20	13	0
+andrewpmk	2016-01-01	111	86	0
+andrewpmk	2016-01-02	119	98	0
+andrewpmk	2016-01-03	48	48	0
+andrewpmk	2016-01-04	266	185	0
+andrewpmk	2016-01-05	53	33	0
+andrewpmk	2016-01-06	1252	540	0
+andrewpmk	2016-01-07	1142	741	0
+andrewpmk	2016-01-08	302	245	0
+andrewpmk	2016-01-09	155	125	0
+andrewpmk	2016-01-10	347	254	0
+andrewpmk	2016-01-11	156	128	0
+andrewpmk	2016-01-12	165	139	0
+andrewpmk	2016-01-13	213	162	0
+andrewpmk	2016-01-14	560	458	0
+andrewpmk	2016-01-15	191	144	0
+andrewpmk	2016-01-16	1231	1084	0
+andrewpmk	2016-01-17	665	530	0
 andrewpmk_imports	2012-11-21	1	1	0
 andrewpmk_imports	2012-12-01	21	19	0
 andrewpmk_imports	2012-12-20	33	15	0
@@ -5618,6 +6789,14 @@ andrewpmk_imports	2014-04-26	361	285	0
 andrewpmk_imports	2014-05-19	29	16	0
 andrewpmk_imports	2014-12-16	8	4	0
 andrewpodolsky	2014-11-28	1	0	0
+andygol	2015-04-07	14	1	0
+andygol	2015-04-13	19	0	0
+andygol	2015-05-06	13	10	0
+andygol	2015-07-17	3	3	0
+andygol	2015-07-20	1	1	0
+andygol	2015-08-26	104	104	0
+andygol	2015-09-01	615	615	0
+andygol	2015-09-02	42	40	0
 andyrayev	2014-01-06	4	2	0
 anitak	2008-10-30	16	0	0
 annehughes	2012-10-30	29	29	0
@@ -5658,12 +6837,18 @@ antboy	2011-08-02	2	2	0
 antboy	2011-10-06	1	1	0
 antboy	2011-10-15	1	0	0
 anthme	2013-10-20	1	1	0
+aosmond	2015-04-04	3	2	0
 apang	2014-05-18	26	24	0
 apiari	2012-04-09	1	1	0
+apo-gps	2015-10-12	14	14	0
 aptd	2011-02-21	157	129	0
+ariesdragon	2015-10-07	11	4	0
 arteku	2013-02-25	5	2	0
+arteku	2015-07-17	1	0	0
 arxix	2013-07-27	6	3	0
 asc	2011-09-19	1	1	0
+aseerel4c26	2015-12-12	7	0	0
+asnaps	2015-06-08	9	7	0
 atifmirza	2015-01-21	1	0	0
 attente	2014-01-05	9	5	0
 audiophilia	2012-12-13	1	1	0
@@ -5680,13 +6865,13 @@ bayard0	2014-03-02	33	32	0
 baybars	2014-12-17	1	1	0
 bbgun06	2013-03-19	1	1	0
 bbsben	2012-05-04	15	15	0
-bcrosby	2008-02-26	61	58	1
-bcrosby	2008-02-27	17	12	5
+bcrosby	2008-02-26	61	58	0
+bcrosby	2008-02-27	17	12	6
 bcrosby	2008-02-28	4	0	0
 bcrosby	2008-03-27	2	1	0
 bcrosby	2008-04-05	12	11	0
 bcrosby	2008-04-26	3	1	0
-bcrosby	2008-05-30	14	14	2
+bcrosby	2008-05-30	14	14	1
 bcrosby	2010-07-23	44	38	0
 bcrosby	2010-07-24	15	13	0
 bcrosby	2010-07-25	33	21	0
@@ -5700,6 +6885,19 @@ bcrosby	2012-07-06	1	1	0
 bdiscoe	2013-01-26	1	0	0
 bdiscoe	2013-02-25	28	1	0
 bdiscoe	2013-02-26	45	3	0
+bdiscoe	2015-12-06	2457	663	0
+bdiscoe	2015-12-09	231	74	0
+bdiscoe	2015-12-10	96	40	0
+bdiscoe	2015-12-11	185	41	0
+bdiscoe	2015-12-12	353	74	0
+bdiscoe	2015-12-13	224	12	0
+bdiscoe	2015-12-14	318	30	0
+bdiscoe	2015-12-17	707	39	0
+bdiscoe	2015-12-21	57	8	0
+bdiscoe	2015-12-24	98	28	0
+bdiscoe	2015-12-25	4	1	0
+bdiscoe	2016-01-02	90	2	0
+bdiscoe	2016-01-04	111	51	0
 bdonn	2012-03-23	2	1	0
 bdustan	2009-11-08	6	4	0
 bdustan	2009-11-09	15	0	0
@@ -5803,9 +7001,11 @@ bdustan	2014-05-16	1	0	0
 bdustan	2014-07-26	146	40	0
 bdustan	2014-07-27	6	4	0
 bdustan	2014-07-28	1	0	0
+bdustan	2015-07-05	33	16	0
 beaches182	2010-09-24	1	1	0
 berniejconnors	2013-01-29	2	1	0
 berniejoconnors	2010-07-27	1	0	0
+besmirzanaj	2015-05-17	23	19	0
 beweta	2011-02-05	56	10	0
 beweta	2012-06-01	1	0	0
 beweta	2013-08-05	6	0	0
@@ -5822,8 +7022,10 @@ bgibbard	2010-09-29	3	2	0
 bgibbard	2010-09-30	12	0	0
 bgolder	2013-11-06	4	4	0
 bhaskarm	2014-05-28	1	0	0
+bibs	2015-11-09	5	2	0
 bigfoot2	2013-05-05	3	3	0
 billmccollam	2009-01-08	66	0	0
+birdspider	2015-12-24	2	0	0
 birdy0127	2012-12-09	3	3	0
 bitcoinlimo	2013-12-04	1	1	0
 bjg	2008-12-23	97	0	0
@@ -5831,11 +7033,12 @@ blainer	2012-07-22	1	1	0
 blaster2004	2012-04-08	2	1	0
 blocaway	2012-05-25	4	1	0
 blucht	2014-03-02	1	0	0
-bmo	2009-05-10	13	11	0
+bmo	2009-05-10	13	11	1
 boboboy	2014-12-11	3	1	0
 boddhi	2009-10-13	1	1	0
 boringperson	2014-02-03	1	0	0
 bowen-angeles	2015-01-23	108	92	0
+bowen-angeles	2015-01-27	20	12	0
 bphennessy	2010-03-08	57	43	0
 bphennessy	2010-03-09	149	134	0
 bphennessy	2010-03-10	23	21	0
@@ -5844,53 +7047,74 @@ bphennessy	2010-03-15	72	57	0
 bphennessy	2010-06-02	26	22	0
 bphennessy	2010-06-03	2	2	0
 bradenamm	2012-03-12	1	0	0
-brandon_macuser	2009-08-07	1	1	0
-brandon_macuser	2009-12-01	27	22	0
-brandon_macuser	2009-12-05	37	34	0
-brandon_macuser	2009-12-06	1	0	0
-brandon_macuser	2011-04-07	46	46	0
-brandon_macuser	2011-04-22	7	7	0
-brandon_macuser	2011-04-25	1	1	0
-brandon_macuser	2011-05-21	1	0	0
-brandon_macuser	2011-06-10	6	5	0
-brandon_macuser	2011-10-11	81	81	0
-brandon_macuser	2012-05-24	21	1	0
-brandon_macuser	2012-05-28	2	1	0
-brandon_macuser	2012-08-24	1	1	0
-brandon_macuser	2012-08-25	2	0	0
-brandon_macuser	2012-08-26	1	1	0
-brandon_macuser	2012-10-23	1	0	0
-brandon_macuser	2013-04-22	3	1	0
-brandon_macuser	2013-09-14	103	74	0
-brandon_macuser	2013-09-18	13	0	0
-brandon_macuser	2013-09-21	155	105	0
-brandon_macuser	2013-09-24	19	10	0
-brandon_macuser	2014-04-19	54	32	0
-brandon_macuser	2014-04-29	1	0	0
-brandon_macuser	2014-05-17	28	16	0
-brandon_macuser	2014-06-15	74	24	0
+brandoncote	2009-08-07	1	1	0
+brandoncote	2009-12-01	27	22	0
+brandoncote	2009-12-05	37	34	0
+brandoncote	2009-12-06	1	0	0
+brandoncote	2011-04-07	46	46	0
+brandoncote	2011-04-22	7	7	0
+brandoncote	2011-04-25	1	1	0
+brandoncote	2011-05-21	1	0	0
+brandoncote	2011-06-10	6	5	0
+brandoncote	2011-10-11	81	81	0
+brandoncote	2012-05-24	21	1	0
+brandoncote	2012-05-28	2	1	0
+brandoncote	2012-08-24	1	1	0
+brandoncote	2012-08-25	2	0	0
+brandoncote	2012-08-26	1	1	0
+brandoncote	2012-10-23	1	0	0
+brandoncote	2013-04-22	3	1	0
+brandoncote	2013-09-14	103	74	0
+brandoncote	2013-09-18	13	0	0
+brandoncote	2013-09-21	155	105	0
+brandoncote	2013-09-24	19	10	0
+brandoncote	2014-04-19	54	32	0
+brandoncote	2014-04-29	1	0	0
+brandoncote	2014-05-17	28	16	0
+brandoncote	2014-06-15	74	24	0
+brandoncote	2015-09-21	1	1	0
+brandoncote	2015-09-28	63	29	0
+brandoncote	2015-10-16	197	42	0
+brandoncote	2016-01-08	14	13	0
 branko	2009-06-13	8	0	0
+brazelk	2015-02-11	9	9	0
+brianbancroft	2015-04-14	9	9	0
 brianegge	2014-11-29	8	0	0
 brianyyz	2013-05-07	2	2	0
 brianyyz	2014-03-25	7	1	0
 brucelum	2009-06-12	2	1	0
 brucelum	2011-12-09	7	2	0
+bshizzle	2015-11-05	17	16	0
 bsmyth77	2010-06-01	14	14	0
 bsmyth77	2010-06-05	1	1	0
+btcarcass	2015-02-17	2	2	0
 btcfindme	2013-11-24	3	2	0
 bumf	2011-01-01	1	1	0
 burgerblaster	2014-01-14	4	2	0
+bwarren	2015-03-10	1	0	0
 byppp	2013-01-23	1	0	0
 byppp	2013-01-24	25	20	0
 cMartin	2014-08-27	1	0	0
+caelyyyy	2015-11-05	64	64	0
 cahannah	2009-10-01	44	32	0
+calfarome	2015-04-01	3	0	0
+calfarome	2015-04-14	1	0	0
+calfarome	2015-05-26	2	0	0
+calfarome	2015-06-01	3	2	0
+calfarome	2015-07-13	9	4	0
+calfarome	2015-07-14	1	1	0
+calfarome	2015-07-23	1	1	0
+cameraciega	2015-02-11	6	6	0
+camiardit	2015-01-28	2	2	0
 can297216	2009-12-06	3	0	0
+can297216	2015-08-02	6	2	0
 candry	2014-08-11	7	2	0
 cartog73	2013-12-08	6	2	0
 casualspeeder	2011-04-14	474	87	0
 cat_crash	2014-02-11	76	76	0
 cat_crash	2014-02-14	36	36	0
 cathulu	2012-03-15	9	9	0
+cathulu	2015-05-30	4	1	0
 cball	2008-10-24	7	1	0
 cdrini	2013-06-27	207	44	0
 cdrini	2013-06-28	40	10	0
@@ -5899,6 +7123,7 @@ cdrini	2013-07-11	44	2	0
 cdrini	2013-07-14	69	14	0
 cdrini	2013-07-17	144	38	0
 cdrini	2013-07-18	155	34	0
+celebrimbor	2015-07-02	4	3	0
 cesartablas	2011-12-27	6	6	0
 cesartablas	2011-12-30	10	0	0
 cesartablas	2011-12-31	6	2	0
@@ -5950,6 +7175,14 @@ cgu66	2013-02-26	1	0	0
 cgu66	2013-02-27	38	19	0
 cgu66	2013-03-18	4	0	0
 cgu66	2013-03-19	2	0	0
+cgu66	2015-04-24	1	0	0
+cgu66	2015-05-01	1	0	0
+charlescm	2015-09-04	5	5	0
+charlescm	2015-09-10	3	0	0
+charlescm	2015-09-11	4	1	0
+charlescm	2015-09-16	85	77	0
+charlescm	2015-09-17	15	9	0
+charlescm	2015-11-17	1	0	0
 chasu	2014-01-03	1	0	0
 chasu	2014-01-13	1	0	0
 chasu	2014-01-19	1	0	0
@@ -5969,15 +7202,26 @@ chuthan20	2013-12-21	333	333	0
 ciclista	2010-10-21	2	0	0
 ciclista	2010-11-02	3	0	0
 ciclista	2010-12-11	1	0	0
+cjiang39	2015-08-13	5	5	0
+clairehhlin	2015-05-07	1	1	0
+clairehhlin	2015-05-12	2	1	0
+clairehhlin	2015-05-14	2	0	0
+clairejoswald	2015-06-03	1	1	0
 cliffansel	2013-12-01	1	0	0
 coldburner	2012-04-22	14	6	0
 coldburner	2012-04-23	30	29	0
 colindt	2014-10-25	1	0	0
+comFreeOntario	2015-06-12	16	16	0
+comFreeOntario	2015-08-05	11	11	0
+comFreeOntario	2015-08-17	10	10	0
+comFreeOntario	2015-11-26	2	2	0
 cookingwithrye	2013-09-11	1	1	0
 cookingwithrye	2013-09-22	3	3	0
 coolk13	2009-03-17	9	0	0
 courtlandlogistics	2012-04-08	1	0	0
 cptjack	2011-02-24	2	0	0
+crankycoder	2015-06-18	10	10	0
+crantila	2015-08-25	4	3	0
 crazycanuck	2014-08-11	8	8	0
 crinner	2011-05-29	8	3	0
 crinner	2011-06-01	1	0	0
@@ -6001,9 +7245,15 @@ cubitboy	2014-05-11	12	1	0
 cubitboy	2014-07-26	6	4	0
 cubitboy	2014-09-17	2	1	0
 cubitboy	2014-09-18	2	0	0
+cubitboy	2015-10-08	1	0	0
 cusipags	2015-01-21	20	17	0
+cusipags	2015-02-03	34	34	0
+cusipags	2015-02-04	38	38	0
+cusipags	2015-02-05	1	1	0
 cwds	2012-03-07	39	32	0
 daddytroy	2015-01-23	5	5	0
+daddytroy	2015-01-27	2	2	0
+daddytroy	2015-01-28	1	1	0
 daganzdaanda	2013-09-11	117	88	0
 daganzdaanda	2014-03-04	135	49	0
 daganzdaanda	2014-07-22	163	20	0
@@ -6031,14 +7281,25 @@ dalmond	2014-01-06	15	8	0
 dalmond	2014-01-07	1	0	0
 dalmond	2014-01-11	1	0	0
 dalmond	2015-01-08	5	5	0
+dalmond	2015-08-26	1	1	0
+dalmond	2015-09-05	4	0	0
 daltux	2012-06-26	1	0	0
 daniel of sarnia	2009-03-16	30	12	0
+danielloo123	2015-01-27	11	11	0
 danielsnider	2011-02-19	2	2	0
 dannykath	2014-10-02	1	0	0
+dannykath	2015-05-26	3	0	0
+dannykath	2015-07-14	1	0	0
+dannykath	2015-07-15	2	1	0
+dannykath	2015-07-22	5	4	0
+dannykath	2015-07-23	2	0	0
+dannykath	2015-07-24	1	1	0
+dannykath	2015-09-09	4	4	0
+dannykath	2015-09-10	10	10	0
 dannyp2	2014-03-02	6	6	0
-darkcore	2008-12-14	7317	1509	1
-darkcore	2008-12-15	19180	3230	19
-darkcore	2008-12-16	11423	1298	20
+darkcore	2008-12-14	7317	1509	3
+darkcore	2008-12-15	19180	3230	16
+darkcore	2008-12-16	11423	1298	17
 darkcore	2008-12-17	9578	1359	10
 darkcore	2008-12-19	3711	679	0
 darkcore	2008-12-20	2315	484	0
@@ -6047,6 +7308,7 @@ darkcore	2009-01-02	55	13	0
 darkcore	2009-01-27	400	55	0
 darkcore	2009-04-13	406	41	0
 davebooth	2010-03-09	1	0	0
+davefleet	2015-10-17	1	0	0
 davemcgee	2012-05-07	50	49	0
 davemcgee	2012-05-08	154	154	0
 davemcgee	2012-05-17	12	12	0
@@ -6054,33 +7316,46 @@ davidearl	2007-11-28	8	0	0
 davxie	2013-05-04	13	13	0
 dawson66	2012-10-30	18	18	0
 dawson66	2012-11-01	15	15	0
+dbaron	2015-08-12	16	13	0
 dbonar	2011-06-26	12	12	0
 dchiles	2013-02-10	1	0	0
 dcranston	2011-10-15	4	3	0
 dcs	2011-03-04	117	0	0
+dcwalk	2015-03-11	21	8	0
+dcwalk	2015-03-12	31	19	0
+dcwalk	2015-03-14	44	16	0
+dcwalk	2015-03-15	12	4	0
+dcwalk	2015-03-24	13	10	0
+ddkto	2015-09-25	1	0	0
 deedubs	2013-04-15	2	0	0
 deedubs	2013-04-16	8	5	0
+deejoe	2015-05-17	58	58	0
 defence5	2012-02-11	1	1	0
 deleisten	2014-04-17	77	72	0
+developingcountries	2015-12-04	1	1	0
 dforsi	2009-09-05	1	0	0
 dforsi	2014-07-07	1	0	0
 dhill_ne	2014-01-06	4	0	0
 dhill_ne	2014-01-07	1	1	0
+digicult	2015-08-07	3	0	0
 digital0533	2014-03-23	4	0	0
 din1	2014-02-15	1	1	0
 dipaolojames	2011-06-11	15	7	0
 dirt simple	2013-11-14	2	0	0
 dirt simple	2014-04-27	97	97	0
 discoduck	2013-03-24	9	5	0
+dk_hk	2015-07-17	1	0	0
 dkwolf	2014-01-23	30	14	0
 dmalloc	2012-04-08	1	0	0
 dmccubbing	2011-08-04	4	0	0
 dmccubbing	2014-05-14	4	1	0
 dmetcalf8	2014-01-05	16	11	0
 dmetcalf8	2014-01-14	15	15	0
-dmgroom	2006-11-02	3	3	2
+dmetcalf8	2015-02-16	13	12	0
+dmgroom	2006-11-02	3	3	1
 dmitrit2811	2013-04-08	5	2	0
 dmok	2013-05-07	6	6	0
+dndrew	2015-05-21	1	1	0
 dogblog	2012-06-26	56	47	0
 dommage	2013-11-07	33	8	0
 don-vip	2011-06-03	4	0	0
@@ -6099,6 +7374,8 @@ dtcoffey	2014-05-13	1	1	0
 dudecof	2014-05-22	3	2	0
 dwood	2009-10-04	17	17	0
 dywdaniel	2013-10-07	30	23	0
+dywdaniel	2015-07-27	5	4	0
+dywdaniel	2015-08-02	6	4	0
 e borgnine	2014-06-20	7	7	0
 e borgnine	2014-06-22	16	16	0
 e borgnine	2014-06-23	19	0	0
@@ -6143,6 +7420,14 @@ e borgnine	2014-09-18	6	6	0
 e borgnine	2014-09-30	5	5	0
 e borgnine	2014-10-03	8	8	0
 e borgnine	2014-10-07	9	9	0
+e borgnine	2015-05-09	3	2	0
+e borgnine	2015-05-15	4	4	0
+e borgnine	2015-05-22	2	2	0
+e borgnine	2015-06-25	8	8	0
+e borgnine	2015-06-26	11	11	0
+e borgnine	2015-06-27	1	1	0
+e borgnine	2015-07-16	3	3	0
+eLamented	2015-04-24	3	1	0
 e_borgnine	2008-08-27	27	25	0
 e_borgnine	2008-10-07	39	0	0
 e_borgnine	2008-10-28	2	0	0
@@ -6175,11 +7460,15 @@ e_borgnine	2014-09-09	6	0	0
 e_borgnine	2014-09-10	12	2	0
 e_borgnine	2014-09-16	10	10	0
 e_borgnine	2014-09-18	22	11	0
+e_borgnine	2015-05-15	5	4	0
 eamkeu	2012-03-20	1	0	0
 eastpole	2012-07-18	18	13	0
 eastpole	2014-03-22	6	4	0
 eastpole	2015-01-16	1	0	0
 eastpole	2015-01-19	1	0	0
+eastpole	2015-02-04	7	7	0
+eastpole	2015-02-23	1	0	0
+eastpole	2015-07-07	1	0	0
 ebe1234	2013-06-19	8	5	0
 ebrelsford	2013-01-26	1	0	0
 echo7	2008-08-16	150	136	0
@@ -6187,7 +7476,7 @@ echo7	2008-08-21	57	48	0
 echo7	2008-08-24	151	131	0
 echo7	2008-08-29	168	109	0
 echo7	2008-08-31	31	26	0
-echo7	2008-09-04	399	380	4
+echo7	2008-09-04	399	380	3
 echo7	2008-09-06	16	14	0
 echo7	2008-09-15	67	66	0
 echo7	2008-09-19	7	5	0
@@ -6195,6 +7484,13 @@ ecomap	2011-10-06	1	1	0
 edge2003	2013-12-06	3	3	0
 ediyes	2014-10-31	1	0	0
 ediyes	2015-01-16	1	0	0
+ediyes	2015-05-28	1	1	0
+ediyes	2015-07-14	1	1	0
+ediyes	2015-07-22	1	1	0
+ediyes	2015-07-23	10	10	0
+ediyes	2015-07-24	1	1	0
+ediyes	2015-08-26	1	0	0
+ediyes	2015-09-09	2	2	0
 edred	2012-05-03	27	27	0
 edred	2012-05-04	539	536	0
 edred	2012-05-07	16	15	0
@@ -6204,6 +7500,8 @@ edred	2012-05-10	15	0	0
 edred	2012-05-13	65	63	0
 edred	2013-07-08	1	1	0
 edred	2013-07-12	29	13	0
+eharason	2015-11-06	1	1	0
+eharason	2015-11-09	1	1	0
 eightlines	2013-05-11	1	1	0
 elbatrop	2013-03-27	1	1	0
 elbatrop	2013-06-16	1	1	0
@@ -6226,6 +7524,7 @@ ennick	2013-01-18	24	17	0
 ennick	2013-01-19	17	9	0
 ennick	2013-01-21	6	2	0
 equidor	2013-08-09	2	2	0
+erichboyer	2015-12-22	1	1	0
 erjiang	2013-01-30	2	2	0
 erockafella	2011-12-09	2	2	0
 errt	2010-06-06	1	0	0
@@ -6264,9 +7563,14 @@ fbax	2014-02-05	11	11	0
 fbax	2014-05-31	67	49	0
 fbax	2014-06-05	2	2	0
 fbax	2014-07-06	16	7	0
+fbax	2015-06-21	50	47	0
+fbax	2015-10-11	37	37	0
+fbax	2015-10-13	21	19	0
 fbirsan	2013-01-21	3	3	0
 fche	2011-04-29	26	7	0
 fche	2012-05-12	2	2	0
+fche	2015-09-21	3	0	0
+fche	2015-10-07	2	0	0
 fdrogue	2014-08-15	2	1	0
 feeei	2014-01-05	3	1	0
 felixcrux	2014-01-05	16	15	0
@@ -6276,6 +7580,7 @@ fidofrog	2009-01-23	50	0	0
 filk	2008-09-10	36	36	0
 filk	2008-09-20	6	6	0
 filk	2008-10-22	82	0	0
+fillupontacos	2015-09-15	91	58	0
 firetrove	2013-03-16	1	1	0
 firetrove	2013-03-19	1	1	0
 firetrove	2013-04-01	2	0	0
@@ -6284,6 +7589,14 @@ firetrove	2013-06-07	10	5	0
 firetrove	2013-06-11	1	0	0
 firetrove	2013-06-16	2	1	0
 firetrove	2013-06-18	7	3	0
+flickzz	2015-02-17	1	0	0
+flierfy	2015-03-30	170	76	0
+flierfy	2015-04-01	844	645	0
+flierfy	2015-04-02	92	57	0
+flierfy	2015-04-03	223	109	0
+flierfy	2015-04-04	40	31	0
+flierfy	2015-04-05	27	26	0
+flierfy	2015-06-14	5	5	0
 foamy	2013-04-26	2	1	0
 francisco	2010-08-07	37	0	0
 freietonne-db	2009-11-12	2	0	0
@@ -6294,6 +7607,8 @@ fuego	2009-08-27	10	1	0
 fuego	2012-10-17	222	222	0
 fuego	2013-10-20	243	217	0
 fuego	2014-10-19	26	25	0
+fuego	2015-11-18	161	161	0
+fuego	2015-12-25	7	7	0
 fx99	2012-03-29	5	0	0
 fx99	2013-01-19	2	1	1
 fx99	2013-02-17	18	2	0
@@ -6310,11 +7625,17 @@ fx99	2013-05-30	3	0	0
 fx99	2013-06-16	1	0	0
 fx99	2014-06-20	1	0	0
 fx99	2014-08-21	1	1	0
+fx99	2015-02-01	24	8	0
+fx99	2015-10-17	9	5	0
 gadgetChris	2012-09-10	10	2	0
+garagedoorrepairtoronto	2015-09-21	1	1	0
 gatezh	2014-12-02	6	2	0
+gatezh	2016-01-10	48	48	0
 gbrauen	2015-01-04	91	34	0
 gbrauen	2015-01-19	2	0	0
 gbrauen	2015-01-21	7	1	0
+gbrauen	2015-09-14	15	1	0
+gbrauen	2015-09-15	6	2	0
 gcamp	2013-06-23	10	8	0
 gcamp	2013-06-24	3	0	0
 gcamp	2013-07-01	2	2	0
@@ -6324,12 +7645,17 @@ gcamp	2014-05-03	10	5	0
 gcamp	2014-05-13	11	10	0
 gcamp	2014-10-09	1	1	0
 gcamp	2015-01-02	2	1	0
-geobase_stevens	2009-04-25	212	212	1
-geobase_stevens	2009-05-07	23074	23074	85
+gcamp	2015-01-26	6	5	0
+gcamp	2015-09-21	4	4	0
+gcamp	2015-10-02	1	1	0
+geo241Rinner	2015-01-28	3	3	0
+geobase_stevens	2009-04-25	212	212	0
+geobase_stevens	2009-05-07	23074	23074	95
 geobase_stevens	2009-05-17	13322	13322	0
 geobase_stevens	2009-05-18	1927	1927	0
 geobase_stevens	2009-05-31	1270	1270	0
-geobase_stevens	2009-06-01	29948	29948	24
+geobase_stevens	2009-06-01	29948	29948	28
+geobirder	2015-09-16	1	0	0
 geoexpert	2014-03-03	15	9	0
 geotandem	2012-12-19	12	12	0
 geotandem	2012-12-20	15	4	0
@@ -6342,16 +7668,24 @@ giggls	2014-05-11	1	0	0
 gis_todd	2010-05-09	11	2	0
 gislive	2012-03-18	2	2	0
 gkphoto	2013-08-11	22	6	0
+gkphoto	2015-07-26	1	0	0
+gkphoto	2015-12-04	2	1	0
+gktoronto	2015-02-19	11	8	0
+gktoronto	2015-04-23	1	0	0
+glglgl	2015-10-03	3	0	0
 globeho	2012-09-01	2	2	0
 gopherby	2009-06-19	2	2	0
 gormur	2010-10-27	1	0	0
 gormur	2012-06-05	1	0	0
 gormur	2012-06-30	1	0	0
 gormur	2013-03-12	1	0	0
+gormur	2015-05-12	1	0	0
 gorn	2013-05-22	5	1	0
+gpross	2015-03-13	1	1	0
+gpross	2015-03-16	1	1	0
+gpross	2015-10-28	9	4	0
 gra9000	2010-04-28	50	30	0
 gra9000	2011-12-30	3	1	0
-green-explorer	2013-10-16	9	3	0
 gregsmith_to	2011-12-30	62	61	0
 gregsmith_to	2012-01-01	53	53	0
 gregsmith_to	2012-01-07	3	3	0
@@ -6386,7 +7720,7 @@ hasmis	2007-10-17	56	27	0
 hasmis	2007-10-19	301	213	1
 hasmis	2007-10-20	84	33	0
 hasmis	2007-10-21	111	50	0
-hasmis	2007-10-22	112	62	6
+hasmis	2007-10-22	112	62	4
 hasmis	2007-11-01	149	78	0
 hasmis	2009-02-06	253	1	0
 hasmis	2009-02-07	393	0	0
@@ -6413,37 +7747,39 @@ hfann	2011-09-24	2	2	0
 hfs	2013-01-23	1	0	0
 hhart	2012-03-17	3	3	0
 hhart	2013-03-08	3	3	0
-historybuff	2007-07-21	73	73	3
+highflyer74	2015-11-23	1	0	0
+highpotential	2015-04-21	1	0	0
+historybuff	2007-07-21	73	73	4
 historybuff	2007-07-22	73	73	3
-historybuff	2007-07-23	6	6	0
+historybuff	2007-07-23	6	6	1
 historybuff	2007-07-29	52	52	0
 historybuff	2007-08-01	15	15	0
 historybuff	2007-08-02	15	15	0
 historybuff	2007-08-07	5	5	0
 historybuff	2007-08-08	1	1	0
-historybuff	2007-08-17	20	20	2
-historybuff	2007-08-19	51	51	4
-historybuff	2007-08-20	7	7	3
+historybuff	2007-08-17	20	20	3
+historybuff	2007-08-19	51	51	8
+historybuff	2007-08-20	7	7	1
 historybuff	2007-08-21	32	32	1
-historybuff	2007-08-24	60	60	1
+historybuff	2007-08-24	60	60	2
 historybuff	2007-08-27	29	29	4
-historybuff	2007-08-30	13	13	3
+historybuff	2007-08-30	13	13	4
 historybuff	2007-09-01	2	2	0
 historybuff	2007-09-02	1	1	0
-historybuff	2007-09-04	146	146	7
-historybuff	2007-09-05	34	34	1
+historybuff	2007-09-04	146	146	8
+historybuff	2007-09-05	34	34	0
 historybuff	2007-09-08	51	51	2
 historybuff	2007-09-09	145	145	1
-historybuff	2007-09-10	95	95	4
-historybuff	2007-09-11	125	125	0
+historybuff	2007-09-10	95	95	6
+historybuff	2007-09-11	125	125	1
 historybuff	2007-09-14	21	21	0
 historybuff	2007-09-15	19	19	0
 historybuff	2007-09-16	16	16	0
 historybuff	2007-09-17	1	1	0
 historybuff	2007-09-20	61	61	4
 historybuff	2007-09-23	72	72	0
-historybuff	2007-09-26	182	182	5
-historybuff	2007-10-02	117	117	4
+historybuff	2007-09-26	182	182	6
+historybuff	2007-10-02	117	117	3
 historybuff	2007-10-11	12	7	0
 historybuff	2007-10-12	2	1	0
 historybuff	2007-10-14	9	4	0
@@ -6464,7 +7800,7 @@ historybuff	2008-11-14	95	5	0
 historybuff	2008-11-17	525	0	0
 historybuff	2008-11-19	40	11	0
 historybuff	2008-11-30	27	5	0
-historybuff	2008-12-04	46	17	1
+historybuff	2008-12-04	46	17	0
 historybuff	2008-12-05	152	12	0
 historybuff	2008-12-10	20	6	0
 historybuff	2009-01-22	53	0	0
@@ -6482,25 +7818,22 @@ hobbesvsboyle	2013-11-04	11	1	0
 holey_moley	2014-03-02	1	0	0
 horemans	2010-04-11	1	1	0
 hottentotte1	2013-05-02	14	11	0
-hugi	2013-01-26	6	1	0
-hugi	2013-01-29	18	1	0
-hugi	2013-02-06	1	0	0
 iamjwe	2012-08-29	29	21	0
 iamsputnik	2014-11-24	1	0	0
-idarwin	2007-07-07	7	7	6
-idarwin	2007-07-12	13	13	8
-idarwin	2007-07-15	43	43	21
-idarwin	2007-07-23	18	18	1
-idarwin	2007-07-24	25	25	7
+idarwin	2007-07-07	7	7	5
+idarwin	2007-07-12	13	13	6
+idarwin	2007-07-15	43	43	20
+idarwin	2007-07-23	18	18	4
+idarwin	2007-07-24	25	25	5
 idarwin	2007-07-25	8	8	0
-idarwin	2007-07-27	10	10	1
+idarwin	2007-07-27	10	10	0
 idarwin	2007-07-30	4	4	1
 idarwin	2007-08-01	7	7	0
-idarwin	2007-08-02	6	6	5
+idarwin	2007-08-02	6	6	3
 idarwin	2007-08-03	12	12	3
 idarwin	2007-08-06	3	3	1
-idarwin	2007-08-13	39	39	17
-idarwin	2007-08-16	46	46	21
+idarwin	2007-08-13	39	39	18
+idarwin	2007-08-16	46	46	17
 idarwin	2007-08-17	23	23	0
 idarwin	2009-07-25	4	2	0
 idarwin	2009-08-01	1	1	0
@@ -6509,7 +7842,7 @@ idarwin	2009-08-04	3	1	0
 idarwin	2009-08-05	2	2	0
 idarwin	2009-08-13	31	30	0
 idarwin	2009-08-15	8	8	0
-idarwin	2010-01-24	26	25	1
+idarwin	2010-01-24	26	25	2
 idarwin	2010-02-03	13	13	0
 idarwin	2010-06-08	36	32	0
 idarwin	2010-06-14	9	5	0
@@ -6521,13 +7854,16 @@ idarwin	2011-02-22	64	64	0
 idarwin	2011-02-24	47	41	0
 idarwin	2011-03-03	54	45	0
 iiiAndrew	2015-01-21	3	3	0
+ikeico	2015-02-20	1	1	0
 ilporcellino	2013-10-09	1	1	0
 incaren	2014-08-11	4	4	0
 indigomc	2013-03-08	1	0	0
+info4oleg	2015-08-14	1	1	0
 infoconsol	2013-04-30	9	6	0
 ingalls	2013-10-25	451	451	0
 instance	2009-05-03	1	0	0
 insureye	2012-10-17	1	1	0
+interchange42	2015-07-01	14	0	0
 intomapsguy	2013-09-25	2	2	0
 introcaso	2012-03-01	41	20	0
 introcaso	2012-03-02	24	3	0
@@ -6542,12 +7878,66 @@ jackofatrade	2010-05-09	7	3	0
 jackofatrade	2010-05-26	2	2	0
 jackofatrade	2010-06-13	44	33	0
 jackofatrade	2010-06-17	6	4	0
+jackofatrade	2015-11-23	3	0	0
 jackterry	2014-08-10	31	25	0
 jackterry	2014-08-11	1	0	0
 jadrzew	2014-06-13	1	1	0
 jadrzew	2014-08-04	13	11	0
+jailallt	2015-01-29	1	1	0
+jailallt	2015-01-30	8	4	0
+jailallt	2015-02-01	85	85	0
 jalsop	2011-06-05	18	0	0
 jamaps	2015-01-02	1	1	0
+jamaps	2015-02-15	7	5	0
+jamaps	2015-02-17	2	2	0
+jamaps	2015-02-22	56	30	0
+jamaps	2015-02-23	65	16	0
+jamaps	2015-02-25	1	0	0
+jamaps	2015-02-26	3	0	0
+jamaps	2015-02-27	28	3	0
+jamaps	2015-03-09	22	9	0
+jamaps	2015-03-10	2	0	0
+jamaps	2015-03-14	6	0	0
+jamaps	2015-04-18	1	0	0
+jamaps	2015-04-20	15	4	0
+jamaps	2015-04-23	24	2	0
+jamaps	2015-04-25	36	12	0
+jamaps	2015-04-27	2	0	0
+jamaps	2015-05-01	13	0	0
+jamaps	2015-05-03	5	1	0
+jamaps	2015-05-10	4	0	0
+jamaps	2015-05-14	3	0	0
+jamaps	2015-06-09	2	1	0
+jamaps	2015-06-24	7	1	0
+jamaps	2015-07-19	9	6	0
+jamaps	2015-07-29	1	1	0
+jamaps	2015-08-08	1	0	0
+jamaps	2015-08-11	23	2	0
+jamaps	2015-08-13	15	15	0
+jamaps	2015-08-14	3	0	0
+jamaps	2015-08-15	38	3	0
+jamaps	2015-08-21	7	1	0
+jamaps	2015-09-05	44	36	0
+jamaps	2015-09-07	16	1	0
+jamaps	2015-09-15	2	0	0
+jamaps	2015-09-23	33	11	0
+jamaps	2015-09-27	3	0	0
+jamaps	2015-09-30	19	8	0
+jamaps	2015-10-09	1	1	0
+jamaps	2015-10-11	20	3	0
+jamaps	2015-10-16	18	4	0
+jamaps	2015-10-21	28	12	0
+jamaps	2015-10-24	90	22	0
+jamaps	2015-10-25	37	31	0
+jamaps	2015-10-27	36	28	0
+jamaps	2015-10-28	2	0	0
+jamaps	2015-10-29	17	7	0
+jamaps	2015-11-04	100	85	0
+jamaps	2015-11-05	2	0	0
+jamaps	2015-11-07	39	15	0
+jamaps	2015-11-16	28	9	0
+jamaps	2015-11-20	16	16	0
+jamaps	2015-11-23	28	20	0
 january2	2013-10-19	1	1	0
 january2	2013-11-30	4	1	0
 january2	2013-12-23	3	3	0
@@ -6562,10 +7952,18 @@ january2	2014-11-11	2	1	0
 january2	2014-11-13	2	0	0
 january2	2014-11-17	2	1	0
 january2	2014-11-27	1	0	0
+january2	2015-02-18	1	1	0
+january2	2015-03-09	1	0	0
+january2	2015-03-11	1	1	0
+january2	2015-10-04	11	11	0
 jbowes	2008-01-24	2	2	0
+jc67	2015-08-11	2	0	0
+jc67	2015-08-21	2	0	0
 jclevine	2013-09-25	1	1	0
 jderrac	2014-11-10	2	0	0
 jderrac	2014-11-20	1	0	0
+jderrac	2015-07-30	8	4	0
+je15	2015-03-12	4	4	0
 jedirock	2012-11-03	2	1	0
 jeffnorman	2009-09-06	11	0	0
 jekjek1989	2011-02-19	2	2	0
@@ -6576,6 +7974,10 @@ jgpacker	2014-05-01	5	0	0
 jgrnt	2014-01-11	1	0	0
 jhao	2010-10-04	1	1	0
 jijeshdevan	2012-03-08	2	1	0
+jinalfoflia	2015-08-21	320	305	0
+jinalfoflia	2015-09-04	51	51	0
+jinhr	2015-11-25	32	31	0
+jinjawyas	2015-09-30	8	0	0
 jjjchang	2009-11-21	1	1	0
 jjjchang	2011-01-31	1	1	0
 jjthed	2013-09-27	5	4	0
@@ -6586,6 +7988,7 @@ joetek	2012-03-16	25	12	0
 joeyxl	2008-11-19	59	0	0
 johnarobb	2012-04-12	13	13	0
 johnekerr	2012-02-07	21	20	0
+johnekerr	2015-08-23	64	61	0
 johnlancia	2010-12-18	3	0	0
 johnpatchell	2013-02-08	4	2	0
 johnpatchell	2014-11-09	66	43	0
@@ -6607,6 +8010,7 @@ jorge_o	2013-02-18	10	1	0
 jorge_o	2013-02-24	5	0	0
 jorge_o	2013-02-25	17	2	0
 jorge_o	2013-03-03	2	0	0
+josephmelnick	2015-04-07	1	0	0
 josh charles	2012-03-18	1	1	0
 joshparnham	2013-02-01	1	0	0
 jot	2013-01-26	2	2	0
@@ -6618,13 +8022,27 @@ jshannon00	2014-01-15	10	1	0
 jumbanho	2010-11-04	1	0	0
 jumbanho	2014-07-09	2	2	0
 jumbanho	2015-01-24	4	3	0
+jumbanho	2015-06-12	42	29	0
+jumbanho	2015-09-08	46	35	0
+jumbanho	2015-09-12	1	1	0
+jumbanho	2015-09-19	1	1	0
 junctionman	2012-04-05	9	9	0
+junctionman	2015-06-26	14	9	0
 jvd897	2014-11-16	1	0	0
 jwa56	2013-03-18	1	0	0
 jwebb	2014-09-03	1	0	0
 jwheler	2013-02-24	1	1	0
 jwm1	2011-01-06	2	1	0
 kareemr	2015-01-21	7	5	0
+karitotp	2015-04-23	14	9	0
+karitotp	2015-05-28	1	0	0
+karitotp	2015-07-13	11	9	0
+karitotp	2015-07-14	1	1	0
+karitotp	2015-07-16	1	1	0
+karitotp	2015-07-24	1	1	0
+karitotp	2015-08-31	1	1	0
+karitotp	2015-09-01	2	2	0
+karitotp	2015-09-08	1	1	0
 kartler175	2012-12-17	38	27	0
 kartler175	2013-08-26	60	25	0
 kartler175	2013-09-07	13	3	0
@@ -6659,6 +8077,21 @@ kartler175	2014-08-11	1	0	0
 kartler175	2014-08-29	14	13	0
 kartler175	2014-09-26	6	3	0
 kartler175	2014-10-28	3	2	0
+kartler175	2015-02-08	4	0	0
+kartler175	2015-03-14	5	4	0
+kartler175	2015-03-24	7	5	0
+kartler175	2015-05-05	130	72	0
+kartler175	2015-05-06	26	26	0
+kartler175	2015-05-24	7	5	0
+kartler175	2015-06-23	1	0	0
+kartler175	2015-06-30	2	1	0
+kartler175	2015-07-10	4	0	0
+kartler175	2015-08-10	1	0	0
+kartler175	2015-08-22	38	4	0
+kartler175	2015-08-25	1	0	0
+kartler175	2015-09-07	1	1	0
+kartler175	2015-09-15	3	0	0
+kartler175	2015-11-06	6	0	0
 kay_D	2011-07-31	1	1	0
 kay_D	2011-08-04	1	0	0
 kay_D	2011-08-20	16	12	0
@@ -6666,23 +8099,50 @@ kay_D	2011-10-04	2	0	0
 kay_D	2011-11-13	3	1	0
 kay_D	2012-02-17	18	5	0
 kay_D	2013-02-22	7	4	0
+kbehrouz	2015-05-26	1	1	0
 ken107	2012-12-17	7	4	0
 ken107	2013-03-25	5	5	0
 kenship	2011-07-18	2	1	0
-keverets	2007-11-28	4	3	0
+keverets	2007-11-28	4	3	1
 keverets	2007-12-05	1	0	0
 keverets	2011-09-22	5	3	0
 keverets	2011-09-23	8	3	0
 keverets	2012-08-14	11	11	0
 keverets	2014-07-18	4	2	0
+keverets	2015-02-23	16	14	0
+keverets	2015-02-24	2	2	0
+keverets	2015-03-04	1	0	0
+keverets	2015-03-26	1	0	0
+keverets	2015-06-04	1	1	0
+keverets	2015-07-22	1	1	0
+keverets	2015-08-17	10	5	0
+keverets	2015-08-18	2	2	0
+keverets	2015-08-25	11	7	0
+keverets	2015-08-26	2	1	0
+keverets	2015-08-28	5	1	0
+keverets	2015-09-02	2	0	0
+keverets	2015-12-01	2	2	0
 kevincox	2013-06-20	35	6	0
+kguercin	2015-01-26	11	10	0
 khalidabdalla	2015-01-14	2	1	0
+kimmiemgreen	2015-12-04	19	19	0
 kimpham54	2013-03-08	7	7	0
+kippkuchera	2015-02-07	12	8	0
+kippkuchera	2015-06-12	27	23	0
+kippkuchera	2015-10-16	6	6	0
+kippkuchera	2015-10-26	17	17	0
+kisaa	2015-05-21	2	0	0
+kisaa	2015-05-22	8	0	0
+kisaa	2015-05-23	9	0	0
+kisaa	2015-05-24	2	0	0
+kisaa	2015-05-26	2	0	0
+kkana7	2015-02-04	29	28	0
 kkellam	2012-10-30	4	4	0
 kkogan	2009-08-19	22	3	0
 klovatt	2009-02-24	135	1	0
 ksim	2009-02-27	89	1	0
 ksim	2011-12-18	1	0	0
+kuttab1973	2015-10-06	1	0	0
 l_ugray	2014-06-23	1	0	0
 lachrimae	2014-02-16	1	1	0
 lamphanviet	2014-05-07	18	11	0
@@ -6723,7 +8183,6 @@ leuty	2013-02-14	3	1	0
 leuty	2013-02-21	11	0	0
 leuty	2013-02-23	43	11	0
 leuty	2013-02-26	2	0	0
-levacher	2014-10-14	27	14	0
 li li	2010-12-15	6	5	0
 ligabrr	2014-04-26	7	4	0
 lizwang	2014-07-09	1	0	0
@@ -6733,12 +8192,21 @@ ljjwfr	2014-04-07	24	24	0
 ljjwfr	2014-05-26	3	3	0
 ljjwfr	2014-10-23	10	10	0
 ljjwfr	2014-12-31	9	9	0
+ljjwfr	2015-08-25	10	6	0
+ljjwfr	2015-08-26	5	5	0
+ljjwfr	2015-10-14	55	55	0
+ljjwfr	2015-10-20	10	10	0
+ljjwfr	2015-11-02	5	1	0
+ljjwfr	2015-11-03	47	32	0
+ljjwfr	2015-12-14	6	6	0
+ljjwfr	2015-12-18	5	2	0
 lmandel	2011-05-19	6	3	0
 lmandel	2011-05-20	6	0	0
 lobotiger	2010-06-01	3	1	0
 lobotiger	2010-06-04	5	5	0
 localsearchguy	2014-03-28	2	1	0
 localsearchguy	2014-04-07	1	0	0
+localsearchguy	2015-06-12	1	0	0
 lodhy	2014-09-27	1	0	0
 logrady	2013-09-12	1	0	0
 logrady	2013-09-14	17	7	0
@@ -6750,17 +8218,50 @@ logrady	2013-11-20	1	1	0
 logrady	2014-08-09	3	3	0
 logrady	2014-09-03	2	1	0
 logrady	2014-09-06	7	6	0
+logrady	2015-07-07	1	1	0
+logrady	2015-07-08	4	3	0
+logrady	2015-07-15	5	4	0
+logrady	2015-07-30	1	0	0
+logrady	2015-07-31	1	0	0
+logrady	2015-08-01	17	13	0
+logrady	2015-08-02	3	0	0
+logrady	2015-08-25	1	1	0
+logrady	2015-08-29	11	10	0
+logrady	2015-09-01	5	0	0
+logrady	2015-09-02	4	1	0
+logrady	2015-09-03	12	8	0
+logrady	2015-09-04	8	5	0
+logrady	2015-09-05	1	0	0
+logrady	2015-09-09	3	1	0
+logrady	2015-09-10	2	0	0
+logrady	2015-09-11	2	0	0
+logrady	2015-09-12	3	2	0
+logrady	2015-09-13	1	0	0
+logrady	2015-09-15	9	7	0
+logrady	2015-09-30	2	2	0
+logrady	2015-10-14	1	1	0
+logrady	2015-11-01	1	0	0
+logrady	2016-01-12	1	0	0
 lokejul	2014-05-24	10	10	0
 lokejul	2014-07-22	22	16	0
 lokejul	2014-08-31	104	80	0
 lokejul	2014-12-07	47	6	0
+lokejul	2015-03-04	1	1	0
+lokejul	2015-07-09	4	3	0
+lokejul	2015-12-08	115	91	0
+lokejul	2016-01-06	9	6	0
+lokejul	2016-01-09	81	40	0
+lokejul	2016-01-11	113	27	0
 louipc	2012-03-12	14	9	0
+louipc	2015-07-08	2	0	0
+louisk42	2015-03-11	2	2	0
 loxcel	2012-05-05	6	6	0
 lpetrazickis	2010-03-10	2	0	0
 lucygilbert	2015-01-14	1	1	0
 lukechristy	2013-11-11	316	39	0
 lumpinator	2014-04-30	1	1	0
 lumpinator	2014-05-03	1	0	0
+luschi	2015-04-15	2	2	0
 m4p3r9347	2010-06-17	1	0	0
 maTH5M2b	2013-07-05	4	3	0
 maTH5M2b	2013-08-15	49	49	0
@@ -6768,85 +8269,59 @@ maTH5M2b	2013-08-17	27	27	0
 maTH5M2b	2013-08-18	43	43	0
 maTH5M2b	2013-08-21	10	10	0
 maTH5M2b	2013-08-24	1	0	0
-macboy97	2009-12-05	58	30	0
-macboy97	2009-12-06	402	276	0
-macboy97	2009-12-07	82	72	0
-macboy97	2009-12-10	1	0	0
-macboy97	2009-12-29	110	102	0
-macboy97	2009-12-31	674	422	0
-macboy97	2010-01-01	572	502	0
-macboy97	2010-01-02	474	415	0
-macboy97	2010-01-21	37	33	0
-macboy97	2010-01-22	102	85	0
-macboy97	2010-01-23	1	0	0
-macboy97	2010-01-26	91	77	0
-macboy97	2010-01-30	4	2	0
-macboy97	2010-02-21	386	348	0
-macboy97	2010-02-22	418	313	0
-macboy97	2010-02-23	308	300	0
-macboy97	2010-02-24	164	163	0
-macboy97	2010-02-25	50	29	0
-macboy97	2010-02-26	19	19	0
-macboy97	2010-03-05	228	215	0
-macboy97	2010-03-06	170	165	0
-macboy97	2010-03-07	383	240	0
-macboy97	2010-03-08	89	82	0
-macboy97	2010-03-09	448	418	0
-macboy97	2010-03-11	348	342	0
-macboy97	2010-03-13	441	397	0
-macboy97	2010-03-14	132	128	0
-macboy97	2010-04-04	12	12	0
-macboy97	2010-06-12	261	205	0
-macboy97	2010-06-13	183	168	0
-macboy97	2010-06-19	289	281	0
-macboy97	2010-06-20	27	14	0
-macboy97	2010-09-09	14	14	0
-macboy97	2010-12-03	40	39	0
-macboy97	2010-12-12	514	368	0
-macboy97	2010-12-15	435	331	0
-macboy97	2010-12-17	287	155	0
-macboy97	2010-12-24	291	202	0
-macboy97	2010-12-30	70	61	0
-macboy97	2011-01-23	58	57	0
-macboy97	2011-08-15	5	5	0
-macboy97	2011-10-25	13	2	0
-macboy97	2012-06-17	171	150	0
+maTH5M2b	2015-10-30	19	19	0
+maTH5M2b	2015-11-03	20	19	0
+maTH5M2b	2016-01-06	1	0	0
+maTH5M2b	2016-01-07	7	7	0
 mackerski	2008-09-16	1	0	0
 mackerski	2013-06-19	148	95	0
+mackerski	2015-02-02	2	0	0
+mackerski	2015-02-08	1	1	0
 maggot27	2014-03-26	2	0	0
 maggot27	2014-03-27	2	0	0
 maggot27	2014-08-06	2	0	0
+maggot27	2015-07-01	12	0	0
+maggot27	2015-07-02	3	0	0
+maggot27	2015-07-13	3	0	0
+maggot27	2015-09-27	1	0	0
+maggot27	2015-09-28	1	0	0
+maggot27	2015-09-29	1	0	0
+maggot27	2015-10-04	1	0	0
+maggot27	2015-10-17	1	0	0
+maggot27	2015-10-18	3	0	0
 malcolmh	2013-04-21	2	0	0
+malcolmh	2015-06-01	20	0	0
 malenki	2013-01-12	2	0	0
 malenki	2013-11-29	5	0	0
 mancusm	2009-03-10	2	0	0
 mangledmango	2009-03-13	31	0	0
 manucidoo	2014-08-06	1	1	0
 map_happy	2014-03-02	4	4	0
+mapper555	2015-09-03	2	1	0
 mapper999	2013-02-24	4	0	0
 mapper_07	2007-09-23	22	22	0
-mapper_07	2007-10-08	106	59	1
+mapper_07	2007-10-08	106	59	0
 mapper_07	2007-10-13	3	2	1
 mapper_07	2007-10-18	4	4	0
 mapper_07	2007-10-22	146	88	0
 mapper_07	2007-11-18	2	0	0
 mapper_07	2007-11-19	146	67	23
-mapper_07	2007-11-21	488	261	35
+mapper_07	2007-11-21	488	261	31
 mapper_07	2007-11-27	282	79	0
-mapper_07	2007-12-06	686	341	4
+mapper_07	2007-12-06	686	341	5
 mapper_07	2007-12-26	1	1	0
 mapper_07	2008-02-02	225	221	0
 mapper_07	2008-04-13	38	37	0
 mapper_07	2008-04-24	39	37	0
-mapper_07	2008-05-24	182	179	6
+mapper_07	2008-05-24	182	179	7
 mapper_07	2008-07-19	4	4	1
 mapper_07	2008-11-05	46	0	0
 mapper_07	2009-09-27	2	0	0
 mappingdude	2008-04-14	3	1	0
 mapsinE3	2013-01-11	5	1	0
 mapsinE3	2013-01-12	3	0	0
-maptiga	2009-01-23	185	62	8
-maptiga	2009-01-25	468	189	6
+maptiga	2009-01-23	185	62	7
+maptiga	2009-01-25	468	189	8
 mapwonder	2010-06-06	6	4	0
 marccram4444	2013-12-01	6	2	0
 mariannas	2015-01-21	4	2	0
@@ -6956,27 +8431,38 @@ mikelaw	2014-01-23	12	6	0
 mikelaw	2014-02-07	2	0	0
 mikelaw	2014-02-14	1	0	0
 mikelaw	2014-05-02	3	3	0
+mikelaw	2015-08-21	6	1	0
+mikewilliamson	2015-07-22	6	6	0
 milovanderlinden	2010-10-06	322	0	0
 mirzmaster	2010-06-01	3	3	0
 mirzmaster	2012-01-22	1	1	0
 mirzmaster	2012-01-23	16	8	0
+misa_v	2015-06-14	1	1	0
 mishymishyme	2013-11-14	12	8	0
+mj7149	2015-04-18	144	128	0
+mj7149	2015-04-19	121	86	0
+mj7149	2015-04-20	68	56	0
+mj7149	2015-04-21	17	11	0
+mj7149	2015-04-22	3	1	0
+mj7149	2015-04-25	18	16	0
+mj7149	2015-10-03	2	2	0
 mjdavila	2013-03-21	9	5	0
 mjulius	2010-01-26	1	0	0
 mltam	2015-01-14	2	1	0
+mlydia	2015-09-23	185	85	0
 mmack00	2011-01-10	3	3	0
 mmather	2007-06-28	10	10	0
 mmather	2007-06-29	10	10	0
 mmather	2007-06-30	33	33	0
 mmather	2007-07-01	9	9	0
-mmather	2007-07-02	38	38	1
-mmather	2007-07-03	40	40	0
-mmather	2007-07-04	22	22	1
-mmather	2007-07-05	5	5	0
+mmather	2007-07-02	38	38	0
+mmather	2007-07-03	40	40	1
+mmather	2007-07-04	22	22	0
+mmather	2007-07-05	5	5	1
 mmather	2007-07-12	10	10	0
-mmather	2007-07-13	34	34	2
+mmather	2007-07-13	34	34	1
 mmather	2007-07-17	11	11	0
-mmather	2007-07-18	50	50	1
+mmather	2007-07-18	50	50	0
 mmather	2007-07-19	29	29	0
 mmather	2007-07-20	78	78	0
 mmather	2007-07-23	89	89	0
@@ -6990,16 +8476,16 @@ mmather	2007-08-14	64	64	0
 mmather	2007-08-15	13	13	0
 mmather	2007-08-16	78	78	0
 mmather	2007-08-17	8	8	0
-mmather	2007-08-18	114	114	1
+mmather	2007-08-18	114	114	0
 mmather	2007-08-20	29	29	0
 mmather	2007-08-21	34	34	0
 mmather	2007-08-22	28	28	0
 mmather	2007-08-24	99	99	0
-mmather	2007-08-25	53	53	3
+mmather	2007-08-25	53	53	6
 mmather	2007-08-26	35	35	0
 mmather	2007-11-11	64	60	0
 mmather	2007-11-12	1	1	0
-mmather	2007-11-19	82	66	1
+mmather	2007-11-19	82	66	0
 mmather	2007-12-01	73	64	0
 mmather	2007-12-03	119	105	0
 mmather	2007-12-05	137	127	0
@@ -7020,8 +8506,22 @@ moltenfire	2013-05-16	13	10	0
 momeara	2014-12-09	15	15	0
 moonwashed	2010-07-08	10	0	0
 mootinator	2014-07-17	1	0	0
+morray	2015-09-07	2	0	0
+morray	2015-09-08	1	0	0
+morray	2015-10-03	1	0	0
+morray	2015-10-12	1	0	0
+morray	2015-10-17	1	0	0
+morray	2015-11-04	1	0	0
+morray	2015-11-20	1	0	0
+morray	2015-12-13	1	0	0
+morray	2015-12-14	6	0	0
+morti_morti	2015-11-03	1	0	0
+morti_morti	2015-11-14	8	4	0
+mplen	2015-06-25	6	6	0
 msdess	2013-01-26	16	1	0
 msirizzotti	2014-01-09	47	46	0
+mtmail	2015-03-14	2	0	0
+mtrunz	2015-09-08	155	64	0
 mudaskin	2014-11-10	1	1	0
 must1n	2010-02-10	1	0	0
 mwilson-to	2009-03-05	89	0	0
@@ -7034,21 +8534,27 @@ mziehm	2013-02-22	21	5	0
 mziehm	2013-02-23	1	1	0
 nanonan	2011-08-30	1	1	0
 natzilla	2012-11-03	3	3	0
+navcanman	2015-04-17	4	2	0
 neilrahilly	2012-02-08	1	0	0
 nelsonlsqueeko	2009-09-22	11	0	0
 neuhausr	2014-12-27	1	0	0
+neuhausr	2015-04-17	1	0	0
 nevb	2009-01-24	37	0	0
 nevillepark	2012-06-29	3	3	0
 ngh423	2013-08-07	1	1	0
+nickel715	2015-04-03	1	0	0
 nico312	2013-05-01	37	23	0
 nico312	2013-05-03	2	1	0
+nikhilprabhakar	2015-09-14	3	2	0
+nikhilprabhakar	2015-11-04	8	8	0
 nimix	2012-07-20	1	0	0
 nimix	2012-08-02	1	0	0
-ninel	2008-02-21	26	25	4
+ninel	2008-02-21	26	25	5
 niravong	2013-01-12	2	2	0
 niten	2013-01-29	2	0	0
 niten	2013-01-30	4	0	0
 njaard	2013-02-18	7	5	0
+njaard	2015-03-29	1	0	0
 nkhall	2009-10-30	58	2	0
 non_dirty	2010-05-26	19	16	0
 norbody2	2010-10-09	51	51	0
@@ -7087,6 +8593,9 @@ norbody2	2014-05-25	43	39	0
 norbody2	2014-07-31	11	10	0
 norbody2	2014-10-06	13	10	0
 norbody2	2014-11-03	32	31	0
+norbody2	2015-04-11	7	4	0
+norbody2	2015-12-05	3	1	0
+norbody2	2016-01-01	17	2	0
 northernpenguin	2009-06-11	1	0	0
 northernpenguin	2009-06-15	74	0	0
 northernpenguin	2009-06-16	24	24	0
@@ -7096,6 +8605,7 @@ northernpenguin	2009-07-03	2	2	0
 northernpenguin	2013-05-13	2	2	0
 notimportant	2013-08-09	1	1	0
 novamae	2010-12-17	6	3	0
+np43	2015-04-03	6	1	0
 nramosga	2013-03-08	32	26	0
 nuahs	2014-08-31	227	92	0
 nuahs	2014-09-21	9	4	0
@@ -7108,6 +8618,7 @@ nyap	2013-05-10	2	2	0
 nyap	2013-11-21	1	0	0
 octan3	2009-01-26	269	0	0
 oddityoverseer	2013-03-15	1	0	0
+oini	2015-11-09	37	37	0
 olaf1000	2014-04-06	1	0	0
 oldenburg69	2013-12-02	1	1	0
 oldenburg69	2013-12-04	1	1	0
@@ -7122,6 +8633,7 @@ oldenburg69	2014-07-26	1	1	0
 oldtopos	2013-02-23	7	0	0
 oldtopos	2013-02-27	206	27	0
 oldtopos	2013-02-28	4	0	0
+omayb	2015-09-29	265	164	0
 oneinfniteloop	2014-08-16	2	1	0
 onion	2007-04-18	33	33	0
 opani	2014-02-21	1	1	0
@@ -7138,6 +8650,7 @@ osolo	2012-03-08	4	2	0
 pag11123	2013-09-23	1	0	0
 paorco77	2013-06-17	9	4	0
 patcon	2014-08-09	1	1	0
+patcon	2015-10-28	2	1	0
 patlaf9	2013-11-07	1	1	0
 paulmach	2013-10-03	10	8	0
 paulmcleary	2014-12-09	1	1	0
@@ -7239,6 +8752,11 @@ permute	2014-04-19	110	17	0
 permute	2014-04-26	480	258	0
 permute	2014-05-24	66	27	0
 permute	2014-08-28	2	0	0
+permute	2015-04-06	40	11	0
+permute	2015-04-10	9	0	0
+permute	2015-06-29	4	1	0
+permute	2015-08-19	12	4	0
+permute	2016-01-05	8	0	0
 peterjay27	2013-09-04	1	1	0
 pfoley	2008-09-21	8	8	0
 pfuender_666	2010-02-05	4	0	0
@@ -7251,8 +8769,12 @@ plorry	2014-06-25	8	8	0
 pmTO	2012-08-29	6	0	0
 pnorman	2011-12-31	214	163	0
 pnorman	2013-01-14	316	218	0
+pnorman redaction revert	2015-11-21	20	0	0
 pnorman_mechanical	2014-03-04	23	0	0
 pppkkk	2014-08-28	1	0	0
+pratikyadav	2015-11-27	17	16	0
+pratikyadav	2015-12-09	20	10	0
+pratikyadav	2015-12-16	10	10	0
 preetdesai	2011-06-03	2	2	0
 preetdesai	2012-11-24	19	1	0
 preetdesai	2012-12-04	4	0	0
@@ -7263,7 +8785,9 @@ prior	2012-01-19	98	98	0
 prostomartishka	2014-11-28	1	0	0
 pschonmann	2012-12-09	347	0	0
 psidog	2011-04-17	22	9	0
-qedi	2008-09-09	267	267	11
+psrod	2015-10-11	1	1	0
+psrod	2015-10-13	1	1	0
+qedi	2008-09-09	267	267	9
 quackers	2014-01-05	537	253	0
 quackers	2014-01-06	182	158	0
 quackers	2014-01-07	166	116	0
@@ -7287,12 +8811,16 @@ quintooo	2012-04-08	9	3	0
 quintooo	2012-04-28	6	6	0
 qwavel	2008-04-01	1	1	0
 raiderex	2009-03-14	78	19	0
+rajanarch	2015-01-26	2	1	0
 ralmada	2010-12-23	2	2	0
 ramiexe	2013-03-29	1	1	0
 randomjunk	2007-11-28	6	0	0
 randomnames	2011-11-23	3	0	0
 ranuamar	2013-05-19	1	0	0
 ravipjoshi	2013-05-21	2	1	0
+ravster	2015-07-27	4	4	0
+ravster	2015-07-28	1	1	0
+ravster	2015-09-12	4	4	0
 reXam	2012-01-20	4	3	0
 reality416	2013-05-07	7	2	0
 red_rebel	2007-10-28	23	0	0
@@ -7343,6 +8871,16 @@ risker516	2014-12-06	2	0	0
 risker516	2014-12-08	3	0	0
 risker516	2015-01-14	2	2	0
 risker516	2015-01-22	2	1	0
+risker516	2015-02-07	1	0	0
+risker516	2015-04-07	1	0	0
+risker516	2015-04-19	1	0	0
+risker516	2015-06-01	2	1	0
+risker516	2015-07-06	9	8	0
+risker516	2015-07-11	2	1	0
+risker516	2015-07-12	1	0	0
+risker516	2015-08-17	2	0	0
+risker516	2015-11-07	11	9	0
+risker516	2015-12-25	1	0	0
 rjmunro	2007-11-03	1	0	0
 rjmurray	2013-10-02	1	1	0
 rjmurray	2014-10-08	1	1	0
@@ -7353,17 +8891,17 @@ rnvk	2014-01-19	2	1	0
 robbrown24	2012-04-23	378	328	0
 robbrown24	2012-04-27	93	93	0
 robbrown24	2012-05-30	12	12	0
-roberteals	2008-08-11	228	212	16
-roberteals	2008-08-12	412	410	10
-roberteals	2008-08-13	325	291	9
-roberteals	2008-08-15	408	389	0
+roberteals	2008-08-11	228	212	13
+roberteals	2008-08-12	412	410	9
+roberteals	2008-08-13	325	291	6
+roberteals	2008-08-15	408	389	3
 roberteals	2008-08-16	303	278	2
-roberteals	2008-08-17	162	157	2
+roberteals	2008-08-17	162	157	3
 roberteals	2008-09-05	329	329	0
-roberteals	2008-09-16	184	147	2
-roberteals	2008-09-17	181	154	1
-roberteals	2008-09-18	220	218	13
-roberteals	2008-09-19	124	119	8
+roberteals	2008-09-16	184	147	0
+roberteals	2008-09-17	181	154	0
+roberteals	2008-09-18	220	218	7
+roberteals	2008-09-19	124	119	9
 roberteals	2008-09-22	179	165	1
 roberteals	2008-09-24	199	187	0
 roberteals	2008-09-29	919	895	0
@@ -7371,16 +8909,17 @@ roberteals	2008-10-07	265	68	0
 roberteals	2008-10-14	283	89	0
 roberteals	2008-10-15	288	156	1
 roberteals	2008-10-16	425	181	0
-roberteals	2008-10-17	830	117	4
+roberteals	2008-10-17	830	117	2
 roberteals	2008-10-18	693	180	0
-roberteals	2008-10-21	514	24	1
-roberteals	2008-10-25	794	120	4
+roberteals	2008-10-21	514	24	0
+roberteals	2008-10-25	794	120	6
 roberteals	2008-11-18	61	4	0
-roberteals	2008-11-19	540	171	20
-roberteals	2008-11-20	759	328	14
+roberteals	2008-11-19	540	171	21
+roberteals	2008-11-20	759	328	13
 roberteals	2008-12-24	46	2	0
 roberteals	2009-09-15	2	2	0
 roberteals	2010-04-08	13	13	0
+robertee	2015-02-23	19	14	0
 robertf	2008-08-10	521	511	1
 robgeb	2013-09-24	1	0	0
 robgeb	2014-06-16	336	296	0
@@ -7395,37 +8934,37 @@ rolandg	2013-03-02	1	1	0
 rolandg	2013-03-15	79	64	0
 rsemenov	2014-06-30	1	1	0
 rtdg	2007-07-26	34	34	10
-rtdg	2007-08-17	6	6	1
+rtdg	2007-08-17	6	6	2
 rtdg	2007-08-28	1	1	0
 rtdg	2007-09-13	44	44	8
-rtdg	2007-09-16	53	53	3
-rtdg	2007-09-25	315	315	30
-rtdg	2007-09-26	12	12	8
-rtdg	2007-10-01	46	46	9
+rtdg	2007-09-16	53	53	4
+rtdg	2007-09-25	315	315	25
+rtdg	2007-09-26	12	12	10
+rtdg	2007-10-01	46	46	8
 rtdg	2007-10-08	15	0	0
-rtdg	2007-10-11	442	148	23
+rtdg	2007-10-11	442	148	20
 rtdg	2007-10-19	188	0	0
 rtdg	2007-10-21	113	0	0
 rtdg	2007-10-22	56	0	0
 rtdg	2007-10-25	6	0	0
-rtdg	2007-11-05	23	5	0
-rtdg	2007-11-08	248	182	34
+rtdg	2007-11-05	23	5	1
+rtdg	2007-11-08	248	182	35
 rtdg	2007-11-12	1	0	0
 rtdg	2008-04-16	122	76	4
 rtdg	2008-06-06	3	2	0
 rtdg	2008-06-20	21	12	0
-rtdg	2008-07-04	188	119	0
+rtdg	2008-07-04	188	119	3
 rtdg	2008-07-13	8	6	0
 rtdg	2008-07-14	21	11	0
 rtdg	2008-07-19	63	20	3
-rtdg	2008-07-22	679	623	12
-rtdg	2008-07-23	335	221	0
+rtdg	2008-07-22	679	623	7
+rtdg	2008-07-23	335	221	1
 rtdg	2008-08-27	176	141	0
-rtdg	2008-09-02	693	534	2
+rtdg	2008-09-02	693	534	4
 rtdg	2008-11-24	192	10	0
 rtdg	2008-12-19	1632	193	0
 rtdg	2009-01-09	32	0	0
-rtdg	2009-01-29	2	1	1
+rtdg	2009-01-29	2	1	0
 rtdg	2009-02-11	2512	0	0
 rtdg	2009-02-15	384	0	0
 rtdg	2009-02-16	2311	0	0
@@ -7438,46 +8977,49 @@ rumpelsocke	2013-02-12	1	0	0
 rumpelsocke	2013-02-16	1	0	0
 rumpelsocke	2013-02-25	10	9	0
 rumpelsocke	2013-03-17	2	0	0
-rw_	2006-10-15	28	28	6
+ruthmaben	2015-04-06	7	0	0
+ruthmaben	2015-09-01	14	14	0
+ruthmaben	2015-09-03	59	59	0
+rw_	2006-10-15	28	28	3
 rw_	2006-10-19	7	7	3
 rw_	2006-10-20	12	12	0
-rw_	2006-10-28	9	9	8
-rw_	2006-10-29	11	11	1
-rw_	2006-10-30	525	525	19
-rw_	2006-10-31	54	54	8
+rw_	2006-10-28	9	9	7
+rw_	2006-10-29	11	11	2
+rw_	2006-10-30	525	525	20
+rw_	2006-10-31	54	54	7
 rw_	2006-11-05	87	87	0
-rw_	2006-11-09	458	458	24
+rw_	2006-11-09	458	458	22
 rw_	2006-11-11	13	13	0
-rw_	2006-11-12	147	147	0
+rw_	2006-11-12	147	147	3
 rw_	2006-11-13	2	2	2
-rw_	2006-11-19	372	372	18
+rw_	2006-11-19	372	372	21
 rw_	2006-11-26	104	104	33
-rw_	2006-11-27	130	130	10
+rw_	2006-11-27	130	130	7
 rw_	2006-11-30	97	97	21
-rw_	2006-12-02	400	400	15
-rw_	2006-12-03	488	488	43
+rw_	2006-12-02	400	400	17
+rw_	2006-12-03	488	488	50
 rw_	2006-12-04	15	15	0
-rw_	2006-12-06	149	149	24
-rw_	2006-12-07	151	151	21
-rw_	2006-12-11	220	220	5
-rw_	2006-12-13	48	48	14
-rw_	2006-12-16	35	35	2
-rw_	2006-12-17	61	61	5
+rw_	2006-12-06	149	149	26
+rw_	2006-12-07	151	151	18
+rw_	2006-12-11	220	220	4
+rw_	2006-12-13	48	48	12
+rw_	2006-12-16	35	35	1
+rw_	2006-12-17	61	61	9
 rw_	2007-01-01	154	154	0
 rw_	2007-01-07	19	19	3
 rw_	2007-01-09	20	20	0
-rw_	2007-02-03	38	38	9
+rw_	2007-02-03	38	38	4
 rw_	2007-02-04	60	60	12
-rw_	2007-02-05	51	51	20
-rw_	2007-02-10	107	107	31
-rw_	2007-02-11	145	145	10
-rw_	2007-02-17	26	26	1
-rw_	2007-02-18	145	145	0
+rw_	2007-02-05	51	51	16
+rw_	2007-02-10	107	107	32
+rw_	2007-02-11	145	145	8
+rw_	2007-02-17	26	26	2
+rw_	2007-02-18	145	145	2
 rw_	2007-03-11	41	41	17
-rw_	2007-03-20	44	44	0
-rw_	2007-10-27	110	100	11
-rw_	2007-10-28	441	436	1
-rw_	2007-11-03	360	356	1
+rw_	2007-03-20	44	44	1
+rw_	2007-10-27	110	100	10
+rw_	2007-10-28	441	436	0
+rw_	2007-11-03	360	356	0
 rw_	2007-11-04	200	168	0
 rw_	2007-11-10	66	66	0
 rw_	2007-11-11	156	156	0
@@ -7500,17 +9042,17 @@ rw_	2012-08-30	18	5	0
 rw_	2012-11-23	1	0	0
 rw_	2013-02-23	1	0	0
 rw_	2013-12-18	1	0	0
-rw__	2007-11-18	414	406	1
+rw__	2007-11-18	414	406	0
 rw__	2007-11-21	2	2	0
 rw__	2007-11-25	2	0	0
-rw__	2007-12-01	433	412	2
+rw__	2007-12-01	433	412	1
 rw__	2007-12-03	1	0	0
 rw__	2007-12-29	218	214	0
 rw__	2007-12-30	139	135	0
 rw__	2007-12-31	2	2	0
 rw__	2008-04-08	1	0	0
-rw__	2008-05-03	31	31	4
-rw__	2008-07-01	756	709	5
+rw__	2008-05-03	31	31	3
+rw__	2008-07-01	756	709	6
 rw__	2008-07-02	177	156	0
 rw__	2008-07-03	226	205	0
 rw__	2008-07-15	135	134	0
@@ -7631,6 +9173,9 @@ rw__	2013-12-26	4	1	0
 rw__	2014-04-15	1	0	0
 rw__	2014-05-02	12	0	0
 rw__	2014-05-03	2	0	0
+rw__	2015-06-25	5	1	0
+rw__	2015-06-26	1	0	0
+rw__	2015-12-08	3	3	0
 rw_addr	2013-01-02	16	7	0
 rw_external_sources	2011-12-08	158	142	0
 rw_external_sources	2011-12-14	5518	5518	0
@@ -7640,6 +9185,7 @@ ryandrake	2013-02-13	4	1	0
 ryandrake	2013-02-18	2	1	0
 ryandrake	2013-02-22	4	0	0
 ryandrake	2013-02-26	42	3	0
+ryanplate	2015-09-13	1	0	0
 s021	2009-03-30	8	0	0
 s021	2013-12-31	7	5	0
 sMels	2010-02-26	45	0	0
@@ -7655,15 +9201,26 @@ saggiorato_saucal	2014-06-18	1	1	0
 saggiorato_saucal	2014-06-19	7	5	0
 salvo	2014-04-19	2	2	0
 salvo	2014-04-29	10	10	0
+sam362	2015-04-27	1	1	0
+samely	2015-04-01	1	0	0
+samely	2015-05-26	2	0	0
+samely	2015-05-27	43	0	0
+samely	2015-07-14	1	1	0
+samely	2015-07-15	10	10	0
+samely	2015-07-17	26	25	0
+samely	2015-07-23	10	10	0
 sammuell	2011-12-19	440	273	0
 sammuell	2011-12-21	19	2	0
 samphippen	2013-01-12	2	1	0
 sandhya1	2013-01-26	24	1	0
 sandhya1	2013-04-21	36	2	0
+sanjinz	2013-10-16	9	3	0
+sanjinz	2015-05-19	1	1	0
 santinas	2009-12-14	1	0	0
 sashaursic	2014-03-09	208	166	0
 sashaursic	2014-04-20	58	57	0
 sashaursic	2014-05-04	192	165	0
+saviojchaz	2015-10-07	1	1	0
 saywhaaa	2014-07-19	11	11	0
 scanianova	2008-11-24	53	0	0
 scenicrick	2014-05-06	25	14	0
@@ -7781,17 +9338,62 @@ scruss	2014-11-19	5	1	0
 scruss	2014-11-30	1	1	0
 scruss	2014-12-09	1	0	0
 scruss	2015-01-11	19	3	0
+scruss	2015-02-09	1	0	0
+scruss	2015-02-10	1	0	0
+scruss	2015-03-04	4	1	0
+scruss	2015-03-06	5	0	0
+scruss	2015-03-14	1	0	0
+scruss	2015-03-26	1	1	0
+scruss	2015-03-27	27	13	0
+scruss	2015-04-12	1	0	0
+scruss	2015-04-19	8	7	0
+scruss	2015-04-25	3	1	0
+scruss	2015-04-29	7	2	0
+scruss	2015-05-12	1	1	0
+scruss	2015-05-13	1	0	0
+scruss	2015-05-16	2	2	0
+scruss	2015-05-20	23	21	0
+scruss	2015-05-23	4	4	0
+scruss	2015-06-10	3	0	0
+scruss	2015-06-18	524	524	0
+scruss	2015-06-20	4	0	0
+scruss	2015-06-22	3	1	0
+scruss	2015-06-30	1	1	0
+scruss	2015-07-06	1	0	0
+scruss	2015-07-18	1	0	0
+scruss	2015-08-06	2	0	0
+scruss	2015-08-10	1	0	0
+scruss	2015-08-13	1	0	0
+scruss	2015-08-21	1	1	0
+scruss	2015-08-29	1	0	0
+scruss	2015-09-03	1	0	0
+scruss	2015-09-08	1	0	0
+scruss	2015-09-15	1	1	0
+scruss	2015-09-18	3	0	0
+scruss	2015-10-18	1	0	0
+scruss	2015-10-30	1	1	0
+scruss	2015-11-02	1	0	0
+scruss	2015-11-14	1	1	0
+scruss	2015-12-08	2	1	0
+scruss	2015-12-09	2	1	0
+scruss	2015-12-11	4	3	0
+scruss	2016-01-15	1	0	0
 sdiz	2015-01-14	5	5	0
 seca400	2014-11-22	1	1	0
 serge70	2013-02-02	2	2	0
 sergionaranja	2012-03-05	7	4	0
 seva_lapsha	2014-06-25	4	4	0
+sgator	2015-08-08	49	8	0
 shamer	2012-03-01	4	1	0
 shamira	2014-07-16	12	0	0
+shravan91	2015-04-17	1	1	0
 shriram4	2014-09-27	30	14	0
+shvrm	2015-09-03	37	33	0
 sidewalkballet	2014-04-12	9	8	0
 sim6	2014-03-06	1	0	0
 sirmapsalot	2014-09-27	1	1	0
+skorasaurus	2015-10-02	53	53	0
+skorasaurus	2015-10-04	23	23	0
 skrausz	2008-12-21	204	0	0
 skynaut	2010-10-17	10	4	0
 skynaut	2010-10-18	77	54	0
@@ -7800,7 +9402,7 @@ slackjack	2014-12-30	256	17	0
 slugmuffin	2012-10-04	14	0	0
 smably	2013-04-04	1	0	0
 smithgreg	2012-01-04	1	1	0
-smithgreg	2012-01-05	123	122	0
+smithgreg	2012-01-05	123	122	1
 smithgreg	2012-01-06	14	14	0
 smithgreg	2012-01-07	705	567	0
 smithgreg	2012-01-08	1223	937	0
@@ -7818,25 +9420,39 @@ smithgreg	2014-06-24	6	6	0
 smithgreg	2014-06-25	53	52	0
 smithgreg	2014-06-26	75	61	0
 smithgreg	2014-06-27	1	1	0
+smithgreg	2015-06-04	5	5	0
+smithgreg	2015-06-05	8	7	0
+smithgreg	2015-06-07	7	7	0
 snafu109	2014-01-15	1	0	0
 snafu109	2014-01-23	2	0	0
 snafu109	2014-06-03	14	2	0
 soah69	2012-09-04	5	2	0
 soundart	2010-09-16	1	0	0
 spazmedia	2014-10-02	2	1	0
-spooti	2008-02-01	28	28	3
+spilornis	2015-09-06	1	1	0
+spooti	2008-02-01	28	28	1
 spooti	2008-02-13	76	76	1
 spooti	2008-02-15	64	64	2
 spooti	2008-02-23	69	63	1
-spooti	2008-02-25	56	55	1
+spooti	2008-02-25	56	55	0
 spooti	2008-02-27	1	0	0
 spooti	2008-03-01	99	79	0
 spooti	2008-03-02	36	34	0
 spooti	2008-03-05	18	16	0
 spooti	2008-03-09	68	56	0
 spooti	2008-03-10	1	1	0
-spooti	2008-05-25	41	41	5
+spooti	2008-05-25	41	41	3
 spyware	2014-02-12	2	1	0
+srividya_c	2015-04-02	1	0	0
+srividya_c	2015-04-07	1	0	0
+srividya_c	2015-09-04	14	13	0
+srividya_c	2015-11-10	8	8	0
+sssmc	2015-11-27	8	8	0
+sssmc	2015-11-29	23	23	0
+sssmc	2015-12-19	4	4	0
+sssmc	2015-12-26	163	161	0
+sssmc	2015-12-29	288	285	0
+sssmc	2015-12-30	435	430	0
 staehler	2010-04-01	18	0	0
 staehler	2010-04-03	1	0	0
 stanca	2013-08-13	2	2	0
@@ -7845,10 +9461,11 @@ starcrafty	2009-04-16	590	0	0
 stats	2014-01-04	4	3	0
 stephensurlin	2013-08-05	7	6	0
 steve4real	2011-02-19	1	1	0
+stevejy4e	2015-11-25	13	11	0
 stevemax	2013-06-11	37	5	0
 stevenlundy	2009-03-19	1009	0	0
-stevens	2008-08-09	38	38	2
-stevens	2008-08-11	265	265	4
+stevens	2008-08-09	38	38	1
+stevens	2008-08-11	265	265	6
 stevens	2008-08-16	29	29	0
 stevens	2008-08-17	6	6	0
 stevens	2008-08-31	5	5	0
@@ -7857,7 +9474,7 @@ stevens	2008-10-04	113	110	0
 stevens	2008-10-05	8	8	0
 stevens	2008-10-26	131	124	0
 stevens	2008-10-27	3	1	0
-stevens	2008-11-01	90	86	1
+stevens	2008-11-01	90	86	0
 stevens	2008-11-02	3	3	0
 stevens	2008-11-03	2	2	0
 stevens	2009-02-01	22	22	0
@@ -7895,6 +9512,12 @@ stevens	2013-05-11	1	1	0
 stevens	2013-05-26	1	1	0
 stevens	2013-10-21	3	2	0
 stevens	2013-12-22	1	0	0
+stevens	2015-03-08	1	0	0
+stevens	2015-05-10	1	1	0
+stevens	2015-08-12	1	1	0
+stevens	2015-08-23	12	11	0
+stevens	2015-10-24	6	6	0
+stevens	2015-11-22	1	0	0
 stickman14	2014-11-29	119	109	0
 stickman14	2014-11-30	12	12	0
 stimur	2014-03-25	7	7	0
@@ -7906,6 +9529,49 @@ swus	2011-01-21	156	0	0
 sygopet	2007-10-13	8	0	0
 sz814	2014-11-03	15	15	0
 sz814	2014-11-04	1	0	0
+ta72	2009-12-05	58	30	0
+ta72	2009-12-06	402	276	0
+ta72	2009-12-07	82	72	0
+ta72	2009-12-10	1	0	0
+ta72	2009-12-29	110	102	0
+ta72	2009-12-31	674	422	0
+ta72	2010-01-01	572	502	0
+ta72	2010-01-02	474	415	0
+ta72	2010-01-21	37	33	0
+ta72	2010-01-22	102	85	0
+ta72	2010-01-23	1	0	0
+ta72	2010-01-26	91	77	0
+ta72	2010-01-30	4	2	0
+ta72	2010-02-21	386	348	0
+ta72	2010-02-22	418	313	0
+ta72	2010-02-23	308	300	0
+ta72	2010-02-24	164	163	0
+ta72	2010-02-25	50	29	0
+ta72	2010-02-26	19	19	0
+ta72	2010-03-05	228	215	0
+ta72	2010-03-06	170	165	0
+ta72	2010-03-07	383	240	0
+ta72	2010-03-08	89	82	0
+ta72	2010-03-09	448	418	0
+ta72	2010-03-11	348	342	0
+ta72	2010-03-13	441	397	0
+ta72	2010-03-14	132	128	0
+ta72	2010-04-04	12	12	0
+ta72	2010-06-12	261	205	0
+ta72	2010-06-13	183	168	0
+ta72	2010-06-19	289	281	0
+ta72	2010-06-20	27	14	0
+ta72	2010-09-09	14	14	0
+ta72	2010-12-03	40	39	0
+ta72	2010-12-12	514	368	0
+ta72	2010-12-15	435	331	0
+ta72	2010-12-17	287	155	0
+ta72	2010-12-24	291	202	0
+ta72	2010-12-30	70	61	0
+ta72	2011-01-23	58	57	0
+ta72	2011-08-15	5	5	0
+ta72	2011-10-25	13	2	0
+ta72	2012-06-17	171	150	0
 taavi	2010-08-10	31	29	0
 taavi	2010-08-11	16	7	0
 taavi	2010-08-12	79	47	0
@@ -7920,6 +9586,9 @@ taavi	2010-10-30	153	143	0
 taavi	2011-01-01	311	307	0
 taavi	2011-11-14	5	2	0
 taavi	2013-05-11	22	22	0
+taavi	2015-03-13	1	1	0
+taavi	2015-03-19	2	2	0
+taavi	2015-06-28	1	1	0
 taber	2013-02-13	2	0	0
 tammyk	2014-11-27	2	0	0
 tbartelmess	2012-03-10	2	2	0
@@ -7945,11 +9614,18 @@ theonlysandman	2009-12-08	1	1	0
 theonlysandman	2009-12-31	1	1	0
 theonlysandman	2010-03-01	2	1	0
 theophrastos	2010-11-10	18	0	0
+thetornado76	2015-11-06	1	0	0
+thetornado76	2015-12-04	1	0	0
+thetornado76	2016-01-13	1	0	0
+thevince	2015-02-17	2	2	0
 thomasfcd	2013-03-11	2	2	0
+thongthai	2015-10-30	12	0	0
+thupten	2015-06-14	23	18	0
 tibiduka	2011-07-05	1	0	0
 tippettm	2007-07-04	2	2	0
-tippettm	2007-07-05	80	80	2
+tippettm	2007-07-05	80	80	1
 tippobot	2011-06-18	16	0	0
+tisdall	2015-05-30	2	0	0
 tixuwuoz	2010-09-20	49	0	0
 tixuwuoz	2010-09-21	15	0	0
 tixuwuoz	2010-09-22	2	0	0
@@ -7961,12 +9637,15 @@ tlow	2009-02-11	135	3	0
 tlow	2009-02-15	327	4	0
 tmetty	2010-08-20	1	1	0
 tml15ms	2013-05-07	8	6	0
+toastywaffle	2015-03-22	5	0	0
 tommertron	2012-01-26	1	1	0
+tommy_pelmorex	2015-09-16	2	0	0
 tomtong	2010-12-30	23	21	0
 tomtux	2013-05-11	3	3	0
 tonis1	2014-12-17	12	10	0
 tookewl4skewl	2009-09-08	3	0	0
 toolazy85	2009-03-03	38	0	0
+toronto_mapper_2015	2015-10-29	47	23	0
 torontochap	2012-02-23	1	1	0
 torontochap	2012-03-05	2	2	0
 torontochap	2012-03-06	1	1	0
@@ -7991,6 +9670,8 @@ uafrazier	2013-12-08	1	1	0
 uafrazier	2014-12-10	1	1	0
 uafrazier	2015-01-07	1	1	0
 uafrazier	2015-01-09	1	0	0
+uafrazier	2015-03-06	1	1	0
+uafrazier	2015-05-26	1	1	0
 uboot	2008-04-02	14	0	0
 uboot	2008-04-03	20	0	0
 uboot	2009-02-20	1	0	0
@@ -7998,6 +9679,7 @@ uboot	2010-07-21	1	0	0
 uboot	2012-06-25	1	0	0
 uboot	2013-02-23	1	0	0
 uboot	2013-03-01	1	0	0
+uboot	2015-11-27	4	0	0
 ulfl	2008-02-16	3	0	0
 ulfl	2008-07-02	20	0	0
 ulfl	2008-07-03	16	0	0
@@ -8037,6 +9719,11 @@ user_5359	2013-02-26	7	2	0
 user_5359	2013-06-08	1	0	0
 user_5359	2013-12-30	1	0	0
 user_5359	2014-11-15	1	0	0
+user_5359	2015-04-01	3	0	0
+user_5359	2015-09-05	2	0	0
+user_5359	2015-10-18	1	0	0
+user_5359	2015-11-13	1	0	0
+user_5359	2016-01-01	1	0	0
 valentec	2014-11-10	1	1	0
 van Rees	2013-01-26	29	18	0
 van Rees	2013-03-23	2	0	0
@@ -8046,6 +9733,8 @@ vieillecam	2013-11-14	239	204	0
 vijayppatel	2014-09-04	1	1	0
 viking2917	2013-01-26	2	1	0
 vishalib	2015-01-25	16	16	0
+vishalib	2015-01-26	1	1	0
+vishalib	2015-02-01	12	12	0
 vistraw	2013-01-25	38	38	0
 vkm	2012-03-08	7	1	0
 vkungys	2012-06-28	38	16	0
@@ -8084,6 +9773,12 @@ wdtaylor	2010-06-05	27	27	0
 weapon9198	2014-11-14	5	5	0
 weapon9198	2014-11-20	10	6	0
 weapon9198	2015-01-16	1	1	0
+weapon9198	2015-07-02	1	1	0
+weapon9198	2015-07-29	2	2	0
+weapon9198	2015-08-25	1	1	0
+weapon9198	2015-09-07	2	1	0
+weapon9198	2015-11-04	1	1	0
+weapon9198	2015-11-12	1	1	0
 weblib	2010-10-13	1	1	0
 webpaul	2012-03-15	1	1	0
 werner2101	2011-07-28	8	0	0
@@ -8094,6 +9789,9 @@ wheelmap_android	2014-05-03	70	0	0
 wheelmap_android	2014-05-12	5	0	0
 wheelmap_android	2014-05-27	5	0	0
 wheelmap_android	2014-12-27	1	0	0
+wheelmap_android	2015-06-11	1	0	0
+wheelmap_android	2015-09-01	11	0	0
+wheelmap_android	2016-01-07	10	0	0
 wheelmap_visitor	2010-09-09	2	0	0
 wheelmap_visitor	2010-10-25	4	0	0
 wheelmap_visitor	2010-10-30	193	0	0
@@ -8177,6 +9875,21 @@ wheelmap_visitor	2014-09-26	1	0	0
 wheelmap_visitor	2014-12-22	22	0	0
 wheelmap_visitor	2015-01-06	1	0	0
 wheelmap_visitor	2015-01-20	1	0	0
+wheelmap_visitor	2015-04-04	1	0	0
+wheelmap_visitor	2015-04-14	17	0	0
+wheelmap_visitor	2015-04-21	1	0	0
+wheelmap_visitor	2015-05-16	7	0	0
+wheelmap_visitor	2015-05-21	1	0	0
+wheelmap_visitor	2015-05-25	2	0	0
+wheelmap_visitor	2015-06-10	2	0	0
+wheelmap_visitor	2015-06-11	2	0	0
+wheelmap_visitor	2015-06-14	1	0	0
+wheelmap_visitor	2015-10-25	17	0	0
+wheelmap_visitor	2015-10-27	1	0	0
+wheelmap_visitor	2015-11-26	1	0	0
+wheelmap_visitor	2015-12-21	1	0	0
+wheelmap_visitor	2016-01-06	1	0	0
+wheelmap_visitor	2016-01-11	5	0	0
 white_gecko	2011-03-25	2	2	0
 white_gecko	2011-03-26	1	0	0
 white_gecko	2011-05-11	6	5	0
@@ -8192,8 +9905,10 @@ wieland	2011-01-28	1	0	0
 wieland	2011-02-20	1	0	0
 winewise	2010-11-30	6	6	4
 winlemski	2008-09-11	1	1	0
+wirchy	2015-02-23	3	2	0
 wiseboson	2013-08-10	1	0	0
 wiseguyz	2014-03-03	3	3	0
+wjn	2015-05-19	24	12	0
 wjnscott	2014-03-02	6	5	0
 woarkie	2014-01-21	1	1	0
 wolfewylie	2014-11-19	1	0	0
@@ -8205,10 +9920,16 @@ woodpeck_repair	2014-03-23	2	0	0
 woodpeck_repair	2014-03-31	2	0	0
 woodpeck_repair	2014-08-28	1	0	0
 woodpeck_repair	2014-11-29	1	0	0
+woodpeck_repair	2015-07-20	1	0	0
+woodpeck_repair	2016-01-15	3	0	0
 wvdp	2014-03-24	5	0	0
 wwhome	2014-10-24	16	11	0
+wwhome	2016-01-11	43	8	0
 xamount	2014-02-04	2	2	0
+xamount	2015-03-18	1	0	0
 xie1995	2011-12-26	8	2	0
+xmaps	2015-03-03	3	0	0
+xmd5a	2015-10-04	155	0	0
 xsteadfastx	2013-08-07	1	0	0
 xybot	2008-12-12	1	0	0
 xybot	2008-12-21	8	0	0
@@ -8273,6 +9994,10 @@ yathu23	2011-04-21	42	24	0
 yathu23	2011-04-25	18	17	0
 yczoli	2014-03-26	1	1	0
 yczoli	2015-01-16	68	68	0
+yczoli	2015-07-07	170	170	0
+ydrgbjo	2013-01-26	6	1	0
+ydrgbjo	2013-01-29	18	1	0
+ydrgbjo	2013-02-06	1	0	0
 yds	2009-10-13	1	1	0
 york_gis	2014-11-28	30195	30195	0
 york_gis	2014-11-29	15618	15618	0
@@ -8286,6 +10011,7 @@ ypid	2014-02-24	1	0	0
 ypid	2014-06-29	1	0	0
 yrtimiD	2014-05-16	1	0	0
 yuichikawa	2014-01-29	1	0	0
+yummysoup	2015-05-11	4	4	0
 zacmccormick	2013-01-26	36	0	0
 zanimum	2010-02-04	10	5	0
 zanimum	2010-09-23	3	3	0
@@ -8293,6 +10019,7 @@ zanimum	2011-06-08	91	20	0
 zanimum	2011-09-17	15	2	0
 zarl	2014-11-18	1	0	0
 zehpunktbarron	2013-02-25	1	0	0
+zeromap	2015-10-22	17	0	0
 zeroreality	2014-01-28	2	1	0
 zeroreality	2014-02-03	28	16	0
 zeroreality	2014-08-06	1	0	0
@@ -8302,7 +10029,7 @@ zjtothefuture	2014-09-23	2	2	0
 zjwang	2014-05-22	2	2	0
 zmarties	2011-04-10	1	0	0
 zniu	2010-10-07	58	57	0
-zoke	2009-01-04	787	238	0
+zoke	2009-01-04	787	238	1
 zoke	2009-01-08	92	30	0
 zoke	2010-02-21	12	12	0
 zoke	2010-02-26	17	17	0
@@ -8311,10 +10038,13 @@ zoke	2010-08-01	659	646	0
 zoke	2010-08-02	38	34	0
 zoke	2011-12-26	1	0	0
 zrrburt	2010-06-21	37	37	0
+zrykse	2015-01-27	4	4	0
 zuk_	2010-04-27	18	10	0
 zuk_	2011-04-19	5	0	0
 zweidler	2011-02-01	1	0	0
 zzzbear	2013-08-27	6	3	0
 zzzbear	2013-09-01	4	0	0
 Згарбул Андрей	2014-08-28	1	0	0
+عقبة بن نافع	2016-01-09	1	0	0
+عقبة بن نافع	2016-01-15	1	0	0
 上海代开发票QQ1454604821	2014-03-24	1	1	0

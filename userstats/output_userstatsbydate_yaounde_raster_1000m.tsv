@@ -1,19 +1,20 @@
 user_name	date	count	v1count	blankcount
+<0174	2016-01-16	39	1	0
 AE35	2012-08-28	20	20	0
 Alepoz	2010-11-29	134	131	1
 Alepoz	2010-12-01	23	16	0
-Alepoz	2011-06-09	1	1	1
+Alepoz	2011-06-09	1	1	0
 AlkalIn	2013-01-03	184	181	0
 AlkalIn	2013-01-08	8	5	0
 AlkalIn	2013-01-30	22	6	0
 AlkalIn	2013-01-31	163	109	0
-AlkalIn	2013-02-01	277	205	1
+AlkalIn	2013-02-01	277	205	0
 AlkalIn	2013-02-05	549	428	0
 AlkalIn	2013-02-06	542	395	0
 AlkalIn	2013-02-07	51	24	0
 AlkalIn	2013-02-08	285	215	0
 AlkalIn	2013-02-12	16	8	0
-AlkalIn	2013-02-13	340	213	1
+AlkalIn	2013-02-13	340	213	0
 AlkalIn	2013-02-15	599	364	0
 AlkalIn	2013-02-18	182	84	0
 AlkalIn	2013-02-24	32	19	0
@@ -57,7 +58,7 @@ AlkalIn	2013-06-25	142	69	0
 AlkalIn	2013-06-26	62	36	0
 AlkalIn	2013-06-27	22	14	0
 AlkalIn	2013-06-29	24	12	0
-AlkalIn	2013-06-30	40	26	0
+AlkalIn	2013-06-30	40	26	1
 AlkalIn	2013-07-01	71	44	0
 AlkalIn	2013-07-02	108	100	0
 AlkalIn	2013-07-04	120	67	0
@@ -103,22 +104,45 @@ AlkalIn	2014-10-21	9	0	0
 AlkalIn	2014-11-02	1	0	0
 AlkalIn	2014-11-23	193	64	0
 AlkalIn	2014-12-15	17	7	0
+AlkalIn	2015-02-11	33	9	0
+AlkalIn	2015-02-27	10	3	0
+AlkalIn	2015-03-06	87	33	0
+AlkalIn	2015-03-15	11	11	0
+Amr77	2015-02-26	30	22	0
+Andre Bb	2015-04-29	25	20	0
+Andre Bb	2015-04-30	3	3	0
 Aurimas Fišeras	2014-05-03	5	0	0
 Aurimas Fišeras	2014-05-24	85	0	0
 Aurimas Fišeras	2014-05-27	3	0	0
 Baruch	2009-06-18	1	0	0
+Biloumaranettoi	2015-12-15	2	2	0
 Brice TETKA	2013-08-24	1	1	0
+BrunoRemy	2015-05-01	21	4	0
 Cato_d_Ae	2014-11-14	6	2	0
 Claudius Henrichs	2009-04-24	1	0	0
+Claudius Henrichs	2015-04-11	1	0	0
+DK_VJCS	2015-07-08	1	0	0
 Damouns	2009-09-15	35	13	0
-Ernest Gwanvoma	2010-12-19	83	83	1
+Depsy	2015-06-27	5	5	0
+Duclaire	2015-10-01	2	0	0
+Duclaire15	2015-11-02	93	93	0
+EGK	2015-06-09	13	9	0
+ETOUNA	2015-11-28	4	4	0
+Ebolowa	2015-04-07	8	8	0
+Ernest Gwanvoma	2010-12-19	83	83	3
 Ernest Gwanvoma	2010-12-27	25	25	0
 Ernest Gwanvoma	2010-12-30	3	0	0
 Ernest Gwanvoma	2011-01-11	4	0	0
+FANIVE	2016-01-15	678	652	0
 Fayadama	2014-12-05	2	0	0
 FischerFotos	2013-08-25	2	1	0
 FischerFotos	2013-09-02	4	2	0
 Frank Gyselinck	2011-10-09	30	18	0
+Freedy Tchoumbou	2015-10-16	169	97	0
+FvGordon	2015-02-17	25	1	0
+FvGordon	2015-03-19	1	0	0
+FvGordon	2015-06-22	1	1	0
+FvGordon	2015-10-28	29	0	0
 GeoCameroun	2013-04-25	15597	15597	0
 GeoCameroun	2013-04-26	1	0	0
 GeoCameroun	2013-04-27	932	78	0
@@ -128,7 +152,7 @@ GeoCameroun	2013-04-30	53	0	0
 GeoCameroun	2013-05-01	103	85	0
 GeoCameroun	2013-05-02	5502	5489	0
 GeoCameroun	2013-05-03	14088	14080	0
-GeoCameroun	2013-05-04	31047	30981	0
+GeoCameroun	2013-05-04	31047	30981	1
 GeoCameroun	2013-05-05	32347	30292	0
 GeoCameroun	2013-05-06	6373	6373	0
 GeoCameroun	2013-05-07	1500	1500	0
@@ -168,7 +192,7 @@ GeoCameroun	2013-07-22	678	647	0
 GeoCameroun	2013-07-23	9	9	0
 GeoCameroun	2013-09-07	113	84	0
 GeoCameroun	2013-09-10	2	1	0
-GeoCameroun	2013-09-16	7	7	1
+GeoCameroun	2013-09-16	7	7	0
 GeoCameroun	2013-09-22	1	1	0
 GeoCameroun	2013-09-23	47	0	0
 GeoCameroun	2013-10-30	4	0	0
@@ -199,9 +223,11 @@ GeoCameroun	2014-07-20	322	305	0
 GeoCameroun	2014-07-21	24	23	0
 GeoCameroun	2014-07-23	395	391	0
 GeoCameroun	2014-07-24	28	11	0
+GeoStudent	2015-02-07	5	1	0
 Georges N	2014-04-20	3	2	0
 Gilbert_Armand_OSM-CM	2013-09-07	1	1	0
-Greg Henderson	2011-08-02	1	1	0
+Gilbert_Armand_OSM-CM	2015-02-06	20	20	0
+Greg Henderson	2011-08-02	1	1	1
 Gustry	2013-04-21	1354	1237	0
 Gustry	2013-04-22	57	18	0
 Gustry	2013-04-24	2	0	0
@@ -217,13 +243,20 @@ Gustry	2013-08-23	2	2	0
 Gustry	2013-08-27	4	4	0
 Gustry	2013-09-24	1	0	0
 Hendrikklaas	2015-01-12	6	2	0
+Hendrikklaas	2015-11-03	45	6	0
+Hendrikklaas	2015-11-04	16	0	0
+Herves2005	2015-12-22	34	30	0
 Hobgoblin	2014-09-03	38	0	0
+Hobgoblin	2015-02-04	2	0	0
+Hobgoblin	2015-08-09	10	10	0
 HolgerJeromin	2010-12-28	2	0	0
 HolgerJeromin	2011-01-23	252	201	0
 HolgerJeromin	2011-01-24	22	11	0
 HolgerJeromin	2012-01-17	19	15	0
 HolgerJeromin	2012-11-19	1	0	0
 J-Louis ZIMMERMANN	2013-08-29	78	78	0
+JFK73	2015-10-25	11	6	0
+J_Acker	2015-09-18	373	332	1
 Jack Pham	2013-10-17	2	2	0
 Jorieke V	2013-04-22	226	57	0
 Jorieke V	2013-04-27	90	10	0
@@ -235,6 +268,9 @@ Jorieke V	2013-10-22	786	348	0
 Jorieke V	2013-10-24	2394	422	0
 Jorieke V	2013-11-04	410	151	0
 José Meku	2014-10-28	3	3	0
+Jotam	2015-06-06	2	0	0
+Jotam	2015-07-23	94	1	0
+Jotam	2015-08-13	1	0	0
 KDRT	2014-04-14	219	157	0
 KDRT	2014-04-15	111	90	0
 KDRT	2014-04-17	127	44	0
@@ -248,6 +284,7 @@ KDRT	2014-06-09	701	239	0
 KDRT	2014-06-13	407	115	0
 KDRT	2014-06-19	1031	136	0
 KartoGrapHiti	2012-10-21	32	0	0
+Katie U	2015-04-27	2	0	0
 Kolossos	2012-10-19	1	0	0
 LA2	2007-04-24	1	1	1
 Langhuber	2012-04-28	23	10	0
@@ -259,6 +296,7 @@ Luis36995	2014-07-24	25	3	0
 Luis36995	2014-07-25	2	0	0
 Luis36995	2014-07-28	4	2	0
 Luis36995	2014-08-19	1	0	0
+Lupercos	2015-08-08	40	0	0
 Manu1400	2013-04-16	1	0	0
 Manu1400	2013-04-28	4	0	0
 Manu1400	2013-05-13	4	0	0
@@ -271,10 +309,12 @@ Mathieu Marquer	2012-04-30	1	0	0
 Mathieu Marquer	2012-05-01	1	0	0
 MichaelCollinson	2008-11-05	1	0	0
 Mr UMM	2014-06-21	16	16	0
+Mr UMM	2016-01-13	558	558	0
 Nanopixel	2012-08-31	1	0	0
 Netzwolf	2013-01-31	1	0	0
 OPerivar	2014-12-14	35	19	0
 OSMF Redaction Account	2012-07-20	1	0	0
+Patelechat	2015-09-03	3	3	0
 Peter14	2013-12-18	2	0	0
 Peter14	2013-12-19	5	0	0
 Peter14	2013-12-21	1	0	0
@@ -342,10 +382,14 @@ Pierre TOUZARD	2013-02-18	472	250	0
 Pierre TOUZARD	2013-02-19	13	1	0
 Pierre TOUZARD	2013-03-03	227	115	0
 Pierre-Alain Dorange	2014-06-28	4	0	0
+Pilou@nowhere	2015-11-30	17	17	0
+Pilou@nowhere	2016-01-17	3	1	0
 R GUILBERT	2014-03-24	1	1	0
+R0bst3r	2015-05-20	24	2	0
 RR81	2012-07-24	1	0	0
 RichRico	2014-10-10	2	0	0
 RichRico	2014-10-15	1	0	0
+RichRico	2015-04-23	3	3	0
 Ro in cameroon	2013-08-24	1	0	0
 Romuald71_import	2014-06-28	3	1	0
 Rub21	2014-07-23	2	1	0
@@ -415,6 +459,8 @@ SOGEFI	2014-08-17	2	2	0
 SOGEFI	2014-08-20	12	1	0
 SOGEFI	2014-10-15	1	1	0
 SOGEFI	2014-11-07	12	7	0
+SOGEFI	2015-04-16	36	10	0
+SOGEFI	2015-04-18	60	10	0
 Sergeo14	2014-03-15	6	6	0
 Sergeo14	2014-03-29	2	0	0
 Serpens	2009-08-02	1	0	0
@@ -424,6 +470,9 @@ Serpens	2010-01-03	1	0	0
 Serpens	2010-01-04	3	0	0
 Serpens	2011-02-06	1	0	0
 Serpens	2015-01-06	2	0	0
+Serpens	2015-02-14	2	0	0
+Serpens	2015-06-01	1	0	0
+Super-Map	2015-02-14	83	72	0
 Sébastien_TSF	2014-07-15	24	9	0
 Sébastien_TSF	2014-07-16	4180	4144	0
 Sébastien_TSF	2014-07-17	3	2	0
@@ -441,6 +490,7 @@ TSF Fabien	2014-07-21	7600	7590	0
 TSF Fabien	2014-07-22	6887	6873	0
 TSF Fabien	2014-07-23	2091	2091	0
 TSF Fabien	2014-07-24	232	232	0
+TSF Fabien	2015-05-29	3609	3554	0
 Tahbou	2014-07-16	2	2	0
 Tahbou	2014-07-18	1490	1480	0
 Tahbou	2014-07-20	204	62	0
@@ -448,33 +498,51 @@ Tahbou	2014-07-21	45	45	0
 Tahbou	2014-07-23	36	36	0
 Thomas_M	2014-06-20	10	10	0
 Thomas_M	2014-08-07	4	4	0
+Thomas_M	2015-08-08	1	1	0
+Thomas_M	2015-09-30	1	0	0
+Thomas_M	2015-10-10	1	0	0
 TomHynes	2015-01-06	15	0	0
 TomHynes	2015-01-14	59	2	0
+TorCguy	2015-09-11	4	0	0
 Trezheur	2014-11-16	15	0	0
 UJung	2012-09-01	1	1	0
 Unusual User Name	2014-07-13	1	1	0
+Walter Schlögl	2015-09-27	1	0	0
+YOUBI HERVE	2015-07-04	111	111	0
 Yetna	2015-01-12	2	2	0
 Yetna	2015-01-24	11	11	0
 Youmsi	2014-05-11	7	4	0
 aOne	2013-05-15	4	4	0
+abel801	2015-07-22	1	0	0
+abel801	2015-07-23	2	0	0
+abel801	2015-07-24	1	0	0
+abel801	2015-09-01	1	0	0
+abel801	2015-09-10	1	0	0
 adamos	2014-09-02	1	0	0
 adjuva	2014-03-08	2	0	0
 afonin	2009-09-24	1	0	0
 afranck64	2014-09-15	3	3	0
 alan25	2013-08-07	3	3	0
-amillar	2009-06-01	1	1	0
+alromain	2015-03-14	1	0	0
+amillar	2009-06-01	1	1	1
 andbox	2014-12-08	4	0	0
 andbox	2014-12-16	23	1	0
+anders2045	2015-04-27	3	3	0
 badpap	2015-01-22	8	2	0
 bernard didier	2014-03-19	1	1	0
+bertrandtogue	2015-03-20	5	4	0
 bhaller	2014-12-29	4	0	0
 bigalxyz123	2013-12-16	67	64	0
 bissoni	2013-07-30	4	0	0
 botdidier2020	2012-12-09	65	0	0
 botdidier2020	2013-01-02	126	0	0
 botdidier2020	2014-07-27	2	0	0
+bullmap	2015-02-13	4	0	0
 bvivi	2014-09-11	2	1	0
 bvivi	2014-12-23	2	0	0
+bvivi	2015-05-05	1	0	0
+bvivi	2015-07-09	1	0	0
+bvivi	2015-08-14	3	3	0
 cgu66	2011-01-06	2	0	0
 cgu66	2013-01-21	1	0	0
 colindt	2014-12-31	1	0	0
@@ -484,6 +552,7 @@ dcp	2013-01-10	2	1	0
 dcp	2014-12-31	2	0	0
 dfellow	2014-08-10	5	0	0
 didier2020	2013-08-29	266	0	0
+didier2020	2015-10-17	2	0	0
 dmgroom_ct	2012-12-28	93	2	0
 dmgroom_ct	2012-12-29	43	0	0
 dmgroom_ct	2012-12-31	324	2	0
@@ -507,20 +576,33 @@ dmgroom_ct	2013-01-26	97	0	0
 dmgroom_ct	2013-01-28	1	0	0
 dmgroom_ct	2013-01-30	25	1	0
 donald237	2014-12-13	1	0	0
+ediyes	2015-09-07	1	1	0
 elvisplatini	2013-09-08	1	1	0
 emilde	2014-09-04	4	2	0
 escada	2014-12-09	9	0	0
 geochrome	2015-01-21	2	0	0
+geochrome	2015-01-30	3	0	0
+geologist	2015-11-06	13	3	0
 glasserc	2011-01-14	1	1	0
+glibbertorsten	2015-05-19	6	2	0
+glibbertorsten	2015-05-20	10	0	0
+glibbertorsten	2015-09-02	24	0	0
+glibbertorsten	2015-09-18	5	0	0
 gormur	2012-06-03	1	0	0
 gormur	2012-07-01	1	0	0
+gosausee	2015-04-06	2	0	0
 hansemann1234	2014-08-06	44	0	0
 hansemann1234	2014-08-07	36	1	0
 hansemann1234	2014-08-12	27	0	0
+hebolz	2015-01-31	8	0	0
 highbuilder	2014-10-06	17	0	0
+highbuilder	2015-02-14	1	0	0
 hllrsr95	2012-07-01	20	13	0
 hllrsr95	2012-07-06	4	4	0
+hofoen	2015-09-09	15	0	0
 hybridOL	2014-10-08	2	0	0
+ignace72	2015-12-26	1	0	0
+isabellekh	2015-08-06	1	1	0
 jean-joel-ntepp	2013-03-27	18	18	0
 jessesecas	2012-05-27	6	2	0
 jessesecas	2012-06-12	1	0	0
@@ -528,58 +610,72 @@ jmmoraux	2009-11-05	3	1	0
 johanemilsson	2013-06-13	9	9	0
 jpx_	2014-12-27	1	0	0
 katpatuka	2009-01-11	41	39	2
-katpatuka	2009-03-15	8	8	0
-katpatuka	2010-09-27	79	68	0
+katpatuka	2009-03-15	8	8	2
+katpatuka	2010-09-27	79	68	1
 katpatuka	2010-09-28	33	32	0
+keepright! ler	2015-03-08	20	0	0
 landfahrer	2013-06-20	3	3	0
 lann	2014-06-29	1	1	0
 lann	2014-07-02	19	2	0
 legeometre	2014-08-30	12	12	0
+leuty	2015-10-03	3	1	0
 lseg	2013-01-30	2	1	0
 löcknitzpaddler	2014-11-26	8	0	0
 madovanes	2014-09-06	4	0	0
 maggot27	2014-02-22	1	0	0
 magiconair	2009-06-10	214	184	0
-magiconair	2009-06-11	604	435	0
-magiconair	2009-06-13	355	289	0
+magiconair	2009-06-11	604	435	1
+magiconair	2009-06-13	355	289	1
 magiconair	2009-06-14	24	18	0
 magiconair	2009-06-15	150	104	0
 magiconair	2009-06-19	1	1	0
-magiconair	2009-06-20	265	229	2
+magiconair	2009-06-20	265	229	4
 magiconair	2009-06-22	63	38	0
 magiconair	2009-06-23	29	10	0
 magiconair	2009-06-27	327	88	0
 magiconair	2009-06-28	20	15	0
-magiconair	2009-07-15	92	91	4
-magiconair	2009-07-16	222	171	1
+magiconair	2009-07-15	92	91	1
+magiconair	2009-07-16	222	171	0
 magiconair	2009-07-17	294	235	0
 magiconair	2009-07-21	76	70	0
 magiconair	2009-07-24	90	78	0
-magiconair	2009-07-27	116	109	12
-magiconair	2009-07-30	118	101	2
+magiconair	2009-07-27	116	109	10
+magiconair	2009-07-30	118	101	1
 magiconair	2009-08-03	64	56	0
 magiconair	2009-12-13	368	368	0
 magiconair	2009-12-18	3	0	0
 magiconair	2010-09-12	143	115	0
-magiconair	2010-09-26	124	83	1
-magiconair	2010-10-05	175	162	4
-magiconair	2011-01-12	321	311	8
-magiconair	2011-07-18	197	180	6
+magiconair	2010-09-26	124	83	0
+magiconair	2010-10-05	175	162	3
+magiconair	2011-01-12	321	311	10
+magiconair	2011-07-18	197	180	10
 magiconair	2011-07-19	10	3	0
 magiconair	2011-07-20	1	1	0
-magiconair	2011-07-30	81	74	2
+magiconair	2011-07-30	81	74	0
+mapwitch	2015-07-03	122	57	0
 markpierce	2011-05-21	1	1	0
 mdp553	2010-01-24	220	217	0
-mdp553	2012-06-12	1107	1096	7
-mdp553	2012-06-13	996	993	8
+mdp553	2012-06-12	1107	1096	5
+mdp553	2012-06-13	996	993	11
 mdp553	2012-07-29	3	3	0
 meppen7	2011-10-07	2	0	0
 meppen7	2012-11-14	1	1	0
 meppen7	2012-12-08	1	1	0
-michel-kamerun	2010-08-29	19	19	0
+michel-kamerun	2010-08-29	19	19	1
+mmarks91	2015-12-07	20	20	0
+mmarks91	2015-12-08	39	39	0
 newils	2014-10-25	560	537	0
+ngouatio	2015-05-23	302	302	0
+ngouatio	2015-06-06	83	83	0
+ngouatio	2015-06-13	595	595	0
+ngouatio	2015-06-15	657	657	0
+ngouatio	2015-06-18	844	844	0
+ngouatio	2015-06-20	450	450	0
+ngouatio	2015-06-27	3486	3481	1
+ngouatio	2015-07-04	749	726	1
+ninjamask	2015-06-14	2	1	0
 nrprzsnm	2011-05-27	78	69	0
-nubarron	2013-03-24	127	114	3
+nubarron	2013-03-24	127	114	5
 okilimu	2014-07-10	3	0	0
 okilimu	2014-09-03	16	1	0
 olaf1000	2014-04-04	1	0	0
@@ -588,7 +684,26 @@ oli jaco	2013-10-25	14	14	0
 oli jaco	2013-12-12	10	7	0
 oli jaco	2013-12-16	21	21	0
 oli jaco	2013-12-17	38	36	0
+ongolaboy	2015-06-15	4	4	0
+ongolaboy	2015-06-16	14	13	0
+ongolaboy	2015-06-17	58	45	0
+ongolaboy	2015-06-18	147	131	0
+ongolaboy	2015-06-19	9	7	0
+ongolaboy	2015-06-24	10	10	0
+ongolaboy	2015-06-25	74	73	0
+ongolaboy	2015-06-27	88	85	0
+ongolaboy	2015-06-28	87	85	0
+ongolaboy	2015-07-07	19	19	0
+ongolaboy	2015-07-13	2	1	0
+ongolaboy	2015-07-19	50	49	0
+ongolaboy	2015-07-27	55	55	0
+ongolaboy	2015-08-03	20	20	0
+ongolaboy	2015-08-20	37	37	0
 pschonmann	2012-12-09	1	0	0
+ratrun	2015-07-23	1	0	0
+ratrun	2015-11-08	1	0	0
+ratrun	2015-11-10	1	0	0
+ratrun	2015-11-12	4	0	0
 raubraupe	2014-07-09	1	0	0
 raubraupe	2014-07-10	20	0	0
 ravler	2014-09-05	504	3	0
@@ -598,9 +713,22 @@ rolin	2013-05-10	1	1	0
 rolin	2013-05-16	2	1	0
 rorym	2015-01-14	29	0	0
 rumpelsocke	2014-10-23	26	0	0
+rumpelsocke	2015-05-28	2	0	0
+ruph	2015-02-16	2	0	0
+ruph	2015-02-20	3	0	0
+ruph	2015-03-14	15	0	0
+ruph	2015-04-01	1	0	0
+ruph	2015-07-07	2	0	0
+ruph	2015-10-19	2	1	0
+ruph	2015-10-20	2	0	0
+ruph	2015-10-22	2	0	0
+ruph	2016-01-13	4	2	0
+salix01	2015-08-11	7	0	0
 sanchi	2012-02-23	1	0	0
 sea hik	2014-10-05	15	0	0
 skobbler	2012-10-24	1	0	0
+snapping	2015-12-09	8	8	0
+snapping	2016-01-14	1179	1064	0
 sobzeros	2012-07-02	4017	3828	0
 sobzeros	2012-07-03	4241	3393	0
 sobzeros	2012-07-08	262	182	0
@@ -608,17 +736,17 @@ sobzeros	2012-07-22	22	9	0
 sobzeros	2012-07-23	30	1	0
 sobzeros	2012-07-26	2	2	0
 sobzeros	2012-08-26	22	13	0
-sobzeros	2012-08-31	7519	7519	15
-sobzeros	2012-09-07	72	71	3
-sobzeros	2012-09-08	44	31	1
-sobzeros	2012-09-09	454	439	12
+sobzeros	2012-08-31	7519	7519	17
+sobzeros	2012-09-07	72	71	4
+sobzeros	2012-09-08	44	31	3
+sobzeros	2012-09-09	454	439	15
 sobzeros	2012-09-10	1	0	0
 sobzeros	2012-09-15	1	1	0
 sobzeros	2012-09-16	104	92	0
 sobzeros	2012-09-17	1805	1637	1
-sobzeros	2012-09-21	8591	8215	4
-sobzeros	2012-09-22	6506	6171	3
-sobzeros	2012-09-23	24802	24802	5
+sobzeros	2012-09-21	8591	8215	0
+sobzeros	2012-09-22	6506	6171	2
+sobzeros	2012-09-23	24802	24802	4
 sobzeros	2012-10-07	1115	329	0
 sobzeros	2012-10-10	523	450	0
 sobzeros	2012-10-15	2065	1498	0
@@ -627,7 +755,7 @@ sobzeros	2012-10-17	792	593	0
 sobzeros	2012-10-18	888	886	0
 sobzeros	2012-10-24	1088	740	1
 sobzeros	2012-10-25	347	321	0
-sobzeros	2012-10-26	174	162	2
+sobzeros	2012-10-26	174	162	1
 sobzeros	2012-10-27	849	611	0
 sobzeros	2012-10-28	4207	3787	0
 sobzeros	2012-10-29	1146	1074	0
@@ -642,8 +770,8 @@ sobzeros	2012-11-21	22523	22523	0
 sobzeros	2012-11-22	89150	88873	0
 sobzeros	2012-11-23	252	2	0
 sobzeros	2012-11-25	262218	261546	0
-sobzeros	2012-11-26	641432	641200	0
-sobzeros	2012-11-29	287648	287442	1
+sobzeros	2012-11-26	641432	641200	1
+sobzeros	2012-11-29	287648	287442	0
 sobzeros	2012-11-30	120	12	0
 sobzeros	2012-12-01	54693	53718	0
 sobzeros	2012-12-02	2583	88	0
@@ -691,9 +819,16 @@ sobzeros	2013-04-24	25503	25500	0
 sobzeros	2013-04-25	33133	33133	0
 sobzeros	2014-08-07	15	7	0
 sobzeros	2014-12-06	8	8	0
+sobzeros	2015-08-20	16	0	0
+sobzeros	2015-10-09	20	14	0
 sommerluk	2014-11-21	1	0	0
+sorcrosc	2015-04-15	5	0	0
 stanwolves	2013-08-23	1	1	0
-tomdb	2008-11-10	4294	4115	130
+tbicr	2015-12-20	1	0	0
+tchayep aurélien	2015-05-25	36	1	0
+tchokona	2016-01-13	7468	6891	0
+tngarsel	2015-09-29	2	2	0
+tomdb	2008-11-10	4294	4115	135
 tomdb	2008-11-12	215	215	0
 turbojol	2011-01-26	23	13	0
 turbojol	2011-01-29	150	25	0
@@ -707,7 +842,11 @@ vheim	2009-05-16	327	325	0
 volatile_ant	2014-10-23	7	0	0
 volatile_ant	2014-10-30	91	5	0
 volatile_ant	2014-12-15	4	0	0
+volatile_ant	2015-05-29	9	3	0
+vouches	2015-05-07	4	0	0
 wandsecacher	2013-03-20	1	0	0
+wheelmap_visitor	2015-03-07	1	0	0
+wheelmap_visitor	2015-12-29	1	0	0
 woodpeck_repair	2012-12-11	1	0	0
 xybot	2011-07-20	1	0	0
 zaizone	2012-12-10	15	2	0
@@ -720,6 +859,11 @@ zaizone	2015-01-05	220	173	0
 zaizone	2015-01-13	2	1	0
 zaizone	2015-01-20	118	39	0
 zaizone	2015-01-21	214	186	0
+zaizone	2015-05-04	7	3	0
+zaizone	2015-10-09	1	1	0
+zaizone	2015-10-23	1	0	0
 zenfunk	2009-09-03	3	3	0
 zozobejo	2010-11-27	4	4	0
 Ævar Arnfjörð Bjarmason	2009-09-08	1	0	0
+Базич	2015-03-26	38	1	0
+Базич	2015-04-06	5	0	0

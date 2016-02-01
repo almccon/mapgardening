@@ -233,8 +233,8 @@ function createTimelines(data, metadata) {
       if (prevDate.getFullYear() > 2004 && entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
         entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
       }
-      // Don't add data for 2015 or later
-      if (nextDate.getFullYear() < 2015 && entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
+      // Don't add data for 2016 or later
+      if (nextDate.getFullYear() < 2016 && entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
         entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
       }
     });
@@ -308,7 +308,7 @@ function createTimelines(data, metadata) {
     .range([h, 0]); // Inverted so greater values are at top
     
   xScaleTime
-    .domain([new Date("2005-01-01"),new Date("2015-01-01")])
+    .domain([new Date("2005-01-01"),new Date("2016-01-01")])
     //.domain([earliestDate,maxima[indexX]])
     .range([0, w]);
     
@@ -459,7 +459,7 @@ function createTimelines(data, metadata) {
 
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
-      .datum(d.values.filter(function(d) { return d.date.getFullYear() < 2015; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
+      .datum(d.values.filter(function(d) { return d.date.getFullYear() < 2016; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
       .attr("class", "lineclass")
       .attr("d", line)
       .attr("fill", "none")

@@ -39,7 +39,7 @@ else:
 # TODO: query the BlankSpotTableManager to see which types are present 
 possible_types = [
                   'raster',
-                  'proximity',
+#                  'proximity',
                   ]
 
 if options.type == "all":
@@ -49,8 +49,8 @@ else:
     
 # TODO: query the BlankSpotTableManager to see which resolutions are present 
 possible_resolutions = [
-                        '250',
-                        '500',
+#                        '250',
+#                        '500',
                         '1000',
                         ]
 
@@ -62,7 +62,7 @@ else:
 
 MapGardening.init_logging()
 
-for placename in places.keys():
+for placename in sorted(places.keys()):
 
     # Each place exists in a different database, so we connect/disconnect inside the places loop    
     (conn, cur) = MapGardening.init_db(places[placename]['dbname'])

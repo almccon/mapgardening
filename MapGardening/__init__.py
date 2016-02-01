@@ -66,6 +66,11 @@ places = {
                         'rastertableproj': 32760, # WGS 84 / UTM zone 60S
                         'utc_offset': 12,
                        },
+            'barcelona': {
+                        'dbname': "osm-history-render-barcelona",
+                        'rastertableproj': 32631, # WGS 84 / UTM zone 31N
+                        'utc_offset': 1,
+                       },
             'bayarea': {
                         'dbname': "osm-history-render-bayarea",
                         'rastertableproj': 32610, # WGS 84 / UTM zone 10N
@@ -90,6 +95,11 @@ places = {
                         'dbname': "osm-history-render-cairo",
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                         'utc_offset': 2,
+                       },
+            'chicago': {
+                        'dbname': "osm-history-render-chicago",
+                        'rastertableproj': 32616, # WGS 84 / UTM zone 16N
+                        'utc_offset': -6,
                        },
             'crimea': {
                         'dbname': "osm-history-render-crimea",
@@ -126,6 +136,16 @@ places = {
                         'rastertableproj': 32636, # WGS 84 / UTM zone 36N
                         'utc_offset': 2,
                        },
+            'kathmandu': {
+                        'dbname': "osm-history-render-kathmandu",
+                        'rastertableproj': 32645, # WGS 84 / UTM zone 45N
+                        'utc_offset': 5.75,
+                       },
+            'lasvegas': {
+                        'dbname': "osm-history-render-lasvegas",
+                        'rastertableproj': 32611, # WGS 84 / UTM zone 11N
+                        'utc_offset': -8,
+                       },
             'london': {
                         'dbname': "osm-history-render-london",
                         'rastertableproj': 32630, # WGS 84 / UTM zone 30N
@@ -145,6 +165,11 @@ places = {
                         'dbname': "osm-history-render-mexicocity",
                         'rastertableproj': 32614, # WGS 84 / UTM zone 14N
                         'utc_offset': -6,
+                       },
+            'miami': {
+                        'dbname': "osm-history-render-miami",
+                        'rastertableproj': 32617, # WGS 84 / UTM zone 17N
+                        'utc_offset': -5,
                        },
             'minsk': {
                         'dbname': "osm-history-render-minsk",
@@ -210,6 +235,11 @@ places = {
                         'dbname': "osm-history-render-seoul",
                         'rastertableproj': 32652, # WGS 84 / UTM zone 52N
                         'utc_offset': 9,
+                       },
+            'sydney': {
+                        'dbname': "osm-history-render-sydney",
+                        'rastertableproj': 32756, # WGS 84 / UTM zone 56S
+                        'utc_offset': 10,
                        },
             'tirana': {
                         'dbname': "osm-history-render-tirana",
@@ -308,7 +338,7 @@ class BlankSpotTable:
         
     def create_new_table(self):
         """Create the table if it doesn't exist already"""
-        self._tablename = self._tablename + "_" + self._params['runtype'] + "_" + str(int(self._params['resolution'])) + "_" + str(int(time.time())) 
+        self._tablename = self._tablename + "_" + self._params['runtype'] + "_" + str(int(self._params['resolution'])) + "_" + str(self._params['identifier']) 
        
         # TODO: handle exception if table exists 
         querystring = "CREATE TABLE \"" + self._tablename + "\" " + \
@@ -382,7 +412,7 @@ class BlankSpotTableManager:
             "%s, " + \
             "'" + blankspot_table_obj.getTableName() + "')"
         try:
-            cur.execute(querystring, (params['runtype'], params['resolution'], datetime.datetime.now(),))
+            cur.execute(querystring, (params['runtype'], params['resolution'], str(datetime.datetime.now()),))
         except Exception, inst:
             conn.rollback()
             logging.error("can't insert blankspot record in manager table")
@@ -486,10 +516,12 @@ class Cell:
         """Select all OSM nodes that intersect this cell and set their blank/not-blank values"""
 	"""Optional string_match_resolution uses rounded/off utm coordinate values for faster queries."""
         
-        temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
+        #temptablename = "temp_node_table_" + str(self.x) + "_" + str(self.y) 
        
-        querystring = "CREATE TEMP TABLE " + temptablename + " " + \
-            "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
+        #querystring = "CREATE TEMP TABLE " + temptablename + " " + \
+        #    "AS SELECT b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
+        querystring = "SELECT " + \
+            "b.id, b.version, b.user_id, b.user_name, b.valid_from, b.valid_to " + \
             "FROM " + self.rastertablename + " a, " + self.nodetableobj.getTableName() + " b " + \
             "WHERE a.rid = " + str(self.record_id) + " " 
 
@@ -503,29 +535,31 @@ class Cell:
             print "fall back to ST_Within query (much slower)"
             querystring += "AND ST_Within(b.geom, ST_Transform(ST_PixelAsPolygon(a.rast, %s, %s), " + str(self.nodetableobj.getProj()) + ")) "
 
-        querystring += "AND b.version = 1"
+        querystring += "AND b.version = 1 ORDER BY valid_from"
+        #querystring += "AND b.version = 1"
 
         try:
             if (string_match_resolution == 100 or string_match_resolution == 1000):
                 cur.execute(querystring, (self.x, self.y, self.x, self.y))
             else:
                 cur.execute(querystring, (self.x, self.y))
-        except Exception, inst:
-            conn.rollback()
-            if str(inst).find("already exists") != -1:
-                cur.execute("DROP TABLE " + temptablename) # drop the old table
-                conn.commit()
-                cur.execute(querystring, (self.x, self.y)) # and create a new one
-                conn.commit()
-            else:
-                logging.error("can't create table of intersecting nodes for cell %s, %s", self.x, self.y)
-                logging.error(inst)
-                sys.exit() 
-        conn.commit()
+        #except Exception, inst:
+        #    conn.rollback()
+        #    if str(inst).find("already exists") != -1:
+        #        cur.execute("DROP TABLE " + temptablename) # drop the old table
+        #        conn.commit()
+        #        cur.execute(querystring, (self.x, self.y)) # and create a new one
+        #        conn.commit()
+        #    else:
+	#	print "can't create table of intersection nodes. Aborting"
+        #        logging.error("can't create table of intersecting nodes for cell %s, %s", self.x, self.y)
+        #        logging.error(inst)
+        #        sys.exit() 
+        #conn.commit()
             
-        querystring = "SELECT * FROM " + temptablename + " ORDER BY valid_from"
-        try:
-            cur.execute(querystring)
+        #querystring = "SELECT * FROM " + temptablename + " ORDER BY valid_from"
+        #try:
+        #    cur.execute(querystring)
         except Exception, inst:
             logging.error("can't select intersecting nodes for cell %s, %s", self.x, self.y)
             logging.error(inst)
@@ -553,8 +587,11 @@ class Cell:
                 user_id = rows[i][2]
                 valid_from = rows[i][4]
                 valid_to = rows[i][5]
-             
-            print "updating node %s" % earliest_id
+
+            #validfromdate = datetime.datetime.strptime(valid_from,"%Y-%m-%d %H %M %S") 
+
+            print "updating node %s, user_id %s, valid_from %s" % (earliest_id, user_id, valid_from.strftime("%Y%m%d"))
+            #print "updating node %s, user_id %s, valid_from %s" % (earliest_id, user_id, valid_from)
             
             # For the first node (and only the first node) set blank = TRUE 
             querystring = "INSERT INTO " + self.blankspottableobj.getTableName() + " (node_id, blank) VALUES (%s, TRUE)" 
@@ -563,6 +600,26 @@ class Cell:
             except Exception, inst:
                 conn.rollback()
                 logging.error("can't set blank = TRUE" + self.blankspottableobj.getTableName())
+                logging.error(inst)
+                sys.exit()  
+            conn.commit()
+   
+            querystring = "UPDATE " + self.rastertablename + " SET rast = ST_SetValue(" + self.rastertablename + ".rast, 2, %s, %s, %s) WHERE rid = " + str(self.record_id)
+            try:
+                cur.execute(querystring, (self.x, self.y, int(valid_from.strftime("%Y%m%d"))))
+            except Exception, inst:
+                conn.rollback()
+                logging.error("can't update raster cell %s, %s", self.x, self.y)
+                logging.error(inst)
+                sys.exit()  
+            conn.commit()
+
+            querystring = "UPDATE " + self.rastertablename + " SET rast = ST_SetValue(" + self.rastertablename + ".rast, 3, %s, %s, %s) WHERE rid = " + str(self.record_id)
+            try:
+                cur.execute(querystring, (self.x, self.y, user_id))
+            except Exception, inst:
+                conn.rollback()
+                logging.error("can't update raster cell %s, %s", self.x, self.y)
                 logging.error(inst)
                 sys.exit()  
             conn.commit()
@@ -580,7 +637,17 @@ class Cell:
             logging.error(inst)
             sys.exit()  
         conn.commit()
-   
+
+	## Remove the temp table
+        #try:
+        #    cur.execute("DROP TABLE " + temptablename) # drop the old table
+        #except Exception, inst:
+        #    logging.error("can't drop %s", temptablename)
+        #    logging.error(inst)
+        #    sys.exit() 
+        #conn.commit()
+            
+
     # end def analyze_nodes
         
     # def analyze_nodes_and_preset_blanks(self):
@@ -662,6 +729,7 @@ class Raster:
         
         querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
         try:
+            print querystring
             cur.execute(querystring)
         except Exception, inst:
             conn.rollback()
@@ -670,6 +738,30 @@ class Raster:
             sys.exit() 
         conn.commit()
             
+        # Add another band to the same rid
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
+        try:
+            print querystring
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't add raster band")
+            logging.error(inst)
+            sys.exit() 
+        conn.commit()
+
+        # Add another band to the same rid
+        querystring = "UPDATE " + self.rastertablename + " SET rast = ST_AddBand(rast,'32BUI'::text,200) WHERE rid = " + str(self.record_id)
+        try:
+            print querystring
+            cur.execute(querystring)
+        except Exception, inst:
+            conn.rollback()
+            logging.error("can't add raster band")
+            logging.error(inst)
+            sys.exit() 
+        conn.commit()
+
     def get_width(self, get_from_db=False):
         if not self.width or get_from_db:
             querystring = "SELECT ST_Width(rast) FROM " + self.rastertablename + " " + \
@@ -912,25 +1004,28 @@ class NodeTable:
             logging.error(inst)
             sys.exit()
         conn.commit()
-    
-    def create_blankspot_column(self):
-        querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            conn.rollback()
-            # If string includes "already exists"...
-            if str(inst).find("already exists") != -1:
-                print "blank column already exists, continuing..."
-            else:
-                print "couldn't create blank column, exiting..."
-                sys.exit()
-        conn.commit()
+   
+#   def create_blankspot_column(self):
+#        # Do something like this instead?
+#        #querystring = "CREATE TABLE \"" + self.nodetablename + "\" AS SELECT *, FALSE as blank FROM \"" + self....
+#        querystring = "ALTER TABLE \"" + self.nodetablename + "\" ADD COLUMN blank boolean"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            conn.rollback()
+#            # If string includes "already exists"...
+#            if str(inst).find("already exists") != -1:
+#                print "blank column already exists, continuing..."
+#            else:
+#                print "couldn't create blank column, exiting..."
+#                sys.exit()
+#        conn.commit()
        
     def set_all_blankspots(self, arg):
         """For some analyses, we want everything set before we begin"""
-        #querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
-        querystring = "ALTER TABLE \"" + self.nodetablename + "\" DROP COLUMN blank"
+        # is this actually used anywhere?
+        querystring = "UPDATE \"" + self.nodetablename + "\" SET blank = " + arg
+        #querystring = "ALTER TABLE \"" + self.nodetablename + "\" DROP COLUMN blank"
         try:
             cur.execute(querystring)
         except Exception, inst:
@@ -939,8 +1034,8 @@ class NodeTable:
             logging.error(inst)
             sys.exit()
         conn.commit()
-        print "done dropping old blank column. Creating new one..." 
-        return self.create_blankspot_column()
+        #print "done dropping old blank column. Creating new one..."
+        #return self.create_blankspot_column()
     
     def set_all_blankspots_true(self):
         print "setting all blank fields true..." 
@@ -1092,7 +1187,8 @@ class NodeTable:
         Create columns for the x and y coordinate rounded to 100m and 1000m
         """
         
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+        querystring = "CREATE TABLE " + self.nodetablename + "_rounded AS SELECT *, false as blank, ST_X(geom_utm)/1000 as x1000, ST_Y(geom_utm)/1000 as y1000 FROM (SELECT *, ST_Transform(geom,%s) as geom_utm FROM " + self.nodetablename + " ) as a"
+	print(querystring)
         try:
             cur.execute(querystring,(srid,))
         except Exception, inst:
@@ -1101,86 +1197,147 @@ class NodeTable:
             conn.rollback()
             return 1
     
-        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
-        try:
-            cur.execute(querystring,(srid,))
-        except Exception, inst:
-            logging.error("can't update column geom_utm in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+#        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't update column geom_utm in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x1000 in node table")
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN geom_utm geometry(Point,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't add column geom_utm to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#    
+#        querystring = "UPDATE " + self.nodetablename + " SET geom_utm = ST_Transform(geom,%s)"
+#        try:
+#            cur.execute(querystring,(srid,))
+#        except Exception, inst:
+#            logging.error("can't update column geom_utm in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't add column to node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x1000 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET y1000 = ST_Y(geom_utm)/1000"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column y1000 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET x100 = ST_X(geom_utm)/100"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column x100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
+#
+#        querystring = "UPDATE " + self.nodetablename + " SET y100 = ST_Y(geom_utm)/100"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't update column y100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
 
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x1000 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y1000 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN x100 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "ALTER TABLE " + self.nodetablename + " ADD COLUMN y100 int"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't add column to node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET x1000 = ST_X(geom_utm)/1000"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column x1000 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET y1000 = ST_Y(geom_utm)/1000"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column y1000 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET x100 = ST_X(geom_utm)/100"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column x100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
-
-        querystring = "UPDATE " + self.nodetablename + " SET y100 = ST_Y(geom_utm)/100"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't update column y100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+        self.nodetablename = self.nodetablename + "_rounded"
 
         querystring = "CREATE INDEX xy1000_idx on " + self.nodetablename + " (x1000,y1000)"
         try:
@@ -1191,13 +1348,13 @@ class NodeTable:
             conn.rollback()
             return 1
 
-        querystring = "CREATE INDEX xy100_idx on " + self.nodetablename + " (x100,y100)"
-        try:
-            cur.execute(querystring)
-        except Exception, inst:
-            logging.error("can't create index on x100, y100 in node table")
-            logging.error(inst)
-            conn.rollback()
-            return 1
+#        querystring = "CREATE INDEX xy100_idx on " + self.nodetablename + " (x100,y100)"
+#        try:
+#            cur.execute(querystring)
+#        except Exception, inst:
+#            logging.error("can't create index on x100, y100 in node table")
+#            logging.error(inst)
+#            conn.rollback()
+#            return 1
 
-# end class NodeTable
+# end class NodeTable 

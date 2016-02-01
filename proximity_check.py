@@ -62,7 +62,10 @@ if place is not None:
     #if not bstm.table_exists():
     #    bstm.create_manager_table()
 
+    unique_identifier = str(int(time.time()))
+
     params = {
+                'identifier': unique_identifier,
                 'runtype': runtype,
                 'resolution': resolution
               }
@@ -73,7 +76,7 @@ if place is not None:
         print "doing raster analysis" 
         
         # Create semi-unique raster name to allow concurrent processing in same database
-        raster = MapGardening.Raster("raster_" + str(int(time.time()))) 
+        raster = MapGardening.Raster("raster_" + unique_identifier) 
         
         rasterScale = float(params['resolution'])
         
@@ -119,7 +122,7 @@ if place is not None:
                     inc += 1      
                     if not inc % 10:
                         now = time.time()
-                        print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total {}".format(inc, count_todo, 100*inc/count_todo, skipped, 100*skipped/count_todo, now - lt, now - st, time.ctime(int(now)))
+                        print options.place, "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total {}".format(inc, count_todo, 100*inc/count_todo, skipped, 100*skipped/count_todo, now - lt, now - st, time.ctime(int(now)))
                         lt = now
         
                 # end loop
@@ -198,7 +201,7 @@ if place is not None:
                 inc += 1      
                 if not inc % 10:
                     now = time.time()
-                    print "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total".format(inc, length, 100*inc/length, skipped, 100*skipped/length, now - lt, now - st)
+                    print options.place, "done {}/{} ({:.2f}%), skipped {} ({:.2f}%) time elapsed: {:.0f} sec, {:.0f} sec total".format(options.place, inc, length, 100*inc/length, skipped, 100*skipped/length, now - lt, now - st)
                     lt = now
         
         except KeyboardInterrupt:
