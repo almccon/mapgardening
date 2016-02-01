@@ -45,9 +45,6 @@ div.legend {
   border-radius: 8px;
   pointer-events: none;
 }
-div.legend {
-  top: 100px;
-}
 .line {
   fill: none;
   stroke: steelblue;
