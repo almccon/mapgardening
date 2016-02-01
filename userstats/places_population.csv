@@ -1,11 +1,13 @@
 place,population
 amsterdam,953736
 auckland,1024915
+barcelona,1
 bayarea,7254630
 berlin,1939415
 boston,3158505
 buenosaires,10259203
 cairo,13709769
+chicago,1
 crimea,1851028
 cyprus,725747
 douala,88863
@@ -13,10 +15,13 @@ haiti,7058239
 istanbul,2588188
 jakarta,13856170
 jerusalem,6826731
+kathmandu,1
+lasvegas,1
 london,8514280
 losangeles,12746245
 manchester,1094441
 mexicocity,14739742
+miami,1
 minsk,1240330
 montevideo,862224
 montreal,3007949
@@ -30,6 +35,7 @@ rio,7663568
 santiago,1448309
 seattle,3199281
 seoul,11400212
+sydney,1
 tirana,74765
 tokyo,30834537
 toronto,3637923
