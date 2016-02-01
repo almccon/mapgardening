@@ -105,8 +105,24 @@ Then initialize the analysis table:
 When the databases have been loaded, run the mapgardening analysis scripts. 
 
  * `./proximity_check.py -p $place`
- * ~~`raster_stats.py` # runs for all places by default~~ (currently doesn't work)
- * `user_analysis.py` # runs for all places by default
+ * ~~`./raster_stats.py` # runs for all places by default~~ (currently doesn't work)
+ * `./user_analysis.py` # runs for all places by default
+ 
+We also need to run a modified version of [@mvexel](https://github.com/mvexel)'s UserStats script that sums up the user activity by month. `git clone https://github.com/almccon/OSMQualityMetrics`, and follow the instructions there to make sure that `osmium` is also installed.
+
+```
+cd OSMQualityMetrics
+for place in amsterdam auckland barcelona bayarea berlin boston buenosaires cairo chicago crimea cyprus douala haiti istanbul jakarta jerusalem kathmandu lasvegas london losangeles manchester mexicocity miami minsk montevideo montreal moscow mumbai nairobi newyork quebec paris rio santiago seattle seoul sydney tirana tokyo toronto vancouver yaounde
+do
+echo $place
+../osmium/osmjs/osmjs -j UserStats.js -l array /mnt/ebs_large/$place.osh.pbf
+mv userstats.csv userstats_$place.csv
+done
+```
+
+Finally move those `userstats_*.csv` files into the `userstats/` directory in the `mapgardening/` repo. Also make sure that the `output_userstatsbydate_*_raster_1000m.tsv` files are in the same folder. Then we combine the analysis outputs into a form that the visualization tool can understand:
+ 
+ * `./combine_stats.py`
 
 (modify `MapGardening/__init__.py` for configuration)
 
