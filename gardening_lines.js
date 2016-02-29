@@ -634,6 +634,7 @@ function updateMaxY(maxY) {
 function setOverrideY(maxY) {
   overrideY = maxY;
   updateMaxY(maxY);
+  return overrideY;
 }
 
 function unsetOverrideY() {
