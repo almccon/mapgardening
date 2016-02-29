@@ -460,6 +460,32 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
       updateCadence(modes[this.value]);
     });
 
+  var placeControls = controls.append("div")
+    .selectAll("input")
+    .data(places)
+    .enter()
+    .append("label")
+    .text(function(d) { return " " + d + ":";})
+    .insert("input")
+    .attr("type","checkbox")
+    .attr("name", function(d) { console.log(d); return d; })
+    .property("checked", true)
+    .on("change", function() {
+      togglePlace(this.name, this.checked);
+    });
+
+  controls.append("div")
+    .selectAll("input")
+    .data([true,false])
+    .enter()
+    .append("input")
+    .attr("type","button")
+    .attr("value",function(d,i) { return ['show all','hide all'][i]; })
+    .on("click",function(d) {
+      placeControls.property("checked",d);
+      return togglePlaces(d);
+    });
+
   paths["yearly"] = svg.append("g").classed("yearly", true);
   paths["monthly"] = svg.append("g").classed("monthly", true);
   if (isYearly)
@@ -703,4 +729,13 @@ function setOverrideY(maxY) {
 function unsetOverrideY() {
   overrideY = undefined;
   updateMaxY();
+}
+
+function togglePlace(place, value) {
+  console.log("togglePlace", place, value);
+  svg.selectAll(".lineclass").filter(function(d) { return d[0].place == place; }).style("display",value ? "block" : "none");
+}
+
+function togglePlaces(value) {
+  svg.selectAll(".lineclass").style("display",value ? "block" : "none");
 }
