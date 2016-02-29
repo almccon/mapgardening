@@ -67,6 +67,7 @@ var xScaleLinear = d3.scale.linear();
 var yScaleLinear = d3.scale.linear();
 
 //var colorScaleOrdinal = d3.scale.ordinal();
+//var colorScaleOrdinal = d3.scale.category10();
 var colorScaleOrdinal = d3.scale.category20();
 
 var xAxis = d3.svg.axis();
@@ -416,7 +417,9 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
+    //.filter(function(d) { return d.key.match(/_total$/);}) // Match user name blankspot subtotals
     .filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
+    //.filter(function(d) { return d.key.match(/total$/);}) // Match user name ends with total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
@@ -424,7 +427,10 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     svg.append("path")
       //.datum(data.filter(function(d) { return d.username == "total";}))
       .datum(d.values.filter(function(d) { return d.date.getFullYear() < 2016; }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; }))
-      .attr("class", "lineclass")
+      .classed("lineclass", true)
+      //.classed(function(d) { return d[0].place;}, true)
+      //.classed("total", function(d) { return d[0].username.match(/-total$/); })
+      //.classed("subtotal", function(d) { return d[0].username.match(/_total$/); })
       .attr("d", line)
       .attr("fill", "none")
       .attr("fill-opacity", 0)
@@ -478,7 +484,6 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
         d3.select(this).attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
           //.attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
           .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.3; })
-        //tooltip_div.transition()
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
