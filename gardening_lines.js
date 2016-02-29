@@ -10,6 +10,8 @@ var columnInfo = {
   "v2count-log": { "index": "v2count", "text": "Nodes modified (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-linear": { "index": "blankcount", "text": "Blankspot nodes (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-log": { "index": "blankcount", "text": "Blankspot nodes (log scale)", "show": true, "scale": "log"},
+  "blank_ratio-linear": { "index": "blank_ratio", "text": "Blankspot / total edits ratio (linear scale)", "show": true, "scale": "linear", "ratio": true},
+  "v1_ratio-linear": { "index": "v1_ratio", "text": "v1 edits / total edits ratio (linear scale)", "show": true, "scale": "linear", "ratio": true},
   "count_area-linear": { "index": "count_area", "text": "Total edited nodes per sq km (linear scale)", "show": true, "scale": "linear"},
   "count_area-log": { "index": "count_area", "text": "Total edited nodes per sq km (log scale)", "show": true, "scale": "log"},
   "v1count_area-linear": { "index": "v1count_area", "text": "Nodes created per sq km (linear scale)", "show": true, "scale": "linear"},
@@ -26,7 +28,7 @@ var columnInfo = {
   "v2count_pop-log": { "index": "v2count_pop", "text": "Nodes modified per thousand inhabitants (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-pop-linear": { "index": "blankcount_pop", "text": "Blankspot nodes per thousand inhabitants (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-pop-log": { "index": "blankcount_pop", "text": "Blankspot nodes per thousand inhabitants (log scale)", "show": true, "scale": "log"},
-  "date": { "index": "date", "text": "Date", "show": false, "scale": "time"}
+  "date": { "index": "date", "text": "Date", "show": true, "scale": "time"}
 };
   //"nodes-linear": { "index": "nodes", "text": "Total edited nodes (linear scale) via userstats", "show": true, "scale": "linear"},
   //"nodes-log": { "index": "nodes", "text": "Total edited nodes (log scale) via userstats", "show": true, "scale": "log"},
@@ -76,6 +78,7 @@ var rScale = d3.scale.sqrt();
 var minima = {};
 var maxima = {};
 
+var overrideX;
 var overrideY;
 
 var blankspottotals = {};
@@ -102,6 +105,8 @@ var fields = [
   "v1count",
   "v2count",
   "blankcount",
+  "blank_ratio",
+  "v1_ratio",
   "count_area",
   "v1count_area",
   "v2count_area",
@@ -125,7 +130,7 @@ function createNewValue(uid, username, place, date) {
   return newValue;
 }
 
-function createTimelines(data, metadata) {
+function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
   var yearlydata = {};
   data.forEach(function(d) {
     // convert strings to numbers and dates
@@ -136,6 +141,8 @@ function createTimelines(data, metadata) {
     d.v1count = +d.v1count;
     d.v2count = d.count - d.v1count; // technically, this is version 2 or beyond, incl v3, v4, etc.
     d.blankcount = +d.blankcount;
+    d.blank_ratio = d.count > 0 ? d.blankcount/d.count : 0;
+    d.v1_ratio = d.count > 0 ? d.v1count/d.count : 0;
     d.count_area = d.count / metadata[d.place].land_area * 1000000; // per sq km
     d.v1count_area = d.v1count / metadata[d.place].land_area * 1000000; // per sq km
     d.v2count_area = d.v2count / metadata[d.place].land_area * 1000000; // per sq km
@@ -152,7 +159,7 @@ function createTimelines(data, metadata) {
     if(!(d.username in blankspottotals[d.place])) blankspottotals[d.place][d.username] = 0;
     blankspottotals[d.place][d.username] += d.blankcount;
 
-    // create yearly totals
+    // create yearly totals objects
     if(!(d.place in yearlydata)) yearlydata[d.place] = {};
     if(!(d.username in yearlydata[d.place])) yearlydata[d.place][d.username] = {};
 
@@ -162,8 +169,13 @@ function createTimelines(data, metadata) {
     if(!(yearIndex in yearlydata[d.place][d.username])) yearlydata[d.place][d.username][yearIndex] = createNewValue(d.uid, d.username, d.place, firstOfYearDateObj);
 
     fields.forEach(function(field) {
+      // if the year object doesn't exist, create it:
       if (!(field in yearlydata[d.place][d.username][yearIndex])) yearlydata[d.place][d.username][yearIndex][field] = 0;
-      yearlydata[d.place][d.username][yearIndex][field] += d[field];
+      // for the current record, sum this value with the existing running total in the year object
+      if (field == 'blank_ratio' || field == 'v1_ratio')
+        yearlydata[d.place][d.username][yearIndex][field] += (d[field]/12);
+      else
+        yearlydata[d.place][d.username][yearIndex][field] += d[field];
     });
   });
 
@@ -195,41 +207,45 @@ function createTimelines(data, metadata) {
     }
   }
 
-  dataByPlaceAndUser.forEach(function(entry) {
-    entry.values.forEach(function(d) {
-      // Add zero values for date before and after each entry, if data doesn't exist
-      // Works if the date cadence is one month
-      var prevDate = new Date(d.date);
-      prevDate.setMonth(d.date.getMonth() - 1);
-      var nextDate = new Date(d.date);
-      nextDate.setMonth(d.date.getMonth() + 1);
-      if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
-        entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
-      }
-      if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
-        entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
-      }
+  if (fillGaps) {
+    // Fill in the monthly gaps
+    dataByPlaceAndUser.forEach(function(entry) {
+      entry.values.forEach(function(d) {
+        // Add zero values for date before and after each entry, if data doesn't exist
+        // Works if the date cadence is one month
+        var prevDate = new Date(d.date);
+        prevDate.setMonth(d.date.getMonth() - 1);
+        var nextDate = new Date(d.date);
+        nextDate.setMonth(d.date.getMonth() + 1);
+        if (entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
+          entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
+        }
+        if (entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
+          entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
+        }
+      });
     });
-  });
 
-  dataByPlaceAndUserYearly.forEach(function(entry) {
-    entry.values.forEach(function(d) {
-      // Add zero values for date before and after each entry, if data doesn't exist
-      // For a date cadence of one year
-      var prevDate = new Date(d.date);
-      prevDate.setFullYear(d.date.getFullYear() - 1);
-      var nextDate = new Date(d.date);
-      nextDate.setFullYear(d.date.getFullYear() + 1);
-      // Don't add data for 2004 or earlier
-      if (prevDate.getFullYear() > 2004 && entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
-        entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
-      }
-      // Don't add data for 2016 or later
-      if (nextDate.getFullYear() < 2016 && entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
-        entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
-      }
+    // Fill in the yearly gaps
+    dataByPlaceAndUserYearly.forEach(function(entry) {
+      entry.values.forEach(function(d) {
+        // Add zero values for date before and after each entry, if data doesn't exist
+        // For a date cadence of one year
+        var prevDate = new Date(d.date);
+        prevDate.setFullYear(d.date.getFullYear() - 1);
+        var nextDate = new Date(d.date);
+        nextDate.setFullYear(d.date.getFullYear() + 1);
+        // Don't add data for 2004 or earlier
+        if (prevDate.getFullYear() > 2004 && entry.values.filter(function(d) { return d.date.getMonth() == prevDate.getMonth() && d.date.getFullYear() == prevDate.getFullYear(); }).length == 0) {
+          entry.values.push(createNewValue(d.uid, d.username, d.place, prevDate));
+        }
+        // Don't add data for 2016 or later
+        if (nextDate.getFullYear() < 2016 && entry.values.filter(function(d) { return d.date.getMonth() == nextDate.getMonth() && d.date.getFullYear() == nextDate.getFullYear(); }).length == 0) {
+          entry.values.push(createNewValue(d.uid, d.username, d.place, nextDate));
+        }
+      });
     });
-  });
+  }
 
 
   var keys = d3.keys(data[0]);
@@ -321,48 +337,48 @@ function createTimelines(data, metadata) {
       .append("div")
       .attr("id", "controls");
   
-/*
-  controls.append("div")
-    .html("X axis ")
-    .append("select")
-      .attr("label", "xaxis")
-      .attr("id", "xaxis")
-      .selectAll("option")
-      // Use entries because columnInfo is an associative array.
-      // Use filter to only include entries where d.value.show == true
-      .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
-      .enter().append("option")
-        .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
-        .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
-        .each(function(d) {
-          if (d.key == indexX) d3.select(this).attr("selected", "yes");
-        });
-    
-  d3.select("#xaxis")
-    .on("change", function() { 
-      updateX(this.options[this.selectedIndex].value) 
-    });
-*/
 
-  controls.append("div")
-    .html("Y axis ")
-    .append("select")
-      .attr("label", "yaxis")
-      .attr("id", "yaxis")
-      .selectAll("option")
-      // Use entries because columnInfo is an associative array.
-      // Use filter to only include entries where d.value.show == true
-      .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
-      .enter().append("option")
-        .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
-        .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
-        .each(function(d) {
-          if (d.key == indexY) d3.select(this).attr("selected", "yes");
-        });
-    
-  d3.select("#yaxis")
-    .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
-  
+  if (enableX) {
+    controls.append("div")
+      .html("X axis ")
+      .append("select")
+        .attr("label", "xaxis")
+        .attr("id", "xaxis")
+        .selectAll("option")
+        // Use entries because columnInfo is an associative array.
+        // Use filter to only include entries where d.value.show == true
+        .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
+        .enter().append("option")
+          .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
+          .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
+          .each(function(d) {
+            if (d.key == modeX) d3.select(this).attr("selected", "yes");
+          });
+
+    d3.select("#xaxis")
+      .on("change", function() { updateX(this.options[this.selectedIndex].value) });
+  }
+
+  if (enableY) {
+    controls.append("div")
+      .html("Y axis ")
+      .append("select")
+        .attr("label", "yaxis")
+        .attr("id", "yaxis")
+        .selectAll("option")
+        // Use entries because columnInfo is an associative array.
+        // Use filter to only include entries where d.value.show == true
+        .data(d3.entries(columnInfo).filter(function(d) { return d.value.show; }))
+        .enter().append("option")
+          .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
+          .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
+          .each(function(d) {
+            if (d.key == modeY) d3.select(this).attr("selected", "yes");
+          });
+
+    d3.select("#yaxis")
+      .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
+  }
 
   // Add radio buttons for "yearly" or "monthly" mode
   var modes = ["yearly", "monthly"];
@@ -376,17 +392,24 @@ function createTimelines(data, metadata) {
     .attr("type", "radio")
     .attr("name", "mode")
     .attr("value", function(d, i) { return i;})
-    .property("checked", function(d, i) { return i == 0; /* first one starts checked */ })
+    .property("checked", function(d, i) { if (isYearly) return i == 0; else return i == 1; })
     .on("change", function() {
       updateCadence(modes[this.value]);
     });
 
   paths["yearly"] = svg.append("g").classed("yearly", true);
-  paths["monthly"] = svg.append("g").classed("monthly", true).style("display", "none");
+  paths["monthly"] = svg.append("g").classed("monthly", true);
+  if (isYearly)
+    paths["monthly"].style("display", "none");
+  else
+    paths["yearly"].style("display", "none");
 
   // Add the lines to the plot 
   chartifyData(dataByPlaceAndUserYearly,paths["yearly"]);
   chartifyData(dataByPlaceAndUser,paths["monthly"]);
+
+  // TODO: also add a filter to catch known bot accounts and known import accounts
+  // Maybe I need to do that above when I'm building the data structure
 
   function chartifyData(data, svg) {
     data
@@ -406,9 +429,16 @@ function createTimelines(data, metadata) {
       .attr("fill", "none")
       .attr("fill-opacity", 0)
       .attr("stroke-width", 2)
-      .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+      .attr("stroke-opacity", function(d) {
+        if (d[0] && d[0].username == "total") return 0.8;
+        //else return 0.1 + (d.length * .005) // longer arrays (active more months) are more opaque
+        else return 0.3;
+      })
       // If user has blankspots (and is not "total", color them red
-      .attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+      .attr("stroke", function(d) {
+        if (!d[0] || d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) return "red";
+        else return colorScaleOrdinal(d[0]['place']);
+      })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
@@ -446,7 +476,9 @@ function createTimelines(data, metadata) {
 
       }).on("mouseout", function(d) {
         d3.select(this).attr("stroke", function(d) { return (d[0].username != "total" && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
-          .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+          //.attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
+          .attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.3; })
+        //tooltip_div.transition()
         //tooltip_div.transition()
         //	.duration(500)
         //	.style("opacity", 0);
@@ -488,24 +520,30 @@ function createTimelines(data, metadata) {
   // TODO: add legend for symbol size
 }
 
-function updateX(newX) {
+function updateX(newX, maxX) {
   modeX = newX;
   indexX = columnInfo[modeX].index;
-  if (columnInfo[modeX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
+  var xScale;
+
+  // Use a global override if exists. If not, use temporary override, if exists. If not, use range of data.
+  var newMaxX =  overrideX ? overrideX : maxX ? maxX : maxima[indexX];
+  if (columnInfo[modeX].scale == "log") xScale = xScaleLog.domain([1, newMaxX]);
   else if (columnInfo[modeX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
-  else xScale = xScaleLinear.domain([0, maxima[indexX]]);
+  else xScale = xScaleLinear.domain([0, newMaxX]);
 
+  line.x(function(d) {
+    if (columnInfo[modeX].hasOwnProperty('ratio') && columnInfo[modeX].ratio == true)
+      return xScale(d[indexX]);
+    else
+      return xScale(d[indexX] + 1); // not sure why I need this offset
+  });
 
-  svg.selectAll("path")
+  svg.selectAll(".lineclass")
     .transition()
     .ease("linear")
     .duration(1000)
-    .attr("cx", function(d) { 
-      if (columnInfo[modeX].scale == "log") 
-        return xScale(d[indexX] + 1); 
-      else 
-        return xScale(d[indexX] || 0); 
-    }); 
+    .attr("d", line);
+
   xAxis.scale(xScale);
   xa.call(xAxis);
   xa.select("#xAxisLabel")
@@ -527,7 +565,12 @@ function updateY(newY, maxY) {
 
   // update only the line.y() function. Or do I not even need to do this?
 
-  line.y(function(d) { return yScale(d[indexY] + 1); });
+  line.y(function(d) {
+    if (columnInfo[modeY].hasOwnProperty('ratio') && columnInfo[modeY].ratio == true)
+      return yScale(d[indexY]);
+    else
+      return yScale(d[indexY] + 1); // not sure why I need this offset
+  });
 
   svg.selectAll(".lineclass")
     .transition()
@@ -543,10 +586,12 @@ function updateY(newY, maxY) {
 
 function setX(xstring) {
   modeX = xstring;
+  indexX = columnInfo[modeX].index;
 };
 
 function setY(ystring) {
   modeY = ystring;
+  indexY = columnInfo[modeY].index;
 };
 
 function setR(rstring) {
@@ -562,6 +607,20 @@ function updateCadence(cadence) {
     paths["monthly"].style("display","block");
   }
 };
+
+function updateMaxX(maxX) {
+  updateX(modeX, maxX);
+}
+
+function setOverrideX(maxX) {
+  overrideX = maxX;
+  updateMaxX(maxX);
+}
+
+function unsetOverrideX() {
+  overrideX = undefined;
+  updateMaxX();
+}
 
 function updateMaxY(maxY) {
   updateY(modeY, maxY);

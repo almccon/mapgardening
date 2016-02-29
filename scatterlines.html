@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Map gardening linecharts</title>
+    <title>Map gardening scatterplots</title>
     <script src="d3/d3.v3.min.js" charset="utf-8"></script>
     <script src="d3/queue.v1.min.js" charset="utf-8"></script>
     <link href="gardening_charts.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1>OSM user activity over time: nodes edited per month</h1>
+    <body>
+    <h1>OSM user activity over time</h1>
     <div id="chart"></div>
     <script src="gardening_lines.js"></script>
     <script type="text/javascript">
@@ -83,7 +83,6 @@
 
       var q = queue();
 
-      //places.forEach(function(place) { q.defer(d3.tsv, "userstats/userstats_" + place + ".csv");});
       places.forEach(function(place) {
         q.defer(d3.tsv, "userstats/combined_" + place + "_raster_1000m.tsv");
       });
@@ -100,7 +99,8 @@
         } else {
 
           setX('date')
-          setY('count-linear')
+          setY('v1_ratio-linear')
+          //setR('days_active');
 
           userstats = [];
 
@@ -113,7 +113,7 @@
             });
           }
 
-          createTimelines(userstats,metadata,true,true,true,false);
+          createTimelines(userstats,metadata,true,false,true,true);
 
         }
       }
