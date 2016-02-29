@@ -258,7 +258,6 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
   }
 
   function sumCategories(data) {
-    // TODO: figure out how to sum up the ratio modes
     var categorySums = {};
     data.forEach(function(entry) {
       var place = entry.values[0].place;
@@ -282,6 +281,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
         });
       }
     });
+    // Here we create the simulated users for placename-blankspot_total and  placename-nonblankspot_total
     for (var placekey in categorySums) {
       if (categorySums.hasOwnProperty(placekey)) {
         var place = categorySums[placekey];
@@ -291,6 +291,9 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
             var timeTotals = [];
             for (var timekey in user) {
               if (user.hasOwnProperty(timekey)) {
+                // here we rewrite some of the derived values (like *_ratio) that were summed incorrectly
+                user[timekey].v1_ratio = user[timekey].count ? user[timekey].v1count / user[timekey].count : 0;
+                user[timekey].blank_ratio = user[timekey].count ? user[timekey].blankcount / user[timekey].count : 0;
                 timeTotals.push(user[timekey]);
               }
             }
