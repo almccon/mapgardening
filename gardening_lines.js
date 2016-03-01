@@ -486,6 +486,11 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
       return togglePlaces(d);
     });
 
+  // TODO: make improved legend
+  controls.append("div")
+    .append("text")
+    .html("<br>Legend:<br>solid lines: blankspot editors<br>dotted lines: non-blankspot editors");
+
   paths["yearly"] = svg.append("g").classed("yearly", true);
   paths["monthly"] = svg.append("g").classed("monthly", true);
   if (isYearly)
@@ -732,7 +737,6 @@ function unsetOverrideY() {
 }
 
 function togglePlace(place, value) {
-  console.log("togglePlace", place, value);
   svg.selectAll(".lineclass").filter(function(d) { return d[0].place == place; }).style("display",value ? "block" : "none");
 }
 
