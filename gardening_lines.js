@@ -82,6 +82,8 @@ var maxima = {};
 var overrideX;
 var overrideY;
 
+var placeControls; // controls for activating and deactivating specific places
+
 var blankspottotals = {};
 
 var svg,
@@ -460,7 +462,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
       updateCadence(modes[this.value]);
     });
 
-  var placeControls = controls.append("div")
+  placeControls = controls.append("div")
     .selectAll("input")
     .data(places)
     .enter()
@@ -738,8 +740,12 @@ function unsetOverrideY() {
 
 function togglePlace(place, value) {
   svg.selectAll(".lineclass").filter(function(d) { return d[0].place == place; }).style("display",value ? "block" : "none");
+  placeControls
+    .filter(function(d) { return d == place; })
+    .property("checked", value);
 }
 
 function togglePlaces(value) {
   svg.selectAll(".lineclass").style("display",value ? "block" : "none");
+  placeControls.property("checked", value);
 }
