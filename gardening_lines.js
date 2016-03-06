@@ -10,6 +10,10 @@ var columnInfo = {
   "v2count-log": { "index": "v2count", "text": "Nodes modified (log scale)", "show": true, "scale": "log"},
   "blankspot-nodes-linear": { "index": "blankcount", "text": "Blankspot nodes (linear scale)", "show": true, "scale": "linear"},
   "blankspot-nodes-log": { "index": "blankcount", "text": "Blankspot nodes (log scale)", "show": true, "scale": "log"},
+  "count-cumulative": { "index": "count_cumul", "text": "Total edited nodes (cumulative scale)", "show": true, "scale": "linear"},
+  "v1count-cumulative": { "index": "v1count_cumul", "text": "Nodes created (cumulative scale)", "show": true, "scale": "linear"},
+  "v2count-cumulative": { "index": "v2count_cumul", "text": "Nodes modified (cumulative scale)", "show": true, "scale": "linear"},
+  "blankspot-nodes-cumulative": { "index": "blankcount_cumul", "text": "Blankspot nodes (cumulative scale)", "show": true, "scale": "linear"},
   "blank_ratio-linear": { "index": "blank_ratio", "text": "Blankspot / total edits ratio (linear scale)", "show": true, "scale": "linear", "ratio": true},
   "v1_ratio-linear": { "index": "v1_ratio", "text": "v1 edits / total edits ratio (linear scale)", "show": true, "scale": "linear", "ratio": true},
   "count_area-linear": { "index": "count_area", "text": "Total edited nodes per sq km (linear scale)", "show": true, "scale": "linear"},
@@ -302,7 +306,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
             // Create a data structure resembling d3.nest
             var dataObj = {};
             dataObj.key = placekey + '-' + userkey;
-            dataObj.values = timeTotals;
+            dataObj.values = timeTotals.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; });
             data.push(dataObj);
           }
         }
@@ -312,6 +316,30 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
 
   sumCategories(dataByPlaceAndUser);
   sumCategories(dataByPlaceAndUserYearly);
+
+  function cumulativeSums(data) {
+    data.forEach(function(entry) {
+      fieldSums = {};
+
+      fields.forEach(function(field) {
+        fieldSums[field] = 0;
+      });
+      entry.values.forEach(function(d) {
+        // This assumes that the entries are already sorted by date
+        fields.forEach(function(field) {
+          if (field != 'blank_ratio' && field != 'v1_ratio') {
+            fieldSums[field] += d[field];
+            d[field + '_cumul'] = fieldSums[field];
+          }
+        });
+        d.blank_ratio_cumul = d.count_cumul > 0 ? d.blankcount_cumul/d.count_cumul : 0;
+        d.v1_ratio_cumul = d.count_cumul > 0 ? d.v1count_cumul/d.count_cumul : 0;
+      });
+    });
+  }
+
+  cumulativeSums(dataByPlaceAndUser);
+  cumulativeSums(dataByPlaceAndUserYearly);
 
   var keys = d3.keys(data[0]);
   for (var i = 0; i < keys.length; i++) {
