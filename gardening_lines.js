@@ -382,7 +382,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
   xAxis
     .scale(xScaleTime) // Just for the initial state
     .orient("bottom")
-    .ticks(10, numberFormat); // Show only 5 divisions
+    .ticks(10, numberFormat); // Show 10 divisions for date
     // Setting ticks also sets tickFormat
 
   yAxis
@@ -661,10 +661,7 @@ function updateX(newX, maxX) {
   else xScale = xScaleLinear.domain([0, newMaxX]);
 
   line.x(function(d) {
-    if (columnInfo[modeX].hasOwnProperty('ratio') && columnInfo[modeX].ratio == true)
-      return xScale(d[indexX]);
-    else
-      return xScale(d[indexX] + 1); // not sure why I need this offset
+    return xScale(d[indexX]);
   });
 
   svg.selectAll(".lineclass")
@@ -674,6 +671,10 @@ function updateX(newX, maxX) {
     .attr("d", line);
 
   xAxis.scale(xScale);
+  if (columnInfo[modeX].scale == "time")
+    xAxis.ticks(10, numberFormat); // Show 10 divisions for date
+  else
+    xAxis.ticks(5);
   xa.call(xAxis);
   xa.select("#xAxisLabel")
     .text(columnInfo[modeX].text);
@@ -688,17 +689,13 @@ function updateY(newY, maxY) {
   // Use a global override if exists. If not, use temporary override, if exists. If not, use range of data.
   var newMaxY =  overrideY ? overrideY : maxY ? maxY : maxima[indexY];
   if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, newMaxY]);
+  else if (columnInfo[modeY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
   else yScale = yScaleLinear.domain([0, newMaxY]);
-  //if (columnInfo[modeY].scale == "linear") yScale = yScaleLinear.domain([0, maxY ? maxY : maxima[indexY]]);
-  //else yScale = yScaleLog.domain([1, maxY ? maxY : maxima[indexY]]);
 
   // update only the line.y() function. Or do I not even need to do this?
 
   line.y(function(d) {
-    if (columnInfo[modeY].hasOwnProperty('ratio') && columnInfo[modeY].ratio == true)
-      return yScale(d[indexY]);
-    else
-      return yScale(d[indexY] + 1); // not sure why I need this offset
+    return yScale(d[indexY]);
   });
 
   svg.selectAll(".lineclass")
@@ -708,6 +705,10 @@ function updateY(newY, maxY) {
     .attr("d", line);
 
   yAxis.scale(yScale);
+  if (columnInfo[modeY].scale == "time")
+    yAxis.ticks(10, numberFormat); // Show 10 divisions for date
+  else
+    yAxis.ticks(5);
   ya.call(yAxis);
   ya.select("#yAxisLabel")
     .text(columnInfo[modeY].text);
