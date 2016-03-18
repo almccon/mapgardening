@@ -137,7 +137,7 @@ function createNewValue(uid, username, place, date) {
   return newValue;
 }
 
-function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
+function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, isSplitByBlankspots) {
   var yearlydata = {};
   data.forEach(function(d) {
     // convert strings to numbers and dates
@@ -472,7 +472,6 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     d3.select("#yaxis")
       .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
   }
-
   // Add radio buttons for "yearly" or "monthly" mode
   var modes = ["yearly", "monthly"];
   controls.append("div")
@@ -488,6 +487,23 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     .property("checked", function(d, i) { if (isYearly) return i == 0; else return i == 1; })
     .on("change", function() {
       updateCadence(modes[this.value]);
+    });
+
+  // Add radio buttons for "split totals" or "monthly" mode
+  var splits = ["split totals", "combined totals"];
+  controls.append("div")
+    .selectAll("label")
+    .data(splits)
+    .enter()
+    .append("label")
+    .text(function(d) { return d;})
+    .insert("input")
+    .attr("type", "radio")
+    .attr("name", "split")
+    .attr("value", function(d, i) { return i;})
+    .property("checked", function(d, i) { if (isSplitByBlankspots) return i == 0; else return i == 1; })
+    .on("change", function() {
+      splitPaths(this.value == 0 ? true : false);
     });
 
   placeControls = controls.append("div")
@@ -529,20 +545,23 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     paths["yearly"].style("display", "none");
 
   // Add the lines to the plot 
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"]);
-  chartifyData(dataByPlaceAndUser,paths["monthly"]);
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("combined_totals", true).style("display", isSplitByBlankspots ? "none" : "block"), RegExp(/\-total$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", isSplitByBlankspots ? "none" : "block"), RegExp(/\-total$/));
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("split_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/_total$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("split_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/_total$/));
 
   // TODO: also add a filter to catch known bot accounts and known import accounts
   // Maybe I need to do that above when I'm building the data structure
 
-  function chartifyData(data, svg) {
+  function chartifyData(data, svg, filter) {
     data
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/_total$/);}) // Match user name blankspot subtotals
     //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total ('-' means start of string)
-    .filter(function(d) { return d.key.match(/total$/);}) // Match user name ends with total
+    //.filter(function(d) { return d.key.match(/total$/);}) // Match user name ends with total
+    .filter(function(d) { return d.key.match(filter);}) // Match user name ends with total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
@@ -738,13 +757,12 @@ function updateCadence(cadence) {
 
 function splitPaths(splitByBlankspots) {
   if (splitByBlankspots) {
-    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/_total$/); }).style("display", "block");
-    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/\-total$/); }).style("display", "none");
+    svg.selectAll(".combined_totals").style("display", "none");
+    svg.selectAll(".split_totals").style("display", "block");
   } else {
-    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/_total$/); }).style("display", "none");
-    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/\-total$/); }).style("display", "block");
+    svg.selectAll(".combined_totals").style("display", "block");
+    svg.selectAll(".split_totals").style("display", "none");
   }
-  return splitByBlankspots;
 }
 
 function updateMaxX(maxX) {
