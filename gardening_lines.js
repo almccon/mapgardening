@@ -540,9 +540,9 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/london-/);}) // Match user name = starts with place
-    .filter(function(d) { return d.key.match(/_total$/);}) // Match user name blankspot subtotals
-    //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total
-    //.filter(function(d) { return d.key.match(/total$/);}) // Match user name ends with total
+    //.filter(function(d) { return d.key.match(/_total$/);}) // Match user name blankspot subtotals
+    //.filter(function(d) { return d.key.match(/-total$/);}) // Match user name = total ('-' means start of string)
+    .filter(function(d) { return d.key.match(/total$/);}) // Match user name ends with total
     .sort(function(a,b) { if (a.values.length < b.values.length) return 1; if (a.values.length > b.values.length) return -1; return 0; })
     .forEach(function(d) {
       //console.log(d.values[0].username, d.values[0].place);
@@ -563,10 +563,8 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
         //else return 0.1 + (d.length * .005) // longer arrays (active more months) are more opaque
         else return 0.3;
       })
-      // If user has blankspots (and is not "total", color them red
       .attr("stroke", function(d) {
-        if (!d[0] || d[0].username.match(/total$/) && blankspottotals[d[0].place][d[0].username]) return "red";
-        else return colorScaleOrdinal(d[0]['place']);
+        return colorScaleOrdinal(d[0]['place']);
       })
       .style("stroke-dasharray", function(d) { return d[0].username == "nonblankspot_total" ? ("3,3") : ("0"); })
       // Add tooltips on mouseover
@@ -605,7 +603,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX) {
         //info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string);
 
       }).on("mouseout", function(d) {
-        d3.select(this).attr("stroke", function(d) { return (d[0].username.match(/total$/) && blankspottotals[d[0].place][d[0].username]) ? "red" : colorScaleOrdinal(d[0]['place']); })
+        d3.select(this).attr("stroke", function(d) { return colorScaleOrdinal(d[0]['place']); })
           //.attr("stroke-opacity", function(d) { return d[0].username == "total" ? 0.8 : 0.1 + (d.length * .005) }) // longer arrays (active more months) are more opaque
           .attr("stroke-opacity", function(d) { return d[0].username.match(/total$/) ? 0.8 : 0.3; })
         //tooltip_div.transition()
@@ -737,6 +735,17 @@ function updateCadence(cadence) {
     paths["monthly"].style("display","block");
   }
 };
+
+function splitPaths(splitByBlankspots) {
+  if (splitByBlankspots) {
+    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/_total$/); }).style("display", "block");
+    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/\-total$/); }).style("display", "none");
+  } else {
+    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/_total$/); }).style("display", "none");
+    svg.selectAll(".lineclass").filter(function(d) { return d[0].username.match(/\-total$/); }).style("display", "block");
+  }
+  return splitByBlankspots;
+}
 
 function updateMaxX(maxX) {
   updateX(modeX, maxX);
