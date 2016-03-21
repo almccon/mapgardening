@@ -137,7 +137,7 @@ function createNewValue(uid, username, place, date) {
   return newValue;
 }
 
-function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, isSplitByBlankspots) {
+function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, isSplitByBlankspots, isSplitByImports) {
   var yearlydata = {};
   data.forEach(function(d) {
     // convert strings to numbers and dates
@@ -160,6 +160,10 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     d.blankcount_pop = d.blankcount / metadata[d.place].population * 1000; // per 1 thousand inhabitants
     d.uid = +d.uid;
     d.date = dateFormat.parse(d.year);
+
+    // \b matches at beginning or end of a word
+    if (d.username.match(/\bimport[s]?\b/)) d.isImport = true; else d.isImport = false;
+    if (d.username.match(/\bbot\b/)) d.isBot = true; else d.isBot = false;
 
     // sum the blankspots for each user
     if(!(d.place in blankspottotals)) blankspottotals[d.place] = {};
@@ -267,7 +271,13 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     var categorySums = {};
     data.forEach(function(entry) {
       var place = entry.values[0].place;
-      if (!(place in categorySums)) categorySums[place] = { 'blankspot_total': {}, 'nonblankspot_total': {}};
+      if (!(place in categorySums)) categorySums[place] = {
+        'blankspot_total': {},
+        'nonblankspot_total': {},
+        'import_total': {},
+        'bot_total': {},
+        'human_total': {}
+      };
       var username = entry.values[0].username;
       var userCategory;
 
@@ -285,6 +295,12 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
             categorySums[place][userCategory][d.date][field] += d[field];
           });
         });
+        if (entry.values[0].isImport)
+          userCategory = 'import_total';
+        else if (entry.values[0].isBot)
+          userCategory = 'bot_total';
+        else
+          userCategory = 'human_total';
       }
     });
     // Here we create the simulated users for placename-blankspot_total and  placename-nonblankspot_total
@@ -490,7 +506,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     });
 
   // Add radio buttons for "split totals" or "monthly" mode
-  var splits = ["split totals", "combined totals"];
+  var splits = ["combined totals","split by blankspots","split by imports"];
   controls.append("div")
     .selectAll("label")
     .data(splits)
@@ -501,9 +517,14 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     .attr("type", "radio")
     .attr("name", "split")
     .attr("value", function(d, i) { return i;})
-    .property("checked", function(d, i) { if (isSplitByBlankspots) return i == 0; else return i == 1; })
+    .property("checked", function(d, i) {
+      if (i == 0 && !isSplitByBlankspots && !isSplitByImports) return true; 
+      if (i == 1 && isSplitByBlankspots) return true;
+      if (i == 2 && isSplitByImports) return true;
+      else return false;
+    })
     .on("change", function() {
-      splitPaths(this.value == 0 ? true : false);
+      splitPaths(this.value);
     });
 
   placeControls = controls.append("div")
@@ -545,13 +566,12 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     paths["yearly"].style("display", "none");
 
   // Add the lines to the plot 
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("combined_totals", true).style("display", isSplitByBlankspots ? "none" : "block"), RegExp(/\-total$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", isSplitByBlankspots ? "none" : "block"), RegExp(/\-total$/));
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("split_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/_total$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("split_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/_total$/));
-
-  // TODO: also add a filter to catch known bot accounts and known import accounts
-  // Maybe I need to do that above when I'm building the data structure
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/));
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/import_total|human_total|bot_total$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/import_total|human_total|bot_total$/));
 
   function chartifyData(data, svg, filter) {
     data
@@ -583,6 +603,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
         else return 0.3;
       })
       .attr("stroke", function(d) {
+        console.log(d[0]);
         return colorScaleOrdinal(d[0]['place']);
       })
       .style("stroke-dasharray", function(d) { return d[0].username == "nonblankspot_total" ? ("3,3") : ("0"); })
@@ -755,13 +776,19 @@ function updateCadence(cadence) {
   }
 };
 
-function splitPaths(splitByBlankspots) {
-  if (splitByBlankspots) {
+function splitPaths(splitType) {
+  if (splitType == 1) {
     svg.selectAll(".combined_totals").style("display", "none");
-    svg.selectAll(".split_totals").style("display", "block");
+    svg.selectAll(".blankspot_totals").style("display", "block");
+    svg.selectAll(".import_totals").style("display", "none");
+  } else if (splitType == 2)  {
+    svg.selectAll(".combined_totals").style("display", "none");
+    svg.selectAll(".blankspot_totals").style("display", "none");
+    svg.selectAll(".import_totals").style("display", "block");
   } else {
     svg.selectAll(".combined_totals").style("display", "block");
-    svg.selectAll(".split_totals").style("display", "none");
+    svg.selectAll(".blankspot_totals").style("display", "none");
+    svg.selectAll(".import_totals").style("display", "none");
   }
 }
 
