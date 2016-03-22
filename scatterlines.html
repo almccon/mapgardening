@@ -98,8 +98,10 @@
 
         } else {
 
-          setX('date')
-          setY('v1_ratio-linear')
+          setX('v1count-cumulative')
+          setY('v2count-cumulative')
+          //setX('date')
+          //setY('v1_ratio-linear')
           //setR('days_active');
 
           userstats = [];
@@ -115,7 +117,9 @@
 
           createTimelines(userstats,metadata,true,false,true,true,false);
           togglePlaces(false);
-          togglePlace("vancouver",true);
+          togglePlace("bayarea",true);
+          updateX('v1count-cumulative')
+          updateY('v2count-cumulative')
 
         }
       }

@@ -162,8 +162,13 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     d.date = dateFormat.parse(d.year);
 
     // \b matches at beginning or end of a word
-    if (d.username.match(/\bimport[s]?\b/)) d.isImport = true; else d.isImport = false;
-    if (d.username.match(/\bbot\b/)) d.isBot = true; else d.isBot = false;
+    if ( d.username.match(/\bimport\b/)
+      || d.username.match(/\bimports\b/)
+      || d.username.match(/DaveHansenTiger/))
+      d.isImport = true;
+    else
+      d.isImport = false;
+    if ((d.username.match(/bot\b/) || d.username.match(/\bbot/)) && !d.username.match(/robot\b/)) d.isBot = true; else d.isBot = false;
 
     // sum the blankspots for each user
     if(!(d.place in blankspottotals)) blankspottotals[d.place] = {};
@@ -295,12 +300,22 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
             categorySums[place][userCategory][d.date][field] += d[field];
           });
         });
+        // Test which category user falls within. Users can't be in more than one.
+        // This one checks to see if they're an import account, a bot, or a human
         if (entry.values[0].isImport)
           userCategory = 'import_total';
         else if (entry.values[0].isBot)
           userCategory = 'bot_total';
         else
           userCategory = 'human_total';
+        entry.values.forEach(function(d) {
+          if (userCategory != 'human_total') console.log(userCategory);
+          if (!(d.date in categorySums[place][userCategory]))
+            categorySums[place][userCategory][d.date] = createNewValue(0, userCategory, place, d.date);
+          fields.forEach(function(field) {
+            categorySums[place][userCategory][d.date][field] += d[field];
+          });
+        });
       }
     });
     // Here we create the simulated users for placename-blankspot_total and  placename-nonblankspot_total
@@ -323,13 +338,16 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
             var dataObj = {};
             dataObj.key = placekey + '-' + userkey;
             dataObj.values = timeTotals.sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; });
-            data.push(dataObj);
+            // If a category has no values, don't include it
+            if (dataObj.values.length >= 1) data.push(dataObj);
           }
         }
       }
     }
   }
 
+  // TODO: figure out why import_total and bot_total doesn't work for yearly.
+  // ...it all sums up to human_total. But the monthly view works!
   sumCategories(dataByPlaceAndUser);
   sumCategories(dataByPlaceAndUserYearly);
 
@@ -535,7 +553,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     .text(function(d) { return " " + d + ":";})
     .insert("input")
     .attr("type","checkbox")
-    .attr("name", function(d) { console.log(d); return d; })
+    .attr("name", function(d) { return d; })
     .property("checked", true)
     .on("change", function() {
       togglePlace(this.name, this.checked);
@@ -570,8 +588,8 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
   chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/));
   chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
   chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/import_total|human_total|bot_total$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/import_total|human_total|bot_total$/));
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/));
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/));
 
   function chartifyData(data, svg, filter) {
     data
@@ -603,10 +621,16 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
         else return 0.3;
       })
       .attr("stroke", function(d) {
-        console.log(d[0]);
         return colorScaleOrdinal(d[0]['place']);
       })
-      .style("stroke-dasharray", function(d) { return d[0].username == "nonblankspot_total" ? ("3,3") : ("0"); })
+      .style("stroke-dasharray", function(d) {
+        if (d[0].username == "nonblankspot_total" || d[0].username == "bot_total" )
+          return ("3,3");
+        else if (d[0].username == "import_total")
+          return ("1,1");
+        else
+          return ("0");
+      })
       // Add tooltips on mouseover
       // http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
       .on("mouseover", function(d) {
