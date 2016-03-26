@@ -193,4 +193,7 @@ for placename in places:
                 all_are_zero = False
           # Sometimes all values are zero. No need to print these.
           if not all_are_zero:
-            doc.writerow([uid, username, date, str(values['nodes']), str(values['nodes_created']), str(values['cur nodes']), str(values['blankcount']), str(values['count']), str(values['v1count'])])
+            #doc.writerow([uid, username, date, str(values['nodes']), str(values['nodes_created']), str(values['cur nodes']), str(values['blankcount']), str(values['count']), str(values['v1count'])])
+
+            #Do this if we are using a fake (empty) blankspot raster table, and we trust the mvexel counts more
+            doc.writerow([uid, username, date, str(values['nodes']), str(values['nodes_created']), str(values['cur nodes']), str(values['blankcount']), str(values['nodes']), str(values['nodes_created'])])
