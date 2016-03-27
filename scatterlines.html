@@ -58,6 +58,7 @@
         //"yaounde"
       ];
       var places = ["planet"];
+      var currentlySelected = "planet";
 
       var metadata = {};
 
@@ -99,8 +100,10 @@
 
         } else {
 
-          setX('v1count-cumulative')
-          setY('v2count-cumulative')
+          // set the initial state of the controls
+          updateX('v1count-cumulative')
+          updateY('v2count-cumulative')
+
           //setX('date')
           //setY('v1_ratio-linear')
           //setR('days_active');
@@ -117,10 +120,15 @@
           }
 
           createTimelines(userstats,metadata,true,false,true,true,false);
+          updateCadence('monthly');
           togglePlaces(false);
-          togglePlace("planet",true);
+          togglePlace(currentlySelected,true);
           updateX('v1count-cumulative')
           updateY('v2count-cumulative')
+
+          //not sure why I need to do this twice:
+          updateX()
+          updateY()
 
         }
       }

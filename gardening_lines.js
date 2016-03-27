@@ -72,7 +72,7 @@ var yScaleLinear = d3.scale.linear();
 
 //var colorScaleOrdinal = d3.scale.ordinal();
 //var colorScaleOrdinal = d3.scale.category10();
-var colorScaleOrdinal = d3.scale.category20();
+var colorScaleOrdinal = d3.scale.category20b();
 
 var xAxis = d3.svg.axis();
 
@@ -87,6 +87,7 @@ var overrideX;
 var overrideY;
 
 var placeControls; // controls for activating and deactivating specific places
+var dotControls; // controls for toggling yearly dots
 
 var blankspottotals = {};
 
@@ -102,6 +103,9 @@ var line = d3.svg.line()
     .x(function(d) { return xScaleTime(d[indexX]); })
     .y(function(d) { return yScaleLinear(d[indexY]); });
     //.y(function(d) { return yScaleLog(d[indexY] + 1); });
+
+var xScale = function(d) { return xScaleTime(d[indexX]); }
+    yScale = function(d) { return yScaleLinear(d[indexY]); };
 
 // The possible data fields
 var fields = [
@@ -309,7 +313,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
         else
           userCategory = 'human_total';
         entry.values.forEach(function(d) {
-          if (userCategory != 'human_total') console.log(userCategory);
+          //if (userCategory != 'human_total') console.log(userCategory);
           if (!(d.date in categorySums[place][userCategory]))
             categorySums[place][userCategory][d.date] = createNewValue(0, userCategory, place, d.date);
           fields.forEach(function(field) {
@@ -571,6 +575,16 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
       return togglePlaces(d);
     });
 
+  dotControls = controls.append("div")
+    .append("label")
+    .text("show yearly dots")
+    .append("input")
+    .attr("type","checkbox")
+    .property("checked", true)
+    .on("change", function() {
+      toggleYearlyDots(this.checked);
+    });
+
   // TODO: make improved legend
   controls.append("div")
     .append("text")
@@ -584,14 +598,14 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     paths["yearly"].style("display", "none");
 
   // Add the lines to the plot 
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/));
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/));
-  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/));
-  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/));
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/), "yearly");
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("combined_totals", true).style("display", (isSplitByBlankspots || isSplitByImports) ? "none" : "block"), RegExp(/\-total$/), "monthly");
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/), "yearly");
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("blankspot_totals", true).style("display", isSplitByBlankspots ? "block" : "none"), RegExp(/blankspot_total|nonblankspot_total$/), "monthly");
+  chartifyData(dataByPlaceAndUserYearly,paths["yearly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/), "yearly");
+  chartifyData(dataByPlaceAndUser,paths["monthly"].append("g").classed("import_totals", true).style("display", isSplitByImports ? "block" : "none"), RegExp(/(import_total|human_total|bot_total)$/), "monthly");
 
-  function chartifyData(data, svg, filter) {
+  function chartifyData(data, svg, filter, cadence) {
     data
     //.filter(function(d) { return d.key.match(/vancouver-/);}) // Match user name = starts with place
     //.filter(function(d) { return d.key.match(/tirana-/);}) // Match user name = starts with place
@@ -675,6 +689,41 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
         //	.style("opacity", 0);
         info_div.transition().duration(500).style("opacity", 0);
       });
+
+
+    // Add some dots for each full year
+    // ...for monthly view, add dots for each december. For annual view, add them in january. I know.
+    var filteredYears = d.values.filter(function(d) { return d.date.getFullYear() < 2016 && ((cadence == 'monthly' && d.date.getMonth() == 11) || (cadence == 'yearly' && d.date.getMonth() == 0)); }).sort(function(a,b) { if (a.date > b.date) return 1; if (a.date < b.date) return -1; return 0; });
+    svg.append("g").selectAll("circle")
+      .data(filteredYears)
+      .enter()
+      .append("circle")
+      .classed("dotclass", true)
+      //.attr("cx", function (d) { return xScale(d[columnInfo[modeX].index]); })
+      .attr("cx", function (d) { return 0; })
+      .attr("cy", function (d) { return 0; })
+      //.attr("cy", function (d) { return yScale(d[columnInfo[modeY].index]); })
+      .attr("r", function (d) { return 3; })
+      .style("fill", function(d) { return colorScaleOrdinal(d['place']); })
+      .on("mouseover", function(d) { console.log(d); });
+    svg.append("g").selectAll("text")
+      .data(filteredYears)
+      .enter()
+      .append("text")
+      .classed("dotclasslabel", true)
+      .text(function(d) {
+        if (d.date.getFullYear() == 2015)
+          return d.date.getFullYear() + 1 + " " + d.place;
+        else
+          return d.date.getFullYear() + 1;
+      })
+      .attr("x", function (d) { return 0; })
+      .attr("y", function (d) { return 0; })
+      .attr("dy", 10)
+      .attr("dx", 5)
+      .attr("font-family", "sans-serif")
+      .attr("font-size", "10px")
+      .attr("fill", function(d) { return colorScaleOrdinal(d['place']); });
     });
   }
   
@@ -712,9 +761,8 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
 }
 
 function updateX(newX, maxX) {
-  modeX = newX;
+  if (newX) modeX = newX;
   indexX = columnInfo[modeX].index;
-  var xScale;
 
   // Use a global override if exists. If not, use temporary override, if exists. If not, use range of data.
   var newMaxX =  overrideX ? overrideX : maxX ? maxX : maxima[indexX];
@@ -726,27 +774,43 @@ function updateX(newX, maxX) {
     return xScale(d[indexX]);
   });
 
-  svg.selectAll(".lineclass")
-    .transition()
-    .ease("linear")
-    .duration(1000)
-    .attr("d", line);
+  if (svg) {
+    svg.selectAll(".lineclass")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("d", line);
+
+    svg.selectAll(".dotclass")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("cx", function (d) { return xScale(d[indexX]); });
+
+    svg.selectAll(".dotclasslabel")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("x", function (d) { return xScale(d[indexX]); });
+  }
 
   xAxis.scale(xScale);
   if (columnInfo[modeX].scale == "time")
     xAxis.ticks(10, numberFormat); // Show 10 divisions for date
   else
     xAxis.ticks(5);
-  xa.call(xAxis);
-  xa.select("#xAxisLabel")
-    .text(columnInfo[modeX].text);
+
+  if (xa) {
+    xa.call(xAxis);
+    xa.select("#xAxisLabel")
+      .text(columnInfo[modeX].text);
+  }
 };
 
 function updateY(newY, maxY) {
   // maxY is a temporary override for the maximum vertical scale
-  modeY = newY;
+  if (newY) modeY = newY;
   indexY = columnInfo[modeY].index;
-  var yScale;
 
   // Use a global override if exists. If not, use temporary override, if exists. If not, use range of data.
   var newMaxY =  overrideY ? overrideY : maxY ? maxY : maxima[indexY];
@@ -760,20 +824,37 @@ function updateY(newY, maxY) {
     return yScale(d[indexY]);
   });
 
-  svg.selectAll(".lineclass")
-    .transition()
-    .ease("linear")
-    .duration(1000)
-    .attr("d", line);
+  if (svg) {
+    svg.selectAll(".lineclass")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("d", line);
+
+    svg.selectAll(".dotclass")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("cy", function (d) { return yScale(d[indexY]); });
+
+    svg.selectAll(".dotclasslabel")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("y", function (d) { return yScale(d[indexY]); });
+  }
 
   yAxis.scale(yScale);
   if (columnInfo[modeY].scale == "time")
     yAxis.ticks(10, numberFormat); // Show 10 divisions for date
   else
     yAxis.ticks(5);
-  ya.call(yAxis);
-  ya.select("#yAxisLabel")
-    .text(columnInfo[modeY].text);
+
+  if (ya) {
+    ya.call(yAxis);
+    ya.select("#yAxisLabel")
+      .text(columnInfo[modeY].text);
+  }
 };
 
 function setX(xstring) {
@@ -850,9 +931,27 @@ function togglePlace(place, value) {
   placeControls
     .filter(function(d) { return d == place; })
     .property("checked", value);
+  svg.selectAll(".dotclass").filter(function(d) { return d.place == place; }).style("display",value ? "block" : "none");
+  placeControls
+    .filter(function(d) { return d == place; })
+    .property("checked", value);
+  svg.selectAll(".dotclasslabel").filter(function(d) { return d.place == place; }).style("display",value ? "block" : "none");
+  placeControls
+    .filter(function(d) { return d == place; })
+    .property("checked", value);
 }
 
 function togglePlaces(value) {
   svg.selectAll(".lineclass").style("display",value ? "block" : "none");
   placeControls.property("checked", value);
+  svg.selectAll(".dotclass").style("display",value ? "block" : "none");
+  placeControls.property("checked", value);
+  svg.selectAll(".dotclasslabel").style("display",value ? "block" : "none");
+  placeControls.property("checked", value);
+}
+
+function toggleYearlyDots(value) {
+  svg.selectAll(".dotclass").style("display",value ? "block" : "none");
+  svg.selectAll(".dotclasslabel").style("display",value ? "block" : "none");
+  dotControls.property("checked", value);
 }
