@@ -172,7 +172,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
       d.isImport = true;
     else
       d.isImport = false;
-    if ((d.username.match(/bot\b/) || d.username.match(/\bbot/)) && !d.username.match(/robot\b/)) d.isBot = true; else d.isBot = false;
+    if ((d.username.match(/woodpeck_repair/) || d.username.match(/BugBuster/) || d.username.match(/_mechanical$/) || d.username.match(/ToeBeeFixit/) || d.username.match(/WorstFixer/) || d.username.match(/bot\b/) || d.username.match(/\bbot/)) && !d.username.match(/robot\b/)) d.isBot = true; else d.isBot = false;
 
     // sum the blankspots for each user
     if(!(d.place in blankspottotals)) blankspottotals[d.place] = {};
