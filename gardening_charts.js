@@ -4,6 +4,8 @@ var columnInfo = {
   "username": { "text": "Username", "show": false, "scale": "linear"},
   "count": { "text": "Total edited nodes", "show": true, "scale": "log"},
   "v1count": { "text": "Version 1 edits", "show": true, "scale": "log"},
+  "countlocalness": { "text": "Edited nodes localness", "show": true, "scale": "linear"},
+  "v1countlocalness": { "text": "Version 1 edit localness", "show": true, "scale": "linear"},
   "blankcount": { "text": "Blank spot edits", "show": true, "scale": "log"},
   "firstedit": { "text": "First edit date", "show": true, "scale": "time"},
   "firsteditv1": { "text": "First v1 edit date", "show": true, "scale": "time"},
@@ -55,6 +57,8 @@ function createScatter(data) {
     // convert strings to numbers and dates
     d.count = +d.count;
     d.v1count = +d.v1count;
+    d.countlocalness = +d.countlocalness;
+    d.v1countlocalness = +d.v1countlocalness;
     d.blankcount = +d.blankcount;
     d.days_active = +d.days_active;
     d.uid = +d.uid;
