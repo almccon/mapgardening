@@ -168,6 +168,9 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
     // \b matches at beginning or end of a word
     if ( d.username.match(/\bimport\b/)
       || d.username.match(/\bimports\b/)
+      || d.username.match(/\bnycbuildings\b/)
+      || d.username.match(/chicago-buildings/)
+      || d.username.match(/mbiker_imports_and_more/))
       || d.username.match(/DaveHansenTiger/))
       d.isImport = true;
     else
