@@ -1,40 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Map gardening scatterplots</title>
-		<script src="d3/d3.v3.min.js" charset="utf-8"></script>
-		<script src="d3/queue.v1.min.js" charset="utf-8"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Map gardening scatterplots</title>
+    <script src="d3/d3.v3.min.js" charset="utf-8"></script>
+    <script src="d3/queue.v1.min.js" charset="utf-8"></script>
     <link href="gardening_charts.css" rel="stylesheet" />
-	</head>
-		<body>
-		<h1>Vancouver 1000m grid</h1>
+  </head>
+    <body>
+    <h1>OSM contributor activity</h1>
     <div id="chart"></div>
     <script src="gardening_charts.js"></script>
-		<script type="text/javascript">
+    <script type="text/javascript">
 
-			queue()
-				.defer(d3.tsv, "userstats/outputv5_vancouver_raster_1000m.tsv")
-				.await(ready);
-				
-			function ready(error, dataset) {
-				
-				if (error) {
-					
-					// Do more here
-					console.log("Error loading file");
-					
-				} else {
-				
-          setX('count')
-          setY('blankcount')
-          setR('days_active');
-          
-          createScatter(dataset);
-	
-				}
-			}
-			
-		</script>
-	</body>
+      var places = [
+        "amsterdam",
+        "auckland",
+        "barcelona", // new city, needs population and area
+        "bayarea",
+        "berlin",
+        "boston",
+        "buenosaires",
+        "cairo",
+        "chicago", // new city, needs population and area
+        //"crimea",
+        //"cyprus",
+        //"douala",
+        "haiti",
+        "istanbul",
+        "jakarta",
+        //"jerusalem",
+        "kathmandu", // new city, needs population and area
+        "lasvegas", // new city, needs population and area
+        "london",
+        "losangeles",
+        "manchester",
+        "mexicocity",
+        "miami", // new city, needs population and area
+        "minsk",
+        "montevideo",
+        "montreal",
+        "moscow",
+        "mumbai",
+        "nairobi",
+        "newyork",
+        //"quebec", // There's an error in my blankspot analysis for these cities. Skip for now
+        //"paris",  // There's an error in my blankspot analysis for these cities. Skip for now
+        "rio",
+        "santiago",
+        "seattle",
+        "seoul",
+        "sydney", // new city, needs population and area
+        //"tirana",
+        "tokyo",
+        "toronto",
+        "vancouver"
+        //"yaounde"
+      ];
+
+      var currentlySelected = "vancouver";
+
+      var q = queue();
+
+      places.forEach(function(place) {
+        q.defer(d3.tsv, "userstats/outputv5_" + place + "_raster_1000m.tsv");
+      });
+
+      q.awaitAll(ready);
+
+      function ready(error, datasets) {
+
+        if (error) {
+
+          // Do more here
+          console.log("Error loading file");
+
+        } else {
+
+          setX('count-log')
+          setY('blankcount-log')
+          setR('days_active-linear');
+
+          userstats = [];
+
+          for (var i = 0; i < places.length; i++) {
+            // for each row, add the placename. Must be a better way to do this.
+            // For the "userstats" files
+            datasets[i].forEach(function(d) {
+              d.place = places[i];
+              userstats.push(d);
+            });
+          }
+
+          createScatters(userstats);
+          togglePlaces(false);
+          togglePlace(currentlySelected,true);
+
+        }
+      }
+
+    </script>
+  </body>
 </html>

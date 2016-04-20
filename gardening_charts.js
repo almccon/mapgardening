@@ -1,23 +1,31 @@
 
 var columnInfo = {
-  "uid": { "text": "User ID", "show": false, "scale": "linear"},
-  "username": { "text": "Username", "show": false, "scale": "linear"},
-  "count": { "text": "Total edited nodes", "show": true, "scale": "log"},
-  "v1count": { "text": "Version 1 edits", "show": true, "scale": "log"},
-  "countlocalness": { "text": "Edited nodes localness", "show": true, "scale": "linear"},
-  "v1countlocalness": { "text": "Version 1 edit localness", "show": true, "scale": "linear"},
-  "blankcount": { "text": "Blank spot edits", "show": true, "scale": "log"},
-  "firstedit": { "text": "First edit date", "show": true, "scale": "time"},
-  "firsteditv1": { "text": "First v1 edit date", "show": true, "scale": "time"},
-  "firsteditblank": { "text": "First blank spot edit date", "show": true, "scale": "time"},
-  "mean_date": { "text": "Mean edit date", "show": true, "scale": "time"},
-  "mean_date_weighted": { "text": "Weighted mean edit date", "show": true, "scale": "time"},
-  "days_active": { "text": "Number of days active", "show": true, "scale": "log"}
+  "uid": { "index": "user_id", "text": "User ID", "show": false, "scale": "linear"},
+  "username": { "index": "user_name", "text": "Username", "show": false, "scale": "linear"},
+  "count-linear": { "index": "count", "text": "Total edited nodes (linear scale)", "show": true, "scale": "linear"},
+  "count-log": { "index": "count", "text": "Total edited nodes (log scale)", "show": true, "scale": "log"},
+  "v1count-linear": { "index": "v1count", "text": "Version 1 edits (linear scale)", "show": true, "scale": "linear"},
+  "v1count-log": { "index": "v1count", "text": "Version 1 edits (log scale)", "show": true, "scale": "log"},
+  "countlocalness-linear": { "index": "countlocalness", "text": "Edited nodes localness (linear scale)", "show": true, "scale": "linear"},
+  "v1countlocalness-linear": { "index": "v1countlocalness", "text": "Version 1 edit localness (linear scale)", "show": true, "scale": "linear"},
+  "blankcount-linear": { "index": "blankcount", "text": "Blank spot edits (linear scale)", "show": true, "scale": "linear"},
+  "blankcount-log": { "index": "blankcount", "text": "Blank spot edits (log scale)", "show": true, "scale": "log"},
+  "firstedit": { "index": "firstedit", "text": "First edit date", "show": true, "scale": "time"},
+  "firsteditv1": { "index": "firsteditv1", "text": "First v1 edit date", "show": true, "scale": "time"},
+  "firsteditblank": { "index": "firsteditblank", "text": "First blank spot edit date", "show": true, "scale": "time"},
+  "mean_date": { "index": "mean_date", "text": "Mean edit date", "show": true, "scale": "time"},
+  "mean_date_weighted": { "index": "mean_date_weighted", "text": "Weighted mean edit date", "show": true, "scale": "time"},
+  "days_active-linear": { "index": "days_active", "text": "Number of days active (linear scale)", "show": true, "scale": "linear"},
+  "days_active-log": { "index": "days_active", "text": "Number of days active (log scale)", "show": true, "scale": "log"}
 };
 
 var indexX = 'count'; // The currently active column for the X axis
+var modeX = 'count-log'; // The currently active view for the X axis
 var indexY = 'blankcount'; // The currently active column for the Y axis
+var modeY = 'blankcount-log'; // The currently active view for the Y axis
 var indexR = 'days_active'; // The currently active column for the radius
+var modeR = 'days_active'; // The currently active column for the radius
+var indexColor = 'place'; // The currently active column for the coloring
   
 // Use mbostock's margin convention from http://bl.ocks.org/mbostock/3019563
 var margin = {top: 20, right: 50, bottom: 40, left: 50};
@@ -40,6 +48,8 @@ var yScaleTime = d3.time.scale();
 var xScaleLinear = d3.scale.linear();
 var yScaleLinear = d3.scale.linear();
 
+var colorScaleOrdinal = d3.scale.category20b();
+
 var xAxis = d3.svg.axis();
 
 var yAxis = d3.svg.axis();
@@ -49,10 +59,14 @@ var rScale = d3.scale.sqrt();
 var minima = {};
 var maxima = {};
 
-var svg;
-  
-function createScatter(data) {
-  
+var placeControls; // controls for activating and deactivating specific places
+
+var svg,
+    xa,
+    ya;
+
+function createScatters(data) {
+
   data.forEach(function(d) {
     // convert strings to numbers and dates
     d.count = +d.count;
@@ -99,6 +113,10 @@ function createScatter(data) {
     .domain([0, maxima[indexY]])
     .range([h, 0]); // Inverted so greater values are at top
 
+  colorScaleOrdinal
+    .domain(d3.map(data, function(d) { return d[indexColor]; }).values());
+    //.range(["#af8dc3","#7fbf7b"]); // not needed if using d3.scale.category20()
+
   xAxis
     .scale(xScaleLog) // Just for the initial state
     .orient("bottom")
@@ -131,12 +149,24 @@ function createScatter(data) {
       .append("div")
       .attr("class", "infobox")
       .style("opacity", 0);
-  
+
+  var legend_div = d3.select("body")
+      .append("div")
+      .attr("class", "legend")
+      .style("left","500px");
+
+  legend_div.selectAll("div")
+      .data(places) // defined in the other file
+    .enter()
+      .append("div")
+      .style("color", function(d) { return colorScaleOrdinal(d); })
+      .text(function(d) { return d; });
+
   // Create the menus to control X and Y 
   var controls = d3.select("body")
       .append("div")
       .attr("id", "controls");
-  
+
   controls.append("div")
     .html("X axis ")
     .append("select")
@@ -150,9 +180,9 @@ function createScatter(data) {
         .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
         .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
         .each(function(d) {
-          if (d.key == indexX) d3.select(this).attr("selected", "yes");
+          if (d.key == modeX) d3.select(this).attr("selected", "yes");
         });
-    
+
   d3.select("#xaxis")
     .on("change", function() { 
       updateX(this.options[this.selectedIndex].value) 
@@ -171,20 +201,48 @@ function createScatter(data) {
         .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
         .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
         .each(function(d) {
-          if (d.key == indexY) d3.select(this).attr("selected", "yes");
+          if (d.key == modeY) d3.select(this).attr("selected", "yes");
         });
     
   d3.select("#yaxis")
     .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
-  
+
+  placeControls = controls.append("div")
+    .selectAll("input")
+    .data(places)
+    .enter()
+    .append("label")
+    .text(function(d) { return " " + d + ":";})
+    .insert("input")
+    .attr("type","checkbox")
+    .attr("name", function(d) { return d; })
+    .property("checked", true)
+    .on("change", function() {
+      togglePlace(this.name, this.checked);
+    });
+
+  controls.append("div")
+    .selectAll("input")
+    .data([true,false])
+    .enter()
+    .append("input")
+    .attr("type","button")
+    .attr("value",function(d,i) { return ['show all','hide all'][i]; })
+    .on("click",function(d) {
+      placeControls.property("checked",d);
+      return togglePlaces(d);
+    });
+
   // Add the circles to the plot 
   svg.selectAll("circle")
       .data(data)
     .enter().append("circle")
+      .classed("dotclass", true)
       .attr({
         cx : function(d) { return xScaleLog(d[indexX] + 1); },
         cy : function(d) { return yScaleLog(d[indexY] + 1); },
         r : function(d) { return rScale(d[indexR]); },
+        fill: function(d) { return colorScaleOrdinal(d['place']); },
         opacity : 0.5,
         })
       // Add tooltips on mouseover
@@ -197,15 +255,16 @@ function createScatter(data) {
         //tooltip_div.html(d.username)
         //	.style("left", xScaleLog(d.count + 1) + "px")
         //	.style("top", yScaleLog(d.blankcount + 1) + "px");
-        if (columnInfo[indexX].scale == "time")
+        if (columnInfo[modeX].scale == "time")
           x_value_string = dateFormat(d[indexX]);
         else
           x_value_string = d[indexX];
-        if (columnInfo[indexY].scale == "time")
+        if (columnInfo[modeY].scale == "time")
           y_value_string = dateFormat(d[indexY]);
         else
           y_value_string = d[indexY];
-        info_div.html("User:&nbsp;" + d.username + "<br>" + columnInfo[indexX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[indexY].text + ":&nbsp;" + y_value_string + "<br>" + columnInfo[indexR].text + ":&nbsp;" + d[indexR]);
+        console.log(d);
+        info_div.html("User:&nbsp;" + d.user_name + "<br>" + columnInfo[modeX].text + ":&nbsp;" + x_value_string + "<br>" + columnInfo[modeY].text + ":&nbsp;" + y_value_string + "<br>" + columnInfo[modeR].text + ":&nbsp;" + d[indexR] + "<br>" + d["place"]);
       }).on("mouseout", function(d) {
         //tooltip_div.transition()
         //	.duration(500)
@@ -226,7 +285,7 @@ function createScatter(data) {
     .attr("transform", "translate(" + (w / 2) + "," + 0 + ")")
     .attr("dy", "3em")
     .style("text-anchor", "middle")
-    .text(columnInfo[indexX].text);
+    .text(columnInfo[modeX].text);
 
   // Add y axis
   ya = svg.append("g")
@@ -241,62 +300,99 @@ function createScatter(data) {
     // See http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
     .attr("dy", "-3em")
     .style("text-anchor", "middle")
-    .text(columnInfo[indexY].text);
+    .text(columnInfo[modeY].text);
   
   // TODO: add legend for symbol size
 }
 
 function updateX(newX) {
-  indexX = newX;
-  if (columnInfo[indexX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
-  else if (columnInfo[indexX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
+  if (newX) modeX = newX;
+  indexX = columnInfo[modeX].index;
+
+  if (columnInfo[modeX].scale == "log") xScale = xScaleLog.domain([1, maxima[indexX]]);
+  else if (columnInfo[modeX].scale == "time") xScale = xScaleTime.domain([minima[indexX], maxima[indexX]]);
   else xScale = xScaleLinear.domain([0, maxima[indexX]]);
-  svg.selectAll("circle")
-    .transition()
-    .ease("linear")
-    .duration(1000)
-    .attr("cx", function(d) { 
-      if (columnInfo[indexX].scale == "log") 
-        return xScale(d[indexX] + 1); 
-      else 
-        return xScale(d[indexX] || 0); 
-    }); 
+  if (svg) {
+    svg.selectAll("circle")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("cx", function(d) {
+        if (columnInfo[modeX].scale == "log")
+          return xScale(d[indexX] + 1);
+        else
+          return xScale(d[indexX] || 0);
+      });
+  }
   xAxis.scale(xScale);
-  xa.call(xAxis);
-  xa.select("#xAxisLabel")
-    .text(columnInfo[indexX].text);
+  if (columnInfo[modeX].scale == "time")
+    xAxis.ticks(10, numberFormat); // Show 10 divisions for date
+  else
+    xAxis.ticks(5);
+
+  if (xa) {
+    xa.call(xAxis);
+    xa.select("#xAxisLabel")
+      .text(columnInfo[modeX].text);
+  }
 };
 
 function updateY(newY) {
-  indexY = newY;
-  if (columnInfo[indexY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
-  else if (columnInfo[indexY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
+  if (newY) modeY = newY;
+  indexY = columnInfo[modeY].index;
+
+  if (columnInfo[modeY].scale == "log") yScale = yScaleLog.domain([1, maxima[indexY]]);
+  else if (columnInfo[modeY].scale == "time") yScale = yScaleTime.domain([minima[indexY], maxima[indexY]]);
   else yScale = yScaleLinear.domain([0, maxima[indexY]]);
-  svg.selectAll("circle")
-    .transition()
-    .ease("linear")
-    .duration(1000)
-    .attr("cy", function(d) { 
-      if (columnInfo[indexY].scale == "log") 
-        return yScale(d[indexY] + 1); 
-      else
-        return yScale(d[indexY] || 0); 
-    }); 
+  if (svg) {
+    svg.selectAll("circle")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("cy", function(d) {
+        if (columnInfo[modeY].scale == "log")
+          return yScale(d[indexY] + 1);
+        else
+          return yScale(d[indexY] || 0);
+      });
+  }
   yAxis.scale(yScale);
-  ya.call(yAxis);
-  ya.select("#yAxisLabel")
-    .text(columnInfo[indexY].text);
+  yAxis.scale(yScale);
+  if (columnInfo[modeY].scale == "time")
+    yAxis.ticks(10, numberFormat); // Show 10 divisions for date
+  else
+    yAxis.ticks(5);
+
+  if (ya) {
+    ya.call(yAxis);
+    ya.select("#yAxisLabel")
+      .text(columnInfo[modeY].text);
+  }
 };
 
 function setX(xstring) {
-  indexX = xstring;
+  modeX = xstring;
+  indexX = columnInfo[modeX].index;
 };
 
 function setY(ystring) {
-  indexY = ystring;
+  modeY = ystring;
+  indexY = columnInfo[modeY].index;
 };
 
 function setR(rstring) {
-  indexR = rstring;
+  modeR = rstring;
+  indexR = columnInfo[modeR].index;
 };
 
+function togglePlace(place, value) {
+  placeControls
+    .filter(function(d) { return d == place; })
+    .property("checked", value);
+  svg.selectAll(".dotclass").filter(function(d) { return d.place == place; }).style("display",value ? "block" : "none");
+}
+
+function togglePlaces(value) {
+  svg.selectAll(".dotclass").style("display",value ? "block" : "none");
+  placeControls.property("checked", value);
+}
