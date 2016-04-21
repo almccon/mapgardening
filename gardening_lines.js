@@ -170,7 +170,7 @@ function createTimelines(data, metadata, isYearly, fillGaps, enableY, enableX, i
       || d.username.match(/\bimports\b/)
       || d.username.match(/\bnycbuildings\b/)
       || d.username.match(/chicago-buildings/)
-      || d.username.match(/mbiker_imports_and_more/))
+      || d.username.match(/mbiker_imports_and_more/)
       || d.username.match(/DaveHansenTiger/))
       d.isImport = true;
     else
