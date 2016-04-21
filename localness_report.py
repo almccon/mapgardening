@@ -82,7 +82,7 @@ else:
     #places = {placename: place}
     places = [placename]
 
-header = "placename\tlocal users\tnonlocal users\tpercent local\tedits by locals\tedits by nonlocals\tpercent edits by locals"
+header = "placename\tlocal users\tnonlocal users\tpercent local\tedits by locals\tedits by nonlocals\tpercent edits by locals\tpercent blankspots by locals\tpercent v1 by locals\tpercent v2 by locals"
 
 bins = range(0,100,10)
 
@@ -102,11 +102,13 @@ for placename in places:
     localedits = 0;
     localv1edits = 0;
     localblankedits = 0;
+    localv2edits = 0;
 
     nonlocalusers = 0;
     nonlocaledits = 0;
     nonlocalv1edits = 0;
     nonlocalblankedits = 0;
+    nonlocalv2edits = 0;
 
     data = {}
     for category in bins:
@@ -142,12 +144,14 @@ for placename in places:
                 localedits += int(row[head.index('count')])
                 localv1edits += int(row[head.index('v1count')])
                 localblankedits += int(row[head.index('blankcount')])
+                localv2edits = localedits - localv1edits
             else:
                 # call them a nonlocal
                 nonlocalusers += 1
                 nonlocaledits += int(row[head.index('count')])
                 nonlocalv1edits += int(row[head.index('v1count')])
                 nonlocalblankedits += int(row[head.index('blankcount')])
+                nonlocalv2edits = nonlocaledits - nonlocalv1edits
 
             # figure out which category to stick these values in.
             # The bins go 0 <= x < 10 is category 0, 10 <= x < 20 is category 10, etc. 
@@ -163,8 +167,22 @@ for placename in places:
             data[category]['v1edits'] += int(row[head.index('v1count')])
             data[category]['blankedits'] += int(row[head.index('blankcount')])
 
+            pctlocaledits = str(round(localedits/float(localedits+nonlocaledits),4))
+            if localblankedits == 0 and nonlocalblankedits == 0:
+                pctlocalblankedits = "0.0"
+            else:
+                pctlocalblankedits = str(round(localblankedits/float(localblankedits+nonlocalblankedits),4))
+            if localv1edits == 0 and nonlocalv1edits == 0:
+                pctlocalv1edits = "0.0"
+            else:
+                pctlocalv1edits = str(round(localv1edits/float(localv1edits+nonlocalv1edits),4))
+            if localv2edits == 0 and nonlocalv2edits == 0:
+                pctlocalv2edits = "0.0"
+            else:
+                pctlocalv2edits = str(round(localv2edits/float(localv2edits+nonlocalv2edits),4))
 
-    output = '\t'.join([placename,str(localusers),str(nonlocalusers),str(round(localusers/float(localusers+nonlocalusers),4)),str(localedits),str(nonlocaledits),str(round(localedits/float(localedits+nonlocaledits),4))])
+
+    output = '\t'.join([placename,str(localusers),str(nonlocalusers),str(round(localusers/float(localusers+nonlocalusers),4)),str(localedits),str(nonlocaledits),pctlocaledits,pctlocalblankedits,pctlocalv1edits,pctlocalv2edits])
     for category in bins:
         output += '\t'
         output += str(round(float(data[category]['users'])/float(allusers),4))
