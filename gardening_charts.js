@@ -8,6 +8,7 @@ var columnInfo = {
   "v1count-log": { "index": "v1count", "text": "Version 1 edits (log scale)", "show": true, "scale": "log"},
   "countlocalness-linear": { "index": "countlocalness", "text": "Edited nodes localness (linear scale)", "show": true, "scale": "linear"},
   "v1countlocalness-linear": { "index": "v1countlocalness", "text": "Version 1 edit localness (linear scale)", "show": true, "scale": "linear"},
+  "v2countlocalness-linear": { "index": "v2countlocalness", "text": "Version 2+ edit localness (linear scale)", "show": true, "scale": "linear"},
   "blankcount-linear": { "index": "blankcount", "text": "Blank spot edits (linear scale)", "show": true, "scale": "linear"},
   "blankcount-log": { "index": "blankcount", "text": "Blank spot edits (log scale)", "show": true, "scale": "log"},
   "firstedit": { "index": "firstedit", "text": "First edit date", "show": true, "scale": "time"},
@@ -73,6 +74,7 @@ function createScatters(data) {
     d.v1count = +d.v1count;
     d.countlocalness = +d.countlocalness;
     d.v1countlocalness = +d.v1countlocalness;
+    d.v2countlocalness = +d.v2countlocalness;
     d.blankcount = +d.blankcount;
     d.days_active = +d.days_active;
     d.uid = +d.uid;
