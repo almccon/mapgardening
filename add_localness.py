@@ -135,7 +135,7 @@ for placename in places:
             if not head:
                 head = row
 
-                outdoc.writerow(["user_id","user_name", "count", "blankcount", "v1count", "firstedit", "firsteditv1", "firsteditblank", "days_active", "mean_date", "mean_date_weighted", "countlocalness", "v1countlocalness"])
+                outdoc.writerow(["user_id","user_name", "count", "blankcount", "v1count", "firstedit", "firsteditv1", "firsteditblank", "days_active", "mean_date", "mean_date_weighted", "countlocalness", "v1countlocalness","v2countlocalness"])
 
             else:
                 username = row[head.index('user_name')]
@@ -150,6 +150,7 @@ for placename in places:
                         # don't worry about looking up anonymous accounts
                         countlocalness = 'NULL'
                         v1countlocalness = 'NULL'
+                        v2countlocalness = 'NULL'
                     else:
                         raise LookupError("Error: couldn't find", uid, username, "in planet file")
                 else:
@@ -179,9 +180,19 @@ for placename in places:
                     except ZeroDivisionError as error:
                         v1countlocalness = 'NULL'
 
+                    try:
+                        v2countlocalness = round( (float(row[head.index("count")]) - float(row[head.index("v1count")])) / (float(data[uid]["nodes"]) - float(data[uid]["nodes_created"])) ,4)
+                        if v2countlocalness >= 1:
+                            v2countlocalness = 1.0
+                        if v2countlocalness < 0:
+                            v2countlocalness = 0.0
+
+                    except ZeroDivisionError as error:
+                        v2countlocalness = 'NULL'
+
                 # Finally print the data into a new filename, with each new row matching the row we just read...
                 # ...with the added two columns, of course.
-                outdoc.writerow([row[head.index("user_id")],row[head.index("user_name")],row[head.index("count")],row[head.index("blankcount")],row[head.index("v1count")],row[head.index("firstedit")],row[head.index("firsteditv1")],row[head.index("firsteditblank")],row[head.index("days_active")],row[head.index("mean_date")],row[head.index("mean_date_weighted")],countlocalness,v1countlocalness])
+                outdoc.writerow([row[head.index("user_id")],row[head.index("user_name")],row[head.index("count")],row[head.index("blankcount")],row[head.index("v1count")],row[head.index("firstedit")],row[head.index("firsteditv1")],row[head.index("firsteditblank")],row[head.index("days_active")],row[head.index("mean_date")],row[head.index("mean_date_weighted")],countlocalness,v1countlocalness,v2countlocalness])
 
 
 
