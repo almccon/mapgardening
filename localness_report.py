@@ -17,6 +17,7 @@ infile_template = [folder + "outputv5_", "_raster_1000m.tsv"]
 #import time
 import optparse
 import csv
+import math
 
 usage = "usage: %prog [options]"
 p = optparse.OptionParser(usage)
@@ -81,7 +82,17 @@ else:
     #places = {placename: place}
     places = [placename]
 
-print "placename\tlocal users\tnonlocal users\tpercent local\tedits by locals\tedits by nonlocals\tpercent edits by locals"
+header = "placename\tlocal users\tnonlocal users\tpercent local\tedits by locals\tedits by nonlocals\tpercent edits by locals"
+
+bins = range(0,100,10)
+
+for category in bins:
+    header += '\tusers'
+    header += str(category)
+    header += '\tedits'
+    header += str(category)
+
+print header
 
 for placename in places:
 
@@ -97,6 +108,17 @@ for placename in places:
     nonlocalv1edits = 0;
     nonlocalblankedits = 0;
 
+    data = {}
+    for category in bins:
+        data[category] = {}
+        data[category]['users'] = 0
+        data[category]['edits'] = 0
+        data[category]['v1edits'] = 0
+        data[category]['blankedits'] = 0
+
+    allusers = 0
+    alledits = 0
+
     fields_of_interest = ["count", "blankcount", "v1count", "firstedit", "firsteditv1", "firsteditblank", "days_active", "mean_date", "mean_date_weighted"]
     head = None
     doc = csv.reader(open(input_filename), dialect='excel', delimiter='\t')
@@ -109,7 +131,12 @@ for placename in places:
             if row[head.index('countlocalness')] == 'NULL':
                 # don't count it either way
                 continue
-            if float(row[head.index('countlocalness')]) >= 0.5:
+
+            localness = float(row[head.index('countlocalness')])
+            allusers += 1
+            alledits += int(row[head.index('count')])
+
+            if localness >= 0.5:
                 # call them a local
                 localusers += 1
                 localedits += int(row[head.index('count')])
@@ -122,4 +149,25 @@ for placename in places:
                 nonlocalv1edits += int(row[head.index('v1count')])
                 nonlocalblankedits += int(row[head.index('blankcount')])
 
-    print '\t'.join([placename,str(localusers),str(nonlocalusers),str(float(localusers/(localusers+nonlocalusers))),str(localedits),str(nonlocaledits),str(float(localedits/(localedits+nonlocaledits)))])
+            # figure out which category to stick these values in.
+            # The bins go 0 <= x < 10 is category 0, 10 <= x < 20 is category 10, etc. 
+            # Special case: 100 is category 90
+            category = int(10*math.floor(10*localness))
+            if category == 100:
+                category = 90
+            if not category in data:
+                print "error, couldn't find", category, "in", bins
+
+            data[category]['users'] += 1
+            data[category]['edits'] += int(row[head.index('count')])
+            data[category]['v1edits'] += int(row[head.index('v1count')])
+            data[category]['blankedits'] += int(row[head.index('blankcount')])
+
+
+    output = '\t'.join([placename,str(localusers),str(nonlocalusers),str(round(localusers/float(localusers+nonlocalusers),4)),str(localedits),str(nonlocaledits),str(round(localedits/float(localedits+nonlocaledits),4))])
+    for category in bins:
+        output += '\t'
+        output += str(round(float(data[category]['users'])/float(allusers),4))
+        output += '\t'
+        output += str(round(float(data[category]['edits'])/float(alledits),4))
+    print output
