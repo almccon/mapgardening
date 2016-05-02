@@ -57,8 +57,9 @@
         "vancouver"
         //"yaounde"
       ];
-      var places = ["planet"];
-      var currentlySelected = "planet";
+      //var places = ["planet"];
+      //var currentlySelected = "planet";
+      var currentlySelected = "bayarea";
 
       var metadata = {};
 
@@ -85,6 +86,12 @@
 
       var q = queue();
 
+      // Load one of these for each place
+      places.forEach(function(place) {
+        q.defer(d3.tsv, "userstats/outputv5_" + place + "_raster_1000m.tsv");
+      });
+
+      // Then one of these for each place
       places.forEach(function(place) {
         q.defer(d3.tsv, "userstats/combined_" + place + "_raster_1000m.tsv");
       });
@@ -101,30 +108,45 @@
         } else {
 
           // set the initial state of the controls
-          updateX('v1count-cumulative')
-          updateY('v2count-cumulative')
+          updateX('date')
+          updateY('v1_ratio-linear')
 
           //setX('date')
           //setY('v1_ratio-linear')
           //setR('days_active');
 
-          userstats = [];
+          localness = [];
 
           for (var i = 0; i < places.length; i++) {
+            // First we loop through the first set of files we loaded (the first half of the array)
+
             // for each row, add the placename. Must be a better way to do this.
             // For the "userstats" files
             datasets[i].forEach(function(d) {
               d.place = places[i];
+              localness.push(d);
+            });
+          }
+
+          userstats = [];
+
+          for (var i = places.length; i < (2 * places.length); i++) {
+            // Now we loop through the second set of files we loaded (the second half of the array)
+
+            // for each row, add the placename. Must be a better way to do this.
+            // For the "userstats" files
+            datasets[i].forEach(function(d) {
+              d.place = places[i - places.length];
               userstats.push(d);
             });
           }
 
-          createTimelines(userstats,metadata,true,false,true,true,false);
+          createTimelines(userstats,metadata,localness,true,false,true,true,false,true,false);
           updateCadence('monthly');
           togglePlaces(false);
           togglePlace(currentlySelected,true);
-          updateX('v1count-cumulative')
-          updateY('v2count-cumulative')
+          updateX('date')
+          updateY('v1_ratio-linear')
 
           //not sure why I need to do this twice:
           updateX()
