@@ -626,6 +626,7 @@ function createTimelines(data, metadata, localnessdata, isYearly, fillGaps, enab
   // TODO: make improved legend
   controls.append("div")
     .append("text")
+    .attr("id","legend_text")
     .html("<br>Legend:<br>solid lines: blankspot editors<br>dotted lines: non-blankspot editors");
 
   paths["yearly"] = svg.append("g").classed("yearly", true);
@@ -927,21 +928,29 @@ function splitPaths(splitType) {
     svg.selectAll(".blankspot_totals").style("display", "block");
     svg.selectAll(".local_totals").style("display", "none");
     svg.selectAll(".import_totals").style("display", "none");
+    d3.select("#legend_text")
+      .html("<br>Legend:<br>solid lines: blankspot editors<br>dashed lines: non-blankspot editors");
   } else if (splitType == 2)  {
     svg.selectAll(".combined_totals").style("display", "none");
     svg.selectAll(".blankspot_totals").style("display", "none");
     svg.selectAll(".local_totals").style("display", "block");
     svg.selectAll(".import_totals").style("display", "none");
+    d3.select("#legend_text")
+      .html("<br>Legend:<br>solid lines: local editors<br>dashed lines: non-local editors");
   } else if (splitType == 3)  {
     svg.selectAll(".combined_totals").style("display", "none");
     svg.selectAll(".blankspot_totals").style("display", "none");
     svg.selectAll(".local_totals").style("display", "none");
     svg.selectAll(".import_totals").style("display", "block");
+    d3.select("#legend_text")
+      .html("<br>Legend:<br>solid lines: human editors<br>dashed lines: bot accounts<br>dotted lines: import accounts");
   } else {
     svg.selectAll(".combined_totals").style("display", "block");
     svg.selectAll(".blankspot_totals").style("display", "none");
     svg.selectAll(".local_totals").style("display", "none");
     svg.selectAll(".import_totals").style("display", "none");
+    d3.select("#legend_text")
+      .html("<br>");
   }
 }
 
