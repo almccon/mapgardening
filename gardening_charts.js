@@ -186,9 +186,7 @@ function createScatters(data) {
         });
 
   d3.select("#xaxis")
-    .on("change", function() { 
-      updateX(this.options[this.selectedIndex].value) 
-    });
+    .on("change", function() { updateX(this.options[this.selectedIndex].value) });
 
   controls.append("div")
     .html("Y axis ")
@@ -205,9 +203,28 @@ function createScatters(data) {
         .each(function(d) {
           if (d.key == modeY) d3.select(this).attr("selected", "yes");
         });
-    
+
   d3.select("#yaxis")
-    .on("change", function() { updateY(this.options[this.selectedIndex].value) }); 
+    .on("change", function() { updateY(this.options[this.selectedIndex].value) });
+
+  controls.append("div")
+    .html("Radius ")
+    .append("select")
+      .attr("label", "radius")
+      .attr("id", "radius")
+      .selectAll("option")
+      // Use entries because columnInfo is an associative array.
+      // Use filter to only include entries where d.value.show == true
+      .data(d3.entries(columnInfo).filter(function(d) { return d.value.show && d.value.scale == 'linear'; }))
+      .enter().append("option")
+        .attr("value", function(d) { return d.key; }) // d.key comes from d3.entries
+        .text(function(d) { return d.value.text; })   // d.value comes from d3.entries
+        .each(function(d) {
+          if (d.key == modeR) d3.select(this).attr("selected", "yes");
+        });
+
+  d3.select("#radius")
+    .on("change", function() { updateR(this.options[this.selectedIndex].value) });
 
   placeControls = controls.append("div")
     .selectAll("input")
@@ -359,7 +376,6 @@ function updateY(newY) {
       });
   }
   yAxis.scale(yScale);
-  yAxis.scale(yScale);
   if (columnInfo[modeY].scale == "time")
     yAxis.ticks(10, numberFormat); // Show 10 divisions for date
   else
@@ -369,6 +385,22 @@ function updateY(newY) {
     ya.call(yAxis);
     ya.select("#yAxisLabel")
       .text(columnInfo[modeY].text);
+  }
+};
+
+function updateR(newR) {
+  if (newR) modeR = newR;
+  indexR = columnInfo[modeR].index;
+
+  rScale.domain([0, maxima[indexR]]);
+  if (svg) {
+    svg.selectAll("circle")
+      .transition()
+      .ease("linear")
+      .duration(1000)
+      .attr("r", function(d) {
+        return rScale(d[indexR] || 0);
+      });
   }
 };
 
