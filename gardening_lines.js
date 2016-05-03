@@ -88,6 +88,7 @@ var overrideY;
 
 var placeControls; // controls for activating and deactivating specific places
 var dotControls; // controls for toggling yearly dots
+var cityNameControls; // controls for toggling yearly dots
 
 var blankspottotals = {};
 
@@ -490,6 +491,7 @@ function createTimelines(data, metadata, localnessdata, isYearly, fillGaps, enab
 
   var legend_div = d3.select("body")
       .append("div")
+      .attr("id", "cityname_legend")
       .attr("class", "legend");
 
   legend_div.selectAll("div")
@@ -621,6 +623,16 @@ function createTimelines(data, metadata, localnessdata, isYearly, fillGaps, enab
     .property("checked", true)
     .on("change", function() {
       toggleYearlyDots(this.checked);
+    });
+
+  cityNameControls = controls.append("div")
+    .append("label")
+    .text("show city names")
+    .append("input")
+    .attr("type","checkbox")
+    .property("checked", true)
+    .on("change", function() {
+      toggleCityNameLegend(this.checked);
     });
 
   // TODO: make improved legend
@@ -1011,4 +1023,9 @@ function toggleYearlyDots(value) {
   svg.selectAll(".dotclass").style("display",value ? "block" : "none");
   svg.selectAll(".dotclasslabel").style("display",value ? "block" : "none");
   dotControls.property("checked", value);
+}
+
+function toggleCityNameLegend(value) {
+  d3.select("#cityname_legend").style("display",value ? "block" : "none");
+  cityNameControls.property("checked", value);
 }
