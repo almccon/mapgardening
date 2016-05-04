@@ -11,6 +11,7 @@ var columnInfo = {
   "v2countlocalness-linear": { "index": "v2countlocalness", "text": "Version 2+ edit localness (linear scale)", "show": true, "scale": "linear"},
   "blankcount-linear": { "index": "blankcount", "text": "Blank spot edits (linear scale)", "show": true, "scale": "linear"},
   "blankcount-log": { "index": "blankcount", "text": "Blank spot edits (log scale)", "show": true, "scale": "log"},
+  "v1_ratio-linear": { "index": "v1_ratio", "text": "v1 edits / total edits ratio (linear scale)", "show": true, "scale": "linear"},
   "firstedit": { "index": "firstedit", "text": "First edit date", "show": true, "scale": "time"},
   "firsteditv1": { "index": "firsteditv1", "text": "First v1 edit date", "show": true, "scale": "time"},
   "firsteditblank": { "index": "firsteditblank", "text": "First blank spot edit date", "show": true, "scale": "time"},
@@ -72,6 +73,7 @@ function createScatters(data) {
     // convert strings to numbers and dates
     d.count = +d.count;
     d.v1count = +d.v1count;
+    d.v1_ratio = d.count > 0 ? d.v1count/d.count : 0;
     d.countlocalness = +d.countlocalness;
     d.v1countlocalness = +d.v1countlocalness;
     d.v2countlocalness = +d.v2countlocalness;
